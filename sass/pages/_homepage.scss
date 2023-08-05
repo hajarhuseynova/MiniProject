@@ -531,7 +531,7 @@
 @media screen and (max-width: 740px) {
   .smeels {
     .smells_container {
-      padding-bottom: 60px;
+      padding-bottom: 40px;
       > h1 {
         color: $black_01;
         font-family: Space Mono;
@@ -567,6 +567,183 @@
           }
           > p {
             display: none;
+          }
+        }
+        .hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.smokes {
+  .smokes_container {
+    padding-bottom: 80px;
+    > h1 {
+      color: $black_01;
+      font-family: Space Mono;
+      font-size: 32px;
+      font-weight: 496;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .newsmokes {
+      display: flex;
+      justify-content: space-between;
+      .smoke {
+        width: 400px;
+        height: 483px;
+        border-radius: 7px 7px;
+        background-color: $white;
+        > img {
+          width: 100%;
+          height: 277px;
+          border-radius: 7px 7px 0px 0px;
+        }
+        .responsive {
+          > h3 {
+            font-family: Space Mono;
+            font-size: 24px;
+            font-weight: 496;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $orange_01;
+            margin-left: 15px;
+            margin-bottom: 12px;
+            margin-top: 8px;
+          }
+          > p {
+            font-family: Work Sans;
+            font-size: 18px;
+            font-weight: 496;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-left: 15px;
+            margin-bottom: 12px;
+          }
+          .button_image {
+            width: 55px;
+            height: 45px;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .smokes {
+    .smokes_container {
+      padding-bottom: 60px;
+      > h1 {
+        color: $black_01;
+        font-family: Space Mono;
+        font-size: 32px;
+        font-weight: 496;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+      .newsmokes {
+        display: flex;
+        justify-content: space-between;
+        .smoke {
+          width: 330px;
+          height: 350px;
+          border-radius: 7px 7px;
+          background-color: $white;
+          > img {
+            width: 100%;
+            height: 277px;
+            border-radius: 7px 7px 0px 0px;
+          }
+          .responsive {
+            display: flex;
+            > h3 {
+              font-family: Space Mono;
+              font-size: 24px;
+              font-weight: 496;
+              line-height: 29px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $orange_01;
+              margin-left: 15px;
+              margin-bottom: 12px;
+              margin-top: 15px;
+            }
+            > p {
+              display: none;
+            }
+            .button_image {
+              width: 55px;
+              height: 45px;
+              margin-left: 75px;
+              margin-top: 10px;
+            }
+          }
+        }
+        .hide {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .smokes {
+    .smokes_container {
+      padding-bottom: 40px;
+      > h1 {
+        color: $black_01;
+        font-family: Space Mono;
+        font-size: 20px;
+        font-weight: 496;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .newsmokes {
+        display: flex;
+        justify-content: space-between;
+        .smoke {
+          width: 370px;
+          height: 300px;
+          border-radius: 7px 7px;
+          background-color: $white;
+          > img {
+            width: 100%;
+            height: 250px;
+            border-radius: 7px 7px 0px 0px;
+          }
+          .responsive {
+            display: flex;
+            > h3 {
+              font-family: Space Mono;
+              font-size: 20px;
+              font-weight: 496;
+              line-height: 25px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $orange_01;
+              margin-left: 15px;
+              margin-bottom: 12px;
+              margin-top: 10px;
+            }
+            > p {
+              display: none;
+            }
+            .button_image {
+              width: 40px;
+              height: 30px;
+              margin-left: 170px;
+              margin-top: 5px;
+            }
           }
         }
         .hidden {
