@@ -149,10 +149,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff9eb;
 }
 
 .navbar {
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   height: 81px;
   width: 100%;
   margin: auto;
@@ -258,5 +259,377 @@ body {
   }
   .navbar .navbar_container .navbar_right .navbar_icons {
     gap: 10px;
+  }
+}
+footer {
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  width: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer_container .column {
+  width: 220px;
+  gap: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .footer_container .column > h3 {
+  font-family: Space Mono;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #ffaf06;
+  margin-bottom: 20px;
+}
+footer .footer_container .column > p {
+  font-family: Work Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+footer .footer_container .column_last h1 {
+  font-family: Space Mono;
+  font-size: 48px;
+  font-weight: 674;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffaf06;
+  margin-bottom: 40px;
+  margin-top: -12px;
+}
+footer .footer_container .column_last .input_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 40px;
+}
+footer .footer_container .column_last .input_button input {
+  width: 180px;
+  height: 36px;
+  border-radius: 4px 0px 0px 4px;
+  border-color: transparent;
+  padding-left: 6px;
+}
+footer .footer_container .column_last .input_button input:focus {
+  outline: none;
+}
+footer .footer_container .column_last .input_button button {
+  width: 85px;
+  height: 42px;
+  border-radius: 0px 4px 4px 0px;
+  border-color: transparent;
+  background-color: #ffaf06;
+  font-family: Work Sans;
+  margin-left: -10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+footer .footer_container .column_last .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+footer .footer_container .column_last .socials .social {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer_container .column_last .socials .social > img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 1238px) {
+  footer .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer_container .column {
+    gap: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer_container .column > h3 {
+    font-family: Space Mono;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+  }
+  footer .footer_container .column > p {
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #fff;
+  }
+  footer .footer_container .responsive {
+    margin-top: 40px;
+  }
+  footer .footer_container .column_last {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer_container .column_last h1 {
+    font-family: Space Mono;
+    font-size: 48px;
+    font-weight: 674;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffaf06;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  footer .footer_container .column_last .input_button input {
+    width: 210px;
+    height: 36px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: transparent;
+    padding-left: 6px;
+  }
+  footer .footer_container .column_last .input_button input:focus {
+    outline: none;
+  }
+  footer .footer_container .column_last .input_button button {
+    width: 85px;
+    height: 42px;
+    border-radius: 0px 4px 4px 0px;
+    border-color: transparent;
+    background-color: #ffaf06;
+    font-family: Work Sans;
+    margin-left: -10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  footer .footer_container .column_last .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  footer .footer_container .column_last .socials .social {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer_container .column_last .socials .social > img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  footer {
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    width: 100%;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer_container .column {
+    width: 130px;
+    gap: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer_container .column > h3 {
+    font-family: Space Mono;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-bottom: 5px;
+  }
+  footer .footer_container .column > p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #fff;
+  }
+  footer .footer_container .column .hidden_last {
+    display: none;
+  }
+  footer .footer_container .responsive {
+    margin-top: 0px;
+  }
+  footer .footer_container .responsive_last {
+    margin-top: 10px;
+  }
+  footer .footer_container .column_last {
+    width: 100%;
+  }
+  footer .footer_container .column_last h1 {
+    font-family: Space Mono;
+    font-size: 30px;
+    font-weight: 674;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffaf06;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+  footer .footer_container .column_last .input_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 18px;
+  }
+  footer .footer_container .column_last .input_button input {
+    width: 180px;
+    height: 36px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: transparent;
+    padding-left: 6px;
+  }
+  footer .footer_container .column_last .input_button input:focus {
+    outline: none;
+  }
+  footer .footer_container .column_last .input_button button {
+    width: 65px;
+    height: 42px;
+    border-radius: 0px 4px 4px 0px;
+    border-color: transparent;
+    background-color: #ffaf06;
+    font-family: Work Sans;
+    margin-left: -10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  footer .footer_container .column_last .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  footer .footer_container .column_last .socials .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer_container .column_last .socials .social > img {
+    width: 20px;
+    height: 20px;
   }
 }

@@ -5,9 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $orange_05;
 }
 .navbar {
-  background-color: black;
+  background-color: $black_01;
   height: 81px;
   width: 100%;
   margin: auto;

@@ -1,0 +1,296 @@
+footer {
+  width: 100%;
+  background-color: $black_01;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  .footer_container {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    .column {
+      width: 220px;
+      gap: 12px;
+      display: flex;
+      flex-direction: column;
+      > h3 {
+        font-family: Space Mono;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        color: $orange_01;
+        margin-bottom: 20px;
+      }
+      > p {
+        font-family: Work Sans;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        color: $white;
+      }
+    }
+    .column_last {
+      h1 {
+        font-family: Space Mono;
+        font-size: 48px;
+        font-weight: 674;
+        line-height: 57px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $orange_01;
+        margin-bottom: 40px;
+        margin-top: -12px;
+      }
+      .input_button {
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+        input {
+          width: 180px;
+          height: 36px;
+          border-radius: 4px 0px 0px 4px;
+          border-color: transparent;
+          padding-left: 6px;
+        }
+        input:focus {
+          outline: none;
+        }
+        button {
+          width: 85px;
+          height: 42px;
+          border-radius: 0px 4px 4px 0px;
+          border-color: transparent;
+          background-color: $orange_01;
+          font-family: Work Sans;
+          margin-left: -10px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+      .socials {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        gap: 20px;
+        .social {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: $white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  footer {
+    .footer_container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: space-between;
+      .column {
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > h3 {
+          font-family: Space Mono;
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: 0em;
+          margin-bottom: 20px;
+        }
+        > p {
+          font-family: Work Sans;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          color: $white;
+        }
+      }
+      .responsive {
+        margin-top: 40px;
+      }
+      .column_last {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-family: Space Mono;
+          font-size: 48px;
+          font-weight: 674;
+          line-height: 57px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: $orange_01;
+          margin-bottom: 20px;
+          margin-top: -10px;
+        }
+        .input_button {
+          input {
+            width: 210px;
+            height: 36px;
+            border-radius: 4px 0px 0px 4px;
+            border-color: transparent;
+            padding-left: 6px;
+          }
+          input:focus {
+            outline: none;
+          }
+          button {
+            width: 85px;
+            height: 42px;
+            border-radius: 0px 4px 4px 0px;
+            border-color: transparent;
+            background-color: $orange_01;
+            font-family: Work Sans;
+            margin-left: -10px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
+        }
+        .socials {
+          display: flex;
+          margin-top: 30px;
+          justify-content: center;
+          gap: 20px;
+          .social {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  footer {
+    width: 100%;
+    background-color: $black_01;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    .footer_container {
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      .column {
+        width: 130px;
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
+        > h3 {
+          font-family: Space Mono;
+          font-size: 19px;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: 0em;
+          margin-bottom: 5px;
+        }
+        > p {
+          font-family: Work Sans;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          color: $white;
+        }
+        .hidden_last {
+          display: none;
+        }
+      }
+      .responsive {
+        margin-top: 0px;
+      }
+      .responsive_last {
+        margin-top: 10px;
+      }
+      .column_last {
+        width: 100%;
+        h1 {
+          font-family: Space Mono;
+          font-size: 30px;
+          font-weight: 674;
+          line-height: 57px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: $orange_01;
+          margin-bottom: 0px;
+          margin-top: 5px;
+        }
+        .input_button {
+          display: flex;
+          justify-content: center;
+          margin-left: 18px;
+          input {
+            width: 180px;
+            height: 36px;
+            border-radius: 4px 0px 0px 4px;
+            border-color: transparent;
+            padding-left: 6px;
+          }
+          input:focus {
+            outline: none;
+          }
+          button {
+            width: 65px;
+            height: 42px;
+            border-radius: 0px 4px 4px 0px;
+            border-color: transparent;
+            background-color: $orange_01;
+            font-family: Work Sans;
+            margin-left: -10px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
+        }
+        .socials {
+          display: flex;
+          margin-top: 30px;
+          justify-content: center;
+          gap: 20px;
+          .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
