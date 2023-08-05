@@ -1116,3 +1116,175 @@ footer .footer_container .column_last .socials .social > img {
     display: none;
   }
 }
+.smeels .smells_container {
+  padding-bottom: 80px;
+}
+.smeels .smells_container > h1 {
+  color: rgb(18, 18, 18);
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.smeels .smells_container .newsmeels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.smeels .smells_container .newsmeels .smell {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 295px;
+  height: 415px;
+  border-radius: 12px;
+}
+.smeels .smells_container .newsmeels .smell > h3 {
+  width: 200px;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 20px;
+  font-weight: 496;
+  line-height: 24px;
+  letter-spacing: 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  margin-bottom: 6px;
+  margin-top: 310px;
+}
+.smeels .smells_container .newsmeels .smell > p {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0em;
+  width: 190px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1238px) {
+  .smeels .smells_container {
+    padding-bottom: 60px;
+  }
+  .smeels .smells_container > h1 {
+    color: rgb(18, 18, 18);
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 496;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .smeels .smells_container .newsmeels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .smeels .smells_container .newsmeels .smell {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 300px;
+    border-radius: 12px;
+  }
+  .smeels .smells_container .newsmeels .smell > h3 {
+    width: 180px;
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 496;
+    line-height: 20px;
+    letter-spacing: 0em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    margin-top: 200px;
+  }
+  .smeels .smells_container .newsmeels .smell > p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    width: 170px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+  }
+  .smeels .smells_container .newsmeels .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 740px) {
+  .smeels .smells_container {
+    padding-bottom: 60px;
+  }
+  .smeels .smells_container > h1 {
+    color: rgb(18, 18, 18);
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 496;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .smeels .smells_container .newsmeels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .smeels .smells_container .newsmeels .smell {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 270px;
+    border-radius: 12px;
+  }
+  .smeels .smells_container .newsmeels .smell > h3 {
+    width: 180px;
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 496;
+    line-height: 20px;
+    letter-spacing: 0em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    margin-top: 220px;
+  }
+  .smeels .smells_container .newsmeels .smell > p {
+    display: none;
+  }
+  .smeels .smells_container .newsmeels .hidden {
+    display: none;
+  }
+}

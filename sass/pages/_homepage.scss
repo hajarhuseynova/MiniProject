@@ -421,3 +421,158 @@
     }
   }
 }
+.smeels {
+  .smells_container {
+    padding-bottom: 80px;
+    > h1 {
+      color: $black_01;
+      font-family: Space Mono;
+      font-size: 32px;
+      font-weight: 496;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .newsmeels {
+      display: flex;
+      justify-content: space-between;
+      .smell {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 295px;
+        height: 415px;
+        border-radius: 12px;
+        > h3 {
+          width: 200px;
+          color: $white;
+          font-family: Space Mono;
+          font-size: 20px;
+          font-weight: 496;
+          line-height: 24px;
+          letter-spacing: 0em;
+          display: flex;
+          margin-left: 15px;
+          margin-bottom: 6px;
+          margin-top: 310px;
+        }
+        > p {
+          font-family: Work Sans;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 16px;
+          letter-spacing: 0em;
+          width: 190px;
+          color: $white;
+          display: flex;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .smeels {
+    .smells_container {
+      padding-bottom: 60px;
+      > h1 {
+        color: $black_01;
+        font-family: Space Mono;
+        font-size: 32px;
+        font-weight: 496;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+      .newsmeels {
+        display: flex;
+        justify-content: space-between;
+        .smell {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 230px;
+          height: 300px;
+          border-radius: 12px;
+          > h3 {
+            width: 180px;
+            color: $white;
+            font-family: Space Mono;
+            font-size: 18px;
+            font-weight: 496;
+            line-height: 20px;
+            letter-spacing: 0em;
+            display: flex;
+            margin-left: 10px;
+            margin-bottom: 6px;
+            margin-top: 200px;
+          }
+          > p {
+            font-family: Work Sans;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16px;
+            letter-spacing: 0em;
+            width: 170px;
+            color: $white;
+            display: flex;
+            margin-left: 10px;
+          }
+        }
+        .hide {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .smeels {
+    .smells_container {
+      padding-bottom: 60px;
+      > h1 {
+        color: $black_01;
+        font-family: Space Mono;
+        font-size: 20px;
+        font-weight: 496;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .newsmeels {
+        display: flex;
+        justify-content: space-between;
+        .smell {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 180px;
+          height: 270px;
+          border-radius: 12px;
+          > h3 {
+            width: 180px;
+            color: $white;
+            font-family: Space Mono;
+            font-size: 16px;
+            font-weight: 496;
+            line-height: 20px;
+            letter-spacing: 0em;
+            display: flex;
+            margin-left: 10px;
+            margin-bottom: 6px;
+            margin-top: 220px;
+          }
+          > p {
+            display: none;
+          }
+        }
+        .hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}
