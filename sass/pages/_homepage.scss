@@ -1698,3 +1698,189 @@
     }
   }
 }
+.comments {
+  .comments_container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    > h1 {
+      color: $black_01;
+      font-family: Space Mono;
+      font-size: 32px;
+      font-weight: 496;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .modal_comment {
+      margin: auto;
+      width: 820px;
+      background-color: $white;
+      border-radius: 10px;
+      > img {
+        width: 36.5px;
+        height: 31px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .modal_inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        .modal_top {
+          display: flex;
+          align-items: center;
+          width: 610px;
+          .modal_top_left {
+            > img {
+              width: 85px;
+              height: 85px;
+              border-radius: 50%;
+              margin-right: 15px;
+            }
+          }
+          .modal_top_right {
+            > h3 {
+              font-family: Work Sans;
+              font-size: 20px;
+              font-weight: 496;
+              line-height: 24px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $orange_01;
+            }
+            > p {
+              font-family: Work Sans;
+              font-size: 16px;
+              font-weight: 450;
+              line-height: 21px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $black_03;
+            }
+          }
+        }
+
+        > p {
+          font-family: Work Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $black_01;
+          width: 610px;
+        }
+      }
+      .end {
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .comments {
+    .comments_container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .modal_comment {
+        width: 740px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .comments {
+    .comments_container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      > h1 {
+        color: $black_01;
+        font-family: Space Mono;
+        font-size: 20px;
+        font-weight: 496;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .modal_comment {
+        margin: auto;
+        width: 370px;
+        background-color: $white;
+        > img {
+          width: 28px;
+          height: 20px;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+        .modal_inner {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          .modal_top {
+            display: flex;
+            align-items: center;
+            width: 280px;
+            margin-top: 10px;
+            .modal_top_left {
+              > img {
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                margin-right: 10px;
+              }
+            }
+            .modal_top_right {
+              > h3 {
+                font-family: Work Sans;
+                font-size: 18px;
+                font-weight: 496;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $orange_01;
+              }
+              > p {
+                font-family: Work Sans;
+                font-size: 14px;
+                font-weight: 450;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $black_03;
+              }
+            }
+          }
+
+          > p {
+            font-family: Work Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $black_01;
+            width: 280px;
+          }
+        }
+        .end {
+          float: right;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
