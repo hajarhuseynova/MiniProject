@@ -139,7 +139,7 @@
         font-family: Space Mono;
         font-size: 32px;
         font-weight: 400;
-        line-height: 32px;
+        line-height: 34px;
         letter-spacing: 0em;
         text-align: left;
         color: $white;
@@ -359,7 +359,7 @@
         justify-content: space-between;
         .product {
           width: 180px;
-          height: 300px;
+          height: 280px;
           background-color: $white;
           border-radius: 8px 8px;
           > img {
@@ -369,14 +369,14 @@
           }
           .def {
             font-family: Work Sans;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 496;
             line-height: 16px;
             letter-spacing: 0em;
             text-align: left;
             margin-left: 10px;
             margin-bottom: 10px;
-            margin-top: 7px;
+            margin-top: 5px;
           }
           .cat {
             font-family: Space Mono;
@@ -741,7 +741,7 @@
             .button_image {
               width: 40px;
               height: 30px;
-              margin-left: 170px;
+              margin-left: 165px;
               margin-top: 5px;
             }
           }
@@ -936,7 +936,7 @@
         justify-content: space-between;
         .sellest {
           width: 180px;
-          height: 300px;
+          height: 280px;
           background-color: $white;
           border-radius: 8px 8px;
           > img {
@@ -946,14 +946,14 @@
           }
           .def {
             font-family: Work Sans;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 496;
             line-height: 16px;
             letter-spacing: 0em;
             text-align: left;
             margin-left: 10px;
             margin-bottom: 10px;
-            margin-top: 7px;
+            margin-top: 5px;
           }
           .cat {
             font-family: Space Mono;
@@ -1133,7 +1133,7 @@
               letter-spacing: 0em;
               text-align: center;
               color: $orange_01;
-              border: 2px solid $orange_01;
+              border: px solid $orange_01;
               display: flex;
               justify-content: center;
               align-items: center;

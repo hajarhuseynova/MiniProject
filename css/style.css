@@ -799,7 +799,7 @@ footer .footer_container .column_last .socials .social > img {
     font-family: Space Mono;
     font-size: 32px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 34px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
@@ -1049,7 +1049,7 @@ footer .footer_container .column_last .socials .social > img {
   }
   .products .products_container .newproducts .product {
     width: 180px;
-    height: 300px;
+    height: 280px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
@@ -1060,14 +1060,14 @@ footer .footer_container .column_last .socials .social > img {
   }
   .products .products_container .newproducts .product .def {
     font-family: Work Sans;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 496;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
     margin-bottom: 10px;
-    margin-top: 7px;
+    margin-top: 5px;
   }
   .products .products_container .newproducts .product .cat {
     font-family: Space Mono;
@@ -1467,7 +1467,7 @@ footer .footer_container .column_last .socials .social > img {
   .smokes .smokes_container .newsmokes .smoke .responsive .button_image {
     width: 40px;
     height: 30px;
-    margin-left: 170px;
+    margin-left: 165px;
     margin-top: 5px;
   }
   .smokes .smokes_container .newsmokes .hidden {
@@ -1682,7 +1682,7 @@ footer .footer_container .column_last .socials .social > img {
   }
   .sellests .sellests_container .newsellests .sellest {
     width: 180px;
-    height: 300px;
+    height: 280px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
@@ -1693,14 +1693,14 @@ footer .footer_container .column_last .socials .social > img {
   }
   .sellests .sellests_container .newsellests .sellest .def {
     font-family: Work Sans;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 496;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
     margin-bottom: 10px;
-    margin-top: 7px;
+    margin-top: 5px;
   }
   .sellests .sellests_container .newsellests .sellest .cat {
     font-family: Space Mono;
@@ -1917,7 +1917,7 @@ footer .footer_container .column_last .socials .social > img {
     letter-spacing: 0em;
     text-align: center;
     color: #ffaf06;
-    border: 2px solid #ffaf06;
+    border: px solid #ffaf06;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
