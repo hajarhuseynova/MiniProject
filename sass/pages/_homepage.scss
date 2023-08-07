@@ -157,7 +157,7 @@
         height: 47px;
         background-color: transparent;
         color: $orange_02;
-        border-color: $orange_02;
+        border: 1px solid $orange_02;
         font-family: Space Mono;
         font-size: 16px;
         font-weight: 400;
@@ -1212,9 +1212,9 @@
             text-decoration: none;
             > button {
               border-radius: 10px;
-              width: 160px;
+              width: 140px;
               background-color: transparent;
-              height: 49px;
+              height: 40px;
               font-family: Space Mono;
               font-size: 14px;
               font-weight: 400;
@@ -1510,6 +1510,189 @@
         }
         .hidden {
           display: none;
+        }
+      }
+    }
+  }
+}
+.testing {
+  width: 100%;
+  background-color: $black_01;
+  .testing_container {
+    padding-bottom: 80px;
+    display: flex;
+    margin: auto;
+    margin-top: 75px;
+    .testing_common {
+      display: flex;
+      gap: 140px;
+      align-items: center;
+      .testing_left {
+        width: 602px;
+        height: 383px;
+        > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .testing_right {
+        width: 505px;
+        height: 243px;
+        > h1 {
+          font-family: Space Mono;
+          font-size: 32px;
+          font-weight: 496;
+          line-height: 40px;
+          letter-spacing: 0em;
+          color: $orange_01;
+          text-align: left;
+          margin-bottom: 40px;
+        }
+        > a {
+          text-decoration: none;
+          > button {
+            width: 154px;
+            height: 49px;
+            font-family: Work Sans;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $orange_01;
+            border: 2px solid $orange_01;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            > img {
+              width: 34px;
+              height: 25px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .testing {
+    .testing_container {
+      padding-bottom: 60px;
+      display: flex;
+      margin: auto;
+      margin-top: 60px;
+      .testing_common {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        .testing_left {
+          width: 330px;
+          height: 250px;
+          > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .testing_right {
+          width: 340px;
+          height: 160px;
+          > h1 {
+            font-family: Space Mono;
+            font-size: 24px;
+            font-weight: 496;
+            line-height: 30px;
+            letter-spacing: 0em;
+            color: $orange_01;
+            text-align: left;
+            margin-bottom: 30px;
+          }
+          > a {
+            text-decoration: none;
+            > button {
+              width: 135px;
+              height: 40px;
+              font-family: Work Sans;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 21px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: $orange_01;
+              border: 2px solid $orange_01;
+              background-color: transparent;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              > img {
+                width: 32px;
+                height: 22px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .testing {
+    .testing_container {
+      padding-bottom: 40px;
+      display: flex;
+      margin: auto;
+      margin-top: 40px;
+      .testing_common {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        .testing_left {
+          display: none;
+        }
+        .testing_right {
+          width: 340px;
+          height: 160px;
+          > h1 {
+            font-family: Space Mono;
+            font-size: 20px;
+            font-weight: 496;
+            line-height: 30px;
+            letter-spacing: 0em;
+            color: $orange_01;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          > a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            > button {
+              width: 135px;
+              height: 40px;
+              font-family: Work Sans;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 21px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: $orange_01;
+              border: 1px solid $orange_01;
+              background-color: transparent;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              > img {
+                width: 32px;
+                height: 22px;
+                margin-left: 10px;
+              }
+            }
+          }
         }
       }
     }

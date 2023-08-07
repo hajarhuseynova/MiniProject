@@ -264,7 +264,6 @@ body {
 footer {
   width: 100%;
   background-color: rgb(18, 18, 18);
-  width: 100%;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,7 +822,7 @@ footer .footer_container .column_last .socials .social > img {
     height: 47px;
     background-color: transparent;
     color: #ffc13f;
-    border-color: #ffc13f;
+    border: 1px solid #ffc13f;
     font-family: Space Mono;
     font-size: 16px;
     font-weight: 400;
@@ -2013,9 +2012,9 @@ footer .footer_container .column_last .socials .social > img {
   }
   .giftbox .giftbox_container .giftbox_common .giftbox_left > a > button {
     border-radius: 10px;
-    width: 160px;
+    width: 140px;
     background-color: transparent;
-    height: 49px;
+    height: 40px;
     font-family: Space Mono;
     font-size: 14px;
     font-weight: 400;
@@ -2346,5 +2345,223 @@ footer .footer_container .column_last .socials .social > img {
   }
   .discounts .discounts_container .newdiscounts .hidden {
     display: none;
+  }
+}
+.testing {
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+}
+.testing .testing_container {
+  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 75px;
+}
+.testing .testing_container .testing_common {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testing .testing_container .testing_common .testing_left {
+  width: 602px;
+  height: 383px;
+}
+.testing .testing_container .testing_common .testing_left > img {
+  width: 100%;
+  height: 100%;
+}
+.testing .testing_container .testing_common .testing_right {
+  width: 505px;
+  height: 243px;
+}
+.testing .testing_container .testing_common .testing_right > h1 {
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 40px;
+  letter-spacing: 0em;
+  color: #ffaf06;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.testing .testing_container .testing_common .testing_right > a {
+  text-decoration: none;
+}
+.testing .testing_container .testing_common .testing_right > a > button {
+  width: 154px;
+  height: 49px;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffaf06;
+  border: 2px solid #ffaf06;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+.testing .testing_container .testing_common .testing_right > a > button > img {
+  width: 34px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1238px) {
+  .testing .testing_container {
+    padding-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .testing .testing_container .testing_common {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testing .testing_container .testing_common .testing_left {
+    width: 330px;
+    height: 250px;
+  }
+  .testing .testing_container .testing_common .testing_left > img {
+    width: 100%;
+    height: 100%;
+  }
+  .testing .testing_container .testing_common .testing_right {
+    width: 340px;
+    height: 160px;
+  }
+  .testing .testing_container .testing_common .testing_right > h1 {
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: 496;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #ffaf06;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .testing .testing_container .testing_common .testing_right > a {
+    text-decoration: none;
+  }
+  .testing .testing_container .testing_common .testing_right > a > button {
+    width: 135px;
+    height: 40px;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffaf06;
+    border: 2px solid #ffaf06;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testing .testing_container .testing_common .testing_right > a > button > img {
+    width: 32px;
+    height: 22px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .testing .testing_container {
+    padding-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .testing .testing_container .testing_common {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testing .testing_container .testing_common .testing_left {
+    display: none;
+  }
+  .testing .testing_container .testing_common .testing_right {
+    width: 340px;
+    height: 160px;
+  }
+  .testing .testing_container .testing_common .testing_right > h1 {
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 496;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #ffaf06;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .testing .testing_container .testing_common .testing_right > a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testing .testing_container .testing_common .testing_right > a > button {
+    width: 135px;
+    height: 40px;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffaf06;
+    border: 1px solid #ffaf06;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testing .testing_container .testing_common .testing_right > a > button > img {
+    width: 32px;
+    height: 22px;
+    margin-left: 10px;
   }
 }
