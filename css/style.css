@@ -219,9 +219,9 @@ button:hover {
   width: 24px;
   height: 24px;
 }
-.navbar .navbar_container .navbar_left .navbar_menu > p {
+.navbar .navbar_container .navbar_left .navbar_menu .hide {
   font-family: Space Mono;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
@@ -320,7 +320,7 @@ footer .footer_container .column {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-footer .footer_container .column > h3 {
+footer .footer_container .column > a > h3 {
   font-family: Space Mono;
   font-size: 25px;
   font-weight: 500;
@@ -441,7 +441,7 @@ footer .footer_container .column_last .socials .social > img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .footer_container .column > h3 {
+  footer .footer_container .column > a > h3 {
     font-family: Space Mono;
     font-size: 25px;
     font-weight: 500;
@@ -571,7 +571,7 @@ footer .footer_container .column_last .socials .social > img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .footer_container .column > h3 {
+  footer .footer_container .column > a > h3 {
     font-family: Space Mono;
     font-size: 19px;
     font-weight: 500;
@@ -677,6 +677,7 @@ a {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  text-decoration: none;
 }
 a:hover {
   -webkit-transform: scale(0.9);

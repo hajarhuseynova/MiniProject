@@ -4,6 +4,7 @@
 a {
   cursor: pointer;
   transition: 0.5s;
+  text-decoration: none;
   &:hover {
     transform: scale(0.9);
   }

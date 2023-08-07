@@ -13,14 +13,16 @@ footer {
       gap: 12px;
       display: flex;
       flex-direction: column;
-      > h3 {
-        font-family: Space Mono;
-        font-size: 25px;
-        font-weight: 500;
-        line-height: 26px;
-        letter-spacing: 0em;
-        color: $orange_01;
-        margin-bottom: 20px;
+      > a {
+        > h3 {
+          font-family: Space Mono;
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: 0em;
+          color: $orange_01;
+          margin-bottom: 20px;
+        }
       }
       > p {
         font-family: Work Sans;
@@ -73,7 +75,6 @@ footer {
           text-align: center;
           &:hover {
             transform: scale(1);
-            
           }
         }
       }
@@ -111,13 +112,15 @@ footer {
         gap: 12px;
         display: flex;
         flex-direction: column;
-        > h3 {
-          font-family: Space Mono;
-          font-size: 25px;
-          font-weight: 500;
-          line-height: 26px;
-          letter-spacing: 0em;
-          margin-bottom: 20px;
+        > a {
+          > h3 {
+            font-family: Space Mono;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            margin-bottom: 20px;
+          }
         }
         > p {
           font-family: Work Sans;
@@ -213,13 +216,15 @@ footer {
         gap: 6px;
         display: flex;
         flex-direction: column;
-        > h3 {
-          font-family: Space Mono;
-          font-size: 19px;
-          font-weight: 500;
-          line-height: 26px;
-          letter-spacing: 0em;
-          margin-bottom: 5px;
+        > a {
+          > h3 {
+            font-family: Space Mono;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            margin-bottom: 5px;
+          }
         }
         > p {
           font-family: Work Sans;
