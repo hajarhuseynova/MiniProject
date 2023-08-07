@@ -24,10 +24,13 @@
       .navbar_menu {
         display: flex;
         gap: 16px;
-        > img {
-          width: 24px;
-          height: 24px;
+        > a {
+          > img {
+            width: 24px;
+            height: 24px;
+          }
         }
+
         .hide {
           font-family: Space Mono;
           font-size: 22px;
@@ -37,24 +40,31 @@
           color: $white;
           margin-top: 3px;
         }
-        .hidden {
-          display: none;
+
+        > a {
+          .hidden {
+            display: none;
+          }
         }
       }
     }
     .navbar_middle {
-      > img {
-        width: 100px;
-        height: 25px;
+      > a {
+        > img {
+          width: 100px;
+          height: 25px;
+        }
       }
     }
     .navbar_right {
       .navbar_icons {
         display: flex;
         gap: 20px;
-        > img {
-          width: 24px;
-          height: 24px;
+        > a {
+          > img {
+            width: 24px;
+            height: 24px;
+          }
         }
       }
     }
@@ -95,16 +105,20 @@
           display: flex;
           align-items: center;
           gap: 10px;
-          .hidden {
-            display: initial;
-            width: 96px;
-            height: 24px;
+          > a {
+            .hidden {
+              display: initial;
+              width: 96px;
+              height: 24px;
+            }
           }
         }
       }
       .navbar_middle {
-        > img {
-          display: none;
+        > a {
+          > img {
+            display: none;
+          }
         }
       }
       .navbar_right {

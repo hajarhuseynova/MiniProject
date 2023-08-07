@@ -164,6 +164,30 @@ button:hover {
           transform: scale(0.95);
 }
 
+.register_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 16px 12px 16px;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  border: 1px solid #414141;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+}
+
 .container {
   width: 1238px;
 }
@@ -215,7 +239,7 @@ button:hover {
   display: flex;
   gap: 16px;
 }
-.navbar .navbar_container .navbar_left .navbar_menu > img {
+.navbar .navbar_container .navbar_left .navbar_menu > a > img {
   width: 24px;
   height: 24px;
 }
@@ -228,10 +252,10 @@ button:hover {
   color: #fff;
   margin-top: 3px;
 }
-.navbar .navbar_container .navbar_left .navbar_menu .hidden {
+.navbar .navbar_container .navbar_left .navbar_menu > a .hidden {
   display: none;
 }
-.navbar .navbar_container .navbar_middle > img {
+.navbar .navbar_container .navbar_middle > a > img {
   width: 100px;
   height: 25px;
 }
@@ -241,7 +265,7 @@ button:hover {
   display: flex;
   gap: 20px;
 }
-.navbar .navbar_container .navbar_right .navbar_icons > img {
+.navbar .navbar_container .navbar_right .navbar_icons > a > img {
   width: 24px;
   height: 24px;
 }
@@ -279,12 +303,12 @@ button:hover {
             align-items: center;
     gap: 10px;
   }
-  .navbar .navbar_container .navbar_left .navbar_menu .hidden {
+  .navbar .navbar_container .navbar_left .navbar_menu > a .hidden {
     display: initial;
     width: 96px;
     height: 24px;
   }
-  .navbar .navbar_container .navbar_middle > img {
+  .navbar .navbar_container .navbar_middle > a > img {
     display: none;
   }
   .navbar .navbar_container .navbar_right .navbar_icons {
@@ -678,10 +702,6 @@ a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
-}
-a:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 .remember {
@@ -2804,5 +2824,293 @@ a:hover {
   }
   .functions .functions_container .line {
     display: none;
+  }
+}
+.register {
+  width: 100%;
+}
+.register .register_container {
+  width: 100%;
+  height: 629px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.register .register_container .register_left {
+  width: 50%;
+  background-image: url(../../assets/images/Register/parfume.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.register .register_container .register_right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.register .register_container .register_right > h1 {
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.register .register_container .register_right > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.register .register_container .register_right > p > a {
+  color: #ffaf06;
+}
+.register .register_container .register_right > input {
+  width: 400px;
+  height: 15px;
+}
+.register .register_container .register_right > a > button {
+  width: 435px;
+  height: 40px;
+  background-color: #ffaf06;
+  color: rgb(18, 18, 18);
+  font-weight: 500;
+}
+.register .register_container .register_right > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  color: #ffaf06;
+}
+.register .register_container .register_right .checkbox_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.register .register_container .register_right .checkbox_input > input {
+  margin-left: -215px;
+}
+.register .register_container .register_right .checkbox_input > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 1238px) {
+  .register {
+    width: 100%;
+  }
+  .register .register_container {
+    width: 100%;
+    height: 629px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .register .register_container .register_left {
+    width: 50%;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .register .register_container .register_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .register .register_container .register_right > h1 {
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .register .register_container .register_right > p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .register .register_container .register_right > p > a {
+    color: #ffaf06;
+  }
+  .register .register_container .register_right > input {
+    width: 250px;
+    height: 15px;
+  }
+  .register .register_container .register_right > a > button {
+    width: 285px;
+    height: 40px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+  }
+  .register .register_container .register_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+  .register .register_container .register_right .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .register .register_container .register_right .checkbox_input > input {
+    margin-left: -140px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .register {
+    width: 100%;
+  }
+  .register .register_container {
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .register .register_container .register_left {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-right: 0;
+  }
+  .register .register_container .register_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .register .register_container .register_right > h1 {
+    font-family: Space Mono;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .register .register_container .register_right > p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .register .register_container .register_right > p > a {
+    color: #ffaf06;
+  }
+  .register .register_container .register_right > input {
+    width: 300px;
+    height: 15px;
+    padding: 10px 6px;
+  }
+  .register .register_container .register_right > a > button {
+    width: 315px;
+    height: 37px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .register .register_container .register_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+  .register .register_container .register_right .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .register .register_container .register_right .checkbox_input > input {
+    margin-left: -155px;
+  }
+  .register .register_container .register_right .checkbox_input > p > span {
+    color: #ffaf06;
   }
 }

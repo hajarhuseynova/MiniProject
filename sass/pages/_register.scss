@@ -1,0 +1,237 @@
+.register {
+  width: 100%;
+  .register_container {
+    width: 100%;
+    height: 629px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    .register_left {
+      width: 50%;
+      background-image: url(../../assets/images/Register/parfume.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      object-position: center;
+    }
+    .register_right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      > h1 {
+        font-family: Space Mono;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      > p {
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 10px;
+        > a {
+          color: $orange_01;
+        }
+      }
+      > input {
+        width: 400px;
+        height: 15px;
+      }
+      > a {
+        > button {
+          width: 435px;
+          height: 40px;
+          background-color: $orange_01;
+          color: $black_01;
+          font-weight: 500;
+          &:hover {
+            transform: scale(1);
+            background-color: transparent;
+            color: $orange_01;
+          }
+        }
+      }
+      .checkbox_input {
+        display: flex;
+        align-items: center;
+
+        > input {
+          margin-left: -215px;
+        }
+        > p {
+          font-family: Work Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .register {
+    width: 100%;
+    .register_container {
+      width: 100%;
+      height: 629px;
+      margin: auto;
+      display: flex;
+      position: relative;
+      .register_left {
+        width: 50%;
+        background-image: url(../../assets/images/Register/parfume.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: center;
+      }
+      .register_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        > h1 {
+          font-family: Space Mono;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 38px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        > p {
+          font-family: Work Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+          margin-bottom: 10px;
+          > a {
+            color: $orange_01;
+          }
+        }
+        > input {
+          width: 250px;
+          height: 15px;
+        }
+        > a {
+          > button {
+            width: 285px;
+            height: 40px;
+            background-color: $orange_01;
+            color: $black_01;
+            font-weight: 500;
+            &:hover {
+              transform: scale(1);
+              background-color: transparent;
+              color: $orange_01;
+            }
+          }
+        }
+        .checkbox_input {
+          display: flex;
+          align-items: center;
+          > input {
+            margin-left: -140px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .register {
+    width: 100%;
+    .register_container {
+      width: 100%;
+      height: 700px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .register_left {
+        width: 100%;
+        height: 100%;
+        background-image: url(../../assets/images/Register/parfume.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: center;
+        margin-right: 0;
+      }
+      .register_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        > h1 {
+          font-family: Space Mono;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 34px;
+          letter-spacing: 0em;
+          text-align: left;
+          margin-top: 5px;
+        }
+        > p {
+          font-family: Work Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+          margin-bottom: 5px;
+          > a {
+            color: $orange_01;
+          }
+        }
+        > input {
+          width: 300px;
+          height: 15px;
+          padding: 10px 6px;
+        }
+        > a {
+          > button {
+            width: 315px;
+            height: 37px;
+            background-color: $orange_01;
+            color: $black_01;
+            font-weight: 500;
+            margin-bottom: 20px;
+            &:hover {
+              transform: scale(1);
+              background-color: transparent;
+              color: $orange_01;
+            }
+          }
+        }
+        .checkbox_input {
+          display: flex;
+          align-items: center;
+          > input {
+            margin-left: -155px;
+          }
+          > p {
+            > span {
+              color: $orange_01;
+            }
+          }
+        }
+      }
+    }
+  }
+}
