@@ -2046,3 +2046,305 @@ footer .footer_container .column_last .socials .social > img {
     display: none;
   }
 }
+.discounts .discounts_container {
+  padding-bottom: 80px;
+}
+.discounts .discounts_container > h1 {
+  color: rgb(18, 18, 18);
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.discounts .discounts_container .newdiscounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.discounts .discounts_container .newdiscounts .discount {
+  width: 295px;
+  height: 415px;
+  background-color: #fff;
+  border-radius: 8px 8px;
+}
+.discounts .discounts_container .newdiscounts .discount > img {
+  width: 295px;
+  height: 295px;
+  border-radius: 8px 8px 0px 0px;
+}
+.discounts .discounts_container .newdiscounts .discount .def {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 496;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+.discounts .discounts_container .newdiscounts .discount .cat {
+  font-family: Space Mono;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffd376;
+  margin-bottom: 6px;
+  margin-left: 10px;
+}
+.discounts .discounts_container .newdiscounts .discount .price_star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.discounts .discounts_container .newdiscounts .discount .price_star .price {
+  font-family: New York;
+  font-size: 16px;
+  font-weight: 496;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6a6a6a;
+  margin-left: 10px;
+}
+.discounts .discounts_container .newdiscounts .discount .price_star .price_discount {
+  font-family: Work Sans;
+  font-size: 12px;
+  font-weight: 496;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color: #959595;
+  text-align: left;
+}
+.discounts .discounts_container .newdiscounts .discount .price_star .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  margin-right: 10px;
+}
+.discounts .discounts_container .newdiscounts .discount .price_star .stars > img {
+  width: 12px;
+  height: 12px;
+}
+
+@media screen and (max-width: 1238px) {
+  .container {
+    width: 740px;
+  }
+  .discounts .discounts_container {
+    padding-bottom: 60px;
+  }
+  .discounts .discounts_container > h1 {
+    color: rgb(18, 18, 18);
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 496;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .discounts .discounts_container .newdiscounts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .discounts .discounts_container .newdiscounts .discount {
+    width: 230px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px 8px;
+  }
+  .discounts .discounts_container .newdiscounts .discount > img {
+    width: 230px;
+    height: 230px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .def {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 496;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .cat {
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffd376;
+    margin-bottom: 6px;
+    margin-left: 10px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star .price {
+    font-family: New York;
+    font-size: 16px;
+    font-weight: 496;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6a6a6a;
+    margin-left: 10px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star .price_discount {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 496;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: #959595;
+    text-align: left;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star .stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7px;
+    margin-right: 10px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star .stars > img {
+    width: 12px;
+    height: 12px;
+  }
+  .discounts .discounts_container .newdiscounts .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 740px) {
+  .container {
+    width: 370px;
+  }
+  .discounts .discounts_container {
+    padding-bottom: 40px;
+  }
+  .discounts .discounts_container > h1 {
+    color: rgb(18, 18, 18);
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 496;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .discounts .discounts_container .newdiscounts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .discounts .discounts_container .newdiscounts .discount {
+    width: 180px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 8px 8px;
+  }
+  .discounts .discounts_container .newdiscounts .discount > img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .def {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 496;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .cat {
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffd376;
+    margin-bottom: 6px;
+    margin-left: 10px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star .price {
+    font-family: New York;
+    font-size: 14px;
+    font-weight: 496;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6a6a6a;
+    margin-left: 10px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star .price_discount {
+    font-family: Work Sans;
+    font-size: 10px;
+    font-weight: 496;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: #959595;
+    text-align: left;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star .stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2px;
+    margin-right: 4px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .price_star .stars > img {
+    width: 10px;
+    height: 10px;
+  }
+  .discounts .discounts_container .newdiscounts .hidden {
+    display: none;
+  }
+}
