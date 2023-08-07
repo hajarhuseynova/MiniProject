@@ -1475,7 +1475,6 @@ footer .footer_container .column_last .socials .social > img {
   }
 }
 .sellests .sellests_container {
-  padding-top: 80px;
   padding-bottom: 80px;
 }
 .sellests .sellests_container > h1 {
@@ -1567,7 +1566,6 @@ footer .footer_container .column_last .socials .social > img {
     width: 740px;
   }
   .sellests .sellests_container {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
   .sellests .sellests_container > h1 {
@@ -1662,7 +1660,6 @@ footer .footer_container .column_last .socials .social > img {
     width: 370px;
   }
   .sellests .sellests_container {
-    padding-top: 40px;
     padding-bottom: 40px;
   }
   .sellests .sellests_container > h1 {
@@ -1749,6 +1746,303 @@ footer .footer_container .column_last .socials .social > img {
     height: 12px;
   }
   .sellests .sellests_container .newsellests .hidden {
+    display: none;
+  }
+}
+.giftbox .giftbox_container {
+  padding-bottom: 80px;
+}
+.giftbox .giftbox_container > h1 {
+  color: rgb(18, 18, 18);
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 30px;
+  width: 358px;
+}
+.giftbox .giftbox_container .giftbox_common {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 60px;
+}
+.giftbox .giftbox_container .giftbox_common .giftbox_left {
+  margin-top: 30px;
+  width: 505px;
+  border-radius: 10px;
+  height: 431px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(18, 18, 18);
+}
+.giftbox .giftbox_container .giftbox_common .giftbox_left > h1 {
+  color: #ffaf06;
+  font-family: Space Mono;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.giftbox .giftbox_container .giftbox_common .giftbox_left > p {
+  width: 364px;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.giftbox .giftbox_container .giftbox_common .giftbox_left > a {
+  text-decoration: none;
+}
+.giftbox .giftbox_container .giftbox_common .giftbox_left > a > button {
+  border-radius: 10px;
+  width: 154px;
+  background-color: transparent;
+  height: 49px;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffaf06;
+  border-color: #ffaf06;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.giftbox .giftbox_container .giftbox_common .giftbox_left > a > button > img {
+  width: 34px;
+  height: 25px;
+  margin-left: 10px;
+}
+.giftbox .giftbox_container .giftbox_common .giftbox_right {
+  width: 800px;
+  gap: 20px;
+}
+@media screen and (max-width: 1238px) {
+  .giftbox .giftbox_container {
+    padding-bottom: 60px;
+  }
+  .giftbox .giftbox_container .giftbox_common {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 100px;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left {
+    margin-top: 20px;
+    width: 460px;
+    border-radius: 10px;
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgb(18, 18, 18);
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > h1 {
+    color: #ffaf06;
+    font-family: Space Mono;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > p {
+    width: 300px;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > a {
+    text-decoration: none;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > a > button {
+    border-radius: 10px;
+    width: 140px;
+    background-color: transparent;
+    height: 49px;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffaf06;
+    border: 2px solid #ffaf06;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > a > button > img {
+    width: 34px;
+    height: 25px;
+    margin-left: 10px;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_right {
+    width: 400px;
+    gap: 20px;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_right > a > img {
+    height: 400px;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_right .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 740px) {
+  .giftbox .giftbox_container {
+    padding-bottom: 40px;
+  }
+  .giftbox .giftbox_container > h1 {
+    color: rgb(18, 18, 18);
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 496;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .giftbox .giftbox_container .giftbox_common {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0px;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left {
+    margin-top: 0;
+    width: 400px;
+    border-radius: 10px;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgb(18, 18, 18);
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > h1 {
+    color: #ffaf06;
+    font-family: Space Mono;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > p {
+    width: 350px;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > a {
+    text-decoration: none;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > a > button {
+    border-radius: 10px;
+    width: 160px;
+    background-color: transparent;
+    height: 49px;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffaf06;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #ffaf06;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_left > a > button > img {
+    width: 34px;
+    height: 25px;
+    margin-left: 10px;
+  }
+  .giftbox .giftbox_container .giftbox_common .giftbox_right {
+    display: none;
+  }
+  .giftbox .giftbox_container .giftbox_common .hidden {
     display: none;
   }
 }

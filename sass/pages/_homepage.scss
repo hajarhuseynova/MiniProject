@@ -756,7 +756,6 @@
 
 .sellests {
   .sellests_container {
-    padding-top: 80px;
     padding-bottom: 80px;
     > h1 {
       color: $black_01;
@@ -837,7 +836,6 @@
   }
   .sellests {
     .sellests_container {
-      padding-top: 60px;
       padding-bottom: 60px;
       > h1 {
         color: $black_01;
@@ -922,7 +920,6 @@
   }
   .sellests {
     .sellests_container {
-      padding-top: 40px;
       padding-bottom: 40px;
       > h1 {
         color: $black_01;
@@ -993,6 +990,253 @@
               }
             }
           }
+        }
+        .hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.giftbox {
+  .giftbox_container {
+    padding-bottom: 80px;
+    > h1 {
+      color: $black_01;
+      font-family: Space Mono;
+      font-size: 32px;
+      font-weight: 496;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 30px;
+      width: 358px;
+    }
+    .giftbox_common {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      .giftbox_left {
+        margin-top: 30px;
+        width: 505px;
+        border-radius: 10px;
+        height: 431px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        background-color: $black_01;
+        > h1 {
+          color: $orange_01;
+          font-family: Space Mono;
+          font-size: 42px;
+          font-weight: 500;
+          line-height: 50px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+        > p {
+          width: 364px;
+          font-family: Work Sans;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: $white;
+        }
+        > a {
+          text-decoration: none;
+          > button {
+            border-radius: 10px;
+            width: 154px;
+            background-color: transparent;
+            height: 49px;
+            font-family: Space Mono;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $orange_01;
+            border-color: $orange_01;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > img {
+              width: 34px;
+              height: 25px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .giftbox_right {
+        width: 800px;
+        gap: 20px;
+        > img {
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .giftbox {
+    .giftbox_container {
+      padding-bottom: 60px;
+      .giftbox_common {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        .giftbox_left {
+          margin-top: 20px;
+          width: 460px;
+          border-radius: 10px;
+          height: 350px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          justify-content: center;
+          align-items: center;
+          background-color: $black_01;
+          > h1 {
+            color: $orange_01;
+            font-family: Space Mono;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
+          > p {
+            width: 300px;
+            font-family: Work Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $white;
+          }
+          > a {
+            text-decoration: none;
+            > button {
+              border-radius: 10px;
+              width: 140px;
+              background-color: transparent;
+              height: 49px;
+              font-family: Space Mono;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: $orange_01;
+              border: 2px solid $orange_01;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              > img {
+                width: 34px;
+                height: 25px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+        .giftbox_right {
+          width: 400px;
+          gap: 20px;
+          > a {
+            > img {
+              height: 400px;
+            }
+          }
+          .hide {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .giftbox {
+    .giftbox_container {
+      padding-bottom: 40px;
+      > h1 {
+        color: $black_01;
+        font-family: Space Mono;
+        font-size: 20px;
+        font-weight: 496;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .giftbox_common {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        .giftbox_left {
+          margin-top: 0;
+          width: 400px;
+          border-radius: 10px;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          justify-content: center;
+          align-items: center;
+          background-color: $black_01;
+          > h1 {
+            color: $orange_01;
+            font-family: Space Mono;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
+          > p {
+            width: 350px;
+            font-family: Work Sans;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $white;
+          }
+          > a {
+            text-decoration: none;
+            > button {
+              border-radius: 10px;
+              width: 160px;
+              background-color: transparent;
+              height: 49px;
+              font-family: Space Mono;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: $orange_01;
+              display: flex;
+              border: 1px solid $orange_01;
+              justify-content: center;
+              align-items: center;
+              > img {
+                width: 34px;
+                height: 25px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+        .giftbox_right {
+          display: none;
         }
         .hidden {
           display: none;
