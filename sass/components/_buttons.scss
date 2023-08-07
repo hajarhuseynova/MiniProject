@@ -1,0 +1,20 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: $orange_02;
+  border: 2px solid $orange_01;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  transition: 0.5s;
+}
+button:hover {
+  transform: scale(0.95);
+}

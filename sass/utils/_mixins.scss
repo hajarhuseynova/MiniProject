@@ -1,0 +1,20 @@
+@mixin H1 {
+  color: $black_01;
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+@mixin H1Responsive {
+  color: $black_01;
+  font-family: Space Mono;
+  font-size: 20px;
+  font-weight: 496;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}

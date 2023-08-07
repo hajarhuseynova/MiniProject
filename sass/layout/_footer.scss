@@ -63,6 +63,7 @@ footer {
           border-radius: 0px 4px 4px 0px;
           border-color: transparent;
           background-color: $orange_01;
+          color: $black_01;
           font-family: Work Sans;
           margin-left: -10px;
           font-size: 14px;
@@ -70,6 +71,10 @@ footer {
           line-height: 18px;
           letter-spacing: 0em;
           text-align: center;
+          &:hover {
+            transform: scale(1);
+            
+          }
         }
       }
       .socials {
