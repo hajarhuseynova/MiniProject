@@ -3358,3 +3358,499 @@ a {
     color: #ffaf06;
   }
 }
+.reset {
+  width: 100%;
+}
+.reset .reset_container {
+  width: 100%;
+  height: 629px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.reset .reset_container .reset_left {
+  width: 50%;
+  background-image: url(../../assets/images/Register/parfume.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.reset .reset_container .reset_right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.reset .reset_container .reset_right > h1 {
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.reset .reset_container .reset_right > input {
+  width: 400px;
+  height: 15px;
+}
+.reset .reset_container .reset_right > a > button {
+  width: 435px;
+  height: 40px;
+  background-color: #ffaf06;
+  color: rgb(18, 18, 18);
+  font-weight: 500;
+}
+.reset .reset_container .reset_right > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  color: #ffaf06;
+}
+.reset .reset_container .reset_right .checkbox_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reset .reset_container .reset_right .checkbox_input > input {
+  margin-left: -215px;
+}
+.reset .reset_container .reset_right .checkbox_input > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 1238px) {
+  .reset {
+    width: 100%;
+  }
+  .reset .reset_container {
+    width: 100%;
+    height: 629px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .reset .reset_container .reset_left {
+    width: 50%;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .reset .reset_container .reset_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .reset .reset_container .reset_right > h1 {
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .reset .reset_container .reset_right > input {
+    width: 250px;
+    height: 15px;
+  }
+  .reset .reset_container .reset_right > a > button {
+    width: 285px;
+    height: 40px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+  }
+  .reset .reset_container .reset_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+  .reset .reset_container .reset_right .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reset .reset_container .reset_right .checkbox_input > input {
+    margin-left: -140px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .reset {
+    width: 100%;
+  }
+  .reset .reset_container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reset .reset_container .reset_left {
+    width: 100%;
+    height: 250px;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-right: 0;
+  }
+  .reset .reset_container .reset_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .reset .reset_container .reset_right > h1 {
+    font-family: Space Mono;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 25px;
+  }
+  .reset .reset_container .reset_right > input {
+    width: 300px;
+    height: 15px;
+    padding: 10px 6px;
+  }
+  .reset .reset_container .reset_right > a > button {
+    width: 315px;
+    height: 37px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .reset .reset_container .reset_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+  .reset .reset_container .reset_right .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reset .reset_container .reset_right .checkbox_input > input {
+    margin-left: -155px;
+  }
+  .reset .reset_container .reset_right .checkbox_input > p > span {
+    color: #ffaf06;
+  }
+}
+.forget {
+  width: 100%;
+}
+.forget .forget_container {
+  width: 100%;
+  height: 629px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.forget .forget_container .forget_left {
+  width: 50%;
+  background-image: url(../../assets/images/Register/parfume.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.forget .forget_container .forget_right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.forget .forget_container .forget_right > h1 {
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.forget .forget_container .forget_right > input {
+  width: 400px;
+  height: 15px;
+}
+.forget .forget_container .forget_right > a > button {
+  width: 435px;
+  height: 40px;
+  background-color: #ffaf06;
+  color: rgb(18, 18, 18);
+  font-weight: 500;
+}
+.forget .forget_container .forget_right > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  color: #ffaf06;
+}
+.forget .forget_container .forget_right .checkbox_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.forget .forget_container .forget_right .checkbox_input > input {
+  margin-left: -215px;
+}
+.forget .forget_container .forget_right .checkbox_input > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 1238px) {
+  .forget {
+    width: 100%;
+  }
+  .forget .forget_container {
+    width: 100%;
+    height: 629px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .forget .forget_container .forget_left {
+    width: 50%;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .forget .forget_container .forget_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .forget .forget_container .forget_right > h1 {
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .forget .forget_container .forget_right > input {
+    width: 250px;
+    height: 15px;
+  }
+  .forget .forget_container .forget_right > a > button {
+    width: 285px;
+    height: 40px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+  }
+  .forget .forget_container .forget_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+  .forget .forget_container .forget_right .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .forget .forget_container .forget_right .checkbox_input > input {
+    margin-left: -140px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .forget {
+    width: 100%;
+  }
+  .forget .forget_container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .forget .forget_container .forget_left {
+    width: 100%;
+    height: 250px;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-right: 0;
+  }
+  .forget .forget_container .forget_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .forget .forget_container .forget_right > h1 {
+    font-family: Space Mono;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 25px;
+  }
+  .forget .forget_container .forget_right > input {
+    width: 300px;
+    height: 15px;
+    padding: 10px 6px;
+  }
+  .forget .forget_container .forget_right > a > button {
+    width: 315px;
+    height: 37px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .forget .forget_container .forget_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+  .forget .forget_container .forget_right .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .forget .forget_container .forget_right .checkbox_input > input {
+    margin-left: -155px;
+  }
+  .forget .forget_container .forget_right .checkbox_input > p > span {
+    color: #ffaf06;
+  }
+}
