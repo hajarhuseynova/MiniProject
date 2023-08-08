@@ -3014,8 +3014,7 @@ a {
   }
   .register .register_container {
     width: 100%;
-    height: 700px;
-    margin: auto;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3023,16 +3022,13 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .register .register_container .register_left {
     width: 100%;
-    height: 100%;
+    height: 250px;
     background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
@@ -3066,7 +3062,7 @@ a {
     line-height: 34px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 25px;
   }
   .register .register_container .register_right > p {
     font-family: Work Sans;
@@ -3091,7 +3087,7 @@ a {
     background-color: #ffaf06;
     color: rgb(18, 18, 18);
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .register .register_container .register_right > a > button:hover {
     -webkit-transform: scale(1);
@@ -3111,6 +3107,254 @@ a {
     margin-left: -155px;
   }
   .register .register_container .register_right .checkbox_input > p > span {
+    color: #ffaf06;
+  }
+}
+.login {
+  width: 100%;
+}
+.login .login_container {
+  width: 100%;
+  height: 629px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.login .login_container .login_left {
+  width: 50%;
+  background-image: url(../../assets/images/Register/parfume.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.login .login_container .login_right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.login .login_container .login_right > h1 {
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.login .login_container .login_right > input {
+  width: 400px;
+  height: 15px;
+}
+.login .login_container .login_right > a > button {
+  width: 435px;
+  height: 40px;
+  background-color: #ffaf06;
+  color: rgb(18, 18, 18);
+  font-weight: 500;
+}
+.login .login_container .login_right > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  color: #ffaf06;
+}
+.login .login_container .login_right .checkbox_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login .login_container .login_right .checkbox_input > input {
+  margin-left: -215px;
+}
+.login .login_container .login_right .checkbox_input > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 1238px) {
+  .login {
+    width: 100%;
+  }
+  .login .login_container {
+    width: 100%;
+    height: 629px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .login .login_container .login_left {
+    width: 50%;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .login .login_container .login_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .login .login_container .login_right > h1 {
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .login .login_container .login_right > input {
+    width: 250px;
+    height: 15px;
+  }
+  .login .login_container .login_right > a > button {
+    width: 285px;
+    height: 40px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+  }
+  .login .login_container .login_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+  .login .login_container .login_right .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login .login_container .login_right .checkbox_input > input {
+    margin-left: -140px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .login {
+    width: 100%;
+  }
+  .login .login_container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login .login_container .login_left {
+    width: 100%;
+    height: 250px;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-right: 0;
+  }
+  .login .login_container .login_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .login .login_container .login_right > h1 {
+    font-family: Space Mono;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 25px;
+  }
+  .login .login_container .login_right > input {
+    width: 300px;
+    height: 15px;
+    padding: 10px 6px;
+  }
+  .login .login_container .login_right > a > button {
+    width: 315px;
+    height: 37px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .login .login_container .login_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+  .login .login_container .login_right .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login .login_container .login_right .checkbox_input > input {
+    margin-left: -155px;
+  }
+  .login .login_container .login_right .checkbox_input > p > span {
     color: #ffaf06;
   }
 }
