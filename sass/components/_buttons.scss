@@ -18,3 +18,17 @@ button {
 button:hover {
   transform: scale(0.95);
 }
+.addtobasket {
+  padding: 0px 16px 0px 16px;
+  border-radius: 4px;
+  gap: 8px;
+  background-color: $orange_01;
+  border: 1px solid $black_01;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $black_01;
+}

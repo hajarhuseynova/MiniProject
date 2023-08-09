@@ -164,6 +164,21 @@ button:hover {
           transform: scale(0.95);
 }
 
+.addtobasket {
+  padding: 0px 16px 0px 16px;
+  border-radius: 4px;
+  gap: 8px;
+  background-color: #ffaf06;
+  border: 1px solid rgb(18, 18, 18);
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(18, 18, 18);
+}
+
 .register_input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2263,7 +2278,7 @@ a {
   height: 100%;
 }
 .testing .testing_container .testing_common .testing_right {
-  width: 505px;
+  width: 470px;
   height: 243px;
 }
 .testing .testing_container .testing_common .testing_right > h1 {
@@ -2355,6 +2370,9 @@ a {
     display: -ms-flexbox;
     display: flex;
     margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 40px;
   }
   .testing .testing_container .testing_common {
@@ -4590,5 +4608,465 @@ a {
   }
   .infoPage .infoPage_container .infoPage_right .special_input {
     margin-bottom: 30px;
+  }
+}
+.tester .tester_container {
+  padding: 80px 0;
+}
+.tester .tester_container .tester_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.tester .tester_container .tester_top > h1 {
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(18, 18, 18);
+}
+.tester .tester_container .tester_top > p {
+  width: 610px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(18, 18, 18);
+}
+.tester .tester_container .tester_top .tester_input {
+  width: 400px;
+  position: relative;
+}
+.tester .tester_container .tester_top .tester_input > input {
+  width: 360px;
+  height: 15px;
+  padding: 10px;
+  border: 1px solid #ffaf06;
+  border-radius: 8px;
+}
+.tester .tester_container .tester_top .tester_input > img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 25px;
+  top: 8px;
+}
+.tester .tester_container .tester_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+}
+.tester .tester_container .tester_bottom .tester_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume {
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume > img {
+  width: 100%;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
+  font-family: Space Mono;
+  font-size: 20px;
+  font-weight: 496;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > img {
+  width: 12px;
+  height: 13px;
+  margin-left: 3px;
+  margin-top: 7px;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
+  margin-left: 100px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.tester .tester_container .tester_bottom .tester_right {
+  width: 70%;
+  height: 355px;
+  border-radius: 8px;
+  border: 1px solid #414141;
+  padding: 21px 20px;
+}
+.tester .tester_container .tester_bottom .tester_right > ol > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3px;
+  font-family: Work Sans;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.tester .tester_container .tester_bottom .tester_right > ol > li img {
+  width: 20px;
+  height: 20px;
+}
+.tester .tester_container .tester_bottom .tester_right > a > button {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1238px) {
+  .tester .tester_container {
+    padding: 60px 0;
+  }
+  .tester .tester_container .tester_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .tester .tester_container .tester_top > h1 {
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 496;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(18, 18, 18);
+  }
+  .tester .tester_container .tester_top > p {
+    width: 610px;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(18, 18, 18);
+  }
+  .tester .tester_container .tester_top .tester_input {
+    width: 400px;
+    position: relative;
+  }
+  .tester .tester_container .tester_top .tester_input > input {
+    width: 360px;
+    height: 15px;
+    padding: 10px;
+    border: 1px solid #ffaf06;
+    border-radius: 8px;
+  }
+  .tester .tester_container .tester_top .tester_input > img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 25px;
+    top: 8px;
+  }
+  .tester .tester_container .tester_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tester .tester_container .tester_bottom .tester_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume {
+    width: 240px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > img {
+    width: 100%;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 496;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > img {
+    width: 12px;
+    height: 13px;
+    margin-left: 3px;
+    margin-top: 7px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
+    margin-left: 60px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    width: 80px;
+  }
+  .tester .tester_container .tester_bottom .tester_right {
+    width: 70%;
+    height: 355px;
+    border-radius: 8px;
+    border: 1px solid #414141;
+    padding: 21px 20px;
+    margin-top: 20px;
+  }
+  .tester .tester_container .tester_bottom .tester_right > ol > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3px;
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .tester .tester_container .tester_bottom .tester_right > ol > li img {
+    width: 20px;
+    height: 20px;
+  }
+  .tester .tester_container .tester_bottom .tester_right > a > button {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .tester .tester_container {
+    padding: 40px 0;
+  }
+  .tester .tester_container .tester_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .tester .tester_container .tester_top > h1 {
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 496;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(18, 18, 18);
+  }
+  .tester .tester_container .tester_top > p {
+    width: 340px;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(18, 18, 18);
+  }
+  .tester .tester_container .tester_top .tester_input {
+    width: 340px;
+    position: relative;
+  }
+  .tester .tester_container .tester_top .tester_input > input {
+    width: 330px;
+    height: 15px;
+    padding: 10px;
+    border: 1px solid #ffaf06;
+    border-radius: 8px;
+  }
+  .tester .tester_container .tester_top .tester_input > img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+  }
+  .tester .tester_container .tester_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0 0 0;
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tester .tester_container .tester_bottom .tester_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume {
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > img {
+    width: 100%;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 496;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > img {
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    margin-top: 7px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    width: 80px;
+    border: 1px solid;
+  }
+  .tester .tester_container .tester_bottom .tester_right {
+    width: 70%;
+    height: 345px;
+    border-radius: 8px;
+    border: 1px solid #414141;
+    padding: 10px;
+    margin-top: 0;
+  }
+  .tester .tester_container .tester_bottom .tester_right > ol > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3px;
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .tester .tester_container .tester_bottom .tester_right > ol > li img {
+    width: 20px;
+    height: 20px;
+  }
+  .tester .tester_container .tester_bottom .tester_right > a > button {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 13px;
   }
 }

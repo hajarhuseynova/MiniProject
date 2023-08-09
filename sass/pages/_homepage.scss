@@ -1308,7 +1308,7 @@ a {
         }
       }
       .testing_right {
-        width: 505px;
+        width: 470px;
         height: 243px;
         > h1 {
           font-family: Space Mono;
@@ -1398,6 +1398,7 @@ a {
       padding-bottom: 40px;
       display: flex;
       margin: auto;
+      justify-content: center;
       margin-top: 40px;
       .testing_common {
         display: flex;
