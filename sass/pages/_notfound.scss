@@ -1,0 +1,76 @@
+.found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  gap: 30px;
+  > img {
+    width: 855px;
+    height: 396px;
+  }
+  > p {
+    width: 609px;
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $black_01;
+  }
+  > a {
+    > button {
+      width: 465px;
+      height: 30px;
+      border-radius: 4px;
+      border: 1px;
+      gap: 8px;
+      border: 1px solid transparent;
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .found {
+    padding: 40px 0;
+    gap: 25px;
+    > img {
+      width: 700px;
+      height: 300px;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    gap: 20px;
+    > img {
+      width: 350px;
+      height: 250px;
+    }
+    > p {
+      width: 350px;
+      font-family: Futura PT;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $black_01;
+    }
+    > a {
+      > button {
+        width: 350px;
+        height: 28px;
+        border-radius: 4px;
+        border: 1px;
+        gap: 8px;
+        border: 1px solid transparent;
+      }
+    }
+  }
+}
