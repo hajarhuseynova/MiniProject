@@ -5911,3 +5911,427 @@ a {
     border: 1px solid transparent;
   }
 }
+.basket .basket_container {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.basket .basket_container .basketCommon {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.basket .basket_container .basketCommon .basket {
+  padding: 20px;
+  border: 1px solid #cecece;
+}
+.basket .basket_container .basketCommon .basket .basketInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.basket .basket_container .basketCommon .basket .basketInner .basketInner_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.basket .basket_container .basketCommon .basket .basketInner .basketInner_left > img {
+  width: 174px;
+  height: 186px;
+  border-radius: 4px;
+}
+.basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right {
+  margin-left: 20px;
+}
+.basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 510;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 247px;
+  margin-bottom: 20px;
+}
+.basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #414141;
+}
+.basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
+  margin-left: 270px;
+  margin-top: -7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.basket .basket_container .basketCommon .basket .basketInner .basketInner_right > h1 {
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(18, 18, 18);
+}
+.basket .basket_container .basketCommon .basket .basketInner .basketInner_right > a > img {
+  width: 24px;
+  height: 24px;
+}
+.basket .basket_container .money {
+  width: 30%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #cecece;
+  padding: 20px;
+}
+.basket .basket_container .money > h3 {
+  font-family: Work Sans;
+  font-size: 26px;
+  font-weight: 410;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket .basket_container .money > p {
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket .basket_container .money > p > span {
+  margin-left: 230px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket .basket_container .money > h5 {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.basket .basket_container .money > h5 > span {
+  margin-left: 200px;
+}
+.basket .basket_container .money > a > button {
+  border: 1px solid transparent;
+  width: 100%;
+  height: 32px;
+  margin-top: 15px;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 1238px) {
+  .basket .basket_container {
+    padding: 60px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket .basket_container .basketCommon {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .basket .basket_container .basketCommon .basket {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #cecece;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left > img {
+    width: 174px;
+    height: 186px;
+    border-radius: 4px;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right {
+    margin-left: 20px;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 510;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 247px;
+    margin-bottom: 20px;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #414141;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
+    margin-left: 180px;
+    margin-top: -7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > h1 {
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(18, 18, 18);
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > a > img {
+    width: 24px;
+    height: 24px;
+  }
+  .basket .basket_container .money {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #cecece;
+    padding: 20px;
+  }
+  .basket .basket_container .money > h3 {
+    font-family: Work Sans;
+    font-size: 26px;
+    font-weight: 410;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .basket .basket_container .money > p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .basket .basket_container .money > p > span {
+    margin-left: 230px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .basket .basket_container .money > h5 {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .basket .basket_container .money > h5 > span {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .basket .basket_container {
+    padding: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket .basket_container .basketCommon {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .basket .basket_container .basketCommon .basket {
+    padding: 10px;
+    border: 1px solid #cecece;
+    width: 100%;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right {
+    margin-left: 10px;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 180px;
+    margin-bottom: 10px;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > p {
+    font-family: Work Sans;
+    font-size: 13px;
+    font-weight: 450;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #414141;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
+    margin-left: 20px;
+    margin-top: -7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > h1 {
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(18, 18, 18);
+  }
+  .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > a > img {
+    width: 20px;
+    height: 20px;
+  }
+  .basket .basket_container .money {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #cecece;
+    padding: 10px 15px;
+  }
+  .basket .basket_container .money > h3 {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 410;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .basket .basket_container .money > p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .basket .basket_container .money > p > span {
+    margin-left: 230px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .basket .basket_container .money > h5 {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .basket .basket_container .money > h5 > span {
+    margin-left: 200px;
+  }
+  .basket .basket_container .money > a > button {
+    width: 97%;
+    font-size: 17px;
+    margin-top: 5px;
+  }
+}
