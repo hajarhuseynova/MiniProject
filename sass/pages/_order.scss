@@ -1,0 +1,506 @@
+.order {
+  .order_container {
+    padding: 60px 0;
+    .order_info {
+      .contact_info {
+        display: flex;
+        flex-direction: column;
+        > h3 {
+          font-family: Space Mono;
+          font-size: 24px;
+          font-weight: 450;
+          line-height: 31px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: $black_03;
+          margin-bottom: 20px;
+        }
+        .contact_info_inputs {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          > input {
+            width: 370px;
+            height: 5px;
+          }
+          > textarea {
+            width: 370px;
+          }
+        }
+      }
+      .delivery_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > h3 {
+          font-family: Space Mono;
+          font-size: 24px;
+          font-weight: 450;
+          line-height: 31px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: $black_03;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+        .delivery {
+          display: flex;
+          justify-content: space-between;
+          background-color: $orange_04;
+          width: 67%;
+          padding: 15px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          .delivery_left {
+            display: flex;
+            align-items: center;
+            > img {
+              margin-right: 10px;
+              width: 50px;
+              height: 50px;
+            }
+            > h3 {
+              font-family: Work Sans;
+              font-size: 20px;
+              font-weight: 496;
+              line-height: 21px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $black_01;
+            }
+          }
+          .delivery_right {
+            display: flex;
+            align-items: center;
+            > input {
+              width: 50px;
+              height: 20px;
+            }
+          }
+        }
+      }
+      .payment_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > h3 {
+          font-family: Space Mono;
+          font-size: 24px;
+          font-weight: 450;
+          line-height: 31px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: $black_03;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+        .payments {
+          display: flex;
+          align-items: center;
+          width: 67%;
+          gap: 10px;
+          .payment {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid $black_01 !important;
+            border-radius: 10px;
+            width: 60%;
+            padding: 15px 0px 15px 15px;
+            border: 5px;
+            margin-bottom: 20px;
+            .payment_left {
+              display: flex;
+              align-items: center;
+              > img {
+                margin-right: 10px;
+                width: 30px;
+                height: 30px;
+              }
+              > h3 {
+                font-family: Work Sans;
+                font-size: 15px;
+                font-weight: 496;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $black_01;
+              }
+            }
+            .payment_right {
+              display: flex;
+              align-items: center;
+              > input {
+                width: 40px;
+                height: 15px;
+              }
+            }
+          }
+        }
+      }
+      .order_buttons {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 67%;
+        gap: 10px;
+        .delete {
+          width: 50%;
+          > button {
+            width: 100%;
+            height: 30px;
+            background-color: transparent;
+          }
+        }
+        .add {
+          width: 50%;
+          > button {
+            width: 100%;
+            height: 30px;
+            border: 1px solid transparent;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .order {
+    .order_container {
+      padding: 40px 0;
+      .order_info {
+        .contact_info {
+          display: flex;
+          flex-direction: column;
+          > h3 {
+            font-family: Space Mono;
+            font-size: 24px;
+            font-weight: 450;
+            line-height: 31px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $black_03;
+            margin-bottom: 20px;
+          }
+          .contact_info_inputs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            > input {
+              width: 500px;
+              height: 5px;
+            }
+            > textarea {
+              width: 500px;
+            }
+          }
+        }
+        .delivery_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          > h3 {
+            font-family: Space Mono;
+            font-size: 24px;
+            font-weight: 450;
+            line-height: 31px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $black_03;
+            margin-bottom: 20px;
+            margin-top: 20px;
+          }
+          .delivery {
+            display: flex;
+            justify-content: space-between;
+            background-color: $orange_04;
+            width: 540px;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            .delivery_left {
+              display: flex;
+              align-items: center;
+              > img {
+                margin-right: 10px;
+                width: 50px;
+                height: 50px;
+              }
+              > h3 {
+                font-family: Work Sans;
+                font-size: 20px;
+                font-weight: 496;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $black_01;
+              }
+            }
+            .delivery_right {
+              display: flex;
+              align-items: center;
+              > input {
+                width: 50px;
+                height: 20px;
+              }
+            }
+          }
+        }
+        .payment_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          > h3 {
+            font-family: Space Mono;
+            font-size: 24px;
+            font-weight: 450;
+            line-height: 31px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $black_03;
+            margin-bottom: 20px;
+            margin-top: 20px;
+          }
+          .payments {
+            display: flex;
+            align-items: center;
+
+            flex-wrap: wrap;
+            width: 520px;
+            gap: 10px;
+            .payment {
+              display: flex;
+              justify-content: space-between;
+              border: 1px solid $black_01 !important;
+              border-radius: 10px;
+              width: 250px;
+              padding: 15px 0px 15px 15px;
+              border: 5px;
+              margin-bottom: 20px;
+              .payment_left {
+                display: flex;
+                align-items: center;
+                > img {
+                  margin-right: 8px;
+                  width: 20px;
+                  height: 20px;
+                }
+                > h3 {
+                  font-family: Work Sans;
+                  font-size: 15px;
+                  font-weight: 496;
+                  line-height: 18px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                  color: $black_01;
+                }
+              }
+              .payment_right {
+                display: flex;
+                align-items: center;
+                > input {
+                  width: 30px;
+                  height: 15px;
+                }
+              }
+            }
+          }
+        }
+        .order_buttons {
+          padding-top: 10px;
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          width: 550px;
+          gap: 0px;
+          .delete {
+            > button {
+              margin-left: 16px;
+              height: 30px;
+              width: 250px;
+              background-color: transparent;
+            }
+          }
+          .add {
+            > button {
+              width: 250px;
+              height: 30px;
+              border: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .order {
+    .order_container {
+      padding: 30px 0;
+      .order_info {
+        .contact_info {
+          display: flex;
+          flex-direction: column;
+          > h3 {
+            font-family: Space Mono;
+            font-size: 20px;
+            font-weight: 450;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $black_03;
+            margin-bottom: 20px;
+          }
+          .contact_info_inputs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            > input {
+              width: 500px;
+              height: 5px;
+            }
+            > textarea {
+              width: 500px;
+            }
+          }
+        }
+        .delivery_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          > h3 {
+            font-family: Space Mono;
+            font-size: 20px;
+            font-weight: 450;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $black_03;
+            margin-bottom: 20px;
+            margin-top: 20px;
+          }
+          .delivery {
+            display: flex;
+            justify-content: space-between;
+            background-color: $orange_04;
+            width: 370px;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            .delivery_left {
+              display: flex;
+              align-items: center;
+              > img {
+                margin-right: 5px;
+                width: 40px;
+                height: 40px;
+              }
+              > h3 {
+                font-family: Work Sans;
+                font-size: 18px;
+                font-weight: 496;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $black_01;
+              }
+            }
+            .delivery_right {
+              display: flex;
+              align-items: center;
+              > input {
+                width: 30px;
+                height: 16px;
+              }
+            }
+          }
+        }
+        .payment_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          > h3 {
+            font-family: Space Mono;
+            font-size: 20px;
+            font-weight: 450;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $black_03;
+            margin-bottom: 20px;
+            margin-top: 20px;
+          }
+          .payments {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 370px;
+            gap: 10px;
+            .payment {
+              display: flex;
+              justify-content: space-between;
+              border: 1px solid $black_01 !important;
+              border-radius: 10px;
+              width: 360px;
+              padding: 15px 0px 15px 15px;
+              border: 5px;
+              margin-bottom: 20px;
+              .payment_left {
+                display: flex;
+                align-items: center;
+                > img {
+                  margin-right: 8px;
+                  width: 20px;
+                  height: 20px;
+                }
+                > h3 {
+                  font-family: Work Sans;
+                  font-size: 15px;
+                  font-weight: 496;
+                  line-height: 18px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                  color: $black_01;
+                }
+              }
+              .payment_right {
+                display: flex;
+                align-items: center;
+                > input {
+                  width: 30px;
+                  height: 15px;
+                }
+              }
+            }
+          }
+        }
+        .order_buttons {
+          padding-top: 10px;
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          width: 370px;
+          gap: 10px;
+          .delete {
+            > button {
+              margin-left: 0px;
+              height: 30px;
+              width: 360px;
+              background-color: transparent;
+            }
+          }
+          .add {
+            > button {
+              width: 360px;
+              height: 30px;
+              border: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
