@@ -238,12 +238,12 @@ textarea:focus {
 
 .navbar {
   background-color: rgb(18, 18, 18);
-  height: 81px;
   width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 100;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -252,6 +252,19 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+.navbar .navbar_container .navbar_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 81px;
+  margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -260,20 +273,23 @@ textarea:focus {
           align-items: center;
   width: 95%;
 }
-.navbar .navbar_container .navbar_left {
+.navbar .navbar_container .navbar_top .navbar_left {
   width: 90px;
 }
-.navbar .navbar_container .navbar_left .navbar_menu {
+.navbar .navbar_container .navbar_top .navbar_left .navbar_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
-.navbar .navbar_container .navbar_left .navbar_menu > a > img {
+.navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a > img {
   width: 24px;
   height: 24px;
 }
-.navbar .navbar_container .navbar_left .navbar_menu .hide {
+.navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a #sidebarDelete {
+  display: none;
+}
+.navbar .navbar_container .navbar_top .navbar_left .navbar_menu .hide {
   font-family: Space Mono;
   font-size: 22px;
   font-weight: 400;
@@ -282,33 +298,84 @@ textarea:focus {
   color: #fff;
   margin-top: 3px;
 }
-.navbar .navbar_container .navbar_left .navbar_menu > a .hidden {
+.navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a .hidden {
   display: none;
 }
-.navbar .navbar_container .navbar_middle > a > img {
+.navbar .navbar_container .navbar_top .navbar_middle > a > img {
   width: 100px;
   height: 25px;
 }
-.navbar .navbar_container .navbar_right .navbar_icons {
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
-.navbar .navbar_container .navbar_right .navbar_icons > a > img {
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a > img {
   width: 24px;
   height: 24px;
+}
+.navbar .navbar_container #navbar_bottom {
+  position: absolute;
+  top: 81px;
+  width: 0;
+  height: 250px;
+  background-color: #959595;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  gap: 5px;
+}
+.navbar .navbar_container #navbar_bottom > a > h1 {
+  font-family: Space Mono;
+  font-size: 26px;
+  font-weight: 450;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navbar .navbar_container #navbar_bottom > a .visible {
+  margin-left: -15000px;
 }
 
 @media screen and (max-width: 1238px) {
   .container {
     width: 740px;
   }
-  .navbar .navbar_container .navbar_left .navbar_menu {
+  .navbar .navbar_container .navbar_top .navbar_left .navbar_menu {
     gap: 10px;
   }
-  .navbar .navbar_container .navbar_right .navbar_icons {
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons {
     gap: 15px;
+  }
+  .navbar .navbar_container #navbar_bottom > a > h1 {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 450;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navbar .navbar_container #navbar_bottom > a .visible {
+    margin-left: -15000px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -321,10 +388,10 @@ textarea:focus {
   .navbar {
     height: 64px;
   }
-  .navbar .navbar_container .navbar_left {
+  .navbar .navbar_container .navbar_top .navbar_left {
     width: 30px;
   }
-  .navbar .navbar_container .navbar_left .navbar_menu {
+  .navbar .navbar_container .navbar_top .navbar_left .navbar_menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -333,16 +400,53 @@ textarea:focus {
             align-items: center;
     gap: 10px;
   }
-  .navbar .navbar_container .navbar_left .navbar_menu > a .hidden {
+  .navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a .hidden {
     display: initial;
     width: 96px;
     height: 24px;
   }
-  .navbar .navbar_container .navbar_middle > a > img {
+  .navbar .navbar_container .navbar_top .navbar_middle > a > img {
     display: none;
   }
-  .navbar .navbar_container .navbar_right .navbar_icons {
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons {
     gap: 10px;
+  }
+  .navbar .navbar_container #navbar_bottom {
+    position: absolute;
+    top: 65px;
+    width: 0;
+    height: 250px;
+    background-color: #959595;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    gap: 5px;
+  }
+  .navbar .navbar_container #navbar_bottom > a > h1 {
+    font-family: Space Mono;
+    font-size: 21px;
+    font-weight: 450;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navbar .navbar_container #navbar_bottom > a .visible {
+    margin-left: -15000px;
   }
 }
 footer {

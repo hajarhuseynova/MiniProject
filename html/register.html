@@ -16,25 +16,43 @@
     <div class="root">
       <header class="navbar">
         <div class="navbar_container">
-          <div class="navbar_left">
-            <div class="navbar_menu">
-              <a> <img src="../assets/icons/header/Burger.svg" /></a>
-              <a class="hide">Menu</a>
-              <a>
-                <img class="hidden" src="../assets/icons/header/Logo.svg"
-              /></a>
+          <div class="navbar_top">
+            <div class="navbar_left">
+              <div class="navbar_menu">
+                <a>
+                  <img
+                    src="../assets/icons/header/Sidebar.svg"
+                    id="sidebarDelete"
+                    style="margin-top: 3px"
+                  />
+                  <img src="../assets/icons/header/Burger.svg" id="burger" />
+                </a>
+
+                <a class="hide" id="menu">Menu</a>
+                <a>
+                  <img class="hidden" src="../assets/icons/header/Logo.svg"
+                /></a>
+              </div>
+            </div>
+            <div class="navbar_middle">
+              <a> <img src="../assets/icons/header/Logo.svg" /></a>
+            </div>
+            <div class="navbar_right">
+              <div class="navbar_icons">
+                <a> <img src="../assets/icons/header/Search.svg" /></a>
+                <a> <img src="../assets/icons/header/Heart.svg" /></a>
+                <a> <img src="../assets/icons/header/User.svg" /></a>
+                <a> <img src="../assets/icons/header/Cart.svg" /></a>
+              </div>
             </div>
           </div>
-          <div class="navbar_middle">
-            <a> <img src="../assets/icons/header/Logo.svg" /></a>
-          </div>
-          <div class="navbar_right">
-            <div class="navbar_icons">
-              <a> <img src="../assets/icons/header/Search.svg" /></a>
-              <a> <img src="../assets/icons/header/Heart.svg" /></a>
-              <a> <img src="../assets/icons/header/User.svg" /></a>
-              <a> <img src="../assets/icons/header/Cart.svg" /></a>
-            </div>
+          <div id="navbar_bottom">
+            <a><h1 class="visible">Haqqimizda</h1></a>
+            <a><h1 class="visible">Qoxular</h1></a>
+            <a><h1 class="visible">Tustuler</h1></a>
+            <a><h1 class="visible">Hediyye Qutusu</h1></a>
+            <a><h1 class="visible">Test Qutusu</h1></a>
+            <a><h1 class="visible">Elaqe</h1></a>
           </div>
         </div>
       </header>
@@ -132,5 +150,7 @@
         </div>
       </footer>
     </div>
+    <script src="../js/index.js"></script>
+
   </body>
 </html>
