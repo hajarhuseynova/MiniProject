@@ -1003,6 +1003,35 @@ a {
   height: 415px;
   background-color: #fff;
   border-radius: 8px 8px;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+.products .products_container .newproducts .product .new {
+  background-color: #ffaf06;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  width: 60px;
+  height: 20px;
+  border-radius: 10px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
 }
 .products .products_container .newproducts .product > img {
   width: 295px;
@@ -1062,6 +1091,9 @@ a {
 .products .products_container .newproducts .product .price_star .stars > img {
   width: 12px;
   height: 12px;
+}
+.products .products_container .newproducts .product:hover {
+  border: 1px solid #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {
@@ -1181,6 +1213,12 @@ a {
     background-color: #fff;
     border-radius: 8px 8px;
   }
+  .products .products_container .newproducts .product .new {
+    width: 40px;
+    height: 15px;
+    font-size: 12px;
+    line-height: 14px;
+  }
   .products .products_container .newproducts .product > img {
     width: 180px;
     height: 180px;
@@ -1272,6 +1310,9 @@ a {
   width: 295px;
   height: 415px;
   border-radius: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .smeels .smells_container .newsmeels .smell > h3 {
   width: 200px;
@@ -1434,6 +1475,10 @@ a {
   width: 400px;
   border-radius: 7px 7px;
   background-color: #fff;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .smokes .smokes_container .newsmokes .smoke > img {
   width: 100%;
@@ -1468,6 +1513,9 @@ a {
   height: 45px;
   margin-left: 15px;
   margin-bottom: 8px;
+}
+.smokes .smokes_container .newsmokes .smoke:hover {
+  border: 1px solid #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {
@@ -1612,6 +1660,10 @@ a {
   height: 415px;
   background-color: #fff;
   border-radius: 8px 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .sellests .sellests_container .newsellests .sellest > img {
   width: 295px;
@@ -1671,6 +1723,9 @@ a {
 .sellests .sellests_container .newsellests .sellest .price_star .stars > img {
   width: 12px;
   height: 12px;
+}
+.sellests .sellests_container .newsellests .sellest:hover {
+  border: 1px solid #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {
@@ -2113,6 +2168,35 @@ a {
   height: 415px;
   background-color: #fff;
   border-radius: 8px 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+.discounts .discounts_container .newdiscounts .discount .dis {
+  background-color: #ffaf06;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  width: 55px;
+  height: 20px;
+  border-radius: 10px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
 }
 .discounts .discounts_container .newdiscounts .discount > img {
   width: 295px;
@@ -2181,6 +2265,9 @@ a {
 .discounts .discounts_container .newdiscounts .discount .price_star .stars > img {
   width: 12px;
   height: 12px;
+}
+.discounts .discounts_container .newdiscounts .discount:hover {
+  border: 1px solid #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {
@@ -2306,6 +2393,12 @@ a {
     height: 280px;
     background-color: #fff;
     border-radius: 8px 8px;
+  }
+  .discounts .discounts_container .newdiscounts .discount .dis {
+    width: 40px;
+    height: 15px;
+    font-size: 12px;
+    line-height: 14px;
   }
   .discounts .discounts_container .newdiscounts .discount > img {
     width: 180px;
