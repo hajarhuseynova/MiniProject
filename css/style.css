@@ -281,22 +281,28 @@ textarea:focus {
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a > img {
   width: 24px;
   height: 24px;
 }
-.navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a #sidebarDelete {
+.navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a .hideImage {
+  display: none;
+}
+.navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a .displaynone {
   display: none;
 }
 .navbar .navbar_container .navbar_top .navbar_left .navbar_menu .hide {
   font-family: Space Mono;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
   color: #fff;
-  margin-top: 3px;
+  margin-top: 0px;
 }
 .navbar .navbar_container .navbar_top .navbar_left .navbar_menu > a .hidden {
   display: none;
@@ -315,10 +321,10 @@ textarea:focus {
   width: 24px;
   height: 24px;
 }
-.navbar .navbar_container #navbar_bottom {
+.navbar .navbar_container .navbar_bottom {
   position: absolute;
   top: 81px;
-  width: 0;
+  width: 100%;
   height: 250px;
   background-color: #959595;
   display: -webkit-box;
@@ -338,7 +344,7 @@ textarea:focus {
   transition: 0.6s;
   gap: 5px;
 }
-.navbar .navbar_container #navbar_bottom > a > h1 {
+.navbar .navbar_container .navbar_bottom > a > h1 {
   font-family: Space Mono;
   font-size: 26px;
   font-weight: 450;
@@ -349,8 +355,11 @@ textarea:focus {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.navbar .navbar_container #navbar_bottom > a .visible {
+.navbar .navbar_container .navbar_bottom > a .visible {
   margin-left: -15000px;
+}
+.navbar .navbar_container .hideDiv {
+  width: 0;
 }
 
 @media screen and (max-width: 1238px) {
@@ -836,11 +845,12 @@ a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
+  color: rgb(18, 18, 18);
 }
 
 .remember {
   width: 100%;
-  height: 660px;
+  height: 100vh;
   background-image: url(../../assets/images/Remember/Image1.jpg);
   background-size: cover;
   background-position: center;
@@ -893,7 +903,6 @@ a {
   }
   .remember {
     width: 100%;
-    height: 520px;
     background-image: url(../../assets/images/Remember/Image1.jpg);
     background-size: cover;
     background-position: center;
@@ -936,7 +945,6 @@ a {
   }
   .remember {
     width: 100%;
-    height: 520px;
     background-image: url(../../assets/images/Remember/Image1.jpg);
     background-size: cover;
     background-position: center;
@@ -1424,7 +1432,6 @@ a {
 }
 .smokes .smokes_container .newsmokes .smoke {
   width: 400px;
-  height: 483px;
   border-radius: 7px 7px;
   background-color: #fff;
 }
@@ -1454,11 +1461,13 @@ a {
   text-align: left;
   margin-left: 15px;
   margin-bottom: 12px;
+  margin-right: 10px;
 }
 .smokes .smokes_container .newsmokes .smoke .responsive .button_image {
   width: 55px;
   height: 45px;
   margin-left: 15px;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1238px) {
@@ -9196,4 +9205,7 @@ a {
     margin: 10px 0;
     margin-left: 10px;
   }
+}
+.remember .remember_container .memory {
+  width: 300px;
 }

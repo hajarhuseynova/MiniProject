@@ -2,32 +2,33 @@ const open = document.getElementById("burger");
 const menu = document.getElementById("menu");
 const close = document.getElementById("sidebarDelete");
 const visible = document.querySelectorAll(".visible");
-const sidebar = document.getElementById("navbar_bottom");
+const sidebar = document.querySelector(".navbar_bottom");
 
 document.body.addEventListener("click", () => {
-  open.style.display = "block";
-  close.style.display = "none";
+  open.classList.remove("displaynone");
+  close.classList.add("hideImage");
   visible.forEach((element) => {
-    element.style.marginLeft = "-15000px";
+    element.classList.add("visible");
   });
-  sidebar.style.width = "0";
+  sidebar.classList.add("hideDiv");
 });
+
 open.addEventListener("click", (e) => {
-  open.style.display = "none";
-  close.style.display = "block";
+  open.classList.toggle("displaynone");
+  close.classList.toggle("hideImage");
   visible.forEach((element) => {
-    element.style.marginLeft = "0";
+    element.classList.toggle("visible");
   });
-  sidebar.style.width = "100%";
+  sidebar.classList.toggle("hideDiv");
   e.stopPropagation();
 });
 
 menu.addEventListener("click", (e) => {
-  open.style.display = "none";
-  close.style.display = "block";
+  open.classList.toggle("displaynone");
+  close.classList.toggle("hideImage");
   visible.forEach((element) => {
-    element.style.marginLeft = "0";
+    element.classList.toggle("visible");
   });
-  sidebar.style.width = "100%";
+  sidebar.classList.toggle("hideDiv");
   e.stopPropagation();
 });
