@@ -37,6 +37,13 @@
         color: $white;
         margin-top: 25px;
       }
+      > a {
+        > button {
+          width: 150px;
+          height: 40px;
+          margin-top: 25px;
+        }
+      }
     }
   }
 }
@@ -105,13 +112,13 @@
         position: absolute;
         padding-top: 0px;
         padding-left: 0px;
-        top: 42%;
+        top: 34%;
         left: 22%;
         > h1 {
           font-family: Space Mono;
-          font-size: 32px;
+          font-size: 30px;
           font-weight: 510;
-          line-height: 50px;
+          line-height: 46px;
           letter-spacing: 0em;
           text-align: left;
           color: $white;
@@ -119,6 +126,14 @@
         }
         > p {
           display: none;
+        }
+        > a {
+          > button {
+            width: 100px;
+            height: 24px;
+            font-size: 14px;
+            margin-top: 0px;
+          }
         }
       }
     }

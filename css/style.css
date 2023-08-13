@@ -2571,11 +2571,65 @@ a {
   text-align: left;
   margin-bottom: 30px;
 }
+.comments .comments_container .slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.comments .comments_container .slideshow-container .prev,
+.comments .comments_container .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ffaf06;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.comments .comments_container .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.comments .comments_container .slideshow-container .prev:hover,
+.comments .comments_container .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.comments .comments_container .slideshow-container .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .comments .comments_container .modal_comment {
   margin: auto;
   width: 820px;
   background-color: #fff;
   border-radius: 10px;
+  height: 300px;
 }
 .comments .comments_container .modal_comment > img {
   width: 36.5px;
@@ -2656,8 +2710,9 @@ a {
   .comments .comments_container > h1 {
     margin-top: 30px;
   }
-  .comments .comments_container .modal_comment {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment {
     width: 740px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -2686,18 +2741,19 @@ a {
     margin-bottom: 20px;
     margin-top: 30px;
   }
-  .comments .comments_container .modal_comment {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment {
     margin: auto;
     width: 370px;
+    height: 310px;
     background-color: #fff;
   }
-  .comments .comments_container .modal_comment > img {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment > img {
     width: 28px;
     height: 20px;
     margin-top: 10px;
     margin-left: 10px;
   }
-  .comments .comments_container .modal_comment .modal_inner {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2713,7 +2769,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .comments .comments_container .modal_comment .modal_inner .modal_top {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2723,13 +2779,13 @@ a {
     width: 280px;
     margin-top: 10px;
   }
-  .comments .comments_container .modal_comment .modal_inner .modal_top .modal_top_left > img {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_left > img {
     width: 55px;
     height: 55px;
     border-radius: 50%;
     margin-right: 10px;
   }
-  .comments .comments_container .modal_comment .modal_inner .modal_top .modal_top_right > h3 {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_right > h3 {
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 496;
@@ -2738,7 +2794,7 @@ a {
     text-align: left;
     color: #ffaf06;
   }
-  .comments .comments_container .modal_comment .modal_inner .modal_top .modal_top_right > p {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_right > p {
     font-family: Work Sans;
     font-size: 14px;
     font-weight: 450;
@@ -2747,7 +2803,7 @@ a {
     text-align: left;
     color: #6a6a6a;
   }
-  .comments .comments_container .modal_comment .modal_inner > p {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner > p {
     font-family: Work Sans;
     font-size: 14px;
     font-weight: 400;
@@ -2757,7 +2813,7 @@ a {
     color: rgb(18, 18, 18);
     width: 280px;
   }
-  .comments .comments_container .modal_comment .end {
+  .comments .comments_container .slideshow-container .mySlides .modal_comment .end {
     float: right;
     margin-right: 10px;
   }
@@ -9226,6 +9282,11 @@ a {
   color: #fff;
   margin-top: 25px;
 }
+.swiper .swiper-slide .info_par > a > button {
+  width: 150px;
+  height: 40px;
+  margin-top: 25px;
+}
 
 @media screen and (max-width: 1238px) {
   .swiper {
@@ -9293,14 +9354,14 @@ a {
     position: absolute;
     padding-top: 0px;
     padding-left: 0px;
-    top: 42%;
+    top: 34%;
     left: 22%;
   }
   .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 510;
-    line-height: 50px;
+    line-height: 46px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
@@ -9308,6 +9369,12 @@ a {
   }
   .swiper .swiper-slide .info_par > p {
     display: none;
+  }
+  .swiper .swiper-slide .info_par > a > button {
+    width: 100px;
+    height: 24px;
+    font-size: 14px;
+    margin-top: 0px;
   }
 }
 .parfumeCategory .parfumeCategory_container {

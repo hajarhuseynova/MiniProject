@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
@@ -73,6 +74,7 @@
             <div class="info_par">
               <h1>Parfumun adi</h1>
               <p>Parfuma aid melumat</p>
+              <a><button>Etrafli</button></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -80,6 +82,7 @@
             <div class="info_par">
               <h1>Parfumun adi2</h1>
               <p>Parfuma aid melumat</p>
+              <a><button>Etrafli</button></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -87,6 +90,7 @@
             <div class="info_par">
               <h1>Parfumun adi3</h1>
               <p>Parfuma aid melumat</p>
+              <a><button>Etrafli</button></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -94,6 +98,7 @@
             <div class="info_par">
               <h1>Parfumun adi4</h1>
               <p>Parfuma aid melumat</p>
+              <a><button>Etrafli</button></a>
             </div>
           </div>
         </div>
@@ -513,27 +518,84 @@
       <div class="comments">
         <div class="container comments_container">
           <h1>Musteri Memnuniyyeti</h1>
-          <div class="modal_comment">
-            <img src="../assets/icons/comment/“.svg" />
-            <div class="modal_inner">
-              <div class="modal_top">
-                <div class="modal_top_left">
-                  <img src="../assets/images/Comment/person.jpg" />
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="modal_comment">
+                <img src="../assets/icons/comment/“.svg" />
+                <div class="modal_inner">
+                  <div class="modal_top">
+                    <div class="modal_top_left">
+                      <img src="../assets/images/Comment/person.jpg" />
+                    </div>
+                    <div class="modal_top_right">
+                      <h3>Hecer Huseynova</h3>
+                      <p>Baki/Azerbaycan</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ad, vel sit repellat nesciunt rerum atque consectetur
+                    provident, aut quasi tenetur libero? Distinctio quia at ut,
+                    aliquid, eaque nesciunt alias earum asperiores velit
+                    consequuntur dicta corporis accusamus. Fugiat exercitationem
+                    autem sit at!
+                  </p>
                 </div>
-                <div class="modal_top_right">
-                  <h3>Hecer Huseynova</h3>
-                  <p>Baki/Azerbaycan</p>
-                </div>
+                <img class="end" src="../assets/icons/comment/“.svg" />
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
-                vel sit repellat nesciunt rerum atque consectetur provident, aut
-                quasi tenetur libero? Distinctio quia at ut, aliquid, eaque
-                nesciunt alias earum asperiores velit consequuntur dicta
-                corporis accusamus. Fugiat exercitationem autem sit at!
-              </p>
             </div>
-            <img class="end" src="../assets/icons/comment/“.svg" />
+            <div class="mySlides fade">
+              <div class="modal_comment">
+                <img src="../assets/icons/comment/“.svg" />
+                <div class="modal_inner">
+                  <div class="modal_top">
+                    <div class="modal_top_left">
+                      <img src="../assets/images/Comment/person.jpg" />
+                    </div>
+                    <div class="modal_top_right">
+                      <h3>Huseyn Huseynov</h3>
+                      <p>Baki/Azerbaycan</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ad, vel sit repellat nesciunt rerum atque consectetur
+                    provident, aut quasi tenetur libero? Distinctio quia at ut,
+                    aliquid, eaque nesciunt alias earum asperiores velit
+                    consequuntur dicta corporis accusamus. Fugiat exercitationem
+                    autem sit at!
+                  </p>
+                </div>
+                <img class="end" src="../assets/icons/comment/“.svg" />
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="modal_comment">
+                <img src="../assets/icons/comment/“.svg" />
+                <div class="modal_inner">
+                  <div class="modal_top">
+                    <div class="modal_top_left">
+                      <img src="../assets/images/Comment/person.jpg" />
+                    </div>
+                    <div class="modal_top_right">
+                      <h3>Xedice Huseynova</h3>
+                      <p>Baki/Azerbaycan</p>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ad, vel sit repellat nesciunt rerum atque consectetur
+                    provident, aut quasi tenetur libero? Distinctio quia at ut,
+                    aliquid, eaque nesciunt alias earum asperiores velit
+                    consequuntur dicta corporis accusamus. Fugiat exercitationem
+                    autem sit at!
+                  </p>
+                </div>
+                <img class="end" src="../assets/icons/comment/“.svg" />
+              </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
           </div>
         </div>
       </div>
@@ -652,6 +714,38 @@
           clickable: true,
         },
       });
+    </script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
     </script>
   </body>
 </html>
