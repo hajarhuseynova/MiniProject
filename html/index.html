@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
@@ -61,19 +65,43 @@
           </div>
         </div>
       </header>
-      <div class="remember">
-        <div class="container remember_container">
-          <h1>Hər şey unudulur, Qoxunuz əsla!</h1>
-          <p class="hide_paragraf">
-            Lorem ipsum dolor sit amet, consectetur dipiscing elit. Diam purus
-            vel pharetra in accumsan dui turpis est.
-          </p>
-          <a href="../html/indexp.html">
-            <button>
-              Etrafli <img src="../assets/icons/button/buttonsvg.svg" /></button
-          ></a>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../assets/images/Remember/Image1.jpg" />
+            <div class="info_par">
+              <h1>Parfumun adi</h1>
+              <p>Parfuma aid melumat</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <div class="info_par">
+              <h1>Parfumun adi2</h1>
+              <p>Parfuma aid melumat</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <div class="info_par">
+              <h1>Parfumun adi3</h1>
+              <p>Parfuma aid melumat</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <div class="info_par">
+              <h1>Parfumun adi4</h1>
+              <p>Parfuma aid melumat</p>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+
       <div class="products">
         <div class="container products_container">
           <h1>Yeni Mehsullar</h1>
@@ -610,5 +638,20 @@
       </footer>
     </div>
     <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
