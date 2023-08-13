@@ -212,7 +212,9 @@ a {
           }
         }
         &:hover {
-          border: 1px solid $orange_01;
+          box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
         }
       }
     }
@@ -565,7 +567,9 @@ a {
           }
         }
         &:hover {
-          border: 1px solid $orange_01;
+          box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
         }
       }
     }
@@ -680,7 +684,8 @@ a {
     }
     .newsellests {
       display: flex;
-      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
       .sellest {
         width: 295px;
         height: 415px;
@@ -741,7 +746,9 @@ a {
           }
         }
         &:hover {
-          border: 1px solid $orange_01;
+          box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
         }
       }
     }
@@ -1185,7 +1192,9 @@ a {
           }
         }
         &:hover {
-          border: 1px solid $orange_01;
+          box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
         }
       }
     }
