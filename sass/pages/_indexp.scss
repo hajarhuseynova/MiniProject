@@ -1,123 +1,125 @@
-.parfume_index_intro {
+.swiper {
   width: 100%;
   height: 100vh;
-  background-image: url(../../assets/images/Remember/Image1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  .parfume_index_intro_container {
-    padding-top: 250px;
-    h1 {
-      font-family: Space Mono;
-      font-size: 45px;
-      font-weight: 510;
-      line-height: 50px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: $white;
-      width: 450px;
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    > img {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
-    p {
-      width: 395px;
-      font-family: Work Sans;
-      font-size: 30px;
-      font-weight: 300;
-      line-height: 25px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: $white;
-      margin-top: 25px;
-    }
-    button {
-      margin-top: 30px;
-      width: 138px;
-      height: 47px;
-      > img {
-        width: 29px;
-        height: 21px;
-        margin-left: 10px;
+    .info_par {
+      position: absolute;
+      padding-top: 250px;
+      padding-left: 200px;
+      top: 0;
+      > h1 {
+        font-family: Space Mono;
+        font-size: 45px;
+        font-weight: 510;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $white;
+        width: 450px;
+      }
+      > p {
+        width: 395px;
+        font-family: Work Sans;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $white;
+        margin-top: 25px;
       }
     }
   }
 }
 @media screen and (max-width: 1238px) {
-  .container {
-    width: 740px;
-  }
-  .parfume_index_intro {
+  .swiper {
     width: 100%;
-    background-image: url(../../assets/images/Remember/Image1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    .parfume_index_intro_container {
-      padding-top: 330px;
-      h1 {
-        font-family: Space Mono;
-        font-size: 40px;
-        font-weight: 510;
+    height: 65vh;
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      position: relative;
 
-        line-height: 35px;
-        letter-spacing: 0em;
-        text-align: left;
-
-        width: 390px;
+      > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
       }
-      p {
-        width: 300px;
-        font-family: Work Sans;
-        font-size: 26px;
-        font-weight: 300;
-        line-height: 22px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $white;
-        margin-top: 30px;
+      .info_par {
+        position: absolute;
+        padding-top: 250px;
+        padding-left: 100px;
+        top: 0;
+        > h1 {
+          font-family: Space Mono;
+          font-size: 45px;
+          font-weight: 510;
+          line-height: 50px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $white;
+          width: 450px;
+        }
+        > p {
+          width: 395px;
+          font-family: Work Sans;
+          font-size: 30px;
+          font-weight: 300;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $white;
+          margin-top: 25px;
+        }
       }
     }
   }
 }
 @media screen and (max-width: 740px) {
-  .container {
-    width: 370px;
-  }
-  .parfume_index_intro {
+  .swiper {
     width: 100%;
-    background-image: url(../../assets/images/Remember/Image1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    .parfume_index_intro_container {
-      padding-top: 350px;
-      h1 {
-        font-family: Space Mono;
-        font-size: 40px;
-        font-weight: 510;
-        line-height: 34px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $white;
-        width: 350px;
+    height: 30vh;
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
       }
-      p {
-        width: 300px;
-        font-family: Work Sans;
-        font-size: 28px;
-        font-weight: 300;
-        line-height: 22px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $white;
-        margin-top: 30px;
-      }
-      button {
-        border: 1px solid $orange_01;
+      .info_par {
+        position: absolute;
+        padding-top: 0px;
+        padding-left: 0px;
+        top: 42%;
+        left: 22%;
+        > h1 {
+          font-family: Space Mono;
+          font-size: 32px;
+          font-weight: 510;
+          line-height: 50px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $white;
+          width: 450px;
+        }
+        > p {
+          display: none;
+        }
       }
     }
   }
@@ -125,6 +127,7 @@
 .parfumeCategory {
   .parfumeCategory_container {
     padding: 40px 0;
+    padding-left: 10px;
     .parfumeCategory_top {
       display: flex;
       flex-wrap: wrap;
@@ -153,6 +156,44 @@
       }
       .click {
         background-color: $black_01;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .parfumeCategory {
+    .parfumeCategory_container {
+      padding: 30px 0;
+      .parfumeCategory_top {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        .category {
+          display: flex;
+          cursor: pointer;
+          width: 100px;
+          border-radius: 10px;
+          height: 30px;
+          background-color: $orange_01;
+          display: flex;
+          justify-content: center;
+          border: 1px solid transparent;
+          align-items: center;
+          transition: 0.5s;
+          > p {
+            font-family: Space Mono;
+            font-size: 18px;
+            font-weight: 496;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $white;
+          }
+        }
+        .click {
+          background-color: $black_01;
+        }
       }
     }
   }
@@ -205,6 +246,7 @@
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
+      justify-content: center;
       .selles {
         width: 295px;
         height: 415px;
@@ -282,7 +324,7 @@
       padding-bottom: 60px;
       .newsellest {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         .selles {
           width: 230px;
           height: 350px;
@@ -359,7 +401,7 @@
       }
       .newsellest {
         display: flex;
-        justify-content: space-between;
+
         gap: 10px;
         .selles {
           width: 180px;

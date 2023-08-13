@@ -372,7 +372,7 @@ textarea:focus {
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons {
     gap: 15px;
   }
-  .navbar .navbar_container #navbar_bottom > a > h1 {
+  .navbar .navbar_container .navbar_bottom > a > h1 {
     font-family: Space Mono;
     font-size: 22px;
     font-weight: 450;
@@ -383,7 +383,7 @@ textarea:focus {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .navbar .navbar_container #navbar_bottom > a .visible {
+  .navbar .navbar_container .navbar_bottom > a .visible {
     margin-left: -15000px;
   }
 }
@@ -396,6 +396,9 @@ textarea:focus {
   }
   .navbar {
     height: 64px;
+  }
+  .navbar .navbar_container .navbar_top {
+    height: 61px;
   }
   .navbar .navbar_container .navbar_top .navbar_left {
     width: 30px;
@@ -420,10 +423,9 @@ textarea:focus {
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons {
     gap: 10px;
   }
-  .navbar .navbar_container #navbar_bottom {
+  .navbar .navbar_container .navbar_bottom {
     position: absolute;
-    top: 65px;
-    width: 0;
+    top: 64px;
     height: 250px;
     background-color: #959595;
     display: -webkit-box;
@@ -443,7 +445,7 @@ textarea:focus {
     transition: 0.6s;
     gap: 5px;
   }
-  .navbar .navbar_container #navbar_bottom > a > h1 {
+  .navbar .navbar_container .navbar_bottom > a > h1 {
     font-family: Space Mono;
     font-size: 21px;
     font-weight: 450;
@@ -454,8 +456,11 @@ textarea:focus {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .navbar .navbar_container #navbar_bottom > a .visible {
+  .navbar .navbar_container .navbar_bottom > a .visible {
     margin-left: -15000px;
+  }
+  .navbar .navbar_container .hideDiv {
+    width: 0;
   }
 }
 footer {
@@ -9307,24 +9312,28 @@ a {
     margin-left: 10px;
   }
 }
-.parfume_index_intro {
+.swiper {
   width: 100%;
   height: 100vh;
-  background-image: url(../../assets/images/Remember/Image1.jpg);
-  background-size: cover;
+}
+.swiper .swiper-slide {
   background-position: center;
+  background-size: cover;
+  position: relative;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
-.parfume_index_intro .parfume_index_intro_container {
+.swiper .swiper-slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-slide .info_par {
+  position: absolute;
   padding-top: 250px;
+  padding-left: 200px;
+  top: 0;
 }
-.parfume_index_intro .parfume_index_intro_container h1 {
+.swiper .swiper-slide .info_par > h1 {
   font-family: Space Mono;
   font-size: 45px;
   font-weight: 510;
@@ -9334,7 +9343,7 @@ a {
   color: #fff;
   width: 450px;
 }
-.parfume_index_intro .parfume_index_intro_container p {
+.swiper .swiper-slide .info_par > p {
   width: 395px;
   font-family: Work Sans;
   font-size: 30px;
@@ -9345,105 +9354,93 @@ a {
   color: #fff;
   margin-top: 25px;
 }
-.parfume_index_intro .parfume_index_intro_container button {
-  margin-top: 30px;
-  width: 138px;
-  height: 47px;
-}
-.parfume_index_intro .parfume_index_intro_container button > img {
-  width: 29px;
-  height: 21px;
-  margin-left: 10px;
-}
 
 @media screen and (max-width: 1238px) {
-  .container {
-    width: 740px;
-  }
-  .parfume_index_intro {
+  .swiper {
     width: 100%;
-    background-image: url(../../assets/images/Remember/Image1.jpg);
-    background-size: cover;
+    height: 65vh;
+  }
+  .swiper .swiper-slide {
     background-position: center;
-    background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    background-size: cover;
+    position: relative;
   }
-  .parfume_index_intro .parfume_index_intro_container {
-    padding-top: 330px;
+  .swiper .swiper-slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
-  .parfume_index_intro .parfume_index_intro_container h1 {
+  .swiper .swiper-slide .info_par {
+    position: absolute;
+    padding-top: 250px;
+    padding-left: 100px;
+    top: 0;
+  }
+  .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 510;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 390px;
-  }
-  .parfume_index_intro .parfume_index_intro_container p {
-    width: 300px;
-    font-family: Work Sans;
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 22px;
+    line-height: 50px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
-    margin-top: 30px;
+    width: 450px;
+  }
+  .swiper .swiper-slide .info_par > p {
+    width: 395px;
+    font-family: Work Sans;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    margin-top: 25px;
   }
 }
 @media screen and (max-width: 740px) {
-  .container {
-    width: 370px;
-  }
-  .parfume_index_intro {
+  .swiper {
     width: 100%;
-    background-image: url(../../assets/images/Remember/Image1.jpg);
-    background-size: cover;
+    height: 30vh;
+  }
+  .swiper .swiper-slide {
     background-position: center;
-    background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    background-size: cover;
+    position: relative;
   }
-  .parfume_index_intro .parfume_index_intro_container {
-    padding-top: 350px;
+  .swiper .swiper-slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
-  .parfume_index_intro .parfume_index_intro_container h1 {
+  .swiper .swiper-slide .info_par {
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 0px;
+    top: 42%;
+    left: 22%;
+  }
+  .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 510;
-    line-height: 34px;
+    line-height: 50px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
-    width: 350px;
+    width: 450px;
   }
-  .parfume_index_intro .parfume_index_intro_container p {
-    width: 300px;
-    font-family: Work Sans;
-    font-size: 28px;
-    font-weight: 300;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #fff;
-    margin-top: 30px;
-  }
-  .parfume_index_intro .parfume_index_intro_container button {
-    border: 1px solid #ffaf06;
+  .swiper .swiper-slide .info_par > p {
+    display: none;
   }
 }
 .parfumeCategory .parfumeCategory_container {
   padding: 40px 0;
+  padding-left: 10px;
 }
 .parfumeCategory .parfumeCategory_container .parfumeCategory_top {
   display: -webkit-box;
@@ -9486,6 +9483,54 @@ a {
   background-color: rgb(18, 18, 18);
 }
 
+@media screen and (max-width: 1238px) {
+  .parfumeCategory .parfumeCategory_container {
+    padding: 30px 0;
+  }
+  .parfumeCategory .parfumeCategory_container .parfumeCategory_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+  .parfumeCategory .parfumeCategory_container .parfumeCategory_top .category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #ffaf06;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid transparent;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .parfumeCategory .parfumeCategory_container .parfumeCategory_top .category > p {
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 496;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  .parfumeCategory .parfumeCategory_container .parfumeCategory_top .click {
+    background-color: rgb(18, 18, 18);
+  }
+}
 @media screen and (max-width: 740px) {
   .parfumeCategory .parfumeCategory_container {
     padding: 30px 0;
@@ -9554,6 +9599,9 @@ a {
   gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .parfumes_index .parfumes_index_container .newsellest .selles {
   width: 295px;
@@ -9641,9 +9689,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .parfumes_index .parfumes_index_container .newsellest .selles {
     width: 230px;
@@ -9735,9 +9783,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     gap: 10px;
   }
   .parfumes_index .parfumes_index_container .newsellest .selles {
