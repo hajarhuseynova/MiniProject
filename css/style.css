@@ -215,7 +215,7 @@ textarea:focus {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  color: #c8c8c8;
+  color: rgb(18, 18, 18);
 }
 
 .container {
@@ -6700,6 +6700,12 @@ a {
   height: 30px;
   background-color: transparent;
 }
+.order .order_container .order_info .order_buttons .delete > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: rgb(18, 18, 18);
+  color: #fff;
+}
 .order .order_container .order_info .order_buttons .add {
   width: 50%;
 }
@@ -6707,6 +6713,13 @@ a {
   width: 100%;
   height: 30px;
   border: 1px solid transparent;
+}
+.order .order_container .order_info .order_buttons .add > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  border-color: #ffaf06;
+  color: #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {
