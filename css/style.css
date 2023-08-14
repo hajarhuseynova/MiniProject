@@ -9287,6 +9287,11 @@ a {
   height: 40px;
   margin-top: 25px;
 }
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev,
+.swiper .swiper-pagination-bullet {
+  color: #fff;
+}
 
 @media screen and (max-width: 1238px) {
   .swiper {
