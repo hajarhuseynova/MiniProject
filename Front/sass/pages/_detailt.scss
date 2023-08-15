@@ -1,0 +1,290 @@
+.comments_smoke {
+  .comments_smoke_container {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .comment_smoke {
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        > h3 {
+          font-family: Space Mono;
+          font-size: 22px;
+          font-weight: 496;
+          line-height: 30px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+        .left_stars {
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+          > img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+      .middle {
+        width: 800px;
+        > h3 {
+          font-family: Space Mono;
+          font-size: 20px;
+          font-weight: 496;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        > p {
+          font-family: Work Sans;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        > p {
+          font-family: Work Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        .likes_smoke {
+          display: flex;
+          gap: 20px;
+          .lik {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            > img {
+              width: 13px;
+              cursor: pointer;
+            }
+            > p {
+              font-family: Work Sans;
+              font-size: 13px;
+              font-weight: 300;
+              line-height: 17px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .line_smoke {
+      width: 100%;
+      height: 1px;
+      background-color: $black_05;
+      margin: 20px 0;
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .comments_smoke {
+    .comments_smoke_container {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .comment_smoke {
+        display: flex;
+        justify-content: space-between;
+        .left {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          > h3 {
+            font-family: Space Mono;
+            font-size: 18px;
+            font-weight: 496;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
+          .left_stars {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            > img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+        .middle {
+          width: 400px;
+          > h3 {
+            font-family: Space Mono;
+            font-size: 20px;
+            font-weight: 496;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          > p {
+            font-family: Work Sans;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          > p {
+            font-family: Work Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .likes_smoke {
+            display: flex;
+            gap: 20px;
+            .lik {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              > img {
+                width: 13px;
+              }
+              > p {
+                font-family: Work Sans;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+      .line_smoke {
+        width: 100%;
+        height: 1px;
+        background-color: $black_05;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .comments_smoke {
+    .comments_smoke_container {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .comment_smoke {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+        .left {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          > h3 {
+            font-family: Space Mono;
+            font-size: 18px;
+            font-weight: 496;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
+          .left_stars {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            > img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+        .middle {
+          width: 350px;
+          > h3 {
+            font-family: Space Mono;
+            font-size: 18px;
+            font-weight: 496;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          > p {
+            font-family: Work Sans;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .right {
+          width: 350px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 10px;
+          > p {
+            font-family: Work Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .likes_smoke {
+            display: flex;
+            gap: 20px;
+            .lik {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              > img {
+                width: 13px;
+              }
+              > p {
+                font-family: Work Sans;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+      .line_smoke {
+        width: 350px;
+        height: 1px;
+        background-color: $black_05;
+        margin: 10px 0;
+        margin-left: 10px;
+      }
+    }
+  }
+}
