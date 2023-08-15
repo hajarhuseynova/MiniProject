@@ -1438,6 +1438,7 @@ a {
     .slideshow-container {
       position: relative;
       margin: auto;
+      margin-bottom: 40px;
       .prev,
       .next {
         cursor: pointer;
@@ -1559,7 +1560,7 @@ a {
         .mySlides {
           .modal_comment {
             width: 740px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
           }
         }
       }

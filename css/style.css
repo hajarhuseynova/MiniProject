@@ -2574,6 +2574,7 @@ a {
 .comments .comments_container .slideshow-container {
   position: relative;
   margin: auto;
+  margin-bottom: 40px;
 }
 .comments .comments_container .slideshow-container .prev,
 .comments .comments_container .slideshow-container .next {
@@ -2712,7 +2713,7 @@ a {
   }
   .comments .comments_container .slideshow-container .mySlides .modal_comment {
     width: 740px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -8551,8 +8552,9 @@ a {
   display: flex;
   gap: 8px;
 }
-.assesment .assesment_container .right .right_bottom .stars .hide {
-  display: none;
+.assesment .assesment_container .right .right_bottom .stars .active {
+  color: yellow;
+  background-color: red;
 }
 .assesment .assesment_container .right .right_bottom > a > button {
   width: 250px;
@@ -8972,7 +8974,7 @@ a {
   display: flex;
   gap: 20px;
 }
-.comments .comments_container .comment .right .likes .like {
+.comments .comments_container .comment .right .likes .lik {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8981,10 +8983,11 @@ a {
           align-items: center;
   gap: 5px;
 }
-.comments .comments_container .comment .right .likes .like > img {
+.comments .comments_container .comment .right .likes .lik > img {
   width: 13px;
+  cursor: pointer;
 }
-.comments .comments_container .comment .right .likes .like > p {
+.comments .comments_container .comment .right .likes .lik > p {
   font-family: Work Sans;
   font-size: 13px;
   font-weight: 300;
@@ -9094,7 +9097,7 @@ a {
     display: flex;
     gap: 20px;
   }
-  .comments .comments_container .comment .right .likes .like {
+  .comments .comments_container .comment .right .likes .lik {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9103,10 +9106,10 @@ a {
             align-items: center;
     gap: 5px;
   }
-  .comments .comments_container .comment .right .likes .like > img {
+  .comments .comments_container .comment .right .likes .lik > img {
     width: 13px;
   }
-  .comments .comments_container .comment .right .likes .like > p {
+  .comments .comments_container .comment .right .likes .lik > p {
     font-family: Work Sans;
     font-size: 13px;
     font-weight: 300;
@@ -9225,7 +9228,7 @@ a {
     display: flex;
     gap: 20px;
   }
-  .comments .comments_container .comment .right .likes .like {
+  .comments .comments_container .comment .right .likes .lik {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9234,10 +9237,10 @@ a {
             align-items: center;
     gap: 5px;
   }
-  .comments .comments_container .comment .right .likes .like > img {
+  .comments .comments_container .comment .right .likes .lik > img {
     width: 13px;
   }
-  .comments .comments_container .comment .right .likes .like > p {
+  .comments .comments_container .comment .right .likes .lik > p {
     font-family: Work Sans;
     font-size: 13px;
     font-weight: 300;

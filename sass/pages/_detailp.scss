@@ -777,8 +777,9 @@
         .stars {
           display: flex;
           gap: 8px;
-          .hide {
-            display: none;
+          .active {
+            color: yellow;
+            background-color: red;
           }
         }
         > a {
@@ -1123,12 +1124,13 @@
         .likes {
           display: flex;
           gap: 20px;
-          .like {
+          .lik {
             display: flex;
             align-items: center;
             gap: 5px;
             > img {
               width: 13px;
+              cursor: pointer;
             }
             > p {
               font-family: Work Sans;
@@ -1217,7 +1219,7 @@
           .likes {
             display: flex;
             gap: 20px;
-            .like {
+            .lik {
               display: flex;
               align-items: center;
               gap: 5px;
@@ -1316,7 +1318,7 @@
           .likes {
             display: flex;
             gap: 20px;
-            .like {
+            .lik {
               display: flex;
               align-items: center;
               gap: 5px;

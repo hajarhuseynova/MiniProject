@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <style></style>
     <title>Document</title>
   </head>
   <body>
@@ -194,11 +195,6 @@
                 <img src="../assets/icons/detail/Star.svg" class="star" />
                 <img src="../assets/icons/detail/Star.svg" class="star" />
                 <img src="../assets/icons/detail/Star.svg" class="star" />
-                <img src="../assets/icons/detail/Vector.svg" class="hide" />
-                <img src="../assets/icons/detail/Vector.svg" class="hide" />
-                <img src="../assets/icons/detail/Vector.svg" class="hide" />
-                <img src="../assets/icons/detail/Vector.svg" class="hide" />
-                <img src="../assets/icons/detail/Vector.svg" class="hide" />
               </div>
               <a><button>Gonder</button></a>
             </div>
@@ -231,13 +227,21 @@
             <div class="right">
               <p>15.04.2022</p>
               <div class="likes">
-                <div class="like">
-                  <img src="../assets/icons/detail/like.svg" id="like" />
-                  <p>5</p>
+                <div class="lik">
+                  <img
+                    src="../assets/icons/detail/like.svg"
+                    class="like"
+                    onclick="increaseLike(this)"
+                  />
+                  <p class="like-count">5</p>
                 </div>
-                <div class="like">
-                  <img src="../assets/icons/detail/dislike.svg" id="dislike" />
-                  <p>5</p>
+                <div class="lik">
+                  <img
+                    src="../assets/icons/detail/dislike.svg"
+                    class="dislike"
+                    onclick="decreaseDislike(this)"
+                  />
+                  <p class="dislike-count">5</p>
                 </div>
               </div>
             </div>
@@ -266,13 +270,21 @@
             <div class="right">
               <p>15.04.2022</p>
               <div class="likes">
-                <div class="like">
-                  <img src="../assets/icons/detail/like.svg" id="like" />
-                  <p>5</p>
+                <div class="lik">
+                  <img
+                    src="../assets/icons/detail/like.svg"
+                    class="like"
+                    onclick="increaseLike(this)"
+                  />
+                  <p class="like-count">7</p>
                 </div>
-                <div class="like">
-                  <img src="../assets/icons/detail/dislike.svg" id="dislike" />
-                  <p>5</p>
+                <div class="lik">
+                  <img
+                    src="../assets/icons/detail/dislike.svg"
+                    class="dislike"
+                    onclick="decreaseDislike(this)"
+                  />
+                  <p class="dislike-count">2</p>
                 </div>
               </div>
             </div>
