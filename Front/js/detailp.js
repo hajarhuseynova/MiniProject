@@ -17,7 +17,6 @@ function increaseLike(element) {
   var currentLikeCount = parseInt(likeCountElement.textContent);
   likeCountElement.textContent = currentLikeCount + 1;
 }
-
 function decreaseDislike(element) {
   var dislikeCountElement = element.nextElementSibling;
   var currentDislikeCount = parseInt(dislikeCountElement.textContent);
