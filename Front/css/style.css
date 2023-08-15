@@ -10191,3 +10191,244 @@ a {
     margin-left: 10px;
   }
 }
+.update {
+  width: 100%;
+}
+.update .update_container {
+  width: 100%;
+  height: 629px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.update .update_container .update_left {
+  width: 50%;
+  background-image: url(../../assets/images/Register/parfume.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.update .update_container .update_right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.update .update_container .update_right > h1 {
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.update .update_container .update_right > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.update .update_container .update_right > p > a {
+  color: #ffaf06;
+}
+.update .update_container .update_right > input {
+  width: 400px;
+  height: 15px;
+}
+.update .update_container .update_right > a > button {
+  width: 435px;
+  height: 40px;
+  background-color: #ffaf06;
+  color: rgb(18, 18, 18);
+  font-weight: 500;
+}
+.update .update_container .update_right > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  color: #ffaf06;
+}
+
+@media screen and (max-width: 1238px) {
+  .update {
+    width: 100%;
+  }
+  .update .update_container {
+    width: 100%;
+    height: 629px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .update .update_container .update_left {
+    width: 50%;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .update .update_container .update_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .update .update_container .update_right > h1 {
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .update .update_container .update_right > p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .update .update_container .update_right > p > a {
+    color: #ffaf06;
+  }
+  .update .update_container .update_right > input {
+    width: 250px;
+    height: 15px;
+  }
+  .update .update_container .update_right > a > button {
+    width: 285px;
+    height: 40px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+  }
+  .update .update_container .update_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+}
+@media screen and (max-width: 740px) {
+  .update {
+    width: 100%;
+  }
+  .update .update_container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .update .update_container .update_left {
+    width: 100%;
+    height: 250px;
+    background-image: url(../../assets/images/Register/parfume.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-right: 0;
+  }
+  .update .update_container .update_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .update .update_container .update_right > h1 {
+    font-family: Space Mono;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 25px;
+  }
+  .update .update_container .update_right > p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .update .update_container .update_right > p > a {
+    color: #ffaf06;
+  }
+  .update .update_container .update_right > input {
+    width: 300px;
+    height: 15px;
+    padding: 10px 6px;
+  }
+  .update .update_container .update_right > a > button {
+    width: 315px;
+    height: 37px;
+    background-color: #ffaf06;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .update .update_container .update_right > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+}
