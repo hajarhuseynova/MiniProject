@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UVhLOX5Dxz9mNaT9gkiO7GCJFJEh9LLdmBgAm3Z9UnP3DJmQasadggrUvyqm2C73joqkSkHAxVeO1Znd6OzkEw==",
+  "dgSpecHash": "KkGd+sNWTkjhskJI1Vm1pm3OAfsp7+2Ll2e+yyyuc8re1jgWWR8szzmeKqHiMb/ZIK2AdXKaNJXu+l1w8xaePA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Service\\Parfume.Service.csproj",
+  "projectFilePath": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Service\\Parfume.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\99455\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.16\\microsoft.aspnetcore.cryptography.internal.6.0.16.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.16\\microsoft.aspnetcore.cryptography.keyderivation.6.0.16.nupkg.sha512",

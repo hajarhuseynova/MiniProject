@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SmR8irxZ+OfCBSU6KjkXWm7z9N5tWjLe4eeto78qAfX6JIiCleMbMGaTscoxaJkPNsRpG19Zte7MoH4La0GjkQ==",
+  "dgSpecHash": "tl5lGtnsTYjeJCBRjZTJPBXOTsdEv58LFg9z0HpwZLCS+Ob+ryAqFFoPu8Qqc+zmOPxNkkADpu5kAzuZKGhBcg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Data\\Parfume.Data.csproj",
+  "projectFilePath": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Data\\Parfume.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\99455\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.16\\microsoft.aspnetcore.cryptography.internal.6.0.16.nupkg.sha512",

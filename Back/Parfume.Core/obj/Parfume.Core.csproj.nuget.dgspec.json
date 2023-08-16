@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Core\\Parfume.Core.csproj": {}
+    "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Core\\Parfume.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Core\\Parfume.Core.csproj": {
+    "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Core\\Parfume.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Core\\Parfume.Core.csproj",
+        "projectUniqueName": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Core\\Parfume.Core.csproj",
         "projectName": "Parfume.Core",
-        "projectPath": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Core\\Parfume.Core.csproj",
+        "projectPath": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Core\\Parfume.Core.csproj",
         "packagesPath": "C:\\Users\\99455\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Core\\obj\\",
+        "outputPath": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\99455\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bUrSAnYDM6KJ4NlsBijA3YmUmn4+kpldx936yPFXHN4=",
+  "Hash": "7PHnicr450tcE0U/ZxDeXAi1OtKp7udc1b4ll9+mEKU=",
   "Source": "Parfume.App",
   "BasePath": "_content/Parfume.App",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Parfume.App\\wwwroot",
       "Source": "Parfume.App",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Parfume.App.styles.css",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Parfume.App.styles.css",
       "SourceId": "Parfume.App",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "Parfume.App.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Parfume.App.styles.css"
+      "OriginalItemSpec": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Parfume.App.styles.css"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Parfume.App.bundle.scp.css",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Parfume.App.bundle.scp.css",
       "SourceId": "Parfume.App",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "Parfume.App.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Parfume.App.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Parfume.App.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\css\\style.css",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\css\\style.css",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/css/style.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\about\\Box.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\about\\Box.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/about/Box.svg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\about\\Box.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\about\\CreditCard.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\about\\CreditCard.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/about/CreditCard.svg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\about\\CreditCard.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\about\\Gift.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\about\\Gift.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/about/Gift.svg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\about\\Gift.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\about\\Layers.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\about\\Layers.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/about/Layers.svg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\about\\Layers.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\button\\buttonsvg.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\button\\buttonsvg.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/button/buttonsvg.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\button\\buttonsvg.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\comment\\comment.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\comment\\comment.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/comment/comment.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\comment\\comment.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\contact\\Call.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\contact\\Call.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/contact/Call.svg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\contact\\Call.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\contact\\iPhone.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\contact\\iPhone.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/contact/iPhone.svg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\contact\\iPhone.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\contact\\Location.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\contact\\Location.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/contact/Location.svg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\contact\\Location.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\detail\\dislike.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\detail\\dislike.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/detail/dislike.svg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\detail\\dislike.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\detail\\like.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\detail\\like.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/detail/like.svg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\detail\\like.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\detail\\Star.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\detail\\Star.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/detail/Star.svg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\detail\\Star.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\detail\\Vector.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\detail\\Vector.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/detail/Vector.svg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\detail\\Vector.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\footer\\facebook.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\footer\\facebook.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/footer/facebook.svg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\footer\\facebook.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\footer\\instagram.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\footer\\instagram.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/footer/instagram.svg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\footer\\instagram.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\footer\\twitter.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\footer\\twitter.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/footer/twitter.svg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\footer\\twitter.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\footer\\youtube.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\footer\\youtube.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/footer/youtube.svg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\footer\\youtube.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\functions\\delivery.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\functions\\delivery.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/functions/delivery.svg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\functions\\delivery.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\functions\\Mask group.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\functions\\Mask group.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/functions/Mask group.svg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\functions\\Mask group.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\header\\Burger.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\header\\Burger.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/header/Burger.svg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\header\\Burger.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\header\\Cart.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\header\\Cart.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/header/Cart.svg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\header\\Cart.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\header\\Heart.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\header\\Heart.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/header/Heart.svg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\header\\Heart.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\header\\Logo.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\header\\Logo.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/header/Logo.svg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\header\\Logo.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\header\\Search.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\header\\Search.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/header/Search.svg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\header\\Search.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\header\\Sidebar.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\header\\Sidebar.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/header/Sidebar.svg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\header\\Sidebar.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\header\\User.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\header\\User.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/header/User.svg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\header\\User.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\NewProduct\\star.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\NewProduct\\star.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/NewProduct/star.svg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\NewProduct\\star.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\order\\Credit card.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\order\\Credit card.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/order/Credit card.svg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\order\\Credit card.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\order\\shop.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\order\\shop.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/order/shop.svg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\order\\shop.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\order\\Wallet.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\order\\Wallet.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/order/Wallet.svg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\order\\Wallet.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\register\\Lock.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\register\\Lock.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/register/Lock.svg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\register\\Lock.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\register\\Mail.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\register\\Mail.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/register/Mail.svg",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\register\\Mail.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\register\\User.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\register\\User.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/register/User.svg",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\register\\User.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\tester\\rubish.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\tester\\rubish.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/tester/rubish.svg",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\tester\\rubish.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\icons\\tester\\Search.svg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\icons\\tester\\Search.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/icons/tester/Search.svg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\tester\\Search.svg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\About\\about1.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\About\\about1.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/About/about1.jpg",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\About\\about1.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\About\\about2.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\About\\about2.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/About/about2.jpg",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\About\\about2.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\About\\about3.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\About\\about3.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/About/about3.jpg",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\About\\about3.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\About\\about4.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\About\\about4.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/About/about4.jpg",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\About\\about4.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\About\\Main.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\About\\Main.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/About/Main.jpg",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\About\\Main.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\Comment\\person.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\Comment\\person.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/Comment/person.jpg",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\Comment\\person.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\Contact\\room.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\Contact\\room.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/Contact/room.jpg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\Contact\\room.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\box1.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\box1.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/GiftBox/box1.jpg",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\GiftBox\\box1.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\box2.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\box2.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/GiftBox/box2.jpg",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\GiftBox\\box2.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\box3.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\box3.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/GiftBox/box3.jpg",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\GiftBox\\box3.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\Giftbox.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\Giftbox.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/GiftBox/Giftbox.jpg",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\GiftBox\\Giftbox.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\header1.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\header1.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/GiftBox/header1.jpg",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\GiftBox\\header1.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\header2.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\header2.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/GiftBox/header2.jpg",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\GiftBox\\header2.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\NewProduct\\ProductImage.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\NewProduct\\ProductImage.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/NewProduct/ProductImage.jpg",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\NewProduct\\ProductImage.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\NotFound\\pana.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\NotFound\\pana.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/NotFound/pana.jpg",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\NotFound\\pana.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\Order\\icon.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\Order\\icon.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/Order/icon.jpg",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\Order\\icon.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\Register\\Mask group.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\Register\\Mask group.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/Register/Mask group.jpg",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\Register\\Mask group.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\Register\\parfume.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\Register\\parfume.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/Register/parfume.jpg",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\Register\\parfume.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\Remember\\Image1.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\Remember\\Image1.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/Remember/Image1.jpg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\Remember\\Image1.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\Smokes\\Tustu.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\Smokes\\Tustu.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/Smokes/Tustu.jpg",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\Smokes\\Tustu.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\images\\Testing\\parfume_flakon.jpg",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\Testing\\parfume_flakon.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/images/Testing/parfume_flakon.jpg",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\Testing\\parfume_flakon.jpg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\js\\detailp.js",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\js\\detailp.js",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/js/detailp.js",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\detailp.js"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\js\\detailt.js",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\js\\detailt.js",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/js/detailt.js",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\detailt.js"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\js\\index.js",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\js\\index.js",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/js/index.js",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\index.js"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\assets\\js\\indexp.js",
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\js\\indexp.js",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
       "BasePath": "_content/Parfume.App",
       "RelativePath": "assets/js/indexp.js",
       "AssetKind": "All",

@@ -2417,11 +2417,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\Parfume.App.csproj",
+      "projectUniqueName": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\Parfume.App.csproj",
       "projectName": "Parfume.App",
-      "projectPath": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\Parfume.App.csproj",
+      "projectPath": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\Parfume.App.csproj",
       "packagesPath": "C:\\Users\\99455\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.App\\obj\\",
+      "outputPath": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\99455\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2438,8 +2438,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Service\\Parfume.Service.csproj": {
-              "projectPath": "C:\\Users\\99455\\Desktop\\Parfume_backend\\Parfume.Service\\Parfume.Service.csproj"
+            "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Service\\Parfume.Service.csproj": {
+              "projectPath": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Service\\Parfume.Service.csproj"
             }
           }
         }
