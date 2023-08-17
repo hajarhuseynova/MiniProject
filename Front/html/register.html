@@ -67,26 +67,79 @@
           <div class="register_right">
             <h1>Qeydiyyat</h1>
             <p>Hesabin var ? <a href="../html/login.html">Girish et</a></p>
-            <input placeholder="Ad" type="text" class="register_input" />
-            <input placeholder="Soyad" type="text" class="register_input" />
-            <input
-              placeholder="Istifadeci Adi"
-              type="text"
-              class="register_input"
-            />
 
-            <input placeholder="Email" type="email" class="register_input" />
-            <input placeholder="Şifrə" type="password" class="register_input" />
-            <input
-              placeholder="Şifrə Təkrar"
-              type="password"
-              class="register_input"
-            />
-            <div class="checkbox_input">
-              <input type="checkbox" />
-              <p>Qebul edirem</p>
-            </div>
-            <a><button>Qeydiyyat</button></a>
+            <form action="#" method="post">
+              <div
+                class="alert alert-danger"
+                asp-validation-summary="ModelOnly"
+              ></div>
+
+              <input
+                asp-for="Name"
+                class="form-control register_input"
+                placeholder="Ad"
+                type="text"
+              />
+              <span class="text text-danger" asp-validation-for="Name"></span>
+              <input
+                asp-for="Surname"
+                class="form-control register_input"
+                placeholder="Soyad"
+                type="text"
+              />
+              <span
+                class="text text-danger"
+                asp-validation-for="Surname"
+              ></span>
+
+              <input
+                asp-for="UserName"
+                class="form-control register_input"
+                placeholder="Istifadeci Adi"
+                type="text"
+              />
+              <span
+                class="text text-danger"
+                asp-validation-for="UserName"
+              ></span>
+
+              <input
+                asp-for="Email"
+                class="form-control register_input"
+                placeholder="Email"
+                type="email"
+              />
+              <span class="text text-danger" asp-validation-for="Email"></span>
+
+              <input
+                asp-for="Password"
+                class="form-control register_input"
+                placeholder="Şifrə"
+                type="password"
+              />
+              <span
+                class="text text-danger"
+                asp-validation-for="password"
+              ></span>
+
+              <input
+                asp-for="ConfirmPassword"
+                class="form-control register_input"
+                placeholder="Tekrar Şifrə"
+                type="password"
+              />
+              <span
+                class="text text-danger"
+                asp-validation-for="ConfirmPassword"
+              ></span>
+
+              <div class="checkbox_input">
+                <input type="checkbox" />
+                <p>Xatirla</p>
+              </div>
+
+              <button type="submit">Girish et</button>
+            </form>
           </div>
         </div>
       </div>
@@ -156,6 +209,5 @@
       </footer>
     </div>
     <script src="../js/index.js"></script>
-
   </body>
 </html>

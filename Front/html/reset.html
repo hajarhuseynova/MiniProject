@@ -65,22 +65,37 @@
         <div class="reset_container">
           <div class="reset_left"></div>
           <div class="reset_right">
-            <h1>Yenilenme:</h1>
-            <input
-              placeholder="Yeni Şifrə"
-              type="password"
-              class="register_input"
-            />
-            <input
-              placeholder="Yeni Şifrə Təkrar"
-              type="password"
-              class="register_input"
-            />
-            <div class="checkbox_input">
-              <input type="checkbox" />
-              <p>Qebul edirem</p>
-            </div>
-            <a><button>Yenile</button></a>
+            <h1>Yenilenme</h1>
+            <form action="#" method="post">
+              <div
+                class="alert alert-danger"
+                asp-validation-summary="ModelOnly"
+              ></div>
+
+              <input
+                asp-for="Password"
+                class="form-control register_input"
+                placeholder="Şifrə"
+                type="password"
+              />
+              <span
+                class="text text-danger"
+                asp-validation-for="password"
+              ></span>
+
+              <input
+                asp-for="ConfirmPassword"
+                class="form-control register_input"
+                placeholder="Tekrar Şifrə"
+                type="password"
+              />
+              <span
+                class="text text-danger"
+                asp-validation-for="ConfirmPassword"
+              ></span>
+
+              <button type="submit">Yenile</button>
+            </form>
           </div>
         </div>
       </div>
@@ -150,6 +165,5 @@
       </footer>
     </div>
     <script src="../js/index.js"></script>
-
   </body>
 </html>

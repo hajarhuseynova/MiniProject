@@ -1,15 +1,54 @@
-﻿ <div class="login">
+﻿ 
+@model LoginViewModel
+
+
+
+<div class="login">
         <div class="login_container">
           <div class="login_left"></div>
           <div class="login_right">
             <h1>Girish Et</h1>
-            <input placeholder="Email" type="email" class="register_input" />
-            <input placeholder="Şifrə" type="password" class="register_input" />
-            <div class="checkbox_input">
-              <input type="checkbox" />
-              <p>Qebul edirem</p>
-            </div>
-            <a><button>Girish et</button></a>
+
+               <form action="#" method="post">
+              <div
+                class="alert alert-danger"
+                asp-validation-summary="ModelOnly"
+              ></div>
+
+              <input
+                asp-for="UserName"
+                class="form-control register_input"
+                placeholder="Email"
+                type="text"
+              />
+
+              <span
+                class="text text-danger"
+                asp-validation-for="UserName"
+              ></span>
+
+              <input
+                asp-for="Password"
+                class="form-control register_input"
+                placeholder="Şifrə"
+                type="password"
+              />
+
+              <span
+                class="text text-danger"
+                asp-validation-for="Password"
+              ></span>
+
+              <div class="checkbox_input">
+                <input type="checkbox" />
+                <p>Xatirla</p>
+                <a asp-controller="account" asp-action="forgetpassword"
+                  >Forgot Password</a>
+              </div>
+              <button type="submit">Girish et</button>
+            </form>
+
+            
           </div>
         </div>
       </div>

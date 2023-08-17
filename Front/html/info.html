@@ -66,30 +66,40 @@
           <div class="infoPage_left"></div>
           <div class="infoPage_right">
             <h1>Melumatlar</h1>
-            <input
-              disabled
-              placeholder="Ad"
-              type="text"
-              class="register_input"
-            />
-            <input
-              disabled
-              placeholder="Soyad"
-              type="text"
-              class="register_input"
-            />
-            <input
-              disabled
-              placeholder="Istifadeci Adi"
-              type="text"
-              class="register_input"
-            />
-            <input
-              disabled
-              placeholder="Email"
-              type="email"
-              class="register_input special_input"
-            />
+            <form action="#" method="post">
+              <div
+                class="alert alert-danger"
+                asp-validation-summary="ModelOnly"
+              ></div>
+
+              <input
+                disabled
+                class="form-control register_input"
+                placeholder="Ad"
+                type="text"
+              />
+
+              <input
+                disabled
+                class="form-control register_input"
+                placeholder="Soyad"
+                type="text"
+              />
+
+              <input
+                disabled
+                class="form-control register_input"
+                placeholder="Istifadeci Adi"
+                type="text"
+              />
+
+              <input
+                disabled
+                class="form-control register_input special_inp"
+                placeholder="Email"
+                type="email"
+              />
+            </form>
           </div>
         </div>
       </div>
@@ -159,6 +169,5 @@
       </footer>
     </div>
     <script src="../js/index.js"></script>
-
   </body>
 </html>

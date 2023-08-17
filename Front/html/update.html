@@ -67,23 +67,52 @@
           <div class="update_left"></div>
           <div class="update_right">
             <h1>Yenile</h1>
-            <input placeholder="Ad" type="text" class="register_input" />
-            <input placeholder="Soyad" type="text" class="register_input" />
-            <input
-              placeholder="Istifadeci Adi"
-              type="text"
-              class="register_input"
-            />
 
-            <input placeholder="Email" type="email" class="register_input" />
-            <input placeholder="Şifrə" type="password" class="register_input" />
-            <input
-              placeholder="Şifrə Təkrar"
-              type="password"
-              class="register_input"
-            />
+            <form action="#" method="post">
+              <div
+                class="alert alert-danger"
+                asp-validation-summary="ModelOnly"
+              ></div>
 
-            <a><button>Yenile</button></a>
+              <input
+                asp-for="Name"
+                class="form-control register_input"
+                placeholder="Ad"
+                type="text"
+              />
+              <span class="text text-danger" asp-validation-for="Name"></span>
+              <input
+                asp-for="Surname"
+                class="form-control register_input"
+                placeholder="Soyad"
+                type="text"
+              />
+              <span
+                class="text text-danger"
+                asp-validation-for="Surname"
+              ></span>
+
+              <input
+                asp-for="UserName"
+                class="form-control register_input"
+                placeholder="Istifadeci Adi"
+                type="text"
+              />
+              <span
+                class="text text-danger"
+                asp-validation-for="UserName"
+              ></span>
+
+              <input
+                asp-for="Email"
+                class="form-control register_input"
+                placeholder="Email"
+                type="email"
+              />
+              <span class="text text-danger" asp-validation-for="Email"></span>
+
+              <button type="submit">Yenile</button>
+            </form>
           </div>
         </div>
       </div>

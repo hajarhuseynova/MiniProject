@@ -30,11 +30,18 @@
         letter-spacing: 0em;
         text-align: left;
       }
-      > input {
-        width: 400px;
-        height: 15px;
-      }
-      > a {
+      > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        > input {
+          width: 400px;
+          height: 15px;
+        }
+
         > button {
           width: 435px;
           height: 40px;
@@ -47,20 +54,20 @@
             color: $orange_01;
           }
         }
-      }
-      .checkbox_input {
-        display: flex;
-        align-items: center;
-
-        > input {
-          margin-left: -215px;
-        }
-        > p {
-          font-family: Work Sans;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 21px;
-          letter-spacing: 0em;
+        .checkbox_input {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          > input {
+            margin-left: -215px;
+          }
+          > p {
+            font-family: Work Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+          }
         }
       }
     }
@@ -97,12 +104,12 @@
           letter-spacing: 0em;
           text-align: left;
         }
-
-        > input {
-          width: 250px;
-          height: 15px;
-        }
-        > a {
+        > form {
+          gap: 6px;
+          > input {
+            width: 250px;
+            height: 15px;
+          }
           > button {
             width: 285px;
             height: 40px;
@@ -115,12 +122,13 @@
               color: $orange_01;
             }
           }
-        }
-        .checkbox_input {
-          display: flex;
-          align-items: center;
-          > input {
-            margin-left: -140px;
+          .checkbox_input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+            > input {
+              margin-left: -140px;
+            }
           }
         }
       }
@@ -162,13 +170,14 @@
           text-align: left;
           margin-top: 25px;
         }
+        > form {
+          gap: 5px;
+          > input {
+            width: 300px;
+            height: 15px;
+            padding: 10px 6px;
+          }
 
-        > input {
-          width: 300px;
-          height: 15px;
-          padding: 10px 6px;
-        }
-        > a {
           > button {
             width: 315px;
             height: 37px;
@@ -182,16 +191,16 @@
               color: $orange_01;
             }
           }
-        }
-        .checkbox_input {
-          display: flex;
-          align-items: center;
-          > input {
-            margin-left: -155px;
-          }
-          > p {
-            > span {
-              color: $orange_01;
+          .checkbox_input {
+            display: flex;
+            align-items: center;
+            > input {
+              margin-left: -155px;
+            }
+            > p {
+              > span {
+                color: $orange_01;
+              }
             }
           }
         }

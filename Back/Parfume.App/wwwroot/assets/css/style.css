@@ -3052,7 +3052,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 .register .register_container .register_right > h1 {
   font-family: Space Mono;
@@ -3064,45 +3064,62 @@ a {
 }
 .register .register_container .register_right > p {
   font-family: Work Sans;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 10px;
 }
-.register .register_container .register_right > p > a {
+.register .register_container .register_right > p > a:hover {
   color: #ffaf06;
 }
-.register .register_container .register_right > input {
+.register .register_container .register_right > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.register .register_container .register_right > form > input {
   width: 400px;
   height: 15px;
 }
-.register .register_container .register_right > a > button {
+.register .register_container .register_right > form > button {
   width: 435px;
   height: 40px;
   background-color: #ffaf06;
   color: rgb(18, 18, 18);
   font-weight: 500;
 }
-.register .register_container .register_right > a > button:hover {
+.register .register_container .register_right > form > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: transparent;
   color: #ffaf06;
 }
-.register .register_container .register_right .checkbox_input {
+.register .register_container .register_right > form .checkbox_input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
-.register .register_container .register_right .checkbox_input > input {
+.register .register_container .register_right > form .checkbox_input > input {
   margin-left: -215px;
 }
-.register .register_container .register_right .checkbox_input > p {
+.register .register_container .register_right > form .checkbox_input > p {
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 400;
@@ -3145,7 +3162,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 20px;
+    gap: 0px;
   }
   .register .register_container .register_right > h1 {
     font-family: Space Mono;
@@ -3154,6 +3171,7 @@ a {
     line-height: 38px;
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 10px;
   }
   .register .register_container .register_right > p {
     font-family: Work Sans;
@@ -3164,35 +3182,36 @@ a {
     text-align: left;
     margin-bottom: 10px;
   }
-  .register .register_container .register_right > p > a {
-    color: #ffaf06;
+  .register .register_container .register_right > form {
+    gap: 6px;
   }
-  .register .register_container .register_right > input {
+  .register .register_container .register_right > form > input {
     width: 250px;
     height: 15px;
   }
-  .register .register_container .register_right > a > button {
+  .register .register_container .register_right > form > button {
     width: 285px;
     height: 40px;
     background-color: #ffaf06;
     color: rgb(18, 18, 18);
     font-weight: 500;
   }
-  .register .register_container .register_right > a > button:hover {
+  .register .register_container .register_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .register .register_container .register_right .checkbox_input {
+  .register .register_container .register_right > form .checkbox_input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 7px;
   }
-  .register .register_container .register_right .checkbox_input > input {
+  .register .register_container .register_right > form .checkbox_input > input {
     margin-left: -140px;
   }
 }
@@ -3251,6 +3270,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     margin-top: 25px;
+    margin-bottom: 0;
   }
   .register .register_container .register_right > p {
     font-family: Work Sans;
@@ -3261,15 +3281,15 @@ a {
     text-align: left;
     margin-bottom: 5px;
   }
-  .register .register_container .register_right > p > a {
-    color: #ffaf06;
+  .register .register_container .register_right > form {
+    gap: 5px;
   }
-  .register .register_container .register_right > input {
+  .register .register_container .register_right > form > input {
     width: 300px;
     height: 15px;
     padding: 10px 6px;
   }
-  .register .register_container .register_right > a > button {
+  .register .register_container .register_right > form > button {
     width: 315px;
     height: 37px;
     background-color: #ffaf06;
@@ -3277,13 +3297,13 @@ a {
     font-weight: 500;
     margin-bottom: 30px;
   }
-  .register .register_container .register_right > a > button:hover {
+  .register .register_container .register_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .register .register_container .register_right .checkbox_input {
+  .register .register_container .register_right > form .checkbox_input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3291,10 +3311,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .register .register_container .register_right .checkbox_input > input {
+  .register .register_container .register_right > form .checkbox_input > input {
     margin-left: -155px;
   }
-  .register .register_container .register_right .checkbox_input > p > span {
+  .register .register_container .register_right > form .checkbox_input > p > span {
     color: #ffaf06;
   }
 }
@@ -3346,40 +3366,61 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.login .login_container .login_right > input {
+.login .login_container .login_right > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.login .login_container .login_right > form > input {
   width: 400px;
   height: 15px;
 }
-.login .login_container .login_right > a > button {
+.login .login_container .login_right > form > button {
   width: 435px;
   height: 40px;
   background-color: #ffaf06;
   color: rgb(18, 18, 18);
   font-weight: 500;
 }
-.login .login_container .login_right > a > button:hover {
+.login .login_container .login_right > form > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: transparent;
   color: #ffaf06;
 }
-.login .login_container .login_right .checkbox_input {
+.login .login_container .login_right > form .checkbox_input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
-.login .login_container .login_right .checkbox_input > input {
-  margin-left: -215px;
+.login .login_container .login_right > form .checkbox_input > input {
+  margin-left: 0px;
 }
-.login .login_container .login_right .checkbox_input > p {
+.login .login_container .login_right > form .checkbox_input > p {
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
+  margin-right: 240px;
+}
+.login .login_container .login_right > form .checkbox_input > a:hover {
+  color: #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {
@@ -3427,24 +3468,24 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .login .login_container .login_right > input {
+  .login .login_container .login_right > form > input {
     width: 250px;
     height: 15px;
   }
-  .login .login_container .login_right > a > button {
+  .login .login_container .login_right > form > button {
     width: 285px;
     height: 40px;
     background-color: #ffaf06;
     color: rgb(18, 18, 18);
     font-weight: 500;
   }
-  .login .login_container .login_right > a > button:hover {
+  .login .login_container .login_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .login .login_container .login_right .checkbox_input {
+  .login .login_container .login_right > form .checkbox_input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3452,8 +3493,8 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .login .login_container .login_right .checkbox_input > input {
-    margin-left: -140px;
+  .login .login_container .login_right > form .checkbox_input > p {
+    margin-right: 87px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -3512,12 +3553,12 @@ a {
     text-align: left;
     margin-top: 25px;
   }
-  .login .login_container .login_right > input {
+  .login .login_container .login_right > form > input {
     width: 300px;
     height: 15px;
     padding: 10px 6px;
   }
-  .login .login_container .login_right > a > button {
+  .login .login_container .login_right > form > button {
     width: 315px;
     height: 37px;
     background-color: #ffaf06;
@@ -3525,13 +3566,13 @@ a {
     font-weight: 500;
     margin-bottom: 30px;
   }
-  .login .login_container .login_right > a > button:hover {
+  .login .login_container .login_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .login .login_container .login_right .checkbox_input {
+  .login .login_container .login_right > form .checkbox_input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3539,11 +3580,8 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .login .login_container .login_right .checkbox_input > input {
-    margin-left: -155px;
-  }
-  .login .login_container .login_right .checkbox_input > p > span {
-    color: #ffaf06;
+  .login .login_container .login_right > form .checkbox_input > p {
+    margin-right: 120px;
   }
 }
 .reset {
@@ -3594,35 +3632,52 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.reset .reset_container .reset_right > input {
+.reset .reset_container .reset_right > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.reset .reset_container .reset_right > form > input {
   width: 400px;
   height: 15px;
 }
-.reset .reset_container .reset_right > a > button {
+.reset .reset_container .reset_right > form > button {
   width: 435px;
   height: 40px;
   background-color: #ffaf06;
   color: rgb(18, 18, 18);
   font-weight: 500;
 }
-.reset .reset_container .reset_right > a > button:hover {
+.reset .reset_container .reset_right > form > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: transparent;
   color: #ffaf06;
 }
-.reset .reset_container .reset_right .checkbox_input {
+.reset .reset_container .reset_right > form .checkbox_input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
-.reset .reset_container .reset_right .checkbox_input > input {
+.reset .reset_container .reset_right > form .checkbox_input > input {
   margin-left: -215px;
 }
-.reset .reset_container .reset_right .checkbox_input > p {
+.reset .reset_container .reset_right > form .checkbox_input > p {
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 400;
@@ -3675,32 +3730,36 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .reset .reset_container .reset_right > input {
+  .reset .reset_container .reset_right > form {
+    gap: 6px;
+  }
+  .reset .reset_container .reset_right > form > input {
     width: 250px;
     height: 15px;
   }
-  .reset .reset_container .reset_right > a > button {
+  .reset .reset_container .reset_right > form > button {
     width: 285px;
     height: 40px;
     background-color: #ffaf06;
     color: rgb(18, 18, 18);
     font-weight: 500;
   }
-  .reset .reset_container .reset_right > a > button:hover {
+  .reset .reset_container .reset_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .reset .reset_container .reset_right .checkbox_input {
+  .reset .reset_container .reset_right > form .checkbox_input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 7px;
   }
-  .reset .reset_container .reset_right .checkbox_input > input {
+  .reset .reset_container .reset_right > form .checkbox_input > input {
     margin-left: -140px;
   }
 }
@@ -3760,12 +3819,15 @@ a {
     text-align: left;
     margin-top: 25px;
   }
-  .reset .reset_container .reset_right > input {
+  .reset .reset_container .reset_right > form {
+    gap: 5px;
+  }
+  .reset .reset_container .reset_right > form > input {
     width: 300px;
     height: 15px;
     padding: 10px 6px;
   }
-  .reset .reset_container .reset_right > a > button {
+  .reset .reset_container .reset_right > form > button {
     width: 315px;
     height: 37px;
     background-color: #ffaf06;
@@ -3773,13 +3835,13 @@ a {
     font-weight: 500;
     margin-bottom: 30px;
   }
-  .reset .reset_container .reset_right > a > button:hover {
+  .reset .reset_container .reset_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .reset .reset_container .reset_right .checkbox_input {
+  .reset .reset_container .reset_right > form .checkbox_input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3787,10 +3849,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .reset .reset_container .reset_right .checkbox_input > input {
+  .reset .reset_container .reset_right > form .checkbox_input > input {
     margin-left: -155px;
   }
-  .reset .reset_container .reset_right .checkbox_input > p > span {
+  .reset .reset_container .reset_right > form .checkbox_input > p > span {
     color: #ffaf06;
   }
 }
@@ -3832,7 +3894,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 .forget .forget_container .forget_right > h1 {
   font-family: Space Mono;
@@ -3842,35 +3904,52 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.forget .forget_container .forget_right > input {
+.forget .forget_container .forget_right > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.forget .forget_container .forget_right > form > input {
   width: 400px;
   height: 15px;
 }
-.forget .forget_container .forget_right > a > button {
+.forget .forget_container .forget_right > form > button {
   width: 435px;
   height: 40px;
   background-color: #ffaf06;
   color: rgb(18, 18, 18);
   font-weight: 500;
 }
-.forget .forget_container .forget_right > a > button:hover {
+.forget .forget_container .forget_right > form > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: transparent;
   color: #ffaf06;
 }
-.forget .forget_container .forget_right .checkbox_input {
+.forget .forget_container .forget_right > form .checkbox_input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
-.forget .forget_container .forget_right .checkbox_input > input {
+.forget .forget_container .forget_right > form .checkbox_input > input {
   margin-left: -215px;
 }
-.forget .forget_container .forget_right .checkbox_input > p {
+.forget .forget_container .forget_right > form .checkbox_input > p {
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 400;
@@ -3923,32 +4002,33 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .forget .forget_container .forget_right > input {
+  .forget .forget_container .forget_right > form > input {
     width: 250px;
     height: 15px;
   }
-  .forget .forget_container .forget_right > a > button {
+  .forget .forget_container .forget_right > form > button {
     width: 285px;
     height: 40px;
     background-color: #ffaf06;
     color: rgb(18, 18, 18);
     font-weight: 500;
   }
-  .forget .forget_container .forget_right > a > button:hover {
+  .forget .forget_container .forget_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .forget .forget_container .forget_right .checkbox_input {
+  .forget .forget_container .forget_right > form .checkbox_input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 7px;
   }
-  .forget .forget_container .forget_right .checkbox_input > input {
+  .forget .forget_container .forget_right > form .checkbox_input > input {
     margin-left: -140px;
   }
 }
@@ -4008,12 +4088,12 @@ a {
     text-align: left;
     margin-top: 25px;
   }
-  .forget .forget_container .forget_right > input {
+  .forget .forget_container .forget_right > form > input {
     width: 300px;
     height: 15px;
     padding: 10px 6px;
   }
-  .forget .forget_container .forget_right > a > button {
+  .forget .forget_container .forget_right > form > button {
     width: 315px;
     height: 37px;
     background-color: #ffaf06;
@@ -4021,13 +4101,13 @@ a {
     font-weight: 500;
     margin-bottom: 30px;
   }
-  .forget .forget_container .forget_right > a > button:hover {
+  .forget .forget_container .forget_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .forget .forget_container .forget_right .checkbox_input {
+  .forget .forget_container .forget_right > form .checkbox_input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4035,10 +4115,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .forget .forget_container .forget_right .checkbox_input > input {
+  .forget .forget_container .forget_right > form .checkbox_input > input {
     margin-left: -155px;
   }
-  .forget .forget_container .forget_right .checkbox_input > p > span {
+  .forget .forget_container .forget_right > form .checkbox_input > p > span {
     color: #ffaf06;
   }
 }
@@ -4660,7 +4740,23 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.infoPage .infoPage_container .infoPage_right > input {
+.infoPage .infoPage_container .infoPage_right > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.infoPage .infoPage_container .infoPage_right > form > input {
   width: 400px;
   height: 15px;
 }
@@ -4710,7 +4806,10 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .infoPage .infoPage_container .infoPage_right > input {
+  .infoPage .infoPage_container .infoPage_right > form {
+    gap: 6px;
+  }
+  .infoPage .infoPage_container .infoPage_right > form > input {
     width: 250px;
     height: 15px;
   }
@@ -4771,13 +4870,16 @@ a {
     text-align: left;
     margin-top: 25px;
   }
-  .infoPage .infoPage_container .infoPage_right > input {
+  .infoPage .infoPage_container .infoPage_right > form {
+    gap: 5px;
+  }
+  .infoPage .infoPage_container .infoPage_right > form > input {
     width: 300px;
     height: 15px;
     padding: 10px 6px;
   }
-  .infoPage .infoPage_container .infoPage_right .special_input {
-    margin-bottom: 30px;
+  .infoPage .infoPage_container .infoPage_right > form .special_inp {
+    margin-bottom: 20px;
   }
 }
 .tester .tester_container {
@@ -10251,22 +10353,57 @@ a {
 .update .update_container .update_right > p > a {
   color: #ffaf06;
 }
-.update .update_container .update_right > input {
+.update .update_container .update_right > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.update .update_container .update_right > form > input {
   width: 400px;
   height: 15px;
 }
-.update .update_container .update_right > a > button {
+.update .update_container .update_right > form > button {
   width: 435px;
   height: 40px;
   background-color: #ffaf06;
   color: rgb(18, 18, 18);
   font-weight: 500;
 }
-.update .update_container .update_right > a > button:hover {
+.update .update_container .update_right > form > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: transparent;
   color: #ffaf06;
+}
+.update .update_container .update_right > form .checkbox_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.update .update_container .update_right > form .checkbox_input > input {
+  margin-left: -215px;
+}
+.update .update_container .update_right > form .checkbox_input > p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
 }
 
 @media screen and (max-width: 1238px) {
@@ -10323,25 +10460,37 @@ a {
     text-align: left;
     margin-bottom: 10px;
   }
-  .update .update_container .update_right > p > a {
-    color: #ffaf06;
+  .update .update_container .update_right > form {
+    gap: 6px;
   }
-  .update .update_container .update_right > input {
+  .update .update_container .update_right > form > input {
     width: 250px;
     height: 15px;
   }
-  .update .update_container .update_right > a > button {
+  .update .update_container .update_right > form > button {
     width: 285px;
     height: 40px;
     background-color: #ffaf06;
     color: rgb(18, 18, 18);
     font-weight: 500;
   }
-  .update .update_container .update_right > a > button:hover {
+  .update .update_container .update_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
+  }
+  .update .update_container .update_right > form .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 7px;
+  }
+  .update .update_container .update_right > form .checkbox_input > input {
+    margin-left: -140px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -10409,15 +10558,15 @@ a {
     text-align: left;
     margin-bottom: 5px;
   }
-  .update .update_container .update_right > p > a {
-    color: #ffaf06;
+  .update .update_container .update_right > form {
+    gap: 5px;
   }
-  .update .update_container .update_right > input {
+  .update .update_container .update_right > form > input {
     width: 300px;
     height: 15px;
     padding: 10px 6px;
   }
-  .update .update_container .update_right > a > button {
+  .update .update_container .update_right > form > button {
     width: 315px;
     height: 37px;
     background-color: #ffaf06;
@@ -10425,10 +10574,24 @@ a {
     font-weight: 500;
     margin-bottom: 30px;
   }
-  .update .update_container .update_right > a > button:hover {
+  .update .update_container .update_right > form > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
+    color: #ffaf06;
+  }
+  .update .update_container .update_right > form .checkbox_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .update .update_container .update_right > form .checkbox_input > input {
+    margin-left: -155px;
+  }
+  .update .update_container .update_right > form .checkbox_input > p > span {
     color: #ffaf06;
   }
 }

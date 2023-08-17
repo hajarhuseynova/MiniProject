@@ -1,20 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using Parfume.App.Context;
+using Parfume.App.ServiceRegistration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
-builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ParfumeDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
-});
+builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 
+builder.Services.AddHttpContextAccessor();
+builder.Services.Register(builder.Configuration);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

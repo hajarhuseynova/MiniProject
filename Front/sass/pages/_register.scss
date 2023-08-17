@@ -21,7 +21,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 10px;
       > h1 {
         font-family: Space Mono;
         font-size: 32px;
@@ -32,21 +32,31 @@
       }
       > p {
         font-family: Work Sans;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         line-height: 21px;
         letter-spacing: 0em;
         text-align: left;
         margin-bottom: 10px;
         > a {
-          color: $orange_01;
+          &:hover {
+            color: $orange_01;
+          }
         }
       }
-      > input {
-        width: 400px;
-        height: 15px;
-      }
-      > a {
+
+      > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        > input {
+          width: 400px;
+          height: 15px;
+        }
+
         > button {
           width: 435px;
           height: 40px;
@@ -59,20 +69,20 @@
             color: $orange_01;
           }
         }
-      }
-      .checkbox_input {
-        display: flex;
-        align-items: center;
-
-        > input {
-          margin-left: -215px;
-        }
-        > p {
-          font-family: Work Sans;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 21px;
-          letter-spacing: 0em;
+        .checkbox_input {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          > input {
+            margin-left: -215px;
+          }
+          > p {
+            font-family: Work Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+          }
         }
       }
     }
@@ -100,7 +110,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 20px;
+        gap: 0px;
         > h1 {
           font-family: Space Mono;
           font-size: 32px;
@@ -108,6 +118,7 @@
           line-height: 38px;
           letter-spacing: 0em;
           text-align: left;
+          margin-bottom: 10px;
         }
         > p {
           font-family: Work Sans;
@@ -117,15 +128,13 @@
           letter-spacing: 0em;
           text-align: left;
           margin-bottom: 10px;
-          > a {
-            color: $orange_01;
+        }
+        > form {
+          gap: 6px;
+          > input {
+            width: 250px;
+            height: 15px;
           }
-        }
-        > input {
-          width: 250px;
-          height: 15px;
-        }
-        > a {
           > button {
             width: 285px;
             height: 40px;
@@ -138,12 +147,13 @@
               color: $orange_01;
             }
           }
-        }
-        .checkbox_input {
-          display: flex;
-          align-items: center;
-          > input {
-            margin-left: -140px;
+          .checkbox_input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+            > input {
+              margin-left: -140px;
+            }
           }
         }
       }
@@ -186,6 +196,7 @@
           letter-spacing: 0em;
           text-align: left;
           margin-top: 25px;
+          margin-bottom: 0;
         }
         > p {
           font-family: Work Sans;
@@ -195,16 +206,15 @@
           letter-spacing: 0em;
           text-align: left;
           margin-bottom: 5px;
-          > a {
-            color: $orange_01;
+        }
+        > form {
+          gap: 5px;
+          > input {
+            width: 300px;
+            height: 15px;
+            padding: 10px 6px;
           }
-        }
-        > input {
-          width: 300px;
-          height: 15px;
-          padding: 10px 6px;
-        }
-        > a {
+
           > button {
             width: 315px;
             height: 37px;
@@ -218,16 +228,16 @@
               color: $orange_01;
             }
           }
-        }
-        .checkbox_input {
-          display: flex;
-          align-items: center;
-          > input {
-            margin-left: -155px;
-          }
-          > p {
-            > span {
-              color: $orange_01;
+          .checkbox_input {
+            display: flex;
+            align-items: center;
+            > input {
+              margin-left: -155px;
+            }
+            > p {
+              > span {
+                color: $orange_01;
+              }
             }
           }
         }

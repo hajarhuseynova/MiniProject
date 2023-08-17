@@ -31,9 +31,17 @@
         text-align: left;
       }
 
-      > input {
-        width: 400px;
-        height: 15px;
+      > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        > input {
+          width: 400px;
+          height: 15px;
+        }
       }
     }
   }
@@ -70,9 +78,12 @@
           text-align: left;
         }
 
-        > input {
-          width: 250px;
-          height: 15px;
+        > form {
+          gap: 6px;
+          > input {
+            width: 250px;
+            height: 15px;
+          }
         }
       }
     }
@@ -113,13 +124,16 @@
           text-align: left;
           margin-top: 25px;
         }
-        > input {
-          width: 300px;
-          height: 15px;
-          padding: 10px 6px;
-        }
-        .special_input {
-          margin-bottom: 30px;
+        > form {
+          gap: 5px;
+          > input {
+            width: 300px;
+            height: 15px;
+            padding: 10px 6px;
+          }
+          .special_inp {
+            margin-bottom: 20px;
+          }
         }
       }
     }
