@@ -9,6 +9,7 @@ namespace Parfume.Service.Extentions
 {
     public static class FileExtention
     {
+
         public static bool isImage(this IFormFile file)
         {
             return file.ContentType.Contains("image");

@@ -7,6 +7,7 @@ namespace Parfume.App.Context
     public class ParfumeDbContext: IdentityDbContext<AppUser>
     {
 
+        public DbSet<FakeSlider> FakeSlides { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
           

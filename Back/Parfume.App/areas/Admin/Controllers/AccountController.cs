@@ -22,8 +22,7 @@ namespace Parfume.App.areas.Admin.Controllers
             _userManager = userManager;
             _signinManager = signinManager;
         }
-        //[Authorize(Roles = "SuperAdmin")]
-
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> AdminCreate()
         {
             AppUser SuperAdmin = new AppUser
@@ -91,7 +90,7 @@ namespace Parfume.App.areas.Admin.Controllers
             return RedirectToAction("index", "home");
         }
 
-        //[Authorize(Roles = "Admin,SuperAdmin")]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Logout()
         {
             await _signinManager.SignOutAsync();

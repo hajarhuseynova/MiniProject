@@ -1,4 +1,4 @@
-﻿
+﻿@model HomeViewModel
  
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -459,88 +459,37 @@
         <div class="container comments_container">
           <h1>Musteri Memnuniyyeti</h1>
           <div class="slideshow-container">
-            <div class="mySlides fade">
+           @foreach (var item in Model.FakeSlides)
+           {
+                <div class="mySlides fade">
               <div class="modal_comment">
                 <img src="../assets/icons/comment/comment.svg" />
                 <div class="modal_inner">
                   <div class="modal_top">
                     <div class="modal_top_left">
-                      <img src="../assets/images/Comment/person.jpg" />
+                      <img src="~/assets/images/@item.Image" />
                     </div>
                     <div class="modal_top_right">
-                      <h3>Hecer Huseynova</h3>
-                      <p>Baki/Azerbaycan</p>
+                      <h3>@item.Name @item.Surname</h3>
+                      <p>@item.City/@item.Country</p>
                     </div>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ad, vel sit repellat nesciunt rerum atque consectetur
-                    provident, aut quasi tenetur libero? Distinctio quia at ut,
-                    aliquid, eaque nesciunt alias earum asperiores velit
-                    consequuntur dicta corporis accusamus. Fugiat exercitationem
-                    autem sit at!
+                   @item.Thoughts
                   </p>
                 </div>
                 <img class="end" src="../assets/icons/comment/comment.svg" />
               </div>
             </div>
-            <div class="mySlides fade">
-              <div class="modal_comment">
-                <img src="../assets/icons/comment/comment.svg" />
-                <div class="modal_inner">
-                  <div class="modal_top">
-                    <div class="modal_top_left">
-                      <img src="../assets/images/Comment/person.jpg" />
-                    </div>
-                    <div class="modal_top_right">
-                      <h3>Huseyn Huseynov</h3>
-                      <p>Baki/Azerbaycan</p>
-                    </div>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ad, vel sit repellat nesciunt rerum atque consectetur
-                    provident, aut quasi tenetur libero? Distinctio quia at ut,
-                    aliquid, eaque nesciunt alias earum asperiores velit
-                    consequuntur dicta corporis accusamus. Fugiat exercitationem
-                    autem sit at!
-                  </p>
-                </div>
-                <img class="end" src="../assets/icons/comment/comment.svg" />
-              </div>
-            </div>
-            <div class="mySlides fade">
-              <div class="modal_comment">
-                <img src="../assets/icons/comment/comment.svg" />
-                <div class="modal_inner">
-                  <div class="modal_top">
-                    <div class="modal_top_left">
-                      <img src="../assets/images/Comment/person.jpg" />
-                    </div>
-                    <div class="modal_top_right">
-                      <h3>Xedice Huseynova</h3>
-                      <p>Baki/Azerbaycan</p>
-                    </div>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ad, vel sit repellat nesciunt rerum atque consectetur
-                    provident, aut quasi tenetur libero? Distinctio quia at ut,
-                    aliquid, eaque nesciunt alias earum asperiores velit
-                    consequuntur dicta corporis accusamus. Fugiat exercitationem
-                    autem sit at!
-                  </p>
-                </div>
-                <img class="end" src="../assets/icons/comment/comment.svg" />
-              </div>
-            </div>
+           }
+           
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
           </div>
         </div>
       </div>
 
-      <div class="functions">
+      <div style="margin-bottom:40px" class="functions">
         <div class="container functions_container">
           <div class="function">
             <a href="google.com"
