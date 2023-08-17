@@ -1,4 +1,28 @@
-﻿<!DOCTYPE html>
+﻿@if (!string.IsNullOrWhiteSpace((string)TempData["EmailRegex"]))
+{
+    <div style="display:none" id="message">@TempData["EmailRegex"]</div>
+}
+
+@if (!string.IsNullOrWhiteSpace((string)TempData["EmailNull"]))
+{
+    <div style="display:none" id="message">@TempData["EmailNull"]</div>
+}
+
+@if (!string.IsNullOrWhiteSpace((string)TempData["EmailRepeat"]))
+{
+    <div style="display:none" id="message">@TempData["EmailRepeat"]</div>
+}
+
+@if (!string.IsNullOrWhiteSpace((string)TempData["Subs"]))
+{
+    <div style="display:none" id="message">@TempData["Subs"]</div>
+}
+
+
+
+
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      bordertps://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -16,6 +40,7 @@
       <link rel="stylesheet" href="~/assets/css/style.css">
  
     <title>Document</title>
+ 
   </head>
   <body>
     <div class="root">
@@ -47,12 +72,44 @@
             <div class="navbar_middle">
               <a asp-controller="home" asp-action="index"> <img src="../assets/icons/header/Logo.svg" /></a>
             </div>
-            <div class="navbar_right">
+             <div class="navbar_right">
               <div class="navbar_icons">
-                <a> <img src="../assets/icons/header/Search.svg" /></a>
-                <a> <img src="../assets/icons/header/Heart.svg" /></a>
-                <a asp-controller="account" asp-action="register"> <img src="../assets/icons/header/User.svg" /></a>
-                <a asp-controller="basket" asp-action="index"> <img src="../assets/icons/header/Cart.svg" /></a>
+                <a>
+                  @if (User.Identity.IsAuthenticated&&User.IsInRole("User")) {
+                  <a
+                    style="color: white"
+                    asp-controller="account"
+                    asp-action="info"
+                    ><span>@User.Identity.Name</span></a
+                  >
+                  <a
+                    style="color: white"
+                    asp-controller="account"
+                    asp-action="logout"
+                    ><span>LogOut</span></a
+                  >
+                  } else {
+                  <a
+                    style="color: white"
+                    asp-controller="account"
+                    asp-action="login"
+                    ><img src="../assets/icons/header/User.svg" /><span
+                      >Login</span
+                    ></a
+                  >
+                  <a
+                    style="color: white"
+                    asp-controller="account"
+                    asp-action="register"
+                    ><img src="../assets/icons/header/User.svg" /><span
+                      >Register</span
+                    ></a
+                  >
+                  }</a
+                >
+                <a asp-controller="basket" asp-action="index">
+                  <img src="../assets/icons/header/Cart.svg"
+                /></a>
               </div>
             </div>
           </div>
@@ -196,3 +253,14 @@
     @await RenderSectionAsync("Scripts", required: false)
   </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    const Message = document.getElementById("message");
+    if (Message != undefined) {
+        const message = Message.innerHTML;
+        if (message != "") {
+            Swal.fire(`${message}`)
+        }
+
+    }</script>

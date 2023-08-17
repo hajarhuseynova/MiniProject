@@ -32,7 +32,7 @@
 
 
               <input
-                    asp-for="UserName" 
+                asp-for="UserName" 
                 disabled
                 class="form-control register_input"
                 placeholder="Istifadeci Adi"
@@ -49,6 +49,7 @@
               />
                     <span class="text text-danger" asp-validation-for="Email"></span>
 
+               <a id="update_button" asp-controller="account" asp-action="update">Update</a>
             </form>
           </div>
         </div>

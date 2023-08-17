@@ -49,10 +49,42 @@
             </div>
             <div class="navbar_right">
               <div class="navbar_icons">
-                <a> <img src="../assets/icons/header/Search.svg" /></a>
-                <a> <img src="../assets/icons/header/Heart.svg" /></a>
-                <a> <img src="../assets/icons/header/User.svg" /></a>
-                <a> <img src="../assets/icons/header/Cart.svg" /></a>
+                <a>
+                  @if (User.Identity.IsAuthenticated&&User.IsInRole("User")) {
+                  <a
+                    style="color: white"
+                    asp-controller="account"
+                    asp-action="info"
+                    ><span>@User.Identity.Name</span></a
+                  >
+                  <a
+                    style="color: white"
+                    asp-controller="account"
+                    asp-action="logout"
+                    ><span>LogOut</span></a
+                  >
+                  } else {
+                  <a
+                    style="color: white"
+                    asp-controller="account"
+                    asp-action="login"
+                    ><img src="../assets/icons/header/User.svg" /><span
+                      >Login</span
+                    ></a
+                  >
+                  <a
+                    style="color: white"
+                    asp-controller="account"
+                    asp-action="register"
+                    ><img src="../assets/icons/header/User.svg" /><span
+                      >Register</span
+                    ></a
+                  >
+                  }</a
+                >
+                <a asp-controller="basket" asp-action="index">
+                  <img src="../assets/icons/header/Cart.svg"
+                /></a>
               </div>
             </div>
           </div>

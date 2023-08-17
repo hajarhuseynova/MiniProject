@@ -21,7 +21,6 @@ namespace Parfume.App.Controllers
             _signinManager = signinManager;
             _mailService = mailService;
         }
-      
         public async Task<IActionResult> Register()
         {
             return View();
@@ -122,7 +121,7 @@ namespace Parfume.App.Controllers
             return RedirectToAction("index", "home");
 
         }
-        //[Authorize]
+        [Authorize]
         public async Task<IActionResult> Logout()
         {
             await _signinManager.SignOutAsync();
@@ -130,6 +129,7 @@ namespace Parfume.App.Controllers
 
             return RedirectToAction("index", "home");
         }
+        [Authorize]
         public async Task<IActionResult> Info()
         {
             string UserName = User.Identity.Name;
@@ -137,7 +137,7 @@ namespace Parfume.App.Controllers
 
             return View(appUser);
         }
-        //[Authorize]
+        [Authorize]
         public async Task<IActionResult> Update()
         {
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
@@ -154,7 +154,7 @@ namespace Parfume.App.Controllers
             };
             return View(userUpdateView);
         }
-        //[Authorize]
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Update(UserUpdateViewModel model)
         {
