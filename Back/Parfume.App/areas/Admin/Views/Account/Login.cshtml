@@ -1,6 +1,8 @@
 ﻿@{
     Layout = null;
 }
+
+@model LoginViewModel
   <style>
       
       @@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
@@ -96,19 +98,19 @@ section .signin .content h2
   color: #8CC0DE;
   text-transform: uppercase;
 }
-section .signin .content .form 
+section .signin .content form 
 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-section .signin .content .form .inputBox
+section .signin .content form .inputBox
 {
   position: relative;
   width: 100%;
 }
-section .signin .content .form .inputBox input 
+section .signin .content form .inputBox input 
 {
   position: relative;
   width: 100%;
@@ -121,7 +123,8 @@ section .signin .content .form .inputBox input
   font-weight: 500;
   font-size: 1em;
 }
-section .signin .content .form .inputBox i 
+
+section .signin .content form .inputBox i 
 {
   position: absolute;
   left: 0;
@@ -131,32 +134,33 @@ section .signin .content .form .inputBox i
   transition: 0.5s;
   pointer-events: none;
 }
-.signin .content .form .inputBox input:focus ~ i,
-.signin .content .form .inputBox input:valid ~ i
+.signin .content form .inputBox input:focus ~ i,
+.signin .content form .inputBox input:valid ~ i
 {
   transform: translateY(-7.5px);
   font-size: 0.8em;
   color: #fff;
 }
-.signin .content .form .links 
+.signin .content form .links 
 {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.signin .content .form .links a 
+.signin .content form .links a 
 {
   color: #fff;
   text-decoration: none;
 }
-.signin .content .form .links a:nth-child(2)
+.signin .content form .links a:nth-child(2)
 {
   color: #8CC0DE;
   font-weight: 600;
 }
-.signin .content .form .inputBox input[type="submit"]
+.signin .content form .inputBox button
 {
+  width:100%;
   padding: 10px;
   background: #8CC0DE;
   color: #000;
@@ -164,8 +168,11 @@ section .signin .content .form .inputBox i
   font-size: 1.35em;
   letter-spacing: 0.05em;
   cursor: pointer;
+  border:1px solid transparent;
+  border-radius:5px;
+  transition:.5s;
 }
-input[type="submit"]:active
+button:hover
 {
   opacity: 0.6;
 }
@@ -198,27 +205,54 @@ input[type="submit"]:active
 
      <h2>Sign In</h2> 
 
-     <div class="form"> 
+   
 
-      <div class="inputBox"> 
+         <form action="#" method="post">
 
-       <input type="text" required> <i>Username</i> 
+              <div
+                class="alert alert-danger"
+                asp-validation-summary="ModelOnly"
+              ></div>
 
-      </div> 
+               <div class="inputBox">
 
-      <div class="inputBox"> 
+           
+                  
+                   <input
+                asp-for="UserName"
+                class="form-control register_input"
+                placeholder="UserName"
+                type="text"
+              /><i>Username</i> 
+                
+               
 
-       <input type="password" required> <i>Password</i> 
 
-      </div> 
+              </div>
 
-      <div class="inputBox"> 
+               <div class="inputBox">
+                
+                      <input
+                asp-for="Password"
+                class="form-control register_input"
+                placeholder="Şifrə"
+                type="password" /><i>Password</i> 
+             
 
-       <input type="submit" value="Login"> 
+              
+          </div>
 
-      </div> 
+             
+           <div class="inputBox">  
+               <button type="submit">Girish et</button>
+           </div>
+            
+            
+            </form>
 
-     </div> 
+
+
+   
 
     </div> 
 
