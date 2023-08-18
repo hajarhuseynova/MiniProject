@@ -18,10 +18,14 @@ namespace Parfume.App.areas.Admin.Controllers
             _context = context;
             _environment = environment;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page=1)
         {
+            int TotalCount = _context.FakeSlides.Where(x => !x.IsDeleted).Count();
+            ViewBag.TotalPage = (int)Math.Ceiling((decimal)TotalCount / 5);
+            ViewBag.CurrentPage = page;
+
             IEnumerable<FakeSlider> fakes = await _context.FakeSlides.
-                Where(x => !x.IsDeleted).ToListAsync();
+                Where(x => !x.IsDeleted).Skip((page - 1) * 5).Take(5).ToListAsync();
             return View(fakes);
         }
         public async Task<IActionResult> Create()

@@ -2,38 +2,25 @@
  
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="../assets/images/Remember/Image1.jpg" />
+        @foreach (var item in Model.Slides)
+        {
+             <div class="swiper-slide">
+            <img src="../assets/images/@item.Image" />
             <div class="info_par">
-              <h1>Parfumun adi</h1>
-              <p>Parfuma aid melumat</p>
-              <a><button>Etrafli</button></a>
+              <h1>@item.Title</h1>
+              <p>@item.Desc</p>
+                    @if (item.Chooice == "Parfum")
+                    {
+                    <a asp-controller="parfume" asp-action="index"><button>Etrafli</button></a>
+                    }
+                    @if(item.Chooice=="Tustu")
+                    {
+                    <a asp-controller="smoke" asp-action="index"><button>Etrafli</button></a>
+                    }
             </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            <div class="info_par">
-              <h1>Parfumun adi2</h1>
-              <p>Parfuma aid melumat</p>
-              <a><button>Etrafli</button></a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            <div class="info_par">
-              <h1>Parfumun adi3</h1>
-              <p>Parfuma aid melumat</p>
-              <a><button>Etrafli</button></a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            <div class="info_par">
-              <h1>Parfumun adi4</h1>
-              <p>Parfuma aid melumat</p>
-              <a><button>Etrafli</button></a>
-            </div>
-          </div>
+          </div> 
+        }
+        
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
