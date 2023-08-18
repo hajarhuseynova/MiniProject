@@ -1,4 +1,8 @@
-﻿      <div class="gift_intro">
+﻿   @model GiftBoxViewModel
+   
+
+
+      <div class="gift_intro">
         <div class="container gift_intro_container">
           <div class="gift_left">
             <h1>Xüsusi günlərin əvəzedilməzi!</h1>
@@ -23,55 +27,41 @@
             </p>
             <p></p>
           </div>
-          <div class="boxes">
-            <div class="box">
-              <img src="../assets/images/GiftBox/box1.jpg" />
+         <div class="boxes">
+          @foreach (var item in Model.GiftBoxes)
+          {
+               <div class="box">
+              <img src="../assets/images/@item.Image" style="width:100%,height:50%" />
               <div class="box_info">
-                <h1>Trio Kit</h1>
-                <p>20$</p>
+                <h1>@item.Title</h1>
+                <p>@item.Price AZN</p>
               </div>
               <p>
-                Combination of your favorite fragrances in 3 perfume bottles
-                sizes of 100ml.
+                @item.Desc
               </p>
               <a><button class="addtobasket">Sebete at</button></a>
             </div>
-            <div class="box">
-              <img src="../assets/images/GiftBox/box1.jpg" />
-              <div class="box_info">
-                <h1>Trio Kit</h1>
-                <p>20$</p>
-              </div>
-              <p>
-                Combination of your favorite fragrances in 3 perfume bottles
-                sizes of 100ml.
-              </p>
-              <a><button class="addtobasket">Sebete at</button></a>
-            </div>
-            <div class="box">
-              <img src="../assets/images/GiftBox/box1.jpg" />
-              <div class="box_info">
-                <h1>Trio Kit</h1>
-                <p>20$</p>
-              </div>
-              <p>
-                Combination of your favorite fragrances in 3 perfume bottles
-                sizes of 100ml.
-              </p>
-              <a><button class="addtobasket">Sebete at</button></a>
-            </div>
-            <div class="box">
-              <img src="../assets/images/GiftBox/box1.jpg" />
-              <div class="box_info">
-                <h1>Trio Kit</h1>
-                <p>20$</p>
-              </div>
-              <p>
-                Combination of your favorite fragrances in 3 perfume bottles
-                sizes of 100ml.
-              </p>
-              <a><button class="addtobasket">Sebete at</button></a>
-            </div>
+           
+          }
+
+      
           </div>
+    <nav aria-label="Page navigation example" style="margin-top:30px">
+
+        <ul class="pagination">
+            @for (int i = 1; i <= ViewBag.TotalPage; i++)
+            {
+                @if (i == ViewBag.CurrentPage)
+                {
+                    <li class="page-item disabled"><a  class=" page-link" asp-controller="giftBox" asp-action="index" asp-route-page="@i">@i</a></li>
+                }
+                else
+                {
+                    <li class="page-item"><a  class=" page-link" asp-controller="giftBox" asp-action="index" asp-route-page="@i">@i</a></li>
+                }
+            }
+        </ul>
+    </nav> 
+
         </div>
       </div>

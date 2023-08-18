@@ -26,6 +26,7 @@ namespace Parfume.App.areas.Admin.Controllers
 
             IEnumerable<FakeSlider> fakes = await _context.FakeSlides.
                 Where(x => !x.IsDeleted).Skip((page - 1) * 5).Take(5).ToListAsync();
+
             return View(fakes);
         }
         public async Task<IActionResult> Create()
