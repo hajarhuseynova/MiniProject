@@ -242,8 +242,14 @@
           > button {
             width: 95%;
             height: 29px;
-            border-color: transparent;
+            border: 2px solid transparent;
             margin-top: 10px;
+            &:hover {
+              transform: scale(1);
+              background-color: transparent;
+              border: 2px solid $orange_01;
+              color: $orange_01;
+            }
           }
         }
       }

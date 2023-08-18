@@ -118,24 +118,51 @@
               </div>
             </div>
             <div class="contact_right">
-              <input type="text" class="contact_input" placeholder="Ad/Soyad" />
-              <input
-                type="text"
-                class="contact_input"
-                placeholder="Email Adresiniz"
-              />
-              <input
-                type="text"
-                class="contact_input"
-                placeholder="Mövzu Başlığınız"
-              />
-              <textarea
-                rows="4"
-                cols="40"
-                placeholder="Mövzu"
-                class="contact_input"
-              ></textarea>
-              <a><button class="addtobasket">Gonder</button></a>
+              <form
+                asp-action="sendmessage"
+                asp-controller="contact"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <input
+                  type="text"
+                  class="contact_input"
+                  placeholder="Ad/Soyad"
+                />
+                <span
+                  class="text text-danger"
+                  asp-validation-for="@Model.Message.Name"
+                ></span>
+                <input
+                  type="text"
+                  class="contact_input"
+                  placeholder="Email Adresiniz"
+                />
+                <span
+                  class="text text-danger"
+                  asp-validation-for="@Model.Message.Name"
+                ></span>
+                <input
+                  type="text"
+                  class="contact_input"
+                  placeholder="Mövzu Başlığınız"
+                />
+                <span
+                  class="text text-danger"
+                  asp-validation-for="@Model.Message.Name"
+                ></span>
+                <textarea
+                  rows="4"
+                  cols="40"
+                  placeholder="Mövzu"
+                  class="contact_input"
+                ></textarea>
+                <span
+                  class="text text-danger"
+                  asp-validation-for="@Model.Message.Name"
+                ></span>
+                <button class="addtobasket">Gonder</button>
+              </form>
             </div>
           </div>
         </div>

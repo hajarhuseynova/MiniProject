@@ -5485,7 +5485,7 @@ a {
   width: 20px;
   height: 20px;
 }
-.contact .contact_container .contact_common .contact_right {
+.contact .contact_container .contact_common .contact_right > form {
   margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5497,18 +5497,26 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
-.contact .contact_container .contact_common .contact_right > input {
+.contact .contact_container .contact_common .contact_right > form > input {
   width: 360px;
   height: 8px;
 }
-.contact .contact_container .contact_common .contact_right .addtobasket {
+.contact .contact_container .contact_common .contact_right > form .addtobasket {
   width: 395px;
   height: 30px;
-  border-color: transparent;
+  border: 2px solid transparent;
+  font-weight: bold;
 }
-.contact .contact_container .contact_common .contact_right > textarea {
+.contact .contact_container .contact_common .contact_right > form .addtobasket:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  border: 2px solid #ffaf06;
+  color: #ffaf06;
+}
+.contact .contact_container .contact_common .contact_right > form > textarea {
   width: 360px;
 }
 
@@ -5623,7 +5631,7 @@ a {
     width: 20px;
     height: 20px;
   }
-  .contact .contact_container .contact_common .contact_right {
+  .contact .contact_container .contact_common .contact_right > form {
     margin-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5635,17 +5643,16 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 20px;
   }
-  .contact .contact_container .contact_common .contact_right > input {
+  .contact .contact_container .contact_common .contact_right > form > input {
     width: 300px;
     height: 8px;
   }
-  .contact .contact_container .contact_common .contact_right .addtobasket {
+  .contact .contact_container .contact_common .contact_right > form .addtobasket {
     width: 330px;
     height: 30px;
   }
-  .contact .contact_container .contact_common .contact_right > textarea {
+  .contact .contact_container .contact_common .contact_right > form > textarea {
     width: 300px;
   }
 }
@@ -5767,7 +5774,9 @@ a {
     height: 20px;
   }
   .contact .contact_container .contact_common .contact_right {
-    margin-top: 5px;
+    margin-top: 10px;
+  }
+  .contact .contact_container .contact_common .contact_right > form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5778,17 +5787,16 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 20px;
   }
-  .contact .contact_container .contact_common .contact_right > input {
+  .contact .contact_container .contact_common .contact_right > form > input {
     width: 300px;
     height: 8px;
   }
-  .contact .contact_container .contact_common .contact_right .addtobasket {
+  .contact .contact_container .contact_common .contact_right > form .addtobasket {
     width: 330px;
     height: 30px;
   }
-  .contact .contact_container .contact_common .contact_right > textarea {
+  .contact .contact_container .contact_common .contact_right > form > textarea {
     width: 300px;
   }
 }
@@ -5893,7 +5901,14 @@ a {
   margin-top: 10px;
   width: 200px;
   height: 30px;
-  border-color: transparent;
+  border: 2px solid transparent;
+}
+.location .location_container .locations .locationPage .locationPage_right .common > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  border: 2px solid #ffaf06;
+  color: #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {
@@ -7614,8 +7629,15 @@ a {
 .giftboxes .giftboxes_container .boxes .box > a > button {
   width: 95%;
   height: 29px;
-  border-color: transparent;
+  border: 2px solid transparent;
   margin-top: 10px;
+}
+.giftboxes .giftboxes_container .boxes .box > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  border: 2px solid #ffaf06;
+  color: #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {

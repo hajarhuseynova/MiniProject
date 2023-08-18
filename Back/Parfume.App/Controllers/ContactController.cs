@@ -5,6 +5,7 @@ using Parfume.App.Context;
 using Parfume.App.Services.İnterfaces;
 using Parfume.App.ViewModels;
 using Parfume.Core.Entities;
+using System.Text.RegularExpressions;
 
 namespace Parfume.App.Controllers
 {
@@ -25,9 +26,39 @@ namespace Parfume.App.Controllers
         {
             ContactViewModel contactViewModel = new ContactViewModel
             {
-                Places = await _context.Places.Where(x => !x.IsDeleted).ToListAsync()
+                Places = await _context.Places.Where(x => !x.IsDeleted).ToListAsync(),
+                Messages = await _context.Messages.Where(x => !x.IsDeleted).FirstOrDefaultAsync()
+
             };
             return View(contactViewModel);
         }
+
+        public async Task<IActionResult> SendMessage(string name, string subject, string message, string email)
+        {
+            if (name == null || subject == null || message == null || email == null)
+            {
+                TempData["ContactFalse"] = "Zəhmət olmasa bütün boşluqları doldurun!";
+                return RedirectToAction("index", "contact");
+
+            }
+            Regex regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+            if (!regex.IsMatch(email))
+            {
+                TempData["EmailReg"] = "Email düzgün strukturda olmalıdır!";
+                return RedirectToAction("index", "contact");
+            }
+            SendMessage mes = new SendMessage
+            {
+                Name = name,
+                Email = email,
+                Message = message,
+                Subject = subject,
+                CreatedDate = DateTime.Now
+            };
+            _context.Messages.Add(mes);
+            _context.SaveChanges();
+            TempData["ContactTrue"] = "Göndərildi!";
+            return RedirectToAction("index", "contact");
+        }
+     }
     }
-}

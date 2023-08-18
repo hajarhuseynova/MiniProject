@@ -41,18 +41,18 @@ namespace Parfume.App.Controllers
 
             if (email == null)
             {
-                TempData["EmailNull"] = "Don't send empty email!";
+                TempData["EmailNull"] = "Boş email göndərməyin!";
                 return Redirect(Request.Headers["Referer"].ToString());
 
             }
             if (!regex.IsMatch(email))
             {
-                TempData["EmailRegex"] = "Email must be true version!";
+                TempData["EmailRegex"] = "Email düzgün strukturda olmalıdır!";
                 return Redirect(Request.Headers["Referer"].ToString());
             }
             if (await _context.Subscribes.Where(x => !x.IsDeleted).AnyAsync(x => x.Email == email))
             {
-                TempData["EmailRepeat"] = "Email repeated!";
+                TempData["EmailRepeat"] = "Email təkrarlandı!";
                 return Redirect(Request.Headers["Referer"].ToString());
 
             }
@@ -64,7 +64,7 @@ namespace Parfume.App.Controllers
             _context.Subscribes.AddAsync(sub);
             _context.SaveChanges();
 
-            TempData["Subs"] = "Send!";
+            TempData["Subs"] = "Göndərildi!";
             return Redirect(Request.Headers["Referer"].ToString());
         }
 

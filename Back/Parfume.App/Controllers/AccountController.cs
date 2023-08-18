@@ -63,9 +63,9 @@ namespace Parfume.App.Controllers
               values: new { token = token, email = appUser.Email },
               protocol: Request.Scheme);
 
-            await _mailService.Send("hajarih@code.edu.az", appUser.Email, link, "Verify email");
+            await _mailService.Send("hajarih@code.edu.az", appUser.Email, link, "Emaili təsdiqlə");
 
-            TempData["register"] = "Please,verify your email";
+            TempData["register"] = "Zəhmət olmasa emailinizi təsdiqləyin!";
             return RedirectToAction("index", "home");
         }
         public async Task<IActionResult> VerifyEmail(string token, string email)
@@ -93,7 +93,7 @@ namespace Parfume.App.Controllers
 
             if (appUser == null)
             {
-                ModelState.AddModelError("", "username or password is incorret");
+                ModelState.AddModelError("", "İstifadəçi adı və ya şifrə yanlışdır");
                 return View();
             }
             var role = await _userManager.GetRolesAsync(appUser);
@@ -101,7 +101,7 @@ namespace Parfume.App.Controllers
             {
                 if (roles != "User")
                 {
-                    ModelState.AddModelError("", "Wrong!");
+                    ModelState.AddModelError("", "Səhv!");
                     return View();
                 }
 
@@ -111,13 +111,13 @@ namespace Parfume.App.Controllers
             {
                 if (result.IsLockedOut)
                 {
-                    ModelState.AddModelError("", "your account blocked for 5 minutes");
+                    ModelState.AddModelError("", "5 dəqiqəlik kilidlənmə!");
                     return View();
                 }
-                ModelState.AddModelError("", "username or password is incorret");
+                ModelState.AddModelError("", "İstifadəçi adı və ya şifrə yanlışdır");
                 return View();
             }
-            TempData["Login"] = "Loged in!";
+            TempData["Login"] = "Daxil oldunuz!";
             return RedirectToAction("index", "home");
 
         }
@@ -125,7 +125,7 @@ namespace Parfume.App.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signinManager.SignOutAsync();
-            TempData["Login"] = "Loged out!";
+            TempData["Login"] = "Səhifədən ayrıldınız!";
 
             return RedirectToAction("index", "home");
         }
@@ -208,7 +208,7 @@ namespace Parfume.App.Controllers
             var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
             {
-                TempData["EmailNotFound"] = "Email is not found!";
+                TempData["EmailNotFound"] = "Email tapılmadı!";
                 return RedirectToAction("forgetpassword", "account");
             }
             string token = await _userManager.GeneratePasswordResetTokenAsync(user);
@@ -219,7 +219,7 @@ namespace Parfume.App.Controllers
                 values: new { token = token, email = email },
                 protocol: Request.Scheme);
             await _mailService.Send("hajarih@code.edu.az", user.Email, link, "Reset password");
-            TempData["Forget"] = "Please,check email for resetting password";
+            TempData["Forget"] = "Zəhmət olmasa emailinizi yoxlayın!";
             return RedirectToAction("index", "home");
         }
         [HttpGet]
@@ -257,11 +257,11 @@ namespace Parfume.App.Controllers
             var result = await _userManager.ResetPasswordAsync(user, resetPassword.Token, resetPassword.Password);
             if (!result.Succeeded)
             {
-                TempData["FalsePassword"] = "Is not Valid!";
+                TempData["FalsePassword"] = "Uyğun deyil!";
                 return View();
 
             }
-            TempData["TruePassword"] = "Successfully!";
+            TempData["TruePassword"] = "Uğurlu!";
             return RedirectToAction("login", "account");
 
         }
