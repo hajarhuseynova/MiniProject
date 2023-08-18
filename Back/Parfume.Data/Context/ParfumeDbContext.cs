@@ -9,6 +9,8 @@ namespace Parfume.App.Context
 
         public DbSet<FakeSlider> FakeSlides { get; set; }
         public DbSet<Place> Places { get; set; }
+        public DbSet<Subscribe> Subscribes { get; set; }
+
 
         public DbSet<GiftBox> GiftBoxes { get; set; }
 

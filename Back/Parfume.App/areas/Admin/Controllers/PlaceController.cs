@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Parfume.App.Context;
+using Parfume.App.Services.İnterfaces;
 using Parfume.Core.Entities;
 using Parfume.Service.Extentions;
 
@@ -13,10 +14,12 @@ namespace Parfume.App.areas.Admin.Controllers
     {
         private readonly ParfumeDbContext _context;
         private readonly IWebHostEnvironment _environment;
-        public PlaceController(ParfumeDbContext context, IWebHostEnvironment environment)
+        private readonly IMailService _mailService;
+        public PlaceController(ParfumeDbContext context, IWebHostEnvironment environment, IMailService mailService)
         {
             _context = context;
             _environment = environment;
+            _mailService = mailService;
         }
         public async Task<IActionResult> Index(int page = 1)
         {
@@ -64,6 +67,15 @@ namespace Parfume.App.areas.Admin.Controllers
             await _context.AddAsync(places);
 
             await _context.SaveChangesAsync();
+
+            var mails = await _context.Subscribes.Where(x => !x.IsDeleted).ToListAsync();
+            string? link = Request.Scheme + "://" + Request.Host + $"/Place/detail/{places.Id}";
+            foreach (var mail in mails)
+            {
+                await _mailService.Send("hajarih@code.edu.az", mail.Email, link, "New GiftBox");
+            }
+
+
             return RedirectToAction("Index", "place");
         }
         public async Task<IActionResult> Update(int id)

@@ -156,8 +156,15 @@
           <div class="column_last responsive">
             <h1>Abune ol</h1>
             <div class="input_button">
-              <input placeholder="Email Address" type="email" />
-              <button>Gonder</button>
+
+         <form asp-action="subscribe" asp-controller="home" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                               
+          <input type="email" value="" name="EMAIL" class="email" placeholder="Email:" required>
+                   
+           <button itype="submit" name="subscribe"><span>Abune Ol</span></button> 
+                              
+          </form>
+             
             </div>
             <div class="socials">
               <a

@@ -34,5 +34,39 @@ namespace Parfume.App.Controllers
         }
 
 
+        [HttpPost]
+        public async Task<IActionResult> Subscribe(string email)
+        {
+            Regex regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+
+            if (email == null)
+            {
+                TempData["EmailNull"] = "Don't send empty email!";
+                return Redirect(Request.Headers["Referer"].ToString());
+
+            }
+            if (!regex.IsMatch(email))
+            {
+                TempData["EmailRegex"] = "Email must be true version!";
+                return Redirect(Request.Headers["Referer"].ToString());
+            }
+            if (await _context.Subscribes.Where(x => !x.IsDeleted).AnyAsync(x => x.Email == email))
+            {
+                TempData["EmailRepeat"] = "Email repeated!";
+                return Redirect(Request.Headers["Referer"].ToString());
+
+            }
+            Subscribe sub = new Subscribe
+            {
+                Email = email,
+                CreatedDate = DateTime.Now
+            };
+            _context.Subscribes.AddAsync(sub);
+            _context.SaveChanges();
+
+            TempData["Subs"] = "Send!";
+            return Redirect(Request.Headers["Referer"].ToString());
+        }
+
     }
 }
