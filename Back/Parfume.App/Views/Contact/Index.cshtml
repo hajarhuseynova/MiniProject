@@ -1,4 +1,6 @@
-﻿  <div class="contact">
+﻿   @model ContactViewModel  
+
+      <div class="contact">
         <div class="container contact_container">
           <h1>Elaqe</h1>
           <div class="contact_common">
@@ -81,110 +83,36 @@
         <div class="container location_container">
           <h1>Satish Menteqesi</h1>
           <div class="locations">
-            <div class="locationPage">
+          @foreach (var item in Model.Places)
+          {
+                <div class="locationPage">
               <div class="locationPage_left">
-                <img src="../assets/images/Contact/room.jpg" alt="" />
+                <img src="../assets/images/@item.Image" alt="" />
               </div>
               <div class="locationPage_right">
-                <h3>Deniz Mall Magazasi</h3>
+                <h3>@item.Title</h3>
                 <div class="common">
                   <div class="option">
                     <img src="../assets/icons/contact/Location.svg" />
 
-                    <p>Cavadxan 32/15</p>
+                    <p>@item.Address</p>
                   </div>
                   <div class="option">
                     <img src="../assets/icons/contact/Location.svg" />
 
-                    <p>Cavadxan 32/15</p>
+                    <p>@item.Phone1</p>
                   </div>
                   <div class="option">
                     <img src="../assets/icons/contact/Location.svg" />
 
-                    <p>Cavadxan 32/15</p>
+                    <p>@item.Phone2</p>
                   </div>
-                  <a><button class="addtobasket">Xeritede bax</button></a>
+                  <a href="@item.Location"><button class="addtobasket">Xeritede bax</button></a>
                 </div>
               </div>
             </div>
-            <div class="locationPage">
-              <div class="locationPage_left">
-                <img src="../assets/images/Contact/room.jpg" alt="" />
-              </div>
-              <div class="locationPage_right">
-                <h3>Deniz Mall Magazasi</h3>
-                <div class="common">
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <a><button class="addtobasket">Xeritede bax</button></a>
-                </div>
-              </div>
-            </div>
-            <div class="locationPage">
-              <div class="locationPage_left">
-                <img src="../assets/images/Contact/room.jpg" alt="" />
-              </div>
-              <div class="locationPage_right">
-                <h3>Deniz Mall Magazasi</h3>
-                <div class="common">
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <a><button class="addtobasket">Xeritede bax</button></a>
-                </div>
-              </div>
-            </div>
-            <div class="locationPage">
-              <div class="locationPage_left">
-                <img src="../assets/images/Contact/room.jpg" alt="" />
-              </div>
-              <div class="locationPage_right">
-                <h3>Deniz Mall Magazasi</h3>
-                <div class="common">
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
-                    <p>Cavadxan 32/15</p>
-                  </div>
-                  <a><button class="addtobasket">Xeritede bax</button></a>
-                </div>
-              </div>
-            </div>
+          }
+           
           </div>
         </div>
       </div>

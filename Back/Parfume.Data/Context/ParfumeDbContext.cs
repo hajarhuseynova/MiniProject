@@ -8,6 +8,8 @@ namespace Parfume.App.Context
     {
 
         public DbSet<FakeSlider> FakeSlides { get; set; }
+        public DbSet<Place> Places { get; set; }
+
         public DbSet<GiftBox> GiftBoxes { get; set; }
 
         public DbSet<Slider> Slides { get; set; }

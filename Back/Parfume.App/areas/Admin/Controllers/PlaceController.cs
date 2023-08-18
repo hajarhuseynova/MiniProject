@@ -9,23 +9,25 @@ namespace Parfume.App.areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin,SuperAdmin")]
-    public class GiftBoxController : Controller
+    public class PlaceController : Controller
     {
         private readonly ParfumeDbContext _context;
         private readonly IWebHostEnvironment _environment;
-        public GiftBoxController(ParfumeDbContext context, IWebHostEnvironment environment)
+        public PlaceController(ParfumeDbContext context, IWebHostEnvironment environment)
         {
             _context = context;
             _environment = environment;
         }
-        public async Task<IActionResult> Index(int page=1)
+        public async Task<IActionResult> Index(int page = 1)
         {
-            int TotalCount = _context.GiftBoxes.Where(x => !x.IsDeleted).Count();
+            int TotalCount = _context.Places.Where(x => !x.IsDeleted).Count();
             ViewBag.TotalPage = (int)Math.Ceiling((decimal)TotalCount / 5);
             ViewBag.CurrentPage = page;
-            IEnumerable<GiftBox> gift = await _context.GiftBoxes.
+
+            IEnumerable<Place> places = await _context.Places.
                 Where(x => !x.IsDeleted).Skip((page - 1) * 5).Take(5).ToListAsync();
-            return View(gift);
+
+            return View(places);
         }
         public async Task<IActionResult> Create()
         {
@@ -33,54 +35,54 @@ namespace Parfume.App.areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(GiftBox gift)
+        public async Task<IActionResult> Create(Place places)
         {
 
             if (!ModelState.IsValid)
             {
                 return View();
             }
-            if (gift.FormFile is null)
+            if (places.FormFile is null)
             {
                 ModelState.AddModelError("file", "Image is required");
                 return View();
             }
 
-            if (!FileExtention.isImage(gift.FormFile))
+            if (!FileExtention.isImage(places.FormFile))
             {
                 ModelState.AddModelError("file", "Image is required");
                 return View();
             }
-            if (!FileExtention.isSizeOk(gift.FormFile, 1))
+            if (!FileExtention.isSizeOk(places.FormFile, 1))
             {
                 ModelState.AddModelError("file", "Image size is wrong");
                 return View();
             }
 
-            gift.CreatedDate = DateTime.Now;
-            gift.Image = gift.FormFile.CreateImage(_environment.WebRootPath, "assets/images/");
-            await _context.AddAsync(gift);
+            places.CreatedDate = DateTime.Now;
+            places.Image = places.FormFile.CreateImage(_environment.WebRootPath, "assets/images/");
+            await _context.AddAsync(places);
 
             await _context.SaveChangesAsync();
-            return RedirectToAction("Index", "GiftBox");
+            return RedirectToAction("Index", "place");
         }
         public async Task<IActionResult> Update(int id)
         {
-            GiftBox? slides = await _context.GiftBoxes.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
-            if (slides is null)
+            Place? places = await _context.Places.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
+            if (places is null)
             {
                 return NotFound();
             }
-            return View(slides);
+            return View(places);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int id, GiftBox gift)
+        public async Task<IActionResult> Update(int id, Place places)
         {
 
-            GiftBox? Update = await _context.GiftBoxes.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
+            Place? Update = await _context.Places.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
 
-            if (gift is null)
+            if (places is null)
             {
                 return NotFound();
             }
@@ -89,25 +91,28 @@ namespace Parfume.App.areas.Admin.Controllers
                 return View();
             }
 
-            if (gift.FormFile is not null)
+            if (places.FormFile is not null)
             {
-                if (!FileExtention.isImage(gift.FormFile))
+                if (!FileExtention.isImage(places.FormFile))
                 {
                     ModelState.AddModelError("file", "Image is required");
                     return View();
                 }
-                if (!FileExtention.isSizeOk(gift.FormFile, 1))
+                if (!FileExtention.isSizeOk(places.FormFile, 1))
                 {
                     ModelState.AddModelError("file", "Image size is wrong");
                     return View();
                 }
-                Update.Image = gift.FormFile.CreateImage(_environment.WebRootPath, "assets/image/");
+                Update.Image = places.FormFile.CreateImage(_environment.WebRootPath, "assets/image/");
             }
             Update.UpdatedDate = DateTime.Now;
-            Update.Title = gift.Title;
-            Update.Desc= gift.Desc;
-            Update.Price= gift.Price;   
-        
+            Update.Title = places.Title;
+            Update.Address = places.Address;
+            Update.Location = places.Location;
+            Update.Phone1 = places.Phone1;
+            Update.Phone2 = places.Phone2;
+
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
 
@@ -115,17 +120,17 @@ namespace Parfume.App.areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-           GiftBox? giftBoxes = await _context.GiftBoxes.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
+            Place? places = await _context.Places.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
 
 
-            if (giftBoxes is null)
+            if (places is null)
             {
                 return NotFound();
             }
-            giftBoxes.IsDeleted = true;
+            places.IsDeleted = true;
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
         }
     }
-}
+    }

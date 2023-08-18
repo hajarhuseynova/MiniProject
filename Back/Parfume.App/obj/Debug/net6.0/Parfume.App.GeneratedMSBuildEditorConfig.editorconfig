@@ -47,6 +47,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Place/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUGxhY2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Place/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUGxhY2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Place/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUGxhY2VcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
