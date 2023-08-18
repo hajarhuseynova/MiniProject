@@ -1,5 +1,20 @@
 ﻿   @model ContactViewModel  
 
+
+   @if (!string.IsNullOrWhiteSpace((string)TempData["ContactTrue"]))
+{
+    <div style="display:none" id="message">@TempData["ContactTrue"]</div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["ContactFalse"]))
+{
+    <div style="display:none" id="message">@TempData["ContactFalse"]</div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["EmailReg"]))
+{
+    <div style="display:none" id="message">@TempData["EmailReg"]</div>
+}
+
+
       <div class="contact">
         <div class="container contact_container">
           <h1>Elaqe</h1>
@@ -116,3 +131,15 @@
           </div>
         </div>
       </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    const Message = document.getElementById("message");
+    if (Message != undefined) {
+        const message = Message.innerHTML;
+        if (message != "") {
+            Swal.fire(`${message}`)
+        }
+
+    }</script>

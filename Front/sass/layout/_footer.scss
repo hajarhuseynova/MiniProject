@@ -45,36 +45,38 @@ footer {
         margin-bottom: 40px;
         margin-top: -12px;
       }
-      .input_button {
-        display: flex;
-        justify-content: center;
-        margin-left: 40px;
-        input {
-          width: 180px;
-          height: 36px;
-          border-radius: 4px 0px 0px 4px;
-          border-color: transparent;
-          padding-left: 6px;
-        }
-        input:focus {
-          outline: none;
-        }
-        button {
-          width: 85px;
-          height: 42px;
-          border-radius: 0px 4px 4px 0px;
-          border-color: transparent;
-          background-color: $orange_01;
-          color: $black_01;
-          font-family: Work Sans;
-          margin-left: -10px;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 18px;
-          letter-spacing: 0em;
-          text-align: center;
-          &:hover {
-            transform: scale(1);
+      > form {
+        .input_button {
+          display: flex;
+          justify-content: center;
+          margin-left: 40px;
+          input {
+            width: 180px;
+            height: 36px;
+            border-radius: 4px 0px 0px 4px;
+            border-color: transparent;
+            padding-left: 6px;
+          }
+          input:focus {
+            outline: none;
+          }
+          button {
+            width: 85px;
+            height: 42px;
+            border-radius: 0px 4px 4px 0px;
+            border-color: transparent;
+            background-color: $orange_01;
+            color: $black_01;
+            font-family: Work Sans;
+            margin-left: -10px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: center;
+            &:hover {
+              transform: scale(1);
+            }
           }
         }
       }
@@ -150,30 +152,32 @@ footer {
           margin-bottom: 20px;
           margin-top: -10px;
         }
-        .input_button {
-          input {
-            width: 210px;
-            height: 36px;
-            border-radius: 4px 0px 0px 4px;
-            border-color: transparent;
-            padding-left: 6px;
-          }
-          input:focus {
-            outline: none;
-          }
-          button {
-            width: 85px;
-            height: 42px;
-            border-radius: 0px 4px 4px 0px;
-            border-color: transparent;
-            background-color: $orange_01;
-            font-family: Work Sans;
-            margin-left: -10px;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            letter-spacing: 0em;
-            text-align: center;
+        > form {
+          .input_button {
+            input {
+              width: 210px;
+              height: 36px;
+              border-radius: 4px 0px 0px 4px;
+              border-color: transparent;
+              padding-left: 6px;
+            }
+            input:focus {
+              outline: none;
+            }
+            button {
+              width: 85px;
+              height: 42px;
+              border-radius: 0px 4px 4px 0px;
+              border-color: transparent;
+              background-color: $orange_01;
+              font-family: Work Sans;
+              margin-left: -10px;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18px;
+              letter-spacing: 0em;
+              text-align: center;
+            }
           }
         }
         .socials {
@@ -257,33 +261,35 @@ footer {
           margin-bottom: 0px;
           margin-top: 5px;
         }
-        .input_button {
-          display: flex;
-          justify-content: center;
-          margin-left: 18px;
-          input {
-            width: 180px;
-            height: 36px;
-            border-radius: 4px 0px 0px 4px;
-            border-color: transparent;
-            padding-left: 6px;
-          }
-          input:focus {
-            outline: none;
-          }
-          button {
-            width: 65px;
-            height: 42px;
-            border-radius: 0px 4px 4px 0px;
-            border-color: transparent;
-            background-color: $orange_01;
-            font-family: Work Sans;
-            margin-left: -10px;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            letter-spacing: 0em;
-            text-align: center;
+        > form {
+          .input_button {
+            display: flex;
+            justify-content: center;
+            margin-left: 18px;
+            input {
+              width: 180px;
+              height: 36px;
+              border-radius: 4px 0px 0px 4px;
+              border-color: transparent;
+              padding-left: 6px;
+            }
+            input:focus {
+              outline: none;
+            }
+            button {
+              width: 65px;
+              height: 42px;
+              border-radius: 0px 4px 4px 0px;
+              border-color: transparent;
+              background-color: $orange_01;
+              font-family: Work Sans;
+              margin-left: -10px;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18px;
+              letter-spacing: 0em;
+              text-align: center;
+            }
           }
         }
         .socials {

@@ -528,7 +528,7 @@ footer .footer_container .column_last h1 {
   margin-bottom: 40px;
   margin-top: -12px;
 }
-footer .footer_container .column_last .input_button {
+footer .footer_container .column_last > form .input_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,17 +537,17 @@ footer .footer_container .column_last .input_button {
           justify-content: center;
   margin-left: 40px;
 }
-footer .footer_container .column_last .input_button input {
+footer .footer_container .column_last > form .input_button input {
   width: 180px;
   height: 36px;
   border-radius: 4px 0px 0px 4px;
   border-color: transparent;
   padding-left: 6px;
 }
-footer .footer_container .column_last .input_button input:focus {
+footer .footer_container .column_last > form .input_button input:focus {
   outline: none;
 }
-footer .footer_container .column_last .input_button button {
+footer .footer_container .column_last > form .input_button button {
   width: 85px;
   height: 42px;
   border-radius: 0px 4px 4px 0px;
@@ -562,7 +562,7 @@ footer .footer_container .column_last .input_button button {
   letter-spacing: 0em;
   text-align: center;
 }
-footer .footer_container .column_last .input_button button:hover {
+footer .footer_container .column_last > form .input_button button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -666,17 +666,17 @@ footer .footer_container .column_last .socials .social > img {
     margin-bottom: 20px;
     margin-top: -10px;
   }
-  footer .footer_container .column_last .input_button input {
+  footer .footer_container .column_last > form .input_button input {
     width: 210px;
     height: 36px;
     border-radius: 4px 0px 0px 4px;
     border-color: transparent;
     padding-left: 6px;
   }
-  footer .footer_container .column_last .input_button input:focus {
+  footer .footer_container .column_last > form .input_button input:focus {
     outline: none;
   }
-  footer .footer_container .column_last .input_button button {
+  footer .footer_container .column_last > form .input_button button {
     width: 85px;
     height: 42px;
     border-radius: 0px 4px 4px 0px;
@@ -790,7 +790,7 @@ footer .footer_container .column_last .socials .social > img {
     margin-bottom: 0px;
     margin-top: 5px;
   }
-  footer .footer_container .column_last .input_button {
+  footer .footer_container .column_last > form .input_button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -799,17 +799,17 @@ footer .footer_container .column_last .socials .social > img {
             justify-content: center;
     margin-left: 18px;
   }
-  footer .footer_container .column_last .input_button input {
+  footer .footer_container .column_last > form .input_button input {
     width: 180px;
     height: 36px;
     border-radius: 4px 0px 0px 4px;
     border-color: transparent;
     padding-left: 6px;
   }
-  footer .footer_container .column_last .input_button input:focus {
+  footer .footer_container .column_last > form .input_button input:focus {
     outline: none;
   }
-  footer .footer_container .column_last .input_button button {
+  footer .footer_container .column_last > form .input_button button {
     width: 65px;
     height: 42px;
     border-radius: 0px 4px 4px 0px;

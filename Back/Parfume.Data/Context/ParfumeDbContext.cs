@@ -8,17 +8,14 @@ namespace Parfume.App.Context
     {
 
         public DbSet<FakeSlider> FakeSlides { get; set; }
+        public DbSet<SendMessage> Messages { get; set; }
         public DbSet<Place> Places { get; set; }
         public DbSet<Subscribe> Subscribes { get; set; }
-
-
         public DbSet<GiftBox> GiftBoxes { get; set; }
-
         public DbSet<Slider> Slides { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-          
             base.OnModelCreating(modelBuilder);
         }
         public ParfumeDbContext(DbContextOptions<ParfumeDbContext> options) : base(options)

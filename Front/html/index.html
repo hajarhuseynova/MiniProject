@@ -696,10 +696,29 @@
           </div>
           <div class="column_last responsive">
             <h1>Abune ol</h1>
-            <div class="input_button">
-              <input placeholder="Email Address" type="email" />
-              <button>Gonder</button>
-            </div>
+
+            <form
+              asp-action="subscribe"
+              asp-controller="home"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              novalidate
+            >
+              <div class="input_button">
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="email"
+                  placeholder="Email:"
+                  required
+                />
+
+                <button itype="submit" name="subscribe">Abune Ol</button>
+              </div>
+            </form>
             <div class="socials">
               <a
                 href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
