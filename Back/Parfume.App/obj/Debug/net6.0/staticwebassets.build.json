@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p9AdKQ9DmDh3SXU+6uayfbzBVGki9U+/CHjpCdo/uZ4=",
+  "Hash": "J/PQl1n80kCNI1yvHBBtdJbYUcFkp68aBpTV3QR7WBg=",
   "Source": "Parfume.App",
   "BasePath": "_content/Parfume.App",
   "Mode": "Default",
@@ -765,6 +765,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\2ad57901-d2a3-419d-93e8-fc25b636d1c1Screenshot (1).png"
     },
     {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\360dc8e3-ccf7-4ee4-a61e-19385414d386parfume.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/360dc8e3-ccf7-4ee4-a61e-19385414d386parfume.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\360dc8e3-ccf7-4ee4-a61e-19385414d386parfume.jpg"
+    },
+    {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\40824db2-033b-476a-ac8a-fe7f6f819887hajarr.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
@@ -1001,6 +1018,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\a5be4776-039f-4858-959a-32733f4078ecScreenshot (46).png"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\a9e3f0a6-618c-41b7-9217-7651c63beec7rafa.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/a9e3f0a6-618c-41b7-9217-7651c63beec7rafa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\a9e3f0a6-618c-41b7-9217-7651c63beec7rafa.jpg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\About\\about1.jpg",

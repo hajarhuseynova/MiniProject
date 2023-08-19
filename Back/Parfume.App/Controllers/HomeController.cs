@@ -29,6 +29,8 @@ namespace Parfume.App.Controllers
 
             homeViewModel.FakeSlides = await _context.FakeSlides.Where(x => !x.IsDeleted).ToListAsync();
             homeViewModel.Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync();
+            homeViewModel.Functions = await _context.Functions.Where(x => !x.IsDeleted).ToListAsync();
+
 
             return View(homeViewModel);
         }

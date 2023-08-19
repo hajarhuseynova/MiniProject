@@ -1,5 +1,5 @@
 ﻿@model HomeViewModel
- 
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
         @foreach (var item in Model.Slides)
@@ -478,37 +478,16 @@
 
       <div style="margin-bottom:40px" class="functions">
         <div class="container functions_container">
-          <div class="function">
-            <a href="google.com"
-              ><img src="../assets/icons/functions/Mask group.svg"
-            /></a>
-            <h3>Pulsuz çatdırılma</h3>
-            <p>Lorem ipsum dolor sit amet, hav adipiscing elit.</p>
+         @foreach (var item in Model.Functions)
+         {
+            <div class="function">
+            <a href="@item.Link"><img src="~/assets/images/@item.Image"/></a>
+            <h3>@item.Title</h3>
+            <p>@item.Desc</p>
           </div>
-          <div class="line"></div>
-          <div class="function">
-            <a href="google.com"
-              ><img src="../assets/icons/functions/Mask group.svg"
-            /></a>
-            <h3>Pulsuz çatdırılma</h3>
-            <p>Lorem ipsum dolor sit amet, hav adipiscing elit.</p>
-          </div>
-          <div class="line"></div>
-          <div class="function">
-            <a href="google.com"
-              ><img src="../assets/icons/functions/Mask group.svg"
-            /></a>
-            <h3>Pulsuz çatdırılma</h3>
-            <p>Lorem ipsum dolor sit amet, hav adipiscing elit.</p>
-          </div>
-          <div class="line"></div>
-          <div class="function">
-            <a href="google.com"
-              ><img src="../assets/icons/functions/Mask group.svg"
-            /></a>
-            <h3>Pulsuz çatdırılma</h3>
-            <p>Lorem ipsum dolor sit amet, hav adipiscing elit.</p>
-          </div>
+          <div class="line"></div>  
+         }
+         
         </div>
       </div>
 
