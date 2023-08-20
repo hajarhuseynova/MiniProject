@@ -9,9 +9,9 @@ namespace Parfume.Core.Entities
 {
     public class ParfumeBottleSize:BaseEntity
     {
-        public int ParfumeId { get; set; }
+        public int ParfumId { get; set; }
         public int BottleSizeId { get; set; }
-        public Parfume Parfume { get; set; }
+        public Parfum Parfume { get; set; }
         public BottleSize BottleSize { get; set; }
     }
 }

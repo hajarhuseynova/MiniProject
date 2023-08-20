@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SettingFooter>
+<div class="container">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Basliq:</th>
+                <th scope="col">Basliq:</th>
+                <th scope="col">Basliq:</th>
+                <th scope="col">Basliq:</th>
+                <th scope="col">Icon:</th>
+                <th scope="col">Icon:</th>
+                <th scope="col">Icon:</th>
+                <th scope="col">Icon:</th>
+                <th scope="col">Yenile</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <th>@item.Title1</th>
+                        <th>@item.Title2</th>
+                        <th>@item.Title3</th>
+                        <th>@item.Title4</th>
+                        <th>@Html.Raw(item.FootIcon1)</th>
+                        <th>@Html.Raw(item.FootIcon2)</th>
+                        <th>@Html.Raw(item.FootIcon3)</th>
+                        <th>@Html.Raw(item.FootIcon4)</th>
+                        <td><a asp-controller="settingFooter" asp-action="update" asp-route-id="@item.Id" >
+                            <i class="fas fa-edit text text-primary"></i></a></td>
+                     
+                    </tr>
+            }
+        </tbody>
+    </table>
+  
+
+</div>

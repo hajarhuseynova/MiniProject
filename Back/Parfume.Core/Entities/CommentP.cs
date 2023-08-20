@@ -10,7 +10,7 @@ namespace Parfume.Core.Entities
     public class CommentP:BaseEntity
     {
         public int ParfumeId { get; set; }
-        public Parfume Parfume { get; set; }
+        public Parfum Parfume { get; set; }
         public string Title { get; set; }
         public string Desc { get; set; }    
         public Rating Rating { get; set; }

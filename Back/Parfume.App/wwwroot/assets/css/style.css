@@ -318,16 +318,25 @@ textarea:focus {
   gap: 20px;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a {
+  color: #fff;
+}
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
 }
-.navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a > img {
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a > a > i {
   width: 24px;
   height: 24px;
+  color: #fff;
+  margin-right: 2px;
+}
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a > a > i > span {
+  color: #fff;
 }
 .navbar .navbar_container .navbar_bottom {
   position: absolute;
@@ -429,7 +438,22 @@ textarea:focus {
     display: none;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons {
-    gap: 10px;
+    gap: 5px;
+  }
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a {
+    margin-right: 5px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a:last-child {
+    margin-right: 0px;
+  }
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a > i {
+    font-size: 16px;
+  }
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a > span {
+    display: none;
+    opacity: 0;
   }
   .navbar .navbar_container .navbar_bottom {
     position: absolute;
@@ -548,7 +572,7 @@ footer .footer_container .column_last > form .input_button input:focus {
   outline: none;
 }
 footer .footer_container .column_last > form .input_button button {
-  width: 85px;
+  width: 90px;
   height: 42px;
   border-radius: 0px 4px 4px 0px;
   border-color: transparent;
@@ -556,7 +580,7 @@ footer .footer_container .column_last > form .input_button button {
   color: rgb(18, 18, 18);
   font-family: Work Sans;
   margin-left: -10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0em;
@@ -810,7 +834,7 @@ footer .footer_container .column_last .socials .social > img {
     outline: none;
   }
   footer .footer_container .column_last > form .input_button button {
-    width: 65px;
+    width: 80px;
     height: 42px;
     border-radius: 0px 4px 4px 0px;
     border-color: transparent;
@@ -2892,6 +2916,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.functions .functions_container .line:last-child {
+  display: none;
 }
 
 @media screen and (max-width: 1238px) {

@@ -7,7 +7,7 @@ namespace Parfume.App.ViewModels
         public IEnumerable<Place> Places { get; set; }
         public SettingContact? SettingContact { get; set; }
         public SendMessage? Messages { get; set; }
-
+        public SettingFooter? SettingFooter { get; set; }
 
     }
 }

@@ -1,4 +1,11 @@
-﻿@if (!string.IsNullOrWhiteSpace((string)TempData["EmailRegex"]))
+﻿@inject Parfume.App.Services.İnterfaces.ISettingService settingService
+@{
+      SettingFooter? setting = await settingService.Get();
+      SettingNavbar? set = await settingService.GetAll();
+}
+
+
+@if (!string.IsNullOrWhiteSpace((string)TempData["EmailRegex"]))
 {
     <div style="display:none" id="message">@TempData["EmailRegex"]</div>
 }
@@ -17,7 +24,6 @@
 {
     <div style="display:none" id="message">@TempData["Subs"]</div>
 }
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,13 +56,13 @@
               <div class="navbar_menu">
                 <a>
                   <img
-                    src="../assets/icons/header/Sidebar.svg"
+                    src="../assets/images/@set?.Delete"
                     id="sidebarDelete"
                     class="hideImage"
                     style="margin-top: 6px"
                   />
                   <img
-                    src="../assets/icons/header/Burger.svg"
+                    src="../assets/images/@set?.Hamburger"
                     id="burger"
                     class="addimage"
                   />
@@ -64,61 +70,66 @@
 
                 <a class="hide" id="menu">Menu</a>
                 <a asp-controller="home" asp-action="index">
-                  <img class="hidden" src="../assets/icons/header/Logo.svg"
+                  <img class="hidden" src="../assets/images/@set?.Logo"
                 /></a>
               </div>
             </div>
             <div class="navbar_middle">
-              <a asp-controller="home" asp-action="index"> <img src="../assets/icons/header/Logo.svg" /></a>
+              <a asp-controller="home" asp-action="index"> <img src="../assets/images/@set?.Logo" /></a>
             </div>
              <div class="navbar_right">
               <div class="navbar_icons">
-                <a>
+               
                   @if (User.Identity.IsAuthenticated&&User.IsInRole("User")) {
                   <a
-                    style="color: white"
                     asp-controller="account"
                     asp-action="info"
-                    ><span>@User.Identity.Name</span></a
+                    >@Html.Raw(set?.Icon1) <span  style="margin-left:0px">@User.Identity.Name</span></a
                   >
                   <a
-                    style="color: white"
+                    
                     asp-controller="account"
                     asp-action="logout"
-                    ><span>LogOut</span></a
+                    > <i class="fa-solid fa-arrow-right-from-bracket"></i> <span  style="margin-left:0px">LogOut</span></a
                   >
+                   <a  asp-controller="basket" asp-action="index">
+                    @Html.Raw(set?.Icon3)<span  style="margin-left:5px"
+                      >Basket</span>
+                 </a>
                   } else {
                   <a
-                    style="color: white"
+                   
                     asp-controller="account"
                     asp-action="login"
-                    ><img src="../assets/icons/header/User.svg" /><span
+                    >@Html.Raw(set?.Icon1)<span style="margin-left:5px"
                       >Login</span
                     ></a
                   >
                   <a
-                    style="color: white"
+                  
                     asp-controller="account"
                     asp-action="register"
-                    ><img src="../assets/icons/header/User.svg" /><span
+                    >@Html.Raw(set?.Icon2)<span  style="margin-left:5px"
                       >Register</span
                     ></a
                   >
-                  }</a
-                >
-                <a asp-controller="basket" asp-action="index">
-                  <img src="../assets/icons/header/Cart.svg"
-                /></a>
+                   <a   asp-controller="basket" asp-action="index">
+                    @Html.Raw(set?.Icon3)<span  style="margin-left:5px"
+                      >Basket</span>
+                 </a>
+                  }
+                
+               
               </div>
             </div>
           </div>
           <div class="hideDiv navbar_bottom">
-            <a asp-controller="about" asp-action="index"><h1 class="visible">Haqqimizda</h1></a>
-            <a asp-controller="parfume" asp-action="index"><h1 class="visible">Qoxular</h1></a>
-            <a asp-controller="smoke" asp-action="index"><h1 class="visible">Tustuler</h1></a>
-            <a asp-controller="giftbox" asp-action="index"><h1 class="visible">Hediyye Qutusu</h1></a>
-            <a asp-controller="tester" asp-action="index"><h1 class="visible">Test Qutusu</h1></a>
-            <a asp-controller="contact" asp-action="index"><h1 class="visible">Elaqe</h1></a>
+            <a asp-controller="about" asp-action="index"><h1 class="visible">@set?.SiderbarP1</h1></a>
+            <a asp-controller="parfume" asp-action="index"><h1 class="visible">@set?.SiderbarP2</h1></a>
+            <a asp-controller="smoke" asp-action="index"><h1 class="visible">@set?.SiderbarP3</h1></a>
+            <a asp-controller="giftbox" asp-action="index"><h1 class="visible">@set?.SiderbarP4</h1></a>
+            <a asp-controller="tester" asp-action="index"><h1 class="visible">@set?.SiderbarP5</h1></a>
+            <a asp-controller="contact" asp-action="index"><h1 class="visible">@set?.SiderbarP6</h1></a>
           </div>
         </div>
       </header>
@@ -129,70 +140,72 @@
       <footer style="margin-top:0">
         <div class="container footer_container">
           <div class="column">
-            <a><h3>Qoxular</h3></a>
-            <p>Oz Mehsullarimiz</p>
-            <p>Yaglar</p>
-            <p class="hidden_last">Beden spreyi</p>
-            <p class="hidden_last">Etirler</p>
-            <p class="hidden_last">Duxiler</p>
+            <a asp-action="index" asp-controller="parfume" ><h3>@setting?.Title1</h3></a>
+            <p>@setting?.Title1Par1</p>
+            <p>@setting?.Title1Par2</p>
+
+     
           </div>
           <div class="column">
-            <a> <h3>Tustuler</h3></a>
-            <p>Oz Mehsullarimiz</p>
-            <p>Yaglar</p>
-            <p class="hidden_last">Beden spreyi</p>
-            <p class="hidden_last">Etirler</p>
-            <p class="hidden_last">Duxiler</p>
+            <a asp-action="index" asp-controller="smoke"  > <h3>@setting?.Title2</h3></a>
+            <p>@setting?.Title2Par1</p>
+            <p>@setting?.Title2Par2</p>
+         
+           
           </div>
           <div class="column responsive_last">
-            <a><h3>Haqqimizda</h3></a>
-            <p>Oz Mehsullarimiz</p>
-            <p>Beden spreyi</p>
+            <a asp-action="index" asp-controller="giftbox" ><h3>@setting?.Title3</h3></a>
+            <p>@setting?.Title3Par1</p>
+            <p>@setting?.Title3Par2</p>
+        
           </div>
           <div class="column responsive responsive_last">
-            <a> <h3>Qutular</h3></a>
-            <p>Oz Mehsullarimiz</p>
-            <p>Yaglar</p>
+            <a  asp-action="index" asp-controller="about" > <h3>@setting?.Title4</h3></a>
+               <p>@setting?.Title4Par1</p>
+            <p>@setting?.Title4Par2</p>
           </div>
           <div class="column_last responsive">
             <h1>Abune ol</h1>
-            <div class="input_button">
 
          <form asp-action="subscribe" asp-controller="home" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+            <div class="input_button">
                                
           <input type="email" value="" name="EMAIL" class="email" placeholder="Email:" required>
                    
            <button itype="submit" name="subscribe"><span>Abune Ol</span></button> 
                               
+            </div>
           </form>
              
-            </div>
             <div class="socials">
               <a
-                href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
+                  href="@setting?.Link1" target="_blank"
               >
                 <div class="social">
-                  <img src="../assets/icons/footer/instagram.svg" /></div
+                  @Html.Raw(setting?.FootIcon1) </div
               ></a>
 
               <a
-                href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
+                href="@setting?.Link2" target="_blank"
               >
                 <div class="social">
-                  <img src="../assets/icons/footer/facebook.svg" /></div
+                  @Html.Raw(setting?.FootIcon2)</div
               ></a>
               <a
-                href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
+                href="@setting?.Link3" target="_blank"
               >
                 <div class="social">
-                  <img src="../assets/icons/footer/twitter.svg" /></div
+                  @Html.Raw(setting?.FootIcon3)</div
               ></a>
               <a
-                href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
+               href="@setting?.Link4" target="_blank"
               >
                 <div class="social">
-                  <img src="../assets/icons/footer/youtube.svg" /></div
-              ></a>
+                 @Html.Raw(setting?.FootIcon4)</div
+              >
+
+
+          </a>
             </div>
           </div>
         </div>
@@ -260,7 +273,6 @@
   </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -273,7 +285,6 @@
         });
       });
     </script>
-
 <script>
     const Message = document.getElementById("message");
     if (Message != undefined) {

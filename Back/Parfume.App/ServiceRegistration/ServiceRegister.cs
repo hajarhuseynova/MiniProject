@@ -14,7 +14,7 @@ namespace Parfume.App.ServiceRegistration
             service.AddScoped<IMailService, MailService>();
 
 
-            //service.AddScoped<ISettingService, SettingService>();
+            service.AddScoped<ISettingService, SettingService>();
 
 
             service.AddIdentity<AppUser, IdentityRole>()

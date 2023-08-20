@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Parfume.Core.Entities
 {
-    public class Parfume:BaseEntity
+    public class Parfum:BaseEntity
     {
         //BRAND-Chanel
         public int BrandId { get; set; }

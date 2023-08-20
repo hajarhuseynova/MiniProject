@@ -13,6 +13,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
@@ -49,42 +56,20 @@
             </div>
             <div class="navbar_right">
               <div class="navbar_icons">
-                <a>
-                  @if (User.Identity.IsAuthenticated&&User.IsInRole("User")) {
-                  <a
-                    style="color: white"
-                    asp-controller="account"
-                    asp-action="info"
-                    ><span>@User.Identity.Name</span></a
-                  >
-                  <a
-                    style="color: white"
-                    asp-controller="account"
-                    asp-action="logout"
-                    ><span>LogOut</span></a
-                  >
-                  } else {
-                  <a
-                    style="color: white"
-                    asp-controller="account"
-                    asp-action="login"
-                    ><img src="../assets/icons/header/User.svg" /><span
-                      >Login</span
-                    ></a
-                  >
-                  <a
-                    style="color: white"
-                    asp-controller="account"
-                    asp-action="register"
-                    ><img src="../assets/icons/header/User.svg" /><span
-                      >Register</span
-                    ></a
-                  >
-                  }</a
+                <a asp-controller="account" asp-action="login">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Login</span></a
                 >
-                <a asp-controller="basket" asp-action="index">
-                  <img src="../assets/icons/header/Cart.svg"
-                /></a>
+
+                <a asp-controller="account" asp-action="register">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Register</span></a
+                >
+
+                <a asp-controller="basket" asp-action="index"
+                  ><i class="fa-solid fa-user"></i>
+                  <span>Basket</span>
+                </a>
               </div>
             </div>
           </div>
@@ -664,6 +649,7 @@
             <h3>Pulsuz çatdırılma</h3>
             <p>Lorem ipsum dolor sit amet, hav adipiscing elit.</p>
           </div>
+          <div class="line"></div>
         </div>
       </div>
       <footer>
@@ -696,7 +682,6 @@
           </div>
           <div class="column_last responsive">
             <h1>Abune ol</h1>
-
             <form
               asp-action="subscribe"
               asp-controller="home"
