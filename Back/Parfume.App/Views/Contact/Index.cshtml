@@ -20,28 +20,27 @@
           <h1>Elaqe</h1>
           <div class="contact_common">
             <div class="contact_left">
-              <h3>Sizə necə kömək edə bilərik?</h3>
+              <h3>@Model.SettingContact?.Title</h3>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-                veritatis?
+               @Model.SettingContact?.Description
               </p>
               <div class="option">
-                <img src="../assets/icons/contact/Location.svg" />
+                <img src="../assets/images/@Model.SettingContact?.ImageLoc" />
                 <div class="parag">
-                  <p>Cavadxan 32/15</p>
-                  <p>Azerbaycan/Baki</p>
+                  <p>@Model.SettingContact?.Loc1</p>
+                  <p>@Model.SettingContact?.Loc2</p>
                 </div>
               </div>
               <div class="option">
-                <img src="../assets/icons/contact/Call.svg" />
+                <img src="../assets/images/@Model.SettingContact?.ImageTel" />
                 <div class="parag">
-                  <p>0554085255</p>
-                  <p>0554085255</p>
+                  <p>@Model.SettingContact?.Phone1</p>
+                  <p>@Model.SettingContact?.Phone2</p>
                 </div>
               </div>
               <div class="option">
-                <img src="../assets/icons/contact/Location.svg" />
-                <p>info.parfume@mail.ru</p>
+                <img src="../assets/images/@Model.SettingContact?.ImageEmail" />
+                <p>@Model.SettingContact?.Email</p>
               </div>
               <div class="socials">
                 <a

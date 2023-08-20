@@ -27,7 +27,9 @@ namespace Parfume.App.Controllers
             ContactViewModel contactViewModel = new ContactViewModel
             {
                 Places = await _context.Places.Where(x => !x.IsDeleted).ToListAsync(),
-                Messages = await _context.Messages.Where(x => !x.IsDeleted).FirstOrDefaultAsync()
+                Messages = await _context.Messages.Where(x => !x.IsDeleted).FirstOrDefaultAsync(),
+                SettingContact = await _context.SettingContact.Where(x => !x.IsDeleted).FirstOrDefaultAsync()
+
 
             };
             return View(contactViewModel);

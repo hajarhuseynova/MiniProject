@@ -16,14 +16,17 @@ namespace Parfume.Core.Entities
         public Brand Brand { get; set; }
         //Bottlesize
         public List<ParfumeBottleSize> PerfumeBottleSizes { get; set; }
+        public List<CommentP> Comments { get; set; }
 
-
+        //Rating
+        public Rating Rating { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string ProductCode { get; set; }
         public string Info1 { get; set; }
         public string Info2 { get; set; }
-        public int Price { get; set; }
+        public int PriceBuy { get; set; }
+        public int PriceSell { get; set; }
         public bool isNew { get; set; }
         public bool isTrend { get; set; }
         public bool isDiscount { get; set; }

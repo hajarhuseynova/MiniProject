@@ -77,10 +77,9 @@
         .stars {
           display: flex;
           align-items: center;
-          > img {
-            width: 12px;
-            height: 12px;
-            margin-right: 2px;
+          > span {
+            font-size: 20px;
+            color: $orange_01;
           }
           > p {
             margin-left: 5px;
@@ -679,10 +678,10 @@
       }
       .stars {
         display: flex;
-        gap: 10px;
-        > img {
-          width: 20px;
-          height: 20px;
+        gap: 8px;
+        > span {
+          font-size: 25px;
+          color: $orange_01;
         }
       }
       > p {
@@ -703,10 +702,10 @@
       .row {
         display: flex;
         align-items: center;
-        gap: 5px;
-        > img {
-          width: 20px;
-          height: 20px;
+        gap: 8px;
+        > span {
+          font-size: 20px;
+          color: $orange_01;
         }
         > p {
           font-family: Work Sans;
@@ -774,12 +773,14 @@
           letter-spacing: 0em;
           text-align: left;
         }
-        .stars {
-          display: flex;
-          gap: 8px;
-          .active {
-            color: yellow;
-            background-color: red;
+        .rating {
+          font-size: 30px;
+          cursor: pointer;
+          .star {
+            color: gray;
+          }
+          .star.selected {
+            color: $orange_01;
           }
         }
         > a {
@@ -1036,11 +1037,11 @@
             letter-spacing: 0em;
             text-align: left;
           }
-          .stars {
+          .rating {
             display: flex;
-            gap: 3px;
-            > img {
-              width: 20px;
+            gap: 2px;
+            > span {
+              font-size: 20px;
             }
             .hide {
               display: none;
@@ -1084,9 +1085,9 @@
           display: flex;
           justify-content: center;
           gap: 5px;
-          > img {
-            width: 15px;
-            height: 15px;
+          > span {
+            font-size: 20px;
+            color: $orange_01;
           }
         }
       }

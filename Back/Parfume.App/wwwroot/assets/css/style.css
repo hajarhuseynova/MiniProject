@@ -7897,10 +7897,9 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.detail_intro .detail_intro_container .detail_right .priceStar .stars > img {
-  width: 12px;
-  height: 12px;
-  margin-right: 2px;
+.detail_intro .detail_intro_container .detail_right .priceStar .stars > span {
+  font-size: 20px;
+  color: #ffaf06;
 }
 .detail_intro .detail_intro_container .detail_right .priceStar .stars > p {
   margin-left: 5px;
@@ -8589,11 +8588,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
-.assesment .assesment_container .left .stars > img {
-  width: 20px;
-  height: 20px;
+.assesment .assesment_container .left .stars > span {
+  font-size: 25px;
+  color: #ffaf06;
 }
 .assesment .assesment_container .left > p {
   font-family: Work Sans;
@@ -8622,11 +8621,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
-.assesment .assesment_container .middle .row > img {
-  width: 20px;
-  height: 20px;
+.assesment .assesment_container .middle .row > span {
+  font-size: 20px;
+  color: #ffaf06;
 }
 .assesment .assesment_container .middle .row > p {
   font-family: Work Sans;
@@ -8704,15 +8703,15 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.assesment .assesment_container .right .right_bottom .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 8px;
+.assesment .assesment_container .right .right_bottom .rating {
+  font-size: 30px;
+  cursor: pointer;
 }
-.assesment .assesment_container .right .right_bottom .stars .active {
-  color: yellow;
-  background-color: red;
+.assesment .assesment_container .right .right_bottom .rating .star {
+  color: gray;
+}
+.assesment .assesment_container .right .right_bottom .rating .star.selected {
+  color: #ffaf06;
 }
 .assesment .assesment_container .right .right_bottom > a > button {
   width: 250px;
@@ -9020,16 +9019,16 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .assesment .assesment_container .right .right_bottom .stars {
+  .assesment .assesment_container .right .right_bottom .rating {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 3px;
+    gap: 2px;
   }
-  .assesment .assesment_container .right .right_bottom .stars > img {
-    width: 20px;
+  .assesment .assesment_container .right .right_bottom .rating > span {
+    font-size: 20px;
   }
-  .assesment .assesment_container .right .right_bottom .stars .hide {
+  .assesment .assesment_container .right .right_bottom .rating .hide {
     display: none;
   }
   .assesment .assesment_container .right .right_bottom > a > button {
@@ -9085,9 +9084,9 @@ a {
           justify-content: center;
   gap: 5px;
 }
-.comments .comments_container .comment .left .left_stars > img {
-  width: 15px;
-  height: 15px;
+.comments .comments_container .comment .left .left_stars > span {
+  font-size: 20px;
+  color: #ffaf06;
 }
 .comments .comments_container .comment .middle {
   width: 800px;

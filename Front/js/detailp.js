@@ -25,3 +25,5 @@ function decreaseDislike(element) {
     dislikeCountElement.textContent = currentDislikeCount - 1;
   }
 }
+
+

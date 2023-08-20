@@ -8,6 +8,8 @@ namespace Parfume.App.Context
     {
 
         public DbSet<FakeSlider> FakeSlides { get; set; }
+        public DbSet<SettingContact> SettingContact { get; set; }
+
         public DbSet<SendMessage> Messages { get; set; }
         public DbSet<Place> Places { get; set; }
         public DbSet<Functions> Functions { get; set; }
