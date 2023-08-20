@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Parfume.Core.Entities
 {
-    public class ParfumeBottleSize:BaseEntity
+    public class ParfumBottleSize:BaseEntity
     {
         public int ParfumId { get; set; }
         public int BottleSizeId { get; set; }
-        public Parfum Parfume { get; set; }
+        public Parfum Parfum { get; set; }
         public BottleSize BottleSize { get; set; }
     }
 }
