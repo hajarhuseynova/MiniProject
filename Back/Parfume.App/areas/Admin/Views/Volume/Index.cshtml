@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Volume>
+
+<div class="container">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Olcu</th>
+                <th scope="col">Yenile</th>
+                <th scope="col">Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <th>@item.MilliLiters</th>
+                        
+                        <td><a asp-controller="volume" asp-action="update" asp-route-id="@item.Id" >
+                            <i class="fas fa-edit text text-primary"></i></a></td>
+                        <td><a onclick="if(!confirm('Are you sure?')){return false;}"
+                            asp-controller="volume" asp-action="delete" asp-route-id="@item.Id"
+                            class=" delete-item" ><i class="fas fa-trash text text-danger"></i></a></td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+        <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            @for (int i = 1; i <= ViewBag.TotalPage; i++)
+            {
+                @if (i == ViewBag.CurrentPage)
+                {
+                    <li class="page-item disabled"><a class=" page-link" asp-controller="volume" asp-action="index" asp-route-page="@i">@i</a></li>
+                }
+                else
+                {
+                    <li class="page-item"><a class=" page-link" asp-controller="volume" asp-action="index" asp-route-page="@i">@i</a></li>
+                }
+            }
+        </ul>
+    </nav>
+    <div>
+        <a asp-controller="volume" asp-action="create" style="display: block; text-decoration: none; color: white; width: 100%; height: 100%" a  > 
+            <div style="width:100%; " class="btn btn-outline-success">Yarat</div></a>
+    </div>
+</div>

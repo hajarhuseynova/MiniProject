@@ -10,6 +10,6 @@ namespace Parfume.Core.Entities
     public class Volume:BaseEntity
     {
         public int MilliLiters { get; set; }
-        public List<ParfumVolume> ParfumVolume { get; set; }
+        public List<ParfumVolume>? ParfumVolume { get; set; }
     }
 }
