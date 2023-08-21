@@ -24,6 +24,7 @@ namespace Parfume.App.Services.İmplementations
             SettingNavbar? SettingNavbar = await _context.SettingNavbar.FirstOrDefaultAsync();
             return SettingNavbar;
         }
+       
 
     }
 }

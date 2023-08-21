@@ -25,7 +25,9 @@ namespace Parfume.App.Controllers
         {
             AboutViewModel aboutViewModel = new AboutViewModel
             {
-                Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync()
+                Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
+                SettingAbout = await _context.SettingAbout.Where(x => !x.IsDeleted).FirstOrDefaultAsync(),
+
             };
             return View(aboutViewModel);
         }

@@ -25,7 +25,8 @@ namespace Parfume.App.Controllers
         {
             ParfumeViewModel parfumeViewModel = new ParfumeViewModel
             {
-                Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync()
+                Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
+                Brands = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync()
             };
             return View(parfumeViewModel);
         }

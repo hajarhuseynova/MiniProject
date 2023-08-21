@@ -11,7 +11,6 @@ namespace Parfume.Core.Entities
     {
         public string Name { get; set; }
         public string Surname { get; set; }
-        public List<CommentP> CommentPs { get; set; }
-
+   
     }
 }

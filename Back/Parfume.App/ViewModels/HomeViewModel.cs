@@ -9,6 +9,8 @@ namespace Parfume.App.ViewModels
         public IEnumerable<Functions> Functions { get; set; }
         public SettingFooter? SettingFooter { get; set; }
         public SettingNavbar? SettingNavbar { get; set; }
+        public SettingHomePage? SettingHomePage { get; set; }
+
 
 
     }

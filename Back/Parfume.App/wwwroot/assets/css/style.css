@@ -549,8 +549,8 @@ footer .footer_container .column_last h1 {
   letter-spacing: 0em;
   text-align: center;
   color: #ffaf06;
-  margin-bottom: 40px;
-  margin-top: -12px;
+  margin-bottom: 10px;
+  margin-top: -18px;
 }
 footer .footer_container .column_last > form .input_button {
   display: -webkit-box;
@@ -594,7 +594,7 @@ footer .footer_container .column_last .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -615,9 +615,8 @@ footer .footer_container .column_last .socials .social {
       -ms-flex-align: center;
           align-items: center;
 }
-footer .footer_container .column_last .socials .social > img {
-  width: 20px;
-  height: 20px;
+footer .footer_container .column_last .socials .social > i {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1238px) {
@@ -718,7 +717,7 @@ footer .footer_container .column_last .socials .social > img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -851,7 +850,7 @@ footer .footer_container .column_last .socials .social > img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -909,7 +908,7 @@ a {
 }
 .products .products_container .newproducts .product {
   width: 295px;
-  height: 415px;
+  height: 425px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -990,16 +989,8 @@ a {
   color: #6a6a6a;
   margin-left: 10px;
 }
-.products .products_container .newproducts .product .price_star .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 7px;
+.products .products_container .newproducts .product .price_star > a > button {
   margin-right: 10px;
-}
-.products .products_container .newproducts .product .price_star .stars > img {
-  width: 12px;
-  height: 12px;
 }
 .products .products_container .newproducts .product:hover {
   box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
@@ -1025,7 +1016,7 @@ a {
   }
   .products .products_container .newproducts .product {
     width: 230px;
-    height: 350px;
+    height: 347px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
@@ -1042,7 +1033,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 7px;
   }
   .products .products_container .newproducts .product .cat {
@@ -1053,7 +1044,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #ffd376;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     margin-left: 10px;
   }
   .products .products_container .newproducts .product .price_star {
@@ -1077,16 +1068,8 @@ a {
     color: #6a6a6a;
     margin-left: 10px;
   }
-  .products .products_container .newproducts .product .price_star .stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 7px;
+  .products .products_container .newproducts .product .price_star > a > button {
     margin-right: 10px;
-  }
-  .products .products_container .newproducts .product .price_star .stars > img {
-    width: 12px;
-    height: 12px;
   }
   .products .products_container .newproducts .hide {
     display: none;
@@ -1143,7 +1126,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 5px;
   }
   .products .products_container .newproducts .product .cat {
@@ -1154,7 +1137,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #ffd376;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     margin-left: 10px;
   }
   .products .products_container .newproducts .product .price_star {
@@ -1178,16 +1161,10 @@ a {
     color: #6a6a6a;
     margin-left: 10px;
   }
-  .products .products_container .newproducts .product .price_star .stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 7px;
-    margin-right: 10px;
-  }
-  .products .products_container .newproducts .product .price_star .stars > img {
-    width: 12px;
-    height: 12px;
+  .products .products_container .newproducts .product .price_star > a > button {
+    font-size: 12px;
+    width: 75px;
+    border: 1px solid;
   }
   .products .products_container .newproducts .hidden {
     display: none;
@@ -1564,13 +1541,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .sellests .sellests_container .newsellests .sellest {
   width: 295px;
-  height: 415px;
+  height: 425px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -1626,16 +1606,8 @@ a {
   color: #6a6a6a;
   margin-left: 10px;
 }
-.sellests .sellests_container .newsellests .sellest .price_star .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 7px;
+.sellests .sellests_container .newsellests .sellest .price_star > a > button {
   margin-right: 10px;
-}
-.sellests .sellests_container .newsellests .sellest .price_star .stars > img {
-  width: 12px;
-  height: 12px;
 }
 .sellests .sellests_container .newsellests .sellest:hover {
   box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
@@ -1677,7 +1649,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 7px;
   }
   .sellests .sellests_container .newsellests .sellest .cat {
@@ -1688,7 +1660,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #ffd376;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     margin-left: 10px;
   }
   .sellests .sellests_container .newsellests .sellest .price_star {
@@ -1712,16 +1684,8 @@ a {
     color: #6a6a6a;
     margin-left: 10px;
   }
-  .sellests .sellests_container .newsellests .sellest .price_star .stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 7px;
+  .sellests .sellests_container .newsellests .sellest .price_star > a > button {
     margin-right: 10px;
-  }
-  .sellests .sellests_container .newsellests .sellest .price_star .stars > img {
-    width: 12px;
-    height: 12px;
   }
   .sellests .sellests_container .newsellests .hide {
     display: none;
@@ -1771,7 +1735,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 5px;
   }
   .sellests .sellests_container .newsellests .sellest .cat {
@@ -1782,7 +1746,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #ffd376;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     margin-left: 10px;
   }
   .sellests .sellests_container .newsellests .sellest .price_star {
@@ -1806,16 +1770,10 @@ a {
     color: #6a6a6a;
     margin-left: 10px;
   }
-  .sellests .sellests_container .newsellests .sellest .price_star .stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 7px;
-    margin-right: 10px;
-  }
-  .sellests .sellests_container .newsellests .sellest .price_star .stars > img {
-    width: 12px;
-    height: 12px;
+  .sellests .sellests_container .newsellests .sellest .price_star > a > button {
+    font-size: 12px;
+    width: 75px;
+    border: 1px solid;
   }
   .sellests .sellests_container .newsellests .hidden {
     display: none;
@@ -1899,8 +1857,19 @@ a {
 }
 .giftbox .giftbox_container .giftbox_common .giftbox_right {
   width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 20px;
 }
+.giftbox .giftbox_container .giftbox_common .giftbox_right > a > img {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 1238px) {
   .giftbox .giftbox_container {
     padding-bottom: 60px;
@@ -2080,7 +2049,7 @@ a {
 }
 .discounts .discounts_container .newdiscounts .discount {
   width: 295px;
-  height: 415px;
+  height: 425px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -2170,16 +2139,8 @@ a {
   color: #959595;
   text-align: left;
 }
-.discounts .discounts_container .newdiscounts .discount .price_star .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 7px;
+.discounts .discounts_container .newdiscounts .discount .price_star > a > button {
   margin-right: 10px;
-}
-.discounts .discounts_container .newdiscounts .discount .price_star .stars > img {
-  width: 12px;
-  height: 12px;
 }
 .discounts .discounts_container .newdiscounts .discount:hover {
   box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
@@ -2265,16 +2226,10 @@ a {
     color: #959595;
     text-align: left;
   }
-  .discounts .discounts_container .newdiscounts .discount .price_star .stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 7px;
-    margin-right: 10px;
-  }
-  .discounts .discounts_container .newdiscounts .discount .price_star .stars > img {
-    width: 12px;
-    height: 12px;
+  .discounts .discounts_container .newdiscounts .discount .price_star > a > button {
+    font-size: 14px;
+    width: 60px;
+    height: 23px;
   }
   .discounts .discounts_container .newdiscounts .hide {
     display: none;
@@ -2374,16 +2329,12 @@ a {
     color: #959595;
     text-align: left;
   }
-  .discounts .discounts_container .newdiscounts .discount .price_star .stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 2px;
-    margin-right: 4px;
-  }
-  .discounts .discounts_container .newdiscounts .discount .price_star .stars > img {
-    width: 10px;
-    height: 10px;
+  .discounts .discounts_container .newdiscounts .discount .price_star > a > button {
+    font-size: 12px;
+    width: 50px;
+    height: 20px;
+    border: 1px solid;
+    margin-right: 5px;
   }
   .discounts .discounts_container .newdiscounts .hidden {
     display: none;
@@ -4969,7 +4920,7 @@ a {
   color: rgb(18, 18, 18);
 }
 .tester .tester_container .tester_top > p {
-  width: 610px;
+  width: 400px;
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 300;
@@ -4980,27 +4931,39 @@ a {
 }
 .tester .tester_container .tester_top .tester_input {
   width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tester .tester_container .tester_top .tester_input > form {
   position: relative;
 }
-.tester .tester_container .tester_top .tester_input > input {
+.tester .tester_container .tester_top .tester_input > form > input {
   width: 360px;
-  height: 15px;
-  padding: 10px;
+  height: 40px !important;
+  padding: 0px 10px 0px 10px;
   border: 1px solid #ffaf06;
   border-radius: 8px;
+  font-size: 15px;
 }
-.tester .tester_container .tester_top .tester_input > img {
+.tester .tester_container .tester_top .tester_input > form > img {
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 25px;
-  top: 8px;
+  right: 10px;
+  top: 10px;
 }
 .tester .tester_container .tester_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 30px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .tester .tester_container .tester_bottom .tester_left {
   display: -webkit-box;
@@ -5032,7 +4995,18 @@ a {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  padding: 10px;
+  padding: 10px 10px 5px 10px;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
+  font-family: Space Mono;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffd376;
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
   padding: 0 10px;
@@ -5040,50 +5014,20 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > img {
-  width: 12px;
-  height: 13px;
-  margin-left: 3px;
-  margin-top: 7px;
+.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
+  font-family: New York;
+  font-size: 16px;
+  font-weight: 496;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6a6a6a;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
+  width: 100px;
   margin-left: 100px;
   margin-bottom: 15px;
   font-size: 14px;
-}
-.tester .tester_container .tester_bottom .tester_right {
-  width: 70%;
-  height: 355px;
-  border-radius: 8px;
-  border: 1px solid #414141;
-  padding: 21px 20px;
-}
-.tester .tester_container .tester_bottom .tester_right > ol > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 3px;
-  font-family: Work Sans;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.tester .tester_container .tester_bottom .tester_right > ol > li img {
-  width: 20px;
-  height: 20px;
-}
-.tester .tester_container .tester_bottom .tester_right > a > button {
-  width: 100%;
-  height: 30px;
-  margin-top: 15px;
 }
 
 @media screen and (max-width: 1238px) {
@@ -5113,7 +5057,7 @@ a {
     color: rgb(18, 18, 18);
   }
   .tester .tester_container .tester_top > p {
-    width: 610px;
+    width: 400px;
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 300;
@@ -5122,22 +5066,18 @@ a {
     text-align: center;
     color: rgb(18, 18, 18);
   }
-  .tester .tester_container .tester_top .tester_input {
-    width: 400px;
-    position: relative;
-  }
-  .tester .tester_container .tester_top .tester_input > input {
+  .tester .tester_container .tester_top .tester_input > form > input {
     width: 360px;
     height: 15px;
     padding: 10px;
     border: 1px solid #ffaf06;
     border-radius: 8px;
   }
-  .tester .tester_container .tester_top .tester_input > img {
+  .tester .tester_container .tester_top .tester_input > form > img {
     width: 20px;
     height: 20px;
     position: absolute;
-    right: 25px;
+    right: 10px;
     top: 8px;
   }
   .tester .tester_container .tester_bottom {
@@ -5162,10 +5102,11 @@ a {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume {
     width: 240px;
+    height: 335px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5175,6 +5116,7 @@ a {
             flex-direction: column;
     border-radius: 8px;
     background-color: #fff;
+    margin-bottom: 10px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume > img {
     width: 100%;
@@ -5186,7 +5128,18 @@ a {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffd376;
+    margin-bottom: 5px;
+    margin-left: 10px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
     padding: 0 10px;
@@ -5194,58 +5147,26 @@ a {
     display: -ms-flexbox;
     display: flex;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > img {
-    width: 12px;
-    height: 13px;
-    margin-left: 3px;
-    margin-top: 7px;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
+    font-family: New York;
+    font-size: 16px;
+    font-weight: 496;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6a6a6a;
+    margin-top: 0px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
-    margin-left: 60px;
+    margin-left: 85px;
     margin-bottom: 15px;
     font-size: 12px;
     width: 80px;
   }
-  .tester .tester_container .tester_bottom .tester_right {
-    width: 70%;
-    height: 355px;
-    border-radius: 8px;
-    border: 1px solid #414141;
-    padding: 21px 20px;
-    margin-top: 20px;
-  }
-  .tester .tester_container .tester_bottom .tester_right > ol > li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 3px;
-    font-family: Work Sans;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  .tester .tester_container .tester_bottom .tester_right > ol > li img {
-    width: 20px;
-    height: 20px;
-  }
-  .tester .tester_container .tester_bottom .tester_right > a > button {
-    width: 100%;
-    height: 30px;
-    margin-top: 15px;
-    font-size: 13px;
-  }
 }
 @media screen and (max-width: 740px) {
   .tester .tester_container {
-    padding: 40px 0;
+    padding: 30px 0 0 0;
   }
   .tester .tester_container .tester_top {
     display: -webkit-box;
@@ -5320,10 +5241,11 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 0px;
+    gap: 5px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume {
-    width: 200px;
+    width: 180px;
+    height: 260px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5340,67 +5262,46 @@ a {
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
     font-family: Space Mono;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 496;
     line-height: 12px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 10px;
+    padding: 10px 8px 5px 8px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffd376;
+    margin-bottom: 5px;
+    margin-left: 8px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
-    padding: 0 10px;
+    padding: 0 8px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > img {
-    width: 10px;
-    height: 10px;
-    margin-left: 3px;
-    margin-top: 7px;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
+    font-family: New York;
+    font-size: 14px;
+    font-weight: 496;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6a6a6a;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
-    margin-left: 30px;
+    margin-left: 40px;
+    height: 23px;
     margin-bottom: 15px;
     font-size: 12px;
     width: 80px;
     border: 1px solid;
-  }
-  .tester .tester_container .tester_bottom .tester_right {
-    width: 70%;
-    height: 345px;
-    border-radius: 8px;
-    border: 1px solid #414141;
-    padding: 10px;
-    margin-top: 0;
-  }
-  .tester .tester_container .tester_bottom .tester_right > ol > li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 3px;
-    font-family: Work Sans;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  .tester .tester_container .tester_bottom .tester_right > ol > li img {
-    width: 20px;
-    height: 20px;
-  }
-  .tester .tester_container .tester_bottom .tester_right > a > button {
-    width: 100%;
-    height: 30px;
-    margin-top: 15px;
-    font-size: 13px;
   }
 }
 .contact .contact_container {
@@ -7608,6 +7509,7 @@ a {
 }
 .giftboxes .giftboxes_container .boxes .box > img {
   width: 100%;
+  height: 50%;
   border-radius: 5px;
 }
 .giftboxes .giftboxes_container .boxes .box .box_info {
@@ -9599,7 +9501,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-  width: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px;
   border-radius: 10px;
   height: 30px;
   background-color: #ffaf06;
@@ -9647,7 +9552,10 @@ a {
     display: -ms-flexbox;
     display: flex;
     cursor: pointer;
-    width: 100px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 7px;
     border-radius: 10px;
     height: 30px;
     background-color: #ffaf06;
@@ -9695,7 +9603,10 @@ a {
     display: -ms-flexbox;
     display: flex;
     cursor: pointer;
-    width: 100px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 7px;
     border-radius: 10px;
     height: 30px;
     background-color: #ffaf06;

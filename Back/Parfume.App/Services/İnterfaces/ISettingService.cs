@@ -6,6 +6,8 @@ namespace Parfume.App.Services.İnterfaces
     {
         public Task<SettingFooter?> Get();
         public Task<SettingNavbar?> GetAll();
+    
+
 
     }
 }

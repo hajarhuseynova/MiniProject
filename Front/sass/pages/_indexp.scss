@@ -155,7 +155,8 @@
       .category {
         display: flex;
         cursor: pointer;
-        width: 100px;
+        width: fit-content;
+        padding: 7px;
         border-radius: 10px;
         height: 30px;
         background-color: $orange_01;
@@ -192,7 +193,8 @@
         .category {
           display: flex;
           cursor: pointer;
-          width: 100px;
+          width: fit-content;
+          padding: 7px;
           border-radius: 10px;
           height: 30px;
           background-color: $orange_01;
@@ -230,7 +232,8 @@
         .category {
           display: flex;
           cursor: pointer;
-          width: 100px;
+          width: fit-content;
+          padding: 7px;
           border-radius: 10px;
           height: 30px;
           background-color: $orange_01;

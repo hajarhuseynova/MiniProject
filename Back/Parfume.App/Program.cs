@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Parfume.App.Context;
 using Parfume.App.ServiceRegistration;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,10 +10,13 @@ builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
 
+
 builder.Services.AddHttpContextAccessor();
 builder.Services.Register(builder.Configuration);
 
 var app = builder.Build();
+
+
 
 
 if (!app.Environment.IsDevelopment())

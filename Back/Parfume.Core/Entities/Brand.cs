@@ -10,6 +10,6 @@ namespace Parfume.Core.Entities
     public class Brand:BaseEntity
     {
         public string Name { get; set; }
-        public List<Parfum> Parfum { get; set; }
+        public List<Tester>? Testers { get; set; }   
     }
 }

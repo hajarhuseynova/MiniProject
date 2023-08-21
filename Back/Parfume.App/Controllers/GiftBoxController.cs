@@ -32,7 +32,9 @@ namespace Parfume.App.Controllers
 
             GiftBoxViewModel giftBoxViewModel = new GiftBoxViewModel
             {
-                GiftBoxes = await _context.GiftBoxes.Where(x => !x.IsDeleted).Skip((page - 1) * 8).Take(8).ToListAsync()
+                GiftBoxes = await _context.GiftBoxes.Where(x => !x.IsDeleted).Skip((page - 1) * 8).Take(8).ToListAsync(),
+                SettingHomePage = await _context.SettingHomePage.Where(x => !x.IsDeleted).FirstOrDefaultAsync()
+
             };
             return View(giftBoxViewModel);
         }

@@ -13,15 +13,15 @@ namespace Parfume.Core.Entities
     {
         public string TitleGift { get; set; }
         public string DescriptionGift { get; set; }
-        public string ImageGift1 { get; set; }
+        public string? ImageGift1 { get; set; }
         [NotMapped]
         public IFormFile? Gift1FormFile { get; set; }
-        public string ImageGift2 { get; set; }
+        public string? ImageGift2 { get; set; }
         [NotMapped]
         public IFormFile? Gift2FormFile { get; set; }
 
         public string DescTester { get; set; }
-        public string ImageTester { get; set; }
+        public string? ImageTester { get; set; }
         [NotMapped]
         public IFormFile? TesterFormFile { get; set; }
 

@@ -1,0 +1,117 @@
+﻿@model SettingAbout
+
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.WhoTitle" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.WhoTitle"/>
+			<span class="text text-danger" asp-validation-for="@Model.WhoTitle"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.WhyTitle" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.WhyTitle"/>
+			<span class="text text-danger" asp-validation-for="@Model.WhyTitle"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.WhoP1" >Haqqinda:</label>
+			<input type="text" class="form-control" asp-for="@Model.WhoP1"/>
+			<span class="text text-danger" asp-validation-for="@Model.WhoP1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.WhoP2" >Haqqinda:</label>
+			<input type="text" class="form-control" asp-for="@Model.WhoP2"/>
+			<span class="text text-danger" asp-validation-for="@Model.WhoP2"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.WhoP3" >Haqqinda:</label>
+			<input type="text" class="form-control" asp-for="@Model.WhoP3"/>
+			<span class="text text-danger" asp-validation-for="@Model.WhoP3"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.WhyP1" >Haqqinda:</label>
+			<input type="text" class="form-control" asp-for="@Model.WhyP1"/>
+			<span class="text text-danger" asp-validation-for="@Model.WhyP1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.WhyP2" >Haqqinda:</label>
+			<input type="text" class="form-control" asp-for="@Model.WhyP2"/>
+			<span class="text text-danger" asp-validation-for="@Model.WhyP2"></span>
+	</div>
+
+	<div class="form-group">
+		    <label asp-for="@Model.Icon1" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.Icon1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Icon1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Icon2" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.Icon2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Icon2"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Icon3" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.Icon3"/>
+			<span class="text text-danger" asp-validation-for="@Model.Icon3"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Icon4" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.Icon4"/>
+			<span class="text text-danger" asp-validation-for="@Model.Icon4"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.IconP1" >Icon Movzu:</label>
+			<input type="text" class="form-control" asp-for="@Model.IconP1"/>
+			<span class="text text-danger" asp-validation-for="@Model.IconP1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.IconP2" >Icon Movzu:</label>
+			<input type="text" class="form-control" asp-for="@Model.IconP2"/>
+			<span class="text text-danger" asp-validation-for="@Model.IconP2"></span>
+	</div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.IconP3" >Icon Movzu:</label>
+			<input type="text" class="form-control" asp-for="@Model.IconP3"/>
+			<span class="text text-danger" asp-validation-for="@Model.IconP3"></span>
+	</div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.IconP4" >Icon Movzu:</label>
+			<input type="text" class="form-control" asp-for="@Model.IconP4"/>
+			<span class="text text-danger" asp-validation-for="@Model.IconP4"></span>
+	</div>
+
+
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.Who1FormFile" >Sekil:</label>
+			<input type="file" class="form-control" asp-for="@Model.Who1FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.Who1FormFile"></span>
+    </div>
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.Who2FormFile" >Sekil:</label>
+			<input type="file" class="form-control" asp-for="@Model.Who2FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.Who2FormFile"></span>
+    </div>
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.Why1FormFile" >Sekil:</label>
+			<input type="file" class="form-control" asp-for="@Model.Why1FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.Why1FormFile"></span>
+    </div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.Why2FormFile" >Sekil:</label>
+			<input type="file" class="form-control" asp-for="@Model.Why2FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.Why2FormFile"></span>
+    </div>
+
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yenile</button>
+	</form>
+</div>

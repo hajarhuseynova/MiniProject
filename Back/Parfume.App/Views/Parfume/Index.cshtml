@@ -28,18 +28,14 @@
             <div class="category" data-filter="all">
               <p id="all">All</p>
             </div>
-            <div class="category" data-filter="chanel">
-              <p id="chanel">Chanel</p>
+         
+            @foreach (var item in Model.Brands)
+            {
+            <div class="category" data-filter="@item.Name.ToLower()">
+              <p id="@item.Name.ToLower()">@item.Name</p>
             </div>
-            <div class="category" data-filter="dior">
-              <p id="dior">Dior</p>
-            </div>
-            <div class="category" data-filter="lancome">
-              <p id="lancome">Lancome</p>
-            </div>
-            <div class="category" data-filter="armani">
-              <p id="armani">Armani</p>
-            </div>
+           
+            }
           </div>
         </div>
       </div>

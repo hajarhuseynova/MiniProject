@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace Parfume.Core.Entities
 {
-    public class LikeP:BaseEntity
+    public class Volume:BaseEntity
     {
-        public int CommentPId { get; set; }
-        public CommentP Comment { get; set; }
-        public int Count { get; set; }
-
+        public int MilliLiters { get; set; }
+        public List<ParfumVolume> ParfumVolume { get; set; }
     }
 }

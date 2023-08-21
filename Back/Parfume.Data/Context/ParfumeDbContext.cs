@@ -7,10 +7,17 @@ namespace Parfume.App.Context
 {
     public class ParfumeDbContext: IdentityDbContext<AppUser>
     {
-
+   
         public DbSet<FakeSlider> FakeSlides { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Parfum> Parfums { get; set; }
+
+        public DbSet<Tester> Testers { get; set; }
+
         public DbSet<SettingContact> SettingContact { get; set; }
         public DbSet<SettingNavbar> SettingNavbar { get; set; }
+        public DbSet<SettingAbout> SettingAbout { get; set; }
+
         public DbSet<SettingHomePage> SettingHomePage { get; set; }
         public DbSet<SettingFooter> SettingFooter { get; set; }
         public DbSet<SendMessage> Messages { get; set; }
@@ -26,14 +33,9 @@ namespace Parfume.App.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Parfum>()
-                .HasOne(e => e.Rating)
-                .WithOne(e => e.Parfum)
-                .HasForeignKey<Rating>(e => e.ParfumId)
-                .IsRequired();
-
+         
             base.OnModelCreating(modelBuilder);
+     
         }
-
     }
 }

@@ -21,28 +21,27 @@
       <div class="who">
         <div class="container who_container">
           <div class="who_left">
-            <h3>Biz kimik?</h3>
+            <h3>@Model.SettingAbout?.WhoTitle</h3>
             <p class="hide">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              laborum cumque odio aut praesentium eum culpa tenetur modi quod
-              esse.
+             @Model.SettingAbout?.WhoP1
             </p>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              repudiandae ullam ea, voluptates non similique?
+             @Model.SettingAbout?.WhoP2
+           
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-              atque!
+             @Model.SettingAbout?.WhoP3
+              
             </p>
           </div>
           <div class="who_right">
             <img
-              src="../assets/images/About/about3.jpg"
+            
+              src="../assets/images/@Model.SettingAbout?.ImageWho1"
               class="about_image_right"
             />
             <img
-              src="../assets/images/About/about4.jpg"
+              src="../assets/images/@Model.SettingAbout?.ImageWho2"
               class="about_image_left"
             />
           </div>
@@ -52,41 +51,39 @@
         <div class="container why_container">
           <div class="why_left">
             <img
-              src="../assets/images/About/about2.jpg"
+              src="../assets/images/@Model.SettingAbout?.ImageWhy1"
               class="about_image_right"
             />
             <img
-              src="../assets/images/About/about1.jpg"
+              src="../assets/images/@Model.SettingAbout?.ImageWhy2"
               class="about_image_left"
             />
           </div>
           <div class="why_right">
             <h3>Niye biz?</h3>
             <p class="hide">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              repudiandae ullam ea, voluptates non similique?
+              @Model.SettingAbout?.WhyP1
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-              atque!
+            @Model.SettingAbout?.WhyP2
             </p>
 
             <div class="options">
               <div class="option">
-                <img src="../assets/icons/about/Box.svg" />
-                <p>Minlerle Cesid</p>
+               @Html.Raw(Model.SettingAbout?.Icon1)
+                <p>@Model.SettingAbout?.IconP1</p>
               </div>
               <div class="option">
-                <img src="../assets/icons/about/CreditCard.svg" />
-                <p>Minlerle Cesid</p>
+                 @Html.Raw(Model.SettingAbout?.Icon2)
+                <p>@Model.SettingAbout?.IconP2</p>
               </div>
               <div class="option">
-                <img src="../assets/icons/about/Gift.svg" />
-                <p>Minlerle Cesid</p>
+              @Html.Raw(Model.SettingAbout?.Icon3)
+                <p>@Model.SettingAbout?.IconP3</p>
               </div>
               <div class="option">
-                <img src="../assets/icons/about/Layers.svg" />
-                <p>Minlerle Cesid</p>
+               @Html.Raw(Model.SettingAbout?.Icon4)
+                <p>@Model.SettingAbout?.IconP4</p>
               </div>
             </div>
           </div>

@@ -5,15 +5,14 @@
       <div class="gift_intro">
         <div class="container gift_intro_container">
           <div class="gift_left">
-            <h1>Xüsusi günlərin əvəzedilməzi!</h1>
+            <h1>@Model.SettingHomePage?.TitleGift</h1>
             <p>
-              Özəl günlər üçün xüsusi parfum qutusu almaq çox asan və yadda
-              qalan olacaq...
+         @Model.SettingHomePage?.DescriptionGift
             </p>
           </div>
           <div class="gift_right">
-            <img src="../assets/images/NewProduct/ProductImage.jpg" />
-            <img src="../assets/images/About/about2.jpg" />
+            <img src="../assets/images/@Model.SettingHomePage?.ImageGift1" />
+            <img src="../assets/images/@Model.SettingHomePage?.ImageGift2" />
           </div>
         </div>
       </div>
