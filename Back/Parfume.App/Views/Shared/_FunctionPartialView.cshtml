@@ -1,0 +1,12 @@
+﻿ @model IEnumerable<Functions>
+ 
+
+@foreach (var item in Model)
+         {
+            <div class="function">
+            <a href="@item.Link"><img src="~/assets/images/@item.Image"/></a>
+            <h3>@item.Title</h3>
+            <p>@item.Desc</p>
+          </div>
+          <div class="line"></div>  
+         }

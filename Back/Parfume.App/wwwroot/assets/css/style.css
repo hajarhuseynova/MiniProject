@@ -1077,7 +1077,7 @@ a {
     margin-right: 10px;
     width: 95px;
   }
-  .products .products_container .newproducts .hide {
+  .products .products_container .newproducts .product:nth-child(4) {
     display: none;
   }
 }
@@ -1175,7 +1175,7 @@ a {
     width: 75px;
     border: 1px solid;
   }
-  .products .products_container .newproducts .hidden {
+  .products .products_container .newproducts .product:nth-child(3) {
     display: none;
   }
 }
@@ -1288,7 +1288,7 @@ a {
     display: flex;
     margin-left: 10px;
   }
-  .smeels .smells_container .newsmeels .hide {
+  .smeels .smells_container .newsmeels .smell:nth-child(4) {
     display: none;
   }
 }
@@ -1340,7 +1340,7 @@ a {
   .smeels .smells_container .newsmeels .smell > p {
     display: none;
   }
-  .smeels .smells_container .newsmeels .hidden {
+  .smeels .smells_container .newsmeels .smell:nth-child(3) {
     display: none;
   }
 }
@@ -1466,7 +1466,7 @@ a {
     margin-left: 75px;
     margin-top: 10px;
   }
-  .smokes .smokes_container .newsmokes .hide {
+  .smokes .smokes_container .newsmokes .smoke:nth-child(3) {
     display: none;
   }
 }
@@ -1529,7 +1529,7 @@ a {
     margin-left: 165px;
     margin-top: 5px;
   }
-  .smokes .smokes_container .newsmokes .hidden {
+  .smokes .smokes_container .newsmokes .smoke:nth-child(2) {
     display: none;
   }
 }
@@ -1706,7 +1706,7 @@ a {
     margin-right: 10px;
     width: 95px;
   }
-  .sellests .sellests_container .newsellests .hide {
+  .sellests .sellests_container .newsellests .sellest:nth-child(4) {
     display: none;
   }
 }
@@ -1798,7 +1798,7 @@ a {
     width: 75px;
     border: 1px solid;
   }
-  .sellests .sellests_container .newsellests .hidden {
+  .sellests .sellests_container .newsellests .sellest:nth-child(3) {
     display: none;
   }
 }
@@ -2259,7 +2259,7 @@ a {
     width: 70px;
     height: 23px;
   }
-  .discounts .discounts_container .newdiscounts .hide {
+  .discounts .discounts_container .newdiscounts .discount:nth-child(4) {
     display: none;
   }
 }
@@ -2368,7 +2368,7 @@ a {
     border: 1px solid;
     margin-right: 10px;
   }
-  .discounts .discounts_container .newdiscounts .hidden {
+  .discounts .discounts_container .newdiscounts .discount:nth-child(3) {
     display: none;
   }
 }
@@ -7827,7 +7827,12 @@ a {
 .detail_intro .detail_intro_container .detail_right .red {
   color: #fe0000;
 }
-.detail_intro .detail_intro_container .detail_right .stock {
+.detail_intro .detail_intro_container .detail_right .bools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.detail_intro .detail_intro_container .detail_right .bools .stock {
   font-family: Work Sans;
   font-size: 15px;
   font-weight: 400;
@@ -7880,7 +7885,7 @@ a {
 }
 .detail_intro .detail_intro_container .detail_right .line {
   background-color: rgb(18, 18, 18);
-  width: 500px;
+  width: 510px;
   height: 1px;
   margin: 3px 0;
 }
@@ -7911,6 +7916,7 @@ a {
 }
 .detail_intro .detail_intro_container .detail_right .volume > form > label {
   margin-right: 10px;
+  font-size: 15px;
 }
 .detail_intro .detail_intro_container .detail_right .input_button_delete {
   display: -webkit-box;
@@ -7940,7 +7946,7 @@ a {
   cursor: pointer;
 }
 .detail_intro .detail_intro_container .detail_right .input_button_delete .input_number .orangeinput {
-  width: 35px;
+  width: 37px;
   padding: 5px 25px;
   border-radius: 4px;
   border: 5px;
@@ -8279,9 +8285,9 @@ a {
             justify-content: inherit;
   }
   .detail_intro .detail_intro_container .detail_right .priceStar > p {
-    width: 100px;
+    width: 80px;
     font-family: Space Mono;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 450;
     line-height: 30px;
     letter-spacing: 0em;
@@ -8328,7 +8334,7 @@ a {
   }
   .detail_intro .detail_intro_container .detail_right .volume > p {
     font-family: Work Sans;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0em;
@@ -8346,6 +8352,7 @@ a {
   }
   .detail_intro .detail_intro_container .detail_right .volume > form > label {
     margin-right: 5px;
+    font-size: 13px;
   }
   .detail_intro .detail_intro_container .detail_right .input_button_delete {
     margin-top: 5px;
@@ -8533,6 +8540,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 8px;
 }
 .assesment .assesment_container .left > h3 {

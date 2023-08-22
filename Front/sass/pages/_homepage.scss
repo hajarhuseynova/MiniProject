@@ -170,9 +170,9 @@ a {
               }
             }
           }
-        }
-        .hide {
-          display: none;
+          &:nth-child(4) {
+            display: none;
+          }
         }
       }
     }
@@ -256,9 +256,9 @@ a {
               }
             }
           }
-        }
-        .hidden {
-          display: none;
+          &:nth-child(3) {
+            display: none;
+          }
         }
       }
     }
@@ -348,9 +348,9 @@ a {
             display: flex;
             margin-left: 10px;
           }
-        }
-        .hide {
-          display: none;
+          &:nth-child(4) {
+            display: none;
+          }
         }
       }
     }
@@ -389,9 +389,9 @@ a {
           > p {
             display: none;
           }
-        }
-        .hidden {
-          display: none;
+          &:nth-child(3) {
+            display: none;
+          }
         }
       }
     }
@@ -501,9 +501,9 @@ a {
               margin-top: 10px;
             }
           }
-        }
-        .hide {
-          display: none;
+          &:nth-child(3) {
+            display: none;
+          }
         }
       }
     }
@@ -553,9 +553,9 @@ a {
               margin-top: 5px;
             }
           }
-        }
-        .hidden {
-          display: none;
+          &:nth-child(2) {
+            display: none;
+          }
         }
       }
     }
@@ -708,9 +708,9 @@ a {
               }
             }
           }
-        }
-        .hide {
-          display: none;
+          &:nth-child(4) {
+            display: none;
+          }
         }
       }
     }
@@ -787,9 +787,9 @@ a {
               }
             }
           }
-        }
-        .hidden {
-          display: none;
+          &:nth-child(3) {
+            display: none;
+          }
         }
       }
     }
@@ -1170,9 +1170,9 @@ a {
               }
             }
           }
-        }
-        .hide {
-          display: none;
+          &:nth-child(4) {
+            display: none;
+          }
         }
       }
     }
@@ -1266,9 +1266,9 @@ a {
               }
             }
           }
-        }
-        .hidden {
-          display: none;
+          &:nth-child(3) {
+            display: none;
+          }
         }
       }
     }

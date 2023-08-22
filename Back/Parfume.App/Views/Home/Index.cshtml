@@ -31,13 +31,14 @@
         <div class="container products_container">
           <h1>Yeni Mehsullar</h1>
           <div class="newproducts">
-           @foreach (var item in Model.Parfumes.Take(4))
+
+      @foreach (var item in Model.Parfumes.Take(4))
             {
                 @if (item.IsNew == true)
                 {
             <div class="product">
            <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">   <img
-                src="../assets/images/@item.Image"
+                src="~/assets/images/@item.Image"
                 alt="productImage"
               /></a>
               <div class="new">Yeni</div>
@@ -301,16 +302,7 @@
 
       <div style="margin-bottom:40px" class="functions">
         <div class="container functions_container">
-         @foreach (var item in Model.Functions)
-         {
-            <div class="function">
-            <a href="@item.Link"><img src="~/assets/images/@item.Image"/></a>
-            <h3>@item.Title</h3>
-            <p>@item.Desc</p>
-          </div>
-          <div class="line"></div>  
-         }
-         
+         @await Html.PartialAsync("_FunctionPartialView",Model.Functions.Take(4).ToList())
         </div>
       </div>
 

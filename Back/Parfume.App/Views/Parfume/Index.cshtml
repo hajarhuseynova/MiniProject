@@ -49,7 +49,7 @@
          @foreach (var item in Model.Parfumes)
          {
                 <div class="selles">
-              <a>
+              <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
                 <img
                   src="../assets/images/@item.Image"
                   alt="productImage"

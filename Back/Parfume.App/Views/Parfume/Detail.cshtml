@@ -6,22 +6,37 @@
       <div class="detail_intro">
         <div class="container detail_intro_container">
           <div class="detail_left">
-            <img src="~/assets/images/NewProduct/ProductImage.jpg" />
+            <img src="~/assets/images/@Model.Parfum?.Image" />
           </div>
           <div class="detail_right">
-            <h3>@Model.Parfum.Title</h3>
-            <p>@Model.Parfum.Desc .</p>
-            <p class="muted">məhsul kodu:@Model.Parfum.ProductCode </p>
-            @if (Model.Parfum.IsStock == true)
-            {
-                <p class="stock" style="color:green">+stokda</p>
-            }
-            else
-            {
-                  <p class="stock" style="color:red">+stokda</p>
-            }
+            <h3>@Model.Parfum?.Title</h3>
+            <p>@Model.Parfum?.Desc .</p>
+            <p class="muted">Məhsul Kodu:@Model.Parfum?.ProductCode </p>
+            <div class="bools">
+               @if (Model.Parfum.IsStock == true)
+                {
+                    <p class="stock">stokda/</p>
+                }
+                
+               @if (Model.Parfum.IsNew == true)
+                {
+                    <p class="stock">yeni/</p>
+                }
+               
+               @if (Model.Parfum.IsTrend == true)
+                {
+                    <p class="stock">trend/</p>
+                }
+             
+               @if (Model.Parfum.IsDiscount == true)
+                {
+                    <p class="stock">endirim: @Model.Parfum.DiscountPercentage %</p>
+                }
+              
+             
+            </div>
             <div class="priceStar">
-              <p>@Model.Parfum.SellPrice</p>
+              <p>@Model.Parfum?.SellPrice AZN</p>
               <div class="stars">
                 <span class="st">&#9733;</span>
                 <span class="st">&#9733;</span>
@@ -35,7 +50,7 @@
             <div class="volume">
               <p>Hecm Secin:</p>
               <form action="detailp.html">
-          @foreach (var item in Model.Volumes)
+          @foreach (var item in Model.Volumes.Take(4))
           {
                <input type="radio" value="@item.Id" name="quantity" />
                 <label for="@item.Id">@item.MilliLiters</label><br />
@@ -252,10 +267,9 @@
           <div class="newproducts">
            @foreach (var item in Model.Parfumes.Take(4))
             {
-                @if (item.IsNew == true)
-                {
-            <div class="product">
-           <a>   <img
+               
+            <div class="product ">
+           <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">   <img
                 src="~/assets/images/@item.Image"
                 alt="productImage"
               /></a>
@@ -267,7 +281,7 @@
                 <a><button style="width:80px">Elave et</button></a>
               </div>
             </div>
-                }
+                
             }
          
           </div>
@@ -278,15 +292,7 @@
 
   <div style="margin-bottom:40px" class="functions">
         <div class="container functions_container">
-         @foreach (var item in Model.Functions.Take(4))
-         {
-            <div class="function">
-            <a href="@item.Link"><img src="~/assets/images/@item.Image"/></a>
-            <h3>@item.Title</h3>
-            <p>@item.Desc</p>
-          </div>
-          <div class="line"></div>  
-         }
+         @await Html.PartialAsync("_FunctionPartialView",Model.Functions.Take(4).ToList())
          
         </div>
       </div>
