@@ -22,7 +22,6 @@ namespace Parfume.App.areas.Admin.Controllers
             _environment = environment;
             _mailService = mailService;
         }
-
         public async Task<IActionResult> Index(int page = 1)
         {
             int TotalCount = _context.Parfums.Where(x => !x.IsDeleted).Count();
@@ -34,7 +33,6 @@ namespace Parfume.App.areas.Admin.Controllers
 
             return View(parfums);
         }
-
         public async Task<IActionResult> Create()
         {
             ViewBag.Brand = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync();

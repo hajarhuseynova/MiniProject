@@ -908,7 +908,7 @@ a {
 }
 .products .products_container .newproducts .product {
   width: 295px;
-  height: 425px;
+  height: 400px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -990,6 +990,7 @@ a {
   margin-left: 10px;
 }
 .products .products_container .newproducts .product .price_star > a > button {
+  width: 110px;
   margin-right: 10px;
 }
 .products .products_container .newproducts .product:hover {
@@ -1016,11 +1017,15 @@ a {
   }
   .products .products_container .newproducts .product {
     width: 230px;
-    height: 347px;
+    height: 330px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
-  .products .products_container .newproducts .product > img {
+  .products .products_container .newproducts .product > a {
+    width: 230px;
+    height: 230px;
+  }
+  .products .products_container .newproducts .product > a > img {
     width: 230px;
     height: 230px;
     border-radius: 8px 8px 0px 0px;
@@ -1070,6 +1075,7 @@ a {
   }
   .products .products_container .newproducts .product .price_star > a > button {
     margin-right: 10px;
+    width: 95px;
   }
   .products .products_container .newproducts .hide {
     display: none;
@@ -1103,9 +1109,17 @@ a {
   }
   .products .products_container .newproducts .product {
     width: 180px;
-    height: 280px;
+    height: 260px;
     background-color: #fff;
     border-radius: 8px 8px;
+  }
+  .products .products_container .newproducts .product > a {
+    width: 180px;
+    height: 180px;
+  }
+  .products .products_container .newproducts .product > a > img {
+    width: 180px;
+    height: 180px;
   }
   .products .products_container .newproducts .product .new {
     width: 40px;
@@ -1113,14 +1127,9 @@ a {
     font-size: 12px;
     line-height: 14px;
   }
-  .products .products_container .newproducts .product > img {
-    width: 180px;
-    height: 180px;
-    border-radius: 8px 8px 0px 0px;
-  }
   .products .products_container .newproducts .product .def {
     font-family: Work Sans;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 496;
     line-height: 16px;
     letter-spacing: 0em;
@@ -1550,7 +1559,7 @@ a {
 }
 .sellests .sellests_container .newsellests .sellest {
   width: 295px;
-  height: 425px;
+  height: 400px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -1558,7 +1567,11 @@ a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.sellests .sellests_container .newsellests .sellest > img {
+.sellests .sellests_container .newsellests .sellest > a {
+  width: 295px;
+  height: 295px;
+}
+.sellests .sellests_container .newsellests .sellest > a > img {
   width: 295px;
   height: 295px;
   border-radius: 8px 8px 0px 0px;
@@ -1608,6 +1621,7 @@ a {
 }
 .sellests .sellests_container .newsellests .sellest .price_star > a > button {
   margin-right: 10px;
+  width: 120px;
 }
 .sellests .sellests_container .newsellests .sellest:hover {
   box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
@@ -1632,11 +1646,15 @@ a {
   }
   .sellests .sellests_container .newsellests .sellest {
     width: 230px;
-    height: 350px;
+    height: 330px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
-  .sellests .sellests_container .newsellests .sellest > img {
+  .sellests .sellests_container .newsellests .sellest > a {
+    width: 230px;
+    height: 230px;
+  }
+  .sellests .sellests_container .newsellests .sellest > a > img {
     width: 230px;
     height: 230px;
     border-radius: 8px 8px 0px 0px;
@@ -1686,6 +1704,7 @@ a {
   }
   .sellests .sellests_container .newsellests .sellest .price_star > a > button {
     margin-right: 10px;
+    width: 95px;
   }
   .sellests .sellests_container .newsellests .hide {
     display: none;
@@ -1718,11 +1737,15 @@ a {
   }
   .sellests .sellests_container .newsellests .sellest {
     width: 180px;
-    height: 280px;
+    height: 260px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
-  .sellests .sellests_container .newsellests .sellest > img {
+  .sellests .sellests_container .newsellests .sellest > a {
+    width: 180px;
+    height: 180px;
+  }
+  .sellests .sellests_container .newsellests .sellest > a > img {
     width: 180px;
     height: 180px;
     border-radius: 8px 8px 0px 0px;
@@ -2049,7 +2072,7 @@ a {
 }
 .discounts .discounts_container .newdiscounts .discount {
   width: 295px;
-  height: 425px;
+  height: 400px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -2141,6 +2164,7 @@ a {
 }
 .discounts .discounts_container .newdiscounts .discount .price_star > a > button {
   margin-right: 10px;
+  width: 120px;
 }
 .discounts .discounts_container .newdiscounts .discount:hover {
   box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
@@ -2165,11 +2189,15 @@ a {
   }
   .discounts .discounts_container .newdiscounts .discount {
     width: 230px;
-    height: 350px;
+    height: 325px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
-  .discounts .discounts_container .newdiscounts .discount > img {
+  .discounts .discounts_container .newdiscounts .discount > a {
+    width: 230px;
+    height: 230px;
+  }
+  .discounts .discounts_container .newdiscounts .discount > a > img {
     width: 230px;
     height: 230px;
     border-radius: 8px 8px 0px 0px;
@@ -2182,7 +2210,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 7px;
   }
   .discounts .discounts_container .newdiscounts .discount .cat {
@@ -2228,7 +2256,7 @@ a {
   }
   .discounts .discounts_container .newdiscounts .discount .price_star > a > button {
     font-size: 14px;
-    width: 60px;
+    width: 70px;
     height: 23px;
   }
   .discounts .discounts_container .newdiscounts .hide {
@@ -2262,7 +2290,7 @@ a {
   }
   .discounts .discounts_container .newdiscounts .discount {
     width: 180px;
-    height: 280px;
+    height: 260px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
@@ -2272,7 +2300,11 @@ a {
     font-size: 12px;
     line-height: 14px;
   }
-  .discounts .discounts_container .newdiscounts .discount > img {
+  .discounts .discounts_container .newdiscounts .discount > a {
+    width: 180px;
+    height: 180px;
+  }
+  .discounts .discounts_container .newdiscounts .discount > a > img {
     width: 180px;
     height: 180px;
     border-radius: 8px 8px 0px 0px;
@@ -2285,7 +2317,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 5px;
   }
   .discounts .discounts_container .newdiscounts .discount .cat {
@@ -2334,7 +2366,7 @@ a {
     width: 50px;
     height: 20px;
     border: 1px solid;
-    margin-right: 5px;
+    margin-right: 10px;
   }
   .discounts .discounts_container .newdiscounts .hidden {
     display: none;
@@ -4289,7 +4321,7 @@ a {
   }
   .who .who_container .who_left > h3 {
     font-family: Space Mono;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 496;
     line-height: 25px;
     letter-spacing: 0em;
@@ -4302,7 +4334,7 @@ a {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: rgb(18, 18, 18);
     margin-bottom: 10px;
   }
@@ -4365,7 +4397,7 @@ a {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: rgb(18, 18, 18);
     margin-bottom: 10px;
   }
@@ -4471,8 +4503,10 @@ a {
           align-items: center;
   width: 180px;
 }
-.why .why_container .why_right .options .option > img {
+.why .why_container .why_right .options .option > i {
   margin-right: 5px;
+  font-size: 20px;
+  color: #ffaf06;
 }
 .why .why_container .why_right .options .option > p {
   font-family: Work Sans;
@@ -4541,7 +4575,7 @@ a {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: rgb(18, 18, 18);
     margin-bottom: 15px;
   }
@@ -4567,10 +4601,12 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 180px;
+    width: 160px;
   }
-  .why .why_container .why_right .options .option > img {
+  .why .why_container .why_right .options .option > i {
     margin-right: 5px;
+    font-size: 20px;
+    color: #ffaf06;
   }
   .why .why_container .why_right .options .option > p {
     font-family: Work Sans;
@@ -4637,9 +4673,9 @@ a {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: rgb(18, 18, 18);
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
   .why .why_container .why_right .hide {
     display: none;
@@ -4663,10 +4699,12 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 180px;
+    width: 150px;
   }
-  .why .why_container .why_right .options .option > img {
+  .why .why_container .why_right .options .option > i {
     margin-right: 5px;
+    font-size: 20px;
+    color: #ffaf06;
   }
   .why .why_container .why_right .options .option > p {
     font-family: Work Sans;
@@ -9504,7 +9542,7 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 7px;
+  padding: 10px;
   border-radius: 10px;
   height: 30px;
   background-color: #ffaf06;
@@ -9660,7 +9698,7 @@ a {
 }
 .parfumes_index .parfumes_index_container .newsellest .selles {
   width: 295px;
-  height: 415px;
+  height: 400px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -9668,7 +9706,11 @@ a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.parfumes_index .parfumes_index_container .newsellest .selles > img {
+.parfumes_index .parfumes_index_container .newsellest .selles > a {
+  width: 295px;
+  height: 295px;
+}
+.parfumes_index .parfumes_index_container .newsellest .selles > a > img {
   width: 295px;
   height: 295px;
   border-radius: 8px 8px 0px 0px;
@@ -9716,16 +9758,9 @@ a {
   color: #6a6a6a;
   margin-left: 10px;
 }
-.parfumes_index .parfumes_index_container .newsellest .selles .price_star .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 7px;
+.parfumes_index .parfumes_index_container .newsellest .selles .price_star > a > button {
   margin-right: 10px;
-}
-.parfumes_index .parfumes_index_container .newsellest .selles .price_star .stars > img {
-  width: 12px;
-  height: 12px;
+  width: 120px;
 }
 .parfumes_index .parfumes_index_container .newsellest .selles:hover {
   box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
@@ -9750,11 +9785,15 @@ a {
   }
   .parfumes_index .parfumes_index_container .newsellest .selles {
     width: 230px;
-    height: 350px;
+    height: 330px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
-  .parfumes_index .parfumes_index_container .newsellest .selles > img {
+  .parfumes_index .parfumes_index_container .newsellest .selles > a {
+    width: 230px;
+    height: 230px;
+  }
+  .parfumes_index .parfumes_index_container .newsellest .selles > a > img {
     width: 230px;
     height: 230px;
     border-radius: 8px 8px 0px 0px;
@@ -9802,16 +9841,9 @@ a {
     color: #6a6a6a;
     margin-left: 10px;
   }
-  .parfumes_index .parfumes_index_container .newsellest .selles .price_star .stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 7px;
+  .parfumes_index .parfumes_index_container .newsellest .selles .price_star > a > button {
     margin-right: 10px;
-  }
-  .parfumes_index .parfumes_index_container .newsellest .selles .price_star .stars > img {
-    width: 12px;
-    height: 12px;
+    width: 95px;
   }
   .parfumes_index .parfumes_index_container .newsellest .hide {
     display: none;
@@ -9842,11 +9874,15 @@ a {
   }
   .parfumes_index .parfumes_index_container .newsellest .selles {
     width: 180px;
-    height: 280px;
+    height: 260px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
-  .parfumes_index .parfumes_index_container .newsellest .selles > img {
+  .parfumes_index .parfumes_index_container .newsellest .selles > a {
+    width: 180px;
+    height: 180px;
+  }
+  .parfumes_index .parfumes_index_container .newsellest .selles > a > img {
     width: 180px;
     height: 180px;
     border-radius: 8px 8px 0px 0px;
@@ -9894,16 +9930,10 @@ a {
     color: #6a6a6a;
     margin-left: 10px;
   }
-  .parfumes_index .parfumes_index_container .newsellest .selles .price_star .stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 7px;
-    margin-right: 10px;
-  }
-  .parfumes_index .parfumes_index_container .newsellest .selles .price_star .stars > img {
-    width: 12px;
-    height: 12px;
+  .parfumes_index .parfumes_index_container .newsellest .selles .price_star > a > button {
+    font-size: 12px;
+    width: 75px;
+    border: 1px solid;
   }
   .parfumes_index .parfumes_index_container .newsellest .hidden {
     display: none;

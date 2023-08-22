@@ -27,65 +27,30 @@
         <div class="swiper-pagination"></div>
       </div>
 
-       <div class="products">
+      <div class="products">
         <div class="container products_container">
           <h1>Yeni Mehsullar</h1>
           <div class="newproducts">
+           @foreach (var item in Model.Parfumes)
+            {
+                @if (item.IsNew == true)
+                {
             <div class="product">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
+           <a>   <img
+                src="../assets/images/@item.Image"
                 alt="productImage"
-              />
+              /></a>
               <div class="new">Yeni</div>
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
+              <p class="def">@item.Title</p>
+              <p class="cat">@item.Brand.Name</p>
               <div class="price_star">
-                <p class="price">53-100$</p>
+                <p class="price">@item.SellPrice AZN</p>
                 <a><button style="width:80px">Elave et</button></a>
               </div>
             </div>
-            <div class="product">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <div class="new">Yeni</div>
-
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
-                <a><button >Elave et</button></a>
-              </div>
-            </div>
-            <div class="product hidden">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <div class="new">Yeni</div>
-
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
-                <a><button>Elave et</button></a>
-              </div>
-            </div>
-            <div class="product hide hidden">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <div class="new">Yeni</div>
-
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
-                <a><button>Elave et</button></a>
-              </div>
-            </div>
+                }
+            }
+         
           </div>
         </div>
       </div>
@@ -196,54 +161,25 @@
         <div class="container sellests_container">
           <h1>En cox satilanlar</h1>
           <div class="newsellests">
-            <div class="sellest">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
+          @foreach (var item in Model.Parfumes)
+            {
+                @if (item.IsTrend == true)
+                {
+                <div class="sellest">
+           <a>   <img
+                src="../assets/images/@item.Image"
                 alt="productImage"
-              />
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
+              /></a>
+              <p class="def">@item.Title</p>
+              <p class="cat">@item.Brand.Name</p>
               <div class="price_star">
-                <p class="price">53-100$</p>
-                <a><button style="width:80px">Elave et</button></a>
-              </div>
-            </div>
-            <div class="sellest">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
+                <p class="price">@item.SellPrice AZN</p>
                 <a><button>Elave et</button></a>
               </div>
             </div>
-            <div class="sellest hidden">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
-                <a><button>Elave et</button></a>
-              </div>
-            </div>
-            <div class="sellest hide hidden">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
-                <a><button>Elave et</button></a>
-              </div>
-            </div>
+                }
+            }
+         
           </div>
         </div>
       </div>
@@ -284,65 +220,27 @@
         <div class="container discounts_container">
           <h1>Endirim</h1>
           <div class="newdiscounts">
-            <div class="discount">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
+          @foreach (var item in Model.Parfumes)
+            {
+                @if (item.IsDiscount == true)
+                {
+                      <div class="discount">
+            <a>  <img
+                src="../assets/images/@item.Image"
                 alt="productImage"
-              />
-              <div class="dis">20%</div>
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
+              /></a>
+              <div class="dis">@item?.DiscountPercentage%</div>
+              <p class="def">@item.Title</p>
+              <p class="cat">@item.Brand.Name</p>
               <div class="price_star">
-                <p class="price">53-100$</p>
-                <del class="price_discount">153-180$</del>
+                <p class="price">@item.SellPrice AZN</p>
+                <del class="price_discount">100AZN</del>
                 <a><button>Elave</button></a>
               </div>
             </div>
-            <div class="discount">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <div class="dis">20%</div>
-
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
-                <del class="price_discount">153-180$</del>
-                <a><button>Elave</button></a>
-              </div>
-            </div>
-            <div class="discount hidden">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <div class="dis">20%</div>
-
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
-                <del class="price_discount">153-180$</del>
-                <a><button>Elave</button></a>
-              </div>
-            </div>
-            <div class="discount hide hidden">
-              <img
-                src="../assets/images/NewProduct/ProductImage.jpg"
-                alt="productImage"
-              />
-              <div class="dis">20%</div>
-
-              <p class="def">Our Creation of Vendetta's Ambre Nuit</p>
-              <p class="cat">Armani</p>
-              <div class="price_star">
-                <p class="price">53-100$</p>
-                <del class="price_discount">153-180$</del>
-                <a><button>Elave</button></a>
-              </div>
-            </div>
+                }
+            }
+        
           </div>
         </div>
       </div>

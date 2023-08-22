@@ -20,7 +20,7 @@ a {
       justify-content: space-between;
       .product {
         width: 295px;
-        height: 425px;
+        height: 400px;
         background-color: $white;
         border-radius: 8px 8px;
         border: 1px solid transparent;
@@ -88,6 +88,7 @@ a {
           }
           > a {
             > button {
+              width: 110px;
               margin-right: 10px;
             }
           }
@@ -114,13 +115,17 @@ a {
         justify-content: space-between;
         .product {
           width: 230px;
-          height: 347px;
+          height: 330px;
           background-color: $white;
           border-radius: 8px 8px;
-          > img {
+          > a {
             width: 230px;
             height: 230px;
-            border-radius: 8px 8px 0px 0px;
+            > img {
+              width: 230px;
+              height: 230px;
+              border-radius: 8px 8px 0px 0px;
+            }
           }
           .def {
             font-family: Work Sans;
@@ -161,6 +166,7 @@ a {
             > a {
               > button {
                 margin-right: 10px;
+                width: 95px;
               }
             }
           }
@@ -188,23 +194,27 @@ a {
         justify-content: space-between;
         .product {
           width: 180px;
-          height: 280px;
+          height: 260px;
           background-color: $white;
           border-radius: 8px 8px;
+          > a {
+            width: 180px;
+            height: 180px;
+            > img {
+              width: 180px;
+              height: 180px;
+            }
+          }
           .new {
             width: 40px;
             height: 15px;
             font-size: 12px;
             line-height: 14px;
           }
-          > img {
-            width: 180px;
-            height: 180px;
-            border-radius: 8px 8px 0px 0px;
-          }
+
           .def {
             font-family: Work Sans;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 496;
             line-height: 16px;
             letter-spacing: 0em;
@@ -564,16 +574,20 @@ a {
       flex-wrap: wrap;
       .sellest {
         width: 295px;
-        height: 425px;
+        height: 400px;
         background-color: $white;
         border-radius: 8px 8px;
         border: 1px solid transparent;
         cursor: pointer;
         transition: 0.5s;
-        > img {
+        > a {
           width: 295px;
           height: 295px;
-          border-radius: 8px 8px 0px 0px;
+          > img {
+            width: 295px;
+            height: 295px;
+            border-radius: 8px 8px 0px 0px;
+          }
         }
         .def {
           font-family: Work Sans;
@@ -614,6 +628,7 @@ a {
           > a {
             > button {
               margin-right: 10px;
+              width: 120px;
             }
           }
         }
@@ -638,13 +653,17 @@ a {
         justify-content: space-between;
         .sellest {
           width: 230px;
-          height: 350px;
+          height: 330px;
           background-color: $white;
           border-radius: 8px 8px;
-          > img {
+          > a {
             width: 230px;
             height: 230px;
-            border-radius: 8px 8px 0px 0px;
+            > img {
+              width: 230px;
+              height: 230px;
+              border-radius: 8px 8px 0px 0px;
+            }
           }
           .def {
             font-family: Work Sans;
@@ -685,6 +704,7 @@ a {
             > a {
               > button {
                 margin-right: 10px;
+                width: 95px;
               }
             }
           }
@@ -711,13 +731,17 @@ a {
         justify-content: space-between;
         .sellest {
           width: 180px;
-          height: 280px;
+          height: 260px;
           background-color: $white;
           border-radius: 8px 8px;
-          > img {
+          > a {
             width: 180px;
             height: 180px;
-            border-radius: 8px 8px 0px 0px;
+            > img {
+              width: 180px;
+              height: 180px;
+              border-radius: 8px 8px 0px 0px;
+            }
           }
           .def {
             font-family: Work Sans;
@@ -978,7 +1002,7 @@ a {
       justify-content: space-between;
       .discount {
         width: 295px;
-        height: 425px;
+        height: 400px;
         background-color: $white;
         border-radius: 8px 8px;
         border: 1px solid transparent;
@@ -1056,6 +1080,7 @@ a {
           > a {
             > button {
               margin-right: 10px;
+              width: 120px;
             }
           }
         }
@@ -1080,13 +1105,17 @@ a {
         justify-content: space-between;
         .discount {
           width: 230px;
-          height: 350px;
+          height: 325px;
           background-color: $white;
           border-radius: 8px 8px;
-          > img {
+          > a {
             width: 230px;
             height: 230px;
-            border-radius: 8px 8px 0px 0px;
+            > img {
+              width: 230px;
+              height: 230px;
+              border-radius: 8px 8px 0px 0px;
+            }
           }
           .def {
             font-family: Work Sans;
@@ -1096,7 +1125,7 @@ a {
             letter-spacing: 0em;
             text-align: left;
             margin-left: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             margin-top: 7px;
           }
           .cat {
@@ -1136,7 +1165,7 @@ a {
             > a {
               > button {
                 font-size: 14px;
-                width: 60px;
+                width: 70px;
                 height: 23px;
               }
             }
@@ -1164,7 +1193,7 @@ a {
         justify-content: space-between;
         .discount {
           width: 180px;
-          height: 280px;
+          height: 260px;
           background-color: $white;
           border-radius: 8px 8px;
           .dis {
@@ -1173,10 +1202,14 @@ a {
             font-size: 12px;
             line-height: 14px;
           }
-          > img {
+          > a {
             width: 180px;
             height: 180px;
-            border-radius: 8px 8px 0px 0px;
+            > img {
+              width: 180px;
+              height: 180px;
+              border-radius: 8px 8px 0px 0px;
+            }
           }
           .def {
             font-family: Work Sans;
@@ -1186,7 +1219,7 @@ a {
             letter-spacing: 0em;
             text-align: left;
             margin-left: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             margin-top: 5px;
           }
           .cat {
@@ -1229,7 +1262,7 @@ a {
                 width: 50px;
                 height: 20px;
                 border: 1px solid;
-                margin-right: 5px;
+                margin-right: 10px;
               }
             }
           }

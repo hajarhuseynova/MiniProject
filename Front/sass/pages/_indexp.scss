@@ -156,7 +156,7 @@
         display: flex;
         cursor: pointer;
         width: fit-content;
-        padding: 7px;
+        padding: 10px;
         border-radius: 10px;
         height: 30px;
         background-color: $orange_01;
@@ -259,6 +259,7 @@
     }
   }
 }
+
 .parfumes_index {
   .parfumes_index_container {
     padding-bottom: 80px;
@@ -272,16 +273,20 @@
       justify-content: center;
       .selles {
         width: 295px;
-        height: 415px;
+        height: 400px;
         background-color: $white;
         border-radius: 8px 8px;
         border: 1px solid transparent;
         cursor: pointer;
         transition: 0.5s;
-        > img {
+        > a {
           width: 295px;
           height: 295px;
-          border-radius: 8px 8px 0px 0px;
+          > img {
+            width: 295px;
+            height: 295px;
+            border-radius: 8px 8px 0px 0px;
+          }
         }
         .def {
           font-family: Work Sans;
@@ -319,13 +324,10 @@
             color: $black_03;
             margin-left: 10px;
           }
-          .stars {
-            display: flex;
-            gap: 7px;
-            margin-right: 10px;
-            > img {
-              width: 12px;
-              height: 12px;
+          > a {
+            > button {
+              margin-right: 10px;
+              width: 120px;
             }
           }
         }
@@ -350,13 +352,17 @@
         justify-content: center;
         .selles {
           width: 230px;
-          height: 350px;
+          height: 330px;
           background-color: $white;
           border-radius: 8px 8px;
-          > img {
+          > a {
             width: 230px;
             height: 230px;
-            border-radius: 8px 8px 0px 0px;
+            > img {
+              width: 230px;
+              height: 230px;
+              border-radius: 8px 8px 0px 0px;
+            }
           }
           .def {
             font-family: Work Sans;
@@ -394,13 +400,10 @@
               color: $black_03;
               margin-left: 10px;
             }
-            .stars {
-              display: flex;
-              gap: 7px;
-              margin-right: 10px;
-              > img {
-                width: 12px;
-                height: 12px;
+            > a {
+              > button {
+                margin-right: 10px;
+                width: 95px;
               }
             }
           }
@@ -424,17 +427,20 @@
       }
       .newsellest {
         display: flex;
-
         gap: 10px;
         .selles {
           width: 180px;
-          height: 280px;
+          height: 260px;
           background-color: $white;
           border-radius: 8px 8px;
-          > img {
+          > a {
             width: 180px;
             height: 180px;
-            border-radius: 8px 8px 0px 0px;
+            > img {
+              width: 180px;
+              height: 180px;
+              border-radius: 8px 8px 0px 0px;
+            }
           }
           .def {
             font-family: Work Sans;
@@ -472,13 +478,11 @@
               color: $black_03;
               margin-left: 10px;
             }
-            .stars {
-              display: flex;
-              gap: 7px;
-              margin-right: 10px;
-              > img {
-                width: 12px;
-                height: 12px;
+            > a {
+              > button {
+                font-size: 12px;
+                width: 75px;
+                border: 1px solid;
               }
             }
           }

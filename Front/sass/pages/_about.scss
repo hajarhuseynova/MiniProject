@@ -138,7 +138,7 @@
         border-radius: 10px;
         > h3 {
           font-family: Space Mono;
-          font-size: 20px;
+          font-size: 24px;
           font-weight: 496;
           line-height: 25px;
           letter-spacing: 0em;
@@ -151,7 +151,7 @@
           font-weight: 300;
           line-height: 24px;
           letter-spacing: 0em;
-          text-align: left;
+          text-align: center;
           color: $black_01;
           margin-bottom: 10px;
         }
@@ -203,7 +203,7 @@
           font-weight: 300;
           line-height: 24px;
           letter-spacing: 0em;
-          text-align: left;
+          text-align: center;
           color: $black_01;
           margin-bottom: 10px;
         }
@@ -284,8 +284,10 @@
           display: flex;
           align-items: center;
           width: 180px;
-          > img {
+          > i {
             margin-right: 5px;
+            font-size: 20px;
+            color: $orange_01;
           }
           > p {
             font-family: Work Sans;
@@ -344,7 +346,7 @@
           font-weight: 300;
           line-height: 24px;
           letter-spacing: 0em;
-          text-align: left;
+          text-align: center;
           color: $black_01;
           margin-bottom: 15px;
         }
@@ -360,9 +362,11 @@
           .option {
             display: flex;
             align-items: center;
-            width: 180px;
-            > img {
+            width: 160px;
+            > i {
               margin-right: 5px;
+              font-size: 20px;
+              color: $orange_01;
             }
             > p {
               font-family: Work Sans;
@@ -420,9 +424,9 @@
           font-weight: 300;
           line-height: 24px;
           letter-spacing: 0em;
-          text-align: left;
+          text-align: center;
           color: $black_01;
-          margin-bottom: 15px;
+          margin-bottom: 0px;
         }
         .hide {
           display: none;
@@ -436,9 +440,11 @@
           .option {
             display: flex;
             align-items: center;
-            width: 180px;
-            > img {
+            width: 150px;
+            > i {
               margin-right: 5px;
+              font-size: 20px;
+              color: $orange_01;
             }
             > p {
               font-family: Work Sans;

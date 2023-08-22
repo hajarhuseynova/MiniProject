@@ -34,10 +34,8 @@ namespace Parfume.App.Controllers
             homeViewModel.SettingFooter= await _context.SettingFooter.Where(x => !x.IsDeleted).FirstOrDefaultAsync();
             homeViewModel.SettingNavbar = await _context.SettingNavbar.Where(x => !x.IsDeleted).FirstOrDefaultAsync();
             homeViewModel.SettingHomePage = await _context.SettingHomePage.Where(x => !x.IsDeleted).FirstOrDefaultAsync();
-
-
-
-
+            homeViewModel.Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).
+            Include(x=>x.Brand).Include(x=>x.ParfumVolume).ThenInclude(x=>x.Volume).ToListAsync();
 
             return View(homeViewModel);
         }
