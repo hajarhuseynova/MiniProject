@@ -31,7 +31,7 @@
         <div class="container products_container">
           <h1>Yeni Mehsullar</h1>
           <div class="newproducts">
-           @foreach (var item in Model.Parfumes)
+           @foreach (var item in Model.Parfumes.Take(4))
             {
                 @if (item.IsNew == true)
                 {
@@ -161,7 +161,7 @@
         <div class="container sellests_container">
           <h1>En cox satilanlar</h1>
           <div class="newsellests">
-          @foreach (var item in Model.Parfumes)
+          @foreach (var item in Model.Parfumes.Take(4))
             {
                 @if (item.IsTrend == true)
                 {
@@ -220,7 +220,7 @@
         <div class="container discounts_container">
           <h1>Endirim</h1>
           <div class="newdiscounts">
-          @foreach (var item in Model.Parfumes)
+          @foreach (var item in Model.Parfumes.Take(4))
             {
                 @if (item.IsDiscount == true)
                 {

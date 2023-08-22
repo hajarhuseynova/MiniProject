@@ -43,33 +43,26 @@
       <div class="parfumes_index">
         <div class="container parfumes_index_container">
           <div class="newsellest">
-            <div class="selles">
-              <a>
-                <img
-                  src="../assets/images/NewProduct/ProductImage.jpg"
-                  alt="productImage"
-              /></a>
-              <p class="def">Our Creation of Vendet</p>
-              <p class="cat">Lancome</p>
-              <div class="price_star">
-                <p class="price">100AZN</p>
-                <a><button>Elave et</button></a>
-              </div>
-            </div>
 
-              <div class="selles">
+
+
+         @foreach (var item in Model.Parfumes)
+         {
+                <div class="selles">
               <a>
                 <img
-                  src="../assets/images/NewProduct/ProductImage.jpg"
+                  src="../assets/images/@item.Image"
                   alt="productImage"
               /></a>
-              <p class="def">Our Creation of Vendet</p>
-              <p class="cat">Armani</p>
+              <p class="def">@item.Title</p>
+              <p class="cat">@item.Brand.Name</p>
               <div class="price_star">
-                <p class="price">100AZN</p>
+                <p class="price">@item.SellPrice AZN</p>
                 <a><button>Elave et</button></a>
               </div>
             </div>
+         }
+
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 <div class="container">
 	<form method="post" enctype="multipart/form-data">
+
 	<div class="form-group">
 		    <label asp-for="@Model.Title" >Ad:</label>
 			<input type="text" class="form-control" asp-for="@Model.Title"/>
@@ -59,17 +60,24 @@
 
 
 
-		<div class="form-group">
-            <select asp-for="ParfumVolumeIds" class="form-select" aria-label="Default select example">
-                <option  selected>Olcu Sec</option>
-                @foreach (var item in  ViewBag.Volume)
+			       <div class="form-group">
+            <select  asp-for="ParfumVolumeIds" class="form-select" aria-label="Disabled select example">
+                @foreach (var item in ViewBag.Volume)
                 {
-                    <option value="@item.Id">@item.Name</option>
+                    @if (Model.ParfumVolume.Any(x => x.VolumeId == item.Id))
+                    {
+                        <option selected value="@item.Id">@item.MilliLiters</option>
+                    }
+                    else
+                    {
+                        <option value="@item.Id">@item.MilliLiters</option>
+                    }
 
                 }
             </select>
             <span class="text text-danger" asp-validation-for="ParfumVolumeIds"></span>
         </div>
+
 
 
 	<div class="form-group">

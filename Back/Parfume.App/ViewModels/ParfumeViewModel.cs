@@ -6,6 +6,8 @@ namespace Parfume.App.ViewModels
     {
         public IEnumerable<Slider> Slides { get; set; }
         public IEnumerable<Brand> Brands { get; set; }
+        public IEnumerable<Parfum> Parfumes { get; set; }
+
 
     }
 }

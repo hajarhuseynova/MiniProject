@@ -85,6 +85,7 @@ namespace Parfume.App.areas.Admin.Controllers
             }
             parfum.Brand = await _context.Brands.Where(x => x.Id == parfum.BrandId).FirstOrDefaultAsync();
             parfum.CreatedDate = DateTime.Now;
+            parfum.IsStock = true;
             parfum.Image = parfum.FormFile.CreateImage(_environment.WebRootPath, "assets/images");
             await _context.AddAsync(parfum);
 
@@ -106,12 +107,11 @@ namespace Parfume.App.areas.Admin.Controllers
             ViewBag.Brand = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Volume = await _context.Volumes.Where(x => !x.IsDeleted).ToListAsync();
 
-            Parfum? parfums = await _context.Parfums.Where(x => !x.IsDeleted).Include(x => x.Brand).
+            Parfum? parfums = await _context.Parfums.Where(c => !c.IsDeleted && c.Id == id).
+                Include(x => x.Brand).
                 Include(x => x.ParfumVolume).
                 ThenInclude(x => x.Volume).
              Where(x => !x.IsDeleted).FirstOrDefaultAsync();
-
-
 
             if (parfums == null)
             {
@@ -126,7 +126,8 @@ namespace Parfume.App.areas.Admin.Controllers
             ViewBag.Brand = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Volume = await _context.Volumes.Where(x => !x.IsDeleted).ToListAsync();
 
-            Parfum? Update = await _context.Parfums.Where(x => !x.IsDeleted).Include(x => x.Brand).
+            Parfum? Update = await _context.Parfums.
+                  Where(c => !c.IsDeleted && c.Id == id).Include(x => x.Brand).
                 Include(x => x.ParfumVolume).
                 ThenInclude(x=>x.Volume).
              Where(x => !x.IsDeleted).FirstOrDefaultAsync();
@@ -156,6 +157,7 @@ namespace Parfume.App.areas.Admin.Controllers
 
                 Update.Image = parfum.FormFile.CreateImage(_environment.WebRootPath, "assets/images");
             }
+
 
             List<ParfumVolume> RemovableTag = await _context.ParfumeVolumes.
                     Where(x => !parfum.ParfumVolumeIds.Contains(x.VolumeId))
@@ -316,8 +318,16 @@ namespace Parfume.App.areas.Admin.Controllers
                 return NotFound();
             }
 
-            parfume.IsDiscount=true;
+          
             parfume.DiscountPercentage=parfum.DiscountPercentage;
+            if(parfum.DiscountPercentage==0 || parfum.DiscountPercentage == null)
+            {
+                parfume.IsDiscount = false;
+            }
+            else
+            {
+                parfume.IsDiscount = true;
+            }
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "parfum");
         }
