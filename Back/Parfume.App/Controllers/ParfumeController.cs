@@ -21,8 +21,24 @@ namespace Parfume.App.Controllers
             _signinManager = signinManager;
             _mailService = mailService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id=null)
         {
+
+            if (id == null)
+            {
+                ParfumeViewModel parfumeViewModel = new ParfumeViewModel
+                {
+                    Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
+                    Brands = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync(),
+                    Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).Include(x => x.Brand)
+                 .Include(x => x.ParfumVolume).ThenInclude(x => x.Volume)
+                 .ToListAsync()
+
+                };
+                return View(parfumeViewModel);
+            }
+            else
+            {
             ParfumeViewModel parfumeViewModel = new ParfumeViewModel
             {
                 Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
@@ -33,6 +49,41 @@ namespace Parfume.App.Controllers
 
             };
             return View(parfumeViewModel);
+
+            }
+
+
+
+        }
+
+
+        public async Task<IActionResult> Detail(int id)
+        {
+            ParfumeViewModel parfumViewModel = new ParfumeViewModel
+            {
+                Parfumes = await _context.Parfums
+                       .Include(x => x.ParfumVolume)
+                        .ThenInclude(x => x.Volume)
+                       .Include(x => x.Brand)
+                        .Where(x => !x.IsDeleted).ToListAsync(),
+                Parfum = await _context.Parfums
+                       .Include(x => x.ParfumVolume)
+                        .ThenInclude(x => x.Volume)
+                       .Include(x => x.Brand)
+                        .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
+                Brands = await _context.Brands.Where(b => !b.IsDeleted).ToListAsync(),
+                Functions = await _context.Functions.Where(b => !b.IsDeleted).ToListAsync(),
+
+                Volumes = await _context.Volumes.Where(b => !b.IsDeleted).ToListAsync(),
+
+            };
+            if (parfumViewModel.Parfum == null)
+            {
+                return View(nameof(Index));
+            }
+
+
+            return View(parfumViewModel);
         }
     }
 }

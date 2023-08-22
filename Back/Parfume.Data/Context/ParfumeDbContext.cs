@@ -8,7 +8,11 @@ namespace Parfume.App.Context
 {
     public class ParfumeDbContext: IdentityDbContext<AppUser>
     {
-   
+
+        public DbSet<LikeP> LikePs { get; set; }
+        public DbSet<DislikeP> DislikePs { get; set; }
+        public DbSet<CommentP> CommentPs { get; set; }
+        public DbSet<Rating> RatingPs { get; set; }
         public DbSet<FakeSlider> FakeSlides { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Parfum> Parfums { get; set; }
@@ -27,15 +31,17 @@ namespace Parfume.App.Context
         public DbSet<GiftBox> GiftBoxes { get; set; }
         public DbSet<Slider> Slides { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Parfum>()
+               .HasOne(e => e.Rating)
+           .WithOne(e => e.Parfum)
+               .HasForeignKey<Rating>();
+            base.OnModelCreating(modelBuilder);
+        }
         public ParfumeDbContext(DbContextOptions<ParfumeDbContext> options) : base(options)
         {
 
-        }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-         
-            base.OnModelCreating(modelBuilder);
-     
         }
     }
 }

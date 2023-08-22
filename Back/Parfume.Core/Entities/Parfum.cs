@@ -35,6 +35,10 @@ namespace Parfume.Core.Entities
         public List<ParfumVolume>? ParfumVolume { get; set; }
         [NotMapped]
         public List<int>? ParfumVolumeIds { get; set; }
+        public List<CommentP>? CommentPs { get; set; }
+        
+        public Rating? Rating { get; set; }
+
 
 
     }

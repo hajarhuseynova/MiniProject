@@ -36,7 +36,7 @@
                 @if (item.IsNew == true)
                 {
             <div class="product">
-           <a>   <img
+           <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">   <img
                 src="../assets/images/@item.Image"
                 alt="productImage"
               /></a>
@@ -166,7 +166,7 @@
                 @if (item.IsTrend == true)
                 {
                 <div class="sellest">
-           <a>   <img
+           <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">   <img
                 src="../assets/images/@item.Image"
                 alt="productImage"
               /></a>
@@ -224,8 +224,8 @@
             {
                 @if (item.IsDiscount == true)
                 {
-                      <div class="discount">
-            <a>  <img
+                  <div class="discount">
+                 <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume"><img
                 src="../assets/images/@item.Image"
                 alt="productImage"
               /></a>
