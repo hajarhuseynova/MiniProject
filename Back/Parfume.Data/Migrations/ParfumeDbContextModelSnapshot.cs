@@ -22,6 +22,74 @@ namespace Parfume.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Entities.Smoke", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("BuyPrice")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CountSell")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Desc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("DiscountPercentage")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Info1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Info2")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDiscount")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsStock")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SellPrice")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("TimeSell")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Smokes");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -286,94 +354,6 @@ namespace Parfume.Data.Migrations
                     b.ToTable("Brands");
                 });
 
-            modelBuilder.Entity("Parfume.Core.Entities.CommentP", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("AppUserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Desc")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("ParfumId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("RatingId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("star1")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("star2")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("star3")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("star4")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("star5")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AppUserId");
-
-                    b.HasIndex("ParfumId");
-
-                    b.ToTable("CommentPs");
-                });
-
-            modelBuilder.Entity("Parfume.Core.Entities.DislikeP", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int?>("CommentPId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CountDislike")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CommentPId");
-
-                    b.ToTable("DislikePs");
-                });
-
             modelBuilder.Entity("Parfume.Core.Entities.FakeSlider", b =>
                 {
                     b.Property<int>("Id")
@@ -490,36 +470,6 @@ namespace Parfume.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("GiftBoxes");
-                });
-
-            modelBuilder.Entity("Parfume.Core.Entities.LikeP", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int?>("CommentPId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CountLike")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CommentPId");
-
-                    b.ToTable("LikePs");
                 });
 
             modelBuilder.Entity("Parfume.Core.Entities.Parfum", b =>
@@ -644,48 +594,6 @@ namespace Parfume.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Places");
-                });
-
-            modelBuilder.Entity("Parfume.Core.Entities.Rating", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<double>("AvarageRating")
-                        .HasColumnType("float");
-
-                    b.Property<int?>("CommentPId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("ParfumId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("RatingCount")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CommentPId")
-                        .IsUnique()
-                        .HasFilter("[CommentPId] IS NOT NULL");
-
-                    b.HasIndex("ParfumId")
-                        .IsUnique()
-                        .HasFilter("[ParfumId] IS NOT NULL");
-
-                    b.ToTable("RatingPs");
                 });
 
             modelBuilder.Entity("Parfume.Core.Entities.SendMessage", b =>
@@ -992,6 +900,10 @@ namespace Parfume.Data.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("DescSmoke")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("DescTester")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -1004,6 +916,9 @@ namespace Parfume.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageGift2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageSmoke")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageTester")
@@ -1297,39 +1212,6 @@ namespace Parfume.Data.Migrations
                     b.Navigation("Volume");
                 });
 
-            modelBuilder.Entity("Parfume.Core.Entities.CommentP", b =>
-                {
-                    b.HasOne("Parfume.Core.Entities.AppUser", "AppUser")
-                        .WithMany("CommentPs")
-                        .HasForeignKey("AppUserId");
-
-                    b.HasOne("Parfume.Core.Entities.Parfum", "Parfum")
-                        .WithMany("CommentPs")
-                        .HasForeignKey("ParfumId");
-
-                    b.Navigation("AppUser");
-
-                    b.Navigation("Parfum");
-                });
-
-            modelBuilder.Entity("Parfume.Core.Entities.DislikeP", b =>
-                {
-                    b.HasOne("Parfume.Core.Entities.CommentP", "Comment")
-                        .WithMany("Dislikes")
-                        .HasForeignKey("CommentPId");
-
-                    b.Navigation("Comment");
-                });
-
-            modelBuilder.Entity("Parfume.Core.Entities.LikeP", b =>
-                {
-                    b.HasOne("Parfume.Core.Entities.CommentP", "Comment")
-                        .WithMany("Likes")
-                        .HasForeignKey("CommentPId");
-
-                    b.Navigation("Comment");
-                });
-
             modelBuilder.Entity("Parfume.Core.Entities.Parfum", b =>
                 {
                     b.HasOne("Parfume.Core.Entities.Brand", "Brand")
@@ -1337,21 +1219,6 @@ namespace Parfume.Data.Migrations
                         .HasForeignKey("BrandId");
 
                     b.Navigation("Brand");
-                });
-
-            modelBuilder.Entity("Parfume.Core.Entities.Rating", b =>
-                {
-                    b.HasOne("Parfume.Core.Entities.CommentP", "Comment")
-                        .WithOne("Rating")
-                        .HasForeignKey("Parfume.Core.Entities.Rating", "CommentPId");
-
-                    b.HasOne("Parfume.Core.Entities.Parfum", "Parfum")
-                        .WithOne("Rating")
-                        .HasForeignKey("Parfume.Core.Entities.Rating", "ParfumId");
-
-                    b.Navigation("Comment");
-
-                    b.Navigation("Parfum");
                 });
 
             modelBuilder.Entity("Parfume.Core.Entities.Tester", b =>
@@ -1363,32 +1230,14 @@ namespace Parfume.Data.Migrations
                     b.Navigation("Brand");
                 });
 
-            modelBuilder.Entity("Parfume.Core.Entities.AppUser", b =>
-                {
-                    b.Navigation("CommentPs");
-                });
-
             modelBuilder.Entity("Parfume.Core.Entities.Brand", b =>
                 {
                     b.Navigation("Testers");
                 });
 
-            modelBuilder.Entity("Parfume.Core.Entities.CommentP", b =>
-                {
-                    b.Navigation("Dislikes");
-
-                    b.Navigation("Likes");
-
-                    b.Navigation("Rating");
-                });
-
             modelBuilder.Entity("Parfume.Core.Entities.Parfum", b =>
                 {
-                    b.Navigation("CommentPs");
-
                     b.Navigation("ParfumVolume");
-
-                    b.Navigation("Rating");
                 });
 
             modelBuilder.Entity("Parfume.Core.Entities.Volume", b =>

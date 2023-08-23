@@ -106,57 +106,29 @@
 	</div>
 </div>
 
-<div class="smokes">
-	<div class="container smokes_container">
-		<h1>Tustuler</h1>
-		<div class="newsmokes">
-			<div class="smoke">
-				<img src="../assets/images/NewProduct/ProductImage.jpg" />
-				<div class="responsive">
-					<h3>Agarwoodlar</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-						ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-						dolor sit amet consectetur adipisicing elit
-					</p>
-					<a href="google.com">
-						<img class="button_image"
-							 alt="buttonImage"
-							 src="../assets/icons/button/buttonsvg.svg" />
-					</a>
-				</div>
-			</div>
-			<div class="smoke hidden">
-				<img src="../assets/images/NewProduct/ProductImage.jpg" />
-				<div class="responsive">
-					<h3>Agarwoodlar</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-						ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-						dolor sit amet consectetur adipisicing elit
-					</p>
-					<img class="button_image"
-						 alt="buttonImage"
-						 src="../assets/icons/button/buttonsvg.svg" />
-				</div>
-			</div>
-			<div class="smoke hide">
-				<img src="../assets/images/NewProduct/ProductImage.jpg" />
-				<div class="responsive">
-					<h3>Agarwoodlar</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-						ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-						dolor sit amet consectetur adipisicing elit
-					</p>
-					<img class="button_image"
-						 alt="buttonImage"
-						 src="../assets/icons/button/buttonsvg.svg" />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="smokes">
+        <div class="container smokes_container">
+          <h1>Tustuler</h1>
+          <div class="newsmokes">
+             @foreach (var item in Model.Smokes.Take(3))
+        {
+              <div class="smoke">
+              <a asp-action="detail" asp-controller="smoke" asp-route-id="@item.Id" >
+                  <img src="~/assets/images/@item.Image" />
+              </a>
+
+              <div class="responsive">
+                <h3>@item.Title</h3>
+                <p>
+              @item.Desc
+                </p>
+                <a> <button>Səbətə Əlavə Et</button> </a>
+              </div>
+            </div>  
+        }
+          </div>
+        </div>
+    </div>
 
 <div class="sellests">
 	<div class="container sellests_container">

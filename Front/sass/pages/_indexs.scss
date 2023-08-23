@@ -1,0 +1,214 @@
+.smoke {
+  .smoke_container {
+    padding-bottom: 80px;
+    > h1 {
+      @include H1;
+    }
+    .newsmoke {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      .smok {
+        width: 400px;
+        border-radius: 7px 7px;
+        background-color: $white;
+        border: 1px solid transparent;
+        transition: 0.5s;
+        cursor: pointer;
+        > a {
+          width: 100%;
+          height: 277px;
+          > img {
+            width: 100%;
+            height: 277px;
+            border-radius: 7px 7px 0px 0px;
+          }
+        }
+        .responsive {
+          > h3 {
+            font-family: Space Mono;
+            font-size: 24px;
+            font-weight: 496;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $orange_01;
+            margin-left: 15px;
+            margin-bottom: 12px;
+            margin-top: 8px;
+          }
+          > p {
+            font-family: Work Sans;
+            font-size: 18px;
+            font-weight: 496;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-left: 15px;
+            margin-bottom: 8px;
+            margin-right: 10px;
+          }
+          > a {
+            > button {
+              margin-left: 10px;
+              margin-bottom: 10px;
+              width: 95%;
+              background-color: $orange_01;
+              color: $white;
+              &:hover {
+                transform: scale(1);
+                background-color: transparent;
+                color: $orange_01;
+              }
+            }
+          }
+        }
+        &:hover {
+          box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+          -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1238px) {
+  .smoke {
+    .smoke_container {
+      padding-bottom: 60px;
+      .newsmoke {
+        display: flex;
+        justify-content: space-between;
+        .smok {
+          width: 350px;
+          border-radius: 7px 7px;
+          background-color: $white;
+          > a {
+            width: 100%;
+            height: 240px;
+            > img {
+              width: 100%;
+              height: 240px;
+              border-radius: 7px 7px 0px 0px;
+            }
+          }
+          .responsive {
+            > h3 {
+              font-family: Space Mono;
+              font-size: 18px;
+              font-weight: 496;
+              line-height: 29px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $orange_01;
+              margin-left: 10px;
+              margin-bottom: 0px;
+              margin-top: 0px;
+            }
+            > p {
+              font-family: Work Sans;
+              font-size: 13px;
+              font-weight: 496;
+              line-height: 20px;
+              letter-spacing: 0em;
+              text-align: left;
+              margin-left: 10px;
+              margin-bottom: 0px;
+              margin-right: 10px;
+            }
+            > a {
+              > button {
+                margin-left: 10px;
+                margin-right: 10px;
+
+                margin-bottom: 10px;
+                margin-top: 5px;
+                width: 95%;
+                font-size: 14px;
+                height: 20px;
+                background-color: $orange_01;
+                color: $white;
+                &:hover {
+                  transform: scale(1);
+                  background-color: transparent;
+                  color: $orange_01;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .smoke {
+    .smoke_container {
+      padding-bottom: 40px;
+      padding-top: 30px;
+      > h1 {
+        @include H1Responsive;
+      }
+      .newsmoke {
+        display: flex;
+        justify-content: center;
+        .smok {
+          width: 175px;
+          border-radius: 7px 7px;
+          background-color: $white;
+          > a {
+            width: 100%;
+            height: 200px;
+            > img {
+              width: 100%;
+              height: 200px;
+              border-radius: 7px 7px 0px 0px;
+            }
+          }
+          .responsive {
+            display: flex;
+            flex-direction: column;
+            > h3 {
+              font-family: Space Mono;
+              font-size: 17px;
+              font-weight: 496;
+              line-height: 25px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $orange_01;
+              margin-left: 10px;
+              margin-bottom: 0px;
+              margin-top: 3px;
+            }
+            > p {
+              display: none;
+            }
+            > a {
+              > button {
+                margin-left: 7px;
+                margin-top: 4px;
+                font-size: 13px;
+                width: 92%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .testing {
+    .testing_container {
+      .testing_common {
+        .lastone {
+          .words_last {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

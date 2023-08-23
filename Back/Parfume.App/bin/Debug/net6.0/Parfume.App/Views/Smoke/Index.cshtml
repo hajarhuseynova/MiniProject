@@ -1,13 +1,13 @@
-﻿
+﻿@model SmokeViewModel
 
       <div class="testing">
         <div class="container testing_container">
           <div class="testing_common">
             <div class="testing_left">
-              <img src="../assets/images/Testing/parfume_flakon.jpg" />
+              <img src="~/assets/images/@Model.SettingHomePage?.ImageSmoke" />
             </div>
-            <div class="testing_right">
-              <h1>Muxtelif tip tustuleri sinamaginiz ucun burdayiq!</h1>
+            <div class="testing_right lastone"  style="display: flex; align-items: center" >
+              <h1 class="words_last">@Model.SettingHomePage?.DescSmoke</h1>
             </div>
           </div>
         </div>
@@ -18,119 +18,111 @@
             <h1>Tustuler</h1>
             <p>Muxtelif tip tustuler ile sizi rahatlatmaga haziriq!</p>
             <div class="tester_input">
-              <input placeholder="Tustu axtar" />
-              <img src="../assets/icons/tester/Search.svg" />
+          	<form id="searchSmoke">
+					<input name="search" placeholder="Axtarış..." type="search" class="searchInputSmoke" style="height:50px">
+					<img src="~/assets/icons/tester/Search.svg" />
+		    </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="smokes">
-        <div class="container smokes_container">
-          <div class="newsmokes">
-            <div class="smoke">
-              <img src="../assets/images/NewProduct/ProductImage.jpg" />
+      <div class="smoke">
+        <div class="container smoke_container">
+          <div class="newsmoke">
+           @foreach (var item in Model.Smokes)
+           {
+                <div class="smok">
+                  <a asp-action="detail" asp-route-id="@item.Id" asp-controller="smoke" > 
+                  <img src="~/assets/images/@item.Image" />
+                  </a>
+
               <div class="responsive">
-                <h3>Agarwoodlar</h3>
+                <h3>@item.Title</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit
+                 @item.Desc
                 </p>
-                <a href="google.com">
-                  <img
-                    class="button_image"
-                    alt="buttonImage"
-                    src="../assets/icons/button/buttonsvg.svg"
-                  />
-                </a>
+                <a> <button>Səbətə Əlavə Et</button> </a>
               </div>
             </div>
-            <div class="smoke">
-              <img src="../assets/images/NewProduct/ProductImage.jpg" />
-              <div class="responsive">
-                <h3>Agarwoodlar</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit
-                </p>
-                <a href="google.com">
-                  <img
-                    class="button_image"
-                    alt="buttonImage"
-                    src="../assets/icons/button/buttonsvg.svg"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="smoke">
-              <img src="../assets/images/NewProduct/ProductImage.jpg" />
-              <div class="responsive">
-                <h3>Agarwoodlar</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit
-                </p>
-                <a href="google.com">
-                  <img
-                    class="button_image"
-                    alt="buttonImage"
-                    src="../assets/icons/button/buttonsvg.svg"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="smoke">
-              <img src="../assets/images/NewProduct/ProductImage.jpg" />
-              <div class="responsive">
-                <h3>Agarwoodlar</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit
-                </p>
-                <a href="google.com">
-                  <img
-                    class="button_image"
-                    alt="buttonImage"
-                    src="../assets/icons/button/buttonsvg.svg"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="smoke">
-              <img src="../assets/images/NewProduct/ProductImage.jpg" />
-              <div class="responsive">
-                <h3>Agarwoodlar</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit
-                </p>
-                <img
-                  class="button_image"
-                  alt="buttonImage"
-                  src="../assets/icons/button/buttonsvg.svg"
-                />
-              </div>
-            </div>
-            <div class="smoke">
-              <img src="../assets/images/NewProduct/ProductImage.jpg" />
-              <div class="responsive">
-                <h3>Agarwoodlar</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit
-                </p>
-                <img
-                  class="button_image"
-                  alt="buttonImage"
-                  src="../assets/icons/button/buttonsvg.svg"
-                />
-              </div>
-            </div>
+               
+           }
+          
           </div>
         </div>
       </div>
+
+
+
+      <script>
+	 const submit = document.querySelector(".SearchButton");
+	 const searchInput = document.querySelector(".searchInputSmoke")
+	 const container = document.querySelector(".newsmoke")
+	 const fullCards=document.querySelectorAll(".smok");
+	 searchInput.addEventListener("input", (e) => {
+		 e.preventDefault();
+
+		 if(searchInput.value==""){
+		 let  href = `/smoke/getAllSmokes`;
+		 fetch(href)
+			 .then(x => x.json())
+			 .then(x => {
+				 container.innerHTML =""
+				 x.forEach(item => {
+
+					 let view = `
+					   <div class="smok">
+                  <a asp-action="detail" asp-controller="smoke" asp-route-id="${item.Id}" > 
+                  <img src="../assets/images/${item.image}" />
+                  </a>
+
+              <div class="responsive">
+                <h3>${item.title}</h3>
+                <p>
+                 ${item.desc}
+                </p>
+                <a> <button>Səbətə Əlavə Et</button> </a>
+              </div>
+            </div>
+
+		 `;
+					 container.innerHTML += view;
+				 } )
+			 })
+		 }
+
+	else{
+		   let  href = `/smoke/searchSmoke?search=${searchInput.value}`;
+		 fetch(href)
+			 .then(x => x.json())
+			 .then(x => {
+				 container.innerHTML =""
+				 x.forEach(item => {
+
+					 let view = `
+				   <div class="smok">
+                  <a asp-action="detail" asp-controller="smoke" asp-route-id="${item.Id}" > 
+                  <img src="../assets/images/${item.image}" />
+                  </a>
+
+              <div class="responsive">
+                <h3>${item.title}</h3>
+                <p>
+                 ${item.desc}
+                </p>
+                <a> <button>Səbətə Əlavə Et</button> </a>
+              </div>
+            </div>
+
+		 `;
+					 container.innerHTML += view;
+				 } )
+			 })
+	}
+
+
+
+
+
+
+	 })
+</script>

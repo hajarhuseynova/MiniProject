@@ -415,10 +415,14 @@ a {
         border: 1px solid transparent;
         transition: 0.5s;
         cursor: pointer;
-        > img {
+        > a {
           width: 100%;
           height: 277px;
-          border-radius: 7px 7px 0px 0px;
+          > img {
+            width: 100%;
+            height: 277px;
+            border-radius: 7px 7px 0px 0px;
+          }
         }
         .responsive {
           > h3 {
@@ -441,14 +445,22 @@ a {
             letter-spacing: 0em;
             text-align: left;
             margin-left: 15px;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             margin-right: 10px;
           }
-          .button_image {
-            width: 55px;
-            height: 45px;
-            margin-left: 15px;
-            margin-bottom: 8px;
+          > a {
+            > button {
+              margin-left: 10px;
+              margin-bottom: 10px;
+              width: 95%;
+              background-color: $orange_01;
+              color: $white;
+              &:hover {
+                transform: scale(1);
+                background-color: transparent;
+                color: $orange_01;
+              }
+            }
           }
         }
         &:hover {
@@ -468,37 +480,60 @@ a {
         display: flex;
         justify-content: space-between;
         .smoke {
-          width: 330px;
-          height: 350px;
+          width: 350px;
           border-radius: 7px 7px;
           background-color: $white;
-          > img {
+          > a {
             width: 100%;
-            height: 277px;
-            border-radius: 7px 7px 0px 0px;
+            height: 240px;
+            > img {
+              width: 100%;
+              height: 240px;
+              border-radius: 7px 7px 0px 0px;
+            }
           }
           .responsive {
-            display: flex;
             > h3 {
               font-family: Space Mono;
-              font-size: 24px;
+              font-size: 18px;
               font-weight: 496;
               line-height: 29px;
               letter-spacing: 0em;
               text-align: left;
               color: $orange_01;
-              margin-left: 15px;
-              margin-bottom: 12px;
-              margin-top: 15px;
+              margin-left: 10px;
+              margin-bottom: 0px;
+              margin-top: 0px;
             }
             > p {
-              display: none;
+              font-family: Work Sans;
+              font-size: 13px;
+              font-weight: 496;
+              line-height: 20px;
+              letter-spacing: 0em;
+              text-align: left;
+              margin-left: 10px;
+              margin-bottom: 0px;
+              margin-right: 10px;
             }
-            .button_image {
-              width: 55px;
-              height: 45px;
-              margin-left: 75px;
-              margin-top: 10px;
+            > a {
+              > button {
+                margin-left: 10px;
+                margin-right: 10px;
+
+                margin-bottom: 10px;
+                margin-top: 5px;
+                width: 95%;
+                font-size: 14px;
+                height: 20px;
+                background-color: $orange_01;
+                color: $white;
+                &:hover {
+                  transform: scale(1);
+                  background-color: transparent;
+                  color: $orange_01;
+                }
+              }
             }
           }
           &:nth-child(3) {
@@ -513,48 +548,52 @@ a {
   .smokes {
     .smokes_container {
       padding-bottom: 40px;
+      padding-top: 30px;
       > h1 {
         @include H1Responsive;
       }
       .newsmokes {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         .smoke {
-          width: 370px;
-          height: 300px;
+          width: 175px;
           border-radius: 7px 7px;
           background-color: $white;
-          > img {
+          > a {
             width: 100%;
-            height: 250px;
-            border-radius: 7px 7px 0px 0px;
+            height: 180px;
+            > img {
+              width: 100%;
+              height: 180px;
+              border-radius: 7px 7px 0px 0px;
+            }
           }
           .responsive {
             display: flex;
+            flex-direction: column;
             > h3 {
               font-family: Space Mono;
-              font-size: 20px;
+              font-size: 17px;
               font-weight: 496;
               line-height: 25px;
               letter-spacing: 0em;
               text-align: left;
               color: $orange_01;
-              margin-left: 15px;
-              margin-bottom: 12px;
-              margin-top: 10px;
+              margin-left: 10px;
+              margin-bottom: 0px;
+              margin-top: 3px;
             }
             > p {
               display: none;
             }
-            .button_image {
-              width: 40px;
-              height: 30px;
-              margin-left: 165px;
-              margin-top: 5px;
+            > a {
+              > button {
+                margin-left: 7px;
+                margin-top: 7px;
+                width: 92%;
+                font-size: 13px;
+              }
             }
-          }
-          &:nth-child(2) {
-            display: none;
           }
         }
       }

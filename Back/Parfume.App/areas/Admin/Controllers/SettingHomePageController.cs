@@ -65,6 +65,20 @@ namespace Parfume.App.areas.Admin.Controllers
                 }
                 set.ImageGift1 = setting.Gift1FormFile.CreateImage(_environment.WebRootPath, "assets/images");
             }
+            if (setting.SmokeFormFile != null)
+            {
+                if (!FileExtention.isImage(setting.SmokeFormFile))
+                {
+                    ModelState.AddModelError("file", "Image is required");
+                    return View();
+                }
+                if (!FileExtention.isSizeOk(setting.SmokeFormFile, 1))
+                {
+                    ModelState.AddModelError("file", "Image size is wrong");
+                    return View();
+                }
+                set.ImageSmoke = setting.SmokeFormFile.CreateImage(_environment.WebRootPath, "assets/images");
+            }
             if (setting.Gift2FormFile != null)
             {
                 if (!FileExtention.isImage(setting.Gift2FormFile))
@@ -97,7 +111,7 @@ namespace Parfume.App.areas.Admin.Controllers
             set.UpdatedDate = DateTime.Now;
             set.TitleGift = setting.TitleGift;
             set.DescriptionGift = setting.DescriptionGift;
-
+            set.DescSmoke = setting.DescSmoke;
             set.DescTester = setting.DescTester;
             
 

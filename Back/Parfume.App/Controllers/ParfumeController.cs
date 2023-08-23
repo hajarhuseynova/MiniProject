@@ -23,7 +23,7 @@ namespace Parfume.App.Controllers
             _signinManager = signinManager;
             _mailService = mailService;
         }
-        public async Task<IActionResult> Index(int? id=null)
+        public async Task<IActionResult> Index(int? id = null)
         {
 
             if (id == null)
@@ -41,24 +41,22 @@ namespace Parfume.App.Controllers
             }
             else
             {
-            ParfumeViewModel parfumeViewModel = new ParfumeViewModel
-            {
-                Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
-                Brands = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync(),
-                Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).Include(x=>x.Brand)
-                .Include(x=>x.ParfumVolume).ThenInclude(x=>x.Volume)
-                .ToListAsync()
+                ParfumeViewModel parfumeViewModel = new ParfumeViewModel
+                {
+                    Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
+                    Brands = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync(),
+                    Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).Include(x => x.Brand)
+                    .Include(x => x.ParfumVolume).ThenInclude(x => x.Volume)
+                    .ToListAsync()
 
-            };
-            return View(parfumeViewModel);
+                };
+                return View(parfumeViewModel);
 
             }
 
 
 
         }
-
-
         public async Task<IActionResult> Detail(int id)
         {
 
@@ -70,11 +68,8 @@ namespace Parfume.App.Controllers
                        .Include(x => x.Brand)
                         .Where(x => !x.IsDeleted).ToListAsync(),
 
-                Parfum = await _context.Parfums.
-                Include(x=>x.CommentPs).ThenInclude(x=>x.Dislikes).
-                Include(x=>x.CommentPs).ThenInclude(x=>x.Likes).
-                 Include(x => x.CommentPs).ThenInclude(x => x.AppUser).
-                Include(x=>x.Rating).Include(x => x.Brand)
+                Parfum = await _context.Parfums
+              .Include(x => x.Brand)
                 .Include(x => x.ParfumVolume).ThenInclude(x => x.Volume)
                 .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
 
@@ -94,19 +89,6 @@ namespace Parfume.App.Controllers
         }
 
 
-        [Authorize(Roles = "User")]
-        [HttpPost]
-        public async Task<IActionResult> AddComment(CommentP comment)
-        {
-            AppUser appUser= await _userManager.FindByNameAsync(User.Identity.Name);
-            comment.AppUserId= appUser.Id;
-            comment.CreatedDate=DateTime.Now;
 
-            await _context.AddAsync(comment);
-            await _context.SaveChangesAsync();
-            return Redirect(Request.Headers["Referer"].ToString()); 
-            
-        }
-     
     }
 }

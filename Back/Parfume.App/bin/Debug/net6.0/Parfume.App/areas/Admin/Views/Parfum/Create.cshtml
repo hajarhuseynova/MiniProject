@@ -28,13 +28,13 @@
 
 		<div class="form-group">
 		    <label asp-for="@Model.BuyPrice" >Alis Qiymeti:</label>
-			<input type="text" class="form-control" asp-for="@Model.BuyPrice"/>
+			<input type="number" class="form-control" asp-for="@Model.BuyPrice"/>
 			<span class="text text-danger" asp-validation-for="@Model.BuyPrice"></span>
 	</div>
 
 		<div class="form-group">
 		    <label asp-for="@Model.SellPrice" >Satis Qiymeti:</label>
-			<input type="text" class="form-control" asp-for="@Model.SellPrice"/>
+			<input type="number" class="form-control" asp-for="@Model.SellPrice"/>
 			<span class="text text-danger" asp-validation-for="@Model.SellPrice"></span>
 	</div>
 

@@ -11,8 +11,8 @@ namespace Parfume.Core.Entities
     {
         public double AvarageRating { get; set; }
         public double RatingCount { get; set; }
-        public int? ParfumId { get; set; }
-        public Parfum? Parfum { get; set; }
+        //public int? ParfumId { get; set; }
+        //public Parfum? Parfum { get; set; }
         public int? CommentPId { get; set; }
         public CommentP? Comment { get; set; }
 

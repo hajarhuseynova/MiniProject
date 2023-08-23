@@ -8,7 +8,7 @@
 				<img src="../assets/images/@Model.SettingHomePage?.ImageTester" />
 			</div>
 			<div class="testing_right">
-				<h1 style="padding-top: 35px">
+				<h1>
 					@Model.SettingHomePage?.DescTester
 				</h1>
 			</div>
@@ -67,7 +67,6 @@
 			 .then(x => {
 				 container.innerHTML =""
 				 x.forEach(item => {
-
 					 let view = `
 						<div class="testerparfume">
 				 <img src="../assets/images/${item.image}" />
@@ -78,10 +77,9 @@
 				   <a><button>Elave et</button></a>
 				 </div>
 			   </div>
-
 		 `;
 					 container.innerHTML += view;
-				 } )
+				 })
 			 })
 		 }
 
@@ -92,7 +90,6 @@
 			 .then(x => {
 				 container.innerHTML =""
 				 x.forEach(item => {
-
 					 let view = `
 						<div class="testerparfume">
 				 <img src="../assets/images/${item.image}" />
@@ -103,17 +100,11 @@
 				   <a><button>Elave et</button></a>
 				 </div>
 			   </div>
-
 		 `;
 					 container.innerHTML += view;
-				 } )
+				 })
 			 })
 	}
-
-
-
-
-
 
 	 })
 </script>

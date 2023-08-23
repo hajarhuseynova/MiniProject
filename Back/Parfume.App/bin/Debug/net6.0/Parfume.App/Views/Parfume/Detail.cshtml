@@ -178,14 +178,11 @@
       </div>
       <div class="comments">
         <div class="container comments_container">
-        @if (Model.Parfum.CommentPs.Count() >= 1)
-        {
-            @foreach (var item in Model.Parfum.CommentPs)
-            {
+ 
           <div class="line"></div>
           <div class="comment">
             <div class="left">
-              <h3>@item?.AppUser.Name @item?.AppUser.Surname</h3>
+              <h3></h3>
               <div class="left_stars">
                 <span class="st">&#9733;</span>
                 <span class="st">&#9733;</span>
@@ -195,9 +192,9 @@
               </div>
             </div>
             <div class="middle">
-              <h3>@item?.Title</h3>
+              <h3></h3>
               <p>
-             @item?.Desc
+            
               </p>
             </div>
             <div class="right">
@@ -223,8 +220,7 @@
             </div>
           </div>
 
-            }
-        }
+       
           
         </div>
       </div>

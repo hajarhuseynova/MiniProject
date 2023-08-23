@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Parfume.Core.Entities;
@@ -9,13 +10,11 @@ namespace Parfume.App.Context
     public class ParfumeDbContext: IdentityDbContext<AppUser>
     {
 
-        public DbSet<LikeP> LikePs { get; set; }
-        public DbSet<DislikeP> DislikePs { get; set; }
-        public DbSet<CommentP> CommentPs { get; set; }
-        public DbSet<Rating> RatingPs { get; set; }
         public DbSet<FakeSlider> FakeSlides { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Parfum> Parfums { get; set; }
+        public DbSet<Smoke> Smokes { get; set; }
+
         public DbSet<Volume> Volumes { get; set; }
         public DbSet<ParfumVolume> ParfumeVolumes { get; set; }
         public DbSet<Tester> Testers { get; set; }
@@ -33,10 +32,10 @@ namespace Parfume.App.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Parfum>()
-               .HasOne(e => e.Rating)
-           .WithOne(e => e.Parfum)
-               .HasForeignKey<Rating>();
+            //modelBuilder.Entity<Parfum>()
+           //    .HasOne(e => e.Rating)
+           //.WithOne(e => e.Parfum)
+           //    .HasForeignKey<Rating>();
             base.OnModelCreating(modelBuilder);
         }
         public ParfumeDbContext(DbContextOptions<ParfumeDbContext> options) : base(options)

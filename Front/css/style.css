@@ -1377,7 +1377,11 @@ a {
   transition: 0.5s;
   cursor: pointer;
 }
-.smokes .smokes_container .newsmokes .smoke > img {
+.smokes .smokes_container .newsmokes .smoke > a {
+  width: 100%;
+  height: 277px;
+}
+.smokes .smokes_container .newsmokes .smoke > a > img {
   width: 100%;
   height: 277px;
   border-radius: 7px 7px 0px 0px;
@@ -1402,14 +1406,21 @@ a {
   letter-spacing: 0em;
   text-align: left;
   margin-left: 15px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   margin-right: 10px;
 }
-.smokes .smokes_container .newsmokes .smoke .responsive .button_image {
-  width: 55px;
-  height: 45px;
-  margin-left: 15px;
-  margin-bottom: 8px;
+.smokes .smokes_container .newsmokes .smoke .responsive > a > button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 95%;
+  background-color: #ffaf06;
+  color: #fff;
+}
+.smokes .smokes_container .newsmokes .smoke .responsive > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  color: #ffaf06;
 }
 .smokes .smokes_container .newsmokes .smoke:hover {
   box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
@@ -1430,41 +1441,58 @@ a {
             justify-content: space-between;
   }
   .smokes .smokes_container .newsmokes .smoke {
-    width: 330px;
-    height: 350px;
+    width: 350px;
     border-radius: 7px 7px;
     background-color: #fff;
   }
-  .smokes .smokes_container .newsmokes .smoke > img {
+  .smokes .smokes_container .newsmokes .smoke > a {
     width: 100%;
-    height: 277px;
-    border-radius: 7px 7px 0px 0px;
+    height: 240px;
   }
-  .smokes .smokes_container .newsmokes .smoke .responsive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .smokes .smokes_container .newsmokes .smoke > a > img {
+    width: 100%;
+    height: 240px;
+    border-radius: 7px 7px 0px 0px;
   }
   .smokes .smokes_container .newsmokes .smoke .responsive > h3 {
     font-family: Space Mono;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 496;
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
     color: #ffaf06;
-    margin-left: 15px;
-    margin-bottom: 12px;
-    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
   .smokes .smokes_container .newsmokes .smoke .responsive > p {
-    display: none;
+    font-family: Work Sans;
+    font-size: 13px;
+    font-weight: 496;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
   }
-  .smokes .smokes_container .newsmokes .smoke .responsive .button_image {
-    width: 55px;
-    height: 45px;
-    margin-left: 75px;
-    margin-top: 10px;
+  .smokes .smokes_container .newsmokes .smoke .responsive > a > button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 95%;
+    font-size: 14px;
+    height: 20px;
+    background-color: #ffaf06;
+    color: #fff;
+  }
+  .smokes .smokes_container .newsmokes .smoke .responsive > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
   }
   .smokes .smokes_container .newsmokes .smoke:nth-child(3) {
     display: none;
@@ -1473,6 +1501,7 @@ a {
 @media screen and (max-width: 740px) {
   .smokes .smokes_container {
     padding-bottom: 40px;
+    padding-top: 30px;
   }
   .smokes .smokes_container > h1 {
     color: rgb(18, 18, 18);
@@ -1488,49 +1517,53 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .smokes .smokes_container .newsmokes .smoke {
-    width: 370px;
-    height: 300px;
+    width: 175px;
     border-radius: 7px 7px;
     background-color: #fff;
   }
-  .smokes .smokes_container .newsmokes .smoke > img {
+  .smokes .smokes_container .newsmokes .smoke > a {
     width: 100%;
-    height: 250px;
+    height: 180px;
+  }
+  .smokes .smokes_container .newsmokes .smoke > a > img {
+    width: 100%;
+    height: 180px;
     border-radius: 7px 7px 0px 0px;
   }
   .smokes .smokes_container .newsmokes .smoke .responsive {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .smokes .smokes_container .newsmokes .smoke .responsive > h3 {
     font-family: Space Mono;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 496;
     line-height: 25px;
     letter-spacing: 0em;
     text-align: left;
     color: #ffaf06;
-    margin-left: 15px;
-    margin-bottom: 12px;
-    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 3px;
   }
   .smokes .smokes_container .newsmokes .smoke .responsive > p {
     display: none;
   }
-  .smokes .smokes_container .newsmokes .smoke .responsive .button_image {
-    width: 40px;
-    height: 30px;
-    margin-left: 165px;
-    margin-top: 5px;
-  }
-  .smokes .smokes_container .newsmokes .smoke:nth-child(2) {
-    display: none;
+  .smokes .smokes_container .newsmokes .smoke .responsive > a > button {
+    margin-left: 7px;
+    margin-top: 7px;
+    width: 92%;
+    font-size: 13px;
   }
 }
 .sellests .sellests_container {
@@ -5326,7 +5359,7 @@ a {
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
     font-family: New York;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 496;
     line-height: 22px;
     letter-spacing: 0em;
@@ -9957,6 +9990,230 @@ a {
   }
   .parfumes_index .parfumes_index_container .newsellest .hidden {
     display: none;
+  }
+}
+.smoke .smoke_container {
+  padding-bottom: 80px;
+}
+.smoke .smoke_container > h1 {
+  color: rgb(18, 18, 18);
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.smoke .smoke_container .newsmoke {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+.smoke .smoke_container .newsmoke .smok {
+  width: 400px;
+  border-radius: 7px 7px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.smoke .smoke_container .newsmoke .smok > a {
+  width: 100%;
+  height: 277px;
+}
+.smoke .smoke_container .newsmoke .smok > a > img {
+  width: 100%;
+  height: 277px;
+  border-radius: 7px 7px 0px 0px;
+}
+.smoke .smoke_container .newsmoke .smok .responsive > h3 {
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 496;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffaf06;
+  margin-left: 15px;
+  margin-bottom: 12px;
+  margin-top: 8px;
+}
+.smoke .smoke_container .newsmoke .smok .responsive > p {
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 496;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+.smoke .smoke_container .newsmoke .smok .responsive > a > button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 95%;
+  background-color: #ffaf06;
+  color: #fff;
+}
+.smoke .smoke_container .newsmoke .smok .responsive > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  color: #ffaf06;
+}
+.smoke .smoke_container .newsmoke .smok:hover {
+  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+}
+
+@media screen and (max-width: 1238px) {
+  .smoke .smoke_container {
+    padding-bottom: 60px;
+  }
+  .smoke .smoke_container .newsmoke {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .smoke .smoke_container .newsmoke .smok {
+    width: 350px;
+    border-radius: 7px 7px;
+    background-color: #fff;
+  }
+  .smoke .smoke_container .newsmoke .smok > a {
+    width: 100%;
+    height: 240px;
+  }
+  .smoke .smoke_container .newsmoke .smok > a > img {
+    width: 100%;
+    height: 240px;
+    border-radius: 7px 7px 0px 0px;
+  }
+  .smoke .smoke_container .newsmoke .smok .responsive > h3 {
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 496;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffaf06;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .smoke .smoke_container .newsmoke .smok .responsive > p {
+    font-family: Work Sans;
+    font-size: 13px;
+    font-weight: 496;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  .smoke .smoke_container .newsmoke .smok .responsive > a > button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 95%;
+    font-size: 14px;
+    height: 20px;
+    background-color: #ffaf06;
+    color: #fff;
+  }
+  .smoke .smoke_container .newsmoke .smok .responsive > a > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: transparent;
+    color: #ffaf06;
+  }
+}
+@media screen and (max-width: 740px) {
+  .smoke .smoke_container {
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+  .smoke .smoke_container > h1 {
+    color: rgb(18, 18, 18);
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 496;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .smoke .smoke_container .newsmoke {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .smoke .smoke_container .newsmoke .smok {
+    width: 175px;
+    border-radius: 7px 7px;
+    background-color: #fff;
+  }
+  .smoke .smoke_container .newsmoke .smok > a {
+    width: 100%;
+    height: 200px;
+  }
+  .smoke .smoke_container .newsmoke .smok > a > img {
+    width: 100%;
+    height: 200px;
+    border-radius: 7px 7px 0px 0px;
+  }
+  .smoke .smoke_container .newsmoke .smok .responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .smoke .smoke_container .newsmoke .smok .responsive > h3 {
+    font-family: Space Mono;
+    font-size: 17px;
+    font-weight: 496;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffaf06;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 3px;
+  }
+  .smoke .smoke_container .newsmoke .smok .responsive > p {
+    display: none;
+  }
+  .smoke .smoke_container .newsmoke .smok .responsive > a > button {
+    margin-left: 7px;
+    margin-top: 4px;
+    font-size: 13px;
+    width: 92%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .testing .testing_container .testing_common .lastone .words_last {
+    margin-bottom: 0;
   }
 }
 .comments_smoke .comments_smoke_container {

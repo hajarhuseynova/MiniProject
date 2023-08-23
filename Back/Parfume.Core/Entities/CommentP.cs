@@ -9,10 +9,10 @@ namespace Parfume.Core.Entities
 {
     public class CommentP:BaseEntity
     {
-        public int? ParfumId { get; set; }
-        public Parfum? Parfum { get; set; }
-        public string? AppUserId { get; set; }
-        public AppUser? AppUser { get; set; }
+        //public int? ParfumId { get; set; }
+        //public Parfum? Parfum { get; set; }
+        //public string? AppUserId { get; set; }
+        //public AppUser? AppUser { get; set; }
         public string Title { get; set; }
         public string Desc { get; set; }
         public string? RatingId { get; set; }
