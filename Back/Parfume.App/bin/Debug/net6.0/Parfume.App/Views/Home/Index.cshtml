@@ -74,61 +74,30 @@
 	<div class="container smells_container">
 		<h1>Qoxular</h1>
 		<div class="newsmeels">
-			<div class="smell"
+		@foreach (var item in Model.Parfumes.Take(4))
+		{
+				<div class="smell"
 				 style="
-                background-image: url(../assets/images/NewProduct/ProductImage.jpg);
+                background-image: url(/assets/images/@item.Image);
               ">
-				<h3>Bizim mehsullar</h3>
-				<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+				<h3>@item.Title</h3>
+				<p>@item.Desc</p>
 			</div>
-			<div class="smell"
-				 style="
-                background-image: url(../assets/images/NewProduct/ProductImage.jpg);
-              ">
-				<h3>Bizim mehsullar</h3>
-				<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
-			</div>
-			<div class="smell hidden"
-				 style="
-                background-image: url(../assets/images/NewProduct/ProductImage.jpg);
-              ">
-				<h3>Bizim mehsullar</h3>
-				<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
-			</div>
-			<div class="smell hide hidden"
-				 style="
-                background-image: url(../assets/images/NewProduct/ProductImage.jpg);
-              ">
-				<h3>Bizim mehsullar</h3>
-				<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
-			</div>
+		
+		}
 		</div>
 	</div>
 </div>
 
-    <div class="smokes">
+<div class="smokes">
         <div class="container smokes_container">
           <h1>Tustuler</h1>
           <div class="newsmokes">
-             @foreach (var item in Model.Smokes.Take(3))
-        {
-              <div class="smoke">
-              <a asp-action="detail" asp-controller="smoke" asp-route-id="@item.Id" >
-                  <img src="~/assets/images/@item.Image" />
-              </a>
-
-              <div class="responsive">
-                <h3>@item.Title</h3>
-                <p>
-              @item.Desc
-                </p>
-                <a> <button>Səbətə Əlavə Et</button> </a>
-              </div>
-            </div>  
-        }
+		@await Html.PartialAsync("_SmokePartialView",Model.Smokes.Take(4).ToList())
+     
           </div>
         </div>
-    </div>
+</div>
 
 <div class="sellests">
 	<div class="container sellests_container">
@@ -228,7 +197,7 @@
 	<div class="container testing_container">
 		<div class="testing_common">
 			<div class="testing_left">
-				<img src="../assets/images/@Model.SettingHomePage?.ImageTester" />
+				<img src="~/assets/images/@Model.SettingHomePage?.ImageTester" />
 			</div>
 			<div class="testing_right">
 				<h1>
@@ -237,7 +206,7 @@
 				<a asp-action="index" asp-controller="tester">
 					<button>
 						Etrafli
-						<img src="../assets/icons/button/buttonsvg.svg" />
+						<img src="~/assets/icons/button/buttonsvg.svg" />
 					</button>
 				</a>
 			</div>

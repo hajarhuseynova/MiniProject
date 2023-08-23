@@ -7979,7 +7979,7 @@ a {
   cursor: pointer;
 }
 .detail_intro .detail_intro_container .detail_right .input_button_delete .input_number .orangeinput {
-  width: 37px;
+  width: 39px;
   padding: 5px 25px;
   border-radius: 4px;
   border: 5px;
@@ -7990,7 +7990,7 @@ a {
   position: absolute;
   right: 2px;
   font-size: 25px;
-  top: 3px;
+  top: 4px;
 }
 .detail_intro .detail_intro_container .detail_right .input_button_delete .input_number .pilus:hover {
   cursor: pointer;
@@ -10264,9 +10264,9 @@ a {
           justify-content: center;
   gap: 5px;
 }
-.comments_smoke .comments_smoke_container .comment_smoke .left .left_stars > img {
-  width: 15px;
-  height: 15px;
+.comments_smoke .comments_smoke_container .comment_smoke .left .left_stars > span {
+  font-size: 20px;
+  color: #ffaf06;
 }
 .comments_smoke .comments_smoke_container .comment_smoke .middle {
   width: 800px;

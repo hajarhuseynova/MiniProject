@@ -69,79 +69,84 @@
 	</div>
 </div>
 <div class="assesment">
-	<div class="container assesment_container">
-		<div class="left">
-			<h3>@Model.Smoke?.Title</h3>
-			<h1>4.1</h1>
-			<div class="stars">
-				<span class="st">&#9733;</span>
-				<span class="st">&#9733;</span>
-				<span class="st">&#9733;</span>
-				<span class="st">&#9733;</span>
-			</div>
-			<p>164 rey</p>
-		</div>
-		<div class="middle">
-			<div class="row">
-				<span class="st">&#9733;</span>
-			
-				<p>5</p>
-				<div class="hole">
-					<div class="color" style="width: 200px"></div>
-				</div>
-			</div>
-			<div class="row">
-				<span class="st">&#9733;</span>
-				
-				<p>5</p>
-				<div class="hole">
-					<div class="color" style="width: 200px"></div>
-				</div>
-			</div>
-			<div class="row">
-				<span class="st">&#9733;</span>
-				
-				<p>5</p>
-				<div class="hole">
-					<div class="color" style="width: 200px"></div>
-				</div>
-			</div>
-			<div class="row">
-				<span class="st">&#9733;</span>
-			
-				<p>5</p>
-				<div class="hole">
-					<div class="color" style="width: 200px"></div>
-				</div>
-			</div>
-			<div class="row">
-				<span class="st">&#9733;</span>
-				
-				<p>5</p>
-				<div class="hole">
-					<div class="color" style="width: 200px"></div>
-				</div>
-			</div>
-		</div>
-		<div class="right">
-			<input placeholder="Basliq" type="text" />
-			<textarea placeholder="Metn daxil edin"
-					  rows="4"
-					  cols="40"></textarea>
-			<div class="right_bottom">
-				<p>Reytinq</p>
-				<div class="stars">
-				<span class="st">&#9733;</span>
-				<span class="st">&#9733;</span>
-				<span class="st">&#9733;</span>
-				<span class="st">&#9733;</span>
-				<span class="st">&#9733;</span>
-					
-				</div>
-				<a><button>Gonder</button></a>
-			</div>
-		</div>
-	</div>
+        <div class="container assesment_container">
+          <div class="left">
+            <h3>@Model.Smoke.Title</h3>
+            <h1>4.1</h1>
+            <div class="stars">
+              <span class="st">&#9733;</span>
+              <span class="st">&#9733;</span>
+              <span class="st">&#9733;</span>
+              <span class="st">&#9733;</span>
+            </div>
+            <p>164 rey</p>
+          </div>
+          <div class="middle">
+            <div class="row">
+              <span class="st">&#9733;</span>
+
+              <p>5</p>
+              <div class="hole">
+                <div class="color" style="width: 200px"></div>
+              </div>
+            </div>
+            <div class="row">
+              <span class="st">&#9733;</span>
+
+              <p>5</p>
+              <div class="hole">
+                <div class="color" style="width: 200px"></div>
+              </div>
+            </div>
+            <div class="row">
+              <span class="st">&#9733;</span>
+
+              <p>5</p>
+              <div class="hole">
+                <div class="color" style="width: 200px"></div>
+              </div>
+            </div>
+            <div class="row">
+              <span class="st">&#9733;</span>
+
+              <p>5</p>
+              <div class="hole">
+                <div class="color" style="width: 200px"></div>
+              </div>
+            </div>
+            <div class="row">
+              <span class="st">&#9733;</span>
+
+              <p>5</p>
+              <div class="hole">
+                <div class="color" style="width: 200px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+
+          <form asp-controller="parfume" asp-action="addcomment" method="post">
+            <input placeholder="Basliq" type="text" />
+            <textarea
+              placeholder="Metn daxil edin"
+              rows="4"
+              cols="40"
+            ></textarea>
+            <div class="right_bottom">
+              <p>Reytinq</p>
+              <div class="rating">
+                <span class="star" data-value="1" id="star_1">&#9733;</span>
+                <span class="star" data-value="1" id="star_2">&#9733;</span>
+                <span class="star" data-value="1" id="star_3">&#9733;</span>
+                <span class="star" data-value="1" id="star_4">&#9733;</span>
+                <span class="star" data-value="1" id="star_5">&#9733;</span>
+              </div>
+              <a><button>Gonder</button></a>
+          </form>
+
+            </div>
+          </div>
+        </div>
 </div>
 <div class="comments_smoke">
 	<div class="container comments_smoke_container">
@@ -227,35 +232,14 @@
 		<div class="line_smoke"></div>
 	</div>
 </div>
-
-
-
-
 <div class="smokes">
 	<div class="container smokes_container">
 		<h1>Tustuler</h1>
 		<div class="newsmokes">
-			@foreach (var item in Model.Smokes.Take(3))
-			{
-				<div class="smoke">
-					<a asp-action="detail" asp-route-id="@item.Id" asp-controller="smoke">
-						<img src="~/assets/images/@item.Image" />
-					</a>
-
-					<div class="responsive">
-						<h3>@item.Title</h3>
-						<p>
-							@item.Desc
-						</p>
-						<a> <button>Səbətə Əlavə Et</button> </a>
-					</div>
-				</div>
-			}
-
+		@await Html.PartialAsync("_SmokePartialView",Model.Smokes.Take(4).ToList())
 		</div>
 	</div>
 </div>
-
 <div class="functions" style="margin-bottom:40px">
 	<div class="container functions_container">
 		@await Html.PartialAsync("_FunctionPartialView",Model.Functions.Take(4).ToList())

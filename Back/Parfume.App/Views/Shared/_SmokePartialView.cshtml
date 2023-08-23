@@ -1,0 +1,20 @@
+﻿ @model IEnumerable<Smoke>
+
+
+
+	         @foreach (var item in Model.Take(3))
+        {
+              <div class="smoke">
+              <a asp-action="detail" asp-controller="smoke" asp-route-id="@item.Id" >
+                  <img src="~/assets/images/@item.Image" />
+              </a>
+
+              <div class="responsive">
+                <h3>@item.Title</h3>
+                <p>
+              @item.Desc
+                </p>
+                <a> <button>Səbətə Əlavə Et</button> </a>
+              </div>
+            </div>  
+        }
