@@ -1,0 +1,75 @@
+﻿   
+   @model ParfumeViewModel
+
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        @foreach (var item in Model.Slides)
+        {
+            if(item.Chooice=="Parfum"){
+              <div class="swiper-slide">
+            <img src="../assets/images/@item.Image" />
+            <div class="info_par">
+              <h1>@item.Title</h1>
+              <p>@item.Desc</p>
+            </div>
+          </div>
+        }
+        }
+       
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="parfumeCategory">
+        <div class="container parfumeCategory_container">
+          <div class="parfumeCategory_top">
+            <div class="category" data-filter="all">
+              <p id="all">All</p>
+            </div>
+         
+            @foreach (var item in Model.Brands)
+            {
+            <div class="category" data-filter="@item.Name.ToLower()">
+              <p id="@item.Name.ToLower()">@item.Name</p>
+            </div>
+           
+            }
+          </div>
+        </div>
+      </div>
+  
+      <div class="parfumes_index">
+        <div class="container parfumes_index_container">
+          <div class="newsellest">
+
+
+
+         @foreach (var item in Model.Parfumes)
+         {
+                <div class="selles">
+              <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
+                <img
+                  src="../assets/images/@item.Image"
+                  alt="productImage"
+              /></a>
+              <p class="def">@item.Title</p>
+              <p class="cat">@item.Brand.Name</p>
+              <div class="price_star">
+          	@if (item.IsDiscount == true)
+							{
+								<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+							}
+							else
+							{
+								<p class="price">@item.SellPrice AZN</p>
+							}
+                <a><button>Elave et</button></a>
+              </div>
+            </div>
+         }
+
+          </div>
+        </div>
+      </div>

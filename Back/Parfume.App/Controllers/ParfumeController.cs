@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.UI.Xaml.Controls;
 using Parfume.App.Context;
 using Parfume.App.Services.İnterfaces;
 using Parfume.App.ViewModels;
@@ -59,6 +61,7 @@ namespace Parfume.App.Controllers
 
         public async Task<IActionResult> Detail(int id)
         {
+
             ParfumeViewModel parfumViewModel = new ParfumeViewModel
             {
                 Parfumes = await _context.Parfums
@@ -66,11 +69,15 @@ namespace Parfume.App.Controllers
                         .ThenInclude(x => x.Volume)
                        .Include(x => x.Brand)
                         .Where(x => !x.IsDeleted).ToListAsync(),
-                Parfum = await _context.Parfums
-                       .Include(x => x.ParfumVolume)
-                        .ThenInclude(x => x.Volume)
-                       .Include(x => x.Brand)
-                        .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
+
+                Parfum = await _context.Parfums.
+                Include(x=>x.CommentPs).ThenInclude(x=>x.Dislikes).
+                Include(x=>x.CommentPs).ThenInclude(x=>x.Likes).
+                 Include(x => x.CommentPs).ThenInclude(x => x.AppUser).
+                Include(x=>x.Rating).Include(x => x.Brand)
+                .Include(x => x.ParfumVolume).ThenInclude(x => x.Volume)
+                .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
+
                 Brands = await _context.Brands.Where(b => !b.IsDeleted).ToListAsync(),
                 Functions = await _context.Functions.Where(b => !b.IsDeleted).ToListAsync(),
 
@@ -85,5 +92,21 @@ namespace Parfume.App.Controllers
 
             return View(parfumViewModel);
         }
+
+
+        [Authorize(Roles = "User")]
+        [HttpPost]
+        public async Task<IActionResult> AddComment(CommentP comment)
+        {
+            AppUser appUser= await _userManager.FindByNameAsync(User.Identity.Name);
+            comment.AppUserId= appUser.Id;
+            comment.CreatedDate=DateTime.Now;
+
+            await _context.AddAsync(comment);
+            await _context.SaveChangesAsync();
+            return Redirect(Request.Headers["Referer"].ToString()); 
+            
+        }
+     
     }
 }

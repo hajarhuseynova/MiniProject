@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KkGd+sNWTkjhskJI1Vm1pm3OAfsp7+2Ll2e+yyyuc8re1jgWWR8szzmeKqHiMb/ZIK2AdXKaNJXu+l1w8xaePA==",
+  "dgSpecHash": "20jiiLKFK7Lpmpad3XfBiMtzOx/KUt/FkDrA+U1Xjj9hzj7uiWJak+vesbgsw3cyTZ7Sr3y8dcXjdcvLFS4kAw==",
   "success": true,
   "projectFilePath": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.Service\\Parfume.Service.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,8 @@
     "C:\\Users\\99455\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\99455\\.nuget\\packages\\microsoft.ui.xaml\\2.8.5\\microsoft.ui.xaml.2.8.5.nupkg.sha512",
+    "C:\\Users\\99455\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\microsoft.web.webview2.1.0.1264.42.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",

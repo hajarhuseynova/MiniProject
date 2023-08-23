@@ -1,0 +1,56 @@
+﻿   @model AppUser
+
+<div class="infoPage">
+        <div class="infoPage_container">
+          <div class="infoPage_left"></div>
+          <div class="infoPage_right">
+            <h1>Melumatlar</h1>
+          
+                <form action="#" method="post">
+              <div
+                class="alert alert-danger"
+                asp-validation-summary="ModelOnly"
+              ></div>
+
+              <input
+              asp-for="Name"
+                disabled
+                class="form-control register_input"
+                placeholder="Ad"
+                type="text"
+              />
+                    <span class="text text-danger" asp-validation-for="Name"></span>
+
+              <input
+              asp-for="Surname" 
+                disabled
+                class="form-control register_input"
+                placeholder="Soyad"
+                type="text"
+              />
+                    <span class="text text-danger" asp-validation-for="Surname"></span>
+
+
+              <input
+                asp-for="UserName" 
+                disabled
+                class="form-control register_input"
+                placeholder="Istifadeci Adi"
+                type="text"
+              />
+                    <span class="text text-danger" asp-validation-for="UserName"></span>
+
+              <input
+                    asp-for="Email" 
+                disabled
+                class="form-control register_input special_inp"
+                placeholder="Email"
+                type="email"
+              />
+                    <span class="text text-danger" asp-validation-for="Email"></span>
+
+               <a id="update_button" asp-controller="account" asp-action="update">Update</a>
+            </form>
+          </div>
+        </div>
+      </div>

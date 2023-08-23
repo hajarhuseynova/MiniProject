@@ -36,7 +36,14 @@
              
             </div>
             <div class="priceStar">
-              <p>@Model.Parfum?.SellPrice AZN</p>
+             	@if (Model.Parfum.IsDiscount == true)
+							{
+								<p class="price">@(int.Parse(Model.Parfum.SellPrice)-int.Parse(Model.Parfum.SellPrice)*Model.Parfum.DiscountPercentage/100) AZN</p>
+							}
+							else
+							{
+								<p class="price">@Model.Parfum.SellPrice AZN</p>
+							}
               <div class="stars">
                 <span class="st">&#9733;</span>
                 <span class="st">&#9733;</span>
@@ -145,6 +152,8 @@
             </div>
           </div>
           <div class="right">
+
+          <form asp-controller="parfume" asp-action="addcomment" method="post">
             <input placeholder="Basliq" type="text" />
             <textarea
               placeholder="Metn daxil edin"
@@ -154,25 +163,29 @@
             <div class="right_bottom">
               <p>Reytinq</p>
               <div class="rating">
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="1">&#9733;</span>
-
-                
+                <span class="star" data-value="1" id="star_1">&#9733;</span>
+                <span class="star" data-value="1" id="star_2">&#9733;</span>
+                <span class="star" data-value="1" id="star_3">&#9733;</span>
+                <span class="star" data-value="1" id="star_4">&#9733;</span>
+                <span class="star" data-value="1" id="star_5">&#9733;</span>
               </div>
               <a><button>Gonder</button></a>
+          </form>
+
             </div>
           </div>
         </div>
       </div>
       <div class="comments">
         <div class="container comments_container">
+        @if (Model.Parfum.CommentPs.Count() >= 1)
+        {
+            @foreach (var item in Model.Parfum.CommentPs)
+            {
           <div class="line"></div>
           <div class="comment">
             <div class="left">
-              <h3>Hajar Huseynova</h3>
+              <h3>@item?.AppUser.Name @item?.AppUser.Surname</h3>
               <div class="left_stars">
                 <span class="st">&#9733;</span>
                 <span class="st">&#9733;</span>
@@ -182,12 +195,9 @@
               </div>
             </div>
             <div class="middle">
-              <h3>Best Product Ever!</h3>
+              <h3>@item?.Title</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                veritatis distinctio saepe deleniti eligendi blanditiis quae
-                adipisci eius vero harum. Error eaque eos corporis. Provident
-                praesentium nostrum autem modi sunt?
+             @item?.Desc
               </p>
             </div>
             <div class="right">
@@ -199,7 +209,7 @@
                     class="like"
                     onclick="increaseLike(this)"
                   />
-                  <p class="like-count">5</p>
+                  <p class="like-count">LIKE</p>
                 </div>
                 <div class="lik">
                   <img
@@ -207,55 +217,15 @@
                     class="dislike"
                     onclick="decreaseDislike(this)"
                   />
-                  <p class="dislike-count">5</p>
+                  <p class="dislike-count">DISLIKE</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="line"></div>
-          <div class="comment">
-            <div class="left">
-              <h3>Hajar Huseynova</h3>
-              <div class="left_stars">
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-              </div>
-            </div>
-            <div class="middle">
-              <h3>Best Product Ever!</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                veritatis distinctio saepe deleniti eligendi blanditiis quae
-                adipisci eius vero harum. Error eaque eos corporis. Provident
-                praesentium nostrum autem modi sunt?
-              </p>
-            </div>
-            <div class="right">
-              <p>15.04.2022</p>
-              <div class="likes">
-                <div class="lik">
-                  <img
-                    src="~/assets/icons/detail/like.svg"
-                    class="like"
-                    onclick="increaseLike(this)"
-                  />
-                  <p class="like-count">7</p>
-                </div>
-                <div class="lik">
-                  <img
-                    src="~/assets/icons/detail/dislike.svg"
-                    class="dislike"
-                    onclick="decreaseDislike(this)"
-                  />
-                  <p class="dislike-count">2</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="line"></div>
+
+            }
+        }
+          
         </div>
       </div>
    
@@ -277,7 +247,14 @@
               <p class="def">@item.Title</p>
               <p class="cat">@item.Brand.Name</p>
               <div class="price_star">
-                <p class="price">@item.SellPrice AZN</p>
+              	@if (item.IsDiscount == true)
+							{
+								<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+							}
+							else
+							{
+								<p class="price">@item.SellPrice AZN</p>
+							}
                 <a><button style="width:80px">Elave et</button></a>
               </div>
             </div>
@@ -296,3 +273,7 @@
          
         </div>
       </div>
+
+
+
+ 

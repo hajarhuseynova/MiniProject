@@ -1,0 +1,120 @@
+﻿@model SettingFooter
+
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.Title1" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Title2" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title2"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.Title3" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title3"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title3"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.Title4" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title4"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title4"></span>
+	</div>
+
+
+	<div class="form-group">
+		    <label asp-for="@Model.FootIcon1" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.FootIcon1"/>
+			<span class="text text-danger" asp-validation-for="@Model.FootIcon1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.FootIcon2" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.FootIcon2"/>
+			<span class="text text-danger" asp-validation-for="@Model.FootIcon2"></span>
+	</div>	
+	<div class="form-group">
+		    <label asp-for="@Model.FootIcon3" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.FootIcon3"/>
+			<span class="text text-danger" asp-validation-for="@Model.FootIcon3"></span>
+	</div>	
+	<div class="form-group">
+		    <label asp-for="@Model.FootIcon4" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.FootIcon4"/>
+			<span class="text text-danger" asp-validation-for="@Model.FootIcon4"></span>
+	</div>
+
+
+	<div class="form-group">
+		    <label asp-for="@Model.Link1" >Link:</label>
+			<input type="text" class="form-control" asp-for="@Model.Link1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Link1"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.Link2" >Link:</label>
+			<input type="text" class="form-control" asp-for="@Model.Link2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Link2"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.Link3" >Link:</label>
+			<input type="text" class="form-control" asp-for="@Model.Link3"/>
+			<span class="text text-danger" asp-validation-for="@Model.Link3"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.Link4" >Link:</label>
+			<input type="text" class="form-control" asp-for="@Model.Link4"/>
+			<span class="text text-danger" asp-validation-for="@Model.Link4"></span>
+	</div>
+
+
+		<div class="form-group">
+		    <label asp-for="@Model.Title1Par1" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title1Par1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title1Par1"></span>
+	</div>
+
+			<div class="form-group">
+		    <label asp-for="@Model.Title1Par2" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title1Par2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title1Par2"></span>
+	</div>		
+	<div class="form-group">
+		    <label asp-for="@Model.Title2Par1" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title2Par1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title2Par1"></span>
+	</div>	
+	<div class="form-group">
+		    <label asp-for="@Model.Title2Par2" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title2Par2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title2Par2"></span>
+	</div>	
+	<div class="form-group">
+		    <label asp-for="@Model.Title3Par1" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title3Par1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title3Par1"></span>
+	</div>	
+	<div class="form-group">
+		    <label asp-for="@Model.Title3Par2" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title3Par2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title3Par2"></span>
+	</div>	
+	<div class="form-group">
+		    <label asp-for="@Model.Title4Par1" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title4Par1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title4Par1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Title4Par2" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title4Par2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title4Par2"></span>
+	</div>
+
+
+
+
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yenile</button>
+	</form>
+</div>

@@ -49,3 +49,6 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.Data\obj\Debug\net6.0\refin
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.Data\obj\Debug\net6.0\Parfume.Data.pdb
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.Data\obj\Debug\net6.0\Parfume.Data.genruntimeconfig.cache
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.Data\obj\Debug\net6.0\ref\Parfume.Data.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.Data\bin\Debug\net6.0\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.Data\bin\Debug\net6.0\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.Data\bin\Debug\net6.0\runtimes\win-arm64\native\WebView2Loader.dll

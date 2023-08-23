@@ -1,0 +1,47 @@
+﻿@model SettingHomePage
+
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.TitleGift" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.TitleGift"/>
+			<span class="text text-danger" asp-validation-for="@Model.TitleGift"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.DescriptionGift" >Movzu Hediyye:</label>
+			<input type="text" class="form-control" asp-for="@Model.DescriptionGift"/>
+			<span class="text text-danger" asp-validation-for="@Model.DescriptionGift"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.DescTester" >Movzu Tester:</label>
+			<input type="text" class="form-control" asp-for="@Model.DescTester"/>
+			<span class="text text-danger" asp-validation-for="@Model.DescTester"></span>
+	</div>
+	
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.Gift1FormFile" >Hediyye:</label>
+			<input type="file" class="form-control" asp-for="@Model.Gift1FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.Gift1FormFile"></span>
+    </div>
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.Gift2FormFile" >Hediyye:</label>
+			<input type="file" class="form-control" asp-for="@Model.Gift2FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.Gift2FormFile"></span>
+    </div>
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.TesterFormFile" >Tester:</label>
+			<input type="file" class="form-control" asp-for="@Model.TesterFormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.TesterFormFile"></span>
+    </div>
+
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yenile</button>
+	</form>
+</div>

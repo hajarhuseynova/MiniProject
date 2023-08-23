@@ -14,8 +14,10 @@
           "Microsoft.EntityFrameworkCore": "6.0.16",
           "Microsoft.EntityFrameworkCore.Design": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
+          "Microsoft.UI.Xaml": "2.8.5",
           "Newtonsoft.Json": "13.0.3",
-          "Parfume.Service": "1.0.0"
+          "Parfume.Service": "1.0.0",
+          "Uno.UI": "4.9.45"
         },
         "runtime": {
           "Parfume.App.dll": {}
@@ -389,6 +391,45 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.UI.Xaml/2.8.5": {
+        "dependencies": {
+          "Microsoft.Web.WebView2": "1.0.1264.42"
+        }
+      },
+      "Microsoft.Web.WebView2/1.0.1264.42": {
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
+            "assemblyVersion": "1.0.1264.42",
+            "fileVersion": "1.0.1264.42"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
+            "assemblyVersion": "1.0.1264.42",
+            "fileVersion": "1.0.1264.42"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
+            "assemblyVersion": "1.0.1264.42",
+            "fileVersion": "1.0.1264.42"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/WebView2Loader.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "1.0.1264.42"
+          },
+          "runtimes/win-x64/native/WebView2Loader.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.1264.42"
+          },
+          "runtimes/win-x86/native/WebView2Loader.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.1264.42"
+          }
+        }
+      },
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
@@ -500,6 +541,14 @@
           }
         }
       },
+      "System.Memory/4.5.2": {},
+      "System.Numerics.Vectors/4.5.0": {},
+      "System.Runtime/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
       "System.Runtime.Caching/4.7.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.7.0"
@@ -520,6 +569,17 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.InteropServices.WindowsRuntime.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.24705.1"
+          }
+        }
+      },
       "System.Security.AccessControl/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -581,6 +641,85 @@
           }
         }
       },
+      "Uno.Diagnostics.Eventing/2.0.1": {
+        "runtime": {
+          "lib/net5.0/Uno.Diagnostics.Eventing.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          }
+        }
+      },
+      "Uno.Fonts.Fluent/2.2.2": {
+        "runtime": {
+          "lib/netstandard1.0/Uno.Fonts.Fluent.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Uno.Foundation.Logging/4.9.45": {
+        "runtime": {
+          "lib/netstandard2.0/Uno.Foundation.Logging.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          }
+        }
+      },
+      "Uno.SourceGenerationTasks/4.2.0": {},
+      "Uno.UI/4.9.45": {
+        "dependencies": {
+          "System.Collections.Immutable": "6.0.0",
+          "System.Memory": "4.5.2",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
+          "Uno.Diagnostics.Eventing": "2.0.1",
+          "Uno.Fonts.Fluent": "2.2.2",
+          "Uno.Foundation.Logging": "4.9.45",
+          "Uno.SourceGenerationTasks": "4.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Uno.Foundation.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.UI.Composition.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.UI.Dispatching.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.UI.FluentTheme.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.UI.FluentTheme.v1.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.UI.FluentTheme.v2.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.UI.Toolkit.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.UI.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.Xaml.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          },
+          "lib/netstandard2.0/Uno.dll": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "255.255.255.255"
+          }
+        }
+      },
       "Parfume.Core/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -588,6 +727,7 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.16",
           "Microsoft.EntityFrameworkCore": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
+          "Microsoft.UI.Xaml": "2.8.5",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
@@ -601,6 +741,7 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.16",
           "Microsoft.EntityFrameworkCore": "6.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16",
+          "Microsoft.UI.Xaml": "2.8.5",
           "Newtonsoft.Json": "13.0.3",
           "Parfume.Core": "1.0.0"
         },
@@ -613,6 +754,7 @@
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.16",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.16",
+          "Microsoft.UI.Xaml": "2.8.5",
           "Newtonsoft.Json": "13.0.3",
           "Parfume.Data": "1.0.0"
         },
@@ -901,6 +1043,27 @@
       "path": "microsoft.netcore.platforms/3.1.0",
       "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
     },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.UI.Xaml/2.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R+LsMZ3+Vj6hUqy2c9D6/ZwgAqbw0aAiRNt51NTNv/8pdW3CBqf4ngastI31/IUdUs1tuihYqjQ5AjTIx9BDBA==",
+      "path": "microsoft.ui.xaml/2.8.5",
+      "hashPath": "microsoft.ui.xaml.2.8.5.nupkg.sha512"
+    },
+    "Microsoft.Web.WebView2/1.0.1264.42": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7OBUTkzQ5VI/3gb0ufi5U4zjuCowAJwQg2li0zXXzqkM+S1kmOlivTy1R4jAW+gY5Vyg510M+qMAESCQUjrfgA==",
+      "path": "microsoft.web.webview2/1.0.1264.42",
+      "hashPath": "microsoft.web.webview2.1.0.1264.42.nupkg.sha512"
+    },
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -971,6 +1134,27 @@
       "path": "system.identitymodel.tokens.jwt/6.8.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512"
     },
+    "System.Memory/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+      "path": "system.memory/4.5.2",
+      "hashPath": "system.memory.4.5.2.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
     "System.Runtime.Caching/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -984,6 +1168,13 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J4GUi3xZQLUBasNwZnjrffN8i5wpHrBtZoLG+OhRyGo/+YunMRWWtwoMDlUAIdmX0uRfpHIBDSV6zyr3yf00TA==",
+      "path": "system.runtime.interopservices.windowsruntime/4.3.0",
+      "hashPath": "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512"
     },
     "System.Security.AccessControl/4.7.0": {
       "type": "package",
@@ -1040,6 +1231,41 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "Uno.Diagnostics.Eventing/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hd03em+Bga+w+ljCtiyc+713PQDtCB0Qkw3sBggvXXdDB2URwEc3N4TnM3vFeXpmHHZGM7dN7D8qxfiGoEEHzw==",
+      "path": "uno.diagnostics.eventing/2.0.1",
+      "hashPath": "uno.diagnostics.eventing.2.0.1.nupkg.sha512"
+    },
+    "Uno.Fonts.Fluent/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sKvtNB54KKe8BCun0F3eIpgZ0mJl8wyqjZkCA52MVQcsaxrRBzVPV3q3S4nwQnE61+Ah9R2ASsxeI1Wfwnj+4g==",
+      "path": "uno.fonts.fluent/2.2.2",
+      "hashPath": "uno.fonts.fluent.2.2.2.nupkg.sha512"
+    },
+    "Uno.Foundation.Logging/4.9.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vJ4iFrY1QWKGk4wioHD2t3XeOrKjhFG4lGSTmYFsAlYXX+wluYTswfkfnl4NceAMYUII7PEb7+nxh1XOjFccKg==",
+      "path": "uno.foundation.logging/4.9.45",
+      "hashPath": "uno.foundation.logging.4.9.45.nupkg.sha512"
+    },
+    "Uno.SourceGenerationTasks/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pQazuxoMofxLEzsDcrBnmEp1nB/N19IWKsq5Ffi+i9pAXXdoOR14MrMCuY9kXmnqnGFHRl5T2Z9kY0SUGsvdFA==",
+      "path": "uno.sourcegenerationtasks/4.2.0",
+      "hashPath": "uno.sourcegenerationtasks.4.2.0.nupkg.sha512"
+    },
+    "Uno.UI/4.9.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4jdNeXOcPSt5jK6iVspoMmYiOyPDfqjAgwwL+BJMRr2ErpYeW7flIZWssMR5WbHrPT7v3OWnbfufg6KQf80rQw==",
+      "path": "uno.ui/4.9.45",
+      "hashPath": "uno.ui.4.9.45.nupkg.sha512"
     },
     "Parfume.Core/1.0.0": {
       "type": "project",

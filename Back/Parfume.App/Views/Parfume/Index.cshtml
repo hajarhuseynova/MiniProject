@@ -57,7 +57,14 @@
               <p class="def">@item.Title</p>
               <p class="cat">@item.Brand.Name</p>
               <div class="price_star">
-                <p class="price">@item.SellPrice AZN</p>
+          	@if (item.IsDiscount == true)
+							{
+								<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+							}
+							else
+							{
+								<p class="price">@item.SellPrice AZN</p>
+							}
                 <a><button>Elave et</button></a>
               </div>
             </div>

@@ -320,6 +320,21 @@ namespace Parfume.Data.Migrations
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("star1")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("star2")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("star3")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("star4")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("star5")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AppUserId");

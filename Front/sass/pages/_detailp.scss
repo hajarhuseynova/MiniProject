@@ -739,60 +739,65 @@
       display: flex;
       flex-direction: column;
       gap: 18px;
-      > input {
-        margin-top: 7px;
-
-        width: 610px;
-        height: 24px;
-        font-family: Work Sans;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        padding: 3px 10px;
-        border-radius: 4px;
-        border: 1px solid $black_02;
-      }
-      > textarea {
-        width: 610px;
-        font-family: Work Sans;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        padding: 5px 10px;
-        border-radius: 4px;
-        border: 1px solid $black_02;
-      }
-      .right_bottom {
+      > form {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        > p {
+        flex-direction: column;
+        gap: 18px;
+
+        > input {
+          margin-top: 7px;
+          width: 610px;
+          height: 24px;
           font-family: Work Sans;
-          font-size: 20px;
-          font-weight: 496;
+          font-size: 15px;
+          font-weight: 400;
           line-height: 19px;
           letter-spacing: 0em;
           text-align: left;
+          padding: 3px 10px;
+          border-radius: 4px;
+          border: 1px solid $black_02;
         }
-        .rating {
-          font-size: 30px;
-          cursor: pointer;
-          .star {
-            color: gray;
-          }
-          .star.selected {
-            color: $orange_01;
-          }
+        > textarea {
+          width: 610px;
+          font-family: Work Sans;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding: 5px 10px;
+          border-radius: 4px;
+          border: 1px solid $black_02;
         }
-        > a {
-          > button {
-            width: 250px;
-            border: 1px solid;
+        .right_bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          > p {
+            font-family: Work Sans;
+            font-size: 20px;
+            font-weight: 496;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .rating {
+            font-size: 30px;
+            cursor: pointer;
+            .star {
+              color: gray;
+            }
+            .star.selected {
+              color: $orange_01;
+            }
+          }
+          > a {
+            > button {
+              width: 250px;
+              border: 1px solid;
+            }
           }
         }
       }
@@ -888,56 +893,58 @@
         display: flex;
         flex-direction: column;
         gap: 18px;
-        > input {
-          margin-top: 7px;
-          width: 680px;
-          height: 24px;
-          font-family: Work Sans;
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 19px;
-          letter-spacing: 0em;
-          text-align: left;
-          padding: 3px 10px;
-          border-radius: 4px;
-          border: 1px solid $black_02;
-        }
-        > textarea {
-          width: 680px;
-          font-family: Work Sans;
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 19px;
-          letter-spacing: 0em;
-          text-align: left;
-          padding: 5px 10px;
-          border-radius: 4px;
-          border: 1px solid $black_02;
-        }
-        .right_bottom {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 20px;
-          > p {
+        > form {
+          > input {
+            margin-top: 7px;
+            width: 680px;
+            height: 24px;
             font-family: Work Sans;
-            font-size: 20px;
-            font-weight: 496;
+            font-size: 15px;
+            font-weight: 400;
             line-height: 19px;
             letter-spacing: 0em;
             text-align: left;
+            padding: 3px 10px;
+            border-radius: 4px;
+            border: 1px solid $black_02;
           }
-          .stars {
+          > textarea {
+            width: 680px;
+            font-family: Work Sans;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid $black_02;
+          }
+          .right_bottom {
             display: flex;
-            gap: 8px;
-            .hide {
-              display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            > p {
+              font-family: Work Sans;
+              font-size: 20px;
+              font-weight: 496;
+              line-height: 19px;
+              letter-spacing: 0em;
+              text-align: left;
             }
-          }
-          > a {
-            > button {
-              width: 250px;
-              border: 1px solid;
+            .stars {
+              display: flex;
+              gap: 8px;
+              .hide {
+                display: none;
+              }
+            }
+            > a {
+              > button {
+                width: 250px;
+                border: 1px solid;
+              }
             }
           }
         }
@@ -1004,59 +1011,61 @@
         flex-direction: column;
         gap: 18px;
         margin: auto;
-        > input {
-          margin-top: 7px;
-          width: 300px;
-          height: 24px;
-          font-family: Work Sans;
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 19px;
-          letter-spacing: 0em;
-          text-align: left;
-          padding: 3px 10px;
-          border-radius: 4px;
-          border: 1px solid $black_02;
-        }
-        > textarea {
-          width: 300px;
-          font-family: Work Sans;
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 19px;
-          letter-spacing: 0em;
-          text-align: left;
-          padding: 5px 10px;
-          border-radius: 4px;
-          border: 1px solid $black_02;
-        }
-        .right_bottom {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 20px;
-          > p {
+        > form {
+          > input {
+            margin-top: 7px;
+            width: 300px;
+            height: 24px;
             font-family: Work Sans;
-            font-size: 18px;
-            font-weight: 496;
+            font-size: 15px;
+            font-weight: 400;
             line-height: 19px;
             letter-spacing: 0em;
             text-align: left;
+            padding: 3px 10px;
+            border-radius: 4px;
+            border: 1px solid $black_02;
           }
-          .rating {
+          > textarea {
+            width: 300px;
+            font-family: Work Sans;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid $black_02;
+          }
+          .right_bottom {
             display: flex;
-            gap: 2px;
-            > span {
-              font-size: 20px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            > p {
+              font-family: Work Sans;
+              font-size: 18px;
+              font-weight: 496;
+              line-height: 19px;
+              letter-spacing: 0em;
+              text-align: left;
             }
-            .hide {
-              display: none;
+            .rating {
+              display: flex;
+              gap: 2px;
+              > span {
+                font-size: 20px;
+              }
+              .hide {
+                display: none;
+              }
             }
-          }
-          > a {
-            > button {
-              width: 100px;
-              border: 1px solid;
+            > a {
+              > button {
+                width: 100px;
+                border: 1px solid;
+              }
             }
           }
         }

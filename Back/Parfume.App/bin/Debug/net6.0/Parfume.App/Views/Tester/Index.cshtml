@@ -1,0 +1,119 @@
+﻿@model TesterViewModel
+
+
+<div class="testing">
+	<div class="container testing_container">
+		<div class="testing_common">
+			<div class="testing_left">
+				<img src="../assets/images/@Model.SettingHomePage?.ImageTester" />
+			</div>
+			<div class="testing_right">
+				<h1 style="padding-top: 35px">
+					@Model.SettingHomePage?.DescTester
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tester">
+	<div class="container tester_container">
+		<div class="tester_top">
+			<h1>Test Qutusu</h1>
+			<p>
+				Sevdiyiniz etri tapmaq ucun 10 muxtelif brendin en cox satilan
+				duxlarinin testerlerini yaratmishiq.
+			</p>
+			<div class="tester_input">
+				<form id="search">
+					<input name="search" placeholder="Axtarış..." type="search" class="searchInput" style="height:50px">
+					<img src="~/assets/icons/tester/Search.svg" />
+
+				</form>
+			</div>
+		</div>
+		<div class="tester_bottom">
+			<div class="tester_left">
+				@foreach (var item in Model.Testers)
+				{
+					<div class="testerparfume">
+						<img src="../assets/images/@item.Image" />
+						<h3>@item.Title</h3>
+						<p class="cat">@item.Brand.Name</p>
+						<div class="star_button">
+							<p class="price">@item.SellPrice AZN</p>
+							<a><button>Elave et</button></a>
+						</div>
+					</div>
+				}
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	 const submit = document.querySelector(".SearchButton");
+	 const searchInput = document.querySelector(".searchInput")
+	 const container = document.querySelector(".tester_left")
+	 const fullCards=document.querySelectorAll(".testerparfume");
+	 searchInput.addEventListener("input", (e) => {
+		 e.preventDefault();
+
+		 if(searchInput.value==""){
+		 let  href = `/tester/getAll`;
+		 fetch(href)
+			 .then(x => x.json())
+			 .then(x => {
+				 container.innerHTML =""
+				 x.forEach(item => {
+
+					 let view = `
+						<div class="testerparfume">
+				 <img src="../assets/images/${item.image}" />
+				 <h3>${item.title}</h3>
+				 <p class="cat">${item.brand.name}</p>
+				 <div class="star_button">
+				   <p class="price">${item.sellPrice} AZN</p>
+				   <a><button>Elave et</button></a>
+				 </div>
+			   </div>
+
+		 `;
+					 container.innerHTML += view;
+				 } )
+			 })
+		 }
+
+	else{
+		   let  href = `/tester/search?search=${searchInput.value}`;
+		 fetch(href)
+			 .then(x => x.json())
+			 .then(x => {
+				 container.innerHTML =""
+				 x.forEach(item => {
+
+					 let view = `
+						<div class="testerparfume">
+				 <img src="../assets/images/${item.image}" />
+				 <h3>${item.title}</h3>
+				 <p class="cat">${item.brand.name}</p>
+				 <div class="star_button">
+				   <p class="price">${item.sellPrice} AZN</p>
+				   <a><button>Elave et</button></a>
+				 </div>
+			   </div>
+
+		 `;
+					 container.innerHTML += view;
+				 } )
+			 })
+	}
+
+
+
+
+
+
+	 })
+</script>

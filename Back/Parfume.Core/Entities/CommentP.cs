@@ -19,5 +19,8 @@ namespace Parfume.Core.Entities
         public Rating? Rating { get; set; }
         public ICollection<LikeP>? Likes { get; set; }
         public ICollection<DislikeP>? Dislikes { get; set; }
+
+
+
     }
 }

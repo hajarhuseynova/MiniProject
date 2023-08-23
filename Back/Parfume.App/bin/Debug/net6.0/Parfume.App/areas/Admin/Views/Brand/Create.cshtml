@@ -1,0 +1,14 @@
+﻿@model Brand
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.Name" >Adi:</label>
+			<input type="text" class="form-control" asp-for="@Model.Name"/>
+			<span class="text text-danger" asp-validation-for="@Model.Name"></span>
+	</div>
+
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yarat</button>
+	</form>
+</div>

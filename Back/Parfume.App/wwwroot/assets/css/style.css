@@ -8634,7 +8634,17 @@ a {
           flex-direction: column;
   gap: 18px;
 }
-.assesment .assesment_container .right > input {
+.assesment .assesment_container .right > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+}
+.assesment .assesment_container .right > form > input {
   margin-top: 7px;
   width: 610px;
   height: 24px;
@@ -8648,7 +8658,7 @@ a {
   border-radius: 4px;
   border: 1px solid #414141;
 }
-.assesment .assesment_container .right > textarea {
+.assesment .assesment_container .right > form > textarea {
   width: 610px;
   font-family: Work Sans;
   font-size: 15px;
@@ -8660,7 +8670,7 @@ a {
   border-radius: 4px;
   border: 1px solid #414141;
 }
-.assesment .assesment_container .right .right_bottom {
+.assesment .assesment_container .right > form .right_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8672,7 +8682,7 @@ a {
           justify-content: space-between;
   gap: 20px;
 }
-.assesment .assesment_container .right .right_bottom > p {
+.assesment .assesment_container .right > form .right_bottom > p {
   font-family: Work Sans;
   font-size: 20px;
   font-weight: 496;
@@ -8680,17 +8690,17 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.assesment .assesment_container .right .right_bottom .rating {
+.assesment .assesment_container .right > form .right_bottom .rating {
   font-size: 30px;
   cursor: pointer;
 }
-.assesment .assesment_container .right .right_bottom .rating .star {
+.assesment .assesment_container .right > form .right_bottom .rating .star {
   color: gray;
 }
-.assesment .assesment_container .right .right_bottom .rating .star.selected {
+.assesment .assesment_container .right > form .right_bottom .rating .star.selected {
   color: #ffaf06;
 }
-.assesment .assesment_container .right .right_bottom > a > button {
+.assesment .assesment_container .right > form .right_bottom > a > button {
   width: 250px;
   border: 1px solid;
 }
@@ -8811,7 +8821,7 @@ a {
             flex-direction: column;
     gap: 18px;
   }
-  .assesment .assesment_container .right > input {
+  .assesment .assesment_container .right > form > input {
     margin-top: 7px;
     width: 680px;
     height: 24px;
@@ -8825,7 +8835,7 @@ a {
     border-radius: 4px;
     border: 1px solid #414141;
   }
-  .assesment .assesment_container .right > textarea {
+  .assesment .assesment_container .right > form > textarea {
     width: 680px;
     font-family: Work Sans;
     font-size: 15px;
@@ -8837,7 +8847,7 @@ a {
     border-radius: 4px;
     border: 1px solid #414141;
   }
-  .assesment .assesment_container .right .right_bottom {
+  .assesment .assesment_container .right > form .right_bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8849,7 +8859,7 @@ a {
             justify-content: space-between;
     gap: 20px;
   }
-  .assesment .assesment_container .right .right_bottom > p {
+  .assesment .assesment_container .right > form .right_bottom > p {
     font-family: Work Sans;
     font-size: 20px;
     font-weight: 496;
@@ -8857,16 +8867,16 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .assesment .assesment_container .right .right_bottom .stars {
+  .assesment .assesment_container .right > form .right_bottom .stars {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 8px;
   }
-  .assesment .assesment_container .right .right_bottom .stars .hide {
+  .assesment .assesment_container .right > form .right_bottom .stars .hide {
     display: none;
   }
-  .assesment .assesment_container .right .right_bottom > a > button {
+  .assesment .assesment_container .right > form .right_bottom > a > button {
     width: 250px;
     border: 1px solid;
   }
@@ -8950,7 +8960,7 @@ a {
     gap: 18px;
     margin: auto;
   }
-  .assesment .assesment_container .right > input {
+  .assesment .assesment_container .right > form > input {
     margin-top: 7px;
     width: 300px;
     height: 24px;
@@ -8964,7 +8974,7 @@ a {
     border-radius: 4px;
     border: 1px solid #414141;
   }
-  .assesment .assesment_container .right > textarea {
+  .assesment .assesment_container .right > form > textarea {
     width: 300px;
     font-family: Work Sans;
     font-size: 15px;
@@ -8976,7 +8986,7 @@ a {
     border-radius: 4px;
     border: 1px solid #414141;
   }
-  .assesment .assesment_container .right .right_bottom {
+  .assesment .assesment_container .right > form .right_bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8988,7 +8998,7 @@ a {
             justify-content: space-between;
     gap: 20px;
   }
-  .assesment .assesment_container .right .right_bottom > p {
+  .assesment .assesment_container .right > form .right_bottom > p {
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 496;
@@ -8996,19 +9006,19 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .assesment .assesment_container .right .right_bottom .rating {
+  .assesment .assesment_container .right > form .right_bottom .rating {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 2px;
   }
-  .assesment .assesment_container .right .right_bottom .rating > span {
+  .assesment .assesment_container .right > form .right_bottom .rating > span {
     font-size: 20px;
   }
-  .assesment .assesment_container .right .right_bottom .rating .hide {
+  .assesment .assesment_container .right > form .right_bottom .rating .hide {
     display: none;
   }
-  .assesment .assesment_container .right .right_bottom > a > button {
+  .assesment .assesment_container .right > form .right_bottom > a > button {
     width: 100px;
     border: 1px solid;
   }
