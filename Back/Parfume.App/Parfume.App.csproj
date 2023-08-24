@@ -32,4 +32,8 @@
     <ProjectReference Include="..\Parfume.Service\Parfume.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Legacy\" />
+  </ItemGroup>
+
 </Project>

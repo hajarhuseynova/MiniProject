@@ -12,8 +12,7 @@ namespace Parfume.App.ServiceRegistration
         public static void Register(this IServiceCollection service, IConfiguration configuration)
         {
             service.AddScoped<IMailService, MailService>();
-
-
+            service.AddScoped<IBasketService, BasketService>();
             service.AddScoped<ISettingService, SettingService>();
 
 

@@ -27,9 +27,6 @@
 	<div class="swiper-pagination"></div>
 </div>
 
-
-
-
 <div class="products">
 	<div class="container products_container">
 		<h1>Yeni Mehsullar</h1>
@@ -37,7 +34,7 @@
 
 			@foreach (var item in Model.Parfumes.Take(4))
 			{
-				@if (item.IsNew == true )
+				@if (item.IsNew == true)
 				{
 					<div class="product">
 						<a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
@@ -56,15 +53,17 @@
 							{
 								<p class="price">@item.SellPrice AZN</p>
 							}
-							<a><button style="width:80px">Elave et</button></a>
+							<a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id">
+								<button style="width:80px">Elave et</button>
+							</a>
 						</div>
 					</div>
 				}
-			
-						
-							
-				}
-			
+
+
+
+			}
+
 
 		</div>
 	</div>
@@ -74,29 +73,29 @@
 	<div class="container smells_container">
 		<h1>Qoxular</h1>
 		<div class="newsmeels">
-		@foreach (var item in Model.Parfumes.Take(4))
-		{
+			@foreach (var item in Model.Parfumes.Take(4))
+			{
 				<div class="smell"
 				 style="
                 background-image: url(/assets/images/@item.Image);
               ">
-				<h3>@item.Title</h3>
-				<p>@item.Desc</p>
-			</div>
-		
-		}
+					<h3>@item.Title</h3>
+					<p>@item.Desc</p>
+				</div>
+
+			}
 		</div>
 	</div>
 </div>
 
 <div class="smokes">
-        <div class="container smokes_container">
-          <h1>Tustuler</h1>
-          <div class="newsmokes">
-		@await Html.PartialAsync("_SmokePartialView",Model.Smokes.Take(4).ToList())
-     
-          </div>
-        </div>
+	<div class="container smokes_container">
+		<h1>Tustuler</h1>
+		<div class="newsmokes">
+			@await Html.PartialAsync("_SmokePartialView",Model.Smokes.Take(4).ToList())
+
+		</div>
+	</div>
 </div>
 
 <div class="sellests">
@@ -115,7 +114,7 @@
 						<p class="def">@item.Title</p>
 						<p class="cat">@item.Brand.Name</p>
 						<div class="price_star">
-					        @if (item.IsDiscount == true)
+							@if (item.IsDiscount == true)
 							{
 								<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
 							}

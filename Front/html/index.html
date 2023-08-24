@@ -20,7 +20,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
@@ -60,16 +59,73 @@
                   <i class="fa-solid fa-user"></i>
                   <span>Login</span></a
                 >
-
                 <a asp-controller="account" asp-action="register">
                   <i class="fa-solid fa-user"></i>
                   <span>Register</span></a
                 >
-
-                <a asp-controller="basket" asp-action="index"
+                <a id="basketclick" asp-controller="basket" asp-action="index"
                   ><i class="fa-solid fa-user"></i>
                   <span>Basket</span>
                 </a>
+                <div class="basket_header_inner">
+                  <div class="basketItems overflow">
+                    <div class="basketItem unvis">
+                      <div class="item_left">
+                        <img
+                          src="../assets/images/NewProduct/ProductImage.jpg"
+                        />
+                      </div>
+                      <div class="item_right">
+                        <div class="spans">
+                          <span>Chanel</span>
+                          <span>30ML</span>
+                          <span>2*95AZN</span>
+                        </div>
+                        <div class="deleteimage">
+                          <i class="fa-solid fa-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basketItem unvis">
+                      <div class="item_left">
+                        <img
+                          src="../assets/images/NewProduct/ProductImage.jpg"
+                        />
+                      </div>
+                      <div class="item_right">
+                        <div class="spans">
+                          <span>Chanel</span>
+                          <span>30ML</span>
+                          <span>2*95AZN</span>
+                        </div>
+                        <div class="deleteimage">
+                          <i class="fa-solid fa-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basketItem unvis">
+                      <div class="item_left">
+                        <img
+                          src="../assets/images/NewProduct/ProductImage.jpg"
+                        />
+                      </div>
+                      <div class="item_right">
+                        <div class="spans">
+                          <span>Chanel</span>
+                          <span>30ML</span>
+                          <span>2*95AZN</span>
+                        </div>
+                        <div class="deleteimage">
+                          <i class="fa-solid fa-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket_buttons gizli">
+                    <a><button>Resmilesdir</button></a>
+                    <a href="../html/basket.html"><button>Sebet</button></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -83,7 +139,6 @@
           </div>
         </div>
       </header>
-
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -123,7 +178,6 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-
       <div class="products">
         <div class="container products_container">
           <h1>Yeni Mehsullar</h1>

@@ -9,12 +9,12 @@ namespace Parfume.App.Context
 {
     public class ParfumeDbContext: IdentityDbContext<AppUser>
     {
-
         public DbSet<FakeSlider> FakeSlides { get; set; }
         public DbSet<Brand> Brands { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
         public DbSet<Parfum> Parfums { get; set; }
         public DbSet<Smoke> Smokes { get; set; }
-
         public DbSet<Volume> Volumes { get; set; }
         public DbSet<ParfumVolume> ParfumeVolumes { get; set; }
         public DbSet<Tester> Testers { get; set; }

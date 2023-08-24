@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Parfume.App.Context;
+using Parfume.App.Services.İnterfaces;
 using Parfume.Core.Entities;
 using Parfume.Service.Extentions;
 
@@ -15,14 +16,15 @@ namespace Parfume.App.areas.Admin.Controllers
 
         private readonly ParfumeDbContext _context;
         private readonly IWebHostEnvironment _environment;
+        private readonly IMailService _mailService;
 
-        public SmokController(ParfumeDbContext context, IWebHostEnvironment environment)
-        {
-            _context = context;
-            _environment = environment;
-
-        }
-        public async Task<IActionResult> Index(int page = 1)
+		public SmokController(ParfumeDbContext context, IWebHostEnvironment environment, IMailService mailService)
+		{
+			_context = context;
+			_environment = environment;
+			_mailService = mailService;
+		}
+		public async Task<IActionResult> Index(int page = 1)
         {
             int TotalCount = _context.Smokes.Where(x => !x.IsDeleted).Count();
             ViewBag.TotalPage = (int)Math.Ceiling((decimal)TotalCount / 5);
@@ -70,6 +72,17 @@ namespace Parfume.App.areas.Admin.Controllers
             await _context.AddAsync(smoke);
 
             await _context.SaveChangesAsync();
+
+            var mails = await _context.Subscribes.Where(x => !x.IsDeleted).ToListAsync();
+
+            string? link = Request.Scheme + "://" + Request.Host + $"/Smok/index/{smoke.Id}";
+            foreach (var mail in mails)
+            {
+                await _mailService.Send("hajarih@code.edu.az", mail.Email, link, "New Smoke");
+            }
+
+
+
             return RedirectToAction("Index", "Smok");
         }
         public async Task<IActionResult> Update(int id)
