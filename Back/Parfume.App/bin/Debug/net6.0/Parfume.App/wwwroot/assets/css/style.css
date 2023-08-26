@@ -347,6 +347,7 @@ textarea:focus {
   background-color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  overflow: hidden;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basketItems {
   display: -webkit-box;
@@ -400,9 +401,6 @@ textarea:focus {
   cursor: pointer;
   margin-top: 15px;
 }
-.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basketItems .unvis {
-  opacity: 0;
-}
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons {
   padding: 10px;
   display: -webkit-box;
@@ -422,12 +420,6 @@ textarea:focus {
           transform: scale(1);
   background-color: transparent;
   color: #ffaf06;
-}
-.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .gizli {
-  opacity: 0;
-}
-.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .overflow {
-  overflow-y: hidden;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .view {
   height: 185px;
