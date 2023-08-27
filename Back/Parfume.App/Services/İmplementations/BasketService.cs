@@ -117,7 +117,6 @@ namespace Parfume.App.Services.İmplementations
 
                 Basket? basket = await _context.Baskets.Include(x => x.basketItems.Where(y => !y.IsDeleted))
                           .ThenInclude(x => x.Parfum)
-
                            .Include(x => x.basketItems)
                              .Where(x => !x.IsDeleted && x.AppUserId == appUser.Id).FirstOrDefaultAsync();
 
@@ -133,10 +132,8 @@ namespace Parfume.App.Services.İmplementations
                             Image = item.Parfum.Image,
                             Count = item.ParfumCount,
                             Name = item.Parfum.Brand.Name,
-
-                            Price = item.Parfum.DiscountPercentage == null ? int.Parse(item.Parfum.SellPrice) :
-                                (int.Parse(item.Parfum.SellPrice) - (int.Parse(item.Parfum.SellPrice) * ((int)item.Parfum.DiscountPercentage / 100)))
-
+                            DiscountPer=(int)(item.Parfum.DiscountPercentage),
+                                Price = int.Parse(item.Parfum.SellPrice)-(int.Parse(item.Parfum.SellPrice)* (int)(item.Parfum.DiscountPercentage)/100)
 
                         });
 
@@ -168,8 +165,8 @@ namespace Parfume.App.Services.İmplementations
                                 Count = item.CountParfum,
                                 Image = parfum.Image,
                                 Name = parfum.Brand.Name,
-                                Price = parfum.DiscountPercentage == null ? int.Parse(parfum.SellPrice) :
-                                (int.Parse(parfum.SellPrice) - (int.Parse(parfum.SellPrice) * ((int)parfum.DiscountPercentage / 100)))
+                                DiscountPer = (int)(parfum.DiscountPercentage),
+                                Price = int.Parse(parfum.SellPrice)-(int.Parse(parfum.SellPrice)* (int)(parfum.DiscountPercentage)/100)
                             });
 
                         }

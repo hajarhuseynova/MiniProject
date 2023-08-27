@@ -55,14 +55,13 @@
             </div>
             <div class="line"></div>
             <div class="volume">
-              <p>Hecm Secin:</p>
+              <p>Hecm</p>
               <form action="detailp.html">
-          @foreach (var item in Model.Volumes.Take(4))
-          {
-               <input type="radio" value="@item.Id" name="quantity" />
+              @foreach (var item in Model.Volumes.Take(4))
+              {
+                <input type="radio" value="@item.Id" name="quantity" />
                 <label for="@item.Id">@item.MilliLiters</label><br />
-             
-          }
+              }
               </form>
             </div>
             <div class="line"></div>

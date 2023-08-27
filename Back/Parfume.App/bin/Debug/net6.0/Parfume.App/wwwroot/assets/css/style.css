@@ -406,23 +406,35 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 45px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: 1s;
   transition: 1s;
 }
-.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons > a > button {
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons > span {
+  margin-bottom: 10px;
+}
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+}
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button {
   background-color: #ffaf06;
   color: #fff;
   font-size: 14px;
 }
-.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons > a > button:hover {
+.navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: transparent;
   color: #ffaf06;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .view {
-  height: 185px;
+  height: 210px;
 }
 .navbar .navbar_container .navbar_bottom {
   position: absolute;
@@ -607,26 +619,30 @@ textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 18px;
+    padding-top: 0;
     -webkit-transition: 1s;
     transition: 1s;
   }
-  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons > a > button {
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons > span {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv {
+    gap: 18px;
+  }
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button {
     background-color: #ffaf06;
     color: #fff;
     font-size: 12px;
   }
-  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons > a > button:hover {
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     background-color: transparent;
     color: #ffaf06;
   }
-  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .gizli {
-    opacity: 0;
-  }
-  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .overflow {
-    overflow-y: hidden;
+  .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .view {
+    height: 195px;
   }
   .navbar .navbar_container .navbar_bottom {
     position: absolute;

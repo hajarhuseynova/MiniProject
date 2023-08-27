@@ -480,3 +480,4 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfum
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\95f38f4b-e115-40af-830e-eed03676b255ProductImage.jpg
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\Views\Shared\_SmokePartialView.cshtml
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\Views\Order\Checkout.cshtml
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\8960ea9b-4a77-4fd1-aa06-504f51d7206fProductImage.jpg
