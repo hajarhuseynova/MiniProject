@@ -117,7 +117,7 @@
 											<div class="item_right">
 												<div class="spans">
 													<span>@item.Name</span>
-													<span></span>
+													<span>@item.Volume</span>
 													<span>
 														@item.Count * @item.Price
 												
@@ -133,9 +133,7 @@
 									}
 								</div>
 								<div class="basket_buttons ">
-									<span>Total:@TotalPrice</span>
-
-
+									<span id="totalPrice">Total:@TotalPrice</span>
 									<div class="buttonsBasketDiv">
 										<a asp-action="index" asp-controller="legacy"><button>Resmilesdir</button></a>
 										<a asp-action="checkout" asp-controller="order"><button>Sebet</button></a>

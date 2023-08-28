@@ -129,8 +129,7 @@ namespace Parfume.App.areas.Admin.Controllers
             Parfum? Update = await _context.Parfums.
                   Where(c => !c.IsDeleted && c.Id == id).Include(x => x.Brand).
                 Include(x => x.ParfumVolume).
-                ThenInclude(x=>x.Volume).
-             Where(x => !x.IsDeleted).FirstOrDefaultAsync();
+                ThenInclude(x=>x.Volume).FirstOrDefaultAsync();
 
             if (parfum == null)
             {
@@ -159,12 +158,12 @@ namespace Parfume.App.areas.Admin.Controllers
             }
 
 
-            List<ParfumVolume> RemovableTag = await _context.ParfumeVolumes.
-                    Where(x => !parfum.ParfumVolumeIds.Contains(x.VolumeId))
-                    .ToListAsync();
+            //List<ParfumVolume> RemovableTag = await _context.ParfumeVolumes.
+            //        Where(x =>!parfum.ParfumVolumeIds.Contains(x.VolumeId))
+            //        .ToListAsync();
 
 
-            _context.ParfumeVolumes.RemoveRange(RemovableTag);
+            //_context.ParfumeVolumes.RemoveRange(RemovableTag);
 
             foreach (var item in parfum.ParfumVolumeIds)
             {
@@ -183,6 +182,8 @@ namespace Parfume.App.areas.Admin.Controllers
                 }
 
             }
+
+
 
 
             Update.UpdatedDate = DateTime.Now;

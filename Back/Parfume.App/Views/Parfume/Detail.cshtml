@@ -1,268 +1,334 @@
-﻿     
-  @model ParfumeViewModel
+﻿@model ParfumeViewModel
 
 
 
-      <div class="detail_intro">
-        <div class="container detail_intro_container">
-          <div class="detail_left">
-            <img src="~/assets/images/@Model.Parfum?.Image" />
-          </div>
-          <div class="detail_right">
-            <h3>@Model.Parfum?.Title</h3>
-            <p>@Model.Parfum?.Desc .</p>
-            <p class="muted">Məhsul Kodu:@Model.Parfum?.ProductCode </p>
-            <div class="bools">
-               @if (Model.Parfum.IsStock == true)
-                {
-                    <p class="stock">stokda/</p>
-                }
-                
-               @if (Model.Parfum.IsNew == true)
-                {
-                    <p class="stock">yeni/</p>
-                }
-               
-               @if (Model.Parfum.IsTrend == true)
-                {
-                    <p class="stock">trend/</p>
-                }
-             
-               @if (Model.Parfum.IsDiscount == true)
-                {
-                    <p class="stock">endirim: @Model.Parfum.DiscountPercentage %</p>
-                }
-              
-             
-            </div>
-            <div class="priceStar">
-             	@if (Model.Parfum.IsDiscount == true)
-							{
-								<p class="price">@(int.Parse(Model.Parfum.SellPrice)-int.Parse(Model.Parfum.SellPrice)*Model.Parfum.DiscountPercentage/100) AZN</p>
-							}
-							else
-							{
-								<p class="price">@Model.Parfum.SellPrice AZN</p>
-							}
-              <div class="stars">
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <p>137 rey</p>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="volume">
-              <p>Hecm</p>
-              <form action="detailp.html">
-              @foreach (var item in Model.Volumes.Take(4))
-              {
-                <input type="radio" value="@item.Id" name="quantity" />
-                <label for="@item.Id">@item.MilliLiters</label><br />
-              }
-              </form>
-            </div>
-            <div class="line"></div>
-            <div class="input_button_delete">
-              <form action="detailp.html" class="input_number">
-                <p class="minus" id="minus">-</p>
-                <input
-                  type="number"
-                  class="orangeinput"
-                  id="countInput"
-                  value="0"
-                />
-                <p class="pilus" id="pilus">+</p>
-              </form>
-              <a><button class="addtobasket">Sebete Elave Et</button></a>
-              <div class="rubish">
-                <a><img src="~/assets/icons/tester/rubish.svg" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="detail_info">
-        <div class="container detail_info_container">
-          <h1>Haqqinda</h1>
-          <p>
-          @Model.Parfum.Info1
-          </p>
-          <p class="hide">
-           @Model.Parfum.Info2
-          </p>
-        </div>
-      </div>
-      <div class="assesment">
-        <div class="container assesment_container">
-          <div class="left">
-            <h3>@Model.Parfum.Title</h3>
-            <h1>4.1</h1>
-            <div class="stars">
-              <span class="st">&#9733;</span>
-              <span class="st">&#9733;</span>
-              <span class="st">&#9733;</span>
-              <span class="st">&#9733;</span>
-            </div>
-            <p>164 rey</p>
-          </div>
-          <div class="middle">
-            <div class="row">
-              <span class="st">&#9733;</span>
+<div class="detail_intro">
+	<div class="container detail_intro_container">
+		<div class="detail_left">
+			<img src="~/assets/images/@Model.Parfum?.Image" />
+		</div>
+		<div class="detail_right">
+			<h3>@Model.Parfum?.Title</h3>
+			<p>@Model.Parfum?.Desc .</p>
+			<p class="muted">Məhsul Kodu:@Model.Parfum?.ProductCode </p>
+			<div class="bools">
+				@if (Model.Parfum.IsStock == true)
+				{
+					<p class="stock">stokda/</p>
+				}
 
-              <p>5</p>
-              <div class="hole">
-                <div class="color" style="width: 200px"></div>
-              </div>
-            </div>
-            <div class="row">
-              <span class="st">&#9733;</span>
+				@if (Model.Parfum.IsNew == true)
+				{
+					<p class="stock">yeni/</p>
+				}
 
-              <p>5</p>
-              <div class="hole">
-                <div class="color" style="width: 200px"></div>
-              </div>
-            </div>
-            <div class="row">
-              <span class="st">&#9733;</span>
+				@if (Model.Parfum.IsTrend == true)
+				{
+					<p class="stock">trend/</p>
+				}
 
-              <p>5</p>
-              <div class="hole">
-                <div class="color" style="width: 200px"></div>
-              </div>
-            </div>
-            <div class="row">
-              <span class="st">&#9733;</span>
+				@if (Model.Parfum.IsDiscount == true)
+				{
+					<p class="stock">endirim: @Model.Parfum.DiscountPercentage %</p>
+				}
 
-              <p>5</p>
-              <div class="hole">
-                <div class="color" style="width: 200px"></div>
-              </div>
-            </div>
-            <div class="row">
-              <span class="st">&#9733;</span>
 
-              <p>5</p>
-              <div class="hole">
-                <div class="color" style="width: 200px"></div>
-              </div>
-            </div>
-          </div>
-          <div class="right">
+			</div>
+			<div class="priceStar">
+				@if (Model.Parfum.IsDiscount == true)
+				{
+					<p class="price">@(int.Parse(Model.Parfum.SellPrice)-int.Parse(Model.Parfum.SellPrice)*Model.Parfum.DiscountPercentage/100) AZN</p>
+				}
+				else
+				{
+					<p class="price">@Model.Parfum.SellPrice AZN</p>
+				}
+				<div class="stars">
+					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span>
+					<p>137 rey</p>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="volume">
+				<p>Hecm</p>
+				<form action="detailp.html">
 
-          <form asp-controller="parfume" asp-action="addcomment" method="post">
-            <input placeholder="Basliq" type="text" />
-            <textarea
-              placeholder="Metn daxil edin"
-              rows="4"
-              cols="40"
-            ></textarea>
-            <div class="right_bottom">
-              <p>Reytinq</p>
-              <div class="rating">
-                <span class="star" data-value="1" id="star_1">&#9733;</span>
-                <span class="star" data-value="1" id="star_2">&#9733;</span>
-                <span class="star" data-value="1" id="star_3">&#9733;</span>
-                <span class="star" data-value="1" id="star_4">&#9733;</span>
-                <span class="star" data-value="1" id="star_5">&#9733;</span>
-              </div>
-              <a><button>Gonder</button></a>
-          </form>
+					@foreach (var item in Model.Parfum.ParfumVolume)
+					{
+						<input type="radio" value="@item.Id" name="quantity" />
+						<label for="@item.Id">@item.Volume.MilliLiters</label>
 
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="comments">
-        <div class="container comments_container">
- 
-          <div class="line"></div>
-          <div class="comment">
-            <div class="left">
-              <h3></h3>
-              <div class="left_stars">
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-                <span class="st">&#9733;</span>
-              </div>
-            </div>
-            <div class="middle">
-              <h3></h3>
-              <p>
-            
-              </p>
-            </div>
-            <div class="right">
-              <p>15.04.2022</p>
-              <div class="likes">
-                <div class="lik">
-                  <img
-                    src="~/assets/icons/detail/like.svg"
-                    class="like"
-                    onclick="increaseLike(this)"
-                  />
-                  <p class="like-count">LIKE</p>
-                </div>
-                <div class="lik">
-                  <img
-                    src="~/assets/icons/detail/dislike.svg"
-                    class="dislike"
-                    onclick="decreaseDislike(this)"
-                  />
-                  <p class="dislike-count">DISLIKE</p>
-                </div>
-              </div>
-            </div>
-          </div>
+						<br />
+					}
+				</form>
+			</div>
+			<div class="line"></div>
+			<div class="input_button_delete">
+				<form action="detailp.html" class="input_number">
+					<p class="minus" id="minus">-</p>
+					<input type="number"
+						   class="orangeinput"
+						   id="countInput"
+						   value="0"
+						   type="number" />
+					<p class="pilus" id="pilus">+</p>
+				</form>
+				<a class="addbasketdetail" asp-action="addbasket" asp-controller="parfume" asp-route-id="@Model.Parfum.Id">
+					<button class="addtobasket">Sebete Elave Et</button>
+				</a>
+				<div class="rubish">
+					<a><img src="~/assets/icons/tester/rubish.svg" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="detail_info">
+	<div class="container detail_info_container">
+		<h1>Haqqinda</h1>
+		<p>
+			@Model.Parfum.Info1
+		</p>
+		<p class="hide">
+			@Model.Parfum.Info2
+		</p>
+	</div>
+</div>
+<div class="assesment">
+	<div class="container assesment_container">
+		<div class="left">
+			<h3>@Model.Parfum.Title</h3>
+			<h1>4.1</h1>
+			<div class="stars">
+				<span class="st">&#9733;</span>
+				<span class="st">&#9733;</span>
+				<span class="st">&#9733;</span>
+				<span class="st">&#9733;</span>
+			</div>
+			<p>164 rey</p>
+		</div>
+		<div class="middle">
+			<div class="row">
+				<span class="st">&#9733;</span>
 
-       
-          
-        </div>
-      </div>
-      <div class="products">
-        <div class="container products_container">
-          <h1>Yeni Mehsullar</h1>
-          <div class="newproducts">
-           @foreach (var item in Model.Parfumes.Take(4))
-            {
-               
-            <div class="product ">
-           <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">   <img
-                src="~/assets/images/@item.Image"
-                alt="productImage"
-              /></a>
-              <div class="new">Yeni</div>
-              <p class="def">@item.Title</p>
-              <p class="cat">@item.Brand.Name</p>
-              <div class="price_star">
-              	@if (item.IsDiscount == true)
-							{
-								<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
-							}
-							else
-							{
-								<p class="price">@item.SellPrice AZN</p>
-							}
-                <a><button style="width:80px">Elave et</button></a>
-              </div>
-            </div>
-                
-            }
-         
-          </div>
-        </div>
-      </div>
-         <div style="margin-bottom:40px" class="functions">
-        <div class="container functions_container">
-         @await Html.PartialAsync("_FunctionPartialView",Model.Functions.Take(4).ToList())
-         
-        </div>
-      </div>
+				<p>5</p>
+				<div class="hole">
+					<div class="color" style="width: 200px"></div>
+				</div>
+			</div>
+			<div class="row">
+				<span class="st">&#9733;</span>
+
+				<p>5</p>
+				<div class="hole">
+					<div class="color" style="width: 200px"></div>
+				</div>
+			</div>
+			<div class="row">
+				<span class="st">&#9733;</span>
+
+				<p>5</p>
+				<div class="hole">
+					<div class="color" style="width: 200px"></div>
+				</div>
+			</div>
+			<div class="row">
+				<span class="st">&#9733;</span>
+
+				<p>5</p>
+				<div class="hole">
+					<div class="color" style="width: 200px"></div>
+				</div>
+			</div>
+			<div class="row">
+				<span class="st">&#9733;</span>
+
+				<p>5</p>
+				<div class="hole">
+					<div class="color" style="width: 200px"></div>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+
+			<form asp-controller="parfume" asp-action="addcomment" method="post">
+				<input placeholder="Basliq" type="text" />
+				<textarea placeholder="Metn daxil edin"
+						  rows="4"
+						  cols="40"></textarea>
+				<div class="right_bottom">
+					<p>Reytinq</p>
+					<div class="rating">
+						<span class="star" data-value="1" id="star_1">&#9733;</span>
+						<span class="star" data-value="1" id="star_2">&#9733;</span>
+						<span class="star" data-value="1" id="star_3">&#9733;</span>
+						<span class="star" data-value="1" id="star_4">&#9733;</span>
+						<span class="star" data-value="1" id="star_5">&#9733;</span>
+					</div>
+					<a><button>Gonder</button></a>
+			</form>
+
+		</div>
+	</div>
+</div>
+	  </div>
+<div class="comments">
+	<div class="container comments_container">
+
+		<div class="line"></div>
+		<div class="comment">
+			<div class="left">
+				<h3></h3>
+				<div class="left_stars">
+					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span>
+				</div>
+			</div>
+			<div class="middle">
+				<h3></h3>
+				<p>
+
+				</p>
+			</div>
+			<div class="right">
+				<p>15.04.2022</p>
+				<div class="likes">
+					<div class="lik">
+						<img src="~/assets/icons/detail/like.svg"
+							 class="like"
+							 onclick="increaseLike(this)" />
+						<p class="like-count">LIKE</p>
+					</div>
+					<div class="lik">
+						<img src="~/assets/icons/detail/dislike.svg"
+							 class="dislike"
+							 onclick="decreaseDislike(this)" />
+						<p class="dislike-count">DISLIKE</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
- 
+	</div>
+</div>
+<div class="products">
+	<div class="container products_container">
+		<h1>Yeni Mehsullar</h1>
+		<div class="newproducts">
+			@foreach (var item in Model.Parfumes.Take(4))
+			{
+
+				<div class="product ">
+					<a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
+						<img src="~/assets/images/@item.Image"
+						 alt="productImage" />
+					</a>
+					<div class="new">Yeni</div>
+					<p class="def">@item.Title</p>
+					<p class="cat">@item.Brand.Name</p>
+					<div class="price_star">
+						@if (item.IsDiscount == true)
+						{
+							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+						}
+						else
+						{
+							<p class="price">@item.SellPrice AZN</p>
+						}
+						<a><button style="width:80px">Elave et</button></a>
+					</div>
+				</div>
+
+			}
+
+		</div>
+	</div>
+</div>
+<div style="margin-bottom:40px" class="functions">
+	<div class="container functions_container">
+		@await Html.PartialAsync("_FunctionPartialView",Model.Functions.Take(4).ToList())
+
+	</div>
+</div>
+
+
+<script>
+			const addbasketdetail=document.querySelector(".addbasketdetail");
+		
+        	const totalPriceElement = document.getElementById("totalPrice");
+
+
+	//const products = document.querySelectorAll(".add-basket-product");
+	//const totalCountElement = document.getElementById("totalCount");
+	//const bagCount = document.querySelector(".bag-count p")
+	//const bagTotalPrice = document.querySelector(".shop-basket span:nth-child(3)")
+
+			
+
+	 addbasketdetail.addEventListener("click", (e) => {
+			e.preventDefault();
+			let href = addbasketdetail.getAttribute("href");
+			href=href+`?count=${inputValue.value}`
+			let TotalPrice = 0;
+			let TotalCount = 0;
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/parfume/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
+						TotalCount++;
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
+
+											<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+													<span>${basket.volume}</span>
+													<span>${basket.count} * ${basket.price}</span>
+												</div>
+												<div class="deleteimage">
+													<a href="/parfume/RemoveBasket/${basket.parfumeId}"">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+
+										`
+						basketItems.innerHTML += basketView;
+
+					})
+				
+					totalPriceElement.innerHTML = TotalPrice;
+					
+
+
+
+
+					 })
+				 }
+
+				})
+	  })
+</script>
+
+
+
+

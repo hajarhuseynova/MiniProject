@@ -60,7 +60,7 @@
 
 
 		<div class="form-group">
-            <select asp-for="ParfumVolumeIds" class="form-select" aria-label="Default select example">
+            <select multiple asp-for="ParfumVolumeIds" class="form-select" aria-label="Default select example">
                 <option selected>Olcu Sec</option>
                 @foreach (var item in  ViewBag.Volume)
                 {

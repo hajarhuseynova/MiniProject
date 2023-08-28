@@ -61,7 +61,7 @@
 
 
 			       <div class="form-group">
-            <select  asp-for="ParfumVolumeIds" class="form-select" aria-label="Disabled select example">
+            <select multiple asp-for="ParfumVolumeIds" class="form-select" aria-label="Disabled select example">
                 @foreach (var item in ViewBag.Volume)
                 {
                     @if (Model.ParfumVolume.Any(x => x.VolumeId == item.Id))

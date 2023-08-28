@@ -31,7 +31,6 @@
 	<div class="container products_container">
 		<h1>Yeni Mehsullar</h1>
 		<div class="newproducts">
-
 			@foreach (var item in Model.Parfumes.Take(4))
 			{
 				@if (item.IsNew == true)
@@ -43,7 +42,9 @@
 						</a>
 						<div class="new">Yeni</div>
 						<p class="def">@item.Title</p>
-						<p class="cat">@item.Brand.Name</p>
+						<p class="cat">
+							@item.Brand.Name
+						</p>
 						<div class="price_star">
 							@if (item.IsDiscount == true)
 							{
@@ -53,8 +54,8 @@
 							{
 								<p class="price">@item.SellPrice AZN</p>
 							}
-							<a asp-action="addbasket" asp-controller="parfume" asp-route-id="@item.Id">
-								<button style="width:80px">Elave et</button>
+							<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id">
+								<button style="width:80px">Melumat</button>
 							</a>
 						</div>
 					</div>
@@ -122,7 +123,9 @@
 							{
 								<p class="price">@item.SellPrice AZN</p>
 							}
-							<a><button>Elave et</button></a>
+							<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id">
+								<button style="width:80px">Melumat</button>
+							</a>
 						</div>
 					</div>
 				}
@@ -182,7 +185,9 @@
 							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
 
 							<del class="price_discount">@item.SellPrice AZN</del>
-							<a><button>Elave</button></a>
+							<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id">
+								<button style="width:80px">Melumat</button>
+							</a>
 						</div>
 					</div>
 				}
