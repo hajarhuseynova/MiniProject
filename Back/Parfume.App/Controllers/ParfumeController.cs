@@ -105,6 +105,5 @@ namespace Parfume.App.Controllers
             return Redirect(Request.Headers["Referer"].ToString());
         }
 
-
     }
 }

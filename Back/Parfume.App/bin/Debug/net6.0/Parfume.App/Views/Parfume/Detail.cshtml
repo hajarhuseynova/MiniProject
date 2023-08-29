@@ -71,18 +71,16 @@
 				<form action="detailp.html" class="input_number">
 					<p class="minus" id="minus">-</p>
 					<input type="number"
-						   class="orangeinput"
+						   class="orangeinput specialJsInput"
 						   id="countInput"
-						   value="0"
+						   value="1"
 						   type="number" />
 					<p class="pilus" id="pilus">+</p>
 				</form>
 				<a class="addbasketdetail" asp-action="addbasket" asp-controller="parfume" asp-route-id="@Model.Parfum.Id">
 					<button class="addtobasket">Sebete Elave Et</button>
 				</a>
-				<div class="rubish">
-					<a><img src="~/assets/icons/tester/rubish.svg" /></a>
-				</div>
+			
 			</div>
 		</div>
 	</div>
@@ -263,23 +261,20 @@
 
 <script>
 			const addbasketdetail=document.querySelector(".addbasketdetail");
-		
+			const specialJsInput=document.querySelector(".specialJsInput");
         	const totalPriceElement = document.getElementById("totalPrice");
 
-
-	//const products = document.querySelectorAll(".add-basket-product");
-	//const totalCountElement = document.getElementById("totalCount");
-	//const bagCount = document.querySelector(".bag-count p")
-	//const bagTotalPrice = document.querySelector(".shop-basket span:nth-child(3)")
-
-			
+			console.log(specialJsInput)
 
 	 addbasketdetail.addEventListener("click", (e) => {
 			e.preventDefault();
+
 			let href = addbasketdetail.getAttribute("href");
-			href=href+`?count=${inputValue.value}`
+
+			href=href+`?count=${specialJsInput.value}`
+
 			let TotalPrice = 0;
-			let TotalCount = 0;
+			
 			fetch(href)
 				.then(x => x.json())
 				.then(x => {
@@ -289,10 +284,9 @@
 					 .then(b=>{
 							basketItems.innerHTML=""
 					b.forEach(basket => {
-						TotalCount++;
+						
 						TotalPrice += basket.price*basket.count;
 							let basketView=`
-
 											<div class="basketItem unvis">
 											<div class="item_left">
 												<img src="/assets/images/${basket.image}" />
@@ -304,13 +298,12 @@
 													<span>${basket.count} * ${basket.price}</span>
 												</div>
 												<div class="deleteimage">
-													<a href="/parfume/RemoveBasket/${basket.parfumeId}"">
+													<a href="/parfume/RemoveBasket/${basket.parfumId}" data-id="">
 														<i class="fa-solid fa-x"></i>
 													</a>
 												</div>
 											</div>
 										</div>
-
 										`
 						basketItems.innerHTML += basketView;
 
@@ -318,7 +311,22 @@
 				
 					totalPriceElement.innerHTML = TotalPrice;
 					
+					 const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.addEventListener('mouseenter', Swal.stopTimer)
+                            toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                    })
 
+                    Toast.fire({
+                        icon: 'success',
+                        title: `Elave edildi!`
+                    })
 
 
 
@@ -328,7 +336,3 @@
 				})
 	  })
 </script>
-
-
-
-

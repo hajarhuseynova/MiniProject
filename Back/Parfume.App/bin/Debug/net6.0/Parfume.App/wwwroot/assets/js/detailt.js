@@ -1,15 +1,15 @@
 const min = document.getElementById("low");
 const pil = document.getElementById("high");
-const inputValue = document.getElementById("countInputSmoke");
+const inputValu = document.getElementById("countInputSmoke");
 
 min.addEventListener("click", () => {
   if (inputValue.value > 0) {
-    inputValue.value = parseInt(inputValue.value) - 1;
+    inputValu.value = parseInt(inputValu.value) - 1;
   }
 });
 
 pil.addEventListener("click", () => {
-  inputValue.value = parseInt(inputValue.value) + 1;
+  inputValu.value = parseInt(inputValu.value) + 1;
 });
 
 function increaseLike(element) {

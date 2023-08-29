@@ -101,7 +101,7 @@
 								@Html.Raw(set?.Icon3)<span style="margin-left:5px">Basket</span>
 							</a>
 
-							<div class="basket_header_inner">
+						<div class="basket_header_inner">
 								<div class="basketItems ">
 									@foreach (var item in basketItemViewModels)
 									{
@@ -120,7 +120,6 @@
 													<span>@item.Volume</span>
 													<span>
 														@item.Count * @item.Price
-												
 													</span>
 												</div>
 												<div class="deleteimage">

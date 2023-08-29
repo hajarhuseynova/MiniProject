@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const filter = button.getAttribute("data-filter");
       button.style.backgroundColor = "black";
-
+     
       sellesItems.forEach((item) => {
         const category = item.querySelector(".cat").textContent.toLowerCase();
         if (filter === "all" || category === filter) {

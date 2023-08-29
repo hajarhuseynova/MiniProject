@@ -24,5 +24,6 @@ namespace Parfume.Core.Entities
         //public GiftBox GiftBox { get; set; }
         //say
         public int ParfumCount { get; set; }
+
     }
 }

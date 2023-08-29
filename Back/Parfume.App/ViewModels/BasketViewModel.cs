@@ -4,6 +4,8 @@
 	{
 		public int ParfumId { get; set; }
 		public int CountParfum { get; set; }
+		public int VolumeParfum { get; set; }
+
 
 	}
 }
