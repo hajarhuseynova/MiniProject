@@ -228,38 +228,6 @@ namespace Parfume.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Parfume.Core.Entities.BaseEntities.ParfumVolume", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("ParfumId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("VolumeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ParfumId");
-
-                    b.HasIndex("VolumeId");
-
-                    b.ToTable("ParfumeVolumes");
-                });
-
             modelBuilder.Entity("Parfume.Core.Entities.Basket", b =>
                 {
                     b.Property<int>("Id")
@@ -539,9 +507,14 @@ namespace Parfume.Data.Migrations
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("VolumeId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("BrandId");
+
+                    b.HasIndex("VolumeId");
 
                     b.ToTable("Parfums");
                 });
@@ -589,6 +562,109 @@ namespace Parfume.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Places");
+                });
+
+            modelBuilder.Entity("Parfume.Core.Entities.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("BuyPrice")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CountSell")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Desc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("DiscountPercentage")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Info1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Info2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDiscount")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsNew")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsStock")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsTrend")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ProductCategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SellPrice")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("TimeSell")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductCategoryId");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("Parfume.Core.Entities.ProductCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("Parfume.Core.Entities.SendMessage", b =>
@@ -1256,25 +1332,6 @@ namespace Parfume.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Parfume.Core.Entities.BaseEntities.ParfumVolume", b =>
-                {
-                    b.HasOne("Parfume.Core.Entities.Parfum", "Parfum")
-                        .WithMany("ParfumVolume")
-                        .HasForeignKey("ParfumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Parfume.Core.Entities.Volume", "Volume")
-                        .WithMany("ParfumVolume")
-                        .HasForeignKey("VolumeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Parfum");
-
-                    b.Navigation("Volume");
-                });
-
             modelBuilder.Entity("Parfume.Core.Entities.Basket", b =>
                 {
                     b.HasOne("Parfume.Core.Entities.AppUser", "AppUser")
@@ -1308,10 +1365,51 @@ namespace Parfume.Data.Migrations
             modelBuilder.Entity("Parfume.Core.Entities.Parfum", b =>
                 {
                     b.HasOne("Parfume.Core.Entities.Brand", "Brand")
-                        .WithMany()
+                        .WithMany("Parfums")
                         .HasForeignKey("BrandId");
 
+                    b.HasOne("Parfume.Core.Entities.Volume", "Volume")
+                        .WithMany("Parfumes")
+                        .HasForeignKey("VolumeId");
+
                     b.Navigation("Brand");
+
+                    b.Navigation("Volume");
+                });
+
+            modelBuilder.Entity("Parfume.Core.Entities.Product", b =>
+                {
+                    b.HasOne("Parfume.Core.Entities.ProductCategory", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("ProductCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("System.Collections.Generic.Dictionary<string, string>", "Properties", b1 =>
+                        {
+                            b1.Property<int>("ProductId")
+                                .HasColumnType("int");
+
+                            b1.Property<string>("Key")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PropertyKey");
+
+                            b1.Property<string>("Value")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PropertyValue");
+
+                            b1.HasKey("ProductId");
+
+                            b1.ToTable("ProductProperties", (string)null);
+
+                            b1.WithOwner()
+                                .HasForeignKey("ProductId");
+                        });
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Properties")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Parfume.Core.Entities.Tester", b =>
@@ -1335,17 +1433,19 @@ namespace Parfume.Data.Migrations
 
             modelBuilder.Entity("Parfume.Core.Entities.Brand", b =>
                 {
+                    b.Navigation("Parfums");
+
                     b.Navigation("Testers");
                 });
 
-            modelBuilder.Entity("Parfume.Core.Entities.Parfum", b =>
+            modelBuilder.Entity("Parfume.Core.Entities.ProductCategory", b =>
                 {
-                    b.Navigation("ParfumVolume");
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Parfume.Core.Entities.Volume", b =>
                 {
-                    b.Navigation("ParfumVolume");
+                    b.Navigation("Parfumes");
                 });
 #pragma warning restore 612, 618
         }

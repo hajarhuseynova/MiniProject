@@ -156,7 +156,7 @@
         display: flex;
         cursor: pointer;
         width: fit-content;
-        padding: 10px;
+        padding: 15px;
         border-radius: 10px;
         height: 30px;
         background-color: $orange_01;
@@ -273,7 +273,7 @@
       justify-content: center;
       .selles {
         width: 295px;
-        height: 400px;
+        height: 390px;
         background-color: $white;
         border-radius: 8px 8px;
         border: 1px solid transparent;
@@ -281,10 +281,10 @@
         transition: 0.5s;
         > a {
           width: 295px;
-          height: 295px;
+          height: 260px;
           > img {
             width: 295px;
-            height: 295px;
+            height: 260px;
             border-radius: 8px 8px 0px 0px;
           }
         }
@@ -295,9 +295,9 @@
           line-height: 24px;
           letter-spacing: 0em;
           text-align: left;
-          margin-left: 10px;
+          padding: 0 18px;
           margin-bottom: 10px;
-          margin-top: 7px;
+          margin-top: 15px;
         }
         .cat {
           font-family: Space Mono;
@@ -307,13 +307,15 @@
           letter-spacing: 0em;
           text-align: left;
           color: $orange_03;
-          margin-bottom: 6px;
-          margin-left: 10px;
+          margin-bottom: 10px;
+          padding: 0 18px;
         }
         .price_star {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          padding: 0 18px;
+
           .price {
             font-family: New York;
             font-size: 16px;
@@ -322,11 +324,9 @@
             letter-spacing: 0em;
             text-align: left;
             color: $black_03;
-            margin-left: 10px;
           }
           > a {
             > button {
-              margin-right: 10px;
               width: 120px;
             }
           }
@@ -357,10 +357,10 @@
           border-radius: 8px 8px;
           > a {
             width: 230px;
-            height: 230px;
+            height: 210px;
             > img {
               width: 230px;
-              height: 230px;
+              height: 210px;
               border-radius: 8px 8px 0px 0px;
             }
           }
@@ -371,9 +371,9 @@
             line-height: 22px;
             letter-spacing: 0em;
             text-align: left;
-            margin-left: 10px;
+            padding: 0 15px;
             margin-bottom: 10px;
-            margin-top: 7px;
+            margin-top: 10px;
           }
           .cat {
             font-family: Space Mono;
@@ -383,13 +383,15 @@
             letter-spacing: 0em;
             text-align: left;
             color: $orange_03;
-            margin-bottom: 6px;
-            margin-left: 10px;
+            margin-bottom: 10px;
+            padding: 0 15px;
           }
           .price_star {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 15px;
+
             .price {
               font-family: New York;
               font-size: 16px;
@@ -398,11 +400,9 @@
               letter-spacing: 0em;
               text-align: left;
               color: $black_03;
-              margin-left: 10px;
             }
             > a {
               > button {
-                margin-right: 10px;
                 width: 95px;
               }
             }
@@ -435,10 +435,10 @@
           border-radius: 8px 8px;
           > a {
             width: 180px;
-            height: 180px;
+            height: 170px;
             > img {
               width: 180px;
-              height: 180px;
+              height: 170px;
               border-radius: 8px 8px 0px 0px;
             }
           }
@@ -449,9 +449,9 @@
             line-height: 16px;
             letter-spacing: 0em;
             text-align: left;
-            margin-left: 10px;
-            margin-bottom: 10px;
-            margin-top: 5px;
+            padding: 0 13px;
+            margin-bottom: 7px;
+            margin-top: 8px;
           }
           .cat {
             font-family: Space Mono;
@@ -461,13 +461,16 @@
             letter-spacing: 0em;
             text-align: left;
             color: $orange_03;
-            margin-bottom: 6px;
-            margin-left: 10px;
+            padding: 0 13px;
+
+            margin-bottom: 7px;
           }
           .price_star {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 13px;
+
             .price {
               font-family: New York;
               font-size: 14px;

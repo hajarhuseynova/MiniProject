@@ -32,12 +32,8 @@ namespace Parfume.Core.Entities
         public int? BrandId { get; set; }
         public Brand? Brand { get; set; }
         //Volume
-        public List<ParfumVolume>? ParfumVolume { get; set; }
-        [NotMapped]
-        public List<int>? ParfumVolumeIds { get; set; }
-
-
-
+        public int? VolumeId { get; set; }
+        public Volume? Volume { get; set; }
 
     }
 }

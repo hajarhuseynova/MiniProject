@@ -22,5 +22,7 @@ namespace Parfume.Core.Entities
         public IFormFile? FormFile { get; set; }
         public int? BrandId { get; set; }
         public Brand? Brand { get; set; }
+
+
     }
 }

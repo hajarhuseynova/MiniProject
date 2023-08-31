@@ -15,12 +15,15 @@ namespace Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signinManager;
         private readonly IMailService _mailService;
+
+
         public SmokeController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null)
         {
             _context = context;
             _userManager = userManager;
             _signinManager = signinManager;
             _mailService = mailService;
+           
         }
 
         public async Task<IActionResult> Index(int? id = null)
@@ -86,5 +89,6 @@ namespace Controllers
 
             return Json(smokes);
         }
+
     }
 }

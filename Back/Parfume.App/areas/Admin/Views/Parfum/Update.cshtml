@@ -60,23 +60,19 @@
 
 
 
-			       <div class="form-group">
-            <select multiple asp-for="ParfumVolumeIds" class="form-select" aria-label="Disabled select example">
-                @foreach (var item in ViewBag.Volume)
+				<div class="form-group">
+            <select asp-for="VolumeId" class="form-select" aria-label="Default select example">
+                <option selected>Olcu Sec</option>
+                @foreach (var item in  ViewBag.Volume)
                 {
-                    @if (Model.ParfumVolume.Any(x => x.VolumeId == item.Id))
-                    {
-                        <option selected value="@item.Id">@item.MilliLiters</option>
-                    }
-                    else
-                    {
-                        <option value="@item.Id">@item.MilliLiters</option>
-                    }
+                    <option value="@item.Id">@item.MilliLiters</option>
 
                 }
             </select>
-            <span class="text text-danger" asp-validation-for="ParfumVolumeIds"></span>
+            <span class="text text-danger" asp-validation-for="VolumeId"></span>
         </div>
+
+
 
 
 

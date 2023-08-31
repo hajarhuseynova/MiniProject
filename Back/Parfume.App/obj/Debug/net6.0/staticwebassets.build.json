@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OMMhkEvu2eXBd1J1+uOvuKK/VMtJQ1QM+rclL7o7i1w=",
+  "Hash": "VtQR/co7L0HXCGl4DbfMKBcpi7jCKrOI4bVRpAJ2ilg=",
   "Source": "Parfume.App",
   "BasePath": "_content/Parfume.App",
   "Mode": "Default",
@@ -748,6 +748,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\0be6816d-8738-473c-a9e1-afb5fbd131f8Burger.svg"
     },
     {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\0e49a24a-52a3-463e-b0c0-e1e4174a57a8ProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/0e49a24a-52a3-463e-b0c0-e1e4174a57a8ProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\0e49a24a-52a3-463e-b0c0-e1e4174a57a8ProductImage.jpg"
+    },
+    {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\0f168d71-95b1-427c-8b25-41b4a6aa84d1Call.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
@@ -780,6 +797,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\111883bb-e273-4278-b125-48977015e177Screenshot (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\12ec3eaf-7855-4095-97e5-0cfc400142fbProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/12ec3eaf-7855-4095-97e5-0cfc400142fbProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\12ec3eaf-7855-4095-97e5-0cfc400142fbProductImage.jpg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\143d3e92-06cd-4e7f-a0b4-be943f06c92dProductImage.jpg",
@@ -986,6 +1020,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\21ca76a2-c630-4fa1-ad29-e50887d68c47hajar.jpg"
     },
     {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\252a2ef4-88e1-4332-a80c-b37dd8d2a0a6ProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/252a2ef4-88e1-4332-a80c-b37dd8d2a0a6ProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\252a2ef4-88e1-4332-a80c-b37dd8d2a0a6ProductImage.jpg"
+    },
+    {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\25c7b202-804b-4b51-9a07-6d8af6cd00deProductImage.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
@@ -1071,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\312dd8f6-0345-4c83-9c61-3cfb42406434ProductImage.jpg"
     },
     {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\35ca5a78-bdb2-4d8b-9c1d-ed2fba7e26ffProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/35ca5a78-bdb2-4d8b-9c1d-ed2fba7e26ffProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\35ca5a78-bdb2-4d8b-9c1d-ed2fba7e26ffProductImage.jpg"
+    },
+    {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\360dc8e3-ccf7-4ee4-a61e-19385414d386parfume.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
@@ -1154,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\41dc708a-8079-4379-bd54-d130e8a1c896ProductImage.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\420ed910-ea49-4c62-9ec3-3ffd0bba686aProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/420ed910-ea49-4c62-9ec3-3ffd0bba686aProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\420ed910-ea49-4c62-9ec3-3ffd0bba686aProductImage.jpg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\4218f08b-7968-42a7-a529-49f8c8988971rafa.jpg",
@@ -1513,6 +1598,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\8960ea9b-4a77-4fd1-aa06-504f51d7206fProductImage.jpg"
     },
     {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\8da0619d-d1ab-4fd6-b238-8bcea5f37ba6ProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/8da0619d-d1ab-4fd6-b238-8bcea5f37ba6ProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\8da0619d-d1ab-4fd6-b238-8bcea5f37ba6ProductImage.jpg"
+    },
+    {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\8eb2bda1-f9d8-473b-a576-67636e5f80d0hajar.jpg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
@@ -1545,6 +1647,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\8ed3ddf1-4092-422b-9b09-86deba8936darafa.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\907767d2-dfab-47b2-b777-746c828d2eeeProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/907767d2-dfab-47b2-b777-746c828d2eeeProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\907767d2-dfab-47b2-b777-746c828d2eeeProductImage.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\908372e5-e48e-4ca7-acb6-df4cb69de9dfProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/908372e5-e48e-4ca7-acb6-df4cb69de9dfProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\908372e5-e48e-4ca7-acb6-df4cb69de9dfProductImage.jpg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\916aed35-aeb6-46af-9d7d-322e7a1bb6b5hajarr.jpg",
@@ -1681,6 +1817,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\a36d3bc4-2209-4e9d-abbd-a92842fd18c3parfume.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\a4e54fbf-da9d-4612-8fd8-e490b3139ebeProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/a4e54fbf-da9d-4612-8fd8-e490b3139ebeProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\a4e54fbf-da9d-4612-8fd8-e490b3139ebeProductImage.jpg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\a5be4776-039f-4858-959a-32733f4078ecScreenshot (46).png",
@@ -1972,6 +2125,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\c0f17730-b3de-4559-b5cc-62a0b29f4feeLogo.svg"
     },
     {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\c1ebc2a1-8287-413d-955a-7349f5e3ac3cProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/c1ebc2a1-8287-413d-955a-7349f5e3ac3cProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\c1ebc2a1-8287-413d-955a-7349f5e3ac3cProductImage.jpg"
+    },
+    {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\c73fb193-d1aa-4e5a-9e50-2224135c8516Logo.svg",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
@@ -2004,6 +2174,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\c8864451-d157-4988-8205-8ef4359afd25rafa.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\c8f9b126-5168-46ef-8be8-2740280a8145ProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/c8f9b126-5168-46ef-8be8-2740280a8145ProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\c8f9b126-5168-46ef-8be8-2740280a8145ProductImage.jpg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\ca092e56-878e-488d-bd73-50b8ca0b6558ProductImage.jpg",
@@ -2074,6 +2261,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\d012ead7-d01d-469f-a3c8-4030eab4321bScreenshot (9).png"
     },
     {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\d043caa7-66e6-4a66-8bae-9b346eecdd9cProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/d043caa7-66e6-4a66-8bae-9b346eecdd9cProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\d043caa7-66e6-4a66-8bae-9b346eecdd9cProductImage.jpg"
+    },
+    {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\d32cf4cd-577b-4a4d-bd15-75291b82720cScreenshot (10).png",
       "SourceId": "Parfume.App",
       "SourceType": "Discovered",
@@ -2123,6 +2327,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\dc9624c1-1d78-4eeb-96b3-5ac4538dbea0Screenshot (2).png"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\dfdad7e7-d2b8-468e-8d17-5fcd9281ead8ProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/dfdad7e7-d2b8-468e-8d17-5fcd9281ead8ProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\dfdad7e7-d2b8-468e-8d17-5fcd9281ead8ProductImage.jpg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\e0fb4af2-5f78-4340-8fb7-b139f8988487ProductImage.jpg",
@@ -2276,6 +2497,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\ed655feb-446c-4ff9-8230-0cad4fe829b0ProductImage.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\f7073048-3bda-4dd5-8b3d-d53ce9845a9eProductImage.jpg",
+      "SourceId": "Parfume.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\",
+      "BasePath": "_content/Parfume.App",
+      "RelativePath": "assets/images/f7073048-3bda-4dd5-8b3d-d53ce9845a9eProductImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\f7073048-3bda-4dd5-8b3d-d53ce9845a9eProductImage.jpg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\Parfume_FrontEnd\\Back\\Parfume.App\\wwwroot\\assets\\images\\GiftBox\\box1.jpg",

@@ -1,0 +1,12 @@
+﻿@model ProductCategory
+<div class="container">
+	<form method="post">
+		<div class="form-group">
+			<label for="name" >Name:</label>
+			<input type="text" class="form-control" asp-for="@Model.Name"/>
+		<span class="text" asp-validation-for="@Model.Name">Not Valid</span>
+			@Html.AntiForgeryToken()
+		</div>
+	<button type="submit">Yenile</button>
+	</form>
+</div>

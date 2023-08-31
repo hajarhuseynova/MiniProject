@@ -1,7 +1,5 @@
 ﻿@model ParfumeViewModel
 
-
-
 <div class="detail_intro">
 	<div class="container detail_intro_container">
 		<div class="detail_left">
@@ -48,22 +46,16 @@
 					<span class="st">&#9733;</span>
 					<span class="st">&#9733;</span>
 					<span class="st">&#9733;</span>
-					<span class="st">&#9733;</span>
+					<span class="st">&#9733;</span> 
 					<p>137 rey</p>
 				</div>
 			</div>
 			<div class="line"></div>
 			<div class="volume">
-				<p>Hecm</p>
+				<p>Hecm:</p>
 				<form action="detailp.html">
-
-					@foreach (var item in Model.Parfum.ParfumVolume)
-					{
-						<input type="radio" value="@item.Id" name="quantity" />
-						<label for="@item.Id">@item.Volume.MilliLiters</label>
-
-						<br />
-					}
+						<input type="radio" checked value="@Model.Parfum.VolumeId" name="quantity"  />
+						<label for="@Model.Parfum.VolumeId">@Model.Parfum.Volume.MilliLiters ML</label>
 				</form>
 			</div>
 			<div class="line"></div>
@@ -262,17 +254,12 @@
 <script>
 			const addbasketdetail=document.querySelector(".addbasketdetail");
 			const specialJsInput=document.querySelector(".specialJsInput");
-        	const totalPriceElement = document.getElementById("totalPrice");
-
-			console.log(specialJsInput)
-
+        	const totalPriceElement = document.getElementById("totalPrice");	
 	 addbasketdetail.addEventListener("click", (e) => {
 			e.preventDefault();
 
 			let href = addbasketdetail.getAttribute("href");
-
 			href=href+`?count=${specialJsInput.value}`
-
 			let TotalPrice = 0;
 			
 			fetch(href)
@@ -284,7 +271,6 @@
 					 .then(b=>{
 							basketItems.innerHTML=""
 					b.forEach(basket => {
-						
 						TotalPrice += basket.price*basket.count;
 							let basketView=`
 											<div class="basketItem unvis">
@@ -294,11 +280,11 @@
 											<div class="item_right">
 												<div class="spans">
 													<span>${basket.name}</span>
-													<span>${basket.volume}</span>
-													<span>${basket.count} * ${basket.price}</span>
+													<span>${basket.volume} ML</span>
+													<span>${basket.count} * ${basket.price} AZN</span>
 												</div>
 												<div class="deleteimage">
-													<a href="/parfume/RemoveBasket/${basket.parfumId}" data-id="">
+													<a href="/parfume/RemoveBasket/${basket.productId}" data-id="">
 														<i class="fa-solid fa-x"></i>
 													</a>
 												</div>

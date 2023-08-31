@@ -16,15 +16,15 @@ namespace Parfume.App.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signinManager;
         private readonly IMailService _mailService;
-        private readonly IBasketService _basketService;
+        private readonly IParfumBasketService _pbasketService;
 
-        public ParfumeController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null, IBasketService basketService = null)
+        public ParfumeController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null, IParfumBasketService pbasketService = null)
         {
             _context = context;
             _userManager = userManager;
             _signinManager = signinManager;
             _mailService = mailService;
-            _basketService = basketService;
+            _pbasketService = pbasketService;
         }
         public async Task<IActionResult> Index(int? id = null)
         {
@@ -36,7 +36,7 @@ namespace Parfume.App.Controllers
                     Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
                     Brands = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync(),
                     Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).Include(x => x.Brand)
-                 .Include(x => x.ParfumVolume).ThenInclude(x => x.Volume)
+                 .Include(x => x.Volume)
                  .ToListAsync()
 
                 };
@@ -49,7 +49,7 @@ namespace Parfume.App.Controllers
                     Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
                     Brands = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync(),
                     Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).Include(x => x.Brand)
-                    .Include(x => x.ParfumVolume).ThenInclude(x => x.Volume)
+                    .Include(x => x.Volume)
                     .ToListAsync()
 
                 };
@@ -57,23 +57,19 @@ namespace Parfume.App.Controllers
 
             }
 
-
-
         }
         public async Task<IActionResult> Detail(int id)
         {
 
             ParfumeViewModel parfumViewModel = new ParfumeViewModel
             {
-                Parfumes = await _context.Parfums
-                       .Include(x => x.ParfumVolume)
-                        .ThenInclude(x => x.Volume)
+                Parfumes = await _context.Parfums.Include(x => x.Volume)
                        .Include(x => x.Brand)
                         .Where(x => !x.IsDeleted).ToListAsync(),
 
                 Parfum = await _context.Parfums
               .Include(x => x.Brand)
-                .Include(x => x.ParfumVolume).ThenInclude(x => x.Volume)
+                .Include(x => x.Volume)
                 .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
 
                 Brands = await _context.Brands.Where(b => !b.IsDeleted).ToListAsync(),
@@ -86,22 +82,20 @@ namespace Parfume.App.Controllers
             {
                 return View(nameof(Index));
             }
-
-
             return View(parfumViewModel);
         }
         public async Task<IActionResult> AddBasket(int id, int? count)
         {
-            await _basketService.AddBasket(id, count);
+            await _pbasketService.AddBasket(id, count);
             return Json(new { status = 200 });
         }
         public async Task<IActionResult> GetAllBaskets()
         {
-            return Json(await _basketService.GetAllBaskets());
+            return Json(await _pbasketService.GetAllBaskets());
         }
         public async Task<IActionResult> RemoveBasket(int id)
         {
-            await _basketService.Remove(id);
+            await _pbasketService.Remove(id);
             return Redirect(Request.Headers["Referer"].ToString());
         }
 

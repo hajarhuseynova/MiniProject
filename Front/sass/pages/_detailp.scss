@@ -126,7 +126,7 @@
       .input_button_delete {
         display: flex;
         align-items: center;
-        gap: 20px;
+        justify-content: space-between;
         .input_number {
           width: 90px;
           position: relative;
@@ -171,15 +171,6 @@
             border: 1px solid transparent;
             height: 34px;
             width: 350px;
-          }
-        }
-        .rubish {
-          border: 1px solid $orange_01;
-          border-radius: 5px;
-          > a {
-            > img {
-              padding: 5px;
-            }
           }
         }
       }

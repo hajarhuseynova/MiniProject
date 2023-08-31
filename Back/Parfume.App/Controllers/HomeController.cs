@@ -25,9 +25,7 @@ namespace Parfume.App.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            
             HomeViewModel homeViewModel = new HomeViewModel();
-
             homeViewModel.FakeSlides = await _context.FakeSlides.Where(x => !x.IsDeleted).ToListAsync();
             homeViewModel.Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync();
             homeViewModel.Functions = await _context.Functions.Where(x => !x.IsDeleted).ToListAsync();
@@ -35,14 +33,10 @@ namespace Parfume.App.Controllers
             homeViewModel.SettingNavbar = await _context.SettingNavbar.Where(x => !x.IsDeleted).FirstOrDefaultAsync();
             homeViewModel.SettingHomePage = await _context.SettingHomePage.Where(x => !x.IsDeleted).FirstOrDefaultAsync();
             homeViewModel.Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).
-            Include(x => x.Brand).Include(x => x.ParfumVolume).ThenInclude(x => x.Volume).ToListAsync();
+            Include(x => x.Brand).Include(x => x.Volume).ToListAsync();
             homeViewModel.Smokes = await _context.Smokes.Where(x => !x.IsDeleted).ToListAsync();
-
-
             return View(homeViewModel);
         }
-
-
         [HttpPost]
         public async Task<IActionResult> Subscribe(string email)
         {

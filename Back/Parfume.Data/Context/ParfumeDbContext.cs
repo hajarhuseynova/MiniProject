@@ -10,14 +10,17 @@ namespace Parfume.App.Context
     public class ParfumeDbContext: IdentityDbContext<AppUser>
     {
         public DbSet<FakeSlider> FakeSlides { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductCategory> Category { get; set; }
+
         public DbSet<Brand> Brands { get; set; }
+        public DbSet<Smoke> Smokes { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
         public DbSet<Parfum> Parfums { get; set; }
-        public DbSet<Smoke> Smokes { get; set; }
         public DbSet<Volume> Volumes { get; set; }
-        public DbSet<ParfumVolume> ParfumeVolumes { get; set; }
         public DbSet<Tester> Testers { get; set; }
+        public DbSet<GiftBox> GiftBoxes { get; set; }
         public DbSet<SettingContact> SettingContact { get; set; }
         public DbSet<SettingNavbar> SettingNavbar { get; set; }
         public DbSet<SettingAbout> SettingAbout { get; set; }
@@ -27,16 +30,18 @@ namespace Parfume.App.Context
         public DbSet<Place> Places { get; set; }
         public DbSet<Functions> Functions { get; set; }
         public DbSet<Subscribe> Subscribes { get; set; }
-        public DbSet<GiftBox> GiftBoxes { get; set; }
         public DbSet<Slider> Slides { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            //modelBuilder.Entity<Parfum>()
-           //    .HasOne(e => e.Rating)
-           //.WithOne(e => e.Parfum)
-           //    .HasForeignKey<Rating>();
+        { 
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Product>()
+                .OwnsOne(p => p.Properties, mp =>
+                {
+                    mp.ToTable("ProductProperties"); 
+                    mp.Property<string>("Key").HasColumnName("PropertyKey");
+                    mp.Property<string>("Value").HasColumnName("PropertyValue");
+                });
         }
         public ParfumeDbContext(DbContextOptions<ParfumeDbContext> options) : base(options)
         {

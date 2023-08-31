@@ -2,7 +2,7 @@
 {
 	public class BasketItemViewModel
 	{
-        public int ParfumId { get; set; }
+        public int ProductId { get; set; }
         public string Image { get; set; }
         public string Name { get; set; }
         public int Price { get; set; }

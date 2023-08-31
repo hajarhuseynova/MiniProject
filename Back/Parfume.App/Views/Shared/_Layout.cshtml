@@ -3,12 +3,13 @@
 	SettingFooter? setting = await settingService.Get();
 	SettingNavbar? set = await settingService.GetAll();
 }
-@inject Parfume.App.Services.İnterfaces.IBasketService basketservice
+
+@inject Parfume.App.Services.İnterfaces.IParfumBasketService basketservice
 @{
 	List<Parfume.App.ViewModels.BasketItemViewModel> basketItemViewModels = await basketservice.GetAllBaskets();
 	int TotalPrice = 0;
+ }
 
-}
 
 @if (!string.IsNullOrWhiteSpace((string)TempData["EmailRegex"]))
 {
@@ -117,13 +118,13 @@
 											<div class="item_right">
 												<div class="spans">
 													<span>@item.Name</span>
-													<span>@item.Volume</span>
+													<span>@item.Volume ML</span>
 													<span>
-														@item.Count * @item.Price
+														@item.Count * @item.Price AZN
 													</span>
 												</div>
 												<div class="deleteimage">
-													<a asp-controller="parfume" asp-action="RemoveBasket" asp-route-id="@item.ParfumId">
+													<a asp-controller="parfume" asp-action="RemoveBasket" asp-route-id="@item.ProductId">
 														<i class="fa-solid fa-x"></i>
 													</a>
 												</div>

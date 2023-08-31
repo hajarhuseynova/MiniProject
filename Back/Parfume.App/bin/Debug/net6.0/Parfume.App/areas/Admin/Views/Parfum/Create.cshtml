@@ -56,19 +56,21 @@
             <span class="text text-danger" asp-validation-for="BrandId"></span>
         </div>
 
-
-
-
-		<div class="form-group">
-            <select multiple asp-for="ParfumVolumeIds" class="form-select" aria-label="Default select example">
+			<div class="form-group">
+            <select asp-for="VolumeId" class="form-select" aria-label="Default select example">
                 <option selected>Olcu Sec</option>
                 @foreach (var item in  ViewBag.Volume)
                 {
                     <option value="@item.Id">@item.MilliLiters</option>
+
                 }
             </select>
-            <span class="text text-danger" asp-validation-for="ParfumVolumeIds"></span>
+            <span class="text text-danger" asp-validation-for="VolumeId"></span>
         </div>
+
+
+
+
 
 
 	<div class="form-group">

@@ -68,22 +68,11 @@ namespace Parfume.App.areas.Admin.Controllers
                 ModelState.AddModelError("file", "Image size is wrong");
                 return View();
             }
-            foreach (var item in parfum.ParfumVolumeIds)
-            {
-                if (!await _context.Volumes.AnyAsync(x => x.Id == item))
-                {
-                    ModelState.AddModelError("", "Wrongg!");
-                    return View(parfum);
-                }
-                ParfumVolume parfumVolume = new ParfumVolume
-                {
-                    VolumeId = item,
-                    Parfum = parfum,
-                    CreatedDate = DateTime.Now
-                };
-                await _context.AddAsync(parfumVolume);
-            }
+
+          
             parfum.Brand = await _context.Brands.Where(x => x.Id == parfum.BrandId).FirstOrDefaultAsync();
+            parfum.Volume = await _context.Volumes.Where(x => x.Id == parfum.VolumeId).FirstOrDefaultAsync();
+
             parfum.CreatedDate = DateTime.Now;
             parfum.IsStock = true;
             parfum.Image = parfum.FormFile.CreateImage(_environment.WebRootPath, "assets/images");
@@ -109,8 +98,7 @@ namespace Parfume.App.areas.Admin.Controllers
 
             Parfum? parfums = await _context.Parfums.Where(c => !c.IsDeleted && c.Id == id).
                 Include(x => x.Brand).
-                Include(x => x.ParfumVolume).
-                ThenInclude(x => x.Volume).
+               Include(x => x.Volume).
              Where(x => !x.IsDeleted).FirstOrDefaultAsync();
 
             if (parfums == null)
@@ -128,8 +116,7 @@ namespace Parfume.App.areas.Admin.Controllers
 
             Parfum? Update = await _context.Parfums.
                   Where(c => !c.IsDeleted && c.Id == id).Include(x => x.Brand).
-                Include(x => x.ParfumVolume).
-                ThenInclude(x=>x.Volume).FirstOrDefaultAsync();
+                Include(x=>x.Volume).FirstOrDefaultAsync();
 
             if (parfum == null)
             {
@@ -158,30 +145,6 @@ namespace Parfume.App.areas.Admin.Controllers
             }
 
 
-            //List<ParfumVolume> RemovableTag = await _context.ParfumeVolumes.
-            //        Where(x =>!parfum.ParfumVolumeIds.Contains(x.VolumeId))
-            //        .ToListAsync();
-
-
-            //_context.ParfumeVolumes.RemoveRange(RemovableTag);
-
-            foreach (var item in parfum.ParfumVolumeIds)
-            {
-                if (_context.ParfumeVolumes.Where(x => x.ParfumId == id &&
-                   x.VolumeId == item).Count() > 0)
-                {
-                    continue;
-                }
-                else
-                {
-                    await _context.ParfumeVolumes.AddAsync(new ParfumVolume
-                    {
-                        ParfumId = id,
-                        VolumeId = item
-                    });
-                }
-
-            }
 
 
 
@@ -195,6 +158,8 @@ namespace Parfume.App.areas.Admin.Controllers
             Update.ProductCode = parfum.ProductCode;
             Update.SellPrice = parfum.SellPrice;
             Update.BrandId = parfum.BrandId;
+            Update.VolumeId = parfum.VolumeId;
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

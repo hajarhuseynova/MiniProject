@@ -2,9 +2,8 @@
 {
 	public class BasketViewModel
 	{
-		public int ParfumId { get; set; }
-		public int CountParfum { get; set; }
-		public int VolumeParfum { get; set; }
+		public int ProductId { get; set; }
+		public int CountProduct { get; set; }
 
 
 	}

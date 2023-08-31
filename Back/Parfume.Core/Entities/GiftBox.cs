@@ -18,5 +18,6 @@ namespace Parfume.Core.Entities
         public IFormFile? FormFile { get; set; }
         public int Price { get; set; }
 
+
     }
 }
