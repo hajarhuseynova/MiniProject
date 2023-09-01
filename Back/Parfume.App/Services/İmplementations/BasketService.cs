@@ -8,12 +8,12 @@ using Parfume.Core.Entities;
 
 namespace Parfume.App.Services.İmplementations
 {
-    public class ParfumBasketService : IParfumBasketService
+    public class BasketService : IBasketService
     {
         private readonly ParfumeDbContext _context;
         private readonly IHttpContextAccessor _httpContext;
         private readonly UserManager<AppUser> _userManager;
-        public ParfumBasketService(ParfumeDbContext context, IHttpContextAccessor httpContext, UserManager<AppUser> userManager)
+        public BasketService(ParfumeDbContext context, IHttpContextAccessor httpContext, UserManager<AppUser> userManager)
         {
             _context = context;
             _httpContext = httpContext;

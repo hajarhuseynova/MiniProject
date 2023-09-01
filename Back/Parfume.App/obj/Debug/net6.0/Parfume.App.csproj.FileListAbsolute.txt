@@ -504,3 +504,4 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfum
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\areas\Admin\Views\Dictionary\Index.cshtml
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\areas\Admin\Views\Dictionary\Update.cshtml
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\0e49a24a-52a3-463e-b0c0-e1e4174a57a8ProductImage.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\Views\Legacy\Index.cshtml

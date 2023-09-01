@@ -5,8 +5,8 @@
         <thead>
             <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Adi</th>
-                <th scope="col">Yenile</th>
+                <th scope="col">Ad</th>
+                <th scope="col">Yenilə</th>
                 <th scope="col">Sil</th>
             </tr>
         </thead>
@@ -18,7 +18,7 @@
                         <th>@item.Name</th>
                         <td><a asp-controller="category" asp-action="update" asp-route-id="@item.Id" >
                             <i class="fas fa-edit text text-primary"></i></a></td>
-                        <td><a onclick="if(!confirm('Are you sure?')){return false;}"
+                        <td><a onclick="if(!confirm('Əminsən?')){return false;}"
                             asp-controller="category" asp-action="delete" asp-route-id="@item.Id"
                             class=" delete-item" ><i class="fas fa-trash text text-danger"></i></a></td>
                     </tr>

@@ -421,7 +421,7 @@
       </div>
       <div
         class="subscribe"
-        style="background-image: url(../assets/images/Contact/room.jpg)"
+        style="background-image: url(../assets/images/NewProduct/parfum.jpg)"
       >
         <div class="form_input">
           <h1>Bize Qoshul!</h1>
@@ -443,7 +443,6 @@
                 placeholder="Email:"
                 required
               />
-
               <button itype="submit" name="subscribe">
                 <span>Abune Ol</span>
               </button>
@@ -774,6 +773,9 @@
           </div>
         </div>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
       <footer style="margin-top: 0">
         <div class="container footer_container">
           <div class="column">
@@ -1181,6 +1183,36 @@
             t('[data-parallax="scroll"]').parallax();
           });
       })(jQuery, window, document);
+    </script>
+    <script>
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        if (
+          document.body.scrollTop > 0 ||
+          document.documentElement.scrollTop > 0
+        ) {
+          document.body.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }
     </script>
   </body>
 </html>

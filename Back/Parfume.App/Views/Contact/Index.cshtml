@@ -17,7 +17,7 @@
 
       <div class="contact">
         <div class="container contact_container">
-          <h1>Elaqe</h1>
+          <h1>Əlaqə</h1>
           <div class="contact_common">
             <div class="contact_left">
               <h3>@Model.SettingContact?.Title</h3>
@@ -25,21 +25,21 @@
                @Model.SettingContact?.Description
               </p>
               <div class="option">
-                <img src="../assets/images/@Model.SettingContact?.ImageLoc" />
+                <img src="~/assets/images/@Model.SettingContact?.ImageLoc" />
                 <div class="parag">
                   <p>@Model.SettingContact?.Loc1</p>
                   <p>@Model.SettingContact?.Loc2</p>
                 </div>
               </div>
               <div class="option">
-                <img src="../assets/images/@Model.SettingContact?.ImageTel" />
+                <img src="~/assets/images/@Model.SettingContact?.ImageTel" />
                 <div class="parag">
                   <p>@Model.SettingContact?.Phone1</p>
                   <p>@Model.SettingContact?.Phone2</p>
                 </div>
               </div>
               <div class="option">
-                <img src="../assets/images/@Model.SettingContact?.ImageEmail" />
+                <img src="~/assets/images/@Model.SettingContact?.ImageEmail" />
                 <p>@Model.SettingContact?.Email</p>
               </div>
               <div class="socials">
@@ -47,27 +47,27 @@
                   href="@Model.SettingFooter.Link1" target="_blank"
                 >
                   <div class="social">
-                     @Html.Raw(Model.SettingFooter.FootIcon1) </div
+                     @Html.Raw(Model.SettingFooter?.FootIcon1) </div
                 ></a>
 
               <a
-                  href="@Model.SettingFooter.Link2" target="_blank"
+                  href="@Model.SettingFooter?.Link2" target="_blank"
                 >
                   <div class="social">
-                     @Html.Raw(Model.SettingFooter.FootIcon2) </div
+                     @Html.Raw(Model.SettingFooter?.FootIcon2) </div
                 ></a> 
                 <a
-                  href="@Model.SettingFooter.Link3" target="_blank"
+                  href="@Model.SettingFooter?.Link3" target="_blank"
                 >
                   <div class="social">
-                     @Html.Raw(Model.SettingFooter.FootIcon3) </div
+                     @Html.Raw(Model.SettingFooter?.FootIcon3) </div
                 ></a>  
                 
                 <a
-                  href="@Model.SettingFooter.Link4" target="_blank"
+                  href="@Model.SettingFooter?.Link4" target="_blank"
                 >
                   <div class="social">
-                     @Html.Raw(Model.SettingFooter.FootIcon4) </div
+                     @Html.Raw(Model.SettingFooter?.FootIcon4) </div
                 ></a>
               </div>
             </div>
@@ -94,7 +94,7 @@
 						        <textarea  name="message"  rows="4" cols="40" placeholder="Mövzu" class="contact_input form-control"  ></textarea>
 								<span class="text text-danger" asp-validation-for="@Model.Messages.Message"></span>
 						
-                <button class="addtobasket">Gonder</button>
+                <button class="addtobasket">Göndər</button>
               </form>
           
             </div>
@@ -103,33 +103,31 @@
       </div>
       <div class="location">
         <div class="container location_container">
-          <h1>Satish Menteqesi</h1>
+          <h1>Satış Məntəqəsi</h1>
           <div class="locations">
           @foreach (var item in Model.Places)
           {
                 <div class="locationPage">
               <div class="locationPage_left">
-                <img src="../assets/images/@item.Image" alt="" />
+                <img src="~/assets/images/@item.Image" alt="" />
               </div>
               <div class="locationPage_right">
                 <h3>@item.Title</h3>
                 <div class="common">
                   <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
+                    <img src="~/assets/images/@Model.SettingContact?.ImageLoc" />
                     <p>@item.Address</p>
                   </div>
                   <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
+                    <img src="~/assets/images/@Model.SettingContact?.ImageTel" />
 
                     <p>@item.Phone1</p>
                   </div>
                   <div class="option">
-                    <img src="../assets/icons/contact/Location.svg" />
-
+                    <img src="~/assets/images/@Model.SettingContact?.ImageTel" />
                     <p>@item.Phone2</p>
                   </div>
-                  <a href="@item.Location"><button class="addtobasket">Xeritede bax</button></a>
+                  <a href="@item.Location"><button class="addtobasket">Xəritədə bax</button></a>
                 </div>
               </div>
             </div>

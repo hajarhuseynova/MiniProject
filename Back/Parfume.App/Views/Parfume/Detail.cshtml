@@ -47,12 +47,12 @@
 					<span class="st">&#9733;</span>
 					<span class="st">&#9733;</span>
 					<span class="st">&#9733;</span> 
-					<p>137 rey</p>
+					<p>137 rəy</p>
 				</div>
 			</div>
 			<div class="line"></div>
 			<div class="volume">
-				<p>Hecm:</p>
+				<p>Həcm:</p>
 				<form action="detailp.html">
 						<input type="radio" checked value="@Model.Parfum.VolumeId" name="quantity"  />
 						<label for="@Model.Parfum.VolumeId">@Model.Parfum.Volume.MilliLiters ML</label>
@@ -70,7 +70,7 @@
 					<p class="pilus" id="pilus">+</p>
 				</form>
 				<a class="addbasketdetail" asp-action="addbasket" asp-controller="parfume" asp-route-id="@Model.Parfum.Id">
-					<button class="addtobasket">Sebete Elave Et</button>
+					<button class="addtobasket">Səbətə Əlavə Et</button>
 				</a>
 			
 			</div>
@@ -79,7 +79,7 @@
 </div>
 <div class="detail_info">
 	<div class="container detail_info_container">
-		<h1>Haqqinda</h1>
+		<h1>Haqqında</h1>
 		<p>
 			@Model.Parfum.Info1
 		</p>
@@ -147,7 +147,7 @@
 
 			<form asp-controller="parfume" asp-action="addcomment" method="post">
 				<input placeholder="Basliq" type="text" />
-				<textarea placeholder="Metn daxil edin"
+				<textarea placeholder="Mətn daxil edin"
 						  rows="4"
 						  cols="40"></textarea>
 				<div class="right_bottom">
@@ -159,7 +159,7 @@
 						<span class="star" data-value="1" id="star_4">&#9733;</span>
 						<span class="star" data-value="1" id="star_5">&#9733;</span>
 					</div>
-					<a><button>Gonder</button></a>
+					<a><button>Göndər</button></a>
 			</form>
 
 		</div>
@@ -234,7 +234,7 @@
 						{
 							<p class="price">@item.SellPrice AZN</p>
 						}
-						<a><button style="width:80px">Elave et</button></a>
+						<a><button style="width:80px">Əlavə et</button></a>
 					</div>
 				</div>
 

@@ -60,7 +60,7 @@ namespace Parfume.App.areas.Admin.Controllers
 
             if (appUser == null)
             {
-                ModelState.AddModelError("", "Username or password incorrect");
+                ModelState.AddModelError("", "Ad və ya Şifrə yanlışdır");
                 return View(login);
             }
             Microsoft.AspNetCore.Identity.SignInResult result =
@@ -71,7 +71,7 @@ namespace Parfume.App.areas.Admin.Controllers
             {
                 if (roles == "User")
                 {
-                    ModelState.AddModelError("", "Wrong!");
+                    ModelState.AddModelError("", "Səhv!");
                     return View();
                 }
 
@@ -81,10 +81,10 @@ namespace Parfume.App.areas.Admin.Controllers
             {
                 if (result.IsLockedOut)
                 {
-                    ModelState.AddModelError("", "Your account is blocked for 5 minute");
+                    ModelState.AddModelError("", "Səhifəniz 5 dəqiqəlik bloklanmışdır");
                     return View(login);
                 }
-                ModelState.AddModelError("", "Username or password incorrect");
+                ModelState.AddModelError("", "Ad və ya Şifrə yanlışdır");
                 return View(login);
             }
             return RedirectToAction("index", "home");

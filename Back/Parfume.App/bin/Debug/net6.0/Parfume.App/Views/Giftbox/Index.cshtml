@@ -11,15 +11,15 @@
             </p>
           </div>
           <div class="gift_right">
-            <img src="../assets/images/@Model.SettingHomePage?.ImageGift1" />
-            <img src="../assets/images/@Model.SettingHomePage?.ImageGift2" />
+            <img src="~/assets/images/@Model.SettingHomePage?.ImageGift1" />
+            <img src="~/assets/images/@Model.SettingHomePage?.ImageGift2" />
           </div>
         </div>
       </div>
       <div class="giftboxes">
         <div class="container giftboxes_container">
           <div class="giftboxes_intro">
-            <h1>Hediyye Qutulari</h1>
+            <h1>Hədiyyə Qutuları</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
               soluta magnam enim expedita repellat officia magni sit quas
@@ -30,7 +30,7 @@
           @foreach (var item in Model.GiftBoxes)
           {
                <div class="box">
-              <img src="../assets/images/@item.Image" style="width:100%,height:50%" />
+            <img src="~/assets/images/@item.Image" style="width:100%,height:50%" />
               <div class="box_info">
                 <h1>@item.Title</h1>
                 <p>@item.Price AZN</p>
@@ -38,29 +38,14 @@
               <p>
                 @item.Desc
               </p>
-              <a><button class="addtobasket">Sebete at</button></a>
+              <a><button class="addtobasket">Səbətə at</button></a>
             </div>
            
           }
 
       
           </div>
-    <nav aria-label="Page navigation example" style="margin-top:30px">
 
-        <ul class="pagination">
-            @for (int i = 1; i <= ViewBag.TotalPage; i++)
-            {
-                @if (i == ViewBag.CurrentPage)
-                {
-                    <li class="page-item disabled"><a  class=" page-link" asp-controller="giftBox" asp-action="index" asp-route-page="@i">@i</a></li>
-                }
-                else
-                {
-                    <li class="page-item"><a  class=" page-link" asp-controller="giftBox" asp-action="index" asp-route-page="@i">@i</a></li>
-                }
-            }
-        </ul>
-    </nav> 
 
         </div>
       </div>

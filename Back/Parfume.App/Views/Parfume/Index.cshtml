@@ -26,7 +26,7 @@
         <div class="container parfumeCategory_container">
           <div class="parfumeCategory_top">
             <div class="category" data-filter="all">
-              <p id="all">All</p>
+              <p id="all">Hamısı</p>
             </div>
          
             @foreach (var item in Model.Brands)
@@ -49,7 +49,7 @@
                 <div class="selles">
               <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
                 <img
-                  src="../assets/images/@item.Image"
+                  src="~/assets/images/@item.Image"
                   alt="productImage"
               /></a>
               <p class="def">@item.Title</p>
@@ -63,7 +63,7 @@
 							{
 								<p class="price">@item.SellPrice AZN</p>
 							}
-                <a><button>Elave et</button></a>
+                <a><button>Əlavə et</button></a>
               </div>
             </div>
          }

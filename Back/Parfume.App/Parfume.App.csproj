@@ -34,7 +34,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Views\Dictionary\" />
-    <Folder Include="Views\Legacy\" />
   </ItemGroup>
 
 </Project>

@@ -3,19 +3,19 @@
     <form method="post" enctype="multipart/form-data">
 
         <div class="form-group">
-            <label asp-for="Name">Name</label>
+            <label asp-for="Name">Ad</label>
             <input type="text" class="form-control" asp-for="@Model.Name">
             <span class="alert-danger" asp-validation-for="Name"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="Surname">Surname</label>
+            <label asp-for="Surname">Soyas</label>
             <input type="text" class="form-control" asp-for="@Model.Surname">
             <span class="alert-danger" asp-validation-for="Surname"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="UserName">UserName</label>
+            <label asp-for="UserName">İstifadəçi adı</label>
             <input type="text" class="form-control" asp-for="@Model.UserName">
             <span class="alert-danger" asp-validation-for="UserName"></span>
         </div>
@@ -27,13 +27,13 @@
         </div>
 
         <div class="form-group">
-            <label asp-for="Password">Password</label>
+            <label asp-for="Password">Şifrə</label>
             <input type="password" class="form-control" asp-for="@Model.Password">
             <span class="alert-danger" asp-validation-for="Password"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="ConfirmPassword">ConfirmPassword</label>
+            <label asp-for="ConfirmPassword">Doğrulama Şifrə</label>
             <input type="password" class="form-control" asp-for="@Model.ConfirmPassword">
             <span class="alert-danger" asp-validation-for="ConfirmPassword"></span>
         </div>

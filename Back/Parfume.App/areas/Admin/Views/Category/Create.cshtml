@@ -3,11 +3,11 @@
 <div class="container">
 	<form method="post">
 		<div class="form-group">
-			<label for="name" >Name:</label>
+			<label for="name" >Ad:</label>
 			<input type="text" class="form-control" asp-for="@Model.Name"/>
-		<span class="text" asp-validation-for="@Model.Name">Not Valid</span>
+		<span class="text" asp-validation-for="@Model.Name"></span>
 			@Html.AntiForgeryToken()
 		</div>
-	<button type="submit">Yarat</button>
+	<button type="submit" class="btn btn-outline-success">Yarat</button>
 	</form>
 </div>

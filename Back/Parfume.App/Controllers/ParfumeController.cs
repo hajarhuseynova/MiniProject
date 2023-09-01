@@ -16,15 +16,15 @@ namespace Parfume.App.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signinManager;
         private readonly IMailService _mailService;
-        private readonly IParfumBasketService _pbasketService;
+        private readonly IBasketService _basketService;
 
-        public ParfumeController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null, IParfumBasketService pbasketService = null)
+        public ParfumeController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null, IBasketService pbasketService = null)
         {
             _context = context;
             _userManager = userManager;
             _signinManager = signinManager;
             _mailService = mailService;
-            _pbasketService = pbasketService;
+            _basketService = pbasketService;
         }
         public async Task<IActionResult> Index(int? id = null)
         {
@@ -86,16 +86,16 @@ namespace Parfume.App.Controllers
         }
         public async Task<IActionResult> AddBasket(int id, int? count)
         {
-            await _pbasketService.AddBasket(id, count);
+            await _basketService.AddBasket(id, count);
             return Json(new { status = 200 });
         }
         public async Task<IActionResult> GetAllBaskets()
         {
-            return Json(await _pbasketService.GetAllBaskets());
+            return Json(await _basketService.GetAllBaskets());
         }
         public async Task<IActionResult> RemoveBasket(int id)
         {
-            await _pbasketService.Remove(id);
+            await _basketService.Remove(id);
             return Redirect(Request.Headers["Referer"].ToString());
         }
 

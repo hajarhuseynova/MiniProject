@@ -5,7 +5,7 @@
             @foreach (var item in Model.Slides)
         {
              <div class="swiper-slide">
-            <img src="../assets/images/@item.Image" />
+            <img src="~/assets/images/@item.Image" />
             <div class="info_par">
               <h1>@item.Title</h1>
               <p>@item.Desc</p>
@@ -37,11 +37,11 @@
           <div class="who_right">
             <img
             
-              src="../assets/images/@Model.SettingAbout?.ImageWho1"
+              src="~/assets/images/@Model.SettingAbout?.ImageWho1"
               class="about_image_right"
             />
             <img
-              src="../assets/images/@Model.SettingAbout?.ImageWho2"
+              src="~/assets/images/@Model.SettingAbout?.ImageWho2"
               class="about_image_left"
             />
           </div>
@@ -51,16 +51,16 @@
         <div class="container why_container">
           <div class="why_left">
             <img
-              src="../assets/images/@Model.SettingAbout?.ImageWhy1"
+              src="~/assets/images/@Model.SettingAbout?.ImageWhy1"
               class="about_image_right"
             />
             <img
-              src="../assets/images/@Model.SettingAbout?.ImageWhy2"
+              src="~/assets/images/@Model.SettingAbout?.ImageWhy2"
               class="about_image_left"
             />
           </div>
           <div class="why_right">
-            <h3>Niye biz?</h3>
+            <h3>@Model.SettingAbout?.WhyTitle</h3>
             <p class="hide">
               @Model.SettingAbout?.WhyP1
             </p>

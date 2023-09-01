@@ -11,11 +11,11 @@
 					<p>@item.Desc</p>
 					@if (item.Chooice == "Parfum")
 					{
-						<a asp-controller="parfume" asp-action="index"><button>Etrafli</button></a>
+						<a asp-controller="parfume" asp-action="index"><button>Ətraflı</button></a>
 					}
 					@if (item.Chooice == "Tustu")
 					{
-						<a asp-controller="smoke" asp-action="index"><button>Etrafli</button></a>
+						<a asp-controller="smoke" asp-action="index"><button>Ətraflı</button></a>
 					}
 				</div>
 			</div>
@@ -29,7 +29,7 @@
 
 <div class="products">
 	<div class="container products_container">
-		<h1>Yeni Mehsullar</h1>
+		<h1>Yeni Məhsullar</h1>
 		<div class="newproducts">
 			@foreach (var item in Model.Parfumes.Take(4))
 			{
@@ -55,7 +55,7 @@
 								<p class="price">@item.SellPrice AZN</p>
 							}
 							<a asp-action="addbasket" asp-controller="parfume" asp-route-id="@item.Id" class="add-basket-product">
-								<button style="width:80px">Elave et</button>
+								<button style="width:80px">Əlave et</button>
 							</a>
 						</div>
 					</div>
@@ -89,19 +89,39 @@
 	</div>
 </div>
 
-<div class="smokes">
-	<div class="container smokes_container">
-		<h1>Tustuler</h1>
-		<div class="newsmokes">
-		@await Html.PartialAsync("_SmokePartialView",Model.Smokes.Take(4).ToList())
-
+<div class="giftbox">
+	<div class="container giftbox_container">
+		<h1>Hədiyyə Qutusu</h1>
+		<div class="giftbox_common">
+			<div class="giftbox_left">
+				<h1>@Model.SettingHomePage?.TitleGift</h1>
+				<p>
+					@Model.SettingHomePage?.DescriptionGift
+				</p>
+				<a asp-action="index" asp-controller="giftBox">
+					<button>
+						Ətraflı
+						<img class="button_image"
+							 alt="buttonImage"
+							 src="../assets/icons/button/buttonsvg.svg" />
+					</button>
+				</a>
+			</div>
+			<div class="giftbox_right">
+				<a asp-action="index" asp-controller="giftBox" class="hidden">
+					<img src="../assets/images/@Model.SettingHomePage?.ImageGift1" />
+				</a>
+				<a asp-action="index" asp-controller="giftBox" class="hide">
+					<img src="../assets/images/@Model.SettingHomePage?.ImageGift2" />
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
 
 <div class="sellests">
 	<div class="container sellests_container">
-		<h1>En cox satilanlar</h1>
+		<h1>Ən çox satılanlar</h1>
 		<div class="newsellests">
 			@foreach (var item in Model.Parfumes.Take(4))
 			{
@@ -124,7 +144,7 @@
 								<p class="price">@item.SellPrice AZN</p>
 							}
 							<a asp-action="addbasket" asp-controller="parfume" asp-route-id="@item.Id" class="add-basket-product">
-								<button style="width:80px">Elave et</button>
+								<button style="width:80px">Əlavə et</button>
 							</a>
 						</div>
 					</div>
@@ -135,35 +155,44 @@
 	</div>
 </div>
 
-<div class="giftbox">
-	<div class="container giftbox_container">
-		<h1>Hediyye Qutusu</h1>
-		<div class="giftbox_common">
-			<div class="giftbox_left">
-				<h1>@Model.SettingHomePage?.TitleGift</h1>
-				<p>
-					@Model.SettingHomePage?.DescriptionGift
-				</p>
-				<a asp-action="index" asp-controller="giftBox">
-					<button>
-						Etrafli
-						<img class="button_image"
-							 alt="buttonImage"
-							 src="../assets/icons/button/buttonsvg.svg" />
-					</button>
-				</a>
-			</div>
-			<div class="giftbox_right">
-				<a asp-action="index" asp-controller="giftBox" class="hidden">
-					<img src="../assets/images/@Model.SettingHomePage?.ImageGift1" />
-				</a>
-				<a asp-action="index" asp-controller="giftBox" class="hide">
-					<img src="../assets/images/@Model.SettingHomePage?.ImageGift2" />
-				</a>
-			</div>
+<div class="smokes">
+	<div class="container smokes_container">
+		<h1>Tüstülər</h1>
+		<div class="newsmokes">
+		@await Html.PartialAsync("_SmokePartialView",Model.Smokes.Take(4).ToList())
+
 		</div>
 	</div>
 </div>
+
+ <div class="subscribe" style="background-image: url('https://th.bing.com/th/id/R.d3115da26d5ff34fb013106eea411f5a?rik=wLSQd442URaROQ&riu=http%3a%2f%2ftest-storage-mumbai.s3.amazonaws.com%2fuploads%2farticle%2fog_image%2f205%2fperfume.jpg&ehk=ZKMyLx0VcBID5RZ0kCWIdlplZ0VdFtHVRlROFd4JINI%3d&risl=&pid=ImgRaw&r=0')" >
+        <div class="form_input">
+          <h1>Bizə Qoşul!</h1>
+          <form
+            asp-action="subscribe"
+            asp-controller="home"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            novalidate
+          >
+            <div class="input_button">
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="email register_input"
+                placeholder="Email:"
+                required
+              />
+              <button itype="submit" name="subscribe">
+                <span>Abunə Ol</span>
+              </button>
+            </div>
+          </form>
+        </div>
+ </div>
 
 <div class="discounts">
 	<div class="container discounts_container">
@@ -186,7 +215,7 @@
 
 							<del class="price_discount">@item.SellPrice AZN</del>
 						<a asp-action="addbasket" asp-controller="parfume" asp-route-id="@item.Id" class="add-basket-product">
-								<button style="width:80px">Elave</button>
+								<button style="width:80px">Əlave</button>
 							</a>
 						</div>
 					</div>
@@ -209,7 +238,7 @@
 				</h1>
 				<a asp-action="index" asp-controller="tester">
 					<button>
-						Etrafli
+						Ətraflı
 						<img src="~/assets/icons/button/buttonsvg.svg" />
 					</button>
 				</a>
@@ -220,13 +249,13 @@
 
 <div class="comments">
 	<div class="container comments_container">
-		<h1>Musteri Memnuniyyeti</h1>
+		<h1>Müştəri Məmnuniyyəti</h1>
 		<div class="slideshow-container">
 			@foreach (var item in Model.FakeSlides)
 			{
 				<div class="mySlides fade">
 					<div class="modal_comment">
-						<img src="../assets/icons/comment/comment.svg" />
+						<img src="~/assets/icons/comment/comment.svg" />
 						<div class="modal_inner">
 							<div class="modal_top">
 								<div class="modal_top_left">
@@ -241,7 +270,7 @@
 								@item.Thoughts
 							</p>
 						</div>
-						<img class="end" src="../assets/icons/comment/comment.svg" />
+						<img class="end" src="~/assets/icons/comment/comment.svg" />
 					</div>
 				</div>
 			}
@@ -257,6 +286,123 @@
 		@await Html.PartialAsync("_FunctionPartialView",Model.Functions.Take(4).ToList())
 	</div>
 </div>
+
+  <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img
+              src="https://www.afnrentacar.az/front/assets/images/partnyor/2.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.afnrentacar.az/front/assets/images/partnyor/6.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.afnrentacar.az/front/assets/images/partnyor/9.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.afnrentacar.az/front/assets/images/partnyor/10.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.afnrentacar.az/front/assets/images/partnyor/11.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.afnrentacar.az/front/assets/images/partnyor/9.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.afnrentacar.az/front/assets/images/partnyor/2.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+        </div>
+  </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

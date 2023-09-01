@@ -687,7 +687,7 @@ textarea:focus {
 footer {
   width: 100%;
   background-color: rgb(18, 18, 18);
-  padding: 40px;
+  padding: 60px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -971,6 +971,174 @@ a {
   color: rgb(18, 18, 18);
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ffaf06;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn > i {
+  color: #fff;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1750px);
+    transform: translateX(-1750px);
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1750px);
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  background: pr;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 180px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::before,
+.slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 180px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3500px;
+}
+
+.slider .slide {
+  height: 180px;
+  width: 250px;
+}
+.slider .slide > img {
+  height: 180px;
+}
+
+@media screen and (max-width: 1238px) {
+  .slider {
+    background: pr;
+    -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .slider::before,
+  .slider::after {
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 3500px;
+  }
+  .slider .slide {
+    height: 200px;
+    width: 250px;
+  }
+  .slider .slide > img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .slider {
+    background: pr;
+    -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .slider::before,
+  .slider::after {
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 120px;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 2100px;
+  }
+  .slider .slide {
+    height: 120px;
+    width: 150px;
+  }
+  .slider .slide > img {
+    height: 120px;
+    width: 150px;
+  }
+}
 .products .products_container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -1385,7 +1553,7 @@ a {
 }
 @media screen and (max-width: 740px) {
   .smeels .smells_container {
-    padding-bottom: 0px;
+    padding-bottom: 40px;
   }
   .smeels .smells_container > h1 {
     color: rgb(18, 18, 18);
@@ -1596,7 +1764,6 @@ a {
 @media screen and (max-width: 740px) {
   .smokes .smokes_container {
     padding-bottom: 40px;
-    padding-top: 30px;
   }
   .smokes .smokes_container > h1 {
     color: rgb(18, 18, 18);
@@ -1660,6 +1827,217 @@ a {
     width: 88%;
     height: 20px;
     font-size: 13px;
+  }
+}
+.subscribe {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-width: 100%;
+  height: 600px;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subscribe .form_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subscribe .form_input > h1 {
+  color: rgb(18, 18, 18);
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffaf06;
+}
+.subscribe .form_input > form .input_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.subscribe .form_input > form .input_button > input {
+  width: 500px;
+  border-color: transparent;
+  border-width: 0;
+  border-style: none;
+  outline: none;
+}
+.subscribe .form_input > form .input_button > button {
+  background-color: #ffaf06;
+  color: #fff;
+  margin-left: -70px;
+}
+.subscribe .form_input > form .input_button > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+@media screen and (max-width: 1238px) {
+  .subscribe {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 100%;
+    height: 400px;
+    margin-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe .form_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe .form_input > h1 {
+    color: rgb(18, 18, 18);
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 496;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffaf06;
+  }
+  .subscribe .form_input > form .input_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .subscribe .form_input > form .input_button > input {
+    width: 500px;
+    border-color: transparent;
+    border-width: 0;
+    border-style: none;
+    outline: none;
+  }
+  .subscribe .form_input > form .input_button > button {
+    background-color: #ffaf06;
+    color: #fff;
+    margin-left: -80px;
+  }
+  .subscribe .form_input > form .input_button > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@media screen and (max-width: 740px) {
+  .subscribe {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe .form_input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe .form_input > h1 {
+    color: rgb(18, 18, 18);
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 496;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffaf06;
+    margin-bottom: 20px;
+  }
+  .subscribe .form_input > form .input_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .subscribe .form_input > form .input_button > input {
+    width: 300px;
+    border-color: transparent;
+    border-width: 0;
+    border-style: none;
+    outline: none;
+    height: 15px;
+    padding: 9px 14px;
+  }
+  .subscribe .form_input > form .input_button > button {
+    background-color: #ffaf06;
+    color: #fff;
+    margin-left: -80px;
+  }
+  .subscribe .form_input > form .input_button > button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 .sellests .sellests_container {
@@ -2966,6 +3344,7 @@ a {
 }
 .functions {
   border: 1px solid #6a6a6a;
+  margin-bottom: 100px;
 }
 .functions .functions_container {
   padding: 20px;
@@ -3037,6 +3416,7 @@ a {
 @media screen and (max-width: 1238px) {
   .functions {
     border: none;
+    margin-bottom: 70px;
   }
   .functions .functions_container {
     padding: 10px 0;
@@ -3099,6 +3479,7 @@ a {
 @media screen and (max-width: 740px) {
   .functions {
     border: none;
+    margin-bottom: 40px;
   }
   .functions .functions_container {
     padding: 10px;
@@ -6734,7 +7115,7 @@ a {
 .order .order_container {
   padding: 60px 0;
 }
-.order .order_container .order_info .contact_info {
+.order .order_container .order_info > form .contact_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6743,7 +7124,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.order .order_container .order_info .contact_info > h3 {
+.order .order_container .order_info > form .contact_info > h3 {
   font-family: Space Mono;
   font-size: 24px;
   font-weight: 450;
@@ -6753,7 +7134,7 @@ a {
   color: #6a6a6a;
   margin-bottom: 20px;
 }
-.order .order_container .order_info .contact_info .contact_info_inputs {
+.order .order_container .order_info > form .contact_info .contact_info_inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6764,14 +7145,14 @@ a {
           justify-content: center;
   gap: 20px;
 }
-.order .order_container .order_info .contact_info .contact_info_inputs > input {
+.order .order_container .order_info > form .contact_info .contact_info_inputs > input {
   width: 370px;
   height: 5px;
 }
-.order .order_container .order_info .contact_info .contact_info_inputs > textarea {
+.order .order_container .order_info > form .contact_info .contact_info_inputs > textarea {
   width: 370px;
 }
-.order .order_container .order_info .delivery_info {
+.order .order_container .order_info > form .delivery_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6783,7 +7164,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.order .order_container .order_info .delivery_info > h3 {
+.order .order_container .order_info > form .delivery_info > h3 {
   font-family: Space Mono;
   font-size: 24px;
   font-weight: 450;
@@ -6794,7 +7175,7 @@ a {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.order .order_container .order_info .delivery_info .delivery {
+.order .order_container .order_info > form .delivery_info .delivery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6807,7 +7188,7 @@ a {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.order .order_container .order_info .delivery_info .delivery .delivery_left {
+.order .order_container .order_info > form .delivery_info .delivery .delivery_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6815,12 +7196,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.order .order_container .order_info .delivery_info .delivery .delivery_left > img {
+.order .order_container .order_info > form .delivery_info .delivery .delivery_left > img {
   margin-right: 10px;
   width: 50px;
   height: 50px;
 }
-.order .order_container .order_info .delivery_info .delivery .delivery_left > h3 {
+.order .order_container .order_info > form .delivery_info .delivery .delivery_left > h3 {
   font-family: Work Sans;
   font-size: 20px;
   font-weight: 496;
@@ -6829,7 +7210,7 @@ a {
   text-align: left;
   color: rgb(18, 18, 18);
 }
-.order .order_container .order_info .delivery_info .delivery .delivery_right {
+.order .order_container .order_info > form .delivery_info .delivery .delivery_right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6837,11 +7218,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.order .order_container .order_info .delivery_info .delivery .delivery_right > input {
+.order .order_container .order_info > form .delivery_info .delivery .delivery_right > input {
   width: 50px;
   height: 20px;
 }
-.order .order_container .order_info .payment_info {
+.order .order_container .order_info > form .payment_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6853,7 +7234,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.order .order_container .order_info .payment_info > h3 {
+.order .order_container .order_info > form .payment_info > h3 {
   font-family: Space Mono;
   font-size: 24px;
   font-weight: 450;
@@ -6864,7 +7245,7 @@ a {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.order .order_container .order_info .payment_info .payments {
+.order .order_container .order_info > form .payment_info .payments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6874,7 +7255,7 @@ a {
   width: 67%;
   gap: 10px;
 }
-.order .order_container .order_info .payment_info .payments .payment {
+.order .order_container .order_info > form .payment_info .payments .payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6888,7 +7269,7 @@ a {
   border: 5px;
   margin-bottom: 20px;
 }
-.order .order_container .order_info .payment_info .payments .payment .payment_left {
+.order .order_container .order_info > form .payment_info .payments .payment .payment_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6896,12 +7277,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.order .order_container .order_info .payment_info .payments .payment .payment_left > img {
+.order .order_container .order_info > form .payment_info .payments .payment .payment_left > img {
   margin-right: 10px;
   width: 30px;
   height: 30px;
 }
-.order .order_container .order_info .payment_info .payments .payment .payment_left > h3 {
+.order .order_container .order_info > form .payment_info .payments .payment .payment_left > h3 {
   font-family: Work Sans;
   font-size: 15px;
   font-weight: 496;
@@ -6910,7 +7291,7 @@ a {
   text-align: left;
   color: rgb(18, 18, 18);
 }
-.order .order_container .order_info .payment_info .payments .payment .payment_right {
+.order .order_container .order_info > form .payment_info .payments .payment .payment_right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6918,11 +7299,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.order .order_container .order_info .payment_info .payments .payment .payment_right > input {
+.order .order_container .order_info > form .payment_info .payments .payment .payment_right > input {
   width: 40px;
   height: 15px;
 }
-.order .order_container .order_info .order_buttons {
+.order .order_container .order_info > form .order_buttons {
   padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6934,29 +7315,29 @@ a {
   width: 67%;
   gap: 10px;
 }
-.order .order_container .order_info .order_buttons .delete {
+.order .order_container .order_info > form .order_buttons .delete {
   width: 50%;
 }
-.order .order_container .order_info .order_buttons .delete > button {
+.order .order_container .order_info > form .order_buttons .delete > button {
   width: 100%;
   height: 30px;
   background-color: transparent;
 }
-.order .order_container .order_info .order_buttons .delete > button:hover {
+.order .order_container .order_info > form .order_buttons .delete > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: rgb(18, 18, 18);
   color: #fff;
 }
-.order .order_container .order_info .order_buttons .add {
+.order .order_container .order_info > form .order_buttons .add {
   width: 50%;
 }
-.order .order_container .order_info .order_buttons .add > button {
+.order .order_container .order_info > form .order_buttons .add > button {
   width: 100%;
   height: 30px;
   border: 1px solid transparent;
 }
-.order .order_container .order_info .order_buttons .add > button:hover {
+.order .order_container .order_info > form .order_buttons .add > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: transparent;
@@ -6968,7 +7349,7 @@ a {
   .order .order_container {
     padding: 40px 0;
   }
-  .order .order_container .order_info .contact_info {
+  .order .order_container .order_info > form .contact_info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6977,17 +7358,17 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .order .order_container .order_info .contact_info > h3 {
+  .order .order_container .order_info > form .contact_info > h3 {
     font-family: Space Mono;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 450;
-    line-height: 31px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: center;
     color: #6a6a6a;
     margin-bottom: 20px;
   }
-  .order .order_container .order_info .contact_info .contact_info_inputs {
+  .order .order_container .order_info > form .contact_info .contact_info_inputs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6998,14 +7379,14 @@ a {
             justify-content: center;
     gap: 20px;
   }
-  .order .order_container .order_info .contact_info .contact_info_inputs > input {
+  .order .order_container .order_info > form .contact_info .contact_info_inputs > input {
     width: 500px;
     height: 5px;
   }
-  .order .order_container .order_info .contact_info .contact_info_inputs > textarea {
+  .order .order_container .order_info > form .contact_info .contact_info_inputs > textarea {
     width: 500px;
   }
-  .order .order_container .order_info .delivery_info {
+  .order .order_container .order_info > form .delivery_info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7017,225 +7398,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .order .order_container .order_info .delivery_info > h3 {
-    font-family: Space Mono;
-    font-size: 24px;
-    font-weight: 450;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #6a6a6a;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .order .order_container .order_info .delivery_info .delivery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: rgba(254, 236, 199, 0.3019607843);
-    width: 540px;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  .order .order_container .order_info .delivery_info .delivery .delivery_left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .order .order_container .order_info .delivery_info .delivery .delivery_left > img {
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-  }
-  .order .order_container .order_info .delivery_info .delivery .delivery_left > h3 {
-    font-family: Work Sans;
-    font-size: 20px;
-    font-weight: 496;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgb(18, 18, 18);
-  }
-  .order .order_container .order_info .delivery_info .delivery .delivery_right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .order .order_container .order_info .delivery_info .delivery .delivery_right > input {
-    width: 50px;
-    height: 20px;
-  }
-  .order .order_container .order_info .payment_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .order .order_container .order_info .payment_info > h3 {
-    font-family: Space Mono;
-    font-size: 24px;
-    font-weight: 450;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #6a6a6a;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .order .order_container .order_info .payment_info .payments {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 520px;
-    gap: 10px;
-  }
-  .order .order_container .order_info .payment_info .payments .payment {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    border: 1px solid rgb(18, 18, 18) !important;
-    border-radius: 10px;
-    width: 250px;
-    padding: 15px 0px 15px 15px;
-    border: 5px;
-    margin-bottom: 20px;
-  }
-  .order .order_container .order_info .payment_info .payments .payment .payment_left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .order .order_container .order_info .payment_info .payments .payment .payment_left > img {
-    margin-right: 8px;
-    width: 20px;
-    height: 20px;
-  }
-  .order .order_container .order_info .payment_info .payments .payment .payment_left > h3 {
-    font-family: Work Sans;
-    font-size: 15px;
-    font-weight: 496;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgb(18, 18, 18);
-  }
-  .order .order_container .order_info .payment_info .payments .payment .payment_right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .order .order_container .order_info .payment_info .payments .payment .payment_right > input {
-    width: 30px;
-    height: 15px;
-  }
-  .order .order_container .order_info .order_buttons {
-    padding-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    width: 550px;
-    gap: 0px;
-  }
-  .order .order_container .order_info .order_buttons .delete > button {
-    margin-left: 16px;
-    height: 30px;
-    width: 250px;
-    background-color: transparent;
-  }
-  .order .order_container .order_info .order_buttons .add > button {
-    width: 250px;
-    height: 30px;
-    border: 1px solid transparent;
-  }
-}
-@media screen and (max-width: 740px) {
-  .order .order_container {
-    padding: 30px 0;
-  }
-  .order .order_container .order_info .contact_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .order .order_container .order_info .contact_info > h3 {
-    font-family: Space Mono;
-    font-size: 20px;
-    font-weight: 450;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #6a6a6a;
-    margin-bottom: 20px;
-  }
-  .order .order_container .order_info .contact_info .contact_info_inputs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 20px;
-  }
-  .order .order_container .order_info .contact_info .contact_info_inputs > input {
-    width: 500px;
-    height: 5px;
-  }
-  .order .order_container .order_info .contact_info .contact_info_inputs > textarea {
-    width: 500px;
-  }
-  .order .order_container .order_info .delivery_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .order .order_container .order_info .delivery_info > h3 {
+  .order .order_container .order_info > form .delivery_info > h3 {
     font-family: Space Mono;
     font-size: 20px;
     font-weight: 450;
@@ -7246,7 +7409,7 @@ a {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  .order .order_container .order_info .delivery_info .delivery {
+  .order .order_container .order_info > form .delivery_info .delivery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7259,7 +7422,7 @@ a {
     border-radius: 10px;
     margin-bottom: 20px;
   }
-  .order .order_container .order_info .delivery_info .delivery .delivery_left {
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7267,12 +7430,12 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .order .order_container .order_info .delivery_info .delivery .delivery_left > img {
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_left > img {
     margin-right: 5px;
     width: 40px;
     height: 40px;
   }
-  .order .order_container .order_info .delivery_info .delivery .delivery_left > h3 {
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_left > h3 {
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 496;
@@ -7281,7 +7444,7 @@ a {
     text-align: left;
     color: rgb(18, 18, 18);
   }
-  .order .order_container .order_info .delivery_info .delivery .delivery_right {
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7289,11 +7452,11 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .order .order_container .order_info .delivery_info .delivery .delivery_right > input {
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_right > input {
     width: 30px;
     height: 16px;
   }
-  .order .order_container .order_info .payment_info {
+  .order .order_container .order_info > form .payment_info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7305,7 +7468,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .order .order_container .order_info .payment_info > h3 {
+  .order .order_container .order_info > form .payment_info > h3 {
     font-family: Space Mono;
     font-size: 20px;
     font-weight: 450;
@@ -7316,7 +7479,7 @@ a {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  .order .order_container .order_info .payment_info .payments {
+  .order .order_container .order_info > form .payment_info .payments {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7328,7 +7491,7 @@ a {
     width: 370px;
     gap: 10px;
   }
-  .order .order_container .order_info .payment_info .payments .payment {
+  .order .order_container .order_info > form .payment_info .payments .payment {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7342,7 +7505,7 @@ a {
     border: 5px;
     margin-bottom: 20px;
   }
-  .order .order_container .order_info .payment_info .payments .payment .payment_left {
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7350,12 +7513,12 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .order .order_container .order_info .payment_info .payments .payment .payment_left > img {
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_left > img {
     margin-right: 8px;
     width: 20px;
     height: 20px;
   }
-  .order .order_container .order_info .payment_info .payments .payment .payment_left > h3 {
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_left > h3 {
     font-family: Work Sans;
     font-size: 15px;
     font-weight: 496;
@@ -7364,7 +7527,7 @@ a {
     text-align: left;
     color: rgb(18, 18, 18);
   }
-  .order .order_container .order_info .payment_info .payments .payment .payment_right {
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7372,11 +7535,11 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .order .order_container .order_info .payment_info .payments .payment .payment_right > input {
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_right > input {
     width: 30px;
     height: 15px;
   }
-  .order .order_container .order_info .order_buttons {
+  .order .order_container .order_info > form .order_buttons {
     padding-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7389,13 +7552,232 @@ a {
     width: 370px;
     gap: 10px;
   }
-  .order .order_container .order_info .order_buttons .delete > button {
+  .order .order_container .order_info > form .order_buttons .delete > button {
     margin-left: 0px;
     height: 30px;
     width: 360px;
     background-color: transparent;
   }
-  .order .order_container .order_info .order_buttons .add > button {
+  .order .order_container .order_info > form .order_buttons .add > button {
+    width: 360px;
+    height: 30px;
+    border: 1px solid transparent;
+  }
+}
+@media screen and (max-width: 740px) {
+  .order .order_container {
+    padding: 30px 0;
+  }
+  .order .order_container .order_info > form .contact_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order .order_container .order_info > form .contact_info > h3 {
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6a6a6a;
+    margin-bottom: 20px;
+  }
+  .order .order_container .order_info > form .contact_info .contact_info_inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .order .order_container .order_info > form .contact_info .contact_info_inputs > input {
+    width: 500px;
+    height: 5px;
+  }
+  .order .order_container .order_info > form .contact_info .contact_info_inputs > textarea {
+    width: 500px;
+  }
+  .order .order_container .order_info > form .delivery_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order .order_container .order_info > form .delivery_info > h3 {
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6a6a6a;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .order .order_container .order_info > form .delivery_info .delivery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: rgba(254, 236, 199, 0.3019607843);
+    width: 370px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_left > img {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_left > h3 {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 496;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(18, 18, 18);
+  }
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order .order_container .order_info > form .delivery_info .delivery .delivery_right > input {
+    width: 30px;
+    height: 16px;
+  }
+  .order .order_container .order_info > form .payment_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order .order_container .order_info > form .payment_info > h3 {
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6a6a6a;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .order .order_container .order_info > form .payment_info .payments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 370px;
+    gap: 10px;
+  }
+  .order .order_container .order_info > form .payment_info .payments .payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid rgb(18, 18, 18) !important;
+    border-radius: 10px;
+    width: 360px;
+    padding: 15px 0px 15px 15px;
+    border: 5px;
+    margin-bottom: 20px;
+  }
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_left > img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_left > h3 {
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 496;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(18, 18, 18);
+  }
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order .order_container .order_info > form .payment_info .payments .payment .payment_right > input {
+    width: 30px;
+    height: 15px;
+  }
+  .order .order_container .order_info > form .order_buttons {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 370px;
+    gap: 10px;
+  }
+  .order .order_container .order_info > form .order_buttons .delete > button {
+    margin-left: 0px;
+    height: 30px;
+    width: 360px;
+    background-color: transparent;
+  }
+  .order .order_container .order_info > form .order_buttons .add > button {
     width: 360px;
     height: 30px;
     border: 1px solid transparent;
@@ -10094,9 +10476,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;

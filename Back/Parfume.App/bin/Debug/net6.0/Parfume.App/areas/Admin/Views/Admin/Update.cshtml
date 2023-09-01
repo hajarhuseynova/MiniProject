@@ -3,19 +3,19 @@
     <form method="post" enctype="multipart/form-data">
 
         <div class="form-group">
-            <label asp-for="Name">Name</label>
+            <label asp-for="Name">Ad</label>
             <input type="text" class="form-control" asp-for="@Model.Name">
             <span class="alert-danger" asp-validation-for="Name"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="Surname">Surname</label>
+            <label asp-for="Surname">Soyad</label>
             <input type="text" class="form-control" asp-for="@Model.Surname">
             <span class="alert-danger" asp-validation-for="Surname"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="UserName">UserName</label>
+            <label asp-for="UserName">İstifadəçi Adı</label>
             <input type="text" class="form-control" asp-for="@Model.UserName">
             <span class="alert-danger" asp-validation-for="UserName"></span>
         </div>
@@ -27,13 +27,13 @@
         </div>
 
             <div class="form-group">
-            <label asp-for="NewPassword">NewPassword</label>
+            <label asp-for="NewPassword">Yeni Şifrə</label>
             <input type="password" class="form-control" asp-for="@Model.NewPassword">
             <span class="alert-danger" asp-validation-for="NewPassword"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="ConfirmNewPassword">ConfirmNewPassword</label>
+            <label asp-for="ConfirmNewPassword">Doğrulama Şifrə</label>
             <input type="password" class="form-control" asp-for="@Model.ConfirmNewPassword">
             <span class="alert-danger" asp-validation-for="ConfirmNewPassword"></span>
         </div>
@@ -41,6 +41,6 @@
      
 
         @Html.AntiForgeryToken()
-        <button type="submit">Yenile</button>
+        <button type="submit">Yenilə</button>
     </form>
 </div>

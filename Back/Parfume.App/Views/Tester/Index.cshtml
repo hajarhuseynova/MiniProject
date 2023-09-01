@@ -5,7 +5,7 @@
 	<div class="container testing_container">
 		<div class="testing_common">
 			<div class="testing_left">
-				<img src="../assets/images/@Model.SettingHomePage?.ImageTester" />
+				<img src="~/assets/images/@Model.SettingHomePage?.ImageTester" />
 			</div>
 			<div class="testing_right">
 				<h1>
@@ -20,8 +20,8 @@
 		<div class="tester_top">
 			<h1>Test Qutusu</h1>
 			<p>
-				Sevdiyiniz etri tapmaq ucun 10 muxtelif brendin en cox satilan
-				duxlarinin testerlerini yaratmishiq.
+				Sevdiyiniz ətri tapmaq üçün 10 müxtəlif brendin ən çox satılan
+				duxlarının testerlərini hazırlamışıq.
 			</p>
 			<div class="tester_input">
 				<form id="search">
@@ -36,12 +36,12 @@
 				@foreach (var item in Model.Testers)
 				{
 					<div class="testerparfume">
-						<img src="../assets/images/@item.Image" />
+						<img src="~/assets/images/@item.Image" />
 						<h3>@item.Title</h3>
 						<p class="cat">@item.Brand.Name</p>
 						<div class="star_button">
 							<p class="price">@item.SellPrice AZN</p>
-							<a><button>Elave et</button></a>
+							<a><button>Əlavə et</button></a>
 						</div>
 					</div>
 				}

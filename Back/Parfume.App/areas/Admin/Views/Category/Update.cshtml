@@ -2,11 +2,11 @@
 <div class="container">
 	<form method="post">
 		<div class="form-group">
-			<label for="name" >Name:</label>
-			<input type="text" class="form-control" asp-for="@Model.Name"/>
-		<span class="text" asp-validation-for="@Model.Name">Not Valid</span>
+			<label for="name" >Ad:</label>
+		 	<input type="text" class="form-control" asp-for="@Model.Name"/>
+		    <span class="text" asp-validation-for="@Model.Name"></span>
 			@Html.AntiForgeryToken()
 		</div>
-	<button type="submit">Yenile</button>
+	<button type="submit" class="btn btn-outline-success">Yenile</button>
 	</form>
 </div>

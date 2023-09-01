@@ -718,6 +718,15 @@ build_metadata.AdditionalFiles.Identity = Views\Home\Index.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/Legacy/Index.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWN5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\Views\Legacy\Index.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Legacy\Index.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/NotFound/Index.cshtml]
 build_metadata.AdditionalFiles.SourceItemGroup = 
 build_metadata.AdditionalFiles.Link = 

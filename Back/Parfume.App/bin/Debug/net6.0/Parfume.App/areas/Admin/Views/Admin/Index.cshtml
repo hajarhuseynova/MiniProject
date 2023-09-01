@@ -5,9 +5,9 @@
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Ad:</th>
-                <th scope="col">Istifadeci Adi:</th>
+                <th scope="col">Istifadəçi Adı:</th>
                 <th scope="col">Email:</th>
-                <th scope="col">Yenile</th>
+                <th scope="col">Yenilə</th>
                 <th scope="col">Sil</th>
             </tr>
         </thead>
@@ -20,7 +20,7 @@
                         <th>@item.UserName</th>
                         <th>@item.Email</th>
                                    <td><a asp-controller="Admin" asp-action="Update" asp-route-id="@item.Id" ><i class="fas fa-edit text text-primary"></i></a></td>
-                        <td><a onclick="if(!confirm('Are you sure?')){return false;}" asp-controller="Admin" asp-action="Delete"
+                        <td><a onclick="if(!confirm('Əminsən?')){return false;}" asp-controller="Admin" asp-action="Delete"
                             asp-route-id="@item.Id"class=" delete-item" ><i class="fas fa-trash text text-danger"></i></a></td>
                     </tr>
             }
