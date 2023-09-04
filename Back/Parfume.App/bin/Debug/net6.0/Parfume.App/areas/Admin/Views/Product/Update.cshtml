@@ -43,6 +43,11 @@
 			<input type="text" class="form-control" asp-for="@Model.ProductCode"/>
 			<span class="text text-danger" asp-validation-for="@Model.ProductCode"></span>
 	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Volume" >Parfume Volume:</label>
+			<input type="text" class="form-control" asp-for="@Model.Volume"/>
+			<span class="text text-danger" asp-validation-for="@Model.Volume"></span>
+	</div>
 
 	<div class="form-group">
             <select asp-for="ProductCategoryId" class="form-select" aria-label="Default select example">
@@ -55,6 +60,20 @@
             </select>
             <span class="text text-danger" asp-validation-for="ProductCategoryId"></span>
         </div>
+
+				<div class="form-group">
+            <select asp-for="BrandId" class="form-select" aria-label="Default select example">
+                <option selected>Brand Sec</option>
+                @foreach (var item in  ViewBag.Brand)
+                {
+                    <option value="@item.Id">@item.Name</option>
+
+                }
+            </select>
+            <span class="text text-danger" asp-validation-for="BrandId"></span>
+        </div>
+	   
+
 	<div class="form-group">
 		    <label asp-for="@Model.FormFile" >File:</label>
 			<input type="file" class="form-control" asp-for="@Model.FormFile"/>

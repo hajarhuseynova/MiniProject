@@ -45,8 +45,26 @@ namespace Parfume.App.areas.Admin.Controllers
             {
                 return View();
             }
+            if (brand.FormFile is null)
+            {
+                ModelState.AddModelError("file", "Image is required");
+                return View();
+            }
+
+            if (!FileExtention.isImage(brand.FormFile))
+            {
+                ModelState.AddModelError("file", "Image is required");
+                return View();
+            }
+            if (!FileExtention.isSizeOk(brand.FormFile, 1))
+            {
+                ModelState.AddModelError("file", "Image size is wrong");
+                return View();
+            }
 
             brand.CreatedDate = DateTime.Now;
+            brand.Image = brand.FormFile.CreateImage(_environment.WebRootPath, "assets/images");
+
             await _context.AddAsync(brand);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Brand");
@@ -76,7 +94,22 @@ namespace Parfume.App.areas.Admin.Controllers
                 return View();
             }
 
-          
+            if (Brand.FormFile != null)
+            {
+                if (!FileExtention.isImage(Brand.FormFile))
+                {
+                    ModelState.AddModelError("FormFile", "Wronggg!");
+                    return View();
+                }
+                if (!FileExtention.isSizeOk(Brand.FormFile, 1))
+                {
+                    ModelState.AddModelError("FormFile", "Wronggg!");
+                    return View();
+                }
+
+                Update.Image = Brand.FormFile.CreateImage(_environment.WebRootPath, "assets/images");
+            }
+
             Update.UpdatedDate = DateTime.Now;
             Update.Name = Brand.Name;
          

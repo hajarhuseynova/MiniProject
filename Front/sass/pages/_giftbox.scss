@@ -4,7 +4,7 @@
   .gift_intro_container {
     margin: auto;
     display: flex;
-    gap: 20px;
+    gap: 100px;
     .gift_left {
       margin-top: 30px;
       width: 450px;
@@ -15,7 +15,6 @@
       gap: 30px;
       justify-content: center;
       align-items: center;
-
       > h1 {
         color: $orange_01;
         font-family: Space Mono;
@@ -41,14 +40,10 @@
       align-items: center;
       gap: 50px;
       > img:first-child {
-        width: 340.999997392627px;
-        height: 263.9999979813886px;
-        transform: rotate(-109.45deg);
+        width: 290px;
       }
       > img:last-child {
-        width: 335.99999600461854px;
-        height: 298.5692398783031px;
-        transform: rotate(12.41deg);
+        width: 210px;
       }
     }
   }
@@ -61,7 +56,7 @@
       display: flex;
       justify-content: center;
       padding: 20px 0;
-      gap: 10px;
+      gap: 50px;
       .gift_left {
         width: 300px;
         border-radius: 10px;
@@ -71,6 +66,7 @@
         gap: 30px;
         justify-content: center;
         align-items: center;
+        margin-top: 0;
         > h1 {
           margin-top: 20px;
           color: $orange_01;
@@ -80,6 +76,7 @@
           line-height: 36px;
           letter-spacing: 0em;
           text-align: center;
+          margin-top: 0;
         }
         > p {
           width: 300px;
@@ -97,9 +94,7 @@
         align-items: center;
         gap: 10px;
         > img:first-child {
-          width: 300px;
-          height: 240px;
-          transform: rotate(-109.45deg);
+          width: 200px;
         }
         > img:last-child {
           display: none;
@@ -111,6 +106,7 @@
 @media screen and (max-width: 740px) {
   .gift_intro {
     background-color: $black_01;
+    padding: 40px 0;
     width: 100%;
     .gift_intro_container {
       padding: 0;
@@ -146,7 +142,7 @@
           letter-spacing: 0em;
           text-align: center;
           color: $white;
-          margin-bottom: 20px;
+          margin-bottom: 0px;
         }
       }
       .gift_right {
@@ -198,7 +194,7 @@
       flex-wrap: wrap;
       .box {
         width: 300px;
-        height: 340px;
+        height: fit-content;
         border: 1px solid $black_01;
         border-radius: 5px;
         > img {
@@ -245,6 +241,7 @@
             height: 29px;
             border: 2px solid transparent;
             margin-top: 10px;
+            margin-bottom: 15px;
             &:hover {
               transform: scale(1);
               background-color: transparent;
@@ -297,7 +294,7 @@
 @media screen and (max-width: 740px) {
   .giftboxes {
     .giftboxes_container {
-      padding: 20px 0;
+      padding: 40px 0;
       .giftboxes_intro {
         display: flex;
         flex-direction: column;
@@ -309,7 +306,7 @@
           line-height: 28px;
           letter-spacing: 0em;
           text-align: left;
-          margin-bottom: 10px;
+          margin-bottom: 15px;
         }
         > p {
           width: 370px;
@@ -319,7 +316,7 @@
           line-height: 20px;
           letter-spacing: 0em;
           text-align: center;
-          margin-bottom: 10px;
+          margin-bottom: 15px;
         }
       }
       .boxes {
@@ -328,8 +325,8 @@
         gap: 15px;
         flex-wrap: wrap;
         .box {
-          width: 280px;
-          height: 250px;
+          width: 230px;
+
           border: 1px solid $black_01;
           border-radius: 5px;
           > img {

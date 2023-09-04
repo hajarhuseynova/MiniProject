@@ -1,7 +1,9 @@
-﻿  <div class="order">
+﻿@model OrderDetails
+
+<div class="order">
         <div class="container order_container">
           <div class="order_info">
-            <form>
+            <form method="post" asp-action="createorder" asp-controller="order">
               <div class="contact_info">
                 <h3>Elaqe Melumatlari</h3>
                 <div class="contact_info_inputs">
@@ -106,8 +108,8 @@
                 <a class="delete"
                   ><button class="addtobasket" id="legv">Legv et</button></a
                 >
-                <a class="add"
-                  ><button class="addtobasket" id="tamamla">
+                <a class="add" 
+                  ><button class="addtobasket" id="tamamla" type="submit">
                     Sifarisi tamamla
                   </button></a
                 >

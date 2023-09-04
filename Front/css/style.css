@@ -6733,8 +6733,9 @@ a {
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
   font-family: Space Mono;
-  font-size: 18px;
-  font-weight: 510;
+  font-size: 30px;
+  font-weight: 610;
+  margin-top: 10px;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
@@ -6752,8 +6753,8 @@ a {
   color: #414141;
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
-  margin-left: 270px;
-  margin-top: -7px;
+  margin-left: 210px;
+  margin-top: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6768,9 +6769,9 @@ a {
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > h1 {
   font-family: Space Mono;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
-  line-height: 41px;
+  line-height: 36px;
   letter-spacing: 0em;
   text-align: left;
   color: rgb(18, 18, 18);
@@ -6794,7 +6795,18 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.basket .basket_container .money > p {
+.basket .basket_container .money .price_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.basket .basket_container .money .price_name > p {
   font-family: Work Sans;
   font-size: 18px;
   font-weight: 400;
@@ -6802,15 +6814,25 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.basket .basket_container .money > p > span {
-  margin-left: 230px;
+.basket .basket_container .money .price_name > p > span {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
 }
-.basket .basket_container .money > h5 {
+.basket .basket_container .money .total_price_basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.basket .basket_container .money .total_price_basket > h5 {
   font-family: Work Sans;
   font-size: 20px;
   font-weight: 500;
@@ -6818,15 +6840,22 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
-.basket .basket_container .money > h5 > span {
+.basket .basket_container .money .total_price_basket > h5 > span {
   margin-left: 200px;
 }
 .basket .basket_container .money > a > button {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   width: 100%;
   height: 32px;
   margin-top: 15px;
   font-size: 19px;
+}
+.basket .basket_container .money > a > button:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: transparent;
+  color: #ffaf06;
+  border-color: #ffaf06;
 }
 
 @media screen and (max-width: 1238px) {
@@ -6875,6 +6904,9 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right {
     margin-left: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
     font-family: Space Mono;
@@ -6888,7 +6920,7 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > p {
     font-family: Work Sans;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 450;
     line-height: 20px;
     letter-spacing: 0em;
@@ -6897,8 +6929,8 @@ a {
     color: #414141;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
-    margin-left: 180px;
-    margin-top: -7px;
+    margin-left: 150px;
+    margin-top: 3px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6940,7 +6972,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .basket .basket_container .money > p {
+  .basket .basket_container .money .price_name > p {
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 400;
@@ -6948,7 +6980,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .basket .basket_container .money > p > span {
+  .basket .basket_container .money .price_name > p > span {
     margin-left: 230px;
     font-size: 18px;
     font-weight: 400;
@@ -6956,7 +6988,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .basket .basket_container .money > h5 {
+  .basket .basket_container .money .total_price_basket > h5 {
     font-family: Work Sans;
     font-size: 20px;
     font-weight: 500;
@@ -6964,7 +6996,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .basket .basket_container .money > h5 > span {
+  .basket .basket_container .money .total_price_basket > h5 > span {
     margin-left: 200px;
   }
 }
@@ -7014,6 +7046,9 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right {
     margin-left: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
     font-family: Space Mono;
@@ -7036,8 +7071,8 @@ a {
     color: #414141;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
-    margin-left: 20px;
-    margin-top: -7px;
+    margin-left: 0px;
+    margin-top: 3px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7052,9 +7087,9 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > h1 {
     font-family: Space Mono;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
     color: rgb(18, 18, 18);
@@ -7079,7 +7114,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .basket .basket_container .money > p {
+  .basket .basket_container .money .price_name > p {
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
@@ -7087,7 +7122,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .basket .basket_container .money > p > span {
+  .basket .basket_container .money .price_name > p > span {
     margin-left: 230px;
     font-size: 16px;
     font-weight: 400;
@@ -7095,7 +7130,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .basket .basket_container .money > h5 {
+  .basket .basket_container .money .total_price_basket > h5 {
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 500;
@@ -7103,13 +7138,13 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
-  .basket .basket_container .money > h5 > span {
+  .basket .basket_container .money .total_price_basket > h5 > span {
     margin-left: 200px;
   }
   .basket .basket_container .money > a > button {
     width: 97%;
     font-size: 17px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
 .order .order_container {

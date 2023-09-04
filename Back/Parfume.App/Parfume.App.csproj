@@ -7,9 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Admin\Views\Dictionary\**" />
     <Compile Remove="wwwroot\Admin\**" />
+    <Content Remove="Areas\Admin\Views\Dictionary\**" />
     <Content Remove="wwwroot\Admin\**" />
+    <EmbeddedResource Remove="Areas\Admin\Views\Dictionary\**" />
     <EmbeddedResource Remove="wwwroot\Admin\**" />
+    <None Remove="Areas\Admin\Views\Dictionary\**" />
     <None Remove="wwwroot\Admin\**" />
   </ItemGroup>
 
@@ -30,10 +34,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Parfume.Service\Parfume.Service.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Views\Dictionary\" />
   </ItemGroup>
 
 </Project>

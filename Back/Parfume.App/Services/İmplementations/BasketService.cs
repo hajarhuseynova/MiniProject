@@ -22,15 +22,16 @@ namespace Parfume.App.Services.İmplementations
 
         public async Task AddBasket(int id, int? count)
         {
-            if (!await _context.Parfums.AnyAsync(x => x.Id == id ))
+            if (!await _context.Products.AnyAsync(x => x.Id == id))
             {
-                throw new Exception("Item is not found!");
+                throw new Exception("Tapılmadı!");
             }
+
             if (_httpContext.HttpContext.User.Identity.IsAuthenticated && _httpContext.HttpContext.User.IsInRole("User"))
             {
                 AppUser appUser = await _userManager.FindByNameAsync(_httpContext.HttpContext.User.Identity.Name);
                 Basket? basket = await _context.Baskets.
-                  Include(x => x.basketItems.Where(y => !y.IsDeleted)).ThenInclude(x => x.Parfum)
+                  Include(x => x.basketItems.Where(y => !y.IsDeleted)).ThenInclude(x => x.Product)
                   .Where(x => !x.IsDeleted && x.AppUser.Id == appUser.Id).FirstOrDefaultAsync();
                 if (basket == null)
                 {
@@ -43,28 +44,27 @@ namespace Parfume.App.Services.İmplementations
                     BasketItem basketItem = new BasketItem
                     {
                         Basket = basket,
-                        ParfumId = id,
-                      
-                        ParfumCount = count ?? 1,
+                        ProductId = id,
+                        ProductCount = count ?? 1,
                     };
                     await _context.AddAsync(basketItem);
                 }
                 else
                 {
-                    BasketItem basketItem = basket.basketItems.FirstOrDefault(x => x.ParfumId == id);
+                    BasketItem basketItem = basket.basketItems.FirstOrDefault(x => x.ProductId == id);
                     if (basketItem != null)
                     {
-                        basketItem.ParfumCount += count ?? +1;
-                      
+                        basketItem.ProductCount += count ?? +1;
+
                     }
                     else
                     {
                         basketItem = new BasketItem
                         {
                             Basket = basket,
-                            ParfumId = id,
-                            ParfumCount = count ?? 1,
-                         
+                            ProductId = id,
+                            ProductCount = count ?? 1,
+
                         };
                         await _context.AddAsync(basketItem);
 
@@ -121,7 +121,7 @@ namespace Parfume.App.Services.İmplementations
                 AppUser appUser = await _userManager.FindByNameAsync(_httpContext.HttpContext.User.Identity.Name);
 
                 Basket? basket = await _context.Baskets.Include(x => x.basketItems.Where(y => !y.IsDeleted))
-                          .ThenInclude(x => x.Parfum).ThenInclude(x=>x.Volume)
+                          .ThenInclude(x => x.Product)
                              .Where(x => !x.IsDeleted && x.AppUserId == appUser.Id).FirstOrDefaultAsync();
 
 
@@ -132,15 +132,15 @@ namespace Parfume.App.Services.İmplementations
                     {
                         basketItemViewModels.Add(new BasketItemViewModel
                         {
-                            ProductId = item.ParfumId,
-                            Image = item.Parfum.Image,
-                            Count = item.ParfumCount,
-                            Name = item.Parfum.Brand.Name,
-                           Volume=item.Parfum.Volume.MilliLiters,
-                            DiscountPer = (int)(item.Parfum.DiscountPercentage),
-                            Price = int.Parse(item.Parfum.SellPrice) - (int.Parse(item.Parfum.SellPrice) * (int)(item.Parfum.DiscountPercentage) / 100)
+                            ProductId = item.ProductId,
+                            Name=item.Product.Title,
+                            Image = item.Product.Image,
+                            Count = item.ProductCount,
+                            Volume=item.Product.Volume,
+                            DiscountPer = (int)(item.Product.DiscountPercentage ?? 0),
+                            Price = int.Parse(item.Product.SellPrice) - (int.Parse(item.Product.SellPrice) * (int)(item.Product.DiscountPercentage ?? 0) / 100)
                         });
-                
+
 
                     }
                     return basketItemViewModels;
@@ -156,28 +156,28 @@ namespace Parfume.App.Services.İmplementations
                     List<BasketItemViewModel> basketItemViewModels = new();
                     foreach (var item in basketViewModels)
                     {
-                        Parfum? parfum = await _context.Parfums
+                        Product? Product = await _context.Products
                                           .Where(x => !x.IsDeleted && x.Id == item.ProductId)
-                                           .Include(x => x.Brand)
-                                           .Include(x => x.Volume)
+                                          .Include(x=>x.Category).Include(x=>x.Brand)
                                            .FirstOrDefaultAsync();
-             
 
-                            if (parfum != null)
-                            {
+
+                        if (Product != null)
+                        {
                             basketItemViewModels.Add(new BasketItemViewModel
                             {
                                 ProductId = item.ProductId,
+                                Name = Product.Title,
                                 Count = item.CountProduct,
-                                Image = parfum.Image,
-                                Name = parfum.Brand.Name,
-                                Volume = parfum.Volume.MilliLiters,
-                                DiscountPer = (int)(parfum.DiscountPercentage),
-                                Price = int.Parse(parfum.SellPrice) - (int.Parse(parfum.SellPrice) * (int)(parfum.DiscountPercentage) / 100)
+                                Image = Product.Image,
+                                Volume = Product.Volume,
+                                DiscountPer = (int)(Product.DiscountPercentage ?? 0),
+                                Price = int.Parse(Product.SellPrice) - (int.Parse(Product.SellPrice) * (int)(Product.DiscountPercentage ?? 0) / 100)
+
                             });
 
                         }
-                    
+
                     }
                     return basketItemViewModels;
                 }
@@ -195,7 +195,7 @@ namespace Parfume.App.Services.İmplementations
 
                 if (basket != null)
                 {
-                    BasketItem basketItem = basket.basketItems.FirstOrDefault(x => x.ParfumId == id);
+                    BasketItem basketItem = basket.basketItems.FirstOrDefault(x => x.ProductId == id);
 
                     if (basketItem != null)
                     {
@@ -214,7 +214,7 @@ namespace Parfume.App.Services.İmplementations
                     List<BasketViewModel>? basketViewModels = JsonConvert
                              .DeserializeObject<List<BasketViewModel>>(basketJson);
 
-                    
+
                     BasketViewModel basketViewModel = null;
                     for (int i = 0; i < basketViewModels.Count; i++)
                     {
@@ -223,7 +223,7 @@ namespace Parfume.App.Services.İmplementations
                             basketViewModel = basketViewModels[i];
                         }
                     }
-             
+
                     if (basketViewModel != null)
                     {
                         basketViewModels.Remove(basketViewModel);

@@ -6,6 +6,7 @@
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Adi</th>
+                <th scope="col">Sekil</th>
                 <th scope="col">Yenile</th>
                 <th scope="col">Sil</th>
             </tr>
@@ -16,6 +17,7 @@
                     <tr>
                         <th scope="row">@item.Id</th>
                         <th>@item.Name</th>
+                         <th><img style="width:100px;height:100px" src="~/assets/images/@item.Image" /></th>
                         
                         <td><a asp-controller="brand" asp-action="update" asp-route-id="@item.Id" >
                             <i class="fas fa-edit text text-primary"></i></a></td>

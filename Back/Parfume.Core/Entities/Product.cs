@@ -19,6 +19,7 @@ namespace Parfume.Core.Entities
         public bool IsDiscount { get; set; }
         public bool IsStock { get; set; }
         public int? DiscountPercentage { get; set; }
+        public string? Volume { get; set; }
         public string? Image { get; set; }
         [NotMapped]
         public IFormFile? FormFile { get; set; }
@@ -26,9 +27,12 @@ namespace Parfume.Core.Entities
         public string SellPrice { get; set; }
         public int? CountSell { get; set; }
         public DateTime? TimeSell { get; set; }
+        //category
         public ProductCategory? Category { get; set; }
         public int? ProductCategoryId { get; set; }
-        public Dictionary<string,string>? Properties { get; set; }
+        //brand
+        public int? BrandId { get; set; }
+        public Brand? Brand { get; set; }
 
     }
 }

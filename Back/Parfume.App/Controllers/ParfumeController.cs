@@ -35,8 +35,8 @@ namespace Parfume.App.Controllers
                 {
                     Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
                     Brands = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync(),
-                    Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).Include(x => x.Brand)
-                 .Include(x => x.Volume)
+                    Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Brand).Include(x => x.Category)
+              
                  .ToListAsync()
 
                 };
@@ -48,8 +48,8 @@ namespace Parfume.App.Controllers
                 {
                     Slides = await _context.Slides.Where(x => !x.IsDeleted).ToListAsync(),
                     Brands = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync(),
-                    Parfumes = await _context.Parfums.Where(x => !x.IsDeleted).Include(x => x.Brand)
-                    .Include(x => x.Volume)
+                    Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Brand).Include(x=>x.Category)
+                
                     .ToListAsync()
 
                 };
@@ -63,41 +63,28 @@ namespace Parfume.App.Controllers
 
             ParfumeViewModel parfumViewModel = new ParfumeViewModel
             {
-                Parfumes = await _context.Parfums.Include(x => x.Volume)
-                       .Include(x => x.Brand)
+                Products = await _context.Products
+                       .Include(x => x.Brand).Include(x=>x.Category)
                         .Where(x => !x.IsDeleted).ToListAsync(),
 
-                Parfum = await _context.Parfums
-              .Include(x => x.Brand)
-                .Include(x => x.Volume)
+                Product = await _context.Products
+              .Include(x => x.Brand).Include(x=>x.Category)
+           
                 .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
 
                 Brands = await _context.Brands.Where(b => !b.IsDeleted).ToListAsync(),
                 Functions = await _context.Functions.Where(b => !b.IsDeleted).ToListAsync(),
 
-                Volumes = await _context.Volumes.Where(b => !b.IsDeleted).ToListAsync(),
+             
 
             };
-            if (parfumViewModel.Parfum == null)
+            if (parfumViewModel.Product == null)
             {
                 return View(nameof(Index));
             }
             return View(parfumViewModel);
         }
-        public async Task<IActionResult> AddBasket(int id, int? count)
-        {
-            await _basketService.AddBasket(id, count);
-            return Json(new { status = 200 });
-        }
-        public async Task<IActionResult> GetAllBaskets()
-        {
-            return Json(await _basketService.GetAllBaskets());
-        }
-        public async Task<IActionResult> RemoveBasket(int id)
-        {
-            await _basketService.Remove(id);
-            return Redirect(Request.Headers["Referer"].ToString());
-        }
+   
 
     }
 }

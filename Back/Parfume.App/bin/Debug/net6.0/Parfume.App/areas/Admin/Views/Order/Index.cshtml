@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Order>
+<div class="container">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">UserName</th>
+                <th scope="col">TotalPrice</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <th>@item.AppUser.UserName</th>
+                     <th>@item.TotalPrice</th>
+                    @if (item.isAccepted==false)
+                    {
+                           <td><a asp-controller="order" asp-action="accept" asp-route-id="@item.Id" >
+                           Accept</a></td>
+                        <td><a asp-controller="order" asp-action="reject" asp-route-id="@item.Id"
+                            class=" delete-item" >Reject</a></td>
+                    }else if (item.isAccepted==true &&item.isCompleted==false)
+                    {
+                          <td><a asp-controller="order" asp-action="completed" asp-route-id="@item.Id" >
+                           Accept</a></td>
+                    }
+                    else
+                    {
+                       <th>Order completed</th>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

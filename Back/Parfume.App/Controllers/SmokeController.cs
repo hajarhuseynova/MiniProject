@@ -34,7 +34,7 @@ namespace Controllers
                 SmokeViewModel smokeViewModel = new SmokeViewModel
                 {
                     SettingHomePage = await _context.SettingHomePage.Where(x => !x.IsDeleted).FirstOrDefaultAsync(),
-                    Smokes = await _context.Smokes.Where(x => !x.IsDeleted).ToListAsync()
+                    Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Category).ToListAsync()
                 };
                 return View(smokeViewModel);
             }
@@ -43,7 +43,8 @@ namespace Controllers
                 SmokeViewModel smokeViewModel = new SmokeViewModel
                 {
                     SettingHomePage = await _context.SettingHomePage.Where(x => !x.IsDeleted).FirstOrDefaultAsync(),
-                    Smokes = await _context.Smokes.Where(x => !x.IsDeleted).ToListAsync()
+                    Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Category).ToListAsync()
+
 
                 };
                 return View(smokeViewModel);
@@ -58,12 +59,13 @@ namespace Controllers
 
             SmokeViewModel smokeViewModel = new SmokeViewModel
             {
-                Smokes = await _context.Smokes.Where(x => !x.IsDeleted ).ToListAsync(),
-                Smoke = await _context.Smokes.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
+                Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Category).ToListAsync(),
+
+                Product = await _context.Products.Where(x => !x.IsDeleted && x.Id == id).Include(x => x.Category).FirstOrDefaultAsync(),
                 Functions = await _context.Functions.Where(b => !b.IsDeleted).ToListAsync(),
 
             };
-            if (smokeViewModel.Smoke == null)
+            if (smokeViewModel.Product == null)
             {
                 return View(nameof(Index));
             }
@@ -74,20 +76,20 @@ namespace Controllers
 
         public async Task<IActionResult> SearchSmoke(string search)
         {
-            int TotalCount = _context.Testers.Where(x => !x.IsDeleted && x.Title.Trim().ToLower().Contains(search.Trim().ToLower())).Count();
-            List<Smoke> smokes = await _context.Smokes
-               .Where(x => !x.IsDeleted && x.Title.Trim().ToLower().Contains(search.Trim().ToLower()))
+            int TotalCount = _context.Products.Where(x => !x.IsDeleted && x.Category.Name=="Smoke" && x.Title.Trim().ToLower().Contains(search.Trim().ToLower())).Count();
+            List<Product> products = await _context.Products
+               .Where(x => !x.IsDeleted && x.Category.Name == "Smoke" && x.Title.Trim().ToLower().Contains(search.Trim().ToLower()))
                .ToListAsync();
 
-            return Json(smokes);
+            return Json(products);
         }
         public async Task<IActionResult> GetAllSmokes()
         {
 
-            List<Smoke> smokes = await _context.Smokes.Where(x => !x.IsDeleted)
+            List<Product> products = await _context.Products.Where(x => !x.IsDeleted && x.Category.Name=="Smoke")
                 .ToListAsync();
 
-            return Json(smokes);
+            return Json(products);
         }
 
     }

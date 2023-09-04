@@ -103,7 +103,7 @@ namespace Parfume.App.areas.Admin.Controllers
                     ModelState.AddModelError("file", "Image size is wrong");
                     return View();
                 }
-                Update.Image = slides.FormFile.CreateImage(_environment.WebRootPath, "assets/image/");
+                Update.Image = slides.FormFile.CreateImage(_environment.WebRootPath, "assets/images/");
             }
             Update.UpdatedDate = DateTime.Now;
             Update.Title = slides.Title;

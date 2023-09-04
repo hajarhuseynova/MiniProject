@@ -21,7 +21,7 @@
 				<form id="searchSmoke">
 					<input name="search" placeholder="Axtarış..." type="search" class="searchInputSmoke" style="height:50px">
 					<img src="~/assets/icons/tester/Search.svg" />
-				</form>
+				</form> 
 			</div>
 		</div>
 	</div>
@@ -29,7 +29,7 @@
 <div class="smoke">
 	<div class="container smoke_container">
 		<div class="newsmoke">
-			@foreach (var item in Model.Smokes)
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Smoke").Take(4))
 			{
 				<div class="smok">
 					<a asp-action="detail" asp-route-id="@item.Id" asp-controller="smoke">
@@ -41,85 +41,151 @@
 						<p>
 							@item.Desc
 						</p>
-						<a> <button>Səbətə Əlavə Et</button> </a>
+						<a asp-action="addbasket" asp-route-id="@item.Id" asp-controller="home" class="add-basket-product">
+							<button>Səbətə Əlavə Et</button>
+						</a>
 					</div>
 				</div>
-
 			}
-
 		</div>
 	</div>
 </div>
 <script>
-	   const submit = document.querySelector(".SearchButton");
-	   const searchInput = document.querySelector(".searchInputSmoke")
-	   const container = document.querySelector(".newsmoke")
-	   const fullCards=document.querySelectorAll(".smok");
-	   searchInput.addEventListener("input", (e) => {
-		   e.preventDefault();
+		   const submit = document.querySelector(".SearchButton");
+		   const searchInput = document.querySelector(".searchInputSmoke")
+		   const container = document.querySelector(".newsmoke")
+		   const fullCards=document.querySelectorAll(".smok");
+		   searchInput.addEventListener("input", (e) => {
+			   e.preventDefault();
 
-		   if(searchInput.value==""){
-		   let  href = `/smoke/getAllSmokes`;
-		   fetch(href)
-			   .then(x => x.json())
-			   .then(x => {
-				   container.innerHTML =""
-				   x.forEach(item => {
+			   if(searchInput.value==""){
+			   let  href = `/smoke/getAllSmokes`;
+			   fetch(href)
+				   .then(x => x.json())
+				   .then(x => {
+					   container.innerHTML =""
+					   x.forEach(item => {
 
-					   let view = `
-						 <div class="smok">
-					<a asp-action="detail" asp-controller="smoke" asp-route-id="${item.Id}" >
-					<img src="../assets/images/${item.image}" />
-					</a>
+						   let view = `
+							 <div class="smok">
+						<a asp-action="detail" asp-controller="smoke" asp-route-id="${item.Id}" >
+						<img src="../assets/images/${item.image}" />
+						</a>
 
-				<div class="responsive">
-				  <h3>${item.title}</h3>
-				  <p>
-				   ${item.desc}
-				  </p>
-				  <a> <button>Səbətə Əlavə Et</button> </a>
-				</div>
-			  </div>
+					<div class="responsive">
+					  <h3>${item.title}</h3>
+					  <p>
+					   ${item.desc}
+					  </p>
+					  <a> <button>Səbətə Əlavə Et</button> </a>
+					</div>
+				  </div>
 
-		   `;
-					   container.innerHTML += view;
-				   } )
-			   })
-		   }
-
+			   `;
+						   container.innerHTML += view;
+					   } )
+				   })
+			   }
 	else{
-			 let  href = `/smoke/searchSmoke?search=${searchInput.value}`;
-		   fetch(href)
-			   .then(x => x.json())
-			   .then(x => {
-				   container.innerHTML =""
-				   x.forEach(item => {
+				 let  href = `/smoke/searchSmoke?search=${searchInput.value}`;
+			   fetch(href)
+				   .then(x => x.json())
+				   .then(x => {
+					   container.innerHTML =""
+					   x.forEach(item => {
 
-					   let view = `
-					 <div class="smok">
-					<a asp-action="detail" asp-controller="smoke" asp-route-id="${item.Id}" >
-					<img src="../assets/images/${item.image}" />
-					</a>
+						   let view = `
+						 <div class="smok">
+						<a asp-action="detail" asp-controller="smoke" asp-route-id="${item.Id}" >
+						<img src="../assets/images/${item.image}" />
+						</a>
 
-				<div class="responsive">
-				  <h3>${item.title}</h3>
-				  <p>
-				   ${item.desc}
-				  </p>
-				  <a> <button>Səbətə Əlavə Et</button> </a>
-				</div>
-			  </div>
+					<div class="responsive">
+					  <h3>${item.title}</h3>
+					  <p>
+					   ${item.desc}
+					  </p>
+					  <a> <button>Səbətə Əlavə Et</button> </a>
+					</div>
+				  </div>
 
-		   `;
-					   container.innerHTML += view;
-				   } )
-			   })
-	  }
+			   `;
+						   container.innerHTML += view;
+					   } )
+				   })
+		  }
+
+		   })
+</script>
+<script>
+	const products = document.querySelectorAll(".add-basket-product");
+		const totalPriceElement = document.getElementById("totalPrice");
+	products.forEach(prod => {
+		prod.addEventListener("click", (e) => {
+			e.preventDefault();
+			let href = prod.getAttribute("href");
+			let TotalPrice = 0;
+
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/home/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
+
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
+								<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+												
+													<span>${basket.count} * ${basket.price} AZN</span>
+												</div>
+												<div class="deleteimage">
+													<a href="/parfume/RemoveBasket/${basket.productId}" data-id="">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									`
+						basketItems.innerHTML += basketView;
+
+					})
+
+					totalPriceElement.innerHTML = TotalPrice;
 
 
 
+					const Toast = Swal.mixin({
+						toast: true,
+						position: 'top-end',
+						showConfirmButton: false,
+						timer: 3000,
+						timerProgressBar: true,
+						didOpen: (toast) => {
+							toast.addEventListener('mouseenter', Swal.stopTimer)
+							toast.addEventListener('mouseleave', Swal.resumeTimer)
+						}
+					})
 
+					Toast.fire({
+						icon: 'success',
+						title: `Elave edildi!`
+					})
 
+					 })
+				 }
 
-	   })
+				})
+		})
+	})
+
 </script>

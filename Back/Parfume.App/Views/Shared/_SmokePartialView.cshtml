@@ -1,8 +1,8 @@
-﻿ @model IEnumerable<Smoke>
+﻿ @model IEnumerable<Product>
 
 
 
-	         @foreach (var item in Model.Take(3))
+	         @foreach (var item in Model.Where(x=>x.Category.Name=="Smoke"))
         {
               <div class="smoke">
               <a asp-action="detail" asp-controller="smoke" asp-route-id="@item.Id" >
@@ -14,7 +14,8 @@
                 <p>
               @item.Desc
                 </p>
-                <a asp-action="addbasket" asp-controller="smoke" asp-route-id="@item.Id"> <button>Səbətə Əlavə Et</button> </a>
+                <a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id" class="add-basket-product">
+                    <button>Səbətə Əlavə Et</button> </a>
               </div>
             </div>  
         }

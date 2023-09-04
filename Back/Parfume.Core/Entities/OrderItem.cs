@@ -9,19 +9,8 @@ namespace Parfume.Core.Entities
 	{
         public int OrderId { get; set; }
         public Order Order { get; set; }
-        //parfum
-        public int ParfumId { get; set; }
-        public Parfum Parfum { get; set; }
-        //tutsu
-        public int SmokeId { get; set; }
-        public Smoke Smoke { get; set; }
-        //tester
-        public int TesterId { get; set; }
-        public Tester Tester { get; set; }
-        //qutu
-        public int GiftBoxId { get; set; }
-        public GiftBox GiftBox { get; set; }
-        //say
-        public int ParfumCount { get; set; }
+        public int ProductId { get; set; }
+        public Product Product { get; set; }
+        public int ProductCount { get; set; }
     }
 }

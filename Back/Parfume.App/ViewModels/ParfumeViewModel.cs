@@ -11,11 +11,8 @@ namespace Parfume.App.ViewModels
         public IEnumerable<DislikeP> DislikePs { get; set; }
         public IEnumerable<LikeP> LikePs { get; set; }
         public IEnumerable<Rating> RatingPs { get; set; }
-
-        public IEnumerable<Volume> Volumes { get; set; }
-
-        public IEnumerable<Parfum> Parfumes { get; set; }
-        public Parfum Parfum { get; set; }
+        public IEnumerable<Product> Products { get; set; }
+        public Product Product { get; set; }
 
 
     }

@@ -4,31 +4,41 @@
 <div class="detail_intro">
 	<div class="container detail_intro_container">
 		<div class="detail_left">
-			<img src="~/assets/images/@Model.Smoke?.Image" />
+			<img src="~/assets/images/@Model.Product?.Image" />
 		</div>
 		<div class="detail_right">
-			<h3>@Model.Smoke?.Title</h3>
-			<p>@Model.Smoke?.Desc .</p>
-			<p class="muted">Məhsul Kodu:@Model.Smoke?.ProductCode </p>
-			<div class="bools">
-				@if (Model.Smoke.IsStock == true)
+			<h3>@Model.Product?.Title</h3>
+			<p>@Model.Product?.Desc .</p>
+			<p class="muted">Məhsul Kodu:@Model.Product?.ProductCode </p>
+	         <div class="bools">
+				@if (Model.Product.IsStock == true)
 				{
 					<p class="stock">stokda/</p>
 				}
-				@if (Model.Smoke.IsDiscount == true)
+
+				@if (Model.Product.IsNew == true)
 				{
-					<p class="stock">endirim: @Model.Smoke.DiscountPercentage %</p>
+					<p class="stock">yeni/</p>
 				}
 
+				@if (Model.Product.IsTrend == true)
+				{
+					<p class="stock">trend/</p>
+				}
+
+				@if (Model.Product.IsDiscount == true)
+				{
+					<p class="stock">endirim: @Model.Product.DiscountPercentage %</p>
+				}
 			</div>
 			<div class="priceStar">
-				@if (Model.Smoke.IsDiscount == true)
+				@if (Model.Product.IsDiscount == true)
 				{
-					<p class="price">@(int.Parse(Model.Smoke.SellPrice)-int.Parse(Model.Smoke.SellPrice)*Model.Smoke.DiscountPercentage/100) AZN</p>
+					<p class="price">@(int.Parse(Model.Product.SellPrice)-int.Parse(Model.Product.SellPrice)*Model.Product.DiscountPercentage/100) AZN</p>
 				}
 				else
 				{
-					<p class="price">@Model.Smoke.SellPrice AZN</p>
+					<p class="price">@Model.Product.SellPrice AZN</p>
 				}
 				<div class="stars">
 					<span class="st">&#9733;</span>
@@ -44,15 +54,14 @@
 				<form action="detailp.html" class="input_number">
 					<p class="minus" id="minus">-</p>
 					<input type="number"
-						   class="orangeinput"
+						   class="orangeinput specialJsInput"
 						   id="countInput"
 						   value="0" />
 					<p class="pilus" id="pilus">+</p>
 				</form>
-				<a><button class="addtobasket">Səbətə Əlavə Et</button></a>
-				<div class="rubish">
-					<a><img src="~/assets/icons/tester/rubish.svg" /></a>
-				</div>
+				<a class="addbasketdetail" asp-action="addbasket" asp-controller="home" asp-route-id="@Model.Product.Id"
+				><button class="addtobasket">Səbətə Əlavə Et</button></a>
+			
 			</div>
 		</div>
 	</div>
@@ -61,17 +70,17 @@
 	<div class="container detail_info_container">
 		<h1>Haqqında</h1>
 		<p>
-			@Model.Smoke.Info1
+			@Model.Product.Info1
 		</p>
 		<p class="hide">
-			@Model.Smoke.Info2
+			@Model.Product.Info2
 		</p>
 	</div>
 </div>
 <div class="assesment">
         <div class="container assesment_container">
           <div class="left">
-            <h3>@Model.Smoke.Title</h3>
+            <h3>@Model.Product.Title</h3>
             <h1>4.1</h1>
             <div class="stars">
               <span class="st">&#9733;</span>
@@ -236,7 +245,7 @@
 	<div class="container smokes_container">
 		<h1>Tüstülər</h1>
 		<div class="newsmokes">
-		@await Html.PartialAsync("_SmokePartialView",Model.Smokes.Take(4).ToList())
+		@await Html.PartialAsync("_SmokePartialView",Model.Products.Where(x=>x.Category.Name=="Smoke").Take(4).ToList())
 		</div>
 	</div>
 </div>
@@ -245,3 +254,149 @@
 		@await Html.PartialAsync("_FunctionPartialView",Model.Functions.Take(4).ToList())
 	</div>
 </div>
+
+<script>
+			const addbasketdetail=document.querySelector(".addbasketdetail");
+			const specialJsInput=document.querySelector(".specialJsInput");
+        	const totalPriceElement = document.getElementById("totalPrice");	
+
+	 addbasketdetail.addEventListener("click", (e) => {
+			e.preventDefault();
+
+			let href = addbasketdetail.getAttribute("href");
+			href=href+`?count=${specialJsInput.value}`
+			let TotalPrice = 0;
+			
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/home/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
+											<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+												
+													<span>${basket.count} * ${basket.price} AZN</span>
+												</div>
+												<div class="deleteimage">
+													<a href="/home/RemoveBasket/${basket.productId}" data-id="">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										`
+						basketItems.innerHTML += basketView;
+
+					})
+				
+					totalPriceElement.innerHTML = TotalPrice;
+					
+					 const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.addEventListener('mouseenter', Swal.stopTimer)
+                            toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                    })
+
+                    Toast.fire({
+                        icon: 'success',
+                        title: `Əlavə edildi!`
+                    })
+
+
+
+					 })
+				 }
+
+				})
+	  })
+</script>
+
+
+<script>
+    const products = document.querySelectorAll(".add-basket-product");
+    products.forEach(prod => {
+        prod.addEventListener("click", (e) => {
+            e.preventDefault();
+            let href = prod.getAttribute("href");
+            let TotalPrice = 0;
+
+            fetch(href)
+                .then(x => x.json())
+                .then(x => {
+                 if(x.status==200){
+                     fetch("/home/getallbaskets")
+                     .then(res=>res.json())
+                     .then(b=>{
+                            basketItems.innerHTML=""
+                    b.forEach(basket => {
+                     
+                        TotalPrice += basket.price*basket.count;
+                            let basketView=`
+								<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+											
+													<span>${basket.count} * ${basket.price} AZN</span>
+												</div>
+												<div class="deleteimage">
+													<a href="/parfume/RemoveBasket/${basket.productId}" data-id="">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+                                    `
+                        basketItems.innerHTML += basketView;
+
+                    })
+                
+                    totalPriceElement.innerHTML = TotalPrice;
+                 
+
+
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.addEventListener('mouseenter', Swal.stopTimer)
+                            toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                    })
+
+                    Toast.fire({
+                        icon: 'success',
+                        title: `Elave edildi!`
+                    })
+
+                     })
+                 }
+
+                })
+        })
+    })
+
+</script>

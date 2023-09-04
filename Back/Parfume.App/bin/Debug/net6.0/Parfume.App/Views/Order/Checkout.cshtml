@@ -1,35 +1,98 @@
-﻿
+﻿@model Basket
+
+@{
+	int totalPrice = 0;
+
+}
+
+<div class="basket">
+	<div class="container basket_container">
+		<div class="basketCommon">
+			@foreach (var item in Model.basketItems)
+			{
+				<div class="basket">
+					<div class="basketInner">
+						<div class="basketInner_left">
+							<img src="~/assets/images/@item.Product.Image" />
+							<div class="basketInner_left_right">
+								<h3>@item.Product.Title</h3>
+
+								@if (int.Parse(item.Product.Volume) != 0 && item.Product.Volume != null)
+								{
+									<p>Hecmi : @item.Product.Volume</p>
+								}
+								<p>Sayı : @item.ProductCount</p>
+							</div>
+						</div>
+						<div class="basketInner_right">
+							@if (item.Product.IsDiscount == true)
+							{
+								<h1>@(int.Parse(item.Product.SellPrice)-int.Parse(item.Product.SellPrice)*item.Product.DiscountPercentage/100) AZN</h1>
+							}
+							else
+							{
+								<h1>@item.Product.SellPrice AZN</h1>
+							}
+
+							<a asp-controller="home" asp-action="RemoveBasket" asp-route-id="@item?.ProductId">
+								<img src="~/assets/icons/tester/rubish.svg" />
+							</a>
+						</div>
+					</div>
+				</div>
+			}
+
+		</div>
+		<div class="money">
+			<h3>Səbətdəki məhsullar</h3>
+			<hr />
+			@foreach (var item in Model.basketItems)
+			{
+				{
+					if (item.Product.DiscountPercentage == 0 || item.Product.DiscountPercentage == null)
+					{
+						totalPrice += (int.Parse(item.Product.SellPrice)) * item.ProductCount;
+					}
+					else
+					{
+						totalPrice += ((int.Parse(item.Product.SellPrice)) - (int.Parse(item.Product.SellPrice) * (int)item.Product.DiscountPercentage / 100)) * item.ProductCount;
+
+					}
+
+				}
+				<div class="price_name">
+					<p>@item.Product.Title</p>
+
+					@if (item.Product.IsDiscount == true)
+					{
+						<span>@(item.ProductCount * (int.Parse(item.Product.SellPrice)-int.Parse(item.Product.SellPrice)*item.Product.DiscountPercentage/100)) AZN</span>
+					}
+					else
+					{
+						<span> @(item.ProductCount * int.Parse(item.Product.SellPrice)) AZN</span>
+					}
+				</div>
 
 
-  <div class="basket">
-        <div class="container basket_container">
-          <div class="basketCommon">
-            <div class="basket">
-              <div class="basketInner">
-                <div class="basketInner_left">
-                  <img src="~/assets/images/NewProduct/ProductImage.jpg" />
-                  <div class="basketInner_left_right">
-                    <h3>Our Creation of Dior's Ambre Nuit</h3>
-                    <p>Həcmi : 30ml</p>
-                    <p>Sayı : 1</p>
-                  </div>
-                </div>
-                <div class="basketInner_right">
-                  <h1>50$</h1>
-                  <a> <img src="~/assets/icons/tester/rubish.svg" /></a>
-                </div>
-              </div>
-            </div>
-          
-          </div>
-          <div class="money">
-            <h3>Səbətdəki məhsullar</h3>
-            <hr />
-            <p>Chanel<span>46$</span></p>
-            <hr />
-          
-            <h5>Toplam:<span></span></h5>
-            <a><button class="addtobasket">Sifarişi Rəsmiləşdir</button></a>
-          </div>
-        </div>
-  </div>
+				<hr />
+			}
+
+			<div class="total_price_basket">
+				<h5>Toplam:</h5>
+				<span>@totalPrice AZN</span>
+			</div>
+
+
+			@if (User.Identity.IsAuthenticated && User.IsInRole("User"))
+			{
+				<a asp-action="index" asp-controller="legacy"><button class="addtobasket">Rəsmiləşdir</button></a>
+
+			}
+			else
+			{
+				<a asp-action="login" asp-controller="account"><button class="addtobasket">Rəsmiləşdir</button></a>
+
+			}
+		</div>
+	</div>
+</div>

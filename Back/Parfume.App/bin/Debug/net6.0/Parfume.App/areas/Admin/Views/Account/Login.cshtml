@@ -1,4 +1,4 @@
-﻿@{
+﻿﻿@{
     Layout = null;
 }
 
@@ -90,11 +90,11 @@ section .signin .content
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 section .signin .content h2 
 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #8CC0DE;
   text-transform: uppercase;
 }
@@ -121,12 +121,13 @@ section .signin .content form .inputBox input
   border-radius: 4px;
   color: #fff;
   font-weight: 500;
-  font-size: 1em;
+  font-size: .8em;
 }
 
 section .signin .content form .inputBox i 
 {
   position: absolute;
+  transform: none;
   left: 0;
   padding: 15px 10px;
   font-style: normal;
@@ -137,8 +138,8 @@ section .signin .content form .inputBox i
 .signin .content form .inputBox input:focus ~ i,
 .signin .content form .inputBox input:valid ~ i
 {
-  transform: translateY(-7.5px);
-  font-size: 0.8em;
+  transform: translateY(-9.5px);
+  font-size: 0.7em;
   color: #fff;
 }
 .signin .content form .links 
@@ -165,7 +166,7 @@ section .signin .content form .inputBox i
   background: #8CC0DE;
   color: #000;
   font-weight: 600;
-  font-size: 1.35em;
+  font-size: 1em;
   letter-spacing: 0.05em;
   cursor: pointer;
   border:1px solid transparent;
@@ -261,4 +262,3 @@ button:hover
   </section> <!-- partial --> 
 
  </body>
-

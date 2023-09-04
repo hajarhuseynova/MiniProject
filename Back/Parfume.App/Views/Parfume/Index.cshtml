@@ -8,7 +8,7 @@
         {
             if(item.Chooice=="Parfum"){
               <div class="swiper-slide">
-            <img src="../assets/images/@item.Image" />
+            <img src="~/assets/images/@item.Image" />
             <div class="info_par">
               <h1>@item.Title</h1>
               <p>@item.Desc</p>
@@ -29,10 +29,10 @@
               <p id="all">Hamısı</p>
             </div>
          
-            @foreach (var item in Model.Brands)
+            @foreach (var item in Model.Products.Where(x=>x.Category.Name=="Parfum"))
             {
-            <div class="category" data-filter="@item.Name.ToLower()">
-              <p id="@item.Name.ToLower()">@item.Name</p>
+            <div class="category" data-filter="@item.Brand.Name.ToLower()">
+              <p id="@item.Brand.Name.ToLower()">@item.Brand.Name</p>
             </div>
            
             }
@@ -44,7 +44,7 @@
         <div class="container parfumes_index_container">
           <div class="newsellest">
 
-         @foreach (var item in Model.Parfumes)
+         @foreach (var item in Model.Products.Where(x=>x.Category.Name=="Parfum"))
          {
                 <div class="selles">
               <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">

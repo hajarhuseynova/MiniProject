@@ -169,33 +169,6 @@ build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Category\Update.csht
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Dictionary/Create.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcRGljdGlvbmFyeVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Dictionary\Create.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Dictionary\Create.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Dictionary/Index.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcRGljdGlvbmFyeVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Dictionary\Index.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Dictionary\Index.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Dictionary/Update.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcRGljdGlvbmFyeVxVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Dictionary\Update.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Dictionary\Update.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/FakeSlider/Create.cshtml]
 build_metadata.AdditionalFiles.SourceItemGroup = 
 build_metadata.AdditionalFiles.Link = 
@@ -250,33 +223,6 @@ build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Function\Update.csht
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/GiftBox/Create.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcR2lmdEJveFxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\GiftBox\Create.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\GiftBox\Create.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/GiftBox/Index.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcR2lmdEJveFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\GiftBox\Index.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\GiftBox\Index.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/GiftBox/Update.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcR2lmdEJveFxVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\GiftBox\Update.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\GiftBox\Update.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.SourceItemGroup = 
 build_metadata.AdditionalFiles.Link = 
@@ -286,39 +232,12 @@ build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Home\Index.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Parfum/Create.cshtml]
+[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.SourceItemGroup = 
 build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUGFyZnVtXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Parfum\Create.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Parfum\Create.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Parfum/Discount.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUGFyZnVtXERpc2NvdW50LmNzaHRtbA==
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Parfum\Discount.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Parfum\Discount.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Parfum/Index.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUGFyZnVtXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Parfum\Index.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Parfum\Index.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Parfum/Update.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUGFyZnVtXFVwZGF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Parfum\Update.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Parfum\Update.cshtml
+build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Order\Index.cshtml
+build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Order\Index.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -355,6 +274,15 @@ build_metadata.AdditionalFiles.Link =
 build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Product\Create.cshtml
 build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Product\Create.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Product/Discount.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEaXNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Product\Discount.cshtml
+build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Product\Discount.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -511,102 +439,12 @@ build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Slider\Update.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Smok/Create.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcU21va1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Smok\Create.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Smok\Create.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Smok/Discount.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcU21va1xEaXNjb3VudC5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Smok\Discount.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Smok\Discount.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Smok/Index.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcU21va1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Smok\Index.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Smok\Index.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Smok/Update.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcU21va1xVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Smok\Update.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Smok\Update.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Subscribe/Index.cshtml]
 build_metadata.AdditionalFiles.SourceItemGroup = 
 build_metadata.AdditionalFiles.Link = 
 build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcU3Vic2NyaWJlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Subscribe\Index.cshtml
 build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Subscribe\Index.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Tester/Create.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcVGVzdGVyXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Tester\Create.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Tester\Create.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Tester/Index.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcVGVzdGVyXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Tester\Index.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Tester\Index.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Tester/Update.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcVGVzdGVyXFVwZGF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Tester\Update.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Tester\Update.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Volume/Create.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcVm9sdW1lXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Volume\Create.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Volume\Create.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Volume/Index.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcVm9sdW1lXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Volume\Index.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Volume\Index.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/areas/Admin/Views/Volume/Update.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = YXJlYXNcQWRtaW5cVmlld3NcVm9sdW1lXFVwZGF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\areas\Admin\Views\Volume\Update.cshtml
-build_metadata.AdditionalFiles.Identity = areas\Admin\Views\Volume\Update.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 

@@ -103,7 +103,8 @@
 							</a>
 
 						<div class="basket_header_inner">
-								<div class="basketItems ">
+						
+                                	<div class="basketItems ">
 									@foreach (var item in basketItemViewModels)
 									{
 										
@@ -117,14 +118,14 @@
 											</div>
 											<div class="item_right">
 												<div class="spans">
-													<span>@item?.Name</span>
-													<span>@item?.Volume ML</span>
+											<span>@item?.Name</span>
+											@*	<span>@item?.Volume ML</span>*@
 													<span>
 														@item?.Count * @item?.Price AZN
 													</span>
 												</div>
 												<div class="deleteimage">
-													<a asp-controller="parfume" asp-action="RemoveBasket" asp-route-id="@item?.ProductId">
+													<a asp-controller="home" asp-action="RemoveBasket" asp-route-id="@item?.ProductId">
 														<i class="fa-solid fa-x"></i>
 													</a>
 												</div>
@@ -135,12 +136,20 @@
 								<div class="basket_buttons ">
 									<span id="totalPrice">Total:@TotalPrice</span>
 									<div class="buttonsBasketDiv">
-										<a asp-action="index" asp-controller="legacy"><button>Rəsmiləşdir</button></a>
-										<a asp-action="checkout" asp-controller="order"><button>Səbət</button></a>
-									</div>
-
+                                        @if (User.Identity.IsAuthenticated && User.IsInRole("User"))
+                                        {
+                                        <a asp-action="index" asp-controller="legacy"><button>Rəsmiləşdir</button></a>
+                                        <a asp-action="checkout" asp-controller="order"><button>Səbət</button></a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-action="login" asp-controller="account"><button>Rəsmiləşdir</button></a>
+                                            <a asp-action="checkout" asp-controller="order"><button>Səbət</button></a> 
+                                        }
+                                    </div>
 								</div>
-							</div>
+                            }
+						</div>
 
 						</div>
 					</div>
@@ -164,48 +173,48 @@
 	  <footer style="margin-top: 0">
         <div class="container footer_container">
           <div class="column">
-            <a><h3>Qoxular</h3></a>
-            <p>Oz Mehsullarimiz</p>
-            <p>Yaglar</p>
+            <a><h3>@setting?.Title1</h3></a>
+            <p>@setting?.Title1Par1</p>
+            <p>@setting?.Title1Par2</p>
           </div>
           <div class="column">
-            <a> <h3>Tustuler</h3></a>
-            <p>Oz Mehsullarimiz</p>
-            <p>Yaglar</p>
+            <a> <h3>@setting?.Title2</h3></a>
+            <p>@setting?.Title2Par1</p>
+            <p>@setting?.Title2Par2</p>
           </div>
           <div class="column responsive_last">
-            <a><h3>Haqqimizda</h3></a>
-            <p>Oz Mehsullarimiz</p>
-            <p>Beden spreyi</p>
+            <a><h3>@setting?.Title3</h3></a>
+            <p>@setting?.Title3Par1</p>
+            <p>@setting?.Title3Par2</p>
           </div>
           <div class="column responsive responsive_last">
-            <a> <h3>Qutular</h3></a>
-            <p>Oz Mehsullarimiz</p>
-            <p>Yaglar</p>
+            <a> <h3>@setting?.Title4</h3></a>
+            <p>@setting?.Title4Par1</p>
+            <p>@setting?.Title4Par2</p>
           </div>
           <div class="column_last responsive">
-            <a><img src="../assets/icons/header/Logo.svg" /></a>
-            <div class="socials">
+            <a asp-controller="home" asp-action="index"><img src="~/assets/images/@set.Logo" /></a>
+             <div class="socials">
               <a
-                href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
+                href="@setting.Link1"
               >
-                <div class="social"><i class="fa-brands fa-instagram"></i></div
+                <div class="social">@Html.Raw(setting?.FootIcon1)</div
               ></a>
 
               <a
-                href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
+                href="@setting.Link2"
               >
-                <div class="social"><i class="fa-brands fa-instagram"></i></div
+                <div class="social">@Html.Raw(setting?.FootIcon2)</div
               ></a>
               <a
-                href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
+                href="@setting.Link3"
               >
-                <div class="social"><i class="fa-brands fa-instagram"></i></div
+                <div class="social">@Html.Raw(setting?.FootIcon3)</div
               ></a>
               <a
-                href="https://yandex.ru/search/?text=font+awesome+cdn+5&clid=2411726&lr=10253"
+                href="@setting.Link4"
               >
-                <div class="social"><i class="fa-brands fa-instagram"></i></div
+                <div class="social">@Html.Raw(setting?.FootIcon4)</div
               ></a>
             </div>
           </div>

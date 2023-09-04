@@ -1,5 +1,22 @@
 ﻿@model HomeViewModel
 
+
+@if (!string.IsNullOrWhiteSpace((string)TempData[" Səbət boşdur!"] ))
+{
+<div id="alert-message" style="display:none"
+>@TempData["empty basket"] </div>
+}
+
+
+
+ @if (!string.IsNullOrWhiteSpace((string)TempData["Order created!"] ))
+{
+<div id="alert-message" style="display:none"
+>@TempData["Order created!"]</div>
+}
+
+
+
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		@foreach (var item in Model.Slides)
@@ -29,42 +46,31 @@
 
 <div class="products">
 	<div class="container products_container">
-		<h1>Yeni Məhsullar</h1>
+		<h1>Yeni Mehsullar</h1>
 		<div class="newproducts">
-			@foreach (var item in Model.Parfumes.Take(4))
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsNew == true).Take(4))
 			{
-				@if (item.IsNew == true)
-				{
-					<div class="product">
-						<a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
-							<img src="~/assets/images/@item.Image"
+				<div class="product">
+					<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id">
+						<img src="~/assets/images/@item.Image"
 						 alt="productImage" />
-						</a>
-						<div class="new">Yeni</div>
-						<p class="def">@item.Title</p>
-						<p class="cat">
-							@item.Brand.Name
-						</p>
-						<div class="price_star">
-							@if (item.IsDiscount == true)
-							{
-								<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
-							}
-							else
-							{
-								<p class="price">@item.SellPrice AZN</p>
-							}
-							<a asp-action="addbasket" asp-controller="parfume" asp-route-id="@item.Id" class="add-basket-product">
-								<button style="width:80px">Əlave et</button>
-							</a>
-						</div>
+					</a>
+					<div class="new">Yeni</div>
+					<p class="def">@item.Title</p>
+					<p class="cat">@item.Brand.Name</p>
+					<div class="price_star">
+						@if (item.IsDiscount == true)
+						{
+							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+						}
+						else
+						{
+							<p class="price">@item.SellPrice AZN</p>
+						}
+						<a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id" class="add-basket-product"><button>Əlavə Et</button></a>
 					</div>
-				}
-
-
-
+				</div>
 			}
-
 
 		</div>
 	</div>
@@ -74,21 +80,16 @@
 	<div class="container smells_container">
 		<h1>Qoxular</h1>
 		<div class="newsmeels">
-			@foreach (var item in Model.Parfumes.Take(4))
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum").Take(4))
 			{
-				<div class="smell"
-				 style="
-                background-image: url(/assets/images/@item.Image);
-              ">
+				<div class="smell" style=" background-image: url(/assets/images/@item.Image)">
 					<h3>@item.Title</h3>
 					<p>@item.Desc</p>
 				</div>
-
 			}
 		</div>
 	</div>
 </div>
-
 <div class="giftbox">
 	<div class="container giftbox_container">
 		<h1>Hədiyyə Qutusu</h1>
@@ -103,16 +104,16 @@
 						Ətraflı
 						<img class="button_image"
 							 alt="buttonImage"
-							 src="../assets/icons/button/buttonsvg.svg" />
+							 src="~/assets/icons/button/buttonsvg.svg" />
 					</button>
 				</a>
 			</div>
 			<div class="giftbox_right">
 				<a asp-action="index" asp-controller="giftBox" class="hidden">
-					<img src="../assets/images/@Model.SettingHomePage?.ImageGift1" />
+					<img src="~/assets/images/@Model.SettingHomePage?.ImageGift1" />
 				</a>
 				<a asp-action="index" asp-controller="giftBox" class="hide">
-					<img src="../assets/images/@Model.SettingHomePage?.ImageGift2" />
+					<img src="~/assets/images/@Model.SettingHomePage?.ImageGift2" />
 				</a>
 			</div>
 		</div>
@@ -121,34 +122,32 @@
 
 <div class="sellests">
 	<div class="container sellests_container">
-		<h1>Ən çox satılanlar</h1>
+		<h1>En cox satilanlar</h1>
 		<div class="newsellests">
-			@foreach (var item in Model.Parfumes.Take(4))
+
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsTrend == true).Take(4))
 			{
-				@if (item.IsTrend == true)
-				{
-					<div class="sellest">
-						<a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
-							<img src="../assets/images/@item.Image"
+
+
+				<div class="sellest">
+					<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id">
+						<img src="~/assets/images/@item.Image"
 						 alt="productImage" />
-						</a>
-						<p class="def">@item.Title</p>
-						<p class="cat">@item.Brand.Name</p>
-						<div class="price_star">
-							@if (item.IsDiscount == true)
-							{
-								<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
-							}
-							else
-							{
-								<p class="price">@item.SellPrice AZN</p>
-							}
-							<a asp-action="addbasket" asp-controller="parfume" asp-route-id="@item.Id" class="add-basket-product">
-								<button style="width:80px">Əlavə et</button>
-							</a>
-						</div>
+					</a>
+					<p class="def">@item.Title</p>
+					<p class="cat">@item.Brand.Name</p>
+					<div class="price_star">
+						@if (item.IsDiscount == true)
+						{
+							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+						}
+						else
+						{
+							<p class="price">@item.SellPrice AZN</p>
+						}
+						<a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id" class="add-basket-product"><button>Əlavə Et</button></a>
 					</div>
-				}
+				</div>
 			}
 
 		</div>
@@ -157,71 +156,62 @@
 
 <div class="smokes">
 	<div class="container smokes_container">
-		<h1>Tüstülər</h1>
+		<h1>Tustuler</h1>
 		<div class="newsmokes">
-		@await Html.PartialAsync("_SmokePartialView",Model.Smokes.Take(4).ToList())
-
+			@await Html.PartialAsync("_SmokePartialView",Model.Products.Where(x=>x.Category.Name=="Smoke").Take(3).ToList())
 		</div>
 	</div>
 </div>
 
- <div class="subscribe" style="background-image: url('https://th.bing.com/th/id/R.d3115da26d5ff34fb013106eea411f5a?rik=wLSQd442URaROQ&riu=http%3a%2f%2ftest-storage-mumbai.s3.amazonaws.com%2fuploads%2farticle%2fog_image%2f205%2fperfume.jpg&ehk=ZKMyLx0VcBID5RZ0kCWIdlplZ0VdFtHVRlROFd4JINI%3d&risl=&pid=ImgRaw&r=0')" >
-        <div class="form_input">
-          <h1>Bizə Qoşul!</h1>
-          <form
-            asp-action="subscribe"
-            asp-controller="home"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            class="validate"
-            novalidate
-          >
-            <div class="input_button">
-              <input
-                type="email"
-                value=""
-                name="EMAIL"
-                class="email register_input"
-                placeholder="Email:"
-                required
-              />
-              <button itype="submit" name="subscribe">
-                <span>Abunə Ol</span>
-              </button>
-            </div>
-          </form>
-        </div>
- </div>
+<div class="subscribe" style="background-image: url('https://th.bing.com/th/id/R.d3115da26d5ff34fb013106eea411f5a?rik=wLSQd442URaROQ&riu=http%3a%2f%2ftest-storage-mumbai.s3.amazonaws.com%2fuploads%2farticle%2fog_image%2f205%2fperfume.jpg&ehk=ZKMyLx0VcBID5RZ0kCWIdlplZ0VdFtHVRlROFd4JINI%3d&risl=&pid=ImgRaw&r=0')">
+	<div class="form_input">
+		<h1>Bizə Qoşul!</h1>
+		<form asp-action="subscribe"
+			  asp-controller="home"
+			  method="post"
+			  id="mc-embedded-subscribe-form"
+			  name="mc-embedded-subscribe-form"
+			  class="validate"
+			  novalidate>
+			<div class="input_button">
+				<input type="email"
+					   value=""
+					   name="EMAIL"
+					   class="email register_input"
+					   placeholder="Email:"
+					   required />
+				<button itype="submit" name="subscribe">
+					<span>Abunə Ol</span>
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
 
 <div class="discounts">
 	<div class="container discounts_container">
 		<h1>Endirim</h1>
 		<div class="newdiscounts">
-			@foreach (var item in Model.Parfumes.Take(4))
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsDiscount == true).Take(4))
 			{
-				@if (item.IsDiscount == true)
-				{
-					<div class="discount">
-						<a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
-							<img src="../assets/images/@item.Image"
+				<div class="discount">
+					<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id"> 
+						<img src="~/assets/images/@item.Image"
 						 alt="productImage" />
+					</a>
+					<div class="dis">@item.DiscountPercentage %</div>
+					<p class="def">@item.Title</p>
+					<p class="cat">@item.Brand.Name</p>
+					<div class="price_star">
+						<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+
+						<del class="price_discount">@item.SellPrice AZN</del>
+						<a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id" class="add-basket-product">
+							<button style="width:80px">Əlave</button>
 						</a>
-						<div class="dis">@item?.DiscountPercentage%</div>
-						<p class="def">@item.Title</p>
-						<p class="cat">@item.Brand.Name</p>
-						<div class="price_star">
-							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
-
-							<del class="price_discount">@item.SellPrice AZN</del>
-						<a asp-action="addbasket" asp-controller="parfume" asp-route-id="@item.Id" class="add-basket-product">
-								<button style="width:80px">Əlave</button>
-							</a>
-						</div>
 					</div>
-				}
+				</div>
 			}
-
 		</div>
 	</div>
 </div>
@@ -287,150 +277,42 @@
 	</div>
 </div>
 
-  <div class="slider">
-        <div class="slide-track">
-          <div class="slide">
-            <img
-              src="https://www.afnrentacar.az/front/assets/images/partnyor/2.jpg"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://www.afnrentacar.az/front/assets/images/partnyor/6.jpg"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://www.afnrentacar.az/front/assets/images/partnyor/9.jpg"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://www.afnrentacar.az/front/assets/images/partnyor/10.jpg"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://www.afnrentacar.az/front/assets/images/partnyor/11.jpg"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://www.afnrentacar.az/front/assets/images/partnyor/9.jpg"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://www.afnrentacar.az/front/assets/images/partnyor/2.jpg"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-        </div>
-  </div>
+<div class="slider">
+	<div class="slide-track">
+		@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum"))
+		{
+			<div class="slide">
+				<img src=~/assets/images/@item.Brand.Image
+				 height="100"
+				 width="250"
+				 alt="Brand Image" />
+			</div>
+		}
+	</div>
+</div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-    const products = document.querySelectorAll(".add-basket-product");
-    const totalPriceElement = document.getElementById("totalPrice");
+	const products = document.querySelectorAll(".add-basket-product");
+	const totalPriceElement = document.getElementById("totalPrice");
+	products.forEach(prod => {
+		prod.addEventListener("click", (e) => {
+			e.preventDefault();
+			let href = prod.getAttribute("href");
+			let TotalPrice = 0;
 
- 
-  
-    products.forEach(prod => {
-        prod.addEventListener("click", (e) => {
-            e.preventDefault();
-            let href = prod.getAttribute("href");
-            let TotalPrice = 0;
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/home/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
 
-            fetch(href)
-                .then(x => x.json())
-                .then(x => {
-                 if(x.status==200){
-                     fetch("/parfume/getallbaskets")
-                     .then(res=>res.json())
-                     .then(b=>{
-                            basketItems.innerHTML=""
-                    b.forEach(basket => {
-                     
-                        TotalPrice += basket.price*basket.count;
-                            let basketView=`
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
 								<div class="basketItem unvis">
 											<div class="item_left">
 												<img src="/assets/images/${basket.image}" />
@@ -438,8 +320,7 @@
 											<div class="item_right">
 												<div class="spans">
 													<span>${basket.name}</span>
-													<span>${basket.volume} ML</span>
-													<span>${basket.count} * ${basket.price} AZN</span>
+                                                    <span>${basket.count} * ${basket.price} AZN</span>
 												</div>
 												<div class="deleteimage">
 													<a href="/parfume/RemoveBasket/${basket.productId}" data-id="">
@@ -448,39 +329,53 @@
 												</div>
 											</div>
 										</div>
-                                    `
-                        basketItems.innerHTML += basketView;
+									`
+						basketItems.innerHTML += basketView;
 
-                    })
-                
-                    totalPriceElement.innerHTML = TotalPrice;
-                 
+					})
+
+					totalPriceElement.innerHTML = TotalPrice;
 
 
-                    const Toast = Swal.mixin({
-                        toast: true,
-                        position: 'top-end',
-                        showConfirmButton: false,
-                        timer: 3000,
-                        timerProgressBar: true,
-                        didOpen: (toast) => {
-                            toast.addEventListener('mouseenter', Swal.stopTimer)
-                            toast.addEventListener('mouseleave', Swal.resumeTimer)
-                        }
-                    })
 
-                    Toast.fire({
-                        icon: 'success',
-                        title: `Elave edildi!`
-                    })
+					const Toast = Swal.mixin({
+						toast: true,
+						position: 'top-end',
+						showConfirmButton: false,
+						timer: 3000,
+						timerProgressBar: true,
+						didOpen: (toast) => {
+							toast.addEventListener('mouseenter', Swal.stopTimer)
+							toast.addEventListener('mouseleave', Swal.resumeTimer)
+						}
+					})
 
-                     })
-                 }
+					Toast.fire({
+						icon: 'success',
+						title: `Elave edildi!`
+					})
 
-                })
-        })
-    })
+					 })
+				 }
 
+				})
+		})
+	})
 </script>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            const alert=document.getElementById("alert-message");
+            if(alert!=undefined){
+            const message= alert.innerHTML;
+            if(message!=""){
+                Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: `${message}`,
+})
+
+            }
+            }
+        </script>

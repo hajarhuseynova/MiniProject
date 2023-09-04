@@ -25,7 +25,9 @@ namespace Parfume.App.Controllers
         {
             TesterViewModel testerViewModel = new TesterViewModel
             {
-                Testers = await _context.Testers.Include(x=>x.Brand).Where(x => !x.IsDeleted).ToListAsync(),
+                    Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Category).ToListAsync(),
+
+
                 SettingHomePage = await _context.SettingHomePage.Where(x => !x.IsDeleted).FirstOrDefaultAsync(),
 
             };
@@ -33,19 +35,19 @@ namespace Parfume.App.Controllers
         }
         public async Task<IActionResult> Search(string search)
         {
-            int TotalCount = _context.Testers.Where(x => !x.IsDeleted && x.Title.Trim().ToLower().Contains(search.Trim().ToLower())).Count();
-            List<Tester> testers = await _context.Testers.Where(x => !x.IsDeleted && x.Brand.Name.Trim().ToLower().Contains(search.Trim().ToLower()))
-                .Include(x => x.Brand).ToListAsync();
+            int TotalCount = _context.Products.Where(x => !x.IsDeleted&& x.Category.Name=="Tester" && x.Title.Trim().ToLower().Contains(search.Trim().ToLower())).Count();
+            List<Product> products = await _context.Products.Where(x => !x.IsDeleted&& x.Category.Name == "Tester" && x.Title.Trim().ToLower().Contains(search.Trim().ToLower()))
+              .ToListAsync();
        
-            return Json(testers);
+            return Json(products);
         }
         public async Task<IActionResult> GetAll()
         {
            
-            List<Tester> testers = await _context.Testers.Where(x => !x.IsDeleted)
+            List<Product> products = await _context.Products.Where(x => !x.IsDeleted && x.Category.Name=="Tester")
                 .Include(x => x.Brand).ToListAsync();
 
-            return Json(testers);
+            return Json(products);
         }
     }
 }
