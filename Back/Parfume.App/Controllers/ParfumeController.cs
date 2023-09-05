@@ -58,33 +58,7 @@ namespace Parfume.App.Controllers
             }
 
         }
-        public async Task<IActionResult> Detail(int id)
-        {
-
-            ParfumeViewModel parfumViewModel = new ParfumeViewModel
-            {
-                Products = await _context.Products
-                       .Include(x => x.Brand).Include(x=>x.Category)
-                        .Where(x => !x.IsDeleted).ToListAsync(),
-
-                Product = await _context.Products
-              .Include(x => x.Brand).Include(x=>x.Category)
-           
-                .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
-
-                Brands = await _context.Brands.Where(b => !b.IsDeleted).ToListAsync(),
-                Functions = await _context.Functions.Where(b => !b.IsDeleted).ToListAsync(),
-
-             
-
-            };
-            if (parfumViewModel.Product == null)
-            {
-                return View(nameof(Index));
-            }
-            return View(parfumViewModel);
-        }
-   
+      
 
     }
 }

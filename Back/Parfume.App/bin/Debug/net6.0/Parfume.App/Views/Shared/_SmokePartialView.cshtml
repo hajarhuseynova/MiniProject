@@ -5,7 +5,7 @@
 	         @foreach (var item in Model.Where(x=>x.Category.Name=="Smoke"))
         {
               <div class="smoke">
-              <a asp-action="detail" asp-controller="smoke" asp-route-id="@item.Id" >
+              <a asp-action="detail" asp-controller="product" asp-route-id="@item.Id" >
                   <img src="~/assets/images/@item.Image" />
               </a>
 

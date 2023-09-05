@@ -54,25 +54,7 @@ namespace Controllers
 
 
         }
-        public async Task<IActionResult> Detail(int id)
-        {
-
-            SmokeViewModel smokeViewModel = new SmokeViewModel
-            {
-                Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Category).ToListAsync(),
-
-                Product = await _context.Products.Where(x => !x.IsDeleted && x.Id == id).Include(x => x.Category).FirstOrDefaultAsync(),
-                Functions = await _context.Functions.Where(b => !b.IsDeleted).ToListAsync(),
-
-            };
-            if (smokeViewModel.Product == null)
-            {
-                return View(nameof(Index));
-            }
-
-
-            return View(smokeViewModel);
-        }
+      
 
         public async Task<IActionResult> SearchSmoke(string search)
         {

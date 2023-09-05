@@ -6,6 +6,20 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 
+void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    else
+    {
+        app.UseExceptionHandler("/Home/Error");
+        app.UseHsts();
+    }
+}
+
 builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
@@ -15,8 +29,6 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.Register(builder.Configuration);
 
 var app = builder.Build();
-
-
 
 
 if (!app.Environment.IsDevelopment())
@@ -45,6 +57,11 @@ app.UseEndpoints(endpoints =>
        name: "default",
        pattern: "{controller=Home}/{action=Index}/{id?}"
        );
+    endpoints.MapControllerRoute(
+       name: "error",
+       pattern: "{*url}",
+       defaults: new { controller = "Home", action = "Error" }
+   );
 }
 );
 

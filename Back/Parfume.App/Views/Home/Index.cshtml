@@ -1,22 +1,6 @@
 ﻿@model HomeViewModel
 
 
-@if (!string.IsNullOrWhiteSpace((string)TempData[" Səbət boşdur!"] ))
-{
-<div id="alert-message" style="display:none"
->@TempData["empty basket"] </div>
-}
-
-
-
- @if (!string.IsNullOrWhiteSpace((string)TempData["Order created!"] ))
-{
-<div id="alert-message" style="display:none"
->@TempData["Order created!"]</div>
-}
-
-
-
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		@foreach (var item in Model.Slides)
@@ -46,12 +30,12 @@
 
 <div class="products">
 	<div class="container products_container">
-		<h1>Yeni Mehsullar</h1>
+		<h1>Yeni Məhsullar</h1>
 		<div class="newproducts">
 			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsNew == true).Take(4))
 			{
 				<div class="product">
-					<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id">
+					<a asp-action="detail" asp-controller="product" asp-route-id="@item.Id">
 						<img src="~/assets/images/@item.Image"
 						 alt="productImage" />
 					</a>
@@ -75,21 +59,25 @@
 		</div>
 	</div>
 </div>
-
-<div class="smeels">
-	<div class="container smells_container">
-		<h1>Qoxular</h1>
-		<div class="newsmeels">
-			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum").Take(4))
-			{
-				<div class="smell" style=" background-image: url(/assets/images/@item.Image)">
-					<h3>@item.Title</h3>
-					<p>@item.Desc</p>
-				</div>
-			}
-		</div>
-	</div>
-</div>
+ <div class="smeels">
+        <div class="container smells_container">
+          <h1>Qoxular</h1>
+          <div class="newsmeels">
+       @foreach (var item in Model.Products.Where(x=>x.Category.Name=="Tester").Take(4))
+	   {
+		        <div
+              class="smell"
+              style="
+                background-image: url(/assets/images/@item.Image);
+              "
+            >
+              <h3>@item.Title</h3>
+              <p>@item.Desc</p>
+            </div>
+	   }
+          </div>
+        </div>
+      </div>
 <div class="giftbox">
 	<div class="container giftbox_container">
 		<h1>Hədiyyə Qutusu</h1>
@@ -122,7 +110,7 @@
 
 <div class="sellests">
 	<div class="container sellests_container">
-		<h1>En cox satilanlar</h1>
+		<h1>Ən çox satılanlar</h1>
 		<div class="newsellests">
 
 			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsTrend == true).Take(4))
@@ -130,7 +118,7 @@
 
 
 				<div class="sellest">
-					<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id">
+					<a asp-action="detail" asp-controller="product" asp-route-id="@item.Id">
 						<img src="~/assets/images/@item.Image"
 						 alt="productImage" />
 					</a>
@@ -156,7 +144,7 @@
 
 <div class="smokes">
 	<div class="container smokes_container">
-		<h1>Tustuler</h1>
+		<h1>Tüstülər</h1>
 		<div class="newsmokes">
 			@await Html.PartialAsync("_SmokePartialView",Model.Products.Where(x=>x.Category.Name=="Smoke").Take(3).ToList())
 		</div>
@@ -195,7 +183,7 @@
 			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsDiscount == true).Take(4))
 			{
 				<div class="discount">
-					<a asp-action="detail" asp-controller="parfume" asp-route-id="@item.Id"> 
+					<a asp-action="detail" asp-controller="product" asp-route-id="@item.Id"> 
 						<img src="~/assets/images/@item.Image"
 						 alt="productImage" />
 					</a>
@@ -224,7 +212,7 @@
 			</div>
 			<div class="testing_right">
 				<h1>
-					@Model.SettingHomePage?.DescriptionGift
+					@Model.SettingHomePage?.DescTester
 				</h1>
 				<a asp-action="index" asp-controller="tester">
 					<button>
@@ -279,10 +267,17 @@
 
 <div class="slider">
 	<div class="slide-track">
-		@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum"))
+		@{
+    var uniqueBrands = Model.Products
+        .Where(x => x.Category.Name == "Parfum")
+        .Select(x => x.Brand.Image)
+        .Distinct()
+        .ToList();
+}
+		@foreach (var item in uniqueBrands )
 		{
 			<div class="slide">
-				<img src=~/assets/images/@item.Brand.Image
+				<img src=~/assets/images/@item
 				 height="100"
 				 width="250"
 				 alt="Brand Image" />

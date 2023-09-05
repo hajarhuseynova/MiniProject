@@ -1,44 +1,75 @@
-﻿@model OrderDetails
+﻿@model Order
+
+ @if (!string.IsNullOrWhiteSpace((string)TempData["LegacyTrue"]))
+{
+    <div style="display:none" id="message">@TempData["LegacyTrue"]</div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["LegacyFalse"]))
+{
+    <div style="display:none" id="message">@TempData["LegacyFalse"]</div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["EmailReg"]))
+{
+    <div style="display:none" id="message">@TempData["EmailReg"]</div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["NumberReg"]))
+{
+    <div style="display:none" id="message">@TempData["NumberReg"]</div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["OrderCreated"]))
+{
+    <div style="display:none" id="message">@TempData["OrderCreated"]</div>
+}
 
 <div class="order">
         <div class="container order_container">
           <div class="order_info">
-            <form method="post" asp-action="createorder" asp-controller="order">
+            <form method="post" asp-action="CreateOrder" asp-controller="order">
               <div class="contact_info">
                 <h3>Elaqe Melumatlari</h3>
                 <div class="contact_info_inputs">
                   <input
                     type="text"
+                    name="name"
                     placeholder="Ad"
                     class="contact_input yoxla"
                   />
+            
                   <input
                     type="text"
+                    name="surname"
                     placeholder="Soyad"
                     class="contact_input yoxla"
                   />
+                
                   <input
+                  name="email"
                     type="email"
                     placeholder="Email"
                     class="contact_input yoxla"
                   />
+                  
                   <input
+                  name="number"
                     type="number"
                     placeholder="Nomre"
                     class="contact_input yoxla"
                   />
+                  
                   <input
+                  name="loc"
                     type="text"
                     placeholder="Rayon"
                     class="contact_input"
                   />
-
                   <textarea
+                  name="info"
                     rows="4"
                     cols="40"
                     placeholder="Elave Qeyd"
                     class="contact_input yoxla"
                   ></textarea>
+                 
                 </div>
               </div>
               <div class="delivery_info">
@@ -49,7 +80,7 @@
                     <h3>Magazadan tehvil al</h3>
                   </div>
                   <div class="delivery_right">
-                    <input type="radio" name="delivery" />
+                    <input type="radio" name="delivery" value="true"/>
                   </div>
                 </div>
                 <div class="delivery">
@@ -117,4 +148,6 @@
             </form>
           </div>
         </div>
-      </div>
+</div>
+
+

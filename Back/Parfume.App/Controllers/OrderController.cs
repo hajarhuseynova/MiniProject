@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Parfume.App.Context;
 using Parfume.Core.Entities;
+using System.Text.RegularExpressions;
 
 namespace Parfume.App.Controllers
 {
@@ -40,9 +41,10 @@ namespace Parfume.App.Controllers
             }
             return View(baskets);
         }
-        public async Task<IActionResult> CreateOrder()
+        public async Task<IActionResult> CreateOrder(string name, string surname, string loc, string info, int number, string email)
         {
             AppUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
+
             var baskets = await _context.Baskets.Where(x => !x.IsDeleted && x.AppUserId == appUser.Id).
                 Include(x => x.basketItems.Where(y => !y.IsDeleted)).
                 ThenInclude(x => x.Product).
@@ -50,23 +52,50 @@ namespace Parfume.App.Controllers
                   Include(x => x.basketItems.Where(y => !y.IsDeleted)).
                      ThenInclude(x => x.Product).
                 ThenInclude(x => x.Brand).FirstOrDefaultAsync();
+
+            if (name == null || surname == null || loc == null || email == null || info == null || number == null)
+            {
+                TempData["LegacyFalse"] = "Zəhmət olmasa bütün boşluqları doldurun!";
+                return RedirectToAction("index", "legacy");
+
+            }
+            Regex regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+            if (!regex.IsMatch(email))
+            {
+                TempData["EmailReg"] = "Email düzgün strukturda olmalıdır!";
+                return RedirectToAction("index", "legacy");
+            }
+
+            //Regex regexNum = new Regex(@"^(994|0)[1-9]\d{8}$");
+
+            //if (!regexNum.IsMatch(number.ToString()))
+            //{
+            //    TempData["NumberReg"] = "Nömrə düzgün strukturda olmalıdır!";
+            //    return RedirectToAction("index", "legacy");
+            //}
+
             if (baskets == null || baskets.basketItems.Count() == 0)
             {
-                TempData["empty basket"] = "Səbət boşdur!";
+                TempData["emptyBasket"] = "Səbət boşdur!";
                 return RedirectToAction("index", "home");
             }
             Order order = new Order
             {
                 CreatedDate = DateTime.Now,
                 AppUserId = appUser.Id,
-             
+                Name = name,
+                SurName = surname,
+                Email = email,
+                Loc = loc,
+                Info = info,
+                Number = number
+
             };
-            
+
             int TotalPrice = 0;
             foreach (var item in baskets.basketItems)
             {
                 TotalPrice += int.Parse(item.Product.SellPrice) - (int.Parse(item.Product.SellPrice) * (int)(item.Product.DiscountPercentage ?? 0) / 100);
-
 
                 OrderItem orderItem = new OrderItem
                 {
@@ -74,7 +103,6 @@ namespace Parfume.App.Controllers
                     Order = order,
                     ProductId = item.ProductId,
                     ProductCount = item.ProductCount,
-                   
                 };
                 await _context.AddAsync(orderItem);
 
@@ -84,8 +112,12 @@ namespace Parfume.App.Controllers
             baskets.IsDeleted = true;
             await _context.SaveChangesAsync();
 
-            TempData["Order created!"] = "Sifariş yaradıldı!";
+            TempData["OrderCreated"] = "Sifariş yaradıldı!";
             return RedirectToAction("index", "home");
         }
+
+
+
+
     }
 }

@@ -565,15 +565,6 @@ build_metadata.AdditionalFiles.Identity = Views\Legacy\Index.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/NotFound/Index.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90Rm91bmRcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\Views\NotFound\Index.cshtml
-build_metadata.AdditionalFiles.Identity = Views\NotFound\Index.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/Order/Checkout.cshtml]
 build_metadata.AdditionalFiles.SourceItemGroup = 
 build_metadata.AdditionalFiles.Link = 
@@ -583,21 +574,30 @@ build_metadata.AdditionalFiles.Identity = Views\Order\Checkout.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/Parfume/Detail.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZnVtZVxEZXRhaWwuY3NodG1s
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\Views\Parfume\Detail.cshtml
-build_metadata.AdditionalFiles.Identity = Views\Parfume\Detail.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/Parfume/Index.cshtml]
 build_metadata.AdditionalFiles.SourceItemGroup = 
 build_metadata.AdditionalFiles.Link = 
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZnVtZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\Views\Parfume\Index.cshtml
 build_metadata.AdditionalFiles.Identity = Views\Parfume\Index.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\Views\Product\Detail.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Product\Detail.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/Shared/_Error.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\Views\Shared\_Error.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Shared\_Error.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -616,15 +616,6 @@ build_metadata.AdditionalFiles.Link =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TbW9rZVBhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\Views\Shared\_SmokePartialView.cshtml
 build_metadata.AdditionalFiles.Identity = Views\Shared\_SmokePartialView.cshtml
-build_metadata.AdditionalFiles.XamlRuntime = 
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/99455/Desktop/Parfume_FrontEnd/Back/Parfume.App/Views/Smoke/Detail.cshtml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21va2VcRGV0YWlsLmNzaHRtbA==
-build_metadata.AdditionalFiles.FullPath = C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\Views\Smoke\Detail.cshtml
-build_metadata.AdditionalFiles.Identity = Views\Smoke\Detail.cshtml
 build_metadata.AdditionalFiles.XamlRuntime = 
 build_metadata.AdditionalFiles.CssScope = 
 

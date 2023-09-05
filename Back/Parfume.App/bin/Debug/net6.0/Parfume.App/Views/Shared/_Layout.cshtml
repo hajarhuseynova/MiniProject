@@ -9,8 +9,10 @@
 	List<Parfume.App.ViewModels.BasketItemViewModel> basketItemViewModels = await basketservice.GetAllBaskets();
 	int TotalPrice = 0;
  }
-
-
+ @if (!string.IsNullOrWhiteSpace((string)TempData["emptyBasket"]))
+{
+    <div style="display:none" id="message">@TempData["emptyBasket"]</div>
+}
 @if (!string.IsNullOrWhiteSpace((string)TempData["EmailRegex"]))
 {
 	<div style="display:none" id="message">@TempData["EmailRegex"]</div>
@@ -136,16 +138,8 @@
 								<div class="basket_buttons ">
 									<span id="totalPrice">Total:@TotalPrice</span>
 									<div class="buttonsBasketDiv">
-                                        @if (User.Identity.IsAuthenticated && User.IsInRole("User"))
-                                        {
                                         <a asp-action="index" asp-controller="legacy"><button>Rəsmiləşdir</button></a>
                                         <a asp-action="checkout" asp-controller="order"><button>Səbət</button></a>
-                                        }
-                                        else
-                                        {
-                                            <a asp-action="login" asp-controller="account"><button>Rəsmiləşdir</button></a>
-                                            <a asp-action="checkout" asp-controller="order"><button>Səbət</button></a> 
-                                        }
                                     </div>
 								</div>
                             }

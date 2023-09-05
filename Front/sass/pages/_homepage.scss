@@ -1659,6 +1659,9 @@ a {
       .testing_right {
         width: 470px;
         height: 243px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         > h1 {
           font-family: Space Mono;
           font-size: 32px;

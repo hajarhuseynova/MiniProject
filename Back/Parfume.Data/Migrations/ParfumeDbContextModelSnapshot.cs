@@ -414,39 +414,6 @@ namespace Parfume.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("isAccepted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("isCompleted")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AppUserId");
-
-                    b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("Parfume.Core.Entities.OrderDetails", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
                     b.Property<long?>("CardNumbers")
                         .HasColumnType("bigint");
 
@@ -478,12 +445,6 @@ namespace Parfume.Data.Migrations
                     b.Property<int>("Number")
                         .HasColumnType("int");
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("PayinHomewhithCard")
-                        .HasColumnType("bit");
-
                     b.Property<string>("SurName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -491,27 +452,29 @@ namespace Parfume.Data.Migrations
                     b.Property<int?>("Tarix")
                         .HasColumnType("int");
 
+                    b.Property<int>("TotalPrice")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("inHome")
+                    b.Property<string>("What")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Where")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isAccepted")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("inMarket")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("isCash")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("withCard")
+                    b.Property<bool>("isCompleted")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId")
-                        .IsUnique();
+                    b.HasIndex("AppUserId");
 
-                    b.ToTable("OrderDetails");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Parfume.Core.Entities.OrderItem", b =>
@@ -1270,17 +1233,6 @@ namespace Parfume.Data.Migrations
                     b.Navigation("AppUser");
                 });
 
-            modelBuilder.Entity("Parfume.Core.Entities.OrderDetails", b =>
-                {
-                    b.HasOne("Parfume.Core.Entities.Order", "Order")
-                        .WithOne("OrderDetails")
-                        .HasForeignKey("Parfume.Core.Entities.OrderDetails", "OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-                });
-
             modelBuilder.Entity("Parfume.Core.Entities.OrderItem", b =>
                 {
                     b.HasOne("Parfume.Core.Entities.Order", "Order")
@@ -1332,9 +1284,6 @@ namespace Parfume.Data.Migrations
 
             modelBuilder.Entity("Parfume.Core.Entities.Order", b =>
                 {
-                    b.Navigation("OrderDetails")
-                        .IsRequired();
-
                     b.Navigation("orderItems");
                 });
 

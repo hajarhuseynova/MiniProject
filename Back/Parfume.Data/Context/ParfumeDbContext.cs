@@ -18,7 +18,6 @@ namespace Parfume.App.Context
         public DbSet<BasketItem> BasketItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
-        public DbSet<OrderDetails> OrderDetails { get; set; }
         public DbSet<SettingContact> SettingContact { get; set; }
         public DbSet<SettingNavbar> SettingNavbar { get; set; }
         public DbSet<SettingAbout> SettingAbout { get; set; }
@@ -32,10 +31,7 @@ namespace Parfume.App.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Order>()
-            .HasOne(e => e.OrderDetails)
-        .WithOne(e => e.Order)
-            .HasForeignKey<OrderDetails>();
+      
             base.OnModelCreating(modelBuilder);
         }
         public ParfumeDbContext(DbContextOptions<ParfumeDbContext> options) : base(options)

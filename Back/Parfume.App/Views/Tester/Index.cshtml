@@ -20,7 +20,7 @@
 		<div class="tester_top">
 			<h1>Test Qutusu</h1>
 			<p>
-				Sevdiyiniz ətri tapmaq üçün 10 müxtəlif brendin ən çox satılan
+				Sevdiyiniz ətri tapmaq üçün 12 müxtəlif brendin ən çox satılan
 				duxlarının testerlərini hazırlamışıq.
 			</p>
 			<div class="tester_input">
@@ -35,13 +35,20 @@
 			<div class="tester_left">
 				@foreach (var item in Model.Products.Where(x=>x.Category.Name=="Tester"))
 				{	
-			   <div class="testerparfume">
-                <img src="~/assets/images/@item.Image" />
+				   <div class="testerparfume">
+             <a  asp-action="detail" asp-route-id="@item.Id" asp-controller="product">   <img src="~/assets/images/@item.Image" /></a>
                 <h3>@item.Title</h3>
-                <p class="cat">Chanel</p>
+                <p class="cat">@item.Brand.Name</p>
                 <div class="star_button">
-                  <p class="price">20AZN</p>
-                  <a class="add-basket-product" asp-action="addbasket" asp-route-id="@item.Id" asp-controller="home" ><button>Elave et</button></a>
+                @if (item.IsDiscount == true)
+						{
+							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+						}
+						else
+						{
+							<p class="price">@item.SellPrice AZN</p>
+						}
+                  <a class="add-basket-product" asp-action="addbasket" asp-route-id="@item.Id" asp-controller="home" ><button>Əlavə et</button></a>
                 </div>
               </div>
 				}
@@ -58,22 +65,24 @@
 	 const fullCards=document.querySelectorAll(".testerparfume");
 	 searchInput.addEventListener("input", (e) => {
 		 e.preventDefault();
-
 		 if(searchInput.value==""){
 		 let  href = `/tester/getAll`;
 		 fetch(href)
 			 .then(x => x.json())
 			 .then(x => {
+				 console.log(x)
 				 container.innerHTML =""
 				 x.forEach(item => {
 					 let view = `
 						<div class="testerparfume">
+						<a  asp-action="detail" asp-route-id="${item.id}" asp-controller="product">
 				 <img src="../assets/images/${item.image}" />
+				 </a>
 				 <h3>${item.title}</h3>
-				 <p class="cat"></p>
+				 <p class="cat">${item.brand.name}</p>
 				 <div class="star_button">
 				   <p class="price">${item.sellPrice} AZN</p>
-				   <a><button>Elave et</button></a>
+				   <a><button>Əlavə et</button></a>
 				 </div>
 			   </div>
 		 `;
@@ -91,12 +100,14 @@
 				 x.forEach(item => {
 					 let view = `
 						<div class="testerparfume">
+					<a  asp-action="detail" asp-route-id="${item.id}" asp-controller="product">
 				 <img src="../assets/images/${item.image}" />
+				 </a>
 				 <h3>${item.title}</h3>
-				 <p class="cat"></p>
+				 <p class="cat">${item.brand.name}</p>
 				 <div class="star_button">
 				   <p class="price">${item.sellPrice} AZN</p>
-				   <a><button>Elave et</button></a>
+				   <a><button>Əlavə et</button></a>
 				 </div>
 			   </div>
 		 `;

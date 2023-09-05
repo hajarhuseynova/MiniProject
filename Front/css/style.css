@@ -894,7 +894,7 @@ footer .footer_container .column_last .socials .social > i {
   }
   footer .footer_container .column > a > h3 {
     font-family: Space Mono;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
@@ -920,7 +920,6 @@ footer .footer_container .column_last .socials .social > i {
   footer .footer_container .column_last {
     width: 100%;
     margin-top: 50px;
-    margin-right: 0;
   }
   footer .footer_container .column_last > a {
     display: -webkit-box;
@@ -2328,7 +2327,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 60px;
+  gap: 110px;
 }
 .giftbox .giftbox_container .giftbox_common .giftbox_left {
   margin-top: 30px;
@@ -2391,11 +2390,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 20px;
 }
 .giftbox .giftbox_container .giftbox_common .giftbox_right > a > img {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 @media screen and (max-width: 1238px) {
@@ -2410,11 +2408,11 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 100px;
+    gap: 0px;
   }
   .giftbox .giftbox_container .giftbox_common .giftbox_left {
     margin-top: 20px;
-    width: 460px;
+    width: 480px;
     border-radius: 10px;
     height: 350px;
     display: -webkit-box;
@@ -2466,7 +2464,9 @@ a {
     gap: 20px;
   }
   .giftbox .giftbox_container .giftbox_common .giftbox_right > a > img {
-    height: 400px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 30px;
   }
   .giftbox .giftbox_container .giftbox_common .giftbox_right .hide {
     display: none;
@@ -2912,6 +2912,16 @@ a {
 .testing .testing_container .testing_common .testing_right {
   width: 470px;
   height: 243px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .testing .testing_container .testing_common .testing_right > h1 {
   font-family: Space Mono;
@@ -5514,31 +5524,37 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume {
-  width: 280px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 8px;
+  width: 230px;
+  height: 330px;
   background-color: #fff;
+  border-radius: 8px 8px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume > img {
-  width: 100%;
+.tester .tester_container .tester_bottom .tester_left .testerparfume > a {
+  width: 230px;
+  height: 210px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
-  font-family: Space Mono;
-  font-size: 20px;
+.tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
+  width: 230px;
+  height: 210px;
+  border-radius: 8px 8px 0px 0px;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume .def {
+  font-family: Work Sans;
+  font-size: 18px;
   font-weight: 496;
-  line-height: 24px;
+  line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  padding: 10px 10px 5px 10px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  padding: 0 6px;
+  margin-top: 12px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
   font-family: Space Mono;
@@ -5548,16 +5564,22 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #ffd376;
-  margin-bottom: 5px;
-  margin-left: 10px;
+  margin-bottom: 8px;
+  padding: 0 18px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
-  padding: 0 10px;
+.tester .tester_container .tester_bottom .tester_left .testerparfume .price_star {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 6px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
+.tester .tester_container .tester_bottom .tester_left .testerparfume .price_star .price {
   font-family: New York;
   font-size: 16px;
   font-weight: 496;
@@ -5565,12 +5587,14 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #6a6a6a;
+  margin-left: 10px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
-  width: 100px;
-  margin-left: 100px;
-  margin-bottom: 15px;
-  font-size: 14px;
+.tester .tester_container .tester_bottom .tester_left .testerparfume .price_star > a > button {
+  margin-right: 10px;
+  width: 95px;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume:nth-child(4) {
+  display: none;
 }
 
 @media screen and (max-width: 1238px) {
@@ -5648,30 +5672,31 @@ a {
     gap: 10px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume {
-    width: 240px;
-    height: 335px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-radius: 8px;
+    width: 230px;
+    height: 330px;
     background-color: #fff;
-    margin-bottom: 10px;
+    border-radius: 8px 8px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume > img {
-    width: 100%;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > a {
+    width: 230px;
+    height: 210px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
-    font-family: Space Mono;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
+    width: 230px;
+    height: 210px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .def {
+    font-family: Work Sans;
     font-size: 18px;
     font-weight: 496;
-    line-height: 20px;
+    line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 10px 10px 5px 10px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    padding: 0 6px;
+    margin-top: 12px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
     font-family: Space Mono;
@@ -5681,16 +5706,22 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #ffd376;
-    margin-bottom: 5px;
-    margin-left: 10px;
+    margin-bottom: 8px;
+    padding: 0 18px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
-    padding: 0 10px;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 6px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star .price {
     font-family: New York;
     font-size: 16px;
     font-weight: 496;
@@ -5698,13 +5729,14 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #6a6a6a;
-    margin-top: 0px;
+    margin-left: 10px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
-    margin-left: 85px;
-    margin-bottom: 15px;
-    font-size: 12px;
-    width: 80px;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star > a > button {
+    margin-right: 10px;
+    width: 95px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume:nth-child(4) {
+    display: none;
   }
 }
 @media screen and (max-width: 740px) {
@@ -5789,62 +5821,75 @@ a {
   .tester .tester_container .tester_bottom .tester_left .testerparfume {
     width: 180px;
     height: 260px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-radius: 8px;
     background-color: #fff;
-    margin-bottom: 20px;
+    border-radius: 8px 8px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume > img {
-    width: 100%;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > a {
+    width: 180px;
+    height: 170px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
-    font-family: Space Mono;
-    font-size: 14px;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
+    width: 180px;
+    height: 170px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .new {
+    width: 50px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .def {
+    font-family: Work Sans;
+    font-size: 15px;
     font-weight: 496;
-    line-height: 12px;
+    line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 10px 8px 5px 8px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-left: 5px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
     font-family: Space Mono;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 450;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
     color: #ffd376;
     margin-bottom: 5px;
-    margin-left: 8px;
+    padding: 0 12px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
-    padding: 0 8px;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    margin-top: 0;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star .price {
     font-family: New York;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 496;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
     color: #6a6a6a;
+    margin-left: 10px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
-    margin-left: 40px;
-    height: 23px;
-    margin-bottom: 15px;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star > a > button {
     font-size: 12px;
-    width: 80px;
+    width: 75px;
     border: 1px solid;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume:nth-child(3) {
+    display: none;
   }
 }
 .contact .contact_container {
@@ -6744,7 +6789,7 @@ a {
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > p {
   font-family: Work Sans;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 450;
   line-height: 20px;
   letter-spacing: 0em;
@@ -6910,8 +6955,8 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
     font-family: Space Mono;
-    font-size: 18px;
-    font-weight: 510;
+    font-size: 28px;
+    font-weight: 610;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
@@ -7052,8 +7097,8 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
     font-family: Space Mono;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
@@ -7087,7 +7132,7 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > h1 {
     font-family: Space Mono;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
@@ -7142,7 +7187,7 @@ a {
     margin-left: 200px;
   }
   .basket .basket_container .money > a > button {
-    width: 97%;
+    width: 100%;
     font-size: 17px;
     margin-top: 10px;
   }
@@ -7827,7 +7872,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 100px;
 }
 .gift_intro .gift_intro_container .gift_left {
   margin-top: 30px;
@@ -7878,16 +7923,10 @@ a {
   gap: 50px;
 }
 .gift_intro .gift_intro_container .gift_right > img:first-child {
-  width: 340.9999973926px;
-  height: 263.9999979814px;
-  -webkit-transform: rotate(-109.45deg);
-          transform: rotate(-109.45deg);
+  width: 290px;
 }
 .gift_intro .gift_intro_container .gift_right > img:last-child {
-  width: 335.9999960046px;
-  height: 298.5692398783px;
-  -webkit-transform: rotate(12.41deg);
-          transform: rotate(12.41deg);
+  width: 210px;
 }
 
 @media screen and (max-width: 1238px) {
@@ -7903,7 +7942,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 20px 0;
-    gap: 10px;
+    gap: 50px;
   }
   .gift_intro .gift_intro_container .gift_left {
     width: 300px;
@@ -7923,6 +7962,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 0;
   }
   .gift_intro .gift_intro_container .gift_left > h1 {
     margin-top: 20px;
@@ -7933,6 +7973,7 @@ a {
     line-height: 36px;
     letter-spacing: 0em;
     text-align: center;
+    margin-top: 0;
   }
   .gift_intro .gift_intro_container .gift_left > p {
     width: 300px;
@@ -7954,10 +7995,7 @@ a {
     gap: 10px;
   }
   .gift_intro .gift_intro_container .gift_right > img:first-child {
-    width: 300px;
-    height: 240px;
-    -webkit-transform: rotate(-109.45deg);
-            transform: rotate(-109.45deg);
+    width: 200px;
   }
   .gift_intro .gift_intro_container .gift_right > img:last-child {
     display: none;
@@ -7966,6 +8004,7 @@ a {
 @media screen and (max-width: 740px) {
   .gift_intro {
     background-color: rgb(18, 18, 18);
+    padding: 40px 0;
     width: 100%;
   }
   .gift_intro .gift_intro_container {
@@ -8017,7 +8056,7 @@ a {
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .gift_intro .gift_intro_container .gift_right {
     display: -webkit-box;
@@ -8082,7 +8121,9 @@ a {
 }
 .giftboxes .giftboxes_container .boxes .box {
   width: 300px;
-  height: 340px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border: 1px solid rgb(18, 18, 18);
   border-radius: 5px;
 }
@@ -8139,6 +8180,7 @@ a {
   height: 29px;
   border: 2px solid transparent;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 .giftboxes .giftboxes_container .boxes .box > a > button:hover {
   -webkit-transform: scale(1);
@@ -8197,7 +8239,7 @@ a {
 }
 @media screen and (max-width: 740px) {
   .giftboxes .giftboxes_container {
-    padding: 20px 0;
+    padding: 40px 0;
   }
   .giftboxes .giftboxes_container .giftboxes_intro {
     display: -webkit-box;
@@ -8218,7 +8260,7 @@ a {
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .giftboxes .giftboxes_container .giftboxes_intro > p {
     width: 370px;
@@ -8228,7 +8270,7 @@ a {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .giftboxes .giftboxes_container .boxes {
     display: -webkit-box;
@@ -8242,8 +8284,7 @@ a {
         flex-wrap: wrap;
   }
   .giftboxes .giftboxes_container .boxes .box {
-    width: 280px;
-    height: 250px;
+    width: 230px;
     border: 1px solid rgb(18, 18, 18);
     border-radius: 5px;
   }
@@ -9938,7 +9979,7 @@ a {
 }
 .swiper {
   width: 100%;
-  height: 100vh;
+  height: 650px;
 }
 .swiper .swiper-slide {
   background-position: center;
@@ -9953,9 +9994,15 @@ a {
 }
 .swiper .swiper-slide .info_par {
   position: absolute;
-  padding-top: 250px;
-  padding-left: 200px;
-  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 250px;
+  left: 200px;
 }
 .swiper .swiper-slide .info_par > h1 {
   font-family: Space Mono;
@@ -9992,7 +10039,7 @@ a {
 @media screen and (max-width: 1238px) {
   .swiper {
     width: 100%;
-    height: 65vh;
+    height: 500px;
   }
   .swiper .swiper-slide {
     background-position: center;
@@ -10008,9 +10055,7 @@ a {
   }
   .swiper .swiper-slide .info_par {
     position: absolute;
-    padding-top: 250px;
-    padding-left: 100px;
-    top: 0;
+    top: 190px;
   }
   .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
@@ -10037,7 +10082,7 @@ a {
 @media screen and (max-width: 740px) {
   .swiper {
     width: 100%;
-    height: 30vh;
+    height: 250px;
   }
   .swiper .swiper-slide {
     background-position: center;
@@ -10053,14 +10098,14 @@ a {
   }
   .swiper .swiper-slide .info_par {
     position: absolute;
-    padding-top: 0px;
+    padding-top: 8px;
     padding-left: 0px;
     top: 34%;
     left: 22%;
   }
   .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 510;
     line-height: 46px;
     letter-spacing: 0em;
@@ -10072,9 +10117,9 @@ a {
     display: none;
   }
   .swiper .swiper-slide .info_par > a > button {
-    width: 100px;
+    width: 90px;
     height: 24px;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 0px;
   }
 }

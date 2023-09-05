@@ -2912,6 +2912,16 @@ a {
 .testing .testing_container .testing_common .testing_right {
   width: 470px;
   height: 243px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .testing .testing_container .testing_common .testing_right > h1 {
   font-family: Space Mono;
@@ -5528,8 +5538,13 @@ a {
   border-radius: 8px;
   background-color: #fff;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume > img {
-  width: 100%;
+.tester .tester_container .tester_bottom .tester_left .testerparfume > a {
+  width: 280px;
+  height: 260px;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
+  width: 280px;
+  height: 260px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
   font-family: Space Mono;
@@ -5661,8 +5676,13 @@ a {
     background-color: #fff;
     margin-bottom: 10px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume > img {
-    width: 100%;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > a {
+    width: 240px;
+    height: 260px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
+    width: 240px;
+    height: 230px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
     font-family: Space Mono;
@@ -5800,8 +5820,13 @@ a {
     background-color: #fff;
     margin-bottom: 20px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume > img {
-    width: 100%;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > a {
+    width: 180px;
+    height: 180px;
+  }
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
+    width: 180px;
+    height: 180px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
     font-family: Space Mono;

@@ -25,7 +25,7 @@ namespace Parfume.App.Controllers
         {
             TesterViewModel testerViewModel = new TesterViewModel
             {
-                    Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Category).ToListAsync(),
+                    Products = await _context.Products.Where(x => !x.IsDeleted).Include(x => x.Category).Include(x=>x.Brand).ToListAsync(),
 
 
                 SettingHomePage = await _context.SettingHomePage.Where(x => !x.IsDeleted).FirstOrDefaultAsync(),
@@ -35,8 +35,8 @@ namespace Parfume.App.Controllers
         }
         public async Task<IActionResult> Search(string search)
         {
-            int TotalCount = _context.Products.Where(x => !x.IsDeleted&& x.Category.Name=="Tester" && x.Title.Trim().ToLower().Contains(search.Trim().ToLower())).Count();
-            List<Product> products = await _context.Products.Where(x => !x.IsDeleted&& x.Category.Name == "Tester" && x.Title.Trim().ToLower().Contains(search.Trim().ToLower()))
+            int TotalCount = _context.Products.Include(x=>x.Brand).Where(x => !x.IsDeleted&& x.Category.Name=="Tester" && x.Title.Trim().ToLower().Contains(search.Trim().ToLower())).Count();
+            List<Product> products = await _context.Products.Include(x=>x.Brand).Where(x => !x.IsDeleted&& x.Category.Name == "Tester" && x.Title.Trim().ToLower().Contains(search.Trim().ToLower()))
               .ToListAsync();
        
             return Json(products);

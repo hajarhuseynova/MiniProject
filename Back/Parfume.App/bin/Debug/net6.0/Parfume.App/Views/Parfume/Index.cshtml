@@ -28,14 +28,22 @@
             <div class="category" data-filter="all">
               <p id="all">Hamısı</p>
             </div>
-         
-            @foreach (var item in Model.Products.Where(x=>x.Category.Name=="Parfum"))
-            {
-            <div class="category" data-filter="@item.Brand.Name.ToLower()">
-              <p id="@item.Brand.Name.ToLower()">@item.Brand.Name</p>
-            </div>
-           
-            }
+
+
+            @{
+    var uniqueBrands = Model.Products
+        .Where(x => x.Category.Name == "Parfum" ||x.Category.Name == "Tester")
+        .Select(x => x.Brand.Name)
+        .Distinct()
+        .ToList();
+}
+
+@foreach (var brand in uniqueBrands)
+{
+    <div class="category" data-filter="@brand.ToLower()">
+        <p id="@brand.ToLower()">@brand</p>
+    </div>
+}
           </div>
         </div>
       </div>
@@ -44,10 +52,10 @@
         <div class="container parfumes_index_container">
           <div class="newsellest">
 
-         @foreach (var item in Model.Products.Where(x=>x.Category.Name=="Parfum"))
+         @foreach (var item in Model.Products.Where(x=>x.Category.Name=="Parfum"||x.Category.Name == "Tester"))
          {
                 <div class="selles">
-              <a asp-action="detail" asp-route-id="@item.Id" asp-controller="parfume">
+              <a asp-action="detail" asp-route-id="@item.Id" asp-controller="product">
                 <img
                   src="~/assets/images/@item.Image"
                   alt="productImage"
