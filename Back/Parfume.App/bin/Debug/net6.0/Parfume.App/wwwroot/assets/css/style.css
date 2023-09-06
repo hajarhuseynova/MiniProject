@@ -9613,6 +9613,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  width: 104px;
 }
 .comments .comments_container .comment .left > h3 {
   font-family: Space Mono;
@@ -9863,6 +9864,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 5px;
+    width: 390px;
   }
   .comments .comments_container .comment .left > h3 {
     font-family: Space Mono;

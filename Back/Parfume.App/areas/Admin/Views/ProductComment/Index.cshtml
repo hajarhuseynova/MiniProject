@@ -22,8 +22,8 @@
                      <th>@item.Product.Title</th>
                      <th>@item.Title</th>
                      <th>@item.Rating</th>
-                     <td><a asp-controller="comment" asp-action="accept" asp-route-id="@item.Id" ><i class="fa-solid fa-check"></i> </a></td>
-                     <td><a asp-controller="comment" asp-action="reject" asp-route-id="@item.Id"class="delete-item"><i class="fa-solid fa-x"></i></a></td>
+                     <td><a asp-controller="ProductComment" asp-action="accept" asp-route-id="@item.Id" ><i class="fa-solid fa-check"></i> </a></td>
+                     <td><a asp-controller="ProductComment" asp-action="reject" asp-route-id="@item.Id"class="delete-item"><i class="fa-solid fa-x"></i></a></td>
                   
                 </tr>
             }

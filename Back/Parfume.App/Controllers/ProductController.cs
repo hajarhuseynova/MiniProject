@@ -33,14 +33,16 @@ namespace Parfume.App.Controllers
 
             ProductViewModel productViewModel = new ProductViewModel
             {
-                Products = await _context.Products
+                Products = await _context.Products.Include(x => x.Comments)
                        .Include(x => x.Brand).Include(x => x.Category)
                         .Where(x => !x.IsDeleted).ToListAsync(),
 
                 Product = await _context.Products
-              .Include(x => x.Brand).Include(x => x.Category)
-
+              .Include(x => x.Brand).Include(x => x.Category).Include(x=>x.Comments)
                 .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
+
+                Comments = await _context.Comments.Include(x=>x.AppUser).Where(b => !b.IsDeleted).ToListAsync(),
+                Comment = await _context.Comments.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync(),
 
                 Brands = await _context.Brands.Where(b => !b.IsDeleted).ToListAsync(),
                 Functions = await _context.Functions.Where(b => !b.IsDeleted).ToListAsync(),

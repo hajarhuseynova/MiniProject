@@ -23,8 +23,7 @@ namespace Parfume.App.areas.Admin.Controllers
         {
             IEnumerable<Comment> comments = await _context.Comments.Where(x => !x.IsDeleted)
                 .Include(x=>x.AppUser).
-                Include(x => x.Product).ThenInclude(x=>x.Brand).
-                   Include(x => x.Product).ThenInclude(x => x.Category).ToListAsync();
+                Include(x => x.Product).ToListAsync();
             return View(comments);
         }
         public async Task<IActionResult> Accept(int id)

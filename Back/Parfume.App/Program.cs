@@ -26,6 +26,7 @@ builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
 
 
 builder.Services.AddHttpContextAccessor();
+
 builder.Services.Register(builder.Configuration);
 
 var app = builder.Build();

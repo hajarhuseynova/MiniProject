@@ -33,6 +33,7 @@ namespace Parfume.Core.Entities
         //brand
         public int? BrandId { get; set; }
         public Brand? Brand { get; set; }
-
+        //comment
+        public List<Comment>? Comments { get; set; }
     }
 }

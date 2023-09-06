@@ -14,11 +14,10 @@ namespace Parfume.App.ServiceRegistration
             service.AddScoped<IMailService, MailService>();
             service.AddScoped<IBasketService, BasketService>();
             service.AddScoped<ISettingService, SettingService>();
-
-
             service.AddIdentity<AppUser, IdentityRole>()
                    .AddDefaultTokenProviders()
                    .AddEntityFrameworkStores<ParfumeDbContext>();
+
             service.Configure<IdentityOptions>(options =>
             {
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
