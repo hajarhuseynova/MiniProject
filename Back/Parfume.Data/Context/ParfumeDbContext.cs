@@ -13,6 +13,8 @@ namespace Parfume.App.Context
         public DbSet<FakeSlider> FakeSlides { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Brand> Brands { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+
         public DbSet<ProductCategory> Category { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }

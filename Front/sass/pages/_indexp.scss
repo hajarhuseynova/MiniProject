@@ -16,7 +16,7 @@
       display: flex;
       flex-direction: column;
       top: 250px;
-      left: 200px;
+      left: 150px;
       > h1 {
         font-family: Space Mono;
         font-size: 45px;
@@ -61,7 +61,6 @@
       background-position: center;
       background-size: cover;
       position: relative;
-
       > img {
         display: block;
         width: 100%;
@@ -72,6 +71,7 @@
       .info_par {
         position: absolute;
         top: 190px;
+        left: 100px;
         > h1 {
           font-family: Space Mono;
           font-size: 45px;
@@ -117,7 +117,7 @@
         padding-top: 8px;
         padding-left: 0px;
         top: 34%;
-        left: 22%;
+        left: 15%;
         > h1 {
           font-family: Space Mono;
           font-size: 28px;

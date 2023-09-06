@@ -12,7 +12,7 @@ namespace Parfume.Core.Entities
         public string Name { get; set; }
         public string Surname { get; set; }
         public List<Basket> baskets { get; set; }
-        //public List<CommentP>? CommentPs { get; set; }
+        public List<Comment>? Comments { get; set; }
 
     }
 }

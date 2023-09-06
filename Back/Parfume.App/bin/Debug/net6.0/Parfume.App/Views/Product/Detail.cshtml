@@ -148,27 +148,32 @@
 		</div>
 		<div class="right">
 
-			<form asp-controller="Product" asp-action="addcomment" method="post">
-				<input placeholder="Basliq" type="text" />
-				<textarea placeholder="Mətn daxil edin"
+			<form method="post" asp-controller="Comment" asp-action="AddComment" >
+				<input asp-for="@Model.Comment.Title" placeholder="Basliq" type="text"  />
+				<textarea asp-for="@Model.Comment.Desc" placeholder="Mətn daxil edin"
 						  rows="4"
 						  cols="40"></textarea>
+					<input hidden asp-for="@Model.Comment.ProductId" type="text" value="@Model.Product.Id" name="Comment.ProductId" />
+					<input hidden asp-for="@Model.Comment.Rating" type="number" id="review_score" name="Comment.Rating" />
+
+		
 				<div class="right_bottom">
 					<p>Reytinq</p>
 					<div class="rating">
-						<span class="star" data-value="1" id="star_1">&#9733;</span>
-						<span class="star" data-value="1" id="star_2">&#9733;</span>
-						<span class="star" data-value="1" id="star_3">&#9733;</span>
-						<span class="star" data-value="1" id="star_4">&#9733;</span>
-						<span class="star" data-value="1" id="star_5">&#9733;</span>
+						<span class="stard" data-value="1" id="star_1">&#9734;</span>
+						<span class="stard" data-value="1" id="star_2">&#9734;</span>
+						<span class="stard" data-value="1" id="star_3">&#9734;</span>
+						<span class="stard" data-value="1" id="star_4">&#9734;</span>
+						<span class="stard" data-value="1" id="star_5">&#9734;</span>
 					</div>
-					<a><button>Göndər</button></a>
-			</form>
 
-		</div>
-	</div>
+					<a><button type="submit">Göndər</button></a>
+				</div>
+		
+			</form>
+	     </div>
+    </div>
 </div>
-	  </div>
 <div class="comments">
 	<div class="container comments_container">
 
@@ -253,6 +258,31 @@
 
 	</div>
 </div>
+<script>
+	
+	var star=Array.from(document.querySelectorAll(".stard"));
+	var rating=document.querySelector("#review_score");
+	console.log(star)
+	//console.log(ratin.value)
+	star.forEach((staritem)=>{
+		staritem.addEventListener("click",()=>{
+		
+			var starindex=star.indexOf(staritem);
+			for(let index=0;index<star.length;index++){
+				if(index<=starindex){
+					star[index].innerHTML="&#9733;"
+				}
+				else{
+					star[index].innerHTML="&#9734;"
+				}
+				rating.value=starindex;
+			}
+	})
+	})
+
+</script>
+
+
 <script>
     const products = document.querySelectorAll(".add-basket-product");
     products.forEach(prod => {
@@ -397,3 +427,4 @@
 				})
 	  })
 </script>
+

@@ -108,7 +108,7 @@
               overflow-y: scroll;
               .basketItem {
                 display: flex;
-                gap: 35px;
+                gap: 25px;
                 opacity: 1;
                 transition: 1s;
 
@@ -149,12 +149,13 @@
               }
               .buttonsBasketDiv {
                 display: flex;
-                gap: 45px;
+                gap: 10px;
                 > a {
                   > button {
                     background-color: $orange_01;
                     color: $white;
                     font-size: 14px;
+                    width: 100px;
                     &:hover {
                       transform: scale(1);
                       background-color: transparent;

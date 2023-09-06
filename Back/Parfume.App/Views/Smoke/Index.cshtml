@@ -29,7 +29,7 @@
 <div class="smoke">
 	<div class="container smoke_container">
 		<div class="newsmoke">
-			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Smoke").Take(4))
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Smoke"))
 			{
 				<div class="smok">
 					<a asp-action="detail" asp-route-id="@item.Id" asp-controller="smoke">

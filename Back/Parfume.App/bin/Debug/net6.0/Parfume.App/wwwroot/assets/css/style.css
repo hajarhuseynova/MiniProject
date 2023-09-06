@@ -366,7 +366,7 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 35px;
+  gap: 25px;
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
@@ -420,12 +420,13 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 45px;
+  gap: 10px;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button {
   background-color: #ffaf06;
   color: #fff;
   font-size: 14px;
+  width: 100px;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button:hover {
   -webkit-transform: scale(1);
@@ -1959,7 +1960,7 @@ a {
   .subscribe .form_input > form .input_button > button {
     background-color: #ffaf06;
     color: #fff;
-    margin-left: -80px;
+    margin-left: -70px;
   }
   .subscribe .form_input > form .input_button > button:hover {
     -webkit-transform: scale(1);
@@ -2032,7 +2033,7 @@ a {
   .subscribe .form_input > form .input_button > button {
     background-color: #ffaf06;
     color: #fff;
-    margin-left: -80px;
+    margin-left: -70px;
   }
   .subscribe .form_input > form .input_button > button:hover {
     -webkit-transform: scale(1);
@@ -2911,10 +2912,10 @@ a {
 }
 .testing .testing_container .testing_common .testing_right {
   width: 470px;
-  height: 243px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2922,6 +2923,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .testing .testing_container .testing_common .testing_right > h1 {
   font-family: Space Mono;
@@ -2930,8 +2934,8 @@ a {
   line-height: 40px;
   letter-spacing: 0em;
   color: #ffaf06;
-  text-align: left;
-  margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 0px;
 }
 .testing .testing_container .testing_common .testing_right > a {
   text-decoration: none;
@@ -2977,7 +2981,6 @@ a {
   }
   .testing .testing_container .testing_common .testing_right {
     width: 340px;
-    height: 160px;
   }
   .testing .testing_container .testing_common .testing_right > h1 {
     font-family: Space Mono;
@@ -2986,8 +2989,6 @@ a {
     line-height: 30px;
     letter-spacing: 0em;
     color: #ffaf06;
-    text-align: left;
-    margin-bottom: 30px;
   }
   .testing .testing_container .testing_common .testing_right > a {
     text-decoration: none;
@@ -3041,7 +3042,6 @@ a {
     letter-spacing: 0em;
     color: #ffaf06;
     text-align: center;
-    margin-bottom: 30px;
   }
   .testing .testing_container .testing_common .testing_right > a {
     text-decoration: none;
@@ -3561,7 +3561,6 @@ a {
 }
 .register .register_container .register_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4131,7 +4130,6 @@ a {
 }
 .reset .reset_container .reset_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4403,7 +4401,6 @@ a {
 }
 .forget .forget_container .forget_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -5245,7 +5242,6 @@ a {
 }
 .infoPage .infoPage_container .infoPage_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -6532,8 +6528,8 @@ a {
   }
   .location .location_container .locations .locationPage {
     background-color: #fff;
-    width: 390px;
-    height: 240px;
+    width: 340px;
+    height: 290px;
     border-radius: 8px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6549,10 +6545,14 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
   }
   .location .location_container .locations .locationPage .locationPage_left > img {
-    width: 100%;
-    height: 120px;
+    width: 300px;
+    height: 160px;
     border-radius: 8px;
   }
   .location .location_container .locations .locationPage .locationPage_right {
@@ -6575,6 +6575,7 @@ a {
     text-align: center;
     color: rgb(18, 18, 18);
     margin-bottom: 5px;
+    margin-top: -5px;
   }
   .location .location_container .locations .locationPage .locationPage_right .common {
     display: -webkit-box;
@@ -6586,6 +6587,8 @@ a {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 8px;
   }
   .location .location_container .locations .locationPage .locationPage_right .common .option {
     display: -webkit-box;
@@ -6595,17 +6598,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .location .location_container .locations .locationPage .locationPage_right .common .option:first-child {
-    margin-right: 50px;
-  }
-  .location .location_container .locations .locationPage .locationPage_right .common .option:nth-child(3) {
-    margin-right: 20px;
-    margin-top: 10px;
-  }
   .location .location_container .locations .locationPage .locationPage_right .common .option > img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
   }
   .location .location_container .locations .locationPage .locationPage_right .common .option > p {
     font-family: Work Sans;
@@ -6615,10 +6611,17 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
+  .location .location_container .locations .locationPage .locationPage_right .common .option:first-child {
+    margin-right: 10px;
+  }
+  .location .location_container .locations .locationPage .locationPage_right .common .option:nth-child(3) {
+    margin-right: 35px;
+  }
   .location .location_container .locations .locationPage .locationPage_right .common > a > button {
-    margin-top: 10px;
-    width: 180px;
+    margin-top: 0px;
+    width: 130px;
     height: 25px;
+    font-size: 15px;
     border-color: transparent;
   }
 }
@@ -9982,7 +9985,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   top: 250px;
-  left: 200px;
+  left: 150px;
 }
 .swiper .swiper-slide .info_par > h1 {
   font-family: Space Mono;
@@ -10036,6 +10039,7 @@ a {
   .swiper .swiper-slide .info_par {
     position: absolute;
     top: 190px;
+    left: 100px;
   }
   .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
@@ -10081,7 +10085,7 @@ a {
     padding-top: 8px;
     padding-left: 0px;
     top: 34%;
-    left: 22%;
+    left: 15%;
   }
   .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
@@ -11138,7 +11142,6 @@ a {
 }
 .update .update_container .update_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

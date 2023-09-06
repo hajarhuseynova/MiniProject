@@ -320,6 +320,52 @@ namespace Parfume.Data.Migrations
                     b.ToTable("Brands");
                 });
 
+            modelBuilder.Entity("Parfume.Core.Entities.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AppUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Desc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("isVisible")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("Parfume.Core.Entities.FakeSlider", b =>
                 {
                     b.Property<int>("Id")
@@ -1222,6 +1268,21 @@ namespace Parfume.Data.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Parfume.Core.Entities.Comment", b =>
+                {
+                    b.HasOne("Parfume.Core.Entities.AppUser", "AppUser")
+                        .WithMany("Comments")
+                        .HasForeignKey("AppUserId");
+
+                    b.HasOne("Parfume.Core.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Parfume.Core.Entities.Order", b =>
                 {
                     b.HasOne("Parfume.Core.Entities.AppUser", "AppUser")
@@ -1269,6 +1330,8 @@ namespace Parfume.Data.Migrations
 
             modelBuilder.Entity("Parfume.Core.Entities.AppUser", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("baskets");
                 });
 

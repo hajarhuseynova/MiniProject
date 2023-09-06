@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Comment>
+<div class="container">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Istifadecinin adi</th>
+                <th scope="col">Produktun adi</th>
+                <th scope="col">Commentin basligi</th>
+                <th scope="col">Ratinq</th>
+                <th scope="col">Status</th>
+                <th scope="col">Status</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                    <tr>
+                     <th scope="row">@item.Id</th>
+                     <th>@item.AppUser.UserName</th>
+                     <th>@item.Product.Title</th>
+                     <th>@item.Title</th>
+                     <th>@item.Rating</th>
+                     <td><a asp-controller="comment" asp-action="accept" asp-route-id="@item.Id" ><i class="fa-solid fa-check"></i> </a></td>
+                     <td><a asp-controller="comment" asp-action="reject" asp-route-id="@item.Id"class="delete-item"><i class="fa-solid fa-x"></i></a></td>
+                  
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
