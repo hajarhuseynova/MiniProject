@@ -15,8 +15,8 @@
       position: absolute;
       display: flex;
       flex-direction: column;
-      top: 250px;
-      left: 150px;
+      top: 220px;
+      left: 100px;
       > h1 {
         font-family: Space Mono;
         font-size: 45px;
@@ -28,11 +28,11 @@
         width: 450px;
       }
       > p {
-        width: 395px;
+        width: 385px;
         font-family: Work Sans;
         font-size: 30px;
         font-weight: 300;
-        line-height: 25px;
+        line-height: 33px;
         letter-spacing: 0em;
         text-align: left;
         color: $white;
@@ -70,8 +70,8 @@
       }
       .info_par {
         position: absolute;
-        top: 190px;
-        left: 100px;
+        top: 150px;
+        left: 60px;
         > h1 {
           font-family: Space Mono;
           font-size: 45px;
@@ -83,7 +83,7 @@
           width: 450px;
         }
         > p {
-          width: 395px;
+          width: 355px;
           font-family: Work Sans;
           font-size: 30px;
           font-weight: 300;
@@ -116,17 +116,18 @@
         position: absolute;
         padding-top: 8px;
         padding-left: 0px;
-        top: 34%;
+        top: 33%;
         left: 15%;
         > h1 {
           font-family: Space Mono;
-          font-size: 28px;
+          font-size: 20px;
           font-weight: 510;
-          line-height: 46px;
+          line-height: 20px;
           letter-spacing: 0em;
           text-align: left;
           color: $white;
-          width: 450px;
+          width: 150px;
+          margin-bottom: 10px;
         }
         > p {
           display: none;

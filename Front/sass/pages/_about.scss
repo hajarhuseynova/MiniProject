@@ -168,6 +168,7 @@
         .about_image_left {
           width: 100%;
           z-index: 1000;
+          object-fit: cover;
           margin-left: 0px;
         }
       }
@@ -320,6 +321,7 @@
           width: 350px;
           z-index: 1000;
           margin-right: 0px;
+          object-fit: cover;
         }
       }
       .why_right {

@@ -576,3 +576,19 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfum
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\0f02da75-b27e-4e34-8127-6bc6fdab327fvss.jpg
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\b2598a6a-4518-4f55-906f-f4fa3cb9c0b1victoriasecret.jpg
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\dc28b55e-4fe8-4f43-8f1e-4aed1885dc1fad.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\212ecef6-3e63-4958-b183-15f1ead9fe5bsl.avif
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\33ef2c71-5b7c-402d-91d3-3da81e1074dejan-de-keijzer-gSKQnv55TGA-unsplash.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\8f1f82a0-0f91-4fe9-9d3e-26873cbb146eoo.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\1e540ba7-699d-4cc1-ae87-dcb3e339f2bdMask group.png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\2cf41219-f621-4f74-ae3c-b2d77a75ddb5od.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\4242e92b-fcef-4a51-9079-776e9005da73sl2.avif
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\8e1c2dff-be29-47ee-8f0c-7a8d56c772104bc389f5-19a6-45d8-adf8-de64dcdb40d4sayak-bala-jowBlJC165U-unsplash.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\d520d9a6-51c4-4d14-b8d2-e207adf8e3baaaa.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\fed88439-5e09-4f90-937e-183abd2547f3Rectangle 30.png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\360dce25-7caf-4202-8249-b4ccca63cd84Mask group (3).png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\8bd9e4d6-c7ff-4172-964d-6dacb09844b1Mask group (3).png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\8fabc1ac-727c-4187-93ae-13c3c211b66eMask group (4).png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\9eda3576-7d01-4137-9c84-7265077a1733Mask group (3).png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\a9243f5a-5432-4af4-91e6-25df184f50fdMask group (2).png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\f75a6a16-383d-49c9-992f-ba1f16077af7Mask group (2).png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\f9ea3ff0-bd82-40fd-80b9-68c1e4606bb3Mask group (1).png
