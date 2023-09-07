@@ -562,3 +562,17 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Debug\net6.0\Parfum
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Debug\net6.0\Parfume.App.genruntimeconfig.cache
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Debug\net6.0\ref\Parfume.App.dll
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\areas\Admin\Views\ProductComment\Index.cshtml
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\03283e8c-6439-40dd-b06b-b6eef73c6860lc.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\2c127c5b-0c1e-45a1-bd98-bc2b064c1feddr.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\3067c6d5-98e7-4928-8c12-7d17712d803fcroppp.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\3781e1f1-fac7-4815-b9c3-caaaef6cadc6prd.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\37e908e0-89a0-4081-9ddf-a2ff53d1d7e9a.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\41c10744-5598-4b64-a370-9e32b1b3e728gv.webp
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\7f73bde8-082e-46c1-8a10-7869c317bff0lc.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\836bc2e6-05c3-42da-9fa4-a38d6754b10fck.png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\a2325b66-793e-4544-9041-2b34bad3cf69x.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\b67b8cfd-080c-4782-9c70-a9b4a81906b3ch.png
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\bbd7c406-222d-453c-a466-72bac00abcc8ver.webp
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\0f02da75-b27e-4e34-8127-6bc6fdab327fvss.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\b2598a6a-4518-4f55-906f-f4fa3cb9c0b1victoriasecret.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\dc28b55e-4fe8-4f43-8f1e-4aed1885dc1fad.jpg

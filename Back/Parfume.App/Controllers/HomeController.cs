@@ -28,6 +28,9 @@ namespace Parfume.App.Controllers
         }
         public async Task<IActionResult> Index()
         {
+
+
+
             if (User.Identity.IsAuthenticated)
             {
                 var jsonBasket = Request.Cookies["basket"];
@@ -51,9 +54,11 @@ namespace Parfume.App.Controllers
                     List<BasketViewModel> viewModels = JsonConvert.DeserializeObject<List<BasketViewModel>>(jsonBasket);
                     foreach (var model in viewModels)
                     {
+                       
                         BasketItem basketItem = default;
                         if (basket.basketItems != null)
                         {
+                          
                             basketItem = basket.basketItems.FirstOrDefault(x => x.ProductId == model.ProductId);
                         }
                         if (basketItem == null)

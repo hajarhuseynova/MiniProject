@@ -1017,11 +1017,12 @@ a {
   background: pr;
   -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
           box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 180px;
+  height: 140px;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-top: 30px;
 }
 
 .slider::before,
@@ -1029,7 +1030,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 180px;
+  height: 140px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -1057,11 +1058,11 @@ a {
 }
 
 .slider .slide {
-  height: 180px;
+  height: 140px;
   width: 250px;
 }
 .slider .slide > img {
-  height: 180px;
+  height: 140px;
 }
 
 @media screen and (max-width: 1238px) {
@@ -1069,18 +1070,19 @@ a {
     background: pr;
     -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
             box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 200px;
+    height: 170px;
     margin: auto;
     overflow: hidden;
     position: relative;
     width: 100%;
+    margin-top: 20px;
   }
   .slider::before,
   .slider::after {
     background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 200px;
+    height: 170px;
     position: absolute;
     width: 200px;
     z-index: 2;
@@ -1094,11 +1096,11 @@ a {
     width: 3500px;
   }
   .slider .slide {
-    height: 200px;
+    height: 170px;
     width: 250px;
   }
   .slider .slide > img {
-    height: 200px;
+    height: 170px;
   }
 }
 @media screen and (max-width: 740px) {

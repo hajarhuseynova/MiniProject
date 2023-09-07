@@ -52,17 +52,18 @@ a {
 .slider {
   background: pr;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 180px;
+  height: 140px;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-top: 30px;
 }
 .slider::before,
 .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 180px;
+  height: 140px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -84,22 +85,22 @@ a {
   width: calc(250px * 14);
 }
 .slider .slide {
-  height: 180px;
+  height: 140px;
   width: 250px;
   > img {
-    height: 180px;
-    // object-fit: contain;
+    height: 140px;
   }
 }
 @media screen and (max-width: 1238px) {
   .slider {
     background: pr;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 200px;
+    height: 170px;
     margin: auto;
     overflow: hidden;
     position: relative;
     width: 100%;
+    margin-top: 20px;
   }
   .slider::before,
   .slider::after {
@@ -109,7 +110,7 @@ a {
       rgba(255, 255, 255, 0) 100%
     );
     content: "";
-    height: 200px;
+    height: 170px;
     position: absolute;
     width: 200px;
     z-index: 2;
@@ -121,10 +122,10 @@ a {
     width: calc(250px * 14);
   }
   .slider .slide {
-    height: 200px;
+    height: 170px;
     width: 250px;
     > img {
-      height: 200px;
+      height: 170px;
     }
   }
 }

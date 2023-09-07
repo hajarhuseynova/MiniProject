@@ -269,7 +269,7 @@
 	<div class="slide-track">
 		@{
     var uniqueBrands = Model.Products
-        .Where(x => x.Category.Name == "Parfum")
+        .Where(x => x.Category.Name == "Parfum" ||x.Category.Name=="Tester")
         .Select(x => x.Brand.Image)
         .Distinct()
         .ToList();
@@ -347,7 +347,7 @@
 
 					Toast.fire({
 						icon: 'success',
-						title: `Elave edildi!`
+						title: `Əlavə edildi!`
 					})
 
 					 })
