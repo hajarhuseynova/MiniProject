@@ -777,8 +777,10 @@
           .rating {
             font-size: 30px;
             cursor: pointer;
+            color: $orange_01;
+
             .star {
-              color: gray;
+              color: $orange_01;
             }
             .star.selected {
               color: $orange_01;
@@ -1065,11 +1067,15 @@
   }
 }
 .comments {
+  height: 180px;
+  overflow-y: scroll;
+  overflow-x: hidden;
   .comments_container {
     padding: 20px 0;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+
+    flex-direction: column;
     .comment {
       padding: 0 10px;
       display: flex;
@@ -1161,6 +1167,8 @@
 }
 @media screen and (max-width: 1238px) {
   .comments {
+    height: 200px;
+
     .comments_container {
       padding: 0;
       display: flex;
@@ -1256,6 +1264,8 @@
 }
 @media screen and (max-width: 740px) {
   .comments {
+    height: 250px;
+
     .comments_container {
       padding: 0;
       display: flex;

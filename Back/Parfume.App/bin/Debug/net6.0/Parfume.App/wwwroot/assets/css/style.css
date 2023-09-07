@@ -3644,7 +3644,6 @@ a {
   }
   .register .register_container .register_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3738,7 +3737,6 @@ a {
   .register .register_container .register_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3834,7 +3832,6 @@ a {
 }
 .login .login_container .login_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3940,7 +3937,6 @@ a {
   }
   .login .login_container .login_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4020,7 +4016,6 @@ a {
   .login .login_container .login_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4201,7 +4196,6 @@ a {
   }
   .reset .reset_container .reset_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4285,7 +4279,6 @@ a {
   .reset .reset_container .reset_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4472,7 +4465,6 @@ a {
   }
   .forget .forget_container .forget_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4553,7 +4545,6 @@ a {
   .forget .forget_container .forget_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5311,7 +5302,6 @@ a {
   }
   .infoPage .infoPage_container .infoPage_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5370,7 +5360,6 @@ a {
   .infoPage .infoPage_container .infoPage_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9227,9 +9216,10 @@ a {
 .assesment .assesment_container .right > form .right_bottom .rating {
   font-size: 30px;
   cursor: pointer;
+  color: #ffaf06;
 }
 .assesment .assesment_container .right > form .right_bottom .rating .star {
-  color: gray;
+  color: #ffaf06;
 }
 .assesment .assesment_container .right > form .right_bottom .rating .star.selected {
   color: #ffaf06;
@@ -9557,17 +9547,22 @@ a {
     border: 1px solid;
   }
 }
+.comments {
+  height: 180px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 .comments .comments_container {
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .comments .comments_container .comment {
   padding: 0 10px;
@@ -9682,6 +9677,9 @@ a {
 }
 
 @media screen and (max-width: 1238px) {
+  .comments {
+    height: 200px;
+  }
   .comments .comments_container {
     padding: 0;
     display: -webkit-box;
@@ -9804,6 +9802,9 @@ a {
   }
 }
 @media screen and (max-width: 740px) {
+  .comments {
+    height: 250px;
+  }
   .comments .comments_container {
     padding: 0;
     display: -webkit-box;
@@ -11232,7 +11233,6 @@ a {
   }
   .update .update_container .update_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11325,7 +11325,6 @@ a {
   .update .update_container .update_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

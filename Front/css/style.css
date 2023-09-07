@@ -366,7 +366,7 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 35px;
+  gap: 25px;
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
@@ -420,12 +420,13 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 45px;
+  gap: 10px;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button {
   background-color: #ffaf06;
   color: #fff;
   font-size: 14px;
+  width: 100px;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button:hover {
   -webkit-transform: scale(1);
@@ -1016,11 +1017,12 @@ a {
   background: pr;
   -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
           box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 180px;
+  height: 140px;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-top: 30px;
 }
 
 .slider::before,
@@ -1028,7 +1030,7 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 180px;
+  height: 140px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -1056,11 +1058,11 @@ a {
 }
 
 .slider .slide {
-  height: 180px;
+  height: 140px;
   width: 250px;
 }
 .slider .slide > img {
-  height: 180px;
+  height: 140px;
 }
 
 @media screen and (max-width: 1238px) {
@@ -1068,18 +1070,19 @@ a {
     background: pr;
     -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
             box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 200px;
+    height: 170px;
     margin: auto;
     overflow: hidden;
     position: relative;
     width: 100%;
+    margin-top: 20px;
   }
   .slider::before,
   .slider::after {
     background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 200px;
+    height: 170px;
     position: absolute;
     width: 200px;
     z-index: 2;
@@ -1093,11 +1096,11 @@ a {
     width: 3500px;
   }
   .slider .slide {
-    height: 200px;
+    height: 170px;
     width: 250px;
   }
   .slider .slide > img {
-    height: 200px;
+    height: 170px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -1469,7 +1472,7 @@ a {
   cursor: pointer;
 }
 .smeels .smells_container .newsmeels .smell > h3 {
-  color: #fff;
+  color: rgb(18, 18, 18);
   font-family: Space Mono;
   font-size: 22px;
   font-weight: 496;
@@ -1480,20 +1483,7 @@ a {
   display: flex;
   padding: 0 25px;
   margin-bottom: 6px;
-  margin-top: 270px;
-}
-.smeels .smells_container .newsmeels .smell > p {
-  font-family: Work Sans;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 16px;
-  letter-spacing: 0em;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 25px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1238px) {
@@ -1518,7 +1508,6 @@ a {
   }
   .smeels .smells_container .newsmeels .smell > h3 {
     width: 220px;
-    color: #fff;
     font-family: Space Mono;
     font-size: 18px;
     font-weight: 496;
@@ -1530,21 +1519,7 @@ a {
     margin-left: 0px;
     padding: 0 15px;
     margin-bottom: 6px;
-    margin-top: 175px;
-  }
-  .smeels .smells_container .newsmeels .smell > p {
-    font-family: Work Sans;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 16px;
-    letter-spacing: 0em;
-    width: 230px;
-    color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 0px;
-    padding: 0 15px;
+    margin-top: 20px;
   }
   .smeels .smells_container .newsmeels .smell:nth-child(4) {
     display: none;
@@ -1582,7 +1557,6 @@ a {
   }
   .smeels .smells_container .newsmeels .smell > h3 {
     width: 180px;
-    color: #fff;
     font-family: Space Mono;
     font-size: 16px;
     font-weight: 496;
@@ -1594,10 +1568,7 @@ a {
     margin-left: 0px;
     padding: 0 15px;
     margin-bottom: 6px;
-    margin-top: 140px;
-  }
-  .smeels .smells_container .newsmeels .smell > p {
-    display: none;
+    margin-top: 10px;
   }
   .smeels .smells_container .newsmeels .smell:nth-child(3) {
     display: none;
@@ -1959,7 +1930,7 @@ a {
   .subscribe .form_input > form .input_button > button {
     background-color: #ffaf06;
     color: #fff;
-    margin-left: -80px;
+    margin-left: -70px;
   }
   .subscribe .form_input > form .input_button > button:hover {
     -webkit-transform: scale(1);
@@ -2032,7 +2003,7 @@ a {
   .subscribe .form_input > form .input_button > button {
     background-color: #ffaf06;
     color: #fff;
-    margin-left: -80px;
+    margin-left: -70px;
   }
   .subscribe .form_input > form .input_button > button:hover {
     -webkit-transform: scale(1);
@@ -2911,10 +2882,10 @@ a {
 }
 .testing .testing_container .testing_common .testing_right {
   width: 470px;
-  height: 243px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2922,6 +2893,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .testing .testing_container .testing_common .testing_right > h1 {
   font-family: Space Mono;
@@ -2930,8 +2904,8 @@ a {
   line-height: 40px;
   letter-spacing: 0em;
   color: #ffaf06;
-  text-align: left;
-  margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 0px;
 }
 .testing .testing_container .testing_common .testing_right > a {
   text-decoration: none;
@@ -2977,7 +2951,6 @@ a {
   }
   .testing .testing_container .testing_common .testing_right {
     width: 340px;
-    height: 160px;
   }
   .testing .testing_container .testing_common .testing_right > h1 {
     font-family: Space Mono;
@@ -2986,8 +2959,6 @@ a {
     line-height: 30px;
     letter-spacing: 0em;
     color: #ffaf06;
-    text-align: left;
-    margin-bottom: 30px;
   }
   .testing .testing_container .testing_common .testing_right > a {
     text-decoration: none;
@@ -3041,7 +3012,6 @@ a {
     letter-spacing: 0em;
     color: #ffaf06;
     text-align: center;
-    margin-bottom: 30px;
   }
   .testing .testing_container .testing_common .testing_right > a {
     text-decoration: none;
@@ -3561,7 +3531,6 @@ a {
 }
 .register .register_container .register_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3675,7 +3644,6 @@ a {
   }
   .register .register_container .register_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3769,7 +3737,6 @@ a {
   .register .register_container .register_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3865,7 +3832,6 @@ a {
 }
 .login .login_container .login_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3971,7 +3937,6 @@ a {
   }
   .login .login_container .login_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4051,7 +4016,6 @@ a {
   .login .login_container .login_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4131,7 +4095,6 @@ a {
 }
 .reset .reset_container .reset_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4233,7 +4196,6 @@ a {
   }
   .reset .reset_container .reset_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4317,7 +4279,6 @@ a {
   .reset .reset_container .reset_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4403,7 +4364,6 @@ a {
 }
 .forget .forget_container .forget_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4505,7 +4465,6 @@ a {
   }
   .forget .forget_container .forget_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4586,7 +4545,6 @@ a {
   .forget .forget_container .forget_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4870,6 +4828,8 @@ a {
   .who .who_container .who_right .about_image_left {
     width: 100%;
     z-index: 1000;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin-left: 0px;
   }
 }
@@ -5057,6 +5017,8 @@ a {
     width: 350px;
     z-index: 1000;
     margin-right: 0px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .why .why_container .why_right {
     background-color: #fff;
@@ -5245,7 +5207,6 @@ a {
 }
 .infoPage .infoPage_container .infoPage_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -5341,7 +5302,6 @@ a {
   }
   .infoPage .infoPage_container .infoPage_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5400,7 +5360,6 @@ a {
   .infoPage .infoPage_container .infoPage_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5524,37 +5483,36 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume {
-  width: 230px;
-  height: 330px;
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
   background-color: #fff;
-  border-radius: 8px 8px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume > a {
-  width: 230px;
-  height: 210px;
+  width: 280px;
+  height: 260px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
-  width: 230px;
-  height: 210px;
-  border-radius: 8px 8px 0px 0px;
+  width: 280px;
+  height: 260px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume .def {
-  font-family: Work Sans;
-  font-size: 18px;
+.tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
+  font-family: Space Mono;
+  font-size: 20px;
   font-weight: 496;
-  line-height: 22px;
+  line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 10px;
-  margin-bottom: 8px;
-  padding: 0 6px;
-  margin-top: 12px;
+  padding: 10px 10px 5px 10px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
   font-family: Space Mono;
@@ -5564,22 +5522,16 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #ffd376;
-  margin-bottom: 8px;
-  padding: 0 18px;
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume .price_star {
+.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 6px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume .price_star .price {
+.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
   font-family: New York;
   font-size: 16px;
   font-weight: 496;
@@ -5587,14 +5539,12 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #6a6a6a;
-  margin-left: 10px;
 }
-.tester .tester_container .tester_bottom .tester_left .testerparfume .price_star > a > button {
-  margin-right: 10px;
-  width: 95px;
-}
-.tester .tester_container .tester_bottom .tester_left .testerparfume:nth-child(4) {
-  display: none;
+.tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
+  width: 100px;
+  margin-left: 100px;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1238px) {
@@ -5672,31 +5622,35 @@ a {
     gap: 10px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume {
-    width: 230px;
-    height: 330px;
+    width: 240px;
+    height: 335px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 8px;
     background-color: #fff;
-    border-radius: 8px 8px;
+    margin-bottom: 10px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume > a {
-    width: 230px;
-    height: 210px;
+    width: 240px;
+    height: 260px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
-    width: 230px;
-    height: 210px;
-    border-radius: 8px 8px 0px 0px;
+    width: 240px;
+    height: 230px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .def {
-    font-family: Work Sans;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
+    font-family: Space Mono;
     font-size: 18px;
     font-weight: 496;
-    line-height: 22px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 10px;
-    margin-bottom: 8px;
-    padding: 0 6px;
-    margin-top: 12px;
+    padding: 10px 10px 5px 10px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
     font-family: Space Mono;
@@ -5706,22 +5660,16 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #ffd376;
-    margin-bottom: 8px;
-    padding: 0 18px;
+    margin-bottom: 5px;
+    margin-left: 10px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star {
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
+    padding: 0 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 6px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star .price {
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
     font-family: New York;
     font-size: 16px;
     font-weight: 496;
@@ -5729,14 +5677,13 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #6a6a6a;
-    margin-left: 10px;
+    margin-top: 0px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star > a > button {
-    margin-right: 10px;
-    width: 95px;
-  }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume:nth-child(4) {
-    display: none;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
+    margin-left: 85px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    width: 80px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -5821,75 +5768,67 @@ a {
   .tester .tester_container .tester_bottom .tester_left .testerparfume {
     width: 180px;
     height: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 8px;
     background-color: #fff;
-    border-radius: 8px 8px;
+    margin-bottom: 20px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume > a {
     width: 180px;
-    height: 170px;
+    height: 180px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume > a > img {
     width: 180px;
-    height: 170px;
+    height: 180px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .new {
-    width: 50px;
-    height: 18px;
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .def {
-    font-family: Work Sans;
-    font-size: 15px;
+  .tester .tester_container .tester_bottom .tester_left .testerparfume > h3 {
+    font-family: Space Mono;
+    font-size: 14px;
     font-weight: 496;
-    line-height: 16px;
+    line-height: 12px;
     letter-spacing: 0em;
     text-align: left;
-    margin-bottom: 5px;
-    margin-top: 8px;
-    margin-left: 5px;
+    padding: 10px 8px 5px 8px;
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume .cat {
     font-family: Space Mono;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 450;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
     color: #ffd376;
     margin-bottom: 5px;
-    padding: 0 12px;
+    margin-left: 8px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star {
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button {
+    padding: 0 8px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px;
-    margin-top: 0;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star .price {
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button .price {
     font-family: New York;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 496;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
     color: #6a6a6a;
-    margin-left: 10px;
   }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume .price_star > a > button {
+  .tester .tester_container .tester_bottom .tester_left .testerparfume .star_button > a > button {
+    margin-left: 40px;
+    height: 23px;
+    margin-bottom: 15px;
     font-size: 12px;
-    width: 75px;
+    width: 80px;
     border: 1px solid;
-  }
-  .tester .tester_container .tester_bottom .tester_left .testerparfume:nth-child(3) {
-    display: none;
   }
 }
 .contact .contact_container {
@@ -6552,8 +6491,8 @@ a {
   }
   .location .location_container .locations .locationPage {
     background-color: #fff;
-    width: 390px;
-    height: 240px;
+    width: 340px;
+    height: 290px;
     border-radius: 8px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6569,10 +6508,14 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
   }
   .location .location_container .locations .locationPage .locationPage_left > img {
-    width: 100%;
-    height: 120px;
+    width: 300px;
+    height: 160px;
     border-radius: 8px;
   }
   .location .location_container .locations .locationPage .locationPage_right {
@@ -6595,6 +6538,7 @@ a {
     text-align: center;
     color: rgb(18, 18, 18);
     margin-bottom: 5px;
+    margin-top: -5px;
   }
   .location .location_container .locations .locationPage .locationPage_right .common {
     display: -webkit-box;
@@ -6606,6 +6550,8 @@ a {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 8px;
   }
   .location .location_container .locations .locationPage .locationPage_right .common .option {
     display: -webkit-box;
@@ -6615,17 +6561,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .location .location_container .locations .locationPage .locationPage_right .common .option:first-child {
-    margin-right: 50px;
-  }
-  .location .location_container .locations .locationPage .locationPage_right .common .option:nth-child(3) {
-    margin-right: 20px;
-    margin-top: 10px;
-  }
   .location .location_container .locations .locationPage .locationPage_right .common .option > img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
   }
   .location .location_container .locations .locationPage .locationPage_right .common .option > p {
     font-family: Work Sans;
@@ -6635,10 +6574,17 @@ a {
     letter-spacing: 0em;
     text-align: left;
   }
+  .location .location_container .locations .locationPage .locationPage_right .common .option:first-child {
+    margin-right: 10px;
+  }
+  .location .location_container .locations .locationPage .locationPage_right .common .option:nth-child(3) {
+    margin-right: 35px;
+  }
   .location .location_container .locations .locationPage .locationPage_right .common > a > button {
-    margin-top: 10px;
-    width: 180px;
+    margin-top: 0px;
+    width: 130px;
     height: 25px;
+    font-size: 15px;
     border-color: transparent;
   }
 }
@@ -9630,6 +9576,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  width: 104px;
 }
 .comments .comments_container .comment .left > h3 {
   font-family: Space Mono;
@@ -9880,6 +9827,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 5px;
+    width: 390px;
   }
   .comments .comments_container .comment .left > h3 {
     font-family: Space Mono;
@@ -10001,8 +9949,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 250px;
-  left: 200px;
+  top: 220px;
+  left: 100px;
 }
 .swiper .swiper-slide .info_par > h1 {
   font-family: Space Mono;
@@ -10015,11 +9963,11 @@ a {
   width: 450px;
 }
 .swiper .swiper-slide .info_par > p {
-  width: 395px;
+  width: 385px;
   font-family: Work Sans;
   font-size: 30px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 33px;
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
@@ -10055,7 +10003,8 @@ a {
   }
   .swiper .swiper-slide .info_par {
     position: absolute;
-    top: 190px;
+    top: 150px;
+    left: 60px;
   }
   .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
@@ -10068,7 +10017,7 @@ a {
     width: 450px;
   }
   .swiper .swiper-slide .info_par > p {
-    width: 395px;
+    width: 355px;
     font-family: Work Sans;
     font-size: 30px;
     font-weight: 300;
@@ -10100,18 +10049,19 @@ a {
     position: absolute;
     padding-top: 8px;
     padding-left: 0px;
-    top: 34%;
-    left: 22%;
+    top: 33%;
+    left: 15%;
   }
   .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 510;
-    line-height: 46px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
-    width: 450px;
+    width: 150px;
+    margin-bottom: 10px;
   }
   .swiper .swiper-slide .info_par > p {
     display: none;
@@ -11158,7 +11108,6 @@ a {
 }
 .update .update_container .update_left {
   width: 50%;
-  background-image: url(../../assets/images/Register/parfume.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11272,7 +11221,6 @@ a {
   }
   .update .update_container .update_left {
     width: 50%;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11365,7 +11313,6 @@ a {
   .update .update_container .update_left {
     width: 100%;
     height: 250px;
-    background-image: url(../../assets/images/Register/parfume.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
