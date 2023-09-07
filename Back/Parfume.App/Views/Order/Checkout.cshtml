@@ -17,9 +17,9 @@
 							<div class="basketInner_left_right">
 								<h3>@item.Product.Title</h3>
 
-								@if (int.Parse(item.Product.Volume) != 0 && item.Product.Volume != null)
+								@if (item.Product.Category.Name=="Parfum"||item.Product.Category.Name=="Tester")
 								{
-									<p>Hecmi : @item.Product.Volume</p>
+									<p>Hecmi : @item.Product.Volume ML</p>
 								}
 								<p>Sayı : @item.ProductCount</p>
 							</div>

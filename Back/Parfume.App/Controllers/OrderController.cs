@@ -41,7 +41,7 @@ namespace Parfume.App.Controllers
             }
             return View(baskets);
         }
-        public async Task<IActionResult> CreateOrder(string name, string surname, string loc, string info, int number, string email)
+        public async Task<IActionResult> CreateOrder(string name, string surname, string loc, string info, int number, string email,string what,string where)
         {
             AppUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
 
@@ -53,7 +53,7 @@ namespace Parfume.App.Controllers
                      ThenInclude(x => x.Product).
                 ThenInclude(x => x.Brand).FirstOrDefaultAsync();
 
-            if (name == null || surname == null || loc == null || email == null || info == null || number == null)
+            if (name == null || surname == null || loc == null || email == null || info == null || number == null||what==null||where==null)
             {
                 TempData["LegacyFalse"] = "Zəhmət olmasa bütün boşluqları doldurun!";
                 return RedirectToAction("index", "legacy");
@@ -88,7 +88,9 @@ namespace Parfume.App.Controllers
                 Email = email,
                 Loc = loc,
                 Info = info,
-                Number = number
+                Number = number,
+                What=what,
+                Where=where
 
             };
 

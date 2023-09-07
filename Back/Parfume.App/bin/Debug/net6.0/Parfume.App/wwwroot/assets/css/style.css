@@ -3050,7 +3050,7 @@ a {
     margin-left: 10px;
   }
 }
-.comments .comments_container {
+.comments_home .comments_home_container {
   padding-top: 80px;
   padding-bottom: 80px;
   display: -webkit-box;
@@ -3064,7 +3064,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.comments .comments_container > h1 {
+.comments_home .comments_home_container > h1 {
   color: rgb(18, 18, 18);
   font-family: Space Mono;
   font-size: 32px;
@@ -3074,13 +3074,13 @@ a {
   text-align: left;
   margin-bottom: 30px;
 }
-.comments .comments_container .slideshow-container {
+.comments_home .comments_home_container .slideshow-container {
   position: relative;
   margin: auto;
   margin-bottom: 40px;
 }
-.comments .comments_container .slideshow-container .prev,
-.comments .comments_container .slideshow-container .next {
+.comments_home .comments_home_container .slideshow-container .prev,
+.comments_home .comments_home_container .slideshow-container .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -3098,15 +3098,15 @@ a {
       -ms-user-select: none;
           user-select: none;
 }
-.comments .comments_container .slideshow-container .next {
+.comments_home .comments_home_container .slideshow-container .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.comments .comments_container .slideshow-container .prev:hover,
-.comments .comments_container .slideshow-container .next:hover {
+.comments_home .comments_home_container .slideshow-container .prev:hover,
+.comments_home .comments_home_container .slideshow-container .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.comments .comments_container .slideshow-container .fade {
+.comments_home .comments_home_container .slideshow-container .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -3128,20 +3128,20 @@ a {
     opacity: 1;
   }
 }
-.comments .comments_container .modal_comment {
+.comments_home .comments_home_container .modal_comment {
   margin: auto;
   width: 820px;
   background-color: #fff;
   border-radius: 10px;
   height: 300px;
 }
-.comments .comments_container .modal_comment > img {
+.comments_home .comments_home_container .modal_comment > img {
   width: 36.5px;
   height: 31px;
   margin-top: 10px;
   margin-left: 10px;
 }
-.comments .comments_container .modal_comment .modal_inner {
+.comments_home .comments_home_container .modal_comment .modal_inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3157,7 +3157,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.comments .comments_container .modal_comment .modal_inner .modal_top {
+.comments_home .comments_home_container .modal_comment .modal_inner .modal_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3166,13 +3166,13 @@ a {
           align-items: center;
   width: 610px;
 }
-.comments .comments_container .modal_comment .modal_inner .modal_top .modal_top_left > img {
+.comments_home .comments_home_container .modal_comment .modal_inner .modal_top .modal_top_left > img {
   width: 85px;
   height: 85px;
   border-radius: 50%;
   margin-right: 15px;
 }
-.comments .comments_container .modal_comment .modal_inner .modal_top .modal_top_right > h3 {
+.comments_home .comments_home_container .modal_comment .modal_inner .modal_top .modal_top_right > h3 {
   font-family: Work Sans;
   font-size: 20px;
   font-weight: 496;
@@ -3181,7 +3181,7 @@ a {
   text-align: left;
   color: #ffaf06;
 }
-.comments .comments_container .modal_comment .modal_inner .modal_top .modal_top_right > p {
+.comments_home .comments_home_container .modal_comment .modal_inner .modal_top .modal_top_right > p {
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 450;
@@ -3190,7 +3190,7 @@ a {
   text-align: left;
   color: #6a6a6a;
 }
-.comments .comments_container .modal_comment .modal_inner > p {
+.comments_home .comments_home_container .modal_comment .modal_inner > p {
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 400;
@@ -3200,27 +3200,27 @@ a {
   color: rgb(18, 18, 18);
   width: 610px;
 }
-.comments .comments_container .modal_comment .end {
+.comments_home .comments_home_container .modal_comment .end {
   float: right;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1238px) {
-  .comments .comments_container {
+  .comments_home .comments_home_container {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
-  .comments .comments_container > h1 {
+  .comments_home .comments_home_container > h1 {
     margin-top: 30px;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment {
     width: 740px;
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 740px) {
-  .comments .comments_container {
+  .comments_home .comments_home_container {
     padding-top: 40px;
     padding-bottom: 40px;
     display: -webkit-box;
@@ -3234,7 +3234,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .comments .comments_container > h1 {
+  .comments_home .comments_home_container > h1 {
     color: rgb(18, 18, 18);
     font-family: Space Mono;
     font-size: 20px;
@@ -3245,19 +3245,19 @@ a {
     margin-bottom: 20px;
     margin-top: 30px;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment {
     margin: auto;
     width: 370px;
     height: 310px;
     background-color: #fff;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment > img {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment > img {
     width: 28px;
     height: 20px;
     margin-top: 10px;
     margin-left: 10px;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment .modal_inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3273,7 +3273,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3283,13 +3283,13 @@ a {
     width: 280px;
     margin-top: 10px;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_left > img {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_left > img {
     width: 55px;
     height: 55px;
     border-radius: 50%;
     margin-right: 10px;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_right > h3 {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_right > h3 {
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 496;
@@ -3298,7 +3298,7 @@ a {
     text-align: left;
     color: #ffaf06;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_right > p {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment .modal_inner .modal_top .modal_top_right > p {
     font-family: Work Sans;
     font-size: 14px;
     font-weight: 450;
@@ -3307,7 +3307,7 @@ a {
     text-align: left;
     color: #6a6a6a;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment .modal_inner > p {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment .modal_inner > p {
     font-family: Work Sans;
     font-size: 14px;
     font-weight: 400;
@@ -3317,7 +3317,7 @@ a {
     color: rgb(18, 18, 18);
     width: 280px;
   }
-  .comments .comments_container .slideshow-container .mySlides .modal_comment .end {
+  .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment .end {
     float: right;
     margin-right: 10px;
   }
@@ -8477,7 +8477,7 @@ a {
 }
 .detail_intro .detail_intro_container .detail_right .input_button_delete .input_number .orangeinput {
   width: 39px;
-  padding: 5px 25px;
+  padding: 5px 24px;
   border-radius: 4px;
   border: 5px;
   font-size: 20px;

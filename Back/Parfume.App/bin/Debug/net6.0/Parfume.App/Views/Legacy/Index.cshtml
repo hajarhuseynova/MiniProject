@@ -26,7 +26,7 @@
           <div class="order_info">
             <form method="post" asp-action="CreateOrder" asp-controller="order">
               <div class="contact_info">
-                <h3>Elaqe Melumatlari</h3>
+                <h3>Əlaqə Məlumatları</h3>
                 <div class="contact_info_inputs">
                   <input
                     type="text"
@@ -52,7 +52,7 @@
                   <input
                   name="number"
                     type="number"
-                    placeholder="Nomre"
+                    placeholder="Nömrə"
                     class="contact_input yoxla"
                   />
                   
@@ -66,36 +66,40 @@
                   name="info"
                     rows="4"
                     cols="40"
-                    placeholder="Elave Qeyd"
+                    placeholder="Əlavə Qeyd"
                     class="contact_input yoxla"
                   ></textarea>
                  
                 </div>
               </div>
               <div class="delivery_info">
-                <h3>Unvan Melumatlari</h3>
+                <h3>Ünvan Məlumatları</h3>
                 <div class="delivery">
                   <div class="delivery_left">
-                    <img src="../assets/icons/order/shop.svg" alt="magaza" />
-                    <h3>Magazadan tehvil al</h3>
+                    <img src="~/assets/icons/order/shop.svg" alt="magaza" />
+                    <h3>Magazadan təhvil al</h3>
                   </div>
                   <div class="delivery_right">
-                    <input type="radio" name="delivery" value="true"/>
+                    <input type="radio" name="delivery" value="true" id="delivery_shop"/>
                   </div>
                 </div>
                 <div class="delivery">
                   <div class="delivery_left">
-                    <img src="../assets/icons/order/shop.svg" alt="magaza" />
-                    <h3>Magazadan tehvil al</h3>
+                    <img src="~/assets/icons/order/shop.svg" alt="magaza" />
+                    <h3>Evə çatdırılma</h3>
                   </div>
                   <div class="delivery_right">
-                    <input type="radio" name="delivery" />
+                    <input type="radio" name="delivery" value="false" id="delivery_home" />
                   </div>
                 </div>
+
+				<input hidden asp-for="@Model.Where" type="text" id="contact_where" name="Where" />
+
+
               </div>
 
               <div class="payment_info">
-                <h3>Odeme Metodu</h3>
+                <h3>Ödəmə Metodu</h3>
                 <div class="payments">
                   <div class="payment">
                     <div class="payment_left">
@@ -103,36 +107,39 @@
                         src="../assets/icons/order/Credit card.svg"
                         alt="magaza"
                       />
-                      <h3>Qapida Kartla Odeme</h3>
+                      <h3>Qapıda Kartla Ödəmə</h3>
                     </div>
                     <div class="payment_right">
-                      <input type="radio" name="payment" />
+                      <input type="radio" name="payment" value="1" id="payment_card_on_delivery" />
                     </div>
                   </div>
                   <div class="payment">
                     <div class="payment_left">
                       <img
-                        src="../assets/icons/order/Credit card.svg"
+                        src="~/assets/icons/order/Credit card.svg"
                         alt="magaza"
                       />
-                      <h3>Kartla Odeme</h3>
+                      <h3>Kartla Ödəmə</h3>
                     </div>
                     <div class="payment_right">
-                      <input type="radio" name="payment" />
+                      <input type="radio" name="payment"  value="2" id="payment_card" />
                     </div>
                   </div>
                   <div class="payment">
                     <div class="payment_left">
                       <img
-                        src="../assets/icons/order/Wallet.svg"
+                        src="~/assets/icons/order/Wallet.svg"
                         alt="magaza"
                       />
-                      <h3>Negd Odeme</h3>
+                      <h3>Nəğd Ödəmə</h3>
                     </div>
                     <div class="payment_right">
-                      <input type="radio" name="payment" />
+                      <input type="radio" name="payment" value="3" id="payment_cash" />
                     </div>
                   </div>
+
+				<input hidden asp-for="@Model.What" type="text" id="contact_what" name="What" />
+
                 </div>
               </div>
               <div class="order_buttons">
@@ -141,7 +148,7 @@
                 >
                 <a class="add" 
                   ><button class="addtobasket" id="tamamla" type="submit">
-                    Sifarisi tamamla
+                    Sifarişi tamamla
                   </button></a
                 >
               </div>
@@ -151,3 +158,45 @@
 </div>
 
 
+<script>
+  const deliveryShop = document.getElementById("delivery_shop");
+  const deliveryHome = document.getElementById("delivery_home");
+  const whereInput = document.getElementById("contact_where");
+
+  deliveryShop.addEventListener("change", () => {
+    if (deliveryShop.checked) {
+      whereInput.value = "magaza"; 
+    }
+  });
+
+  deliveryHome.addEventListener("change", () => {
+    if (deliveryHome.checked) {
+      whereInput.value = "ev"; 
+    }
+  });
+</script>
+
+
+<script>
+  const cardOnDelivery = document.getElementById("payment_card_on_delivery");
+  const cardPayment = document.getElementById("payment_card");
+  const cashPayment = document.getElementById("payment_cash");
+  const whatInput = document.getElementById("contact_what");
+
+  cardOnDelivery.addEventListener("change", () => {
+    if (cardOnDelivery.checked) {
+      whatInput.value = "carddelivery"; 
+    }
+  });
+
+  cardPayment.addEventListener("change", () => {
+    if (cardPayment.checked) {
+      whatInput.value = "card"; 
+    }
+  });
+cashPayment.addEventListener("change", () => {
+    if (cashPayment.checked) {
+      whatInput.value = "cash"; 
+    }
+  });
+</script>

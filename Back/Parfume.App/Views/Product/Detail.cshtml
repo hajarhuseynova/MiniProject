@@ -18,7 +18,7 @@
 	double four = 0;
 	double fifth = 0;
 
-	foreach (var item in Model.Product.Comments)
+	foreach (var item in Model.Product.Comments.Where(x=>!x.IsDeleted))
 	{
 		totalRating += (item.Rating + 1);
 		if (item.Rating == 0)
@@ -92,7 +92,7 @@
 					<p class="price">@Model.Product.SellPrice AZN</p>
 				}
 				<div class="stars">
-					@if (Model.Product.Comments.Count > 0)
+					@if (Model.Product.Comments.Where(x=>!x.IsDeleted).Count() > 0)
 					{
 
 						@for (var i = 0; i < Math.Floor(avarage); i++)
@@ -148,7 +148,6 @@
 <div class="assesment">
 	<div class="container assesment_container">
 		<div class="left">
-
 			<h3>@Model.Product.Title</h3>
 			<h1>@Math.Floor(avarage)</h1>
 			<div class="stars">
@@ -258,7 +257,7 @@
 	<div class="comments">
 	<div class="container comments_container">
 
-		@foreach (var item in Model.Product.Comments)
+		@foreach (var item in Model.Product.Comments.Where(x=>!x.IsDeleted))
 		{
 			{
 				item.Rating += 1;
@@ -336,11 +335,11 @@
 
 	</div>
 </div>
+
 <script>
 
 	var star=Array.from(document.querySelectorAll(".stard"));
 	var rating=document.querySelector("#review_score");
-	console.log(star)
 	star.forEach((staritem)=>{
 		staritem.addEventListener("click",()=>{
 			var starindex=star.indexOf(staritem);
@@ -355,7 +354,6 @@
 			}
 	})
 	})
-
 </script>
 
 

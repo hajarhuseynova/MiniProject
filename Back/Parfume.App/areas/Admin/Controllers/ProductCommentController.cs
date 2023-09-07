@@ -38,10 +38,10 @@ namespace Parfume.App.areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        [HttpGet]
         public async Task<IActionResult> Reject(int id)
         {
-            Comment? comment = await _context.Comments.Where(x => !x.isVisible && x.Id == id).FirstOrDefaultAsync();
+            Comment? comment = await _context.Comments.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
             if (comment == null)
             {
                 return NotFound();
@@ -51,6 +51,8 @@ namespace Parfume.App.areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+     
 
     }
 
