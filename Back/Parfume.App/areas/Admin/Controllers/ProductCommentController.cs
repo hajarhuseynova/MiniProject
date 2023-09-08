@@ -19,9 +19,13 @@ namespace Parfume.App.areas.Admin.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page=1)
         {
-            IEnumerable<Comment> comments = await _context.Comments.Where(x => !x.IsDeleted)
+
+            int TotalCount = _context.Comments.Where(x => !x.IsDeleted).Count();
+            ViewBag.TotalPage = (int)Math.Ceiling((decimal)TotalCount / 10);
+            ViewBag.CurrentPage = page;
+            IEnumerable<Comment> comments = await _context.Comments.Where(x => !x.IsDeleted).Skip(((int)page - 1) * 10).Take(10)
                 .Include(x=>x.AppUser).
                 Include(x => x.Product).ToListAsync();
             return View(comments);

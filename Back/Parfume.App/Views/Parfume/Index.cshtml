@@ -71,7 +71,7 @@
 							{
 								<p class="price">@item.SellPrice AZN</p>
 							}
-                <a><button>Əlavə et</button></a>
+                <a class="add-basket-par"  asp-action="addbasket" asp-route-id="@item.Id" asp-controller="home"><button>Əlavə et</button></a>
               </div>
             </div>
          }
@@ -79,3 +79,76 @@
           </div>
         </div>
       </div>
+
+
+        <script>
+	const products = document.querySelectorAll(".add-basket-par");
+		const totalPriceElement = document.getElementById("totalPrice");
+	products.forEach(prod => {
+		prod.addEventListener("click", (e) => {
+			e.preventDefault();
+			let href = prod.getAttribute("href");
+			let TotalPrice = 0;
+
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/home/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
+
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
+								<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+													<span>${basket.count} * ${basket.price} AZN</span>
+												</div>
+												<div class="deleteimage">
+													<a href="/home/RemoveBasket/${basket.productId}" data-id="">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									`
+						basketItems.innerHTML += basketView;
+
+					})
+
+					totalPriceElement.innerHTML = TotalPrice;
+
+
+
+					const Toast = Swal.mixin({
+						toast: true,
+						position: 'top-end',
+						showConfirmButton: false,
+						timer: 3000,
+						timerProgressBar: true,
+						didOpen: (toast) => {
+							toast.addEventListener('mouseenter', Swal.stopTimer)
+							toast.addEventListener('mouseleave', Swal.resumeTimer)
+						}
+					})
+
+					Toast.fire({
+						icon: 'success',
+						title: `Əlavə edildi!`
+					})
+
+					 })
+				 }
+
+				})
+		})
+	})
+
+</script>

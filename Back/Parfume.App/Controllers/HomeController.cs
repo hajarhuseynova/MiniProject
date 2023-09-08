@@ -18,13 +18,22 @@ namespace Parfume.App.Controllers
         private readonly SignInManager<AppUser> _signinManager;
         private readonly IMailService _mailService;
         private readonly IBasketService _basketService;
-        public HomeController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null, IBasketService basketService = null)
+            private readonly ILogger<HomeController> _logger;
+   
+        public HomeController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null, IBasketService basketService = null, ILogger<HomeController> logger = null)
         {
             _context = context;
             _userManager = userManager;
             _signinManager = signinManager;
             _mailService = mailService;
             _basketService = basketService;
+            _logger = logger;
+        }
+        public async Task<IActionResult> GetAllBaskets()
+        {
+
+            _logger.LogInformation("Logger is active");
+            return Json(await _basketService.GetAllBaskets());
         }
         public async Task<IActionResult> Index()
         {
@@ -136,10 +145,7 @@ namespace Parfume.App.Controllers
             await _basketService.AddBasket(id, count);
             return Json(new { status = 200 });
         }
-        public async Task<IActionResult> GetAllBaskets()
-        {
-            return Json(await _basketService.GetAllBaskets());
-        }
+    
         public async Task<IActionResult> RemoveBasket(int id)
         {
             await _basketService.Remove(id);

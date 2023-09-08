@@ -14,18 +14,21 @@ namespace Parfume.App.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signinManager;
         private readonly IMailService _mailService;
+        private readonly ILogger<ProductController> _logger;
 
 
-        public ProductController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null)
+        public ProductController(ParfumeDbContext context, UserManager<AppUser> userManager = null, SignInManager<AppUser> signinManager = null, IMailService mailService = null, ILogger<ProductController> logger = null)
         {
             _context = context;
             _userManager = userManager;
             _signinManager = signinManager;
             _mailService = mailService;
-
+            _logger = logger;
+        
         }
         public IActionResult Index()
         {
+           
             return View();
         }
         public async Task<IActionResult> Detail(int id)
@@ -52,8 +55,12 @@ namespace Parfume.App.Controllers
             {
                 return View(nameof(Index));
             }
+        
             return View(productViewModel);
         }
+
+     
+
 
     }
 }

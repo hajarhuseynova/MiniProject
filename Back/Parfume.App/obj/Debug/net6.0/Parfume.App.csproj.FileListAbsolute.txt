@@ -454,3 +454,14 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfum
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\f75a6a16-383d-49c9-992f-ba1f16077af7Mask group (2).png
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\f9ea3ff0-bd82-40fd-80b9-68c1e4606bb3Mask group (1).png
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\NewProduct\all.webp
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\wwwroot\assets\images\901a9afc-36c7-4487-8c17-aa0d4a947ab9aaa.jpg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Sinks.File.dll

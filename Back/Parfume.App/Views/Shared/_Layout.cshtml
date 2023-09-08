@@ -13,6 +13,10 @@
 {
     <div style="display:none" id="message">@TempData["emptyBasket"]</div>
 }
+@if (!string.IsNullOrWhiteSpace((string)TempData["OrderCreated"]))
+{
+    <div style="display:none" id="message">@TempData["OrderCreated"]</div>
+}
 @if (!string.IsNullOrWhiteSpace((string)TempData["EmailRegex"]))
 {
 	<div style="display:none" id="message">@TempData["EmailRegex"]</div>

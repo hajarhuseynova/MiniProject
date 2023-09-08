@@ -66,14 +66,6 @@ namespace Parfume.App.Controllers
                 return RedirectToAction("index", "legacy");
             }
 
-            //Regex regexNum = new Regex(@"^(994|0)[1-9]\d{8}$");
-
-            //if (!regexNum.IsMatch(number.ToString()))
-            //{
-            //    TempData["NumberReg"] = "Nömrə düzgün strukturda olmalıdır!";
-            //    return RedirectToAction("index", "legacy");
-            //}
-
             if (baskets == null || baskets.basketItems.Count() == 0)
             {
                 TempData["emptyBasket"] = "Səbət boşdur!";
@@ -117,9 +109,6 @@ namespace Parfume.App.Controllers
             TempData["OrderCreated"] = "Sifariş yaradıldı!";
             return RedirectToAction("index", "home");
         }
-
-
-
 
     }
 }

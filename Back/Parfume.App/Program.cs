@@ -1,9 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using Parfume.App.Context;
 using Parfume.App.ServiceRegistration;
+using Serilog;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((context, configuration) =>
+configuration.ReadFrom.Configuration(context.Configuration));
 
 
 void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -23,6 +27,7 @@ void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
+
 
 
 builder.Services.AddHttpContextAccessor();
@@ -46,9 +51,9 @@ else
     app.UseHsts();
 }
 
+app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 
 app.UseAuthentication();

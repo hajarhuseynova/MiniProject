@@ -24,8 +24,11 @@ namespace areas.Admin.Controllers
         }
         public async Task<IActionResult> Index(int? page=1)
         {
+            int TotalCount = _context.Brands.Where(x => !x.IsDeleted).Count();
+            ViewBag.TotalPage = (int)Math.Ceiling((decimal)TotalCount / 8);
+            ViewBag.CurrentPage = page;
             IEnumerable<Product> prod = await _context.Products.Include(x=>x.Category).Include(x=>x.Brand).
-               Where(x => !x.IsDeleted).ToListAsync();
+               Where(x => !x.IsDeleted).Skip(((int)page - 1) * 8).Take(8).ToListAsync();
 
             return View(prod);
         }
