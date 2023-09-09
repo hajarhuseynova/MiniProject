@@ -24,6 +24,7 @@ namespace Parfume.Core.Entities
         public string Title3Par2 { get; set; }
         public string Title4Par1 { get; set; }
         public string Title4Par2 { get; set; }
+        
         public string FootIcon1 { get; set; }
         public string FootIcon2 { get; set; }
         public string FootIcon3 { get; set; }

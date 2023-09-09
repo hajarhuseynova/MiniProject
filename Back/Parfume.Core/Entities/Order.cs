@@ -11,6 +11,8 @@ namespace Parfume.Core.Entities
         public string AppUserId { get; set; }
         public AppUser AppUser { get; set; }
         public int TotalPrice { get; set; }
+        public int TotalBuyPrice { get; set; }
+        public int TotalBenefit { get; set; }
         public List<OrderItem> orderItems { get; set; }
         public bool isAccepted { get; set; }
         public bool isCompleted { get; set; }

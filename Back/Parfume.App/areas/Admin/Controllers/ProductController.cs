@@ -6,6 +6,7 @@ using Parfume.App.Services.İnterfaces;
 using Parfume.Core.Entities;
 using Parfume.Service.Extentions;
 using System.Linq;
+using System.Security.Claims;
 
 namespace areas.Admin.Controllers
 {
@@ -16,15 +17,19 @@ namespace areas.Admin.Controllers
         private readonly ParfumeDbContext _context;
         private readonly IWebHostEnvironment _environment;
         private readonly IMailService _mailService;
-        public ProductController(ParfumeDbContext context, IWebHostEnvironment environment, IMailService mailService)
+        private readonly HttpContent _http;
+        private readonly ILogger<ProductController> _logger;
+
+        public ProductController(ParfumeDbContext context, IWebHostEnvironment environment, IMailService mailService, ILogger<ProductController> logger)
         {
             _context = context;
             _environment = environment;
             _mailService = mailService;
+            _logger = logger;
         }
         public async Task<IActionResult> Index(int? page=1)
         {
-            int TotalCount = _context.Brands.Where(x => !x.IsDeleted).Count();
+            int TotalCount = _context.Products.Where(x => !x.IsDeleted).Count();
             ViewBag.TotalPage = (int)Math.Ceiling((decimal)TotalCount / 8);
             ViewBag.CurrentPage = page;
             IEnumerable<Product> prod = await _context.Products.Include(x=>x.Category).Include(x=>x.Brand).
@@ -36,8 +41,8 @@ namespace areas.Admin.Controllers
         {
             ViewBag.Category = await _context.Category.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Brand = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync();
-        
 
+      
             return View();
         }
         [HttpPost]
@@ -46,7 +51,7 @@ namespace areas.Admin.Controllers
         {
             ViewBag.Category = await _context.Category.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Brand = await _context.Brands.Where(x => !x.IsDeleted).ToListAsync();
-           
+          
 
             if (!ModelState.IsValid)
             {
@@ -79,13 +84,16 @@ namespace areas.Admin.Controllers
             await _context.AddAsync(product);
             await _context.SaveChangesAsync();
             var mails = await _context.Subscribes.Where(x => !x.IsDeleted).ToListAsync();
+           
 
             string? link = Request.Scheme + "://" + Request.Host + $"/Tester/index/{product.Id}";
             foreach (var mail in mails)
             {
                 await _mailService.Send("hajarih@code.edu.az", mail.Email, link, "New product");
             }
+        
 
+          
             return RedirectToAction("Index", "product");
         }
         public async Task<IActionResult> Update(int id)
@@ -156,6 +164,8 @@ namespace areas.Admin.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+         
+
         }
         public async Task<IActionResult> Delete(int id)
         {
@@ -168,6 +178,8 @@ namespace areas.Admin.Controllers
             prod.IsDeleted = true;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+     
+
         }
 
         public async Task<IActionResult> IsNew(int id)

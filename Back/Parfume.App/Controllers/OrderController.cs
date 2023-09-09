@@ -86,11 +86,14 @@ namespace Parfume.App.Controllers
 
             };
 
-            int TotalPrice = 0;
+            int TotalSellPrice = 0;
+            int TotalBuyPrice = 0;
+            int oneOrderBenefit = 0;
             foreach (var item in baskets.basketItems)
             {
-                TotalPrice += int.Parse(item.Product.SellPrice) - (int.Parse(item.Product.SellPrice) * (int)(item.Product.DiscountPercentage ?? 0) / 100);
-
+                TotalSellPrice += (int.Parse(item.Product.SellPrice) - (int.Parse(item.Product.SellPrice) * (int)(item.Product.DiscountPercentage ?? 0) / 100))*item.ProductCount;
+                TotalBuyPrice+=int.Parse(item.Product.BuyPrice) * item.ProductCount;
+                oneOrderBenefit +=((int.Parse(item.Product.SellPrice) - (int.Parse(item.Product.SellPrice) * (int)(item.Product.DiscountPercentage ?? 0) / 100))- int.Parse(item.Product.BuyPrice)) * item.ProductCount;
                 OrderItem orderItem = new OrderItem
                 {
                     CreatedDate = DateTime.Now,
@@ -101,7 +104,10 @@ namespace Parfume.App.Controllers
                 await _context.AddAsync(orderItem);
 
             }
-            order.TotalPrice = TotalPrice;
+            order.TotalPrice = TotalSellPrice;
+            order.TotalBenefit = oneOrderBenefit;
+            order.TotalBuyPrice = TotalBuyPrice;
+
             await _context.AddAsync(order);
             baskets.IsDeleted = true;
             await _context.SaveChangesAsync();

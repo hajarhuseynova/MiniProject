@@ -177,7 +177,7 @@
       top: 81px;
       width: 100%;
       height: 250px;
-      background-color: $black_04;
+      background-color: $sidebar;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -377,9 +377,7 @@
       .navbar_bottom {
         position: absolute;
         top: 64px;
-
         height: 250px;
-        background-color: $black_04;
         display: flex;
         flex-direction: column;
         align-items: center;

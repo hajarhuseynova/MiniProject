@@ -1,0 +1,41 @@
+﻿@model ReportViewModel
+
+<div class="container">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Tarix</th>
+                 <th scope="col">Məhsul/Sayı</th>
+                <th scope="col">Ümumi Satış AZN</th>
+                <th scope="col">Ümumi Alış AZN</th>
+                <th scope="col">Xeyir AZN</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Orders)
+            {
+          
+                    <tr>
+                        <th>@item.CreatedDate.ToString("MM:dd:yyyy")</th>
+
+                        <th>   
+                            @foreach (var product in item.orderItems)
+                            {
+                                <ul>
+                                    <li>@product.Product.Title/@product.ProductCount</li>
+
+                                </ul>
+                            }
+                        </th>
+                        <th scope="row">@item.TotalPrice AZN</th>
+                        <th scope="row">@item.TotalBuyPrice AZN</th>
+                        <th scope="row">@item.TotalBenefit AZN</th>
+
+                    </tr>
+          
+            }
+        </tbody>
+    </table>
+     
+</div>
+

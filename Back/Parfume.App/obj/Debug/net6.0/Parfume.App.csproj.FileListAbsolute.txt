@@ -465,3 +465,4 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilo
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Debug\net6.0\Parfume.App\areas\Admin\Views\Report\Index.cshtml
