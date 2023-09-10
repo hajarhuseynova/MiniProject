@@ -40,7 +40,6 @@ namespace Fir.App.areas.Admin.Controllersb
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
         public async Task<IActionResult> Completed(int id)
         {
             Order? order = await _context.Orders.Where(x => !x.isCompleted && x.Id == id).FirstOrDefaultAsync();

@@ -190,22 +190,18 @@ namespace areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Product.IsNew = true;
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-        public async Task<IActionResult> IsOld(int id)
-        {
-            Product? Product = await _context.Products.
-                  Where(c => !c.IsDeleted && c.Id == id).FirstOrDefaultAsync();
-            if (Product == null)
+           if (Product.IsNew == false)
             {
-                return NotFound();
+                Product.IsNew = true;
             }
-            Product.IsNew = false;
+            else
+            {
+                Product.IsNew = false;
+            }
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+    
         public async Task<IActionResult> InStock(int id)
         {
             Product? Product = await _context.Products.
@@ -214,22 +210,18 @@ namespace areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Product.IsStock = true;
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-        public async Task<IActionResult> OutOfStock(int id)
-        {
-            Product? Product = await _context.Products.
-                  Where(c => !c.IsDeleted && c.Id == id).FirstOrDefaultAsync();
-            if (Product == null)
+            if (Product.IsStock == false)
             {
-                return NotFound();
+                Product.IsStock = true;
             }
-            Product.IsStock = false;
+            else
+            {
+                Product.IsStock = false;
+            }
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+     
         public async Task<IActionResult> IsTrend(int id)
         {
             Product? Product = await _context.Products.
@@ -238,22 +230,18 @@ namespace areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Product.IsTrend = true;
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-        public async Task<IActionResult> OutTrend(int id)
-        {
-            Product? Product = await _context.Products.
-                  Where(c => !c.IsDeleted && c.Id == id).FirstOrDefaultAsync();
-            if (Product == null)
+            if (Product.IsTrend == false)
             {
-                return NotFound();
+                Product.IsTrend = true;
             }
-            Product.IsTrend = false;
+            else
+            {
+                Product.IsTrend = false;
+            }
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+       
         public async Task<IActionResult> OutDiscount(int id)
         {
             Product? Product = await _context.Products.

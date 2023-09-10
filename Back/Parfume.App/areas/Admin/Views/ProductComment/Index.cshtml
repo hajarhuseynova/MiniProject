@@ -9,7 +9,7 @@
                 <th scope="col">Commentin basligi</th>
                 <th scope="col">Ratinq</th>
                 <th scope="col">Status</th>
-                <th scope="col">Status</th>
+                <th scope="col">Sil</th>
 
             </tr>
         </thead>
@@ -21,9 +21,21 @@
                      <th>@item.AppUser.UserName</th>
                      <th>@item.Product.Title</th>
                      <th>@item.Title</th>
-                     <th>@item.Rating</th>
-                     <td><a asp-controller="ProductComment" asp-action="accept" asp-route-id="@item.Id" ><i class="fa-solid fa-check"></i> </a></td>
-                     <td><a asp-controller="ProductComment" asp-action="reject" asp-route-id="@item.Id"><i class="fa-solid fa-x"></i></a></td>
+                     <th>@(item.Rating+1)</th>
+                     
+                   @if (item.isVisible==true)
+                    {
+                          
+                     <td><a asp-controller="ProductComment" asp-action="accept" asp-route-id="@item.Id" ><i class="fa-solid fa-check" style="color:green"></i> </a></td>
+                       
+                    }
+					else{
+                     <td><a asp-controller="ProductComment" asp-action="accept" asp-route-id="@item.Id" ><i class="fa-solid fa-check" style="color:red"></i> </a></td>
+						  
+					}
+
+
+                     <td><a asp-controller="ProductComment" asp-action="delete" asp-route-id="@item.Id"><i class="fa-solid fa-x"></i></a></td>
                   
                 </tr>
             }

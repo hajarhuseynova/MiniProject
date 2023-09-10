@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Product>
 
 	 <style>
-      th:nth-child(8){
+      th:nth-child(7){
           display:none;
       }
     </style>
@@ -15,10 +15,7 @@
 				<th scope="col">Cateqoriya Adi</th>
 				<th scope="col">Brand Adi</th>
 				<th scope="col">Yeni</th>
-				<th scope="col">Kohne</th>
 				<th scope="col">Stok<th>
-				<th scope="col">Stok</th>
-				<th scope="col">Trend</th>
 				<th scope="col">Trend</th>
 				<th scope="col">Endirim</th>
 				<th scope="col">Endirim</th>
@@ -35,33 +32,52 @@
 					<th>@item.Category?.Name</th>
 					<th>@item.Brand?.Name</th>
 				
+					 @if (item.IsNew==false)
+                    {
+                           <td><a asp-controller="product" asp-action="isNew" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:red"></i></a></td>
+                       
+                    }
+                    else
+                    {
+                                <td><a asp-controller="product" asp-action="isNew" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:green"></i></a></td>
+                    }
+				    @if (item.IsStock==false)
+                    {
+                           <td><a asp-controller="product" asp-action="inStock" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:red"></i></a></td>
+                       
+                    }
+                    else
+                    {
+                                <td><a asp-controller="product" asp-action="inStock" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:green"></i></a></td>
+                    }
 
-					   <td><a onclick="if(!confirm('Are you sure?')){return false;}"
-                         asp-controller="Product" asp-action="isnew" asp-route-id="@item.Id"
-                        class="delete-item" ><i class="fa-solid fa-check"></i></a></td>
+					    @if (item.IsTrend==false)
+                    {
+                           <td><a asp-controller="product" asp-action="isTrend" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:red"></i></a></td>
+                       
+                    }
+                    else
+                    {
+                                <td><a asp-controller="product" asp-action="isTrend" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:green"></i></a></td>
+                    }
 
-                           <td><a onclick="if(!confirm('Are you sure?')){return false;}"
-                         asp-controller="Product" asp-action="isold" asp-route-id="@item.Id"
-                        class="delete-item" ><i class="fa-solid fa-x"></i></a></td>
-
-                           <td><a onclick="if(!confirm('Are you sure?')){return false;}"
-                         asp-controller="Product" asp-action="inStock" asp-route-id="@item.Id"
-                        class="delete-item" ><i class="fa-solid fa-check"></i></a></td>
-
-                              <td><a onclick="if(!confirm('Are you sure?')){return false;}"
-                         asp-controller="Product" asp-action="outofstock" asp-route-id="@item.Id"
-                        class="delete-item" ><i class="fa-solid fa-x"></i></a></td>
-
-                              <td><a onclick="if(!confirm('Are you sure?')){return false;}"
-                         asp-controller="Product" asp-action="istrend" asp-route-id="@item.Id"
-                        class="delete-item" ><i class="fa-solid fa-check"></i></a></td>
-
-                              <td><a onclick="if(!confirm('Are you sure?')){return false;}"
-                         asp-controller="Product" asp-action="outtrend" asp-route-id="@item.Id"
-                        class="delete-item" ><i class="fa-solid fa-x"></i></a></td>
-
-                              <td><a asp-controller="Product" asp-action="discount" asp-route-id="@item.Id"
-                        ><i class="fa-solid fa-check"></i></a></td>
+						    @if (item.IsDiscount==true)
+                    {
+                           <td><a asp-controller="product" asp-action="isTrend" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:green"></i></a></td>
+                       
+                    }
+					else{
+						   <td><a asp-controller="product" asp-action="isTrend" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:red"></i></a></td>
+					}
+                           
 
                               <td><a onclick="if(!confirm('Are you sure?')){return false;}"
                          asp-controller="Product" asp-action="outdiscount" asp-route-id="@item.Id"

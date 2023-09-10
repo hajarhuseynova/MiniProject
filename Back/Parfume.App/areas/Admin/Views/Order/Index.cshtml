@@ -7,6 +7,8 @@
                 <th scope="col">UserName</th>
                 <th scope="col">TotalPrice</th>
                 <th scope="col">Status</th>
+                <th scope="col">Status</th>
+
             </tr>
         </thead>
         <tbody>
@@ -19,13 +21,13 @@
                     @if (item.isAccepted==false)
                     {
                            <td><a asp-controller="order" asp-action="accept" asp-route-id="@item.Id" >
-                           Accept</a></td>
+                           <i class="fa-solid fa-check" style="color:red"></i></a></td>
                         <td><a asp-controller="order" asp-action="reject" asp-route-id="@item.Id"
-                            class=" delete-item" >Reject</a></td>
+                            class=" delete-item" ><i class="fa-solid fa-x"></i></a></td>
                     }else if (item.isAccepted==true &&item.isCompleted==false)
                     {
                           <td><a asp-controller="order" asp-action="completed" asp-route-id="@item.Id" >
-                           Accept</a></td>
+                           <i class="fa-solid fa-check" style="color:green"></i></a></td>
                     }
                     else
                     {
