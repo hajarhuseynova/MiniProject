@@ -220,6 +220,9 @@
         .navbar_right {
           .navbar_icons {
             gap: 15px;
+            .basket_header_inner {
+              right: 10px;
+            }
           }
         }
       }
@@ -296,7 +299,7 @@
             }
             .basket_header_inner {
               top: 65px;
-              right: 0px;
+              right: 5px;
               width: 180px;
               .basketItems {
                 display: flex;
@@ -313,7 +316,7 @@
                   transition: 1s;
                   .item_left {
                     > img {
-                      width: 80px;
+                      width: 70px;
                       height: 60px;
                       border-radius: 5px;
                     }
@@ -327,7 +330,7 @@
                       flex-direction: column;
                       > span {
                         font-family: Space Mono;
-                        font-size: 12px;
+                        font-size: 10px;
                         line-height: 14px;
                       }
                     }
@@ -336,9 +339,6 @@
                       margin-top: 15px;
                     }
                   }
-                }
-                .unvis {
-                  opacity: 0;
                 }
               }
               .basket_buttons {
@@ -358,6 +358,7 @@
                       background-color: $orange_01;
                       color: $white;
                       font-size: 12px;
+                      width: 70px;
                       &:hover {
                         transform: scale(1);
                         background-color: transparent;

@@ -9,6 +9,7 @@ namespace Parfume.Core.Entities
 {
     public class AppUser : IdentityUser
     {
+        public string? ConnectionId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public List<Basket> baskets { get; set; }

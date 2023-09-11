@@ -1,3 +1,4 @@
+using ChatApp.Hubs;
 using Microsoft.EntityFrameworkCore;
 using Parfume.App.Context;
 using Parfume.App.ServiceRegistration;
@@ -27,7 +28,7 @@ void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
-
+builder.Services.AddSignalR();
 
 
 builder.Services.AddHttpContextAccessor();
@@ -45,17 +46,17 @@ if (!app.Environment.IsDevelopment())
 }
 else
 {
-    // Configure error handling for non-development environments
-    app.UseExceptionHandler("/notfound/index");
-    app.UseStatusCodePagesWithReExecute("/notfound/index/{0}");
-    app.UseHsts();
+  
+    //app.UseExceptionHandler("/notfound/index");
+    //app.UseStatusCodePagesWithReExecute("/notfound/index/{0}");
+    //app.UseHsts();
 }
 
 app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
+app.MapHub<ChatHub>("/chatHub");
 app.UseAuthentication();
 app.UseAuthorization();
 
