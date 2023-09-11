@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.SignalR;
 using Parfume.Core.Entities;
 
@@ -24,8 +23,10 @@ namespace ChatApp.Hubs
                 if (!string.IsNullOrWhiteSpace(user.ConnectionId))
                 {
                     await Clients.Client(user.ConnectionId).SendAsync("ReceiveMessage",userName, message);
+                  
                 }
             }
+
         }
 
         public override async Task OnConnectedAsync()

@@ -8,18 +8,21 @@
 
 
 
-   <div class="chat">
+   @if(User.Identity.IsAuthenticated && User.IsInRole("User")){
+       <div class="chat">
         <div class="container chat_container">
-          <div class="chat_left">
+                 <h1>Onlayn Çat</h1>
+   <div class="chat_double">
+              <div class="chat_left">
             <div class="row p-1">
-              <h1>User</h1>
+              <h1>İstifadəçi</h1>
               <div class="col-5">
                   <input type="text" placeholder="Sec" disabled  />
                 <input type="text" hidden id="userInput" />
               </div>
             </div>
             <div class="row p-1">
-              <h1>Message</h1>
+              <h1>Mesaj</h1>
               <div class="col-5">
                 <input
                   type="text"
@@ -50,7 +53,7 @@
           </div>
           <div class="chat_right">
             <ul>
-               @foreach (var item in Model)
+         @foreach (var item in Model.Where(x=>x.UserName.Contains("Admin")))
         {
             @if (!string.IsNullOrWhiteSpace(item.ConnectionId))
             {
@@ -63,9 +66,80 @@
         }
             </ul>
           </div>
+      </div>
+
         </div>
       </div>
 
+   }
+
+
+
+
+    @if(User.Identity.IsAuthenticated && User.IsInRole("Admin")|| User.IsInRole("SuperAdmin")){
+       <div class="chat">
+        <div class="container chat_container">
+                 <h1>Onlayn Çat</h1>
+   <div class="chat_double">
+              <div class="chat_left">
+            <div class="row p-1">
+              <h1>İstifadəçi</h1>
+              <div class="col-5">
+                  <input type="text" placeholder="Sec" disabled  />
+                <input type="text" hidden id="userInput" />
+              </div>
+            </div>
+            <div class="row p-1">
+              <h1>Mesaj</h1>
+              <div class="col-5">
+                <input
+                  type="text"
+                  class="w-100"
+                  id="messageInput"
+                  placeholder="Yazin..."
+                />
+              </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-6 text-end">
+                <button
+                  type="button"
+                  id="sendButton"
+                  value="Send Message"
+                  class="addtobasket"
+                >Göndər</button>
+              </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-6"></div>
+            </div>
+            <div class="row p-1">
+              <div class="col-6">
+                <ul id="messagesList"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="chat_right">
+            <ul>
+         @foreach (var item in Model.Where(x=>!x.UserName.Contains("Admin")))
+        {
+            @if (!string.IsNullOrWhiteSpace(item.ConnectionId))
+            {
+                <li class="userchat" style="color:#ffaf06;cursor:pointer;" id="@item.Id">@item.UserName</li>
+            }
+            else
+            {
+                <li class="userchat" style="color:black;cursor:pointer;" id="@item.Id">@item.UserName</li>
+            }
+        }
+            </ul>
+          </div>
+      </div>
+
+        </div>
+      </div>
+
+   }
 
 
 <script src="~/assets/js/dist/browser/signalr.js"></script>

@@ -8504,9 +8504,15 @@ a {
   margin: 0;
 }
 .detail_intro .detail_intro_container .detail_right .input_button_delete > a > button {
-  border: 1px solid transparent;
   height: 34px;
   width: 350px;
+  border: 2px solid transparent;
+}
+.detail_intro .detail_intro_container .detail_right .input_button_delete > a > button:hover {
+  background-color: transparent;
+  border-color: #ffaf06;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media screen and (max-width: 1238px) {
@@ -11411,16 +11417,31 @@ a {
   }
 }
 .chat .chat_container {
-  padding: 80px 0;
+  padding: 70px 0;
+}
+.chat .chat_container > h1 {
+  color: rgb(18, 18, 18);
+  font-family: Space Mono;
+  font-size: 32px;
+  font-weight: 496;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 55px;
+  line-height: 50px;
+}
+.chat .chat_container .chat_double {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: auto;
 }
-.chat .chat_container .chat_left > div {
+.chat .chat_container .chat_double .chat_left > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11430,7 +11451,7 @@ a {
   gap: 20px;
   margin-top: 10px;
 }
-.chat .chat_container .chat_left > div > h1 {
+.chat .chat_container .chat_double .chat_left > div > h1 {
   color: rgb(18, 18, 18);
   font-family: Space Mono;
   font-size: 32px;
@@ -11442,7 +11463,7 @@ a {
   margin-bottom: 0px;
   width: 150px;
 }
-.chat .chat_container .chat_left > div > div > input {
+.chat .chat_container .chat_double .chat_left > div > div > input {
   margin-top: 5px;
   border-radius: 4px;
   border: 1px solid #414141;
@@ -11456,7 +11477,7 @@ a {
   text-align: left;
   color: rgb(18, 18, 18);
 }
-.chat .chat_container .chat_left > div > div #sendButton {
+.chat .chat_container .chat_double .chat_left > div > div #sendButton {
   text-align: right;
   border: 2px solid transparent;
   padding: 3px 5px;
@@ -11466,7 +11487,7 @@ a {
   font-family: Work Sans;
   width: 100px;
 }
-.chat .chat_container .chat_left > div > div #sendButton:hover {
+.chat .chat_container .chat_double .chat_left > div > div #sendButton:hover {
   border: 2px solid #ffaf06;
   background-color: transparent;
   -webkit-transition: 0.5s;
@@ -11474,7 +11495,13 @@ a {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.chat .chat_container .chat_right > ul > li {
+.chat .chat_container .chat_double .chat_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+.chat .chat_container .chat_double .chat_right > ul > li {
   border: 1px solid #ffaf06;
   color: rgb(18, 18, 18);
   font-family: Space Mono;
@@ -11487,11 +11514,11 @@ a {
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 0px;
-  padding: 2px 10px;
-  margin-top: 0px;
+  padding: 8px 50px;
+  margin-top: 5px;
   cursor: pointer;
 }
-.chat .chat_container .chat_right > ul > li:hover {
+.chat .chat_container .chat_double .chat_right > ul > li:hover {
   color: #ffaf06;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -11499,16 +11526,13 @@ a {
 
 @media screen and (max-width: 740px) {
   .chat .chat_container {
-    padding: 80px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: auto;
+    padding: 60px 0;
   }
-  .chat .chat_container .chat_left > div {
+  .chat .chat_container > h1 {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .chat .chat_container .chat_double .chat_left > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11522,7 +11546,7 @@ a {
     gap: 10px;
     margin-top: 0px;
   }
-  .chat .chat_container .chat_left > div > h1 {
+  .chat .chat_container .chat_double .chat_left > div > h1 {
     color: rgb(18, 18, 18);
     font-family: Space Mono;
     font-size: 32px;
@@ -11536,7 +11560,7 @@ a {
     font-size: 28px;
     line-height: 30px;
   }
-  .chat .chat_container .chat_left > div > div > input {
+  .chat .chat_container .chat_double .chat_left > div > div > input {
     margin-top: 5px;
     border-radius: 4px;
     border: 1px solid #414141;
@@ -11551,7 +11575,7 @@ a {
     color: rgb(18, 18, 18);
     margin-bottom: 10px;
   }
-  .chat .chat_container .chat_left > div > div #sendButton {
+  .chat .chat_container .chat_double .chat_left > div > div #sendButton {
     text-align: right;
     border: 2px solid transparent;
     padding: 3px 5px;
@@ -11561,7 +11585,7 @@ a {
     font-family: Work Sans;
     width: 200px;
   }
-  .chat .chat_container .chat_left > div > div #sendButton:hover {
+  .chat .chat_container .chat_double .chat_left > div > div #sendButton:hover {
     border: 2px solid #ffaf06;
     background-color: transparent;
     -webkit-transition: 0.5s;
@@ -11569,7 +11593,10 @@ a {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  .chat .chat_container .chat_right > ul > li {
+  .chat .chat_container .chat_double .chat_right {
+    margin-top: 5px;
+  }
+  .chat .chat_container .chat_double .chat_right > ul > li {
     color: rgb(18, 18, 18);
     font-family: Space Mono;
     font-size: 32px;
@@ -11582,6 +11609,7 @@ a {
     line-height: 25px;
     margin-bottom: 0px;
     margin-top: 0px;
+    padding: 5px 20px;
     cursor: pointer;
   }
 }
