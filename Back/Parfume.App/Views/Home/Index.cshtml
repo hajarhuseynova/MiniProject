@@ -289,6 +289,19 @@ url('https://th.bing.com/th/id/R.d3115da26d5ff34fb013106eea411f5a?rik=wLSQd442UR
 </div>
 
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+        @if (User.Identity.IsAuthenticated && (User.IsInRole("User")||User.IsInRole("Admin")||User.IsInRole("SuperAdmin")))
+        {
+           <a asp-controller="chat" asp-action="index">
+        <button id="myBtnOnline">
+          <i class="fa-solid fa-comment"></i></button
+      ></a>
+        }
+	
+
+
 <script>
 	const products = document.querySelectorAll(".add-basket-product");
 	const totalPriceElement = document.getElementById("totalPrice");

@@ -8,7 +8,6 @@ a {
   color: $black_01;
 }
 #myBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -23,9 +22,36 @@ a {
   border-radius: 4px;
   > i {
     color: $white;
+    font-size: 20px;
   }
   &:hover {
     background-color: #555;
+  }
+}
+
+#myBtnOnline {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  z-index: 99;
+  font-size: 18px;
+  border-radius: 50%;
+  outline: none;
+  background-color: $orange_01;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  > i {
+    color: $white;
+    font-size: 20px;
+  }
+  &:hover {
+    background-color: #555;
+    // transform: scale(1);
   }
 }
 

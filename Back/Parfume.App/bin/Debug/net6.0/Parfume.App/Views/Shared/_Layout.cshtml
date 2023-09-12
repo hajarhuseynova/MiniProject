@@ -165,28 +165,26 @@
 
 
 		@RenderBody()
-         <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </button>
-	  <footer style="margin-top: 0">
+       
+        <footer style="margin-top: 0">
         <div class="container footer_container">
           <div class="column">
-            <a><h3>@setting?.Title1</h3></a>
+            <a asp-controller="parfume" asp-action="index"><h3>@setting?.Title1</h3></a>
             <p>@setting?.Title1Par1</p>
             <p>@setting?.Title1Par2</p>
           </div>
           <div class="column">
-            <a> <h3>@setting?.Title2</h3></a>
+            <a asp-controller="smoke" asp-action="index"> <h3>@setting?.Title2</h3></a>
             <p>@setting?.Title2Par1</p>
             <p>@setting?.Title2Par2</p>
           </div>
           <div class="column responsive_last">
-            <a><h3>@setting?.Title3</h3></a>
+            <a asp-controller="about" asp-action="index"><h3>@setting?.Title3</h3></a>
             <p>@setting?.Title3Par1</p>
             <p>@setting?.Title3Par2</p>
           </div>
           <div class="column responsive responsive_last">
-            <a> <h3>@setting?.Title4</h3></a>
+            <a asp-controller="giftbox" asp-action="index"> <h3>@setting?.Title4</h3></a>
             <p>@setting?.Title4Par1</p>
             <p>@setting?.Title4Par2</p>
           </div>
@@ -283,16 +281,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-@*<script>
-	$(document).ready(function () {
-	  $(".star").click(function () {
-		var rating = $(this).index() + 1;
 
-		$(".star").removeClass("selected");
-		$(".star").slice(0, rating).addClass("selected");
-	  });
-	});
-</script>*@
   <script>
 	const Message = document.getElementById("message");
 	if (Message != undefined) {
@@ -624,9 +613,7 @@
           document.documentElement.scrollTop > 20
         ) {
           mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
+        } 
       }
 
       function topFunction() {
