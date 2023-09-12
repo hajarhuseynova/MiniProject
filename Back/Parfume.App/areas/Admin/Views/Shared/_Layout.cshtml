@@ -16,7 +16,14 @@
   <link rel="stylesheet" href="~/admin/assets/css/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="~/admin/assets/images/favicon.png" />
+  	
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+      .imageIcon{
+          font-size:25px;
+      }
+  </style>
+
 </head>
 <body>
   <div class="container-scroller">
@@ -154,7 +161,7 @@
           </li>
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
-              <img src="~/admin/assets/images/faces/face5.jpg" alt="profile"/>
+          <i class="fa-solid fa-circle-user imageIcon" ></i>
               <span class="nav-profile-name">Setting</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
@@ -187,21 +194,21 @@
 
           <li class="nav-item">
             <a class="nav-link" asp-controller="home" asp-action="index">
-              <i class="mdi mdi-home menu-icon"></i>
+             <i class="fa-solid fa-house menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
 
            <li class="nav-item">
             <a class="nav-link" asp-controller="admin" asp-action="index">
-            <i class="mdi mdi-account menu-icon"></i>
+          <i class="fa-solid fa-user menu-icon"></i>
               <span class="menu-title">Admin</span>
             </a>
           </li>
 
              <li class="nav-item">
             <a class="nav-link" asp-controller="product" asp-action="index">
-              <i class="mdi mdi-view-headline menu-icon"></i>
+            <i class="fa-solid fa-shop menu-icon"></i>
               <span class="menu-title">Product</span>
             </a>
           </li>
@@ -209,7 +216,8 @@
 
                 <li class="nav-item">
             <a class="nav-link" asp-controller="brand" asp-action="index">
-              <i class="mdi mdi-view-headline menu-icon"></i>
+           
+              <i class="fa-solid fa-layer-group menu-icon"></i>
               <span class="menu-title"> Brand</span>
             </a>
           </li>
@@ -217,50 +225,78 @@
              
                <li class="nav-item">
             <a class="nav-link" asp-controller="category" asp-action="index">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Product Category</span>
+            
+              <i class="fa-solid fa-c menu-icon"></i>
+              <span class="menu-title"> Category</span>
             </a>
           </li>
 
                <li class="nav-item">
             <a class="nav-link" asp-controller="order" asp-action="index">
-              <i class="mdi mdi-view-headline menu-icon"></i>
+         
+              <i class="fa-solid fa-clipboard-list menu-icon"></i>
               <span class="menu-title">Order</span>
             </a>
           </li>
 
-
              <li class="nav-item">
             <a class="nav-link" asp-controller="place" asp-action="index">
-              <i class="mdi mdi-view-headline menu-icon"></i>
+              <i class="fa-solid fa-circle menu-icon"></i>
               <span class="menu-title"> Place</span>
             </a>
           </li>
 
              <li class="nav-item">
             <a class="nav-link" asp-controller="function" asp-action="index">
-              <i class="mdi mdi-view-headline menu-icon"></i>
+           <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title"> Functions</span>
             </a>
           </li>
 
              <li class="nav-item">
             <a class="nav-link" asp-controller="productcomment" asp-action="index">
-              <i class="mdi mdi-view-headline menu-icon"></i>
+            <i class="fa-solid fa-comment menu-icon"></i>
               <span class="menu-title"> Comment</span>
             </a>
           </li>
 
               <li class="nav-item">
             <a class="nav-link" asp-controller="report" asp-action="index">
-              <i class="mdi mdi-view-headline menu-icon"></i>
+              <i class="fa-solid fa-folder menu-icon"></i>
               <span class="menu-title"> Report</span>
             </a>
           </li>
 
+        
           <li class="nav-item">
+            <a class="nav-link" asp-controller="fakeSlider" asp-action="index" >
+              <i class="fa-solid fa-bars menu-icon"></i>
+              <span class="menu-title">Fake Slider</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" asp-controller="Slider" asp-action="index" >
+              <i class="fa-regular fa-rectangle-list menu-icon"></i>
+              <span class="menu-title">Slider</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" asp-controller="subscribe" asp-action="index" >
+              <i class="mdi mdi-grid-large menu-icon"></i>
+              <span class="menu-title">Subscribe</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" asp-controller="sendMessage" asp-action="index">
+    
+              <i class="fa-solid fa-file-waveform menu-icon"></i>
+              <span class="menu-title">SendMessage</span>
+            </a>
+          </li>
+            <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="mdi mdi-circle-outline menu-icon"></i>
+           
+              <i class="fa-regular fa-circle menu-icon"></i>
               <span class="menu-title">Settings</span>
               <i class="menu-arrow"></i>
             </a>
@@ -273,30 +309,6 @@
                 <li class="nav-item"> <a class="nav-link" asp-controller="settingContact" asp-action="index" >Contact</a></li>
               </ul>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" asp-controller="fakeSlider" asp-action="index" >
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Fake Slider</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" asp-controller="Slider" asp-action="index" >
-              <i class="mdi mdi-chart-pie menu-icon"></i>
-              <span class="menu-title">Slider</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" asp-controller="subscribe" asp-action="index" >
-              <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title">Subscribe</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" asp-controller="sendMessage" asp-action="index">
-              <i class="mdi mdi-emoticon menu-icon"></i>
-              <span class="menu-title">SendMessage</span>
-            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
@@ -342,6 +354,7 @@
 
   <!-- plugins:js -->
   <script src="~/admin/assets/vendors/base/vendor.bundle.base.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
   <script src="~/admin/assets/avendors/chart.js/Chart.min.js"></script>

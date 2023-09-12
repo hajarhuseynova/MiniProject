@@ -22,11 +22,11 @@ namespace areas.Admin.Controllers
             _userManager = userManager;
             _signinManager = signinManager;
         }
-    
+
         public async Task<IActionResult> Index()
         {
-            ReportViewModel reportViewModel=new ReportViewModel();
-            reportViewModel.Order =  await _context.Orders.Where(x => !x.IsDeleted).Include(x=>x.orderItems).FirstOrDefaultAsync();
+            ReportViewModel reportViewModel = new ReportViewModel();
+            reportViewModel.Order = await _context.Orders.Where(x => !x.IsDeleted).Include(x => x.orderItems).FirstOrDefaultAsync();
             reportViewModel.OrderItem = await _context.OrderItems.Where(x => !x.IsDeleted).Include(x => x.Product).FirstOrDefaultAsync();
 
             reportViewModel.Orders = await _context.Orders.Where(x => !x.IsDeleted).Include(x => x.orderItems).ToListAsync();
@@ -36,5 +36,30 @@ namespace areas.Admin.Controllers
 
             return View(reportViewModel);
         }
+        [HttpPost]
+        public async Task<IActionResult> Index(ReportViewModel viewModel)
+        {
+            // Seçilen tarihi ViewModel'den alın
+            DateTime selectedDate = viewModel.SelectedDate;
+
+            // Seçilen tarihe göre siparişleri filtreleyin ve ViewModel'i güncelleyin
+            viewModel.Orders = await _context.Orders
+                .Where(x => !x.IsDeleted && x.CreatedDate.Date == selectedDate.Date)
+                .Include(x => x.orderItems)
+                .ToListAsync();
+            viewModel.OrderItems = await _context.OrderItems
+                .Where(x => !x.IsDeleted && x.CreatedDate.Date == selectedDate.Date)
+                .Include(x => x.Product)
+                .ToListAsync();
+
+            viewModel.TotalSales = viewModel.Orders.Sum(x => x.TotalPrice);
+            viewModel.TotalPurchases = viewModel.Orders.Sum(x => x.TotalBuyPrice);
+            viewModel.TotalProfit = viewModel.TotalSales - viewModel.TotalPurchases;
+
+
+
+            return View(viewModel);
+        }
+
     }
 }
