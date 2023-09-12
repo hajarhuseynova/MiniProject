@@ -85,7 +85,7 @@
             <div class="row p-1">
               <h1>İstifadəçi</h1>
               <div class="col-5">
-                  <input type="text" placeholder="Sec" disabled  />
+                  <input type="text" placeholder="Kimə yazacağınızı seçin" disabled  />
                 <input type="text" hidden id="userInput" />
               </div>
             </div>
@@ -96,7 +96,7 @@
                   type="text"
                   class="w-100"
                   id="messageInput"
-                  placeholder="Yazin..."
+                  placeholder="Yazın..."
                 />
               </div>
             </div>
@@ -144,13 +144,12 @@
 
 <script src="~/assets/js/dist/browser/signalr.js"></script>
 <script>
-
     var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
     connection.start();
     connection.on("ReceiveMessage", function (user, message) {
     var li = document.createElement("li");
     document.getElementById("messagesList").appendChild(li);
-    li.textContent = `${user} says ${message}`;
+    li.textContent = `${user}: ${message}`;
      });
 
          connection.on("Loggin", function (userId) {
@@ -167,6 +166,7 @@
         li.addEventListener("click",()=>{
             userId=li.getAttribute("id");
             document.getElementById("userInput").value=userId;
+     
         })
             })
 

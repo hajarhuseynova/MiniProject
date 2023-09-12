@@ -54,6 +54,11 @@
                 transform: scale(1);
               }
             }
+            #messagesList {
+              > li {
+                margin-bottom: 5px;
+              }
+            }
           }
         }
       }

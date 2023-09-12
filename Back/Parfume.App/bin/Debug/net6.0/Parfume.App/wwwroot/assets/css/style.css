@@ -5961,9 +5961,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.contact .contact_container .contact_common .contact_left .socials .social > img {
-  width: 20px;
-  height: 20px;
+.contact .contact_container .contact_common .contact_left .socials .social > i {
+  color: white;
 }
 .contact .contact_container .contact_common .contact_right > form {
   margin-top: 5px;
@@ -11519,6 +11518,9 @@ a {
   transition: 0.5s;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+.chat .chat_container .chat_double .chat_left > div > div #messagesList > li {
+  margin-bottom: 5px;
 }
 .chat .chat_container .chat_double .chat_right {
   display: -webkit-box;

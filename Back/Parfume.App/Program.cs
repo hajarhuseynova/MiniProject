@@ -46,10 +46,10 @@ if (!app.Environment.IsDevelopment())
 }
 else
 {
-  
-    //app.UseExceptionHandler("/notfound/index");
-    //app.UseStatusCodePagesWithReExecute("/notfound/index/{0}");
-    //app.UseHsts();
+
+    app.UseExceptionHandler("/notfound/index");
+    app.UseStatusCodePagesWithReExecute("/notfound/index/{0}");
+    app.UseHsts();
 }
 
 app.UseSerilogRequestLogging();
