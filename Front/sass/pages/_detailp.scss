@@ -1079,7 +1079,6 @@
     padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
-
     flex-direction: column;
     .comment {
       padding: 0 10px;
@@ -1169,6 +1168,20 @@
       margin: 20px 0;
     }
   }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 @media screen and (max-width: 1238px) {
   .comments {
