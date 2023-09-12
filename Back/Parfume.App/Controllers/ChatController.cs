@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Parfume.App.Services.İnterfaces;
 using Parfume.Core.Entities;
-
 namespace Parfume.App.Controllers { 
     public class ChatController : Controller
     {
@@ -18,6 +18,7 @@ namespace Parfume.App.Controllers {
             _signinManager = signinManager;
             _mailService = mailService;
         }
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             List<AppUser> users = await _userManager.Users.ToListAsync();

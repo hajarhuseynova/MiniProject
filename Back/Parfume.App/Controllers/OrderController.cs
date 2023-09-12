@@ -55,7 +55,7 @@ namespace Parfume.App.Controllers
 
             if (name == null || surname == null || loc == null || email == null || info == null || number == null||what==null||where==null)
             {
-                TempData["LegacyFalse"] = "Zəhmət olmasa bütün boşluqları doldurun!";
+                TempData["LegacyFalse"] = "Zəhmət olmasa,bütün boşluqları doldurun!";
                 return RedirectToAction("index", "legacy");
 
             }

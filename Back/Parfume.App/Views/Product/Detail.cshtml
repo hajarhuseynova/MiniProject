@@ -18,7 +18,7 @@
 	double four = 0;
 	double fifth = 0;
 
-	foreach (var item in Model.Product.Comments.Where(x=>!x.IsDeleted))
+	foreach (var item in Model.Product.Comments.Where(x => !x.IsDeleted && x.isVisible))
 	{
 		totalRating += (item.Rating + 1);
 		if (item.Rating == 0)
@@ -92,7 +92,7 @@
 					<p class="price">@Model.Product.SellPrice AZN</p>
 				}
 				<div class="stars">
-					@if (Model.Product.Comments.Where(x=>!x.IsDeleted).Count() > 0)
+					@if (Model.Product.Comments.Where(x => !x.IsDeleted && x.isVisible).Count() > 0)
 					{
 
 						@for (var i = 0; i < Math.Floor(avarage); i++)
@@ -151,7 +151,7 @@
 			<h3>@Model.Product.Title</h3>
 			<h1>@Math.Floor(avarage)</h1>
 			<div class="stars">
-				@for (var i = 0; i <Math.Floor(avarage); i++)
+				@for (var i = 0; i < Math.Floor(avarage); i++)
 				{
 					<span class="st">&#9733;</span>
 				}
@@ -166,7 +166,7 @@
 					@{
 						double fifthaverage = ((double)fifth / count) * 100;
 					}
-					@if (Model.Product.Comments.Where(x=>!x.IsDeleted&&x.isVisible).Count() != 0)
+					@if (Model.Product.Comments.Where(x => !x.IsDeleted && x.isVisible).Count() != 0)
 					{
 						<div class="color" style="width:@(fifthaverage)%"></div>
 					}
@@ -180,7 +180,7 @@
 					@{
 						double fouraverage = ((double)four / count) * 100;
 					}
-							@if (Model.Product.Comments.Where(x=>!x.IsDeleted&&x.isVisible).Count() != 0)
+					@if (Model.Product.Comments.Where(x => !x.IsDeleted && x.isVisible).Count() != 0)
 					{
 						<div class="color" style="width:@(fouraverage)%"></div>
 					}
@@ -193,7 +193,7 @@
 				}
 				<p>3</p>
 				<div class="hole">
-						@if (Model.Product.Comments.Where(x=>!x.IsDeleted&&x.isVisible).Count() != 0)
+					@if (Model.Product.Comments.Where(x => !x.IsDeleted && x.isVisible).Count() != 0)
 					{
 						<div class="color" style="width:@(threeaverage)%"></div>
 					}
@@ -206,7 +206,7 @@
 				}
 				<p>2</p>
 				<div class="hole">
-						@if (Model.Product.Comments.Where(x=>!x.IsDeleted&&x.isVisible).Count() != 0)
+					@if (Model.Product.Comments.Where(x => !x.IsDeleted && x.isVisible).Count() != 0)
 					{
 						<div class="color" style="width:@(twoaverage)% "></div>
 					}
@@ -219,7 +219,7 @@
 				}
 				<p>1</p>
 				<div class="hole">
-						@if (Model.Product.Comments.Where(x=>!x.IsDeleted&&x.isVisible).Count() != 0)
+					@if (Model.Product.Comments.Where(x => !x.IsDeleted && x.isVisible).Count() != 0)
 					{
 						<div class="color" style="width:@(oneaverage)%"></div>
 					}
@@ -245,54 +245,63 @@
 						<span class="stard" data-value="1" id="star_4">&#9734;</span>
 						<span class="stard" data-value="1" id="star_5">&#9734;</span>
 					</div>
+					@if (User.Identity.IsAuthenticated && User.IsInRole("User"))
+					{
+						<a><button type="submit">Göndər</button></a>
+					}
+					else
+					{
+						<a asp-action="login" asp-controller="account"><button>Göndər</button></a>
 
-					<a><button type="submit">Göndər</button></a>
+
+					}
 				</div>
 
 			</form>
 		</div>
 	</div>
 </div>
-		@if (Model.Product.Comments.Where(x=>!x.IsDeleted&&x.isVisible).Count() != 0){
+@if (Model.Product.Comments.Where(x => !x.IsDeleted && x.isVisible).Count() != 0)
+{
 	<div class="comments">
-	<div class="container comments_container">
+		<div class="container comments_container">
 
-		@foreach (var item in Model.Product.Comments.Where(x=>!x.IsDeleted))
-		{
+			@foreach (var item in Model.Product.Comments.Where(x => !x.IsDeleted))
 			{
-				item.Rating += 1;
-			}
-			if (@item.isVisible == true)
-			{
-				<div class="line"></div>
-				<div class="comment">
-					<div class="left">
-						<h3>@item.AppUser.Name</h3>
-						<div class="left_stars">
-							@for (var i = 0; i < item.Rating; i++)
-							{
-								<span class="st">&#9733;</span>
-							}
+				{
+					item.Rating += 1;
+				}
+				if (@item.isVisible == true)
+				{
+					<div class="line"></div>
+					<div class="comment">
+						<div class="left">
+							<h3>@item.AppUser.Name</h3>
+							<div class="left_stars">
+								@for (var i = 0; i < item.Rating; i++)
+								{
+									<span class="st">&#9733;</span>
+								}
+							</div>
+						</div>
+						<div class="middle">
+							<h3>@item.Title</h3>
+							<p>
+								@item.Desc
+							</p>
+						</div>
+						<div class="right">
+							<p>@item.CreatedDate.ToString("MM:dd:yyyy")</p>
+
 						</div>
 					</div>
-					<div class="middle">
-						<h3>@item.Title</h3>
-						<p>
-							@item.Desc
-						</p>
-					</div>
-					<div class="right">
-						<p>@item.CreatedDate.ToString("MM:dd:yyyy")</p>
+				}
 
-					</div>
-				</div>
 			}
 
-		}
-
-		<div class="line"></div>
+			<div class="line"></div>
+		</div>
 	</div>
-</div>
 }
 <div class="products">
 	<div class="container products_container">
@@ -399,7 +408,8 @@
 
 					})
 
-					totalPriceElement.innerHTML = TotalPrice;
+					totalPriceElement.innerHTML =`${TotalPrice} AZN`;
+				
 
 
 
@@ -474,7 +484,8 @@
 
 				   })
 
-				   totalPriceElement.innerHTML = TotalPrice;
+					totalPriceElement.innerHTML =`${TotalPrice} AZN`;
+
 
 					const Toast = Swal.mixin({
 					   toast: true,
