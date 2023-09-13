@@ -1,0 +1,67 @@
+﻿@model ReportViewModel
+
+@{
+    ViewData["Title"] = "Rapor";
+}
+
+<div class="container">
+    <h2 style="text-align:center" class="mt-3">Hesabat</h2>
+    <form method="post" asp-action="Index" class="mb-2">
+        <div class="form-group">
+            <label for="SelectedDate">Tarih Seçin:</label>
+            <input type="date" class="form-control" id="SelectedDate" name="SelectedDate" asp-for="SelectedDate" />
+        </div>
+        <button type="submit" class="btn btn-primary">Satislari Goruntule</button>
+    </form>
+
+    @if (Model.Orders != null && Model.Orders.Count > 0)
+    {
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">Tarix</th>
+                    <th scope="col">Məhsul/Sayı</th>
+                    <th scope="col">Ümumi Satış AZN</th>
+                    <th scope="col">Ümumi Alış AZN</th>
+                    <th scope="col">Xeyir AZN</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Orders)
+                {
+                    <tr>
+                        <td>@item.CreatedDate.ToString("MM:dd:yyyy")</td>
+                        <td>
+                            @foreach (var product in item.orderItems)
+                            {
+                                <ul>
+                                    <li>@product.Product.Title/@product.ProductCount</li>
+                                </ul>
+                            }
+                        </td>
+                        <td>@item.TotalPrice.ToString("0.00") AZN</td>
+                        <td>@item.TotalBuyPrice.ToString("0.00") AZN</td>
+                        <td>@item.TotalBenefit.ToString("0.00") AZN</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        
+        <!-- Toplam satış, alış ve kar bilgileri -->
+        <div class="row">
+            <div class="col-md-6">
+                <strong>Toplam Satış AZN: </strong>@Model.TotalSales.ToString("0.00") AZN
+            </div>
+            <div class="col-md-6">
+                <strong>Toplam Alış AZN: </strong>@Model.TotalPurchases.ToString("0.00") AZN
+            </div>
+            <div class="col-md-6">
+                <strong>Xeyir AZN: </strong>@Model.TotalProfit.ToString("0.00") AZN
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Seçilen tarihe ait satış bulunamadı.</p>
+    }
+</div>

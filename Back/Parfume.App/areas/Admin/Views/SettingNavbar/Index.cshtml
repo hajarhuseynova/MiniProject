@@ -7,9 +7,12 @@
                 <th scope="col">Icon:</th>
                 <th scope="col">Icon:</th>
                 <th scope="col">Icon:</th>
-                <th scope="col">Sekil:</th>
-                <th scope="col">Sekil:</th>
-                <th scope="col">Sekil:</th>
+                <th scope="col">Başlıq:</th>
+                <th scope="col">Başlıq:</th>
+                <th scope="col">Başlıq:</th>
+                <th scope="col">Başlıq:</th>
+                <th scope="col">Başlıq:</th>
+            
                 <th scope="col">Yenile</th>
             </tr>
         </thead>
@@ -21,10 +24,15 @@
                         <th>@Html.Raw(item.Icon1)</th>
                         <th>@Html.Raw(item.Icon2)</th>
                         <th>@Html.Raw(item.Icon3)</th>
-                         <th><img style="width:100px;height:100px" src="~/assets/images/@item.Logo" /></th>
-                         <th><img style="width:100px;height:100px" src="~/assets/images/@item.Hamburger" /></th>
-                         <th><img style="width:100px;height:100px" src="~/assets/images/@item.Delete" /></th>
-                     
+                        <th scope="row">@item.SiderbarP1</th>
+                        <th scope="row">@item.SiderbarP2</th>
+                        <th scope="row">@item.SiderbarP3</th>
+                        <th scope="row">@item.SiderbarP4</th>
+                        <th scope="row">@item.SiderbarP5</th>
+
+                 
+
+
                         <td><a asp-controller="settingNavbar" asp-action="update" asp-route-id="@item.Id" >
                             <i class="fas fa-edit text text-primary"></i></a></td>
                      

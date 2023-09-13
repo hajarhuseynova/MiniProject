@@ -1,0 +1,90 @@
+﻿@model AboutViewModel
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            @foreach (var item in Model.Slides)
+        {
+             <div class="swiper-slide">
+            <img src="~/assets/images/@item.Image" />
+            <div class="info_par">
+              <h1>@item.Title</h1>
+              <p>@item.Desc</p>
+                  
+            </div>
+          </div> 
+        }
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="who">
+        <div class="container who_container">
+          <div class="who_left">
+            <h3>@Model.SettingAbout?.WhoTitle</h3>
+            <p class="hide">
+             @Model.SettingAbout?.WhoP1
+            </p>
+            <p class="hidden">
+             @Model.SettingAbout?.WhoP2
+           
+            </p>
+            <p>
+             @Model.SettingAbout?.WhoP3
+              
+            </p>
+          </div>
+          <div class="who_right">
+            <img
+              src="~/assets/images/@Model.SettingAbout?.ImageWho1"
+              class="about_image_right"
+            />
+            <img
+              src="~/assets/images/@Model.SettingAbout?.ImageWho2"
+              class="about_image_left"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="why">
+        <div class="container why_container">
+          <div class="why_left">
+            <img
+              src="~/assets/images/@Model.SettingAbout?.ImageWhy1"
+              class="about_image_right"
+            />
+            <img
+              src="~/assets/images/@Model.SettingAbout?.ImageWhy2"
+              class="about_image_left"
+            />
+          </div>
+          <div class="why_right">
+            <h3>@Model.SettingAbout?.WhyTitle</h3>
+            <p class="hide">
+              @Model.SettingAbout?.WhyP1
+            </p>
+            <p>
+            @Model.SettingAbout?.WhyP2
+            </p>
+
+            <div class="options">
+              <div class="option">
+               @Html.Raw(Model.SettingAbout?.Icon1)
+                <p>@Model.SettingAbout?.IconP1</p>
+              </div>
+              <div class="option">
+                 @Html.Raw(Model.SettingAbout?.Icon2)
+                <p>@Model.SettingAbout?.IconP2</p>
+              </div>
+              <div class="option">
+              @Html.Raw(Model.SettingAbout?.Icon3)
+                <p>@Model.SettingAbout?.IconP3</p>
+              </div>
+              <div class="option">
+               @Html.Raw(Model.SettingAbout?.Icon4)
+                <p>@Model.SettingAbout?.IconP4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

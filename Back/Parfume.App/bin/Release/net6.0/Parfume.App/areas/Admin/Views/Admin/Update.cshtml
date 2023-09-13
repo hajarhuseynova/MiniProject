@@ -1,0 +1,46 @@
+﻿@model UserUpdateViewModel
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label asp-for="Name">Ad</label>
+            <input type="text" class="form-control" asp-for="@Model.Name">
+            <span class="alert-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Surname">Soyad</label>
+            <input type="text" class="form-control" asp-for="@Model.Surname">
+            <span class="alert-danger" asp-validation-for="Surname"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="UserName">İstifadəçi Adı</label>
+            <input type="text" class="form-control" asp-for="@Model.UserName">
+            <span class="alert-danger" asp-validation-for="UserName"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input type="email" class="form-control" asp-for="@Model.Email">
+            <span class="alert-danger" asp-validation-for="Email"></span>
+        </div>
+
+            <div class="form-group">
+            <label asp-for="NewPassword">Yeni Şifrə</label>
+            <input type="password" class="form-control" asp-for="@Model.NewPassword">
+            <span class="alert-danger" asp-validation-for="NewPassword"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ConfirmNewPassword">Doğrulama Şifrə</label>
+            <input type="password" class="form-control" asp-for="@Model.ConfirmNewPassword">
+            <span class="alert-danger" asp-validation-for="ConfirmNewPassword"></span>
+        </div>
+      
+     
+
+        @Html.AntiForgeryToken()
+        <button type="submit">Yenilə</button>
+    </form>
+</div>

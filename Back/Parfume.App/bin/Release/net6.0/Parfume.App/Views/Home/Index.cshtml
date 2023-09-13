@@ -1,0 +1,392 @@
+﻿@model HomeViewModel
+
+
+<div class="swiper mySwiper">
+	<div class="swiper-wrapper">
+		@foreach (var item in Model.Slides)
+		{
+			<div class="swiper-slide">
+				<img src="../assets/images/@item.Image" />
+				<div class="info_par">
+					<h1>@item.Title</h1>
+					<p>@item.Desc</p>
+					@if (item.Chooice == "Parfum")
+					{
+						<a asp-controller="parfume" asp-action="index"><button>Ətraflı</button></a>
+					}
+					@if (item.Chooice == "Tustu")
+					{
+						<a asp-controller="smoke" asp-action="index"><button>Ətraflı</button></a>
+					}
+				</div>
+			</div>
+		}
+
+	</div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-pagination"></div>
+</div>
+
+<div class="products">
+	<div class="container products_container">
+		<h1>Yeni Məhsullar</h1>
+		<div class="newproducts">
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsNew == true).Take(4))
+			{
+				<div class="product">
+					<a asp-action="detail" asp-controller="product" asp-route-id="@item.Id">
+						<img src="~/assets/images/@item.Image"
+						 alt="productImage" />
+					</a>
+					<div class="new">Yeni</div>
+					<p class="def">@item.Title</p>
+					<p class="cat">@item.Brand.Name</p>
+					<div class="price_star">
+						@if (item.IsDiscount == true)
+						{
+							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+						}
+						else
+						{
+							<p class="price">@item.SellPrice AZN</p>
+						}
+						<a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id" class="add-basket-product"><button>Əlavə Et</button></a>
+					</div>
+				</div>
+			}
+
+		</div>
+	</div>
+</div>
+ <div class="smeels">
+        <div class="container smells_container">
+          <h1>Qoxular</h1>
+          <div class="newsmeels">
+       @foreach (var item in Model.Products.Where(x=>x.Category.Name=="Tester").Take(4))
+	   {
+		        <div
+              class="smell"
+              style="
+                background-image: url(/assets/images/@item.Image);
+              "
+            >
+    
+         <h3>@item.Title</h3>
+		
+            </div>
+	   }
+          </div>
+        </div>
+      </div>
+<div class="giftbox">
+	<div class="container giftbox_container">
+		<h1>Hədiyyə Qutusu</h1>
+		<div class="giftbox_common">
+			<div class="giftbox_left">
+				<h1>@Model.SettingHomePage?.TitleGift</h1>
+				<p>
+					@Model.SettingHomePage?.DescriptionGift
+				</p>
+				<a asp-action="index" asp-controller="giftBox">
+					<button>
+						Ətraflı
+						<img class="button_image"
+							 alt="buttonImage"
+							 src="~/assets/icons/button/buttonsvg.svg" />
+					</button>
+				</a>
+			</div>
+			<div class="giftbox_right">
+				<a asp-action="index" asp-controller="giftBox" class="hidden">
+					<img src="~/assets/images/@Model.SettingHomePage?.ImageGift1" />
+				</a>
+				<a asp-action="index" asp-controller="giftBox" class="hide">
+					<img src="~/assets/images/@Model.SettingHomePage?.ImageGift2" />
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="sellests">
+	<div class="container sellests_container">
+		<h1>Ən çox satılanlar</h1>
+		<div class="newsellests">
+
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsTrend == true).Take(4))
+			{
+
+
+				<div class="sellest">
+					<a asp-action="detail" asp-controller="product" asp-route-id="@item.Id">
+						<img src="~/assets/images/@item.Image"
+						 alt="productImage" />
+					</a>
+					<p class="def">@item.Title</p>
+					<p class="cat">@item.Brand.Name</p>
+					<div class="price_star">
+						@if (item.IsDiscount == true)
+						{
+							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+						}
+						else
+						{
+							<p class="price">@item.SellPrice AZN</p>
+						}
+						<a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id" class="add-basket-product"><button>Əlavə Et</button></a>
+					</div>
+				</div>
+			}
+
+		</div>
+	</div>
+</div>
+
+<div class="smokes">
+	<div class="container smokes_container">
+		<h1>Tüstülər</h1>
+		<div class="newsmokes">
+			@await Html.PartialAsync("_SmokePartialView",Model.Products.Where(x=>x.Category.Name=="Smoke").Take(3).ToList())
+		</div>
+	</div>
+</div>
+
+<div class="subscribe" style="background-image:
+url('https://th.bing.com/th/id/R.d3115da26d5ff34fb013106eea411f5a?rik=wLSQd442URaROQ&riu=http%3a%2f%2ftest-storage-mumbai.s3.amazonaws.com%2fuploads%2farticle%2fog_image%2f205%2fperfume.jpg&ehk=ZKMyLx0VcBID5RZ0kCWIdlplZ0VdFtHVRlROFd4JINI%3d&risl=&pid=ImgRaw&r=0')">
+	<div class="form_input">
+		<h1>Bizə Qoşul!</h1>
+		<form asp-action="subscribe"
+			  asp-controller="home"
+			  method="post"
+			  id="mc-embedded-subscribe-form"
+			  name="mc-embedded-subscribe-form"
+			  class="validate"
+			  novalidate>
+			<div class="input_button">
+				<input type="email"
+					   value=""
+					   name="EMAIL"
+					   class="email register_input"
+					   placeholder="Email:"
+					   required />
+				<button itype="submit" name="subscribe">
+					<span>Abunə Ol</span>
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="discounts">
+	<div class="container discounts_container">
+		<h1>Endirim</h1>
+		<div class="newdiscounts">
+			@foreach (var item in Model.Products.Where(x => x.Category.Name == "Parfum" && x.IsDiscount == true).Take(4))
+			{
+				<div class="discount">
+					<a asp-action="detail" asp-controller="product" asp-route-id="@item.Id"> 
+						<img src="~/assets/images/@item.Image"
+						 alt="productImage" />
+					</a>
+					<div class="dis">@item.DiscountPercentage %</div>
+					<p class="def">@item.Title</p>
+					<p class="cat">@item.Brand.Name</p>
+					<div class="price_star">
+						<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+
+						<del class="price_discount">@item.SellPrice AZN</del>
+						<a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id" class="add-basket-product">
+							<button>Əlavə</button>
+						</a>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+</div>
+
+<div class="testing">
+	<div class="container testing_container">
+		<div class="testing_common">
+			<div class="testing_left">
+				<img src="~/assets/images/@Model.SettingHomePage?.ImageTester" />
+			</div>
+			<div class="testing_right">
+				<h1>
+					@Model.SettingHomePage?.DescTester
+				</h1>
+				<a asp-action="index" asp-controller="tester">
+					<button>
+						Ətraflı
+						<img src="~/assets/icons/button/buttonsvg.svg" />
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="comments_home">
+	<div class="container comments_home_container">
+		<h1>Müştəri Məmnuniyyəti</h1>
+		<div class="slideshow-container">
+			@foreach (var item in Model.FakeSlides)
+			{
+				<div class="mySlides fade">
+					<div class="modal_comment">
+						<img src="~/assets/icons/comment/comment.svg" />
+						<div class="modal_inner">
+							<div class="modal_top">
+								<div class="modal_top_left">
+									<img src="~/assets/images/@item.Image" />
+								</div>
+								<div class="modal_top_right">
+									<h3>@item.Name @item.Surname</h3>
+									<p>@item.City/@item.Country</p>
+								</div>
+							</div>
+							<p>
+								@item.Thoughts
+							</p>
+						</div>
+						<img class="end" src="~/assets/icons/comment/comment.svg" />
+					</div>
+				</div>
+			}
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
+	</div>
+</div>
+
+<div style="margin-bottom:40px" class="functions">
+	<div class="container functions_container">
+		@await Html.PartialAsync("_FunctionPartialView",Model.Functions.Take(4).ToList())
+	</div>
+</div>
+
+<div class="slider">
+	<div class="slide-track">
+		@{
+    var uniqueBrands = Model.Products
+        .Where(x => x.Category.Name == "Parfum" ||x.Category.Name=="Tester")
+        .Select(x => x.Brand.Image)
+        .Distinct()
+        .ToList();
+}
+		@foreach (var item in uniqueBrands )
+		{
+			<div class="slide">
+				<img src=~/assets/images/@item
+				 height="100"
+				 width="250"
+				 alt="Brand Image" />
+			</div>
+		}
+	</div>
+</div>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+        @if (User.Identity.IsAuthenticated && (User.IsInRole("User")||User.IsInRole("Admin")||User.IsInRole("SuperAdmin")))
+        {
+           <a asp-controller="chat" asp-action="index">
+        <button id="myBtnOnline">
+          <i class="fa-solid fa-comment"></i></button
+      ></a>
+        }
+	
+
+
+<script>
+	const products = document.querySelectorAll(".add-basket-product");
+	const totalPriceElement = document.getElementById("totalPrice");
+	products.forEach(prod => {
+		prod.addEventListener("click", (e) => {
+			e.preventDefault();
+			let href = prod.getAttribute("href");
+			let TotalPrice = 0;
+
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/home/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
+
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
+								<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+                                                    <span>${basket.count} * ${basket.price} AZN</span>
+												</div>
+												<div class="deleteimage">
+
+													<a href="/home/RemoveBasket/${basket.productId}" data-id="">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									`
+						basketItems.innerHTML += basketView;
+
+					})
+
+					totalPriceElement.innerHTML =`${TotalPrice} AZN`;
+
+
+
+					const Toast = Swal.mixin({
+						toast: true,
+						position: 'top-end',
+						showConfirmButton: false,
+						timer: 3000,
+						timerProgressBar: true,
+						didOpen: (toast) => {
+							toast.addEventListener('mouseenter', Swal.stopTimer)
+							toast.addEventListener('mouseleave', Swal.resumeTimer)
+						}
+					})
+
+					Toast.fire({
+						icon: 'success',
+						title: `Əlavə edildi!`
+					})
+
+					 })
+				 }
+
+				})
+		})
+	})
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            const alert=document.getElementById("alert-message");
+            if(alert!=undefined){
+            const message= alert.innerHTML;
+            if(message!=""){
+                Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: `${message}`,
+})
+
+            }
+            }
+        </script>

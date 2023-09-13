@@ -1,0 +1,43 @@
+﻿@model FakeSlider
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.Name" >Ad:</label>
+			<input type="text" class="form-control" asp-for="@Model.Name"/>
+			<span class="text text-danger" asp-validation-for="@Model.Name"></span>
+	</div>
+
+	<div class="form-group">
+		    <label asp-for="@Model.Surname" >Soyad:</label>
+			<input type="text" class="form-control" asp-for="@Model.Surname"/>
+			<span class="text text-danger" asp-validation-for="@Model.Surname"></span>
+	</div>
+
+    <div class="form-group">
+		    <label asp-for="@Model.Country" >Olke:</label>
+			<input type="text" class="form-control" asp-for="@Model.Country"/>
+			<span class="text text-danger" asp-validation-for="@Model.Country"></span>
+	</div>
+
+    <div class="form-group">
+		    <label asp-for="@Model.City" >Sheher:</label>
+			<input type="text" class="form-control" asp-for="@Model.City"/>
+			<span class="text text-danger" asp-validation-for="@Model.City"></span>
+	</div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.Thoughts" >Dushunce:</label>
+			<input type="text" class="form-control" asp-for="@Model.Thoughts"/>
+			<span class="text text-danger" asp-validation-for="@Model.Thoughts"></span>
+	</div>
+
+	<div class="form-group">
+		    <label asp-for="@Model.FormFile" >File:</label>
+			<input type="file" class="form-control" asp-for="@Model.FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.FormFile"></span>
+    </div>
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yenile</button>
+	</form>
+</div>

@@ -18,11 +18,11 @@ void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         app.UseDeveloperExceptionPage();
     }
-    //else
-    //{
-    //    app.UseExceptionHandler("/Home/Error");
-    //    app.UseHsts();
-    //}
+	else
+	{
+		app.UseExceptionHandler("/Home/Error");
+		app.UseHsts();
+	}
 }
 
 builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
@@ -47,9 +47,9 @@ if (!app.Environment.IsDevelopment())
 else
 {
 
-    //app.UseExceptionHandler("/notfound/index");
-    //app.UseStatusCodePagesWithReExecute("/notfound/index/{0}");
-    //app.UseHsts();
+	app.UseExceptionHandler("/notfound/index");
+	app.UseStatusCodePagesWithReExecute("/notfound/index/{0}");
+	app.UseHsts();
 }
 
 app.UseSerilogRequestLogging();

@@ -1,0 +1,75 @@
+﻿@model SettingNavbar
+
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.SiderbarP1" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.SiderbarP1"/>
+			<span class="text text-danger" asp-validation-for="@Model.SiderbarP1"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.SiderbarP2" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.SiderbarP2"/>
+			<span class="text text-danger" asp-validation-for="@Model.SiderbarP2"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.SiderbarP3" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.SiderbarP3"/>
+			<span class="text text-danger" asp-validation-for="@Model.SiderbarP3"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.SiderbarP4" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.SiderbarP4"/>
+			<span class="text text-danger" asp-validation-for="@Model.SiderbarP4"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.SiderbarP5" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.SiderbarP5"/>
+			<span class="text text-danger" asp-validation-for="@Model.SiderbarP5"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.SiderbarP6" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.SiderbarP6"/>
+			<span class="text text-danger" asp-validation-for="@Model.SiderbarP6"></span>
+	</div>
+
+	<div class="form-group">
+		    <label asp-for="@Model.Icon1" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.Icon1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Icon1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Icon2" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.Icon2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Icon2"></span>
+	</div>	
+	<div class="form-group">
+		    <label asp-for="@Model.Icon3" >Icon:</label>
+			<input type="text" class="form-control" asp-for="@Model.Icon3"/>
+			<span class="text text-danger" asp-validation-for="@Model.Icon3"></span>
+	</div>	
+	
+		<div class="form-group">
+		    <label asp-for="@Model.LogoFormFile" >Logo:</label>
+			<input type="file" class="form-control" asp-for="@Model.LogoFormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.LogoFormFile"></span>
+    </div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.HamburgerFormFile" >Hamburger:</label>
+			<input type="file" class="form-control" asp-for="@Model.HamburgerFormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.HamburgerFormFile"></span>
+    </div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.DeleteFormFile" >Delete:</label>
+			<input type="file" class="form-control" asp-for="@Model.DeleteFormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.DeleteFormFile"></span>
+    </div>
+
+
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yenile</button>
+	</form>
+</div>

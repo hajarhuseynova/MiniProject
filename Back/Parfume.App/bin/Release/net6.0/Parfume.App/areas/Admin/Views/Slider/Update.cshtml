@@ -1,0 +1,31 @@
+﻿@model Slider
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.Title" >Ad:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title"></span>
+	</div>
+
+	<div class="form-group">
+		    <label asp-for="@Model.Desc" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Desc"/>
+			<span class="text text-danger" asp-validation-for="@Model.Desc"></span>
+	</div>
+
+    <div class="form-group">
+		    <label asp-for="@Model.Chooice" >Tip:Parfum/Tustu</label>
+			<input type="text" class="form-control" asp-for="@Model.Chooice"/>
+			<span class="text text-danger" asp-validation-for="@Model.Chooice"></span>
+	</div>
+
+	<div class="form-group">
+		    <label asp-for="@Model.FormFile" >File:</label>
+			<input type="file" class="form-control" asp-for="@Model.FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.FormFile"></span>
+    </div>
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yenile</button>
+	</form>
+</div>

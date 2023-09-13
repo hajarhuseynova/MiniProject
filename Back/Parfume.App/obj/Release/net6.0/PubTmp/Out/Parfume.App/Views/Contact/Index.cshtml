@@ -1,0 +1,150 @@
+﻿   @model ContactViewModel  
+
+
+   @if (!string.IsNullOrWhiteSpace((string)TempData["ContactTrue"]))
+{
+    <div style="display:none" id="message">@TempData["ContactTrue"]</div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["ContactFalse"]))
+{
+    <div style="display:none" id="message">@TempData["ContactFalse"]</div>
+}
+@if (!string.IsNullOrWhiteSpace((string)TempData["EmailReg"]))
+{
+    <div style="display:none" id="message">@TempData["EmailReg"]</div>
+}
+
+
+      <div class="contact">
+        <div class="container contact_container">
+          <h1>Əlaqə</h1>
+          <div class="contact_common">
+            <div class="contact_left">
+              <h3>@Model.SettingContact?.Title</h3>
+              <p>
+               @Model.SettingContact?.Description
+              </p>
+              <div class="option">
+                <img src="~/assets/images/@Model.SettingContact?.ImageLoc" />
+                <div class="parag">
+                  <p>@Model.SettingContact?.Loc1</p>
+                  <p>@Model.SettingContact?.Loc2</p>
+                </div>
+              </div>
+              <div class="option">
+                <img src="~/assets/images/@Model.SettingContact?.ImageTel" />
+                <div class="parag">
+                  <p>@Model.SettingContact?.Phone1</p>
+                  <p>@Model.SettingContact?.Phone2</p>
+                </div>
+              </div>
+              <div class="option">
+                <img src="~/assets/images/@Model.SettingContact?.ImageEmail" />
+                <p>@Model.SettingContact?.Email</p>
+              </div>
+              <div class="socials">
+                <a
+                  href="@Model.SettingFooter.Link1" target="_blank"
+                >
+                  <div class="social">
+                     @Html.Raw(Model.SettingFooter?.FootIcon1) </div
+                ></a>
+
+              <a
+                  href="@Model.SettingFooter?.Link2" target="_blank"
+                >
+                  <div class="social">
+                     @Html.Raw(Model.SettingFooter?.FootIcon2) </div
+                ></a> 
+                <a
+                  href="@Model.SettingFooter?.Link3" target="_blank"
+                >
+                  <div class="social">
+                     @Html.Raw(Model.SettingFooter?.FootIcon3) </div
+                ></a>  
+                
+                <a
+                  href="@Model.SettingFooter?.Link4" target="_blank"
+                >
+                  <div class="social">
+                     @Html.Raw(Model.SettingFooter?.FootIcon4) </div
+                ></a>
+              </div>
+            </div>
+            <div class="contact_right">
+      
+                <form
+                asp-action="sendmessage"
+                asp-controller="contact"
+                method="post"
+                enctype="multipart/form-data"
+              >
+               
+            
+								
+								<input name="name" type="text" class="form-control contact_input"   placeholder="Ad/Soyad">
+								<span class="text text-danger" asp-validation-for="@Model.Messages.Name"></span>
+							
+								<input name="email" type="email" class="form-control contact_input"  placeholder="Email Adresiniz">
+								<span class="text text-danger" asp-validation-for="@Model.Messages.Email"></span>
+								
+								<input name="subject" class="form-control contact_input"  placeholder="Mövzu Başlığınız">
+								<span class="text text-danger" asp-validation-for="@Model.Messages.Subject"></span>
+							
+						        <textarea  name="message"  rows="4" cols="40" placeholder="Mövzu" class="contact_input form-control"  ></textarea>
+								<span class="text text-danger" asp-validation-for="@Model.Messages.Message"></span>
+						
+                <button class="addtobasket">Göndər</button>
+              </form>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="location">
+        <div class="container location_container">
+          <h1>Satış Məntəqəsi</h1>
+          <div class="locations">
+          @foreach (var item in Model.Places)
+          {
+                <div class="locationPage">
+              <div class="locationPage_left">
+                <img src="~/assets/images/@item.Image" alt="" />
+              </div>
+              <div class="locationPage_right">
+                <h3>@item.Title</h3>
+                <div class="common">
+                  <div class="option">
+                    <img src="~/assets/images/@Model.SettingContact?.ImageTel" />
+                    <p>@item.Address</p>
+                  </div>
+                  <div class="option">
+                    <img src="~/assets/images/@Model.SettingContact?.ImageLoc" />
+
+                    <p>@item.Phone1</p>
+                  </div>
+                  <div class="option">
+                    <img src="~/assets/images/@Model.SettingContact?.ImageLoc" />
+                    <p>@item.Phone2</p>
+                  </div>
+                  <a href="@item.Location" target="_blank" ><button class="addtobasket">Xəritədə bax</button></a>
+                </div>
+              </div>
+            </div>
+          }
+           
+          </div>
+        </div>
+      </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    const Message = document.getElementById("message");
+    if (Message != undefined) {
+        const message = Message.innerHTML;
+        if (message != "") {
+            Swal.fire(`${message}`)
+        }
+    }
+</script>

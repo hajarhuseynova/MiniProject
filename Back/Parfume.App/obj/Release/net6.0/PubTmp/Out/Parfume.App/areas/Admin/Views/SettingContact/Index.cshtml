@@ -1,0 +1,39 @@
+﻿@model IEnumerable<SettingContact>
+<div class="container">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Basliq:</th>
+                <th scope="col">Email:</th>
+                <th scope="col">Address:</th>
+                <th scope="col">Nomre:</th>
+                <th scope="col">Sekil:</th>
+                <th scope="col">Sekil:</th>
+                <th scope="col">Sekil:</th>
+
+                <th scope="col">Yenile</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <th>@item.Title</th>
+                        <th>@item.Email</th>
+                        <th>@item.Loc1</th>
+                        <th>@item.Phone1</th>
+                         <th><img style="width:25px;height:25px" src="~/assets/images/@item.ImageEmail" /></th>
+                         <th><img style="width:25px;height:25px" src="~/assets/images/@item.ImageLoc" /></th>
+                         <th><img style="width:25px;height:25px" src="~/assets/images/@item.ImageTel" /></th>
+                        <td><a asp-controller="settingContact" asp-action="update" asp-route-id="@item.Id" >
+                            <i class="fas fa-edit text text-primary"></i></a></td>
+                     
+                    </tr>
+            }
+        </tbody>
+    </table>
+  
+
+</div>

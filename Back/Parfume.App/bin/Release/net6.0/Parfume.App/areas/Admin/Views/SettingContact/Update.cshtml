@@ -1,0 +1,66 @@
+﻿@model SettingContact
+
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.Title" >Basliq:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title"></span>
+	</div>
+	<div class="form-group">
+		    <label asp-for="@Model.Description" >Haqqinda:</label>
+			<input type="text" class="form-control" asp-for="@Model.Description"/>
+			<span class="text text-danger" asp-validation-for="@Model.Description"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Phone1" >Nomre:</label>
+			<input type="text" class="form-control" asp-for="@Model.Phone1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Phone1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Phone2" >Nomre:</label>
+			<input type="text" class="form-control" asp-for="@Model.Phone2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Phone2"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Email" >Email:</label>
+			<input type="text" class="form-control" asp-for="@Model.Email"/>
+			<span class="text text-danger" asp-validation-for="@Model.Email"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Loc1" >Adres:</label>
+			<input type="text" class="form-control" asp-for="@Model.Loc1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Loc1"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Loc2" >Adres:</label>
+			<input type="text" class="form-control" asp-for="@Model.Loc2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Loc2"></span>
+	</div>	
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.Ema" >Email:</label>
+			<input type="file" class="form-control" asp-for="@Model.Ema"/>
+			<span class="text text-danger" asp-validation-for="@Model.Ema"></span>
+    </div>
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.Loc" >location:</label>
+			<input type="file" class="form-control" asp-for="@Model.Loc"/>
+			<span class="text text-danger" asp-validation-for="@Model.Loc"></span>
+    </div>
+
+			
+	<div class="form-group">
+		    <label asp-for="@Model.Phone" >Phone:</label>
+			<input type="file" class="form-control" asp-for="@Model.Phone"/>
+			<span class="text text-danger" asp-validation-for="@Model.Phone"></span>
+    </div>
+
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yenile</button>
+	</form>
+</div>

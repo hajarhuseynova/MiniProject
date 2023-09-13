@@ -1,0 +1,21 @@
+﻿ @model IEnumerable<Product>
+
+
+
+	         @foreach (var item in Model.Where(x=>x.Category.Name=="Smoke"))
+        {
+              <div class="smoke">
+              <a asp-action="detail" asp-controller="product" asp-route-id="@item.Id" >
+                  <img src="~/assets/images/@item.Image" />
+              </a>
+
+              <div class="responsive">
+                <h3>@item.Title</h3>
+                <p>
+              @item.Desc
+                </p>
+                <a asp-action="addbasket" asp-controller="home" asp-route-id="@item.Id" class="add-basket-product">
+                    <button>Səbətə Əlavə Et</button> </a>
+              </div>
+            </div>  
+        }

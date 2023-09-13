@@ -1,0 +1,130 @@
+﻿   @model GiftBoxViewModel
+   
+
+
+      <div class="gift_intro">
+        <div class="container gift_intro_container">
+          <div class="gift_left">
+            <h1>@Model.SettingHomePage?.TitleGift</h1>
+            <p>
+         @Model.SettingHomePage?.DescriptionGift
+            </p>
+          </div>
+          <div class="gift_right">
+            <img src="~/assets/images/@Model.SettingHomePage?.ImageGift1" />
+            <img src="~/assets/images/@Model.SettingHomePage?.ImageGift2" />
+          </div>
+        </div>
+      </div>
+      <div class="giftboxes">
+        <div class="container giftboxes_container">
+          <div class="giftboxes_intro">
+            <h1>Hədiyyə Qutuları</h1>
+            <p>
+            Diqqətlə hazırlanmış hədiyyə qutularımız xüsusi anlarınızı unudulmaz etmək üçün ideal seçimdir.
+			 Biz sizə ən gözəl hədiyyəni təqdim etmək üçün buradayıq.
+            </p>
+            <p></p>
+          </div>
+         <div class="boxes">
+       
+		@foreach (var item in Model.Products.Where(x => x.Category.Name == "GiftBox").Take(4))
+			{
+            <div class="box">
+              <img src="~/assets/images/@item.Image" />
+              <div class="box_info">
+                <h1>@item.Title</h1>
+                	@if (item.IsDiscount == true)
+							{
+								<p>@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+							}
+							else
+							{
+								<p>@item.SellPrice AZN</p>
+							}
+              </div>
+              <p>
+                @item.Desc
+              </p>
+              <a class="add-basket-product" asp-action="addbasket" asp-route-id="@item.Id" asp-controller="home" ><button class="addtobasket" >Sebete at</button></a>
+            </div>
+			}
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <script>
+	const products = document.querySelectorAll(".add-basket-product");
+		const totalPriceElement = document.getElementById("totalPrice");
+	products.forEach(prod => {
+		prod.addEventListener("click", (e) => {
+			e.preventDefault();
+			let href = prod.getAttribute("href");
+			let TotalPrice = 0;
+
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/home/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
+
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
+								<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+													<span>${basket.count} * ${basket.price} AZN</span>
+												</div>
+												<div class="deleteimage">
+													<a href="/home/RemoveBasket/${basket.productId}" data-id="">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									`
+						basketItems.innerHTML += basketView;
+
+					})
+
+					totalPriceElement.innerHTML =`${TotalPrice} AZN`;
+					
+
+
+
+					const Toast = Swal.mixin({
+						toast: true,
+						position: 'top-end',
+						showConfirmButton: false,
+						timer: 3000,
+						timerProgressBar: true,
+						didOpen: (toast) => {
+							toast.addEventListener('mouseenter', Swal.stopTimer)
+							toast.addEventListener('mouseleave', Swal.resumeTimer)
+						}
+					})
+
+					Toast.fire({
+						icon: 'success',
+						title: `Əlavə edildi!`
+					})
+
+					 })
+				 }
+
+				})
+		})
+	})
+
+</script>

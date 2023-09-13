@@ -1,0 +1,194 @@
+﻿@model TesterViewModel
+
+
+<div class="testing">
+	<div class="container testing_container">
+		<div class="testing_common">
+			<div class="testing_left">
+				<img src="~/assets/images/@Model.SettingHomePage?.ImageTester" />
+			</div>
+			<div class="testing_right">
+				<h1>
+					@Model.SettingHomePage?.DescTester
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tester">
+	<div class="container tester_container">
+		<div class="tester_top">
+			<h1>Test Qutusu</h1>
+			<p>
+				Sevdiyiniz ətri tapmaq üçün 12 müxtəlif brendin ən çox satılan
+				duxlarının testerlərini hazırlamışıq.
+			</p>
+			<div class="tester_input">
+				<form id="search">
+					<input name="search" placeholder="Axtarış..." type="search" class="searchInput" style="height:50px">
+					<img src="~/assets/icons/tester/Search.svg" />
+
+				</form>
+			</div>
+		</div>
+		<div class="tester_bottom">
+			<div class="tester_left">
+				@foreach (var item in Model.Products.Where(x=>x.Category.Name=="Tester"))
+				{	
+				   <div class="testerparfume">
+             <a  asp-action="detail" asp-route-id="@item.Id" asp-controller="product">   <img src="~/assets/images/@item.Image" /></a>
+                <h3>@item.Title</h3>
+                <p class="cat">@item.Brand.Name</p>
+                <div class="star_button">
+                @if (item.IsDiscount == true)
+						{
+							<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+						}
+						else
+						{
+							<p class="price">@item.SellPrice AZN</p>
+						}
+                  <a class="add-basket-product" asp-action="addbasket" asp-route-id="@item.Id" asp-controller="home" ><button>Əlavə et</button></a>
+                </div>
+              </div>
+				}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	 const submit = document.querySelector(".SearchButton");
+	 const searchInput = document.querySelector(".searchInput")
+	 const container = document.querySelector(".tester_left")
+	 const fullCards=document.querySelectorAll(".testerparfume");
+	 searchInput.addEventListener("input", (e) => {
+		 e.preventDefault();
+		 if(searchInput.value==""){
+		 let  href = `/tester/getAll`;
+		 fetch(href)
+			 .then(x => x.json())
+			 .then(x => {
+				 console.log(x)
+				 container.innerHTML =""
+				 x.forEach(item => {
+					 let view = `
+						<div class="testerparfume">
+						<a  asp-action="detail" asp-route-id="${item.id}" asp-controller="product">
+				 <img src="../assets/images/${item.image}" />
+				 </a>
+				 <h3>${item.title}</h3>
+				 <p class="cat">${item.brand.name}</p>
+				 <div class="star_button">
+				   <p class="price">${item.sellPrice} AZN</p>
+				   <a><button>Əlavə et</button></a>
+				 </div>
+			   </div>
+		 `;
+					 container.innerHTML += view;
+				 })
+			 })
+		 }
+
+	else{
+		   let  href = `/tester/search?search=${searchInput.value}`;
+		 fetch(href)
+			 .then(x => x.json())
+			 .then(x => {
+				 container.innerHTML =""
+				 x.forEach(item => {
+					 let view = `
+						<div class="testerparfume">
+					<a  asp-action="detail" asp-route-id="${item.id}" asp-controller="product">
+				 <img src="../assets/images/${item.image}" />
+				 </a>
+				 <h3>${item.title}</h3>
+				 <p class="cat">${item.brand.name}</p>
+				 <div class="star_button">
+				   <p class="price">${item.sellPrice} AZN</p>
+				   <a><button>Əlavə et</button></a>
+				 </div>
+			   </div>
+		 `;
+					 container.innerHTML += view;
+				 })
+			 })
+	}
+
+	 })
+</script>
+
+<script>
+	const products = document.querySelectorAll(".add-basket-product");
+		const totalPriceElement = document.getElementById("totalPrice");
+	products.forEach(prod => {
+		prod.addEventListener("click", (e) => {
+			e.preventDefault();
+			let href = prod.getAttribute("href");
+			let TotalPrice = 0;
+
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/home/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
+
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
+								<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+													<span>${basket.volume} ML</span>
+													<span>${basket.count} * ${basket.price} AZN</span>
+												</div>
+												<div class="deleteimage">
+													<a href="/home/RemoveBasket/${basket.productId}" data-id="">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									`
+						basketItems.innerHTML += basketView;
+
+					})
+
+					totalPriceElement.innerHTML =`${TotalPrice} AZN`;
+					
+
+
+
+					const Toast = Swal.mixin({
+						toast: true,
+						position: 'top-end',
+						showConfirmButton: false,
+						timer: 3000,
+						timerProgressBar: true,
+						didOpen: (toast) => {
+							toast.addEventListener('mouseenter', Swal.stopTimer)
+							toast.addEventListener('mouseleave', Swal.resumeTimer)
+						}
+					})
+
+					Toast.fire({
+						icon: 'success',
+						title: `Əlavə edildi!`
+					})
+
+					 })
+				 }
+
+				})
+		})
+	})
+
+</script>

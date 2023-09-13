@@ -75,7 +75,7 @@
 				 x.forEach(item => {
 					 let view = `
 						<div class="testerparfume">
-						<a  asp-action="detail" asp-route-id="${item.id}" asp-controller="product">
+						<a   href="/product/detail/${item.id}">
 				 <img src="../assets/images/${item.image}" />
 				 </a>
 				 <h3>${item.title}</h3>
@@ -100,7 +100,7 @@
 				 x.forEach(item => {
 					 let view = `
 						<div class="testerparfume">
-					<a  asp-action="detail" asp-route-id="${item.id}" asp-controller="product">
+					<a  href="/product/detail/${item.id}">
 				 <img src="../assets/images/${item.image}" />
 				 </a>
 				 <h3>${item.title}</h3>

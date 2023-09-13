@@ -1,0 +1,2251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://win5124.site4now.net:21/site1</_PublishTargetUrl>
+    <History>True|2023-09-12T20:08:56.0374387Z;False|2023-09-12T23:00:05.4428846+04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Default">
+      <Value>Server=DESKTOP-609D4KS%3bDatabase=ParfumeApp%3bTrusted_Connection=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Parfume.App.Context.ParfumeDbContext">
+      <Value>Server=DESKTOP-609D4KS%3bDatabase=ParfumeApp%3bTrusted_Connection=True</Value>
+    </EFMigrations>
+  </ItemGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>08/15/2023 13:11:13</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>09/08/2023 20:50:02</publishTime>
+    </File>
+    <File Include="appsettings.production.json">
+      <publishTime>09/12/2023 23:02:52</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>09/11/2023 11:06:39</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.Internal.dll">
+      <publishTime>03/25/2023 00:37:14</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.KeyDerivation.dll">
+      <publishTime>03/25/2023 00:37:48</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll">
+      <publishTime>03/25/2023 00:37:50</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.JsonPatch.dll">
+      <publishTime>03/25/2023 00:35:34</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll">
+      <publishTime>03/25/2023 00:37:44</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 03:59:32</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>03/20/2023 21:32:18</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>03/20/2023 21:32:34</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>03/20/2023 21:32:42</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>03/20/2023 21:33:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>01/14/2022 23:54:16</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>09/26/2022 21:42:22</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyModel.dll">
+      <publishTime>09/13/2019 19:12:44</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Core.dll">
+      <publishTime>03/25/2023 00:37:48</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Stores.dll">
+      <publishTime>03/25/2023 00:37:50</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>10/20/2020 01:51:12</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>10/13/2020 04:21:34</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>10/13/2020 04:23:12</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>10/13/2020 04:25:30</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>10/13/2020 04:31:32</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>10/13/2020 04:27:48</publishTime>
+    </File>
+    <File Include="Microsoft.Web.WebView2.Core.dll">
+      <publishTime>06/29/2022 02:02:58</publishTime>
+    </File>
+    <File Include="Microsoft.Web.WebView2.WinForms.dll">
+      <publishTime>06/29/2022 02:03:10</publishTime>
+    </File>
+    <File Include="Microsoft.Web.WebView2.Wpf.dll">
+      <publishTime>06/29/2022 02:02:46</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.SystemEvents.dll">
+      <publishTime>11/15/2019 12:36:56</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.Bson.dll">
+      <publishTime>11/28/2018 03:10:18</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>03/08/2023 11:09:54</publishTime>
+    </File>
+    <File Include="Parfume.App.deps.json">
+      <publishTime>09/12/2023 23:02:50</publishTime>
+    </File>
+    <File Include="Parfume.App.dll">
+      <publishTime>09/12/2023 23:02:31</publishTime>
+    </File>
+    <File Include="Parfume.App.exe">
+      <publishTime>09/12/2023 23:02:31</publishTime>
+    </File>
+    <File Include="Parfume.App.pdb">
+      <publishTime>09/12/2023 23:02:30</publishTime>
+    </File>
+    <File Include="Parfume.App.runtimeconfig.json">
+      <publishTime>09/12/2023 22:59:59</publishTime>
+    </File>
+    <File Include="Parfume.App/appsettings.Development.json">
+      <publishTime>08/15/2023 13:11:13</publishTime>
+    </File>
+    <File Include="Parfume.App/appsettings.json">
+      <publishTime>09/08/2023 20:50:02</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Account/Login.cshtml">
+      <publishTime>09/01/2023 22:06:49</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Admin/Create.cshtml">
+      <publishTime>08/31/2023 18:57:43</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Admin/Index.cshtml">
+      <publishTime>08/31/2023 18:56:43</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Admin/Update.cshtml">
+      <publishTime>08/31/2023 18:57:35</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Brand/Create.cshtml">
+      <publishTime>09/02/2023 14:24:59</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Brand/Index.cshtml">
+      <publishTime>09/02/2023 14:24:38</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Brand/Update.cshtml">
+      <publishTime>09/02/2023 14:24:58</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Category/Create.cshtml">
+      <publishTime>08/31/2023 18:59:26</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Category/Index.cshtml">
+      <publishTime>08/31/2023 18:58:08</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Category/Update.cshtml">
+      <publishTime>08/31/2023 18:59:31</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/FakeSlider/Create.cshtml">
+      <publishTime>08/17/2023 18:25:51</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/FakeSlider/Index.cshtml">
+      <publishTime>08/18/2023 15:26:38</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/FakeSlider/Update.cshtml">
+      <publishTime>08/17/2023 18:25:58</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Function/Create.cshtml">
+      <publishTime>08/19/2023 13:22:55</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Function/Index.cshtml">
+      <publishTime>08/19/2023 13:27:43</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Function/Update.cshtml">
+      <publishTime>08/19/2023 13:22:53</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Home/Index.cshtml">
+      <publishTime>09/10/2023 14:45:03</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Order/Index.cshtml">
+      <publishTime>09/10/2023 14:07:50</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Place/Create.cshtml">
+      <publishTime>08/18/2023 19:58:18</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Place/Index.cshtml">
+      <publishTime>08/18/2023 20:51:49</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Place/Update.cshtml">
+      <publishTime>08/18/2023 19:58:29</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Product/Create.cshtml">
+      <publishTime>09/02/2023 14:43:56</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Product/Discount.cshtml">
+      <publishTime>09/01/2023 20:44:18</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Product/Index.cshtml">
+      <publishTime>09/10/2023 13:58:21</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Product/Update.cshtml">
+      <publishTime>09/02/2023 14:44:06</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/ProductComment/Index.cshtml">
+      <publishTime>09/10/2023 14:04:40</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Report/Index.cshtml">
+      <publishTime>09/12/2023 22:08:36</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SendMessage/Index.cshtml">
+      <publishTime>08/18/2023 23:43:05</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingAbout/Index.cshtml">
+      <publishTime>09/01/2023 15:32:56</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingAbout/Update.cshtml">
+      <publishTime>08/20/2023 23:47:39</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingContact/Index.cshtml">
+      <publishTime>08/20/2023 12:56:50</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingContact/Update.cshtml">
+      <publishTime>08/20/2023 12:49:24</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingFooter/Index.cshtml">
+      <publishTime>08/20/2023 14:33:14</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingFooter/Update.cshtml">
+      <publishTime>08/20/2023 16:41:13</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingHomePage/Index.cshtml">
+      <publishTime>08/20/2023 22:59:20</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingHomePage/Update.cshtml">
+      <publishTime>08/23/2023 15:49:13</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingNavbar/Index.cshtml">
+      <publishTime>08/20/2023 17:20:56</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/SettingNavbar/Update.cshtml">
+      <publishTime>08/20/2023 17:16:25</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Shared/_Layout.cshtml">
+      <publishTime>09/12/2023 20:50:43</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Slider/Create.cshtml">
+      <publishTime>08/18/2023 12:05:16</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Slider/Index.cshtml">
+      <publishTime>08/18/2023 12:23:37</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Slider/Update.cshtml">
+      <publishTime>08/18/2023 12:05:27</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/Subscribe/Index.cshtml">
+      <publishTime>08/18/2023 21:26:25</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/_ViewImports.cshtml">
+      <publishTime>08/23/2023 20:46:36</publishTime>
+    </File>
+    <File Include="Parfume.App/areas/Admin/Views/_ViewStart.cshtml">
+      <publishTime>08/15/2023 21:08:12</publishTime>
+    </File>
+    <File Include="Parfume.App/libman.json">
+      <publishTime>09/11/2023 11:06:39</publishTime>
+    </File>
+    <File Include="Parfume.App/Parfume.App.staticwebassets.runtime.json">
+      <publishTime>09/12/2023 22:59:57</publishTime>
+    </File>
+    <File Include="Parfume.App/runtimes/win-arm64/native/WebView2Loader.dll">
+      <publishTime>06/29/2022 02:03:10</publishTime>
+    </File>
+    <File Include="Parfume.App/runtimes/win-x64/native/WebView2Loader.dll">
+      <publishTime>06/29/2022 02:02:22</publishTime>
+    </File>
+    <File Include="Parfume.App/runtimes/win-x86/native/WebView2Loader.dll">
+      <publishTime>06/29/2022 02:03:22</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/About/Index.cshtml">
+      <publishTime>09/07/2023 14:01:46</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Account/ForgetPassword.cshtml">
+      <publishTime>09/07/2023 15:02:01</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Account/Info.cshtml">
+      <publishTime>09/07/2023 15:01:01</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Account/Login.cshtml">
+      <publishTime>09/07/2023 15:03:16</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Account/Register.cshtml">
+      <publishTime>09/07/2023 15:01:58</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Account/ResetPassword.cshtml">
+      <publishTime>09/07/2023 15:01:57</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Account/Update.cshtml">
+      <publishTime>09/07/2023 15:01:55</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Chat/Index.cshtml">
+      <publishTime>09/12/2023 14:59:58</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Contact/Index.cshtml">
+      <publishTime>09/06/2023 14:36:27</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Giftbox/Index.cshtml">
+      <publishTime>09/12/2023 16:37:26</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Home/Index.cshtml">
+      <publishTime>09/12/2023 16:34:39</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Legacy/Index.cshtml">
+      <publishTime>09/12/2023 16:30:15</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/NotFound/Index.cshtml">
+      <publishTime>09/09/2023 17:48:22</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Order/Checkout.cshtml">
+      <publishTime>09/07/2023 17:56:53</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Parfume/Index.cshtml">
+      <publishTime>09/12/2023 16:37:26</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Product/Detail.cshtml">
+      <publishTime>09/12/2023 16:37:26</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Shared/_Error.cshtml">
+      <publishTime>09/04/2023 15:57:00</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Shared/_FunctionPartialView.cshtml">
+      <publishTime>08/22/2023 18:12:32</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Shared/_Layout.cshtml">
+      <publishTime>09/12/2023 17:07:25</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Shared/_SmokePartialView.cshtml">
+      <publishTime>09/05/2023 12:17:10</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Smoke/Index.cshtml">
+      <publishTime>09/12/2023 16:37:26</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/Tester/Index.cshtml">
+      <publishTime>09/12/2023 16:37:26</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/_ViewImports.cshtml">
+      <publishTime>08/23/2023 20:45:57</publishTime>
+    </File>
+    <File Include="Parfume.App/Views/_ViewStart.cshtml">
+      <publishTime>08/15/2023 13:11:14</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/css/style.css">
+      <publishTime>09/12/2023 16:56:14</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/about/Box.svg">
+      <publishTime>08/09/2023 09:28:34</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/about/CreditCard.svg">
+      <publishTime>08/09/2023 09:28:48</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/about/Gift.svg">
+      <publishTime>08/09/2023 09:29:10</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/about/Layers.svg">
+      <publishTime>08/09/2023 09:29:19</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/button/buttonsvg.svg">
+      <publishTime>08/05/2023 14:35:49</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/comment/comment.svg">
+      <publishTime>08/07/2023 12:13:40</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/contact/Call.svg">
+      <publishTime>08/09/2023 13:41:09</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/contact/iPhone.svg">
+      <publishTime>08/09/2023 13:41:00</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/contact/Location.svg">
+      <publishTime>08/09/2023 13:41:15</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/css/style.css">
+      <publishTime>08/21/2023 17:31:24</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/detail/dislike.svg">
+      <publishTime>08/10/2023 17:55:56</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/detail/like.svg">
+      <publishTime>08/11/2023 11:12:23</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/detail/Star.svg">
+      <publishTime>08/10/2023 17:57:01</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/detail/Vector.svg">
+      <publishTime>08/10/2023 17:55:33</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/footer/facebook.svg">
+      <publishTime>08/05/2023 12:43:44</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/footer/instagram.svg">
+      <publishTime>08/05/2023 12:42:07</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/footer/twitter.svg">
+      <publishTime>08/05/2023 12:43:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/footer/youtube.svg">
+      <publishTime>08/05/2023 12:43:11</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/functions/delivery.svg">
+      <publishTime>08/07/2023 13:21:32</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/functions/Mask group.svg">
+      <publishTime>08/07/2023 13:31:51</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/header/Burger.svg">
+      <publishTime>08/04/2023 10:11:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/header/Cart.svg">
+      <publishTime>08/04/2023 10:17:26</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/header/Heart.svg">
+      <publishTime>08/04/2023 10:16:54</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/header/Logo.svg">
+      <publishTime>08/04/2023 10:20:18</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/header/Search.svg">
+      <publishTime>08/04/2023 10:16:44</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/header/Sidebar.svg">
+      <publishTime>08/11/2023 14:50:20</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/header/User.svg">
+      <publishTime>08/04/2023 10:17:04</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/NewProduct/star.svg">
+      <publishTime>08/05/2023 16:57:56</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/order/Credit card.svg">
+      <publishTime>08/10/2023 10:21:53</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/order/shop.svg">
+      <publishTime>08/10/2023 10:06:11</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/order/Wallet.svg">
+      <publishTime>08/10/2023 10:22:00</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/register/Lock.svg">
+      <publishTime>08/04/2023 11:00:50</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/register/Mail.svg">
+      <publishTime>08/04/2023 11:00:38</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/register/User.svg">
+      <publishTime>08/07/2023 16:56:15</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/tester/rubish.svg">
+      <publishTime>08/09/2023 11:10:41</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/icons/tester/Search.svg">
+      <publishTime>08/09/2023 11:03:37</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/01c62a60-1c5d-4683-afd8-274393753c7aBurger.svg">
+      <publishTime>09/01/2023 14:47:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/02c4f3ae-27c6-4bcb-8e83-5a91c4b92f3atutsuu.jpg">
+      <publishTime>09/05/2023 15:14:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/03283e8c-6439-40dd-b06b-b6eef73c6860lc.jpg">
+      <publishTime>09/07/2023 09:24:47</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/055c846f-8111-4fba-804e-087b8acffd4dparfume.jpg">
+      <publishTime>08/20/2023 12:50:20</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/055f4e7e-09a2-48ea-b59e-7309fc59dad4Group.svg">
+      <publishTime>09/04/2023 09:34:25</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0588c363-59aa-42df-9fe4-4faf95a3411cMask group.png">
+      <publishTime>09/05/2023 15:16:21</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/088036e3-7fc9-4acd-8f1e-43678c663e83victoriasecret.jpg">
+      <publishTime>09/02/2023 14:30:59</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/09ad3e44-35da-4001-a853-4a06a386db30ProductImage.jpg">
+      <publishTime>08/21/2023 16:20:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/09fbab27-2c97-4ae2-8b25-29abf35d9487slider.jpg">
+      <publishTime>09/03/2023 16:09:22</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0a6d13b6-f85a-41db-a3d8-6b71983961efgivency.png">
+      <publishTime>09/02/2023 14:32:27</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0bb329ee-c81a-449a-9da6-b1c83f751b2fversace.webp">
+      <publishTime>09/02/2023 14:30:29</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0be6816d-8738-473c-a9e1-afb5fbd131f8Burger.svg">
+      <publishTime>08/20/2023 17:18:51</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0bebcac2-8b0a-4b90-98a1-7086578848d7image 10 %284%29.png">
+      <publishTime>09/04/2023 17:56:09</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0e49a24a-52a3-463e-b0c0-e1e4174a57a8ProductImage.jpg">
+      <publishTime>08/30/2023 20:43:02</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0e7fb6ed-227a-4e2c-b042-6ad4b88dcaccgucci.jpg">
+      <publishTime>09/02/2023 14:32:08</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0f02da75-b27e-4e34-8127-6bc6fdab327fvss.jpg">
+      <publishTime>09/07/2023 09:40:32</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0f168d71-95b1-427c-8b25-41b4a6aa84d1Call.svg">
+      <publishTime>08/20/2023 12:56:06</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/0f75751c-37d8-4e72-b469-e1b65534c985lac.jpg">
+      <publishTime>09/04/2023 18:31:33</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/110ffda7-d118-4d5f-b8fa-897b01909f80laura-chouette-gbT2KAq1V5c-unsplash.jpg">
+      <publishTime>09/03/2023 15:08:55</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/12ec3eaf-7855-4095-97e5-0cfc400142fbProductImage.jpg">
+      <publishTime>08/29/2023 15:54:42</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/13e27cc0-0cb0-4a22-9ce1-5252a9d8452fLogo.svg">
+      <publishTime>09/01/2023 14:47:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/15371e52-7a02-4607-804b-edc2bdcb708228mall.jpg">
+      <publishTime>09/06/2023 10:06:35</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/171562ef-f127-41d8-a62e-20b84301f92bparfum.jpg">
+      <publishTime>09/01/2023 17:04:11</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/17e81890-01c4-4813-8960-8891d0c12f4bversace.webp">
+      <publishTime>09/04/2023 14:29:49</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/191270f3-aa5f-42d2-aec5-32436b44104fdelivery.svg">
+      <publishTime>09/03/2023 15:43:19</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/1a3ab744-032f-4617-ba11-64b0448b132eMask group %282%29.svg">
+      <publishTime>09/04/2023 09:34:46</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/1b2a0b15-fea9-41ef-a0d8-2bc72d80346aRectangle 35.png">
+      <publishTime>09/04/2023 09:23:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/1c844229-2e50-469f-bcce-bfb59d3d3a5diPhone.svg">
+      <publishTime>08/19/2023 23:04:03</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/1ca2cbf0-d8c7-4fd1-bbb2-751e20ea2ea2iPhone.svg">
+      <publishTime>09/01/2023 14:38:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/1d6e838f-ecd3-4388-939c-70bc21d5fe48Logo.svg">
+      <publishTime>08/20/2023 17:18:51</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/1e540ba7-699d-4cc1-ae87-dcb3e339f2bdMask group.png">
+      <publishTime>09/07/2023 10:20:25</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/1f193864-a86f-4843-8612-fb08f48dbccetom.jpg">
+      <publishTime>09/04/2023 09:10:43</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/212ecef6-3e63-4958-b183-15f1ead9fe5bsl.avif">
+      <publishTime>09/07/2023 10:06:12</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/218c163e-5488-41ad-a437-1f61f722c793rafa.jpg">
+      <publishTime>08/20/2023 23:52:29</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/23547688-a621-433c-845a-47e5ec8857fbrose.png">
+      <publishTime>09/05/2023 13:19:01</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/24fbef10-58c9-4d00-9438-95cb52364c3evictoriasecret.jpg">
+      <publishTime>09/04/2023 14:30:06</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/252a2ef4-88e1-4332-a80c-b37dd8d2a0a6ProductImage.jpg">
+      <publishTime>08/29/2023 15:55:57</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/2531ce48-c4db-4398-b837-0c8e4bdd8deeImage1.jpg">
+      <publishTime>09/03/2023 16:00:57</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/25c7b202-804b-4b51-9a07-6d8af6cd00deProductImage.jpg">
+      <publishTime>08/21/2023 16:20:37</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/2651f57d-e6ec-4a98-9bb6-59e501422e42gucci.jpg">
+      <publishTime>09/04/2023 09:11:19</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/26d628bc-e15b-4e57-a0ac-0570bdfd9707haithem-ferdi-iqwe9Y76UmU-unsplash.jpg">
+      <publishTime>09/05/2023 15:52:37</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/27a08d9b-adf2-45c7-9c0e-ac5c32158418Armani.png">
+      <publishTime>09/04/2023 09:12:14</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/27b5fb88-1e90-4c68-8035-012405914996dolce.jpg">
+      <publishTime>09/04/2023 09:11:41</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/2c127c5b-0c1e-45a1-bd98-bc2b064c1feddr.jpg">
+      <publishTime>09/07/2023 09:21:35</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/2ca7d5c1-8cfa-477e-b939-94a66f0569d2Rectangle.png">
+      <publishTime>09/04/2023 10:38:15</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/2cf41219-f621-4f74-ae3c-b2d77a75ddb5od.jpg">
+      <publishTime>09/07/2023 10:18:17</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/2d78b6b3-600b-47ac-bef8-6da430a1a18aRectangle 35 %285%29.png">
+      <publishTime>09/05/2023 00:05:07</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/3067c6d5-98e7-4928-8c12-7d17712d803fcroppp.jpg">
+      <publishTime>09/07/2023 09:29:37</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/30c66b5c-3c25-4826-82b1-207a26a25b53Giftbox.jpg">
+      <publishTime>09/04/2023 09:17:44</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/317f219f-4894-4745-ac23-0d9f97894a8dgivency.png">
+      <publishTime>09/04/2023 09:11:31</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/31a28683-820b-4752-a766-e15b5f865438laura-chouette-z52_r1crahU-unsplash.jpg">
+      <publishTime>09/03/2023 15:16:14</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/31b3f79d-cce7-4980-9726-17a5d1b58fe9calwomen.jpg">
+      <publishTime>09/04/2023 18:09:31</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/33ef2c71-5b7c-402d-91d3-3da81e1074dejan-de-keijzer-gSKQnv55TGA-unsplash.jpg">
+      <publishTime>09/07/2023 10:11:47</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/360dc8e3-ccf7-4ee4-a61e-19385414d386parfume.jpg">
+      <publishTime>08/19/2023 13:29:29</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/360dce25-7caf-4202-8249-b4ccca63cd84Mask group %283%29.png">
+      <publishTime>09/07/2023 13:56:35</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/3781e1f1-fac7-4815-b9c3-caaaef6cadc6prd.jpg">
+      <publishTime>09/07/2023 09:33:38</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/37e908e0-89a0-4081-9ddf-a2ff53d1d7e9a.jpg">
+      <publishTime>09/07/2023 09:24:13</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/39b02092-aeca-48cf-8932-32fe8bc955aach.jpg">
+      <publishTime>09/05/2023 12:04:35</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/3b134dd2-d646-424f-9473-e9b823d13bbbCart.svg">
+      <publishTime>08/20/2023 17:18:51</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/3e8ef973-ad2f-4752-b478-ec0aceb83364tutsu2.jpg">
+      <publishTime>09/05/2023 15:12:55</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/41c10744-5598-4b64-a370-9e32b1b3e728gv.webp">
+      <publishTime>09/07/2023 09:22:29</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/4218f08b-7968-42a7-a529-49f8c8988971rafa.jpg">
+      <publishTime>08/20/2023 12:41:39</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/4242e92b-fcef-4a51-9079-776e9005da73sl2.avif">
+      <publishTime>09/07/2023 10:16:58</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/42650739-0b4e-479a-a902-56a368d9994fCall.svg">
+      <publishTime>09/01/2023 14:38:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/453cb703-5036-40e4-84bb-16236ef6bf09sl.jpg">
+      <publishTime>09/05/2023 00:37:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/45d4ea7a-6a1e-4aed-b606-fc6cd162492fparfum.jpg">
+      <publishTime>09/01/2023 17:09:23</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/46d83fa8-2178-4ea5-8629-c1c9e6fbd794ol.webp">
+      <publishTime>09/05/2023 12:06:21</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/47d04bb6-42b5-4948-b15f-530116b718c5est.webp">
+      <publishTime>09/05/2023 16:10:25</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/4830e403-16e1-4c79-90c3-c70ea4378ddddior.png">
+      <publishTime>09/05/2023 00:06:35</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/48d9e9e4-4d47-4cbb-9a75-7c49b66e02e0istinyee.jpg">
+      <publishTime>09/06/2023 10:16:04</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/4a95fa58-8420-498a-b343-5ffc74291aa1Mask group %281%29.svg">
+      <publishTime>09/04/2023 09:34:19</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/4bc389f5-19a6-45d8-adf8-de64dcdb40d4sayak-bala-jowBlJC165U-unsplash.jpg">
+      <publishTime>09/05/2023 15:47:37</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5095f2d1-4040-4461-b2bc-c78802d21b84dior.png">
+      <publishTime>09/04/2023 14:30:00</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/51612765-8c0c-44c5-bef6-2610f461e134Mask group %283%29.png">
+      <publishTime>09/04/2023 09:32:39</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/517e25ca-12cb-452d-a79c-4a263084555bScreenshot %281%29.png">
+      <publishTime>08/18/2023 15:28:08</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/51a3fd67-0fca-4365-aee7-79f11530904esmokkee.jpg">
+      <publishTime>09/05/2023 00:37:24</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/52d8d66e-8592-4319-bd8a-ae3cd5483102photo_2023-09-04_16-55-00.jpg">
+      <publishTime>09/04/2023 16:55:44</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/533e4290-fc92-4368-90eb-0c9f1b2cb699calvin.png">
+      <publishTime>09/04/2023 14:31:55</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/56330af1-6ddb-44c1-9bbc-ce042e316d64bakumall.jpg">
+      <publishTime>09/06/2023 10:10:29</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/577859e2-7f00-4c8e-8f11-0f992583fa99parfum.jpg">
+      <publishTime>09/01/2023 17:07:33</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/58a43063-0f58-49a3-83ef-f119a9ecd27echanelcrop.gif">
+      <publishTime>09/02/2023 14:33:09</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5964e831-6211-44fa-af9a-033652123ec1rafa.jpg">
+      <publishTime>08/18/2023 15:28:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/596db98f-f526-4952-8122-d01cbbb76fd7denizmall.jpg">
+      <publishTime>09/06/2023 10:08:35</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5acbabd3-ea18-4b51-9a10-deee3ef96776parfum.jpg">
+      <publishTime>09/01/2023 21:10:47</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5bfcf12d-4da6-45cd-b571-0d75a48de100bomshell.png">
+      <publishTime>09/05/2023 13:17:03</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5c0eddc2-a4a2-4105-bfe3-62301e45005cpetr-sidorov-OB4EMZnzhkc-unsplash.jpg">
+      <publishTime>09/05/2023 15:53:47</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5c6aad19-a082-4f6d-8233-aa27e09c19b6tutsu2.jpg">
+      <publishTime>09/05/2023 18:49:41</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5e366df8-c6b0-47e4-99e1-eae12af6b2ffMask group %2810%29.png">
+      <publishTime>09/04/2023 10:06:49</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5f3b80bc-a45d-4988-bf41-d4fc68469398guccipr.jpg">
+      <publishTime>09/04/2023 18:33:44</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5f643e62-ee17-4bd8-9fa8-1309991b4c9eyou.webp">
+      <publishTime>09/05/2023 13:28:45</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/5fc52261-9a4b-407c-9ea2-9c36313b5539parfum.jpg">
+      <publishTime>09/01/2023 17:04:53</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/61604d08-4f55-4443-8101-b5079e13059brevlon.jpg">
+      <publishTime>09/04/2023 14:30:33</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/62fa4820-0960-4afd-95dd-5140b6a2cbe7Mask group %2811%29.png">
+      <publishTime>09/04/2023 10:07:07</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/633ffea8-e01d-4842-acfe-cdcde5542052victoriasecret.jpg">
+      <publishTime>09/04/2023 09:10:21</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/64e32aad-7dc8-4c88-901f-77a8942e9d49dolce.jpg">
+      <publishTime>09/04/2023 14:31:22</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/64f5f09a-ed6d-4d9e-b964-635b95125af4Rectangle 33 %282%29.png">
+      <publishTime>09/04/2023 11:08:24</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/67c35ac2-2603-4add-bba6-63c562345d5fchanelcrop.gif">
+      <publishTime>09/04/2023 14:31:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/68184516-5aa4-4900-a574-dda2759cb984prada.png">
+      <publishTime>09/04/2023 09:10:58</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6837b050-0fc0-4dec-b6a4-51499c8481fdcalvin.png">
+      <publishTime>09/04/2023 09:12:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/690ca5c6-75f2-4978-9e46-ed6f8cd27c64Rectangle 35 %285%29.png">
+      <publishTime>09/04/2023 11:08:24</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6c29073b-542e-45a4-b129-1212ac5a51daparfum.jpg">
+      <publishTime>09/01/2023 14:53:40</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6cd37223-551a-4765-8eb2-d7dd47d3c386ProductImage.jpg">
+      <publishTime>08/23/2023 15:51:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6d5ca4e4-6101-4b76-abe4-0dc4b850b014laura-chouette-z52_r1crahU-unsplash.jpg">
+      <publishTime>09/03/2023 15:05:59</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6de1d5ac-6417-4031-a8a1-524738b33d54lacoste.png">
+      <publishTime>09/04/2023 14:30:15</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6de3d037-0251-4e28-9a34-0e7054f0dc3cparfum.jpg">
+      <publishTime>09/01/2023 14:57:31</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6ea92afa-fd13-4206-93e6-95d0db5d2676denis-oliveira-_12PwFpWZZ0-unsplash.jpg">
+      <publishTime>09/05/2023 15:51:47</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6eeb3fa3-d3ab-431e-906c-40689cb00d79slider1.jpg">
+      <publishTime>09/05/2023 00:37:17</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/6f405645-aeca-4e4a-9db8-fb5b223ac416parfum.jpg">
+      <publishTime>09/01/2023 17:55:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/71e26b85-6a94-42a0-81aa-89046ff554datester.jpg">
+      <publishTime>09/04/2023 18:05:06</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/73409499-c30f-4e03-b8a4-b77ffe82ae42si.jpg">
+      <publishTime>09/04/2023 18:00:42</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/76e1cdd6-1b71-4e22-9a1a-525f038c1026rafa.jpg">
+      <publishTime>08/20/2023 23:01:02</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/784f7b31-f29b-477a-857f-27c0d4bfdde2parfum.jpg">
+      <publishTime>09/01/2023 17:39:55</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/7b0daa96-62a2-45a8-a539-d40703ec8e93petr-sidorov-OB4EMZnzhkc-unsplash.jpg">
+      <publishTime>09/05/2023 15:47:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/7f73bde8-082e-46c1-8a10-7869c317bff0lc.jpg">
+      <publishTime>09/07/2023 09:28:31</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8077cf9b-1687-4eba-a32a-326864dce4b0lacoste.png">
+      <publishTime>09/02/2023 14:31:17</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/836bc2e6-05c3-42da-9fa4-a38d6754b10fck.png">
+      <publishTime>09/07/2023 09:23:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8376b077-e414-479e-bf50-d4fe193eed25parfum.jpg">
+      <publishTime>09/01/2023 14:53:40</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/84637932-c769-48b3-8a8d-2b63c818d3b1Location.svg">
+      <publishTime>09/01/2023 14:38:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/854d36d3-ebad-403d-ad5d-2cd49386d974parfume.jpg">
+      <publishTime>08/21/2023 15:11:06</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/874afd28-2789-40df-b716-c45df5b9476frevlon.jpg">
+      <publishTime>09/04/2023 09:10:51</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/87b7cac8-2f82-409a-a73d-502e7f4ddcdfphoto_2023-09-04_16-55-03.jpg">
+      <publishTime>09/04/2023 16:55:35</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8960ea9b-4a77-4fd1-aa06-504f51d7206fProductImage.jpg">
+      <publishTime>08/27/2023 17:27:33</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/898f66da-2fba-46dd-ac25-5151c3337dd8prada.png">
+      <publishTime>09/02/2023 14:31:48</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8b2bef64-036e-4d25-943f-784f9f526716hermes.jpeg">
+      <publishTime>09/04/2023 18:05:34</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8bc22165-e867-4858-a166-b81f84811e21chanel no5.jfif">
+      <publishTime>09/05/2023 00:07:41</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8bc33f19-86b8-4278-865f-20cb7834a396chanelcrop.gif">
+      <publishTime>09/04/2023 09:11:54</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8bd9e4d6-c7ff-4172-964d-6dacb09844b1Mask group %283%29.png">
+      <publishTime>09/07/2023 13:57:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8c1f47f3-54d7-4631-b40d-7cc77e05fdffimage 10 %281%29.png">
+      <publishTime>09/05/2023 00:04:29</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8cabb69a-38d9-4d85-85b8-b0be147f1465petr-sidorov-C_2Xg3TPiAY-unsplash.jpg">
+      <publishTime>09/05/2023 15:53:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8d5138c8-6ae8-4542-a390-c715397b49a7genclikmall.jfif">
+      <publishTime>09/06/2023 10:04:54</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8e1c2dff-be29-47ee-8f0c-7a8d56c772104bc389f5-19a6-45d8-adf8-de64dcdb40d4sayak-bala-jowBlJC165U-unsplash.jpg">
+      <publishTime>09/07/2023 10:23:20</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8ed3ddf1-4092-422b-9b09-86deba8936darafa.jpg">
+      <publishTime>08/18/2023 15:27:39</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8f1f82a0-0f91-4fe9-9d3e-26873cbb146eoo.jpg">
+      <publishTime>09/07/2023 10:07:01</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8fa86910-5357-4683-91ee-470bdfb6939flc.jpg">
+      <publishTime>09/05/2023 12:05:24</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/8fabc1ac-727c-4187-93ae-13c3c211b66eMask group %284%29.png">
+      <publishTime>09/07/2023 13:54:54</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/901a9afc-36c7-4487-8c17-aa0d4a947ab9aaa.jpg">
+      <publishTime>09/08/2023 09:56:20</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9041378b-1be8-4b24-ac1e-187eac616514mall.jpg">
+      <publishTime>09/06/2023 10:53:25</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/90f726dd-a665-40e1-920e-efeed820f44fslide1.jfif">
+      <publishTime>09/03/2023 15:14:09</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9231c966-8cbb-4ae3-a5db-0aff4ae0a3abboo.jfif">
+      <publishTime>09/05/2023 12:01:03</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/930c0651-87cc-49d0-99e4-ddc813b8fb1fhermes.png">
+      <publishTime>09/02/2023 14:31:58</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/931e0163-9027-4c01-bb13-830585a73a33genclikmall.jfif">
+      <publishTime>09/06/2023 10:07:40</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/94544588-7d18-4d7c-99b4-3ee1667592b0versace.webp">
+      <publishTime>09/04/2023 09:10:01</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/972e7207-b70d-4115-aa45-96f09042d1a2mall.jpg">
+      <publishTime>09/06/2023 10:53:25</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/99845cbd-f536-4673-99d0-0aa01b6d3a4frafa.jpg">
+      <publishTime>08/20/2023 23:01:24</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9997b86c-a8dd-4d26-85f7-d024abab14fbdolce.jpg">
+      <publishTime>09/02/2023 14:32:58</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9c029922-4e47-4d14-9c08-1c80eff37753Burger.svg">
+      <publishTime>08/20/2023 23:01:57</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9cd16eda-c531-4a8c-9bc5-219610d5a566dior.png">
+      <publishTime>09/02/2023 14:30:41</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9db11d8c-0861-4734-94b0-6fea8d04a3c1bambooo.jpg">
+      <publishTime>09/04/2023 18:15:47</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9eda3576-7d01-4137-9c84-7265077a1733Mask group %283%29.png">
+      <publishTime>09/07/2023 13:54:54</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9f38f696-638d-4ceb-9f86-faf118612062calvin.png">
+      <publishTime>09/04/2023 14:31:40</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/9f430272-68b7-4b72-bd27-cbb8913bd792parfume.jpg">
+      <publishTime>08/18/2023 12:11:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a22bc5a9-a84f-4889-849e-e4b2617fccf2mr.jfif">
+      <publishTime>09/05/2023 13:38:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a2325b66-793e-4544-9041-2b34bad3cf69x.jpg">
+      <publishTime>09/07/2023 09:25:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a31e21f3-8786-441f-8585-84fb5689b1b9slide1.jfif">
+      <publishTime>09/03/2023 15:15:52</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a36d3bc4-2209-4e9d-abbd-a92842fd18c3parfume.jpg">
+      <publishTime>08/18/2023 21:53:18</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a399e758-4aef-4ccf-8b80-279ccef8f80fasd.jpg">
+      <publishTime>09/05/2023 11:55:11</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a39c5bb2-6c33-43d6-857a-f51ab178f71bparfum.jpg">
+      <publishTime>09/01/2023 17:45:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a55ac31c-225d-415a-af8e-e6e706cfef8dhermes.jpeg">
+      <publishTime>09/05/2023 00:08:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a8875b29-0280-443a-a675-2e1e3f4b9baeparfum.jpg">
+      <publishTime>09/01/2023 15:00:10</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a8bdbdec-e7dc-40ad-b7fa-3d61313f2953Armani.png">
+      <publishTime>09/02/2023 14:33:41</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a9243f5a-5432-4af4-91e6-25df184f50fdMask group %282%29.png">
+      <publishTime>09/07/2023 13:56:48</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/a9e3f0a6-618c-41b7-9217-7651c63beec7rafa.jpg">
+      <publishTime>08/19/2023 13:27:27</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/ab8d875a-f711-4b9d-bcde-a696a39eec41petr-sidorov-C_2Xg3TPiAY-unsplash.jpg">
+      <publishTime>09/05/2023 15:49:07</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/About/about1.jpg">
+      <publishTime>08/08/2023 10:18:24</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/About/about2.jpg">
+      <publishTime>08/08/2023 10:18:34</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/About/about3.jpg">
+      <publishTime>08/08/2023 10:18:47</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/About/about4.jpg">
+      <publishTime>08/08/2023 10:18:03</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/About/Main.jpg">
+      <publishTime>08/08/2023 10:24:03</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/ac02c588-4b16-4c78-92ba-757bf7159944Mask group %2812%29.png">
+      <publishTime>09/04/2023 10:06:35</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/afee2f1b-35a4-4e3a-a3c2-ce1afd0ece79tutsu.jpg">
+      <publishTime>09/06/2023 10:54:51</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b0efcbac-d104-4001-ac71-d94ad18f2f5etutsu.jpg">
+      <publishTime>09/05/2023 15:11:22</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b0ff2289-782b-410f-8958-2d1e002bc30bboy.webp">
+      <publishTime>09/05/2023 12:00:08</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b2598a6a-4518-4f55-906f-f4fa3cb9c0b1victoriasecret.jpg">
+      <publishTime>09/07/2023 09:41:31</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b432d760-0493-40c3-b0a7-4f47c9369663miss.jpg">
+      <publishTime>09/05/2023 13:13:34</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b43a98e9-3f86-49e0-b811-36d2c3b67f28Location.svg">
+      <publishTime>08/20/2023 12:56:06</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b5459a05-1177-4c92-a3b8-4ebd42cadc4eArmani.png">
+      <publishTime>09/04/2023 14:31:47</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b547dc90-1e74-45a8-ba6f-361f014aded8adidas.jpg">
+      <publishTime>09/05/2023 13:05:25</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b58d3cfe-5e28-4e84-86a1-fc7cc58d0cf6iPhone.svg">
+      <publishTime>08/20/2023 12:56:06</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b5939611-1068-4982-9135-186a8b051d36parfum.jpg">
+      <publishTime>09/01/2023 17:54:52</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b59e85be-4b29-473a-a42d-b87645bdc25aparfum.jpg">
+      <publishTime>09/01/2023 21:13:52</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b5c240da-fc40-4745-aa48-e7602d902a27Mask group.png">
+      <publishTime>09/04/2023 10:06:16</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b67b8cfd-080c-4782-9c70-a9b4a81906b3ch.png">
+      <publishTime>09/07/2023 09:26:22</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b73d2b56-fb47-43ec-8906-ba56edb4b196Rectangle 53.svg">
+      <publishTime>09/04/2023 09:34:10</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b8741de8-6e45-49d8-bbf0-0c22b5a91cf9chance.jpg">
+      <publishTime>09/05/2023 00:14:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/b8d78074-d2c6-4812-9b47-78b751fc9fd6gencemall.jpg">
+      <publishTime>09/06/2023 10:01:19</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/ba5edb8d-f6a8-40de-9631-4db0c5574a4aeup.jpg">
+      <publishTime>09/05/2023 11:53:11</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/bbd7c406-222d-453c-a466-72bac00abcc8ver.webp">
+      <publishTime>09/07/2023 09:31:49</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/bc45e7c5-3fc8-4288-936c-36fc18251aebhermes.png">
+      <publishTime>09/04/2023 14:30:55</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/bcbdb8b3-a5ff-42cb-a153-2a5566561151dior.png">
+      <publishTime>09/04/2023 09:10:14</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/bef5aff0-1174-4594-9af8-daeecf1d41bdmyway.webp">
+      <publishTime>09/05/2023 13:31:11</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/bf2d37e6-7b30-46df-8942-dae624fbeecbparfum.jpg">
+      <publishTime>09/01/2023 14:59:41</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/bff82484-ade5-4a3a-98b9-673cd049bb7eSidebar.svg">
+      <publishTime>09/01/2023 14:47:28</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c0871429-1577-4087-afdb-6aead063dcfdrevlon.jpg">
+      <publishTime>09/02/2023 14:31:37</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c0b67b84-cc45-4638-9073-4a7aed06cbafSearch.svg">
+      <publishTime>08/20/2023 23:01:57</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c0f17730-b3de-4559-b5cc-62a0b29f4feeLogo.svg">
+      <publishTime>08/20/2023 17:22:01</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c3b7af68-497e-49d8-8958-f41334aba45cad.jpg">
+      <publishTime>09/05/2023 13:10:50</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c58a6489-98e0-4bb1-ad08-97b407dbf0f9Mask group.png">
+      <publishTime>09/04/2023 10:05:30</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c73fb193-d1aa-4e5a-9e50-2224135c8516Logo.svg">
+      <publishTime>08/20/2023 23:01:57</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c7cd211c-94bc-42fc-863f-fde357b7a03cimage 10.png">
+      <publishTime>09/04/2023 17:47:57</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c8864451-d157-4988-8205-8ef4359afd25rafa.jpg">
+      <publishTime>08/17/2023 18:28:46</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/c92eec01-99fb-48dd-a9a0-6588e45f89e9terre.webp">
+      <publishTime>09/05/2023 13:41:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/cad8606d-2dd2-45bc-80e1-f3a26c4f26d7e.jpg">
+      <publishTime>09/05/2023 11:54:01</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/cb3012c6-b317-4f5f-8046-945434222b77tutsu2.jpg">
+      <publishTime>09/06/2023 10:55:06</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/cd7042e0-e96c-4b41-85e0-5c7f8dc21a4echerry.jpg">
+      <publishTime>09/05/2023 13:25:07</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/cdf13cb0-15b7-4b05-bda2-5222edc702faprada.png">
+      <publishTime>09/04/2023 14:30:39</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/ce8ec759-7d8d-4d58-b882-a5cede97ec3cprada.jpg">
+      <publishTime>09/05/2023 11:45:09</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d0391095-caff-4748-b494-e359d4efbd37gucci.jpg">
+      <publishTime>09/04/2023 14:31:06</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d04dd59f-fb8a-401a-b9ec-c58c385826a3sayak-bala-jowBlJC165U-unsplash.jpg">
+      <publishTime>09/05/2023 15:52:09</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d482088b-ee8e-407f-9bd0-c0ada81e9466hermes.png">
+      <publishTime>09/04/2023 09:11:10</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d520d9a6-51c4-4d14-b8d2-e207adf8e3baaaa.jpg">
+      <publishTime>09/07/2023 10:20:05</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d5a8d5f8-f57e-452d-a429-5db6350d36c6ekaterina-grosheva-U5MlaeCcy70-unsplash.jpg">
+      <publishTime>09/04/2023 09:12:32</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d5f2ed00-79f3-4349-b15e-6bbcc36eefe5lacoste.png">
+      <publishTime>09/04/2023 09:10:36</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d89dd100-7917-4626-97c0-bf0a11aa6cf0sayak-bala-jowBlJC165U-unsplash.jpg">
+      <publishTime>09/05/2023 15:53:37</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d92799f0-e6db-47ca-8f9f-9d1f00433a7ctom.jpg">
+      <publishTime>09/02/2023 14:31:27</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d9341ebb-fa8f-4f6d-8d44-f01917b06657tom.jpg">
+      <publishTime>09/04/2023 14:30:21</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/d971f5ea-a176-4937-9e1a-2455f83a0e6dchanel no5.jfif">
+      <publishTime>09/03/2023 15:29:25</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/da346b67-8827-4a91-9b0b-7815f8db2064Mask group %281%29.png">
+      <publishTime>09/04/2023 10:05:51</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/dac06c13-10fb-4114-a0bd-724d8a63312ecalvin.png">
+      <publishTime>09/02/2023 14:33:32</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/dc28b55e-4fe8-4f43-8f1e-4aed1885dc1fad.jpg">
+      <publishTime>09/07/2023 09:38:07</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/dc9624c1-1d78-4eeb-96b3-5ac4538dbea0Screenshot %282%29.png">
+      <publishTime>08/20/2023 23:52:29</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/e00fd918-ddab-485d-8ef1-90cbe197a232ekaterina-grosheva-U5MlaeCcy70-unsplash.jpg">
+      <publishTime>09/03/2023 15:32:03</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/e1419eb3-924d-4953-9f77-c24d2a89e0ddgivency.png">
+      <publishTime>09/04/2023 14:31:15</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/e1f8d59c-382e-4ca9-9343-53b9dcabe813rafa.jpg">
+      <publishTime>08/21/2023 14:50:56</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/e3c82e68-f6a9-42bd-b4a8-0b5eb424ba07calvin.png">
+      <publishTime>09/03/2023 15:25:14</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/e4f553c8-7e2b-4072-bec8-0c607e49a2e7all.webp">
+      <publishTime>09/05/2023 16:11:36</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/e4fb761f-0dbc-4c7d-87d7-970b7c180212irresistible.jpg">
+      <publishTime>09/04/2023 18:20:31</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/e74240af-a95d-43d2-9f7a-50d448603a16ll.webp">
+      <publishTime>09/05/2023 13:20:04</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/f59f0a0f-cfb4-4c6e-8515-e8f562a7a562er.jpg">
+      <publishTime>09/05/2023 11:54:27</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/f5d9d35c-e3b6-4dcd-8a21-9bdb71c7d604Rectangle 30.png">
+      <publishTime>09/04/2023 17:23:18</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/f6b51a48-7d69-46cb-96be-59385fae1a61istockphoto-1440783914-1024x1024.jpg">
+      <publishTime>09/05/2023 15:52:50</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/f707ed98-424f-4970-93d4-b40d21dce254parfum.jpg">
+      <publishTime>09/01/2023 14:57:31</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/f75a6a16-383d-49c9-992f-ba1f16077af7Mask group %282%29.png">
+      <publishTime>09/07/2023 13:54:54</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/f8267448-bf11-4949-9e36-e0e2dd33e7bbbur.png">
+      <publishTime>09/05/2023 13:38:50</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/f9937ffd-c59f-4d81-b326-2f5598d0ac3epetr-sidorov-OB4EMZnzhkc-unsplash.jpg">
+      <publishTime>09/05/2023 15:53:15</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/f9ea3ff0-bd82-40fd-80b9-68c1e4606bb3Mask group %281%29.png">
+      <publishTime>09/07/2023 13:54:54</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/fed88439-5e09-4f90-937e-183abd2547f3Rectangle 30.png">
+      <publishTime>09/07/2023 10:21:49</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/GiftBox/box1.jpg">
+      <publishTime>08/10/2023 12:26:53</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/GiftBox/box2.jpg">
+      <publishTime>08/10/2023 12:26:59</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/GiftBox/box3.jpg">
+      <publishTime>08/10/2023 12:26:48</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/GiftBox/Giftbox.jpg">
+      <publishTime>08/07/2023 09:26:59</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/GiftBox/header1.jpg">
+      <publishTime>08/10/2023 12:26:36</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/GiftBox/header2.jpg">
+      <publishTime>08/10/2023 12:26:42</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/NewProduct/all.webp">
+      <publishTime>09/05/2023 16:11:20</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/NewProduct/ProductImage.jpg">
+      <publishTime>08/05/2023 16:44:08</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/images/NotFound/pana.jpg">
+      <publishTime>08/10/2023 08:21:27</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/js/detailp.js">
+      <publishTime>08/28/2023 19:11:36</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/js/detailt.js">
+      <publishTime>08/28/2023 19:13:12</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/js/dist/browser/signalr.js">
+      <publishTime>09/11/2023 11:06:42</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/js/dist/browser/signalr.min.js">
+      <publishTime>09/11/2023 11:06:42</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/js/index.js">
+      <publishTime>08/24/2023 17:49:25</publishTime>
+    </File>
+    <File Include="Parfume.App/wwwroot/assets/js/indexp.js">
+      <publishTime>08/28/2023 12:02:25</publishTime>
+    </File>
+    <File Include="Parfume.Core.dll">
+      <publishTime>09/12/2023 22:59:42</publishTime>
+    </File>
+    <File Include="Parfume.Core.pdb">
+      <publishTime>09/12/2023 22:59:42</publishTime>
+    </File>
+    <File Include="Parfume.Data.dll">
+      <publishTime>09/12/2023 22:59:46</publishTime>
+    </File>
+    <File Include="Parfume.Data.pdb">
+      <publishTime>09/12/2023 22:59:46</publishTime>
+    </File>
+    <File Include="Parfume.Service.dll">
+      <publishTime>09/12/2023 22:59:47</publishTime>
+    </File>
+    <File Include="Parfume.Service.pdb">
+      <publishTime>09/12/2023 22:59:47</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll">
+      <publishTime>11/15/2019 12:56:36</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 03:59:34</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 22:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 22:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/WebView2Loader.dll">
+      <publishTime>06/29/2022 02:03:10</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 22:13:38</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/WebView2Loader.dll">
+      <publishTime>06/29/2022 02:02:22</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 22:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/WebView2Loader.dll">
+      <publishTime>06/29/2022 02:03:22</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll">
+      <publishTime>11/15/2019 12:54:18</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll">
+      <publishTime>11/15/2019 12:54:20</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll">
+      <publishTime>11/15/2019 12:54:30</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 03:59:34</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 12:53:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 12:53:46</publishTime>
+    </File>
+    <File Include="Serilog.AspNetCore.dll">
+      <publishTime>07/15/2022 03:18:26</publishTime>
+    </File>
+    <File Include="Serilog.dll">
+      <publishTime>09/10/2020 06:20:18</publishTime>
+    </File>
+    <File Include="Serilog.Extensions.Hosting.dll">
+      <publishTime>07/09/2022 02:26:24</publishTime>
+    </File>
+    <File Include="Serilog.Extensions.Logging.dll">
+      <publishTime>11/02/2021 01:38:50</publishTime>
+    </File>
+    <File Include="Serilog.Formatting.Compact.dll">
+      <publishTime>10/17/2019 09:18:46</publishTime>
+    </File>
+    <File Include="Serilog.Settings.Configuration.dll">
+      <publishTime>10/07/2021 12:46:44</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.Console.dll">
+      <publishTime>11/19/2021 04:04:50</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.Debug.dll">
+      <publishTime>02/14/2021 11:47:26</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.File.dll">
+      <publishTime>06/25/2021 12:00:48</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/15/2019 12:37:04</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>02/16/2023 04:32:04</publishTime>
+    </File>
+    <File Include="System.Drawing.Common.dll">
+      <publishTime>09/18/2018 23:38:14</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>10/13/2020 04:20:12</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 12:37:36</publishTime>
+    </File>
+    <File Include="System.Runtime.InteropServices.WindowsRuntime.dll">
+      <publishTime>11/05/2016 08:56:52</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 12:37:42</publishTime>
+    </File>
+    <File Include="System.Security.Permissions.dll">
+      <publishTime>11/15/2019 12:56:44</publishTime>
+    </File>
+    <File Include="System.Windows.Extensions.dll">
+      <publishTime>11/15/2019 12:56:52</publishTime>
+    </File>
+    <File Include="Uno.Diagnostics.Eventing.dll">
+      <publishTime>11/25/2021 07:50:14</publishTime>
+    </File>
+    <File Include="Uno.dll">
+      <publishTime>07/26/2023 07:41:00</publishTime>
+    </File>
+    <File Include="Uno.Fonts.Fluent.dll">
+      <publishTime>05/08/2023 22:02:54</publishTime>
+    </File>
+    <File Include="Uno.Foundation.dll">
+      <publishTime>07/26/2023 07:41:02</publishTime>
+    </File>
+    <File Include="Uno.Foundation.Logging.dll">
+      <publishTime>07/26/2023 07:40:38</publishTime>
+    </File>
+    <File Include="Uno.UI.Composition.dll">
+      <publishTime>07/26/2023 07:40:58</publishTime>
+    </File>
+    <File Include="Uno.UI.Dispatching.dll">
+      <publishTime>07/26/2023 07:40:58</publishTime>
+    </File>
+    <File Include="Uno.UI.dll">
+      <publishTime>07/26/2023 07:40:58</publishTime>
+    </File>
+    <File Include="Uno.UI.FluentTheme.dll">
+      <publishTime>07/26/2023 07:41:00</publishTime>
+    </File>
+    <File Include="Uno.UI.FluentTheme.v1.dll">
+      <publishTime>07/26/2023 07:41:00</publishTime>
+    </File>
+    <File Include="Uno.UI.FluentTheme.v2.dll">
+      <publishTime>07/26/2023 07:41:00</publishTime>
+    </File>
+    <File Include="Uno.UI.Toolkit.dll">
+      <publishTime>07/26/2023 07:41:02</publishTime>
+    </File>
+    <File Include="Uno.Xaml.dll">
+      <publishTime>07/26/2023 07:41:02</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>09/12/2023 23:02:52</publishTime>
+    </File>
+    <File Include="wwwroot/assets/css/style.css">
+      <publishTime>09/12/2023 16:56:14</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/about/Box.svg">
+      <publishTime>08/09/2023 09:28:34</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/about/CreditCard.svg">
+      <publishTime>08/09/2023 09:28:48</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/about/Gift.svg">
+      <publishTime>08/09/2023 09:29:10</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/about/Layers.svg">
+      <publishTime>08/09/2023 09:29:19</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/button/buttonsvg.svg">
+      <publishTime>08/05/2023 14:35:49</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/comment/comment.svg">
+      <publishTime>08/07/2023 12:13:40</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/contact/Call.svg">
+      <publishTime>08/09/2023 13:41:09</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/contact/iPhone.svg">
+      <publishTime>08/09/2023 13:41:00</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/contact/Location.svg">
+      <publishTime>08/09/2023 13:41:15</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/css/style.css">
+      <publishTime>08/21/2023 17:31:24</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/detail/dislike.svg">
+      <publishTime>08/10/2023 17:55:56</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/detail/like.svg">
+      <publishTime>08/11/2023 11:12:23</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/detail/Star.svg">
+      <publishTime>08/10/2023 17:57:01</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/detail/Vector.svg">
+      <publishTime>08/10/2023 17:55:33</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/footer/facebook.svg">
+      <publishTime>08/05/2023 12:43:44</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/footer/instagram.svg">
+      <publishTime>08/05/2023 12:42:07</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/footer/twitter.svg">
+      <publishTime>08/05/2023 12:43:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/footer/youtube.svg">
+      <publishTime>08/05/2023 12:43:11</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/functions/delivery.svg">
+      <publishTime>08/07/2023 13:21:32</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/functions/Mask group.svg">
+      <publishTime>08/07/2023 13:31:51</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/header/Burger.svg">
+      <publishTime>08/04/2023 10:11:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/header/Cart.svg">
+      <publishTime>08/04/2023 10:17:26</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/header/Heart.svg">
+      <publishTime>08/04/2023 10:16:54</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/header/Logo.svg">
+      <publishTime>08/04/2023 10:20:18</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/header/Search.svg">
+      <publishTime>08/04/2023 10:16:44</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/header/Sidebar.svg">
+      <publishTime>08/11/2023 14:50:20</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/header/User.svg">
+      <publishTime>08/04/2023 10:17:04</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/NewProduct/star.svg">
+      <publishTime>08/05/2023 16:57:56</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/order/Credit card.svg">
+      <publishTime>08/10/2023 10:21:53</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/order/shop.svg">
+      <publishTime>08/10/2023 10:06:11</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/order/Wallet.svg">
+      <publishTime>08/10/2023 10:22:00</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/register/Lock.svg">
+      <publishTime>08/04/2023 11:00:50</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/register/Mail.svg">
+      <publishTime>08/04/2023 11:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/register/User.svg">
+      <publishTime>08/07/2023 16:56:15</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/tester/rubish.svg">
+      <publishTime>08/09/2023 11:10:41</publishTime>
+    </File>
+    <File Include="wwwroot/assets/icons/tester/Search.svg">
+      <publishTime>08/09/2023 11:03:37</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/01c62a60-1c5d-4683-afd8-274393753c7aBurger.svg">
+      <publishTime>09/01/2023 14:47:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/02c4f3ae-27c6-4bcb-8e83-5a91c4b92f3atutsuu.jpg">
+      <publishTime>09/05/2023 15:14:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/03283e8c-6439-40dd-b06b-b6eef73c6860lc.jpg">
+      <publishTime>09/07/2023 09:24:47</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/055c846f-8111-4fba-804e-087b8acffd4dparfume.jpg">
+      <publishTime>08/20/2023 12:50:20</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/055f4e7e-09a2-48ea-b59e-7309fc59dad4Group.svg">
+      <publishTime>09/04/2023 09:34:25</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0588c363-59aa-42df-9fe4-4faf95a3411cMask group.png">
+      <publishTime>09/05/2023 15:16:21</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/088036e3-7fc9-4acd-8f1e-43678c663e83victoriasecret.jpg">
+      <publishTime>09/02/2023 14:30:59</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/09ad3e44-35da-4001-a853-4a06a386db30ProductImage.jpg">
+      <publishTime>08/21/2023 16:20:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/09fbab27-2c97-4ae2-8b25-29abf35d9487slider.jpg">
+      <publishTime>09/03/2023 16:09:22</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0a6d13b6-f85a-41db-a3d8-6b71983961efgivency.png">
+      <publishTime>09/02/2023 14:32:27</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0bb329ee-c81a-449a-9da6-b1c83f751b2fversace.webp">
+      <publishTime>09/02/2023 14:30:29</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0be6816d-8738-473c-a9e1-afb5fbd131f8Burger.svg">
+      <publishTime>08/20/2023 17:18:51</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0bebcac2-8b0a-4b90-98a1-7086578848d7image 10 %284%29.png">
+      <publishTime>09/04/2023 17:56:09</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0e49a24a-52a3-463e-b0c0-e1e4174a57a8ProductImage.jpg">
+      <publishTime>08/30/2023 20:43:02</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0e7fb6ed-227a-4e2c-b042-6ad4b88dcaccgucci.jpg">
+      <publishTime>09/02/2023 14:32:08</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0f02da75-b27e-4e34-8127-6bc6fdab327fvss.jpg">
+      <publishTime>09/07/2023 09:40:32</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0f168d71-95b1-427c-8b25-41b4a6aa84d1Call.svg">
+      <publishTime>08/20/2023 12:56:06</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/0f75751c-37d8-4e72-b469-e1b65534c985lac.jpg">
+      <publishTime>09/04/2023 18:31:33</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/110ffda7-d118-4d5f-b8fa-897b01909f80laura-chouette-gbT2KAq1V5c-unsplash.jpg">
+      <publishTime>09/03/2023 15:08:55</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/12ec3eaf-7855-4095-97e5-0cfc400142fbProductImage.jpg">
+      <publishTime>08/29/2023 15:54:42</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/13e27cc0-0cb0-4a22-9ce1-5252a9d8452fLogo.svg">
+      <publishTime>09/01/2023 14:47:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/15371e52-7a02-4607-804b-edc2bdcb708228mall.jpg">
+      <publishTime>09/06/2023 10:06:35</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/171562ef-f127-41d8-a62e-20b84301f92bparfum.jpg">
+      <publishTime>09/01/2023 17:04:11</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/17e81890-01c4-4813-8960-8891d0c12f4bversace.webp">
+      <publishTime>09/04/2023 14:29:49</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/191270f3-aa5f-42d2-aec5-32436b44104fdelivery.svg">
+      <publishTime>09/03/2023 15:43:19</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/1a3ab744-032f-4617-ba11-64b0448b132eMask group %282%29.svg">
+      <publishTime>09/04/2023 09:34:46</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/1b2a0b15-fea9-41ef-a0d8-2bc72d80346aRectangle 35.png">
+      <publishTime>09/04/2023 09:23:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/1c844229-2e50-469f-bcce-bfb59d3d3a5diPhone.svg">
+      <publishTime>08/19/2023 23:04:03</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/1ca2cbf0-d8c7-4fd1-bbb2-751e20ea2ea2iPhone.svg">
+      <publishTime>09/01/2023 14:38:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/1d6e838f-ecd3-4388-939c-70bc21d5fe48Logo.svg">
+      <publishTime>08/20/2023 17:18:51</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/1e540ba7-699d-4cc1-ae87-dcb3e339f2bdMask group.png">
+      <publishTime>09/07/2023 10:20:25</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/1f193864-a86f-4843-8612-fb08f48dbccetom.jpg">
+      <publishTime>09/04/2023 09:10:43</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/212ecef6-3e63-4958-b183-15f1ead9fe5bsl.avif">
+      <publishTime>09/07/2023 10:06:12</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/218c163e-5488-41ad-a437-1f61f722c793rafa.jpg">
+      <publishTime>08/20/2023 23:52:29</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/23547688-a621-433c-845a-47e5ec8857fbrose.png">
+      <publishTime>09/05/2023 13:19:01</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/24fbef10-58c9-4d00-9438-95cb52364c3evictoriasecret.jpg">
+      <publishTime>09/04/2023 14:30:06</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/252a2ef4-88e1-4332-a80c-b37dd8d2a0a6ProductImage.jpg">
+      <publishTime>08/29/2023 15:55:57</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/2531ce48-c4db-4398-b837-0c8e4bdd8deeImage1.jpg">
+      <publishTime>09/03/2023 16:00:57</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/25c7b202-804b-4b51-9a07-6d8af6cd00deProductImage.jpg">
+      <publishTime>08/21/2023 16:20:37</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/2651f57d-e6ec-4a98-9bb6-59e501422e42gucci.jpg">
+      <publishTime>09/04/2023 09:11:19</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/26d628bc-e15b-4e57-a0ac-0570bdfd9707haithem-ferdi-iqwe9Y76UmU-unsplash.jpg">
+      <publishTime>09/05/2023 15:52:37</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/27a08d9b-adf2-45c7-9c0e-ac5c32158418Armani.png">
+      <publishTime>09/04/2023 09:12:14</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/27b5fb88-1e90-4c68-8035-012405914996dolce.jpg">
+      <publishTime>09/04/2023 09:11:41</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/2c127c5b-0c1e-45a1-bd98-bc2b064c1feddr.jpg">
+      <publishTime>09/07/2023 09:21:35</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/2ca7d5c1-8cfa-477e-b939-94a66f0569d2Rectangle.png">
+      <publishTime>09/04/2023 10:38:15</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/2cf41219-f621-4f74-ae3c-b2d77a75ddb5od.jpg">
+      <publishTime>09/07/2023 10:18:17</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/2d78b6b3-600b-47ac-bef8-6da430a1a18aRectangle 35 %285%29.png">
+      <publishTime>09/05/2023 00:05:07</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/3067c6d5-98e7-4928-8c12-7d17712d803fcroppp.jpg">
+      <publishTime>09/07/2023 09:29:37</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/30c66b5c-3c25-4826-82b1-207a26a25b53Giftbox.jpg">
+      <publishTime>09/04/2023 09:17:44</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/317f219f-4894-4745-ac23-0d9f97894a8dgivency.png">
+      <publishTime>09/04/2023 09:11:31</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/31a28683-820b-4752-a766-e15b5f865438laura-chouette-z52_r1crahU-unsplash.jpg">
+      <publishTime>09/03/2023 15:16:14</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/31b3f79d-cce7-4980-9726-17a5d1b58fe9calwomen.jpg">
+      <publishTime>09/04/2023 18:09:31</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/33ef2c71-5b7c-402d-91d3-3da81e1074dejan-de-keijzer-gSKQnv55TGA-unsplash.jpg">
+      <publishTime>09/07/2023 10:11:47</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/360dc8e3-ccf7-4ee4-a61e-19385414d386parfume.jpg">
+      <publishTime>08/19/2023 13:29:29</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/360dce25-7caf-4202-8249-b4ccca63cd84Mask group %283%29.png">
+      <publishTime>09/07/2023 13:56:35</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/3781e1f1-fac7-4815-b9c3-caaaef6cadc6prd.jpg">
+      <publishTime>09/07/2023 09:33:38</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/37e908e0-89a0-4081-9ddf-a2ff53d1d7e9a.jpg">
+      <publishTime>09/07/2023 09:24:13</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/39b02092-aeca-48cf-8932-32fe8bc955aach.jpg">
+      <publishTime>09/05/2023 12:04:35</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/3b134dd2-d646-424f-9473-e9b823d13bbbCart.svg">
+      <publishTime>08/20/2023 17:18:51</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/3e8ef973-ad2f-4752-b478-ec0aceb83364tutsu2.jpg">
+      <publishTime>09/05/2023 15:12:55</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/41c10744-5598-4b64-a370-9e32b1b3e728gv.webp">
+      <publishTime>09/07/2023 09:22:29</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/4218f08b-7968-42a7-a529-49f8c8988971rafa.jpg">
+      <publishTime>08/20/2023 12:41:39</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/4242e92b-fcef-4a51-9079-776e9005da73sl2.avif">
+      <publishTime>09/07/2023 10:16:58</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/42650739-0b4e-479a-a902-56a368d9994fCall.svg">
+      <publishTime>09/01/2023 14:38:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/453cb703-5036-40e4-84bb-16236ef6bf09sl.jpg">
+      <publishTime>09/05/2023 00:37:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/45d4ea7a-6a1e-4aed-b606-fc6cd162492fparfum.jpg">
+      <publishTime>09/01/2023 17:09:23</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/46d83fa8-2178-4ea5-8629-c1c9e6fbd794ol.webp">
+      <publishTime>09/05/2023 12:06:21</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/47d04bb6-42b5-4948-b15f-530116b718c5est.webp">
+      <publishTime>09/05/2023 16:10:25</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/4830e403-16e1-4c79-90c3-c70ea4378ddddior.png">
+      <publishTime>09/05/2023 00:06:35</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/48d9e9e4-4d47-4cbb-9a75-7c49b66e02e0istinyee.jpg">
+      <publishTime>09/06/2023 10:16:04</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/4a95fa58-8420-498a-b343-5ffc74291aa1Mask group %281%29.svg">
+      <publishTime>09/04/2023 09:34:19</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/4bc389f5-19a6-45d8-adf8-de64dcdb40d4sayak-bala-jowBlJC165U-unsplash.jpg">
+      <publishTime>09/05/2023 15:47:37</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5095f2d1-4040-4461-b2bc-c78802d21b84dior.png">
+      <publishTime>09/04/2023 14:30:00</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/51612765-8c0c-44c5-bef6-2610f461e134Mask group %283%29.png">
+      <publishTime>09/04/2023 09:32:39</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/517e25ca-12cb-452d-a79c-4a263084555bScreenshot %281%29.png">
+      <publishTime>08/18/2023 15:28:08</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/51a3fd67-0fca-4365-aee7-79f11530904esmokkee.jpg">
+      <publishTime>09/05/2023 00:37:24</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/52d8d66e-8592-4319-bd8a-ae3cd5483102photo_2023-09-04_16-55-00.jpg">
+      <publishTime>09/04/2023 16:55:44</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/533e4290-fc92-4368-90eb-0c9f1b2cb699calvin.png">
+      <publishTime>09/04/2023 14:31:55</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/56330af1-6ddb-44c1-9bbc-ce042e316d64bakumall.jpg">
+      <publishTime>09/06/2023 10:10:29</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/577859e2-7f00-4c8e-8f11-0f992583fa99parfum.jpg">
+      <publishTime>09/01/2023 17:07:33</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/58a43063-0f58-49a3-83ef-f119a9ecd27echanelcrop.gif">
+      <publishTime>09/02/2023 14:33:09</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5964e831-6211-44fa-af9a-033652123ec1rafa.jpg">
+      <publishTime>08/18/2023 15:28:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/596db98f-f526-4952-8122-d01cbbb76fd7denizmall.jpg">
+      <publishTime>09/06/2023 10:08:35</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5acbabd3-ea18-4b51-9a10-deee3ef96776parfum.jpg">
+      <publishTime>09/01/2023 21:10:47</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5bfcf12d-4da6-45cd-b571-0d75a48de100bomshell.png">
+      <publishTime>09/05/2023 13:17:03</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5c0eddc2-a4a2-4105-bfe3-62301e45005cpetr-sidorov-OB4EMZnzhkc-unsplash.jpg">
+      <publishTime>09/05/2023 15:53:47</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5c6aad19-a082-4f6d-8233-aa27e09c19b6tutsu2.jpg">
+      <publishTime>09/05/2023 18:49:41</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5e366df8-c6b0-47e4-99e1-eae12af6b2ffMask group %2810%29.png">
+      <publishTime>09/04/2023 10:06:49</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5f3b80bc-a45d-4988-bf41-d4fc68469398guccipr.jpg">
+      <publishTime>09/04/2023 18:33:44</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5f643e62-ee17-4bd8-9fa8-1309991b4c9eyou.webp">
+      <publishTime>09/05/2023 13:28:45</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/5fc52261-9a4b-407c-9ea2-9c36313b5539parfum.jpg">
+      <publishTime>09/01/2023 17:04:53</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/61604d08-4f55-4443-8101-b5079e13059brevlon.jpg">
+      <publishTime>09/04/2023 14:30:33</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/62fa4820-0960-4afd-95dd-5140b6a2cbe7Mask group %2811%29.png">
+      <publishTime>09/04/2023 10:07:07</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/633ffea8-e01d-4842-acfe-cdcde5542052victoriasecret.jpg">
+      <publishTime>09/04/2023 09:10:21</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/64e32aad-7dc8-4c88-901f-77a8942e9d49dolce.jpg">
+      <publishTime>09/04/2023 14:31:22</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/64f5f09a-ed6d-4d9e-b964-635b95125af4Rectangle 33 %282%29.png">
+      <publishTime>09/04/2023 11:08:24</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/67c35ac2-2603-4add-bba6-63c562345d5fchanelcrop.gif">
+      <publishTime>09/04/2023 14:31:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/68184516-5aa4-4900-a574-dda2759cb984prada.png">
+      <publishTime>09/04/2023 09:10:58</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6837b050-0fc0-4dec-b6a4-51499c8481fdcalvin.png">
+      <publishTime>09/04/2023 09:12:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/690ca5c6-75f2-4978-9e46-ed6f8cd27c64Rectangle 35 %285%29.png">
+      <publishTime>09/04/2023 11:08:24</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6c29073b-542e-45a4-b129-1212ac5a51daparfum.jpg">
+      <publishTime>09/01/2023 14:53:40</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6cd37223-551a-4765-8eb2-d7dd47d3c386ProductImage.jpg">
+      <publishTime>08/23/2023 15:51:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6d5ca4e4-6101-4b76-abe4-0dc4b850b014laura-chouette-z52_r1crahU-unsplash.jpg">
+      <publishTime>09/03/2023 15:05:59</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6de1d5ac-6417-4031-a8a1-524738b33d54lacoste.png">
+      <publishTime>09/04/2023 14:30:15</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6de3d037-0251-4e28-9a34-0e7054f0dc3cparfum.jpg">
+      <publishTime>09/01/2023 14:57:31</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6ea92afa-fd13-4206-93e6-95d0db5d2676denis-oliveira-_12PwFpWZZ0-unsplash.jpg">
+      <publishTime>09/05/2023 15:51:47</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6eeb3fa3-d3ab-431e-906c-40689cb00d79slider1.jpg">
+      <publishTime>09/05/2023 00:37:17</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/6f405645-aeca-4e4a-9db8-fb5b223ac416parfum.jpg">
+      <publishTime>09/01/2023 17:55:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/71e26b85-6a94-42a0-81aa-89046ff554datester.jpg">
+      <publishTime>09/04/2023 18:05:06</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/73409499-c30f-4e03-b8a4-b77ffe82ae42si.jpg">
+      <publishTime>09/04/2023 18:00:42</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/76e1cdd6-1b71-4e22-9a1a-525f038c1026rafa.jpg">
+      <publishTime>08/20/2023 23:01:02</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/784f7b31-f29b-477a-857f-27c0d4bfdde2parfum.jpg">
+      <publishTime>09/01/2023 17:39:55</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/7b0daa96-62a2-45a8-a539-d40703ec8e93petr-sidorov-OB4EMZnzhkc-unsplash.jpg">
+      <publishTime>09/05/2023 15:47:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/7f73bde8-082e-46c1-8a10-7869c317bff0lc.jpg">
+      <publishTime>09/07/2023 09:28:31</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8077cf9b-1687-4eba-a32a-326864dce4b0lacoste.png">
+      <publishTime>09/02/2023 14:31:17</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/836bc2e6-05c3-42da-9fa4-a38d6754b10fck.png">
+      <publishTime>09/07/2023 09:23:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8376b077-e414-479e-bf50-d4fe193eed25parfum.jpg">
+      <publishTime>09/01/2023 14:53:40</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/84637932-c769-48b3-8a8d-2b63c818d3b1Location.svg">
+      <publishTime>09/01/2023 14:38:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/854d36d3-ebad-403d-ad5d-2cd49386d974parfume.jpg">
+      <publishTime>08/21/2023 15:11:06</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/874afd28-2789-40df-b716-c45df5b9476frevlon.jpg">
+      <publishTime>09/04/2023 09:10:51</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/87b7cac8-2f82-409a-a73d-502e7f4ddcdfphoto_2023-09-04_16-55-03.jpg">
+      <publishTime>09/04/2023 16:55:35</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8960ea9b-4a77-4fd1-aa06-504f51d7206fProductImage.jpg">
+      <publishTime>08/27/2023 17:27:33</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/898f66da-2fba-46dd-ac25-5151c3337dd8prada.png">
+      <publishTime>09/02/2023 14:31:48</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8b2bef64-036e-4d25-943f-784f9f526716hermes.jpeg">
+      <publishTime>09/04/2023 18:05:34</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8bc22165-e867-4858-a166-b81f84811e21chanel no5.jfif">
+      <publishTime>09/05/2023 00:07:41</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8bc33f19-86b8-4278-865f-20cb7834a396chanelcrop.gif">
+      <publishTime>09/04/2023 09:11:54</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8bd9e4d6-c7ff-4172-964d-6dacb09844b1Mask group %283%29.png">
+      <publishTime>09/07/2023 13:57:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8c1f47f3-54d7-4631-b40d-7cc77e05fdffimage 10 %281%29.png">
+      <publishTime>09/05/2023 00:04:29</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8cabb69a-38d9-4d85-85b8-b0be147f1465petr-sidorov-C_2Xg3TPiAY-unsplash.jpg">
+      <publishTime>09/05/2023 15:53:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8d5138c8-6ae8-4542-a390-c715397b49a7genclikmall.jfif">
+      <publishTime>09/06/2023 10:04:54</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8e1c2dff-be29-47ee-8f0c-7a8d56c772104bc389f5-19a6-45d8-adf8-de64dcdb40d4sayak-bala-jowBlJC165U-unsplash.jpg">
+      <publishTime>09/07/2023 10:23:20</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8ed3ddf1-4092-422b-9b09-86deba8936darafa.jpg">
+      <publishTime>08/18/2023 15:27:39</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8f1f82a0-0f91-4fe9-9d3e-26873cbb146eoo.jpg">
+      <publishTime>09/07/2023 10:07:01</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8fa86910-5357-4683-91ee-470bdfb6939flc.jpg">
+      <publishTime>09/05/2023 12:05:24</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/8fabc1ac-727c-4187-93ae-13c3c211b66eMask group %284%29.png">
+      <publishTime>09/07/2023 13:54:54</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/901a9afc-36c7-4487-8c17-aa0d4a947ab9aaa.jpg">
+      <publishTime>09/08/2023 09:56:20</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9041378b-1be8-4b24-ac1e-187eac616514mall.jpg">
+      <publishTime>09/06/2023 10:53:25</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/90f726dd-a665-40e1-920e-efeed820f44fslide1.jfif">
+      <publishTime>09/03/2023 15:14:09</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9231c966-8cbb-4ae3-a5db-0aff4ae0a3abboo.jfif">
+      <publishTime>09/05/2023 12:01:03</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/930c0651-87cc-49d0-99e4-ddc813b8fb1fhermes.png">
+      <publishTime>09/02/2023 14:31:58</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/931e0163-9027-4c01-bb13-830585a73a33genclikmall.jfif">
+      <publishTime>09/06/2023 10:07:40</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/94544588-7d18-4d7c-99b4-3ee1667592b0versace.webp">
+      <publishTime>09/04/2023 09:10:01</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/972e7207-b70d-4115-aa45-96f09042d1a2mall.jpg">
+      <publishTime>09/06/2023 10:53:25</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/99845cbd-f536-4673-99d0-0aa01b6d3a4frafa.jpg">
+      <publishTime>08/20/2023 23:01:24</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9997b86c-a8dd-4d26-85f7-d024abab14fbdolce.jpg">
+      <publishTime>09/02/2023 14:32:58</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9c029922-4e47-4d14-9c08-1c80eff37753Burger.svg">
+      <publishTime>08/20/2023 23:01:57</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9cd16eda-c531-4a8c-9bc5-219610d5a566dior.png">
+      <publishTime>09/02/2023 14:30:41</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9db11d8c-0861-4734-94b0-6fea8d04a3c1bambooo.jpg">
+      <publishTime>09/04/2023 18:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9eda3576-7d01-4137-9c84-7265077a1733Mask group %283%29.png">
+      <publishTime>09/07/2023 13:54:54</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9f38f696-638d-4ceb-9f86-faf118612062calvin.png">
+      <publishTime>09/04/2023 14:31:40</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/9f430272-68b7-4b72-bd27-cbb8913bd792parfume.jpg">
+      <publishTime>08/18/2023 12:11:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a22bc5a9-a84f-4889-849e-e4b2617fccf2mr.jfif">
+      <publishTime>09/05/2023 13:38:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a2325b66-793e-4544-9041-2b34bad3cf69x.jpg">
+      <publishTime>09/07/2023 09:25:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a31e21f3-8786-441f-8585-84fb5689b1b9slide1.jfif">
+      <publishTime>09/03/2023 15:15:52</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a36d3bc4-2209-4e9d-abbd-a92842fd18c3parfume.jpg">
+      <publishTime>08/18/2023 21:53:18</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a399e758-4aef-4ccf-8b80-279ccef8f80fasd.jpg">
+      <publishTime>09/05/2023 11:55:11</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a39c5bb2-6c33-43d6-857a-f51ab178f71bparfum.jpg">
+      <publishTime>09/01/2023 17:45:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a55ac31c-225d-415a-af8e-e6e706cfef8dhermes.jpeg">
+      <publishTime>09/05/2023 00:08:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a8875b29-0280-443a-a675-2e1e3f4b9baeparfum.jpg">
+      <publishTime>09/01/2023 15:00:10</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a8bdbdec-e7dc-40ad-b7fa-3d61313f2953Armani.png">
+      <publishTime>09/02/2023 14:33:41</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a9243f5a-5432-4af4-91e6-25df184f50fdMask group %282%29.png">
+      <publishTime>09/07/2023 13:56:48</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/a9e3f0a6-618c-41b7-9217-7651c63beec7rafa.jpg">
+      <publishTime>08/19/2023 13:27:27</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/ab8d875a-f711-4b9d-bcde-a696a39eec41petr-sidorov-C_2Xg3TPiAY-unsplash.jpg">
+      <publishTime>09/05/2023 15:49:07</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/About/about1.jpg">
+      <publishTime>08/08/2023 10:18:24</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/About/about2.jpg">
+      <publishTime>08/08/2023 10:18:34</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/About/about3.jpg">
+      <publishTime>08/08/2023 10:18:47</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/About/about4.jpg">
+      <publishTime>08/08/2023 10:18:03</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/About/Main.jpg">
+      <publishTime>08/08/2023 10:24:03</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/ac02c588-4b16-4c78-92ba-757bf7159944Mask group %2812%29.png">
+      <publishTime>09/04/2023 10:06:35</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/afee2f1b-35a4-4e3a-a3c2-ce1afd0ece79tutsu.jpg">
+      <publishTime>09/06/2023 10:54:51</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b0efcbac-d104-4001-ac71-d94ad18f2f5etutsu.jpg">
+      <publishTime>09/05/2023 15:11:22</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b0ff2289-782b-410f-8958-2d1e002bc30bboy.webp">
+      <publishTime>09/05/2023 12:00:08</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b2598a6a-4518-4f55-906f-f4fa3cb9c0b1victoriasecret.jpg">
+      <publishTime>09/07/2023 09:41:31</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b432d760-0493-40c3-b0a7-4f47c9369663miss.jpg">
+      <publishTime>09/05/2023 13:13:34</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b43a98e9-3f86-49e0-b811-36d2c3b67f28Location.svg">
+      <publishTime>08/20/2023 12:56:06</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b5459a05-1177-4c92-a3b8-4ebd42cadc4eArmani.png">
+      <publishTime>09/04/2023 14:31:47</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b547dc90-1e74-45a8-ba6f-361f014aded8adidas.jpg">
+      <publishTime>09/05/2023 13:05:25</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b58d3cfe-5e28-4e84-86a1-fc7cc58d0cf6iPhone.svg">
+      <publishTime>08/20/2023 12:56:06</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b5939611-1068-4982-9135-186a8b051d36parfum.jpg">
+      <publishTime>09/01/2023 17:54:52</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b59e85be-4b29-473a-a42d-b87645bdc25aparfum.jpg">
+      <publishTime>09/01/2023 21:13:52</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b5c240da-fc40-4745-aa48-e7602d902a27Mask group.png">
+      <publishTime>09/04/2023 10:06:16</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b67b8cfd-080c-4782-9c70-a9b4a81906b3ch.png">
+      <publishTime>09/07/2023 09:26:22</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b73d2b56-fb47-43ec-8906-ba56edb4b196Rectangle 53.svg">
+      <publishTime>09/04/2023 09:34:10</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b8741de8-6e45-49d8-bbf0-0c22b5a91cf9chance.jpg">
+      <publishTime>09/05/2023 00:14:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/b8d78074-d2c6-4812-9b47-78b751fc9fd6gencemall.jpg">
+      <publishTime>09/06/2023 10:01:19</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/ba5edb8d-f6a8-40de-9631-4db0c5574a4aeup.jpg">
+      <publishTime>09/05/2023 11:53:11</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/bbd7c406-222d-453c-a466-72bac00abcc8ver.webp">
+      <publishTime>09/07/2023 09:31:49</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/bc45e7c5-3fc8-4288-936c-36fc18251aebhermes.png">
+      <publishTime>09/04/2023 14:30:55</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/bcbdb8b3-a5ff-42cb-a153-2a5566561151dior.png">
+      <publishTime>09/04/2023 09:10:14</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/bef5aff0-1174-4594-9af8-daeecf1d41bdmyway.webp">
+      <publishTime>09/05/2023 13:31:11</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/bf2d37e6-7b30-46df-8942-dae624fbeecbparfum.jpg">
+      <publishTime>09/01/2023 14:59:41</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/bff82484-ade5-4a3a-98b9-673cd049bb7eSidebar.svg">
+      <publishTime>09/01/2023 14:47:28</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c0871429-1577-4087-afdb-6aead063dcfdrevlon.jpg">
+      <publishTime>09/02/2023 14:31:37</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c0b67b84-cc45-4638-9073-4a7aed06cbafSearch.svg">
+      <publishTime>08/20/2023 23:01:57</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c0f17730-b3de-4559-b5cc-62a0b29f4feeLogo.svg">
+      <publishTime>08/20/2023 17:22:01</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c3b7af68-497e-49d8-8958-f41334aba45cad.jpg">
+      <publishTime>09/05/2023 13:10:50</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c58a6489-98e0-4bb1-ad08-97b407dbf0f9Mask group.png">
+      <publishTime>09/04/2023 10:05:30</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c73fb193-d1aa-4e5a-9e50-2224135c8516Logo.svg">
+      <publishTime>08/20/2023 23:01:57</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c7cd211c-94bc-42fc-863f-fde357b7a03cimage 10.png">
+      <publishTime>09/04/2023 17:47:57</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c8864451-d157-4988-8205-8ef4359afd25rafa.jpg">
+      <publishTime>08/17/2023 18:28:46</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/c92eec01-99fb-48dd-a9a0-6588e45f89e9terre.webp">
+      <publishTime>09/05/2023 13:41:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/cad8606d-2dd2-45bc-80e1-f3a26c4f26d7e.jpg">
+      <publishTime>09/05/2023 11:54:01</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/cb3012c6-b317-4f5f-8046-945434222b77tutsu2.jpg">
+      <publishTime>09/06/2023 10:55:06</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/cd7042e0-e96c-4b41-85e0-5c7f8dc21a4echerry.jpg">
+      <publishTime>09/05/2023 13:25:07</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/cdf13cb0-15b7-4b05-bda2-5222edc702faprada.png">
+      <publishTime>09/04/2023 14:30:39</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/ce8ec759-7d8d-4d58-b882-a5cede97ec3cprada.jpg">
+      <publishTime>09/05/2023 11:45:09</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d0391095-caff-4748-b494-e359d4efbd37gucci.jpg">
+      <publishTime>09/04/2023 14:31:06</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d04dd59f-fb8a-401a-b9ec-c58c385826a3sayak-bala-jowBlJC165U-unsplash.jpg">
+      <publishTime>09/05/2023 15:52:09</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d482088b-ee8e-407f-9bd0-c0ada81e9466hermes.png">
+      <publishTime>09/04/2023 09:11:10</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d520d9a6-51c4-4d14-b8d2-e207adf8e3baaaa.jpg">
+      <publishTime>09/07/2023 10:20:05</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d5a8d5f8-f57e-452d-a429-5db6350d36c6ekaterina-grosheva-U5MlaeCcy70-unsplash.jpg">
+      <publishTime>09/04/2023 09:12:32</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d5f2ed00-79f3-4349-b15e-6bbcc36eefe5lacoste.png">
+      <publishTime>09/04/2023 09:10:36</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d89dd100-7917-4626-97c0-bf0a11aa6cf0sayak-bala-jowBlJC165U-unsplash.jpg">
+      <publishTime>09/05/2023 15:53:37</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d92799f0-e6db-47ca-8f9f-9d1f00433a7ctom.jpg">
+      <publishTime>09/02/2023 14:31:27</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d9341ebb-fa8f-4f6d-8d44-f01917b06657tom.jpg">
+      <publishTime>09/04/2023 14:30:21</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/d971f5ea-a176-4937-9e1a-2455f83a0e6dchanel no5.jfif">
+      <publishTime>09/03/2023 15:29:25</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/da346b67-8827-4a91-9b0b-7815f8db2064Mask group %281%29.png">
+      <publishTime>09/04/2023 10:05:51</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/dac06c13-10fb-4114-a0bd-724d8a63312ecalvin.png">
+      <publishTime>09/02/2023 14:33:32</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/dc28b55e-4fe8-4f43-8f1e-4aed1885dc1fad.jpg">
+      <publishTime>09/07/2023 09:38:07</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/dc9624c1-1d78-4eeb-96b3-5ac4538dbea0Screenshot %282%29.png">
+      <publishTime>08/20/2023 23:52:29</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/e00fd918-ddab-485d-8ef1-90cbe197a232ekaterina-grosheva-U5MlaeCcy70-unsplash.jpg">
+      <publishTime>09/03/2023 15:32:03</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/e1419eb3-924d-4953-9f77-c24d2a89e0ddgivency.png">
+      <publishTime>09/04/2023 14:31:15</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/e1f8d59c-382e-4ca9-9343-53b9dcabe813rafa.jpg">
+      <publishTime>08/21/2023 14:50:56</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/e3c82e68-f6a9-42bd-b4a8-0b5eb424ba07calvin.png">
+      <publishTime>09/03/2023 15:25:14</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/e4f553c8-7e2b-4072-bec8-0c607e49a2e7all.webp">
+      <publishTime>09/05/2023 16:11:36</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/e4fb761f-0dbc-4c7d-87d7-970b7c180212irresistible.jpg">
+      <publishTime>09/04/2023 18:20:31</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/e74240af-a95d-43d2-9f7a-50d448603a16ll.webp">
+      <publishTime>09/05/2023 13:20:04</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/f59f0a0f-cfb4-4c6e-8515-e8f562a7a562er.jpg">
+      <publishTime>09/05/2023 11:54:27</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/f5d9d35c-e3b6-4dcd-8a21-9bdb71c7d604Rectangle 30.png">
+      <publishTime>09/04/2023 17:23:18</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/f6b51a48-7d69-46cb-96be-59385fae1a61istockphoto-1440783914-1024x1024.jpg">
+      <publishTime>09/05/2023 15:52:50</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/f707ed98-424f-4970-93d4-b40d21dce254parfum.jpg">
+      <publishTime>09/01/2023 14:57:31</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/f75a6a16-383d-49c9-992f-ba1f16077af7Mask group %282%29.png">
+      <publishTime>09/07/2023 13:54:54</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/f8267448-bf11-4949-9e36-e0e2dd33e7bbbur.png">
+      <publishTime>09/05/2023 13:38:50</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/f9937ffd-c59f-4d81-b326-2f5598d0ac3epetr-sidorov-OB4EMZnzhkc-unsplash.jpg">
+      <publishTime>09/05/2023 15:53:15</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/f9ea3ff0-bd82-40fd-80b9-68c1e4606bb3Mask group %281%29.png">
+      <publishTime>09/07/2023 13:54:54</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/fed88439-5e09-4f90-937e-183abd2547f3Rectangle 30.png">
+      <publishTime>09/07/2023 10:21:49</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/GiftBox/box1.jpg">
+      <publishTime>08/10/2023 12:26:53</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/GiftBox/box2.jpg">
+      <publishTime>08/10/2023 12:26:59</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/GiftBox/box3.jpg">
+      <publishTime>08/10/2023 12:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/GiftBox/Giftbox.jpg">
+      <publishTime>08/07/2023 09:26:59</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/GiftBox/header1.jpg">
+      <publishTime>08/10/2023 12:26:36</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/GiftBox/header2.jpg">
+      <publishTime>08/10/2023 12:26:42</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/NewProduct/all.webp">
+      <publishTime>09/05/2023 16:11:20</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/NewProduct/ProductImage.jpg">
+      <publishTime>08/05/2023 16:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/assets/images/NotFound/pana.jpg">
+      <publishTime>08/10/2023 08:21:27</publishTime>
+    </File>
+    <File Include="wwwroot/assets/js/detailp.js">
+      <publishTime>08/28/2023 19:11:36</publishTime>
+    </File>
+    <File Include="wwwroot/assets/js/detailt.js">
+      <publishTime>08/28/2023 19:13:12</publishTime>
+    </File>
+    <File Include="wwwroot/assets/js/dist/browser/signalr.js">
+      <publishTime>09/11/2023 11:06:42</publishTime>
+    </File>
+    <File Include="wwwroot/assets/js/dist/browser/signalr.min.js">
+      <publishTime>09/11/2023 11:06:42</publishTime>
+    </File>
+    <File Include="wwwroot/assets/js/index.js">
+      <publishTime>08/24/2023 17:49:25</publishTime>
+    </File>
+    <File Include="wwwroot/assets/js/indexp.js">
+      <publishTime>08/28/2023 12:02:25</publishTime>
+    </File>
+    <File Include="wwwroot/Parfume.App.styles.css">
+      <publishTime>09/12/2023 22:59:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

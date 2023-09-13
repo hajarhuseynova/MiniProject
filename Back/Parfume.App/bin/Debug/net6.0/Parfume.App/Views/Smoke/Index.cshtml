@@ -16,7 +16,7 @@
 	<div class="container tester_container">
 		<div class="tester_top">
 			<h1>Tüstülər</h1>
-			<p>Müxtəlif tip tüstüləe ilə sizi rahatlatmağa hazırıq!</p>
+			<p>Müxtəlif tip tüstülər ilə sizi rahatlatmağa hazırıq!</p>
 			<div class="tester_input">
 				<form id="searchSmoke">
 					<input name="search" placeholder="Axtarış..." type="search" class="searchInputSmoke" style="height:50px">
@@ -68,7 +68,7 @@
 
 						   let view = `
 							 <div class="smok">
-						<a asp-action="detail" asp-controller="smoke" asp-route-id="${item.Id}" >
+						<a  href="/product/detail/${item.id}" >
 						<img src="../assets/images/${item.image}" />
 						</a>
 
@@ -77,7 +77,7 @@
 					  <p>
 					   ${item.desc}
 					  </p>
-					  <a> <button>Səbətə Əlavə Et</button> </a>
+					  <a class="add-basket-product" href="/home/addbasket/${item.id}"> <button>Səbətə Əlavə Et</button> </a>
 					</div>
 				  </div>
 
@@ -96,7 +96,7 @@
 
 						   let view = `
 						 <div class="smok">
-						<a asp-action="detail" asp-controller="smoke" asp-route-id="${item.Id}" >
+						<a  href="/product/detail/${item.id}">
 						<img src="../assets/images/${item.image}" />
 						</a>
 
@@ -105,7 +105,7 @@
 					  <p>
 					   ${item.desc}
 					  </p>
-					  <a> <button>Səbətə Əlavə Et</button> </a>
+					   <a  class="add-basket-product" href="/home/addbasket/${item.id}"><button>Səbətə Əlavə Et</button> </a>
 					</div>
 				  </div>
 
