@@ -67,15 +67,15 @@
                            <i class="fa-solid fa-check" style="color:green"></i></a></td>
                     }
 
-						    @if (item.IsDiscount==true)
+			      @if (item.IsDiscount==false)
                     {
-                           <td><a asp-controller="product" asp-action="isTrend" asp-route-id="@item.Id" >
-                           <i class="fa-solid fa-check" style="color:green"></i></a></td>
+                           <td><a asp-controller="product" asp-action="discount" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:red"></i></a></td>
                        
                     }
 					else{
-						   <td><a asp-controller="product" asp-action="isTrend" asp-route-id="@item.Id" >
-                           <i class="fa-solid fa-check" style="color:red"></i></a></td>
+						   <td><a asp-controller="product" asp-action="discount" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:green"></i></a></td>
 					}
                            
 

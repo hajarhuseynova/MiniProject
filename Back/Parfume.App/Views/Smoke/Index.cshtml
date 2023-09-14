@@ -70,19 +70,17 @@
 
 						   let view = `
 							 <div class="smok">
-						<a  href="/product/detail/${item.id}" >
+						<a href="/product/detail/${item.id}" >
 						<img src="../assets/images/${item.image}" />
 						</a>
-
 					<div class="responsive">
 					  <h3>${item.title}</h3>
 					  <p>
 					   ${item.desc}
 					  </p>
-					  <a class="add-basket-smok"> <button>Səbətə Əlavə Et</button> </a>
+					  <a class="add-basket-smok" href="/home/AddBasket/${item.id}"> <button>Səbətə Əlavə Et</button> </a>
 					</div>
 				  </div>
-
 			   `;
 						   container.innerHTML += view;
 					   } )
@@ -107,7 +105,7 @@
 					  <p>
 					   ${item.desc}
 					  </p>
-					   <a  class="add-basket-smok"><button>Səbətə Əlavə Et</button> </a>
+					   <a  class="add-basket-smok" href="/home/AddBasket/${item.id}"><button>Səbətə Əlavə Et</button> </a>
 					</div>
 				  </div>
 

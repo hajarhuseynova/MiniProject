@@ -22,17 +22,20 @@
                      <th>@item.Product.Title</th>
                      <th>@item.Title</th>
                      <th>@(item.Rating+1)</th>
-                     
-                   @if (item.isVisible==true)
+
+                      @if (item.isVisible==false)
                     {
-                          
-                     <td><a asp-controller="ProductComment" asp-action="accept" asp-route-id="@item.Id" ><i class="fa-solid fa-check" style="color:green"></i> </a></td>
+                           <td><a asp-controller="ProductComment" asp-action="Accept" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:red"></i></a></td>
                        
                     }
-					else{
-                     <td><a asp-controller="ProductComment" asp-action="accept" asp-route-id="@item.Id" ><i class="fa-solid fa-check" style="color:red"></i> </a></td>
-						  
-					}
+                    else
+                    {
+                                <td><a asp-controller="ProductComment" asp-action="Accept" asp-route-id="@item.Id" >
+                           <i class="fa-solid fa-check" style="color:green"></i></a></td>
+                    }
+                     
+              
 
 
                      <td><a asp-controller="ProductComment" asp-action="delete" asp-route-id="@item.Id"><i class="fa-solid fa-x"></i></a></td>

@@ -32,20 +32,22 @@ namespace Parfume.App.areas.Admin.Controllers
         }
         public async Task<IActionResult> Accept(int id)
         {
-            Comment? comment = await _context.Comments.Where(x => !x.isVisible&& x.Id==id).FirstOrDefaultAsync();
+            Comment? comment = await _context.Comments.Where(x => !x.IsDeleted&& x.Id==id).FirstOrDefaultAsync();
             if(comment == null)
             {
                 return NotFound();
             }
 
-            if (comment.isVisible == true)
+            if (comment.isVisible == false)
             {
-                comment.isVisible = false;
+                comment.isVisible = true;
             }
 			else
 			{
-                comment.isVisible = true;
+                comment.isVisible = false;
             }
+
+          
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
