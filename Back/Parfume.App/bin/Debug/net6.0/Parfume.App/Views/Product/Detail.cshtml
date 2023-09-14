@@ -119,7 +119,7 @@
 			}
 			<div class="input_button_delete">
 
-				<form action="detailp.html" class="input_number">
+				<form class="input_number" method="post" asp-controller="home" asp-action="AddBasket"  asp-route-id="@Model.Product.Id">
 					<p class="minus" id="minus">-</p>
 					<input type="number"
 						   class="orangeinput specialJsInput"
