@@ -62,8 +62,10 @@
           width: 280px;
           display: flex;
           flex-direction: column;
-          border-radius: 8px;
           background-color: $white;
+          border-radius: 8px 8px;
+          transition: 0.5s;
+          cursor: pointer;
           > a {
             width: 280px;
             height: 260px;
@@ -112,6 +114,11 @@
                 font-size: 14px;
               }
             }
+          }
+          &:hover {
+            box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+            -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+            -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
           }
         }
       }

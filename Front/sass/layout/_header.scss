@@ -214,7 +214,7 @@
       .navbar_top {
         .navbar_left {
           .navbar_menu {
-            gap: 10px;
+            gap: 15px;
           }
         }
         .navbar_right {
@@ -282,7 +282,7 @@
         }
         .navbar_right {
           .navbar_icons {
-            gap: 5px;
+            gap: 10px;
             > a {
               margin-right: 5px;
               object-fit: fill;
@@ -311,7 +311,7 @@
 
                 .basketItem {
                   display: flex;
-                  gap: 15px;
+                  gap: 10px;
                   opacity: 1;
                   transition: 1s;
                   .item_left {

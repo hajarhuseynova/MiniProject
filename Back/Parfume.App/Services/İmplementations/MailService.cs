@@ -12,7 +12,7 @@ namespace Parfume.App.Services.İmplementations
             mm.From = new MailAddress(from);
             mm.To.Add(to);
             mm.Subject = subject;
-            mm.Body = $"<a href='{link}'>Click me</a>";
+            mm.Body = $"<a href='{link}'>Bura basın</a>";
             mm.IsBodyHtml = true;
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com";

@@ -749,7 +749,7 @@ a {
               color: $orange_01;
               padding: 0 13px;
               margin-bottom: 0px;
-              margin-top: 5px;
+              margin-top: 0px;
             }
             > p {
               display: none;
@@ -1958,14 +1958,15 @@ a {
       justify-content: center;
       > h1 {
         @include H1Responsive;
-        margin-top: 30px;
+        margin-top: 0px;
       }
       .slideshow-container {
+        margin-bottom: 0;
         .mySlides {
           .modal_comment {
             margin: auto;
             width: 370px;
-            height: 310px;
+            height: 280px;
             background-color: $white;
             > img {
               width: 28px;
