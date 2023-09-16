@@ -1195,5 +1195,31 @@
         }
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select the basket link
+        const basketLink = document.getElementById("basketclick");
+
+        // Add a click event listener
+        basketLink.addEventListener("click", function (e) {
+          // Check if the basket is empty (you can implement your own logic here)
+          const isBasketEmpty = true; // Replace this with your actual logic
+
+          // If the basket is empty, prevent the default link behavior
+          if (isBasketEmpty) {
+            e.preventDefault();
+
+            // Show a SweetAlert with the message
+            Swal.fire({
+              icon: "info",
+              title: "Basket is empty",
+              text: "Your basket is currently empty.",
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
