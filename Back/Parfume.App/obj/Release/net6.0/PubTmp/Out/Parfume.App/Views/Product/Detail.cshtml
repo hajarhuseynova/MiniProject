@@ -15,6 +15,7 @@
 	double one = 0;
 	double two = 0;
 	double three = 0;
+
 	double four = 0;
 	double fifth = 0;
 
@@ -117,7 +118,8 @@
 				<div class="line"></div>
 			}
 			<div class="input_button_delete">
-				<form action="detailp.html" class="input_number">
+
+				<form class="input_number" method="post" asp-controller="home" asp-action="AddBasket"  asp-route-id="@Model.Product.Id">
 					<p class="minus" id="minus">-</p>
 					<input type="number"
 						   class="orangeinput specialJsInput"
@@ -126,6 +128,7 @@
 						   type="number" />
 					<p class="pilus" id="pilus">+</p>
 				</form>
+
 				<a class="addbasketdetail" asp-action="addbasket" asp-controller="home" asp-route-id="@Model.Product.Id">
 					<button class="addtobasket">Səbətə Əlavə Et</button>
 				</a>
@@ -469,7 +472,6 @@
 										   <div class="item_right">
 											   <div class="spans">
 												   <span>${basket.name}</span>
-												   <span>${basket.volume} ML</span>
 												   <span>${basket.count} * ${basket.price} AZN</span>
 											   </div>
 											   <div class="deleteimage">

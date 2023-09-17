@@ -75,14 +75,14 @@
 				 x.forEach(item => {
 					 let view = `
 						<div class="testerparfume">
-						<a  asp-action="detail" asp-route-id="${item.id}" asp-controller="product">
+						<a   href="/product/detail/${item.id}">
 				 <img src="../assets/images/${item.image}" />
 				 </a>
 				 <h3>${item.title}</h3>
 				 <p class="cat">${item.brand.name}</p>
 				 <div class="star_button">
 				   <p class="price">${item.sellPrice} AZN</p>
-				   <a><button>Əlavə et</button></a>
+				   <a href="/home/AddBasket/${item.id}" class="add-basket-product"><button>Əlavə et</button></a>
 				 </div>
 			   </div>
 		 `;
@@ -100,14 +100,14 @@
 				 x.forEach(item => {
 					 let view = `
 						<div class="testerparfume">
-					<a  asp-action="detail" asp-route-id="${item.id}" asp-controller="product">
+					<a  href="/product/detail/${item.id}">
 				 <img src="../assets/images/${item.image}" />
 				 </a>
 				 <h3>${item.title}</h3>
 				 <p class="cat">${item.brand.name}</p>
 				 <div class="star_button">
 				   <p class="price">${item.sellPrice} AZN</p>
-				   <a><button>Əlavə et</button></a>
+				   <a href="/home/AddBasket/${item.id}" class="add-basket-product"><button>Əlavə et</button></a>
 				 </div>
 			   </div>
 		 `;
@@ -147,7 +147,6 @@
 											<div class="item_right">
 												<div class="spans">
 													<span>${basket.name}</span>
-													<span>${basket.volume} ML</span>
 													<span>${basket.count} * ${basket.price} AZN</span>
 												</div>
 												<div class="deleteimage">

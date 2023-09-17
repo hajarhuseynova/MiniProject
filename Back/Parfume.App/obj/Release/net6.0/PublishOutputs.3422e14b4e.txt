@@ -170,6 +170,7 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\PubT
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\PubTmp\Out\Parfume.App\wwwroot\assets\images\37e908e0-89a0-4081-9ddf-a2ff53d1d7e9a.jpg
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\PubTmp\Out\Parfume.App\wwwroot\assets\images\39b02092-aeca-48cf-8932-32fe8bc955aach.jpg
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\PubTmp\Out\Parfume.App\wwwroot\assets\images\3b134dd2-d646-424f-9473-e9b823d13bbbCart.svg
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\PubTmp\Out\Parfume.App\wwwroot\assets\images\3d871bcb-02ac-496c-8280-da21b014f2ddScreenshot (18).png
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\PubTmp\Out\Parfume.App\wwwroot\assets\images\3e8ef973-ad2f-4752-b478-ec0aceb83364tutsu2.jpg
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\PubTmp\Out\Parfume.App\wwwroot\assets\images\41c10744-5598-4b64-a370-9e32b1b3e728gv.webp
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\PubTmp\Out\Parfume.App\wwwroot\assets\images\4218f08b-7968-42a7-a529-49f8c8988971rafa.jpg

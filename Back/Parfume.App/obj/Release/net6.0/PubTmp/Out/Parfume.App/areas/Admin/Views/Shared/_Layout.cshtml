@@ -195,7 +195,7 @@
           <li class="nav-item">
             <a class="nav-link" asp-controller="home" asp-action="index">
              <i class="fa-solid fa-house menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
+              <span class="menu-title">Ana Səhifə</span>
             </a>
           </li>
 
@@ -209,7 +209,7 @@
              <li class="nav-item">
             <a class="nav-link" asp-controller="product" asp-action="index">
             <i class="fa-solid fa-shop menu-icon"></i>
-              <span class="menu-title">Product</span>
+              <span class="menu-title">Məhsul</span>
             </a>
           </li>
            
@@ -218,7 +218,7 @@
             <a class="nav-link" asp-controller="brand" asp-action="index">
            
               <i class="fa-solid fa-layer-group menu-icon"></i>
-              <span class="menu-title"> Brand</span>
+              <span class="menu-title">Marka</span>
             </a>
           </li>
 
@@ -227,7 +227,7 @@
             <a class="nav-link" asp-controller="category" asp-action="index">
             
               <i class="fa-solid fa-c menu-icon"></i>
-              <span class="menu-title"> Category</span>
+              <span class="menu-title"> Kategoriya</span>
             </a>
           </li>
 
@@ -235,35 +235,35 @@
             <a class="nav-link" asp-controller="order" asp-action="index">
          
               <i class="fa-solid fa-clipboard-list menu-icon"></i>
-              <span class="menu-title">Order</span>
+              <span class="menu-title">Sifariş</span>
             </a>
           </li>
 
              <li class="nav-item">
             <a class="nav-link" asp-controller="place" asp-action="index">
               <i class="fa-solid fa-circle menu-icon"></i>
-              <span class="menu-title"> Place</span>
+              <span class="menu-title">Məkan</span>
             </a>
           </li>
 
              <li class="nav-item">
             <a class="nav-link" asp-controller="function" asp-action="index">
            <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title"> Functions</span>
+              <span class="menu-title">Funksionallıq</span>
             </a>
           </li>
 
              <li class="nav-item">
             <a class="nav-link" asp-controller="productcomment" asp-action="index">
             <i class="fa-solid fa-comment menu-icon"></i>
-              <span class="menu-title"> Comment</span>
+              <span class="menu-title">Koment</span>
             </a>
           </li>
 
               <li class="nav-item">
             <a class="nav-link" asp-controller="report" asp-action="index">
               <i class="fa-solid fa-folder menu-icon"></i>
-              <span class="menu-title"> Report</span>
+              <span class="menu-title">Hesabat</span>
             </a>
           </li>
 
@@ -271,28 +271,17 @@
           <li class="nav-item">
             <a class="nav-link" asp-controller="fakeSlider" asp-action="index" >
               <i class="fa-solid fa-bars menu-icon"></i>
-              <span class="menu-title">Fake Slider</span>
+              <span class="menu-title">Saxta Slayder</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" asp-controller="Slider" asp-action="index" >
               <i class="fa-regular fa-rectangle-list menu-icon"></i>
-              <span class="menu-title">Slider</span>
+              <span class="menu-title">Slayder</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" asp-controller="subscribe" asp-action="index" >
-              <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title">Subscribe</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" asp-controller="sendMessage" asp-action="index">
     
-              <i class="fa-solid fa-file-waveform menu-icon"></i>
-              <span class="menu-title">SendMessage</span>
-            </a>
-          </li>
+      
             <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
            
@@ -313,25 +302,18 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="mdi mdi-account menu-icon"></i>
-              <span class="menu-title">User Pages</span>
+              <span class="menu-title">İstifadəçidən gələnlər</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> Login 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Register 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
+                <li class="nav-item"> <a class="nav-link" asp-controller="sendMessage" asp-action="index"> Göndərilənlər </a></li>
+                <li class="nav-item"> <a class="nav-link"  asp-controller="subscribe" asp-action="index" > Abunə ol </a></li>
+           
               </ul>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="documentation/documentation.html">
-              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Documentation</span>
-            </a>
-          </li>
+        
         </ul>
       </nav>
         @RenderBody()

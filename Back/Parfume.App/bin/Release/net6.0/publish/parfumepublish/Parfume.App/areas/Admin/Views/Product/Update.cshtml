@@ -1,0 +1,85 @@
+﻿@model Product
+
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		    <label asp-for="@Model.Title" >Ad:</label>
+			<input type="text" class="form-control" asp-for="@Model.Title"/>
+			<span class="text text-danger" asp-validation-for="@Model.Title"></span>
+	</div>
+
+	<div class="form-group">
+		    <label asp-for="@Model.Desc" >Melumat:</label>
+			<input type="text" class="form-control" asp-for="@Model.Desc"/>
+			<span class="text text-danger" asp-validation-for="@Model.Desc"></span>
+	</div>
+
+    <div class="form-group">
+		    <label asp-for="@Model.Info1" >Info:</label>
+			<input type="text" class="form-control" asp-for="@Model.Info1"/>
+			<span class="text text-danger" asp-validation-for="@Model.Info1"></span>
+	</div>
+
+    <div class="form-group">
+		    <label asp-for="@Model.Info2" >Info:</label>
+			<input type="text" class="form-control" asp-for="@Model.Info2"/>
+			<span class="text text-danger" asp-validation-for="@Model.Info2"></span>
+	</div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.BuyPrice" >Alis Qiymeti:</label>
+			<input type="number" class="form-control" asp-for="@Model.BuyPrice"/>
+			<span class="text text-danger" asp-validation-for="@Model.BuyPrice"></span>
+	</div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.SellPrice" >Satis Qiymeti:</label>
+			<input type="number" class="form-control" asp-for="@Model.SellPrice"/>
+			<span class="text text-danger" asp-validation-for="@Model.SellPrice"></span>
+	</div>
+
+		<div class="form-group">
+		    <label asp-for="@Model.ProductCode" >Product Code:</label>
+			<input type="text" class="form-control" asp-for="@Model.ProductCode"/>
+			<span class="text text-danger" asp-validation-for="@Model.ProductCode"></span>
+	</div>
+		<div class="form-group">
+		    <label asp-for="@Model.Volume" >Parfume Volume:</label>
+			<input type="text" class="form-control" asp-for="@Model.Volume"/>
+			<span class="text text-danger" asp-validation-for="@Model.Volume"></span>
+	</div>
+
+	<div class="form-group">
+            <select asp-for="ProductCategoryId" class="form-select" aria-label="Default select example">
+                <option selected>Brand Sec</option>
+                @foreach (var item in  ViewBag.Category)
+                {
+                    <option value="@item.Id">@item.Name</option>
+
+                }
+            </select>
+            <span class="text text-danger" asp-validation-for="ProductCategoryId"></span>
+        </div>
+
+				<div class="form-group">
+            <select asp-for="BrandId" class="form-select" aria-label="Default select example">
+                <option selected>Brand Sec</option>
+                @foreach (var item in  ViewBag.Brand)
+                {
+                    <option value="@item.Id">@item.Name</option>
+
+                }
+            </select>
+            <span class="text text-danger" asp-validation-for="BrandId"></span>
+        </div>
+	   
+
+	<div class="form-group">
+		    <label asp-for="@Model.FormFile" >File:</label>
+			<input type="file" class="form-control" asp-for="@Model.FormFile"/>
+			<span class="text text-danger" asp-validation-for="@Model.FormFile"></span>
+    </div>
+			@Html.AntiForgeryToken()
+	<button type="submit" class="btn btn-info">Yenile</button>
+	</form>
+</div>

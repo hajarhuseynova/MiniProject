@@ -8,12 +8,22 @@
     <h2 style="text-align:center" class="mt-3">Hesabat</h2>
     <form method="post" asp-action="Index" class="mb-2">
         <div class="form-group">
-            <label for="SelectedDate">Tarih Seçin:</label>
+            <label for="SelectedDate">Tarix Seçin:</label>
             <input type="date" class="form-control" id="SelectedDate" name="SelectedDate" asp-for="SelectedDate" />
         </div>
-        <button type="submit" class="btn btn-primary">Satislari Goruntule</button>
+        <button type="submit" class="btn btn-primary">Satışları seçin</button>
     </form>
-
+       <div class="row mt-5 mb-5">
+            <div class="col-md-4">
+                <strong>Toplam Satış AZN: </strong>@Model.TotalSales.ToString("0.00") AZN
+            </div>
+            <div class="col-md-4">
+                <strong>Toplam Alış AZN: </strong>@Model.TotalPurchases.ToString("0.00") AZN
+            </div>
+            <div class="col-md-4">
+                <strong>Xeyir AZN: </strong>@Model.TotalProfit.ToString("0.00") AZN
+            </div>
+        </div>
     @if (Model.Orders != null && Model.Orders.Count > 0)
     {
         <table class="table table-sm">
@@ -46,22 +56,10 @@
                 }
             </tbody>
         </table>
-        
-        <!-- Toplam satış, alış ve kar bilgileri -->
-        <div class="row">
-            <div class="col-md-6">
-                <strong>Toplam Satış AZN: </strong>@Model.TotalSales.ToString("0.00") AZN
-            </div>
-            <div class="col-md-6">
-                <strong>Toplam Alış AZN: </strong>@Model.TotalPurchases.ToString("0.00") AZN
-            </div>
-            <div class="col-md-6">
-                <strong>Xeyir AZN: </strong>@Model.TotalProfit.ToString("0.00") AZN
-            </div>
-        </div>
+      
     }
     else
     {
-        <p>Seçilen tarihe ait satış bulunamadı.</p>
+        <p>Seçilmiş tarixə aid hesabat tapıla bilmədi.</p>
     }
 </div>

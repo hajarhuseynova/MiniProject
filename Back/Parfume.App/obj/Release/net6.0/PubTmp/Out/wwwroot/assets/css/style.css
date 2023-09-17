@@ -483,7 +483,7 @@ textarea:focus {
     width: 740px;
   }
   .navbar .navbar_container .navbar_top .navbar_left .navbar_menu {
-    gap: 10px;
+    gap: 15px;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons {
     gap: 15px;
@@ -540,7 +540,7 @@ textarea:focus {
     display: none;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons {
-    gap: 5px;
+    gap: 10px;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons > a {
     margin-right: 5px;
@@ -579,7 +579,7 @@ textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 15px;
+    gap: 10px;
     opacity: 1;
     -webkit-transition: 1s;
     transition: 1s;
@@ -1811,7 +1811,7 @@ a {
     color: #ffaf06;
     padding: 0 13px;
     margin-bottom: 0px;
-    margin-top: 5px;
+    margin-top: 0px;
   }
   .smokes .smokes_container .newsmokes .smoke .responsive > p {
     display: none;
@@ -3268,12 +3268,15 @@ a {
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
+  }
+  .comments_home .comments_home_container .slideshow-container {
+    margin-bottom: 0;
   }
   .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment {
     margin: auto;
     width: 370px;
-    height: 310px;
+    height: 280px;
     background-color: #fff;
   }
   .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment > img {
@@ -5519,8 +5522,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 8px;
   background-color: #fff;
+  border-radius: 8px 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume > a {
   width: 280px;
@@ -5570,6 +5576,11 @@ a {
   margin-left: 100px;
   margin-bottom: 15px;
   font-size: 14px;
+}
+.tester .tester_container .tester_bottom .tester_left .testerparfume:hover {
+  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
 }
 
 @media screen and (max-width: 1238px) {
@@ -8623,9 +8634,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: inherit;
-        -ms-flex-pack: inherit;
-            justify-content: inherit;
   }
   .detail_intro .detail_intro_container .detail_right .priceStar > p {
     font-family: Space Mono;
@@ -8670,9 +8678,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: inherit;
-        -ms-flex-pack: inherit;
-            justify-content: inherit;
   }
   .detail_intro .detail_intro_container .detail_right .volume > p {
     font-family: Work Sans;
@@ -8753,7 +8758,7 @@ a {
 }
 @media screen and (max-width: 740px) {
   .detail_intro .detail_intro_container {
-    padding: 20px 0;
+    padding: 40px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8838,9 +8843,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: inherit;
-        -ms-flex-pack: inherit;
-            justify-content: inherit;
   }
   .detail_intro .detail_intro_container .detail_right .priceStar > p {
     width: 80px;
@@ -8886,9 +8888,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: inherit;
-        -ms-flex-pack: inherit;
-            justify-content: inherit;
   }
   .detail_intro .detail_intro_container .detail_right .volume > p {
     font-family: Work Sans;
@@ -9253,6 +9252,9 @@ a {
   cursor: pointer;
   color: #ffaf06;
 }
+.assesment .assesment_container .right > form .right_bottom .rating > span {
+  font-size: 25px;
+}
 .assesment .assesment_container .right > form .right_bottom .rating .star {
   color: #ffaf06;
 }
@@ -9572,7 +9574,7 @@ a {
     gap: 2px;
   }
   .assesment .assesment_container .right > form .right_bottom .rating > span {
-    font-size: 20px;
+    font-size: 23px;
   }
   .assesment .assesment_container .right > form .right_bottom .rating .hide {
     display: none;
@@ -9649,6 +9651,7 @@ a {
   font-weight: 496;
   line-height: 22px;
   letter-spacing: 0em;
+  margin-bottom: 3px;
   text-align: left;
 }
 .comments .comments_container .comment .middle > p {
@@ -11457,7 +11460,7 @@ a {
   }
 }
 .chat .chat_container {
-  padding: 70px 0;
+  padding: 100px 0;
 }
 .chat .chat_container > h1 {
   color: rgb(18, 18, 18);
@@ -11468,10 +11471,10 @@ a {
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 55px;
-  line-height: 50px;
+  line-height: 60px;
 }
 .chat .chat_container .chat_double {
   display: -webkit-box;

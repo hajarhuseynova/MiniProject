@@ -1,0 +1,60 @@
+﻿ 
+@model LoginViewModel
+
+
+
+<div class="login">
+        <div class="login_container">
+          <div class="login_left"  style="
+                background-image: url(/assets/images/NewProduct/all.webp);
+              "></div>
+          <div class="login_right">
+            <h1>Giriş Et</h1>
+
+               <form action="#" method="post">
+              <div
+                class="alert alert-danger"
+                asp-validation-summary="ModelOnly"
+              ></div>
+
+              <input
+                asp-for="UserName"
+                class="form-control register_input"
+                placeholder="Istifadəçi Adı"
+                type="text"
+              />
+
+              <span
+                class="text text-danger"
+                asp-validation-for="UserName"
+              ></span>
+
+              <input
+                asp-for="Password"
+                class="form-control register_input"
+                placeholder="Şifrə"
+                type="password"
+              />
+
+              <span
+                class="text text-danger"
+                asp-validation-for="Password"
+              ></span>
+
+              <div class="checkbox_input">
+                <input type="checkbox" />
+                <p>Xatırla</p>
+                <a asp-controller="account" asp-action="forgetpassword"
+                  >Şifrəni Unutdum</a>
+              </div>
+              <button type="submit">Giriş et</button>
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+                            
+                                  

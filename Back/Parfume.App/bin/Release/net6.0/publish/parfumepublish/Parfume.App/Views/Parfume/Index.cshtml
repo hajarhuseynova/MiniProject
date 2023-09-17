@@ -1,0 +1,155 @@
+﻿   
+   @model ParfumeViewModel
+
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        @foreach (var item in Model.Slides)
+        {
+            if(item.Chooice=="Parfum"){
+              <div class="swiper-slide">
+            <img src="~/assets/images/@item.Image" />
+            <div class="info_par">
+              <h1>@item.Title</h1>
+              <p>@item.Desc</p>
+            </div>
+          </div>
+        }
+        }
+       
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="parfumeCategory">
+        <div class="container parfumeCategory_container">
+          <div class="parfumeCategory_top">
+            <div class="category" data-filter="all">
+              <p id="all">Hamısı</p>
+            </div>
+
+
+            @{
+    var uniqueBrands = Model.Products
+        .Where(x => x.Category.Name == "Parfum" ||x.Category.Name == "Tester")
+        .Select(x => x.Brand.Name)
+        .Distinct()
+        .ToList();
+}
+
+@foreach (var brand in uniqueBrands)
+{
+    <div class="category" data-filter="@brand.ToLower()">
+        <p id="@brand.ToLower()">@brand</p>
+    </div>
+}
+          </div>
+        </div>
+      </div>
+  
+      <div class="parfumes_index">
+        <div class="container parfumes_index_container">
+          <div class="newsellest">
+
+         @foreach (var item in Model.Products.Where(x=>x.Category.Name=="Parfum"||x.Category.Name == "Tester"))
+         {
+                <div class="selles">
+              <a asp-action="detail" asp-route-id="@item.Id" asp-controller="product">
+                <img
+                  src="~/assets/images/@item.Image"
+                  alt="productImage"
+              /></a>
+              <p class="def">@item.Title</p>
+              <p class="cat">@item.Brand.Name</p>
+              <div class="price_star">
+          	@if (item.IsDiscount == true)
+							{
+								<p class="price">@(int.Parse(item.SellPrice)-int.Parse(item.SellPrice)*item.DiscountPercentage/100) AZN</p>
+							}
+							else
+							{
+								<p class="price">@item.SellPrice AZN</p>
+							}
+                <a class="add-basket-par"  asp-action="addbasket" asp-route-id="@item.Id" asp-controller="home"><button>Əlavə et</button></a>
+              </div>
+            </div>
+         }
+
+          </div>
+        </div>
+      </div>
+
+
+        <script>
+	const products = document.querySelectorAll(".add-basket-par");
+		const totalPriceElement = document.getElementById("totalPrice");
+	products.forEach(prod => {
+		prod.addEventListener("click", (e) => {
+			e.preventDefault();
+			let href = prod.getAttribute("href");
+			let TotalPrice = 0;
+
+			fetch(href)
+				.then(x => x.json())
+				.then(x => {
+				 if(x.status==200){
+					 fetch("/home/getallbaskets")
+					 .then(res=>res.json())
+					 .then(b=>{
+							basketItems.innerHTML=""
+					b.forEach(basket => {
+
+						TotalPrice += basket.price*basket.count;
+							let basketView=`
+								<div class="basketItem unvis">
+											<div class="item_left">
+												<img src="/assets/images/${basket.image}" />
+											</div>
+											<div class="item_right">
+												<div class="spans">
+													<span>${basket.name}</span>
+													<span>${basket.count} * ${basket.price} AZN</span>
+												</div>
+												<div class="deleteimage">
+													<a href="/home/RemoveBasket/${basket.productId}" data-id="">
+														<i class="fa-solid fa-x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									`
+						basketItems.innerHTML += basketView;
+
+					})
+
+					totalPriceElement.innerHTML =`${TotalPrice} AZN`;
+				
+
+
+
+					const Toast = Swal.mixin({
+						toast: true,
+						position: 'top-end',
+						showConfirmButton: false,
+						timer: 3000,
+						timerProgressBar: true,
+						didOpen: (toast) => {
+							toast.addEventListener('mouseenter', Swal.stopTimer)
+							toast.addEventListener('mouseleave', Swal.resumeTimer)
+						}
+					})
+
+					Toast.fire({
+						icon: 'success',
+						title: `Əlavə edildi!`
+					})
+
+					 })
+				 }
+
+				})
+		})
+	})
+
+</script>

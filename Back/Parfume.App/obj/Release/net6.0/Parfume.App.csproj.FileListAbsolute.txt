@@ -471,3 +471,4 @@ C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\refi
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\Parfume.App.pdb
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\Parfume.App.genruntimeconfig.cache
 C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\obj\Release\net6.0\ref\Parfume.App.dll
+C:\Users\99455\Desktop\Parfume_FrontEnd\Back\Parfume.App\bin\Release\net6.0\Parfume.App\wwwroot\assets\images\3d871bcb-02ac-496c-8280-da21b014f2ddScreenshot (18).png
