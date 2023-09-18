@@ -921,6 +921,7 @@ footer .footer_container .column_last .socials .social > i {
   footer .footer_container .column_last {
     width: 100%;
     margin-top: 50px;
+    margin-right: 50px;
   }
   footer .footer_container .column_last > a {
     display: -webkit-box;
@@ -1275,9 +1276,8 @@ a {
   width: 110px;
 }
 .products .products_container .newproducts .product:hover {
-  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
 }
 
 @media screen and (max-width: 1238px) {
@@ -1684,9 +1684,8 @@ a {
   color: #ffaf06;
 }
 .smokes .smokes_container .newsmokes .smoke:hover {
-  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
 }
 
 @media screen and (max-width: 1238px) {
@@ -2125,9 +2124,8 @@ a {
   width: 120px;
 }
 .sellests .sellests_container .newsellests .sellest:hover {
-  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
 }
 
 @media screen and (max-width: 1238px) {
@@ -2673,9 +2671,8 @@ a {
   width: 120px;
 }
 .discounts .discounts_container .newdiscounts .discount:hover {
-  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
 }
 
 @media screen and (max-width: 1238px) {
@@ -5578,9 +5575,8 @@ a {
   font-size: 14px;
 }
 .tester .tester_container .tester_bottom .tester_left .testerparfume:hover {
-  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
 }
 
 @media screen and (max-width: 1238px) {
@@ -10379,9 +10375,8 @@ a {
   width: 120px;
 }
 .parfumes_index .parfumes_index_container .newsellest .selles:hover {
-  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
 }
 
 @media screen and (max-width: 1238px) {
@@ -10640,9 +10635,8 @@ a {
   color: #ffaf06;
 }
 .smoke .smoke_container .newsmoke .smok:hover {
-  box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -webkit-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
-  -moz-box-shadow: 6px 0px 24px 0px rgba(247, 156, 44, 0.84);
+  -webkit-box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
+          box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
 }
 
 @media screen and (max-width: 1238px) {
