@@ -1314,7 +1314,7 @@ a {
             text-align: center;
           }
           > p {
-            width: 350px;
+            width: 300px;
             font-family: Work Sans;
             font-size: 18px;
             font-weight: 400;
@@ -1876,6 +1876,7 @@ a {
               height: 85px;
               border-radius: 50%;
               margin-right: 15px;
+              object-fit: cover;
             }
           }
           .modal_top_right {

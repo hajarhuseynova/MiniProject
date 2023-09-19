@@ -23,6 +23,7 @@
             }
             .basketInner_left_right {
               margin-left: 20px;
+              width: 400px;
               > h3 {
                 font-family: Space Mono;
                 font-size: 30px;
@@ -47,11 +48,11 @@
             }
           }
           .basketInner_right {
-            margin-left: 210px;
             margin-top: 3px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 180px;
             gap: 10px;
             > h1 {
               font-family: Space Mono;
@@ -64,8 +65,8 @@
             }
             > a {
               > img {
-                width: 24px;
-                height: 24px;
+                width: 40px;
+                height: 40px;
               }
             }
           }
@@ -169,7 +170,7 @@
               }
               .basketInner_left_right {
                 margin-left: 20px;
-                width: fit-content;
+                width: 360px;
                 > h3 {
                   font-family: Space Mono;
                   font-size: 28px;
@@ -177,7 +178,7 @@
                   line-height: 26px;
                   letter-spacing: 0em;
                   text-align: left;
-                  width: 247px;
+
                   margin-bottom: 20px;
                 }
                 > p {
@@ -193,12 +194,13 @@
               }
             }
             .basketInner_right {
-              margin-left: 150px;
+              margin-left: 0px;
               margin-top: 3px;
               display: flex;
               flex-direction: column;
               align-items: center;
               gap: 10px;
+              width: 180px;
               > h1 {
                 font-family: Space Mono;
                 font-size: 32px;
@@ -210,8 +212,8 @@
               }
               > a {
                 > img {
-                  width: 24px;
-                  height: 24px;
+                  width: 35px;
+                  height: 35px;
                 }
               }
             }
@@ -304,7 +306,7 @@
                   line-height: 16px;
                   letter-spacing: 0em;
                   text-align: left;
-                  width: 180px;
+                  width: 160px;
                   margin-bottom: 10px;
                 }
                 > p {
@@ -321,7 +323,7 @@
             }
             .basketInner_right {
               margin-left: 0px;
-              margin-top: 3px;
+              margin-top: 5px;
               display: flex;
               flex-direction: column;
               align-items: center;

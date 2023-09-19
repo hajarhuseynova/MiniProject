@@ -381,7 +381,6 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basketItems .basketItem .item_right .spans {
   display: -webkit-box;
@@ -391,6 +390,7 @@ textarea:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100px;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basketItems .basketItem .item_right .spans > span {
   font-family: Space Mono;
@@ -426,7 +426,7 @@ textarea:focus {
   background-color: #ffaf06;
   color: #fff;
   font-size: 14px;
-  width: 100px;
+  width: 115px;
 }
 .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button:hover {
   -webkit-transform: scale(1);
@@ -579,13 +579,13 @@ textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 10px;
     opacity: 1;
+    gap: 10px;
     -webkit-transition: 1s;
     transition: 1s;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basketItems .basketItem .item_left > img {
-    width: 70px;
+    width: 60px;
     height: 60px;
     border-radius: 5px;
   }
@@ -594,7 +594,7 @@ textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 10px;
+    gap: 5px;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basketItems .basketItem .item_right .spans {
     display: -webkit-box;
@@ -604,6 +604,7 @@ textarea:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 75px;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basketItems .basketItem .item_right .spans > span {
     font-family: Space Mono;
@@ -629,13 +630,22 @@ textarea:focus {
     margin-bottom: 5px;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv {
-    gap: 18px;
+    gap: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button {
     background-color: #ffaf06;
     color: #fff;
     font-size: 12px;
-    width: 70px;
+    width: 160px;
+    height: 25px;
+    margin-bottom: 0;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .basket_header_inner .basket_buttons .buttonsBasketDiv > a > button:hover {
     -webkit-transform: scale(1);
@@ -644,7 +654,7 @@ textarea:focus {
     color: #ffaf06;
   }
   .navbar .navbar_container .navbar_top .navbar_right .navbar_icons .view {
-    height: 195px;
+    height: 220px;
   }
   .navbar .navbar_container .navbar_bottom {
     position: absolute;
@@ -795,22 +805,6 @@ footer .footer_container .column_last .socials .social > i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  footer .footer_container .column > a > h3 {
-    font-family: Space Mono;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    margin-bottom: 20px;
-  }
-  footer .footer_container .column > p {
-    font-family: Work Sans;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    color: #fff;
   }
   footer .footer_container .responsive {
     margin-top: 40px;
@@ -2521,7 +2515,7 @@ a {
     text-align: center;
   }
   .giftbox .giftbox_container .giftbox_common .giftbox_left > p {
-    width: 350px;
+    width: 300px;
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 400;
@@ -3193,6 +3187,8 @@ a {
   height: 85px;
   border-radius: 50%;
   margin-right: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .comments_home .comments_home_container .modal_comment .modal_inner .modal_top .modal_top_right > h3 {
   font-family: Work Sans;
@@ -5112,7 +5108,7 @@ a {
   }
   .why .why_container .why_right .options .option > p {
     font-family: Work Sans;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 26px;
     letter-spacing: 0em;
@@ -5210,7 +5206,7 @@ a {
   }
   .why .why_container .why_right .options .option > p {
     font-family: Work Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0em;
@@ -6599,7 +6595,7 @@ a {
   }
   .location .location_container .locations .locationPage .locationPage_right .common .option > p {
     font-family: Work Sans;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 450;
     line-height: 18px;
     letter-spacing: 0em;
@@ -6613,9 +6609,9 @@ a {
   }
   .location .location_container .locations .locationPage .locationPage_right .common > a > button {
     margin-top: 0px;
-    width: 130px;
+    width: 140px;
     height: 25px;
-    font-size: 15px;
+    font-size: 14px;
     border-color: transparent;
   }
 }
@@ -6757,6 +6753,7 @@ a {
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right {
   margin-left: 20px;
+  width: 400px;
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
   font-family: Space Mono;
@@ -6780,7 +6777,6 @@ a {
   color: #414141;
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
-  margin-left: 210px;
   margin-top: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6792,6 +6788,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 180px;
   gap: 10px;
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > h1 {
@@ -6804,8 +6801,8 @@ a {
   color: rgb(18, 18, 18);
 }
 .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > a > img {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 .basket .basket_container .money {
   width: 30%;
@@ -6931,9 +6928,7 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right {
     margin-left: 20px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 360px;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > h3 {
     font-family: Space Mono;
@@ -6942,7 +6937,6 @@ a {
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    width: 247px;
     margin-bottom: 20px;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > p {
@@ -6956,7 +6950,7 @@ a {
     color: #414141;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
-    margin-left: 150px;
+    margin-left: 0px;
     margin-top: 3px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6969,6 +6963,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     gap: 10px;
+    width: 180px;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > h1 {
     font-family: Space Mono;
@@ -6980,8 +6975,8 @@ a {
     color: rgb(18, 18, 18);
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_right > a > img {
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
   }
   .basket .basket_container .money {
     margin: auto;
@@ -7084,7 +7079,7 @@ a {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    width: 180px;
+    width: 160px;
     margin-bottom: 10px;
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_left .basketInner_left_right > p {
@@ -7099,7 +7094,7 @@ a {
   }
   .basket .basket_container .basketCommon .basket .basketInner .basketInner_right {
     margin-left: 0px;
-    margin-top: 3px;
+    margin-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10118,7 +10113,7 @@ a {
     font-family: Space Mono;
     font-size: 20px;
     font-weight: 510;
-    line-height: 20px;
+    line-height: 25px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
@@ -11499,7 +11494,7 @@ a {
   text-align: left;
   margin-bottom: 30px;
   margin-bottom: 0px;
-  width: 150px;
+  width: 200px;
 }
 .chat .chat_container .chat_double .chat_left > div > div > input {
   margin-top: 5px;

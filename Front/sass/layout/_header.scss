@@ -111,7 +111,6 @@
                 gap: 25px;
                 opacity: 1;
                 transition: 1s;
-
                 .item_left {
                   > img {
                     width: 80px;
@@ -122,10 +121,11 @@
                 .item_right {
                   margin-top: 7px;
                   display: flex;
-                  gap: 30px;
+
                   .spans {
                     display: flex;
                     flex-direction: column;
+                    width: 100px;
                     > span {
                       font-family: Space Mono;
                       font-size: 13px;
@@ -155,7 +155,7 @@
                     background-color: $orange_01;
                     color: $white;
                     font-size: 14px;
-                    width: 100px;
+                    width: 115px;
                     &:hover {
                       transform: scale(1);
                       background-color: transparent;
@@ -308,15 +308,14 @@
                 padding: 5px 5px 2px 5px;
                 height: 140px;
                 overflow-y: scroll;
-
                 .basketItem {
                   display: flex;
-                  gap: 10px;
                   opacity: 1;
+                  gap: 10px;
                   transition: 1s;
                   .item_left {
                     > img {
-                      width: 70px;
+                      width: 60px;
                       height: 60px;
                       border-radius: 5px;
                     }
@@ -324,10 +323,11 @@
                   .item_right {
                     margin-top: 7px;
                     display: flex;
-                    gap: 10px;
+                    gap: 5px;
                     .spans {
                       display: flex;
                       flex-direction: column;
+                      width: 75px;
                       > span {
                         font-family: Space Mono;
                         font-size: 10px;
@@ -352,13 +352,17 @@
                   margin-bottom: 5px;
                 }
                 .buttonsBasketDiv {
-                  gap: 18px;
+                  gap: 5px;
+                  display: flex;
+                  flex-direction: column;
                   > a {
                     > button {
                       background-color: $orange_01;
                       color: $white;
                       font-size: 12px;
-                      width: 70px;
+                      width: 160px;
+                      height: 25px;
+                      margin-bottom: 0;
                       &:hover {
                         transform: scale(1);
                         background-color: transparent;
@@ -370,7 +374,7 @@
               }
             }
             .view {
-              height: 195px;
+              height: 220px;
             }
           }
         }
