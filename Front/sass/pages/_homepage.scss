@@ -28,7 +28,6 @@ a {
     background-color: #555;
   }
 }
-
 #myBtnOnline {
   position: fixed;
   bottom: 20px;
@@ -54,7 +53,6 @@ a {
     // transform: scale(1);
   }
 }
-
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
@@ -1855,7 +1853,7 @@ a {
       width: 820px;
       background-color: $white;
       border-radius: 10px;
-      height: 300px;
+      height: 320px;
       > img {
         width: 36.5px;
         height: 31px;
@@ -1958,7 +1956,7 @@ a {
           .modal_comment {
             margin: auto;
             width: 370px;
-            height: 280px;
+            height: 313px;
             background-color: $white;
             > img {
               width: 28px;

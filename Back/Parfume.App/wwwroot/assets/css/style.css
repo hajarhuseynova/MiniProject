@@ -3155,7 +3155,7 @@ a {
   width: 820px;
   background-color: #fff;
   border-radius: 10px;
-  height: 300px;
+  height: 320px;
 }
 .comments_home .comments_home_container .modal_comment > img {
   width: 36.5px;
@@ -3273,7 +3273,7 @@ a {
   .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment {
     margin: auto;
     width: 370px;
-    height: 280px;
+    height: 313px;
     background-color: #fff;
   }
   .comments_home .comments_home_container .slideshow-container .mySlides .modal_comment > img {
@@ -10016,7 +10016,7 @@ a {
 }
 .swiper .swiper-slide .info_par > h1 {
   font-family: Space Mono;
-  font-size: 45px;
+  font-size: 43px;
   font-weight: 510;
   line-height: 50px;
   letter-spacing: 0em;
@@ -10070,20 +10070,20 @@ a {
   }
   .swiper .swiper-slide .info_par > h1 {
     font-family: Space Mono;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 510;
     line-height: 50px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
-    width: 450px;
+    width: 420px;
   }
   .swiper .swiper-slide .info_par > p {
     width: 355px;
     font-family: Work Sans;
     font-size: 30px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
@@ -10122,7 +10122,8 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
-    width: 150px;
+    width: 250px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   .swiper .swiper-slide .info_par > p {

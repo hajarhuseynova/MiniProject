@@ -19,7 +19,7 @@
       left: 100px;
       > h1 {
         font-family: Space Mono;
-        font-size: 45px;
+        font-size: 43px;
         font-weight: 510;
         line-height: 50px;
         letter-spacing: 0em;
@@ -74,20 +74,20 @@
         left: 60px;
         > h1 {
           font-family: Space Mono;
-          font-size: 45px;
+          font-size: 40px;
           font-weight: 510;
           line-height: 50px;
           letter-spacing: 0em;
           text-align: left;
           color: $white;
-          width: 450px;
+          width: 420px;
         }
         > p {
           width: 355px;
           font-family: Work Sans;
           font-size: 30px;
           font-weight: 300;
-          line-height: 25px;
+          line-height: 30px;
           letter-spacing: 0em;
           text-align: left;
           color: $white;
@@ -126,7 +126,8 @@
           letter-spacing: 0em;
           text-align: left;
           color: $white;
-          width: 150px;
+          width: 250px;
+          margin-top: 10px;
           margin-bottom: 10px;
         }
         > p {
@@ -332,7 +333,7 @@
           }
         }
         &:hover {
-          box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.45);
+          box-shadow: -1px 3px 37px -3px rgba(0, 0, 0, 0.45);
         }
       }
     }
