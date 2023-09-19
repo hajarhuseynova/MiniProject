@@ -1185,7 +1185,7 @@ a {
 }
 .products .products_container .newproducts .product {
   width: 295px;
-  height: 390px;
+  height: 380px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -1220,7 +1220,7 @@ a {
 }
 .products .products_container .newproducts .product > a > img {
   width: 295px;
-  height: 260px;
+  height: 255px;
   border-radius: 8px 8px 0px 0px;
 }
 .products .products_container .newproducts .product .def {
@@ -1292,7 +1292,7 @@ a {
   }
   .products .products_container .newproducts .product {
     width: 230px;
-    height: 330px;
+    height: 325px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
@@ -1862,7 +1862,7 @@ a {
   margin-bottom: 30px;
   font-weight: 600;
   font-size: 40px;
-  color: #ffaf06;
+  color: #fff;
 }
 .subscribe .form_input > form .input_button {
   display: -webkit-box;
@@ -1880,10 +1880,14 @@ a {
   background-color: #ffaf06;
   color: #fff;
   margin-left: -70px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .subscribe .form_input > form .input_button > button:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
+  background-color: #555;
+  border-color: #555;
 }
 @media screen and (max-width: 1238px) {
   .subscribe {
@@ -1931,7 +1935,7 @@ a {
     margin-bottom: 30px;
     font-weight: 600;
     font-size: 40px;
-    color: #ffaf06;
+    color: #fff;
   }
   .subscribe .form_input > form .input_button {
     display: -webkit-box;
@@ -2001,7 +2005,6 @@ a {
     margin-bottom: 30px;
     font-weight: 600;
     font-size: 30px;
-    color: #ffaf06;
     margin-bottom: 20px;
   }
   .subscribe .form_input > form .input_button {
@@ -2054,7 +2057,7 @@ a {
 }
 .sellests .sellests_container .newsellests .sellest {
   width: 295px;
-  height: 390px;
+  height: 380px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -2064,11 +2067,11 @@ a {
 }
 .sellests .sellests_container .newsellests .sellest > a {
   width: 295px;
-  height: 260px;
+  height: 255px;
 }
 .sellests .sellests_container .newsellests .sellest > a > img {
   width: 295px;
-  height: 260px;
+  height: 255px;
   border-radius: 8px 8px 0px 0px;
 }
 .sellests .sellests_container .newsellests .sellest .def {
@@ -2139,7 +2142,7 @@ a {
   }
   .sellests .sellests_container .newsellests .sellest {
     width: 230px;
-    height: 330px;
+    height: 325px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
@@ -2565,7 +2568,7 @@ a {
 }
 .discounts .discounts_container .newdiscounts .discount {
   width: 295px;
-  height: 390px;
+  height: 380px;
   background-color: #fff;
   border-radius: 8px 8px;
   border: 1px solid transparent;
@@ -2600,11 +2603,11 @@ a {
 }
 .discounts .discounts_container .newdiscounts .discount > a {
   width: 295px;
-  height: 260px;
+  height: 255px;
 }
 .discounts .discounts_container .newdiscounts .discount > a > img {
   width: 295px;
-  height: 260px;
+  height: 255px;
   border-radius: 8px 8px 0px 0px;
 }
 .discounts .discounts_container .newdiscounts .discount .def {
@@ -2686,7 +2689,7 @@ a {
   }
   .discounts .discounts_container .newdiscounts .discount {
     width: 230px;
-    height: 320px;
+    height: 317px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
@@ -3149,7 +3152,7 @@ a {
   width: 820px;
   background-color: #fff;
   border-radius: 10px;
-  height: 320px;
+  height: 325px;
 }
 .comments_home .comments_home_container .modal_comment > img {
   width: 36.5px;
@@ -5795,7 +5798,7 @@ a {
   }
   .tester .tester_container .tester_bottom .tester_left .testerparfume {
     width: 180px;
-    height: 260px;
+    height: 262px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10480,7 +10483,7 @@ a {
   }
   .parfumes_index .parfumes_index_container .newsellest .selles {
     width: 180px;
-    height: 260px;
+    height: 262px;
     background-color: #fff;
     border-radius: 8px 8px;
   }
@@ -10535,7 +10538,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #6a6a6a;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .parfumes_index .parfumes_index_container .newsellest .selles .price_star > a > button {
     font-size: 12px;

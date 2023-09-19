@@ -204,7 +204,7 @@ a {
       justify-content: space-between;
       .product {
         width: 295px;
-        height: 390px;
+        height: 380px;
         background-color: $white;
         border-radius: 8px 8px;
         border: 1px solid transparent;
@@ -232,7 +232,7 @@ a {
         > a {
           > img {
             width: 295px;
-            height: 260px;
+            height: 255px;
             border-radius: 8px 8px 0px 0px;
           }
         }
@@ -298,7 +298,7 @@ a {
         justify-content: space-between;
         .product {
           width: 230px;
-          height: 330px;
+          height: 325px;
           background-color: $white;
           border-radius: 8px 8px;
           > a {
@@ -784,7 +784,7 @@ a {
       @include H1;
       font-weight: 600;
       font-size: 40px;
-      color: $orange_01;
+      color: $white;
     }
     > form {
       .input_button {
@@ -800,9 +800,12 @@ a {
           background-color: $orange_01;
           color: $white;
           margin-left: -70px;
+          transition: 0.5s;
 
           &:hover {
             transform: scale(1);
+            background-color: #555;
+            border-color: #555;
           }
           > span {
           }
@@ -833,7 +836,7 @@ a {
         @include H1;
         font-weight: 600;
         font-size: 40px;
-        color: $orange_01;
+        color: $white;
       }
       > form {
         .input_button {
@@ -849,7 +852,6 @@ a {
             background-color: $orange_01;
             color: $white;
             margin-left: -70px;
-
             &:hover {
               transform: scale(1);
             }
@@ -883,7 +885,6 @@ a {
         @include H1;
         font-weight: 600;
         font-size: 30px;
-        color: $orange_01;
         margin-bottom: 20px;
       }
       > form {
@@ -926,7 +927,7 @@ a {
       flex-wrap: wrap;
       .sellest {
         width: 295px;
-        height: 390px;
+        height: 380px;
         background-color: $white;
         border-radius: 8px 8px;
         border: 1px solid transparent;
@@ -934,10 +935,10 @@ a {
         transition: 0.5s;
         > a {
           width: 295px;
-          height: 260px;
+          height: 255px;
           > img {
             width: 295px;
-            height: 260px;
+            height: 255px;
             border-radius: 8px 8px 0px 0px;
           }
         }
@@ -1003,7 +1004,7 @@ a {
         justify-content: space-between;
         .sellest {
           width: 230px;
-          height: 330px;
+          height: 325px;
           background-color: $white;
           border-radius: 8px 8px;
           > a {
@@ -1356,7 +1357,7 @@ a {
       justify-content: space-between;
       .discount {
         width: 295px;
-        height: 390px;
+        height: 380px;
         background-color: $white;
         border-radius: 8px 8px;
         border: 1px solid transparent;
@@ -1383,10 +1384,10 @@ a {
         }
         > a {
           width: 295px;
-          height: 260px;
+          height: 255px;
           > img {
             width: 295px;
-            height: 260px;
+            height: 255px;
             border-radius: 8px 8px 0px 0px;
           }
         }
@@ -1463,7 +1464,7 @@ a {
         justify-content: space-between;
         .discount {
           width: 230px;
-          height: 320px;
+          height: 317px;
           background-color: $white;
           border-radius: 8px 8px;
           > a {
@@ -1853,7 +1854,7 @@ a {
       width: 820px;
       background-color: $white;
       border-radius: 10px;
-      height: 320px;
+      height: 325px;
       > img {
         width: 36.5px;
         height: 31px;

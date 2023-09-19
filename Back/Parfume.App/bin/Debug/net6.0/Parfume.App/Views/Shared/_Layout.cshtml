@@ -134,7 +134,7 @@
 													</span>
 												</div>
 												<div class="deleteimage">
-													<a asp-controller="home" asp-action="RemoveBasket" asp-route-id="@item?.ProductId" class="remove-basket-item">
+													<a asp-controller="home" asp-action="removebasket" asp-route-id="@item.ProductId" class="remove-basket-item" >
 														<i class="fa-solid fa-x"></i>
 													</a>
 												</div>
@@ -639,6 +639,3 @@
 	  }
 	}
 </script>
-
-	
-
