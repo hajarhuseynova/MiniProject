@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Parfume.App.Context;
 using Parfume.Core.Entities;
 
@@ -22,7 +23,7 @@ namespace Parfume.App.Controllers
             _signinManager = signinManager;
             _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             return View();
         }

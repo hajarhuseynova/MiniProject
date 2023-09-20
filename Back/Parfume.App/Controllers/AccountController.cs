@@ -28,6 +28,12 @@ namespace Parfume.App.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
         {
+            if(registerViewModel.UserName == null|| registerViewModel.Password == null|| registerViewModel.ConfirmPassword == null|| registerViewModel.Email == null
+                || registerViewModel.Name == null|| registerViewModel.Surname == null)
+            {
+                return RedirectToAction("register", "account");
+            }
+
             if (!ModelState.IsValid)
             {
                 return View(registerViewModel);
@@ -36,7 +42,7 @@ namespace Parfume.App.Controllers
             Regex regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
             if (!regex.IsMatch(registerViewModel.Email))
             {
-
+             
                 return RedirectToAction("register", "account");
             }
 
@@ -88,6 +94,11 @@ namespace Parfume.App.Controllers
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
 
+            if (loginViewModel.UserName==null||loginViewModel.Password==null)
+            {
+                return RedirectToAction("login", "account");
+            }
+           
             AppUser appUser = await _userManager.FindByNameAsync(loginViewModel.UserName);
 
 
@@ -96,6 +107,7 @@ namespace Parfume.App.Controllers
                 ModelState.AddModelError("", "İstifadəçi adı və ya şifrə yanlışdır");
                 return View();
             }
+         
             var role = await _userManager.GetRolesAsync(appUser);
             foreach (var roles in role)
             {

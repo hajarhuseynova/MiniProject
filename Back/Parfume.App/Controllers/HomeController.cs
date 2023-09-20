@@ -149,6 +149,7 @@ namespace Parfume.App.Controllers
         public async Task<IActionResult> RemoveBasket(int id)
         {
             await _basketService.Remove(id);
+            TempData["Remove"] = "Məhsul səbətdən silindi!";
             return Redirect(Request.Headers["Referer"].ToString());
 
         }

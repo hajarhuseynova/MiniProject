@@ -36,7 +36,7 @@ namespace Parfume.App.Controllers
                 ThenInclude(x => x.Brand).FirstOrDefaultAsync();
             if (baskets == null || baskets.basketItems.Count() == 0)
             {
-                TempData["empty basket"] = "Səbət boşdur!";
+                TempData["emptyBasket"] = "Səbət boşdur!";
                 return RedirectToAction("index", "home");
             }
             return View(baskets);
