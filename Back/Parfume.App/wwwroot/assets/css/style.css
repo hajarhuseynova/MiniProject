@@ -466,6 +466,7 @@ textarea:focus {
   font-weight: 450;
   line-height: 33px;
   letter-spacing: 0em;
+  margin-left: -160px;
   text-align: center;
   color: #fff;
   -webkit-transition: 0.3s;
@@ -685,6 +686,7 @@ textarea:focus {
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
+    margin-left: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
