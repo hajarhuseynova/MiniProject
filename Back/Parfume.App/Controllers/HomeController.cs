@@ -145,12 +145,33 @@ namespace Parfume.App.Controllers
             await _basketService.AddBasket(id, count);
             return Json(new { status = 200 });
         }
-    
+
         public async Task<IActionResult> RemoveBasket(int id)
         {
             await _basketService.Remove(id);
             return Redirect(Request.Headers["Referer"].ToString());
+
         }
 
+
+        //[HttpPost]
+        //public async Task<IActionResult> RemoveBasket(int id)
+        //{
+        //    var user = await _userManager.GetUserAsync(User);
+        //    if (user == null) return Unauthorized();
+
+        //    var basketProduct = await _context.BasketItems
+        //        .FirstOrDefaultAsync(bp => bp.Id == id && !bp.IsDeleted
+        //        && bp.Basket.AppUserId == user.Id);
+
+        //    if (basketProduct == null) return NotFound();
+
+        //    var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketProduct.ProductId);
+        //    if (product == null) return NotFound();
+
+        //    _context.BasketItems.Remove(basketProduct);
+        //    await _context.SaveChangesAsync();
+        //    return Ok();
+        //}
     }
 }

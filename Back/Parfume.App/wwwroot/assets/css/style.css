@@ -466,7 +466,7 @@ textarea:focus {
   font-weight: 450;
   line-height: 33px;
   letter-spacing: 0em;
-  margin-left: -160px;
+  margin-left: -130px;
   text-align: center;
   color: #fff;
   -webkit-transition: 0.3s;
@@ -11541,6 +11541,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .chat .chat_container .chat_double .chat_right > ul > li {
   border: 1px solid #ffaf06;

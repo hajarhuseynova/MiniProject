@@ -10,7 +10,7 @@
 		<div class="basketCommon">
 			@foreach (var item in Model.basketItems)
 			{
-				<div class="basket">
+				<div class="basket basketOrder" id="@item.Id">
 					<div class="basketInner">
 						<div class="basketInner_left">
 							<img src="~/assets/images/@item.Product.Image" />
@@ -34,7 +34,7 @@
 								<h1>@item.Product.SellPrice AZN</h1>
 							}
 
-							<a asp-controller="home" asp-action="RemoveBasket" asp-route-id="@item?.ProductId">
+							<a class="removebas" asp-action="RemoveBasket" asp-controller="home" asp-route-id="@item.ProductId">
 								<img src="~/assets/icons/tester/rubish.svg" />
 							</a>
 						</div>
@@ -96,3 +96,37 @@
 		</div>
 	</div>
 </div>
+
+
+
+@*<script>
+$(document).ready(function () {
+    $(document).on('click', '.removebas', function () {
+        var id = $(this).data('id');
+        console.log("hello", id);
+
+        $.ajax({
+            method: 'POST',
+            url: "@Url.Action("RemoveBasket","Home")",
+            data: {
+                id: id
+            },
+            success: function (res) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Məhsul silindi',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
+                $(`.basketOrder[id=${id}]`).remove();
+
+             
+            }
+        });
+    });
+
+ 
+});
+</script>
+*@

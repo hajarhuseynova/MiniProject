@@ -125,7 +125,7 @@ namespace Parfume.App.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signinManager.SignOutAsync();
-            TempData["Login"] = "Səhifədən ayrıldınız!";
+            TempData["Logout"] = "Səhifədən ayrıldınız!";
 
             return RedirectToAction("index", "home");
         }
